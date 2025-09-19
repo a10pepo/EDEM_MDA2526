@@ -85,7 +85,6 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 Entregas Grupo MIA
 <table>
 <tr><th>Alumno</th>
-<th>.gitkeep</th>
 <th>*PYTHON*</th>
 <th>DEMO</th>
 <th>*LINUX*</th>
@@ -99,7 +98,7 @@ Entregas Grupo MIA
 <tr>
 </table>
 
-Last Checked: 2025-09-19 07:44:17
+Last Checked: 2025-09-19 07:46:59
 
 
 Entregas Grupo MDA A
@@ -131,7 +130,7 @@ Entregas Grupo MDA A
 <tr>
 </table>
 
-Last Checked: 2025-09-19 07:44:17
+Last Checked: 2025-09-19 07:46:59
 
 Entregas Grupo MDA B
 <table>
@@ -162,5 +161,5 @@ Entregas Grupo MDA B
 <tr>
 </table>
 
-Last Checked: 2025-09-19 07:44:17
+Last Checked: 2025-09-19 07:46:59
 
