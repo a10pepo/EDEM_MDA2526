@@ -1,0 +1,38 @@
+name: "Entregables"
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
+jobs:
+  entregables:
+    if: github.event.commits[0].author.username != 'github-actions[bot]' && github.event.commits[0].author.username != 'a10pepo'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+          ssh-key: ${{ secrets.DEPLOYMENT_TOKEN }}
+      - name: Configure Git user
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Run Deliverables
+        run: |
+          ls -la          
+          python3 .github/code/check.py
+          
+
+
+      - name: Push changes
+        run: |
+          git add .
+          git commit -m "Automated commit by GitHub Actions"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
+
