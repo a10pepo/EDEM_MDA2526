@@ -67,6 +67,14 @@ def generate_table(clase,alumnos):
     class_type=clase[0:3]
     deliverables=os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/"+class_type))
     deliverables=deliverables+os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/COMUN"))
+    
+    # Filter out non-directories (like .gitkeep files)
+    profesores_class_path = os.path.join(os.getcwd(), "PROFESORES"+"/"+class_type)
+    profesores_comun_path = os.path.join(os.getcwd(), "PROFESORES"+"/COMUN")
+    deliverables = [d for d in deliverables if 
+                   (d in os.listdir(profesores_class_path) and os.path.isdir(os.path.join(profesores_class_path, d))) or
+                   (d in os.listdir(profesores_comun_path) and os.path.isdir(os.path.join(profesores_comun_path, d)))]
+    
     deliverables=deliverables+["NOTA COMUNES"]
     if ".DS_Store" in deliverables:
         deliverables.remove(".DS_Store")
