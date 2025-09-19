@@ -44,13 +44,13 @@ def check_class(folder_path):
                 else:
                     print("Entregable "+element+" NO Existe para el alumno "+alumno)
                     alumnos[alumno][element]=False
-        alumnos[alumno]["NOTA COMUNES"]=comunes*10/len(comun_obligatorio)
-        if "MDA" in class_type:
-            alumnos[alumno]["MDA_M1"]=mda1*10/len(mda1_obligatorio)
-            alumnos[alumno]["MDA_M2"]=mda2*10/len(mda2_obligatorio)
-            
-        if "MIA" in class_type:
-            alumnos[alumno]["MIA_M1"]=mia1*10/len(mia1_obligatorio)
+            alumnos[alumno]["NOTA COMUNES"]=comunes*10/len(comun_obligatorio)
+            if "MDA" in class_type:
+                alumnos[alumno]["MDA_M1"]=mda1*10/len(mda1_obligatorio)
+                alumnos[alumno]["MDA_M2"]=mda2*10/len(mda2_obligatorio)
+                
+            if "MIA" in class_type:
+                alumnos[alumno]["MIA_M1"]=mia1*10/len(mia1_obligatorio)
     return alumnos
 
 def check_names(folder_path):
