@@ -39,6 +39,7 @@ En resumen, este bloque les proporcionará una base sólida que les permitirá a
 - Linux
 - Git
 - Containers (Docker)
+- SQL
 
 ### Modulo 1 - Tratamiento del Dato
 
@@ -46,7 +47,6 @@ Durante este bloque, los alumnos se sumergirán en el perfil del Data Engineer: 
 Para ello, descubrirán el origen de los datos y su tipología, el manejo de grandes volúmenes de datos con SQL y NoSQL, creación de dashborads con su posterior creación en Tableau, el uso de tecnologías como Flask API’s, Kafka, Spark Streaming, Cloud, IAC Terraform y Localización, además de comprender el fujo de datos, su calidad y el gobierno de datos.
 En resumen, este bloque les dará una base sólida para ocupar puestos de Data Engineer que se asegure de definir e implementar un flujo de datos desde su origen hasta su exploración de una forma controlada y automatizada.
 
-- SQL
 - NoSQL
 - Tableau
 - Flask API’s
@@ -67,18 +67,18 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 ### Entregables Individuales
 
 <table>
-<tr><th>Modulo</th><th>Entregable</th><th>Fecha Entrega</th></tr>
-<tr><th>M0</th><td>Python</td><td></td></tr>
-<tr><th>M0</th><td>Linux</td><td></td></tr>
-<tr><th>M0</th><td>Docker</td><td></td></tr>
-<tr><th>M0</th><td>Ahorcado</td><td></td></tr>
-<tr><th>M1</th><td>SQL</td><td></td></tr>
-<tr><th>M1</th><td>APIs</td><td></td></tr>
-<tr><th>M1</th><td>Kafka</td><td></td></tr>
-<tr><th>M1</th><td>Spark Streaming</td><td></td></tr>
-<tr><th>M2</th><td>GCP</td><td></td></tr>
-<tr><th>M2</th><td>AWS</td><td></td></tr>
-<tr><th>M2</th><td>Azure</td><td></td></tr>
+<tr><th>Modulo</th><th>Entregable</th><th>Fecha Entrega ES</th><th>Fecha Entrega FS</th></tr>
+<tr><th>M0</th><td>Python</td><td>20 oct.</td><td>10 oct.</td></tr>
+<tr><th>M0</th><td>Linux</td><td>14 oct.</td><td>20 sept.</td></tr>
+<tr><th>M0</th><td>Docker</td><td>21 oct.</td><td>24 oct.</td></tr>
+<tr><th>M0</th><td>Ahorcado</td><td>-</td><td>-</td></tr>
+<tr><th>M1</th><td>SQL</td><td>27 oct.</td><td>31 oct.</td></tr>
+<tr><th>M1</th><td>APIs</td><td>25 nov.</td><td>09 ene.</td></tr>
+<tr><th>M1</th><td>Kafka</td><td>18 nov.</td><td>19 dic.</td></tr>
+<tr><th>M1</th><td>Spark Streaming</td><td>1 dic.</td><td>23 ene.</td></tr>
+<tr><th>M2</th><td>GCP</td><td>11 feb.</td><td>16 may.</td></tr>
+<tr><th>M2</th><td>AWS</td><td>10 mar.</td><td>12 jun.</td></tr>
+<tr><th>M2</th><td>Azure</td><td>28 abr.</td><td>10 jul.</td></tr>
 </table>
 
 ### Estado de las entregas
@@ -162,4 +162,3 @@ Entregas Grupo MDA B
 </table>
 
 Last Checked: 2025-09-19 07:46:59
-
