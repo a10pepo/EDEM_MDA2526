@@ -85,44 +85,44 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 Entregas Grupo MIA
 <table>
 <tr><th>Alumno</th>
-<th>*PYTHON*</th>
-<th>DEMO</th>
-<th>*LINUX*</th>
 <th>*AHORCADO*</th>
-<th>*SQL*</th>
 <th>*DOCKER*</th>
+<th>DEMO</th>
 <th>TICTACTOE</th>
+<th>*LINUX*</th>
+<th>*SQL*</th>
+<th>*PYTHON*</th>
 <th>NOTA COMUNES</th>
 <th>MIA_M1</th>
 </tr>
 <tr>
 </table>
 
-Last Checked: 2025-09-23 10:43:26
+Last Checked: 2025-09-26 18:21:12
 
 
 Entregas Grupo MDA A
 <table>
 <tr><th>Alumno</th>
-<th>*PYSPARK*</th>
-<th>GCP_ESPECIFICOS</th>
+<th>*KAFKA*</th>
+<th>*GCP_ALMACENAMIENTO*</th>
+<th>AWS_ESPECIFICOS</th>
 <th>TERRAFORM</th>
 <th>CHATBIG</th>
-<th>CHAT</th>
-<th>*AWS_ALMACENAMIENTO*</th>
-<th>*KAFKA*</th>
-<th>*DBT*</th>
-<th>AWS_ESPECIFICOS</th>
-<th>*GCP_ALMACENAMIENTO*</th>
-<th>*APIS*</th>
 <th>*CHUCK*</th>
-<th>*PYTHON*</th>
-<th>DEMO</th>
-<th>*LINUX*</th>
+<th>GCP_ESPECIFICOS</th>
+<th>*PYSPARK*</th>
+<th>CHAT</th>
+<th>*APIS*</th>
+<th>*DBT*</th>
+<th>*AWS_ALMACENAMIENTO*</th>
 <th>*AHORCADO*</th>
-<th>*SQL*</th>
 <th>*DOCKER*</th>
+<th>DEMO</th>
 <th>TICTACTOE</th>
+<th>*LINUX*</th>
+<th>*SQL*</th>
+<th>*PYTHON*</th>
 <th>NOTA COMUNES</th>
 <th>MDA_M1</th>
 <th>MDA_M2</th>
@@ -130,30 +130,30 @@ Entregas Grupo MDA A
 <tr>
 </table>
 
-Last Checked: 2025-09-23 10:43:26
+Last Checked: 2025-09-26 18:21:12
 
 Entregas Grupo MDA B
 <table>
 <tr><th>Alumno</th>
-<th>*PYSPARK*</th>
-<th>GCP_ESPECIFICOS</th>
+<th>*KAFKA*</th>
+<th>*GCP_ALMACENAMIENTO*</th>
+<th>AWS_ESPECIFICOS</th>
 <th>TERRAFORM</th>
 <th>CHATBIG</th>
-<th>CHAT</th>
-<th>*AWS_ALMACENAMIENTO*</th>
-<th>*KAFKA*</th>
-<th>*DBT*</th>
-<th>AWS_ESPECIFICOS</th>
-<th>*GCP_ALMACENAMIENTO*</th>
-<th>*APIS*</th>
 <th>*CHUCK*</th>
-<th>*PYTHON*</th>
-<th>DEMO</th>
-<th>*LINUX*</th>
+<th>GCP_ESPECIFICOS</th>
+<th>*PYSPARK*</th>
+<th>CHAT</th>
+<th>*APIS*</th>
+<th>*DBT*</th>
+<th>*AWS_ALMACENAMIENTO*</th>
 <th>*AHORCADO*</th>
-<th>*SQL*</th>
 <th>*DOCKER*</th>
+<th>DEMO</th>
 <th>TICTACTOE</th>
+<th>*LINUX*</th>
+<th>*SQL*</th>
+<th>*PYTHON*</th>
 <th>NOTA COMUNES</th>
 <th>MDA_M1</th>
 <th>MDA_M2</th>
@@ -161,5 +161,5 @@ Entregas Grupo MDA B
 <tr>
 </table>
 
-Last Checked: 2025-09-23 10:43:26
+Last Checked: 2025-09-26 18:21:12
 
