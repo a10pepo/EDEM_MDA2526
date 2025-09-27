@@ -76,7 +76,7 @@ Ejercicio de comandos en la consola de linux.
     
     
     
-  18.Copiar el archivo /etc/motd a un archivo llamado mensaje de vuestro directorio PRUEBA.
+  18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
     
     
 
