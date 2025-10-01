@@ -80,7 +80,7 @@ Ejercicio de comandos en la consola de linux.
     
     
 
-  19.Copiar mensaje en dir1, dir2 y dir3.
+  19.Copiar /etc/mtab en dir1, dir2 y dir3.
     
     
     
