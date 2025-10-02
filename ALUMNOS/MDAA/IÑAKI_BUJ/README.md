@@ -1,1 +1,1 @@
-print("confirmación)
+print("confirmación de carpeta)
