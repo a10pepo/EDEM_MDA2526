@@ -8,12 +8,6 @@ Bienvenido a mi perfil de GitHub. Soy un apasionado de **la tecnología**, **el 
 - **🏃‍♂️ Aficionado al deporte** (me gusta correr, hacer crossfit y todo lo relacionado con el bienestar físico)
 - **☁️ Siempre explorando nuevas tecnologías en la nube**
 
-## 💻 Proyectos Destacados
-Aquí están algunos de los proyectos en los que he estado trabajando:
-
-- **📊 Análisis de Big Data para optimización de procesos**: [Enlace al proyecto](https://github.com/tuusuario/proyecto-bigdata)
-- **☁️ Implementación de soluciones en la nube**: [Enlace al proyecto](https://github.com/tuusuario/proyecto-cloud)
-
 ## 🛠 Tecnologías y Herramientas
 Me encanta aprender nuevas tecnologías y explorar herramientas que me ayuden a crear soluciones innovadoras. Algunas de las que uso más:
 
