@@ -1,1 +1,1 @@
-Este es el README de Raul Aragall Taberer, BUENAS TARDES
+Este es el README de Raul Aragall Taberer,
