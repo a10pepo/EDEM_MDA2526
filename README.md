@@ -169,6 +169,18 @@ Entregas Grupo MIA
 <td>0.0</td>
 </tr>
 <tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/DAVID_FERNANDEZ'>DAVID_FERNANDEZ</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FATIMA_CUCART'>FATIMA_CUCART</a></td>
 <td>❌</td>
 <td>❌</td>
@@ -277,6 +289,18 @@ Entregas Grupo MIA
 <td>0.0</td>
 </tr>
 <tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JUANLUIS_GERMAN'>JUANLUIS_GERMAN</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/PAOLA_REGUERA'>PAOLA_REGUERA</a></td>
 <td>❌</td>
 <td>❌</td>
@@ -326,7 +350,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:49:29
+Last Checked: 2025-10-03 05:50:47
 
 
 Entregas Grupo MDA A
@@ -457,6 +481,31 @@ Entregas Grupo MDA A
 <td>0.0</td>
 </tr>
 <tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/INAKI_BUJ'>INAKI_BUJ</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/JORGE_MARTINEZ'>JORGE_MARTINEZ</a></td>
 <td>❌</td>
 <td>❌</td>
@@ -558,7 +607,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:49:29
+Last Checked: 2025-10-03 05:50:47
 
 Entregas Grupo MDA B
 <table>
@@ -589,5 +638,5 @@ Entregas Grupo MDA B
 <tr>
 </table>
 
-Last Checked: 2025-10-03 05:49:29
+Last Checked: 2025-10-03 05:50:47
 
