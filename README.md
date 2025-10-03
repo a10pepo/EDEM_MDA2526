@@ -350,7 +350,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:51:17
+Last Checked: 2025-10-03 05:51:39
 
 
 Entregas Grupo MDA A
@@ -506,6 +506,31 @@ Entregas Grupo MDA A
 <td>0.0</td>
 </tr>
 <tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/JAVIER_PLAZA'>JAVIER_PLAZA</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/JORGE_ALBALAT'>JORGE_ALBALAT</a></td>
 <td>❌</td>
 <td>❌</td>
@@ -632,7 +657,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:51:17
+Last Checked: 2025-10-03 05:51:39
 
 Entregas Grupo MDA B
 <table>
@@ -663,5 +688,5 @@ Entregas Grupo MDA B
 <tr>
 </table>
 
-Last Checked: 2025-10-03 05:51:17
+Last Checked: 2025-10-03 05:51:39
 
