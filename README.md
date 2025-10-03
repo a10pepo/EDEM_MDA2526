@@ -97,6 +97,18 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ADRIAN_ALEMANY'>ADRIAN_ALEMANY</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ALEJANDRO_MORENO'>ALEJANDRO_MORENO</a></td>
 <td>❌</td>
 <td>❌</td>
@@ -314,7 +326,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:47:45
+Last Checked: 2025-10-03 05:48:37
 
 
 Entregas Grupo MDA A
@@ -496,7 +508,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:47:45
+Last Checked: 2025-10-03 05:48:37
 
 Entregas Grupo MDA B
 <table>
@@ -527,5 +539,5 @@ Entregas Grupo MDA B
 <tr>
 </table>
 
-Last Checked: 2025-10-03 05:47:45
+Last Checked: 2025-10-03 05:48:37
 
