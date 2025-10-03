@@ -326,7 +326,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:48:37
+Last Checked: 2025-10-03 05:49:07
 
 
 Entregas Grupo MDA A
@@ -457,6 +457,31 @@ Entregas Grupo MDA A
 <td>0.0</td>
 </tr>
 <tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/MARINA_LOPEZ'>MARINA_LOPEZ</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/PAU_GARCIA'>PAU_GARCIA</a></td>
 <td>❌</td>
 <td>❌</td>
@@ -508,7 +533,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-03 05:48:37
+Last Checked: 2025-10-03 05:49:07
 
 Entregas Grupo MDA B
 <table>
@@ -539,5 +564,5 @@ Entregas Grupo MDA B
 <tr>
 </table>
 
-Last Checked: 2025-10-03 05:48:37
+Last Checked: 2025-10-03 05:49:07
 
