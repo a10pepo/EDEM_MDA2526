@@ -5,6 +5,13 @@
 
   <!-- Texto a la derecha -->
   <div style="color:#4B0082;">
+
+
+
+Aisha es hacker
+
+
+
     <span style="font-size:48px; font-weight:bold; display:block;">Soy Aisha</span>
     <span style="font-size:24px; font-weight:bold; display:block; margin-top:10px;">
       Por aquí iré compartiendo cómo va mi aventura de convertirme experta en BIG DATA 
