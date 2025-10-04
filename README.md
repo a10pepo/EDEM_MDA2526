@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-04 06:28:56
+Last Checked: 2025-10-04 09:25:43
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-04 06:28:56
+Last Checked: 2025-10-04 09:25:43
 
 Entregas Grupo MDA B
 <table>
@@ -710,7 +710,32 @@ Entregas Grupo MDA B
 <th>MDA_M2</th>
 </tr>
 <tr>
+<tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/AISHA_DELTIO'>AISHA_DELTIO</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
 </table>
 
-Last Checked: 2025-10-04 06:28:56
+Last Checked: 2025-10-04 09:25:43
 
