@@ -1,6 +1,6 @@
 ## Hi there 👋
 <p align="center">
-<code><img title="Python" height="300" src="https://cdn.pixabay.com/photo/2024/02/17/00/18/cat-8578562_1280.jpg"></code>
+<code><img title="Python" height="300" src="https://e01-xlk-ue-marca.uecdn.es/uploads/2024/10/11/17284601982602.jpeg"></code>
 </p>
 
 ## 📜 About me:
