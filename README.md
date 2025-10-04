@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-04 10:04:41
+Last Checked: 2025-10-04 10:04:57
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-04 10:04:41
+Last Checked: 2025-10-04 10:04:57
 
 Entregas Grupo MDA B
 <table>
@@ -887,6 +887,31 @@ Entregas Grupo MDA B
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/GERMAN_DEVIS'>GERMAN_DEVIS</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/JAVIER_AGUADO'>JAVIER_AGUADO</a></td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -1137,5 +1162,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-10-04 10:04:41
+Last Checked: 2025-10-04 10:04:57
 
