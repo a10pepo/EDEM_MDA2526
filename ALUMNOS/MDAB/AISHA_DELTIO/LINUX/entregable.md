@@ -2,22 +2,28 @@ NOMBRE: AISHA DEL TIO DE PRADO
 
 Para entregar este ejercicio, debes copiar este archivo en tu carpeta de alumno y completar las respuestas a las preguntas que se formulan en el mismo. Una vez completado, debes subirlo a vuestro repositorio remoto de GitHub y realizar una Pull Request poniendo a Pedro Nieto como reviewer.
 Ejercicio de comandos en la consola de linux.
+
 1.Listar todos los archivos del directorio bin.
 ls -l /bin
 
 2.Listar todos los archivos del directorio tmp.
 ls -l /tmp
+
 3.Listar todos los archivos del directorio etc que empiecen por t
 ls -l /etc/t*
+
 4.Listar todos los archivos del directorio dev que empiecen por tty.
 ls -l /dev/tty*
+
 5.Listar todos los archivos del directorio dev que empiecen por tty y acaben en 3.
 ls -l /dev/tty*3
 
 6.Listar todos los archivos del directorio dev que empiecen por t y acaben en C1.
 ls -l /dev/t*C1
+
 7.Listar todos los archivos, incluidos los ocultos, del directorio raíz.
 ls -la /
+
 8.Listar todos los archivos del directorio etc que no empiecen por t.
 ls /etc/!(t*)
 
@@ -28,8 +34,10 @@ ls -lR /usr
 cd /tmp
 mkdir PRUEBA
 NOTA: mkdir /tmp/PRUEBA
+
 11.Verificar que el directorio actual ha cambiado.
 pwd
+
 12.Mostrar el día y la hora actual.
 date
 
@@ -40,6 +48,7 @@ pwd
 
 15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
 ls -l /home
+
 16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
 cd /tmp/PRUEBA
 rm -r *
@@ -48,15 +57,10 @@ NOTA: Estamos borrando el contenido, no la carpeta. Si quisiesemos borrar la car
 17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
 cd /tmp/PRUEBA
 mkdir dir1 dir2 dir3
-
 mkdir dir1/dir11
-
 mkdir dir3/dir31
-
 mkdir dir3/dir31/dir311
-
 mkdir dir3/dir31/dir312
-
 NOTA: mkdir -p dir1/dir11 dir2 dir3/dir31/dir311 dir3/dir31/dir312
 
 18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
