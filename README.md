@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-04 10:02:09
+Last Checked: 2025-10-04 10:04:41
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-04 10:02:09
+Last Checked: 2025-10-04 10:04:41
 
 Entregas Grupo MDA B
 <table>
@@ -1110,7 +1110,32 @@ Entregas Grupo MDA B
 <td>0.0</td>
 <td>0.0</td>
 </tr>
+<tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/SERGIO_MARCO'>SERGIO_MARCO</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
 </table>
 
-Last Checked: 2025-10-04 10:02:09
+Last Checked: 2025-10-04 10:04:41
 
