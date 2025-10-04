@@ -32,7 +32,7 @@ $ ls /etc/[!t]*
 $ ls –R /usr 
 
 10.Cambiarse al directorio tmp, crear directorio PRUEBA.
-$Cd /tmp  
+$ cd /tmp  
 $ mkdir PRUEBA 
 
 11.Verificar que el directorio actual ha cambiado.
@@ -42,7 +42,7 @@ $ ls
 $ date 
 
 13.Con un solo comando posicionarse en el directorio $HOME.
-$ Cd /home 
+$ cd /home 
 
 14.Verificar que se está en él.
 $ pwd 
