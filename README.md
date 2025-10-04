@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-04 09:36:33
+Last Checked: 2025-10-04 09:39:26
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-04 09:36:33
+Last Checked: 2025-10-04 09:39:26
 
 Entregas Grupo MDA B
 <table>
@@ -712,6 +712,31 @@ Entregas Grupo MDA B
 <tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/AISHA_DELTIO'>AISHA_DELTIO</a></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/ALVARO_GIMENEZ'>ALVARO_GIMENEZ</a></td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -887,5 +912,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-10-04 09:36:33
+Last Checked: 2025-10-04 09:39:26
 
