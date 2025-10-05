@@ -67,19 +67,22 @@ Ejercicio de comandos en la consola de linux.
 
   16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
     
-    
+    rm -rf PRUEBA
 
   17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
     
-    
+    mkdir dir1 mkdir dir2 mkdir dir3 cd dir1 mkdir dir11 cd .. cd dir3 mkdir dir31 cd dir31 mkdir dir311 mkdir 312
     
   18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
     
-    
+    cp -r /etc/mtab /tmp/PRUEBA
 
   19.Copiar /etc/mtab en dir1, dir2 y dir3.
     
-    
-    
+    cp -r /etc/mtab /tmp/PRUEBA/dir1
+    cp -r /etc/mtab /tmp/PRUEBA/dir2
+    cp -r /etc/mtab /tmp/PRUEBA/dir3
+
   20.Comprobar el ejercicio anterior mediante un solo comando.
     
+     ls -r/tmp/PRUEBA
