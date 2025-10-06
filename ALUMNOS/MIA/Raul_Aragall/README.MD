@@ -1,1 +1,1 @@
-Este es el README de Raul Aragall Taberer.
+Ya esta todo corregido 
