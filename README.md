@@ -337,7 +337,7 @@ Entregas Grupo MIA
 <td>0.0</td>
 </tr>
 <tr>
-<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/Raul_Aragall'>RAUL_ARAGALL</a></td>
+<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/RAUL_ARAGALL'>RAUL_ARAGALL</a></td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-07 17:44:38
+Last Checked: 2025-10-08 13:15:01
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-07 17:44:38
+Last Checked: 2025-10-08 13:15:01
 
 Entregas Grupo MDA B
 <table>
@@ -1162,5 +1162,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-10-07 17:44:38
+Last Checked: 2025-10-08 13:15:01
 
