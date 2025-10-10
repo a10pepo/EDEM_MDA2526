@@ -33,13 +33,13 @@ $ mkdir PRUEBA
 $ ls
 
 11.Verificar que el directorio actual ha cambiado.
-$ ls 
+$ pwd 
 
 12.Mostrar el día y la hora actual.
 $ date
 
 13.Con un solo comando posicionarse en el directorio $HOME.
-$ cd /home
+$ cd ~
 
 14.Verificar que se está en él.
 $ pwd
@@ -48,9 +48,11 @@ $ pwd
 $ ls  -l /home
 
 16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
-$cd ..
-$cd tmp
-$ rm -r /tmp/PRUEBA
+$ cd ..
+$ cd /tmp/PRUEBA
+$ pwd
+$ ls
+$ rm -r *
 
 17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
 $ mkdir -p /tmp/PRUEBA/dir1/dir11 /tmp/PRUEBA/dir2 /tmp/PRUEBA/dir3/dir31/dir311 /tmp/PRUEBA/dir3/dir31/dir312
