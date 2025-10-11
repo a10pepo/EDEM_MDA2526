@@ -57,7 +57,7 @@ Ejercicio de comandos en la consola de linux.
 
   13.Con un solo comando posicionarse en el directorio $HOME.
     
-    $ cd /home
+    $ cd ~
  
   14.Verificar que se está en él.
     
