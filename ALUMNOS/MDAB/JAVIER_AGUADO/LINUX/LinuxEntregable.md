@@ -67,7 +67,7 @@ Ejercicio de comandos en la consola de linux.
 
   15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
     
-    $ ls –l /$HOME
+    $ ls -l $HOME
 
   16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
     
