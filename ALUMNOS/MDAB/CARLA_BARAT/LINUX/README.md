@@ -42,7 +42,7 @@ $ ls
 $ date 
 
 13.Con un solo comando posicionarse en el directorio $HOME.
-$ cd /home 
+$ cd ~ /home 
 
 14.Verificar que se está en él.
 $ pwd 
