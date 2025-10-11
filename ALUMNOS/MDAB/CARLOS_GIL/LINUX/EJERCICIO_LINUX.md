@@ -28,7 +28,7 @@ $ ls
 12.Mostrar el día y la hora actual.
 $ date
 13.Con un solo comando posicionarse en el directorio $HOME.
-$ cd /home
+$ cd ~
 14.Verificar que se está en él.
 $ pwd
 15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
