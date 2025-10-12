@@ -39,7 +39,7 @@
 
 # def fun_ultimoCaracter(cadena):
 #     try:
-#         float(cadena)
+#         float(cadena)                                          #Detecta una cadena incorrecta tanto si es int como float, porque un int puede convertirse a float
 #         return "Debo ser ejecutada con un string" 
 #     except:
 #         return cadena[-1]
@@ -109,6 +109,25 @@
 
 # //---------------------SOLUCION--------------------//
 
+# def norm(s):
+
+#     s = s.lower()
+#     for letra in s:                                                         #Itera para encontrar 1 o varios espacios delante de la palabra
+#         if(letra == " "):
+#             s = s[1:]                                                       #Se queda con toda la cadena excepto el primer carácter
+#         else: break
+
+#     cadena_invertida = s[::-1]                                              #Invierte la cadena. Hola pasaría a ser aloH
+
+#     for letra in cadena_invertida:                                          #Itera para encontrar 1 o varios espacios al final de la palabra
+#         if(letra == " "):
+#             cadena_invertida = cadena_invertida[1:]
+#         else: break
+
+#     s = cadena_invertida[::-1]                                              #Desinvierte la cadena
+
+#     return s
+
 # bad = set()
 # with open("bad_words.txt", encoding="utf-8") as f:
 #     for line in f:
@@ -116,34 +135,15 @@
 #         if w:
 #             bad.add(norm(w))
 
-# def fun_norm(s):
+# palabra_introducida = input("Por favor, introduce una sola palabra: ")
 
-#     s = s.lower()
+# if palabra_introducida == "" or " " in palabra_introducida:                 #Condición si la palabra está vacía o contiene espacios
+#     print("Introduce una sola palabra (sin espacios).")
 
-#     for letra in s:
-#         if(letra == " "):
-#             s = s[1:]                                   #Se queda con toda la cadena excepto el primer carácter
-#         else: break
+# elif norm(palabra_introducida) in bad:                                      #Condición si la palabra está en bad
+#     print("NO CORRECTA")
 
-#     cadena_invertida = s[::-1]                          #Invierte la cadena. Hola pasaría a ser aloH
+# else:
+#     print("CORRECTA")
 
-#     for letra in cadena_invertida:
-#         if(letra == " "):
-#             cadena_invertida = cadena_invertida[1:]
-#         else: break
-
-#     s = cadena_invertida[::-1]                          #Desinvierte la cadena
-
-#     return s
-
-
-palabra_introducida = input("Por favor, introduce una sola palabra: ")
-
-if palabra_introducida == "":
-    print("Introduce una sola palabra (sin espacios).")
-    
-else:
-   for letra in palabra_introducida:
-      if letra == " ":
-        print("Introduce una sola palabra (sin espacios).")
-        break
+# //---------------------SOLUCION--------------------//
