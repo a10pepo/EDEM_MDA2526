@@ -98,9 +98,11 @@ date
 
 **13.Con un solo comando posicionarse en el directorio $HOME.**
 
-cd /home
+cd ~
+cd $HOME
 
-![alt text](image-8.png)
+![alt text](errorPregunta13.png)
+
 
 **14.Verificar que se está en él.**
 
