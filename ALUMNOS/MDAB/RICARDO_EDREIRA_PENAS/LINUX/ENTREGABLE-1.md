@@ -1,4 +1,5 @@
-jercicio de comandos en la consola de linux.
+Ejercicio de comandos en la consola de linux.
+
 1.Listar todos los archivos del directorio bin.
 root@429546a995ce:/# pwd
 /
@@ -264,7 +265,7 @@ Wed Oct  1 17:24:20 UTC 2025
 
 13.Con un solo comando posicionarse en el directorio $HOME.
 
-root@429546a995ce:/tmp# cd /home
+root@429546a995ce:/tmp# cd ~
 root@429546a995ce:/home# 
 
 14.Verificar que se está en él.
