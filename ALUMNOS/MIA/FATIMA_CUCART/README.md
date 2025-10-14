@@ -1,28 +1,91 @@
- 👤 Información Personal
+# Linux_Comandos
 
-- **Nombre:** Fátima Cucart Matoses 
-- **Email:** fatimatoses57@gmail.com 
-- **Teléfono:** +34 657 500 949
-- **Dirección:** Avenida de Cataluña Nº6   
-- **LinkedIn:** [linkedin.com/in/fatimacucart](www.linkedin.com/in/fátima-cucart-matoses-502429326)   
+Para entregar este ejercicio, debes copiar este archivo en tu carpeta de alumno y completar las respuestas a las preguntas que se formulan en el mismo.
+Una vez completado, debes subirlo a vuestro repositorio remoto de GitHub y realizar una Pull Request poniendo a Pedro Nieto como reviewer.
 
----
 
-## 🛠️ Habilidades
+Ejercicio de comandos en la consola de linux.
 
-- Lenguajes: **SQL, PowerBI, Python,R**
----
+  1.Listar todos los archivos del directorio bin.
+  
+    
+     
+    
+  2.Listar todos los archivos del directorio tmp.
+   
+    
+    
+  3.Listar todos los archivos del directorio etc que empiecen por t 
+    
+    
+  
+  4.Listar todos los archivos del directorio dev que empiecen por tty.
+    
+    
+    
+  5.Listar todos los archivos del directorio dev que empiecen por tty y acaben en 3.
+    
+    
+    
+  6.Listar todos los archivos del directorio dev que empiecen por t y acaben en C1.
+    
+    
 
-## 💼 Experiencia Profesional
+  7.Listar todos los archivos, incluidos los ocultos, del directorio raíz.
+    
+    
+    
+  8.Listar todos los archivos del directorio etc que no empiecen por t.
+    
+    
 
-### 👨‍💻 Prácticas extracurriculares como analista de datos en ODEC 
-📍 Gandía, Valencia | 🗓️ Jun 2025 – Ago 2025  
-- Automatización de procesos.
-- Programación en Python.
-- Mejora del rendimiento de consultas SQL.
+  9.Listar todos los archivos del directorio usr y sus subdirectorios.
+    
+    
 
-### 👨‍💻 Prácticas extracurriculares en la unidad de Investigación de Cultura y Turismo de la Universidad de Valencia
-📍 Valencia, España | 🗓️ Sep 2024 – Jun 2025 
-- Métodos de investigación cualitativa.
-- Procesamiento y depuración de datos.
-- Trabajo en equipo.
+  10.Cambiarse al directorio tmp, crear directorio PRUEBA.
+    
+    
+
+  11.Verificar que el directorio actual ha cambiado.
+    
+    
+
+  12.Mostrar el día y la hora actual.
+    
+    
+
+  13.Con un solo comando posicionarse en el directorio $HOME.
+    
+    
+ 
+  14.Verificar que se está en él.
+    
+    
+
+  15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
+    
+    
+
+  16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
+    
+    
+
+  17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio 
+  dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
+    
+    
+    
+  18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
+    
+    
+
+  19.Copiar /etc/mtab en dir1, dir2 y dir3.
+    
+    
+    
+  20.Comprobar el ejercicio anterior mediante un solo comando.
+    
+
+    
+   
