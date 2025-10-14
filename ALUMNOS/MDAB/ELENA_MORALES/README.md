@@ -1,15 +1,19 @@
-# **<h2>Hi there <span class="wave">👋🏻</span>, I'm Elena Morales!</h2>**
-## **About me**
+## **<h2>Hi there <span class="wave">👋🏻</span>, I'm Elena Morales!</h2>**
+### **About me**
 
-I’m currently pursuing a **Master’s in Big Data & Cloud at EDEM**📊, after completing a **Bilingual Degree in Economics and Finance at the Autonomous University of Madrid (UAM)** 🎓.
+* Currently pursuing a **Master’s in Big Data & Cloud at EDEM**📊
+* Graduated in a **Bilingual Degree in Economics and Finance at the Autonomous University of Madrid (UAM)** 🎓
 
-My academic and professional journey has shaped a strong analytical mindset, which I’m now channeling into the world of data science and cloud technologies ☁️. I’m passionate about starting my path in the data field, and highly motivated to keep learning, experimenting with new tools 🚀.
+
+* Passionate about starting my journey in the data field ☁️
+* Highly motivated to keep learning and experimenting with new tools 🚀
 
 
-## **Languages and Tools I Use**
+### **Languages and Tools I Use**
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python badge"/>
+  <img src="https://img.shields.io/badge/Markdown-brightgreen?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown badge"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker badge"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux badge"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git badge"/>
@@ -17,7 +21,7 @@ My academic and professional journey has shaped a strong analytical mindset, whi
 </p>
 
 
-## **Contact**
+### **Contact**
 
 Feel free to reach out if you’d like to connect!
 
