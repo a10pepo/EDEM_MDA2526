@@ -1,5 +1,9 @@
 # Hi there, I'm Miguel 👋
 
+<p align="center">
+  <img src="https://eltime.es/images02/agricultura/Sonrisa_de_Pedri.jpg" alt="Sonrisa de Pedri" width="400"/>
+</p>
+
 - 🚀 I'm on my way to becoming a data analyst, driven by curiosity and love for solving real-world problems.
 - 📊 Big fan of data storytelling - turning numbers into meaningful narratives.
 - 🌱 Always learning and exploring new technologies.
