@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-14 14:14:37
+Last Checked: 2025-10-14 14:50:44
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-14 14:14:37
+Last Checked: 2025-10-14 14:50:44
 
 Entregas Grupo MDA B
 <table>
@@ -1155,12 +1155,12 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>2.0</td>
+<td>✅</td>
+<td>4.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-10-14 14:14:37
+Last Checked: 2025-10-14 14:50:44
 
