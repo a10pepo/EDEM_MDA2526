@@ -25,42 +25,42 @@ Ejercicio de comandos en la consola de linux.
     
   5.Listar todos los archivos del directorio dev que empiecen por tty y acaben en 3.
     
-    
+    dev/tty*3
     
   6.Listar todos los archivos del directorio dev que empiecen por t y acaben en C1.
     
-    
+    dev/t*C1
 
   7.Listar todos los archivos, incluidos los ocultos, del directorio raíz.
     
-    
+    ls -a /
     
   8.Listar todos los archivos del directorio etc que no empiecen por t.
     
-    
+    ls etc/!t
 
   9.Listar todos los archivos del directorio usr y sus subdirectorios.
     
-    
+    ls -r usr
 
   10.Cambiarse al directorio tmp, crear directorio PRUEBA.
     
-    
+    cd tmp && mkdir PRUEBA
 
   11.Verificar que el directorio actual ha cambiado.
     
-    
+    ls
 
   12.Mostrar el día y la hora actual.
     
-    
+    date
 
   13.Con un solo comando posicionarse en el directorio $HOME.
     
-    
+    cd ~
  
   14.Verificar que se está en él.
-    
+    pwd
     
 
   15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
