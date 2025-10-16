@@ -1,0 +1,47 @@
+1.ls /bin
+
+2.ls /tmp
+
+3.ls /etc/t*
+
+4.ls /dev/tty*
+
+5.ls /dev/tty*3
+
+6.ls /dev/t*C1
+
+7.ls -a /
+
+8.ls /etc | grep -v "^t"
+
+9.ls -R /usr
+
+10.cd /tmp
+mkdir PRUEBA
+
+11.pwd
+
+12.date
+
+13.cd ~
+
+14.pwd
+
+15.ls -l ~
+
+16.rm -rf /tmp/PRUEBA/*
+
+17.mkdir -p /tmp/PRUEBA/dir1/dir11
+mkdir -p /tmp/PRUEBA/dir2
+mkdir -p /tmp/PRUEBA/dir3/dir31/dir311
+mkdir -p /tmp/PRUEBA/dir3/dir31/dir312
+
+18.cp /etc/mtab /tmp/PRUEBA/
+
+19.cp /etc/mtab /tmp/PRUEBA/dir1/
+cp /etc/mtab /tmp/PRUEBA/dir2/
+cp /etc/mtab /tmp/PRUEBA/dir3/
+
+
+20.find /tmp/PRUEBA -name mtab
+
