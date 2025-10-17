@@ -30,7 +30,7 @@ print(ultimoCaracter("hola")) #mostramos la funcion por pantalla para asegurarno
 
 ##### EJERCICIO 5 #####
 
-#creamos esta funcion para normalizar las palabras del archivo txt
+#creamos esta función para normalizar las palabras del archivo txt
 def norm(s:str):
     s = s.lower() #las pone todas en minusculas
     s = s.strip() #elimina espacios 
