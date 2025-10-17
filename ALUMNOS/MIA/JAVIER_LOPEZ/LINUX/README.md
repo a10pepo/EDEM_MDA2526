@@ -41,7 +41,7 @@ Ejercicio de comandos en la consola de linux.
 
   9.Listar todos los archivos del directorio usr y sus subdirectorios.
     
-    ls -r usr
+    ls -R usr
 
   10.Cambiarse al directorio tmp, crear directorio PRUEBA.
     
@@ -65,27 +65,28 @@ Ejercicio de comandos en la consola de linux.
 
   15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
     
-    
+    ls -l ~
 
   16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
     
-    
+    rm -rf PRUEBA/*
 
-  17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio 
-  dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
+  17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
     
-    
+    mkdir -R PRUEBA/dir1/dir11 PRUEBA/dir2 PRUEBA/dir3/dir31/dir311 PRUEBA/dir3/dir31/dir311
     
   18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
     
-    
+    cp /etc/mtab PRUEBA
 
   19.Copiar /etc/mtab en dir1, dir2 y dir3.
     
-    
+    cp /etc/mtab PRUEBA/dir1
+    cp /etc/mtab PRUEBA/dir2
+    cp /etc/mtab PRUEBA/dir3
     
   20.Comprobar el ejercicio anterior mediante un solo comando.
     
-
+    ls -R PRUEBA
     
    
