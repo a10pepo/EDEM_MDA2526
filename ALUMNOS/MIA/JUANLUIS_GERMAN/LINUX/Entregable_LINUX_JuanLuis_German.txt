@@ -47,21 +47,21 @@
   8.Listar todos los archivos del directorio etc que no empiecen por t.
     
     $ cd etc
-    $ ls !t*
+    $ ls [!t]*
     
 
   9.Listar todos los archivos del directorio usr y sus subdirectorios.
     
     $ cd ..
     $ cd usr
-    $ ls -R/usr
+    $ ls -R
     
 
   10.Cambiarse al directorio tmp, crear directorio PRUEBA.
     
     $ cd ..
     $ cd tmp
-    $ mdkir PRUEBA
+    $ mkdir PRUEBA
     
 
   11.Verificar que el directorio actual ha cambiado.
@@ -102,7 +102,7 @@
 
     $ mkdir dir1 dir2 dir3
     $ cd dir1
-    $ mkdir11
+    $ mkdir dir11
     $ cd ..
     $ cd dir3
     $ mkdir dir31
@@ -117,13 +117,11 @@
     
   19.Copiar /etc/mtab en dir1, dir2 y dir3.
 
-    $ cd /etc/mtab /tmp/PRUEBA/dir1
-    $ cd /etc/mtab /tmp/PRUEBA/dir2
-    $ cd /etc/mtab /tmp/PRUEBA/dir3
+    $ cp /etc/mtab /tmp/PRUEBA/dir1
+    $ cp /etc/mtab /tmp/PRUEBA/dir2
+    $ cp /etc/mtab /tmp/PRUEBA/dir3
     
     
   20.Comprobar el ejercicio anterior mediante un solo comando.
 
-    $ ls -l /tmp/PRUEBA/dir1/mtab
-    $ ls -l /tmp/PRUEBA/dir2/mtab
-    $ ls -l /tmp/PRUEBA/dir3/mtab
+    $ ls -l /tmp/PRUEBA/dir{1,2,3}/mtab
