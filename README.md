@@ -316,12 +316,12 @@ Entregas Grupo MIA
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/MARTA_SOLER_EBRI'>MARTA_SOLER_EBRI</a></td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-10-17 09:58:42
+Last Checked: 2025-10-17 10:00:38
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-17 09:58:42
+Last Checked: 2025-10-17 10:00:38
 
 Entregas Grupo MDA B
 <table>
@@ -1162,5 +1162,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-10-17 09:58:42
+Last Checked: 2025-10-17 10:00:38
 
