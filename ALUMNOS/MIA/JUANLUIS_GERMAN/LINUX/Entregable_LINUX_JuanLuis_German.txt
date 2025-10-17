@@ -28,7 +28,7 @@
 
   5.Listar todos los archivos del directorio dev que empiecen por tty y acaben en 3.
     
-    $ ls tty*3
+  $ ls tty*3
     
     
   6.Listar todos los archivos del directorio dev que empiecen por t y acaben en C1.
