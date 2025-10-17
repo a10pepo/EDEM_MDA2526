@@ -5,6 +5,7 @@
 # 1.Listar todos los archivos del directorio bin.
 ls -l /bin
 
+# 2.Listar todos los archivos del directorio tmp.
 ls -l /tmp
 
 # 3.Listar todos los archivos del directorio etc que empiecen por t
