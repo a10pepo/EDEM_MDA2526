@@ -1,3 +1,7 @@
+# Linux_Comandos
+
+Para entregar este ejercicio, debes copiar este archivo en tu carpeta de alumno y completar las respuestas a las preguntas que se formulan en el mismo. Una vez completado, debes subirlo a vuestro repositorio remoto de GitHub y realizar una Pull Request poniendo a Pedro Nieto como reviewer.
+
 Ejercicio de comandos en la consola de linux.
 
 1.Listar todos los archivos del directorio bin.
