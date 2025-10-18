@@ -1,0 +1,7 @@
+services:
+  app:
+    image: python:3.14-slim
+    working_dir: /app 
+    command: ["python", "script.py"]
+    volumes:  
+    - "./:/app"
