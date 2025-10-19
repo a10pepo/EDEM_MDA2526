@@ -1,4 +1,4 @@
-# Entregable Linux
+# Entregable Docker
 
 ## Objetivo
 
