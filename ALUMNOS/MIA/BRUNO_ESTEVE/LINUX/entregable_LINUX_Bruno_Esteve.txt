@@ -32,11 +32,11 @@ Ejercicio de comandos en la consola de linux.
 
   7.Listar todos los archivos, incluidos los ocultos, del directorio raíz.
     
-    ls -a
+    ls -a /
     
   8.Listar todos los archivos del directorio etc que no empiecen por t.
     
-    ls /etc/[!t]
+    ls /etc/[!t]*
 
   9.Listar todos los archivos del directorio usr y sus subdirectorios.
     
@@ -97,9 +97,9 @@ Ejercicio de comandos en la consola de linux.
 
   19.Copiar /etc/mtab en dir1, dir2 y dir3.
     
-    cp /etc/matb /tmp/PRUEBA/dir1
-    cp /etc/matb /tmp/PRUEBA/dir2
-    cp /etc/matb /tmp/PRUEBA/dir3
+    cp /etc/mtab /tmp/PRUEBA/dir1
+    cp /etc/mtab /tmp/PRUEBA/dir2
+    cp /etc/mtab /tmp/PRUEBA/dir3
     
   20.Comprobar el ejercicio anterior mediante un solo comando.
 
