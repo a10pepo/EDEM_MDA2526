@@ -47,3 +47,4 @@ cp /etc/mtab /tmp/PRUEBA/dir2/
 cp /etc/mtab /tmp/PRUEBA/dir3/
 #20.Comprobar el ejercicio anterior mediante un solo comando.
 ls -l /tmp/PRUEBA/dir{1,2,3}/mtab
+
