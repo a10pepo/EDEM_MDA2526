@@ -58,8 +58,8 @@ with open("bad_words.txt", encoding="utf-8") as f:
         if w:
             bad.add(norm(w))
 
+palabra = input("Introduce una sola palabra: ")
 try:
-    palabra = input("Introduce una sola palabra: ")
     n = norm(palabra)
     if n in bad:
         print("\nNO CORRECTA\n")
