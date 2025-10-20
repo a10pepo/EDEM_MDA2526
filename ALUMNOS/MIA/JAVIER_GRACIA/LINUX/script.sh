@@ -128,7 +128,7 @@ cp /etc/hosts "$SCRIPT_DIR/PRUEBA/"
 echo
 
 # 19
-echo "[19] Copiar /etc/hosts en dir1, dir2 y dir3 (tres comandos en una línea, sin for)"
+echo "[19] Copiar /etc/hosts en dir1, dir2 y dir3"
 echo "\$ cp /etc/hosts \"$SCRIPT_DIR/PRUEBA/dir1/\"; cp /etc/hosts \"$SCRIPT_DIR/PRUEBA/dir2/\"; cp /etc/hosts \"$SCRIPT_DIR/PRUEBA/dir3/\""
 cp /etc/hosts "$SCRIPT_DIR/PRUEBA/dir1/"; cp /etc/hosts "$SCRIPT_DIR/PRUEBA/dir2/"; cp /etc/hosts "$SCRIPT_DIR/PRUEBA/dir3/"
 echo
@@ -140,5 +140,5 @@ ls "$SCRIPT_DIR/PRUEBA/dir"{1,2,3}/hosts
 echo
 
 echo "========================================"
-echo "✅ Prueba finalizada."
+echo "Prueba finalizada."
 echo "========================================"
