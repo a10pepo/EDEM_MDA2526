@@ -30,7 +30,7 @@ Nos creamos nuestro archivo **.env** con los datos para conectarnos a la base de
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=pruebadb
-DATABASE_URL=postgresql://postgres:postgres@localhost:5433/pruebadb
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/pruebadb
 ```
 **OJO** En nuestro archivo **.env** hay información sensible entonces debemos tener cuidado con no subirlo a internet, en nuestro caso a nuestro repositorio de github. Para evitar que se suba crearemos un **.gitignore** en este archivo escribimos lo que queramos que git ignore, es decir, lo que no queramos subir:
 ```
