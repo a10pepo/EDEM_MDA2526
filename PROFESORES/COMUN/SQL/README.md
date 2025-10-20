@@ -38,12 +38,14 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5433/pruebadb
 ```
 Abrimos nuestra terminal de VSC y arrancamos nuestro contenedor de docker-compose con el siguiente comando: 
 
-La estructura del proyecto debe quedar finalmente de la siguiente forma:
-
-![img](./images/Captura%20de%20pantalla%202025-10-17%20114451.png)
 ```bash
 docker compose up -d
 ```
+
+La estructura del proyecto debe quedar finalmente de la siguiente forma:
+
+![img](./images/Captura%20de%20pantalla%202025-10-17%20114451.png)
+
 ## Conexión a nuestro PostgreSQL
 
 Vamos a nuestra extensión de PostgreSQL que habíamos instalado previamente y clicamos en **Add Contection**.
