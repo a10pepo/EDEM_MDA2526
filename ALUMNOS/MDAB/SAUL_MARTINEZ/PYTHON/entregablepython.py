@@ -1,4 +1,4 @@
-# Ejercicio 1
+ # Ejercicio 1
 
 variable = "Marina de empresas 2025"
 print(f"La variable contiene {len(variable)} letras")
