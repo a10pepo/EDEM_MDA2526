@@ -75,18 +75,33 @@ Ejercicio de comandos en la consola de linux.
   17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio 
   dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
     
-    mkdir
+    cd PRUEBA
+    mkdir dir1
+    mkdir dir2
+    mkdir dir3
+
+    cd dir1
+    mkdir dir11
+    cd ..
+
+    cd dir3
+    mkdir dir31
+    cd dir31
+    mkdir dir311
+    mkdir dir312
     
   18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
     
-    
+    cp /etc/mtab /tmp/PRUEBA
 
   19.Copiar /etc/mtab en dir1, dir2 y dir3.
     
-    
+    cp /etc/mtab /tmp/PRUEBA/dir1
+    cp /etc/mtab /tmp/PRUEBA/dir2
+    cp /etc/mtab /tmp/PRUEBA/dir3
     
   20.Comprobar el ejercicio anterior mediante un solo comando.
     
-
+    ls PRUEBA/dir{1,2,3}
     
    
