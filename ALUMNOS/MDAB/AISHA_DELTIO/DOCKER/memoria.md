@@ -78,7 +78,7 @@ En este caso, el truco está en decirle al docker compose con el comando `build`
 * `docker images` --> comprobamos que efectivamente hemos descargado la imagen
 * `docker run aishadeltio/entregable-docker:latest 5 6` --> ejecutamos la imagen
 
-#### CAPRURA FUNCIONAMIENTO:
+#### CAPTURA FUNCIONAMIENTO:
 
 ![alt text](funcionamiento-terminal-docker-2.png)
 
