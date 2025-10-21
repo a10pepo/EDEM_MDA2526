@@ -2,7 +2,7 @@ import random
 import pg8000
 
 def print_board(board):
-    for row in row:
+    for row in board:
         print(" | ".join(row))
         print("-" * 5)
 
@@ -72,7 +72,7 @@ def main():
     current_player = "X"
     moves_made = 0
 
-    while False:
+    while True:
         print_board(board)
         if current_player == "X":
             row, col, move = get_user_move(board)
