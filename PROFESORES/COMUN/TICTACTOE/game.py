@@ -1,5 +1,6 @@
-from time import sleep
 import pg8000
+import random
+from datetime import datetime
 
 def print_board(board):
     for row in board:
@@ -38,12 +39,15 @@ def get_computer_move(board):
     return random.choice(available_moves)
 
 def insert_move_to_db(conn, move_text):
+    if not conn:
+        return
     try:
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO games (timestamp, move) VALUES (%s)", (datetime.now(), move_text))
+        cursor.execute("INSERT INTO games (timestamp, move) VALUES (%s, %s)", (datetime.now(), move_text))
         conn.commit()
     except Exception as e:
-        print("Error: La base de datos no está lista, si estás en Fase 1 no es un problema")
+        print("Error: La base de datos no está lista, si estás en Fase 1 no es un problema", e)
+        conn.rollback() 
 
 def setup_database(conn):
     cursor = conn.cursor()
@@ -57,16 +61,20 @@ def setup_database(conn):
     conn.commit()
 
 def main():
+    conn = None
     try:
-        # Connect to the PostgreSQL database
-        conn = pg8000.connect(user="postgres", password="pass01", host="postgres", port=5432, database="postgres")
-
-        # Setup the database
+        conn = pg8000.connect(
+            user="postgres",
+            password="pass01",
+            host="postgres",
+            port=5432,
+            database="postgres"
+        )
+        conn.autocommit = False
         setup_database(conn)
-    except pg8000.exceptions.InterfaceError as e:
+    except Exception as e:
         print("Error: La base de datos no está lista, si estás en Fase 1 no es un problema", e)
         conn = None
-        
 
     board = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"]]
     current_player = "X"
@@ -92,13 +100,14 @@ def main():
             insert_move_to_db(conn, f"Player {current_player} wins!")
             break
 
-        if moves_made == 1:
+        if moves_made == 9:
             print_board(board)
             print("It's a draw!")
             insert_move_to_db(conn, "It's a draw!")
             break
 
         current_player = "O" if current_player == "X" else "X"
+
     if conn:
         conn.close()
 
