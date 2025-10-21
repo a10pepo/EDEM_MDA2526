@@ -68,4 +68,4 @@ PS C:\Users\Adrián\OneDrive\Escritorio\Visual Studio Code\EDEM IA> docker run p
 >> # → Uso: python sum.py <num1> <num2>
 >>
 Error: ambos parámetros deben ser números.
-Uso: python sum.py <num1> <num2>
+Uso: python sum.py <num1> <num2> 
