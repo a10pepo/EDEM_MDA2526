@@ -1,4 +1,4 @@
-import random
+from time import sleep
 import pg8000
 
 def print_board(board):
@@ -48,7 +48,7 @@ def insert_move_to_db(conn, move_text):
 def setup_database(conn):
     cursor = conn.cursor()
     cursor.execute("""
-    CREAT TABLE IF NOT EXISTS games (
+    CREATE TABLE IF NOT EXISTS games (
         id SERIAL PRIMARY KEY,
         timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         move TEXT
@@ -59,12 +59,12 @@ def setup_database(conn):
 def main():
     try:
         # Connect to the PostgreSQL database
-        conn = pg8000.connect(user="postgres", password="Welcome01", host="postgres", port=5432, database="postgres")
+        conn = pg8000.connect(user="postgres", password="pass01", host="postgres", port=5432, database="postgres")
 
         # Setup the database
         setup_database(conn)
-    except pg8000.exceptions.InterfaceError:
-        print("Error: La base de datos no está lista, si estás en Fase 1 no es un problema")
+    except pg8000.exceptions.InterfaceError as e:
+        print("Error: La base de datos no está lista, si estás en Fase 1 no es un problema", e)
         conn = None
         
 
