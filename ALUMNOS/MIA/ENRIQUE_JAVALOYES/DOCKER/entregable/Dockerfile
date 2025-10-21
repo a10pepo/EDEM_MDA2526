@@ -3,4 +3,4 @@ WORKDIR /app
 
 COPY sumar.py .
 
-CMD ["python", "sumar.py"]
+ENTRYPOINT ["python", "sumar.py"]

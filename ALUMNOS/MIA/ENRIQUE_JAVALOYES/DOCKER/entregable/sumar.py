@@ -1,5 +1,7 @@
-n1 = input('Introduce un número para sumar: ')
-n2= input('más: ')
+import sys
+
+n1 = sys.argv[1]
+n2 = sys.argv[2]
 
 def sumar(n1,n2):
 
