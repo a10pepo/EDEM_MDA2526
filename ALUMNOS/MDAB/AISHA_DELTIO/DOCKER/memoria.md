@@ -83,4 +83,31 @@ En este caso, el truco está en decirle al docker compose con el comando `build`
 ![alt text](funcionamiento-terminal-docker-2.png)
 
 
+#### 💡 Duda Final: ¿Y si otra persona usa mi `docker-compose.yaml`?
+
+Me surgió esta duda: si una persona se descarga mi imagen de Docker Hub y tiene mi archivo `docker-compose.yaml`, ¿puede hacer `docker compose up` y que funcione?
+
+**La respuesta es: Depende de cómo esté escrito mi `compose.yaml`:**
+
+1.  **✅ SI mi `compose.yaml` usa `image:`** (El método para producción)
+
+    ```yaml
+    services:
+      pysum:
+        image: aishadeltio/entregable-docker:latest
+        # ... (resto de configuración)
+    ```
+    En este caso, **SÍ, funcionará perfectamente**. `docker compose up` buscará la imagen `aishadeltio/entregable-docker:latest` localmente, y como la persona ya la tiene descargada, la usará.
+
+2.  **❌ NO si mi `compose.yaml` usa `build:`** (El método que usaba en desarrollo)
+
+    ```yaml
+    services:
+      pysum:
+        build: .
+        # ... (resto de configuración)
+    ```
+    En este caso, **NO usará la imagen que descargó**. `docker compose up` intentará *construir* una imagen nueva desde cero, y para eso necesitaría también mi `Dockerfile` y todo mi código fuente (el `main_docker_2.py`).
+
+**Conclusión:** Para que la gente pueda usar mi imagen publicada, el `docker-compose.yaml` que comparta debe usar la clave **`image:`**, no **`build:`**.
 
