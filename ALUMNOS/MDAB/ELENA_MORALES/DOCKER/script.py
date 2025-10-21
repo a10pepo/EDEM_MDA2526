@@ -1,7 +1,14 @@
 import sys
 print(sys.argv), len(sys.argv)      
 
-numero1 = (sys.argv[1])
-numero2 = (sys.argv[2])
-suma = numero1 + numero2 
-print(f"El resultado de la suma es: " [suma])
+
+def suma(numero1, numero2):
+    return numero1 + numero2
+
+try:
+    numero1 = int(sys.argv[1])
+    numero2 = int(sys.argv[2])
+    print(f"El resultado de la suma es: " [suma])
+
+except:
+    print("Ups, has cometido un error. Inténtalo de nuevo.")
