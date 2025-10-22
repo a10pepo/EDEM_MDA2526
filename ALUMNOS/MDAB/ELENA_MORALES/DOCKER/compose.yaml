@@ -1,7 +1,6 @@
 services:
-  app:
-    image: python:3.14-slim
-    working_dir: /app 
-    command: ["python", "script.py"]
-    volumes:  
-    - "./:/app"
+  pysum:
+    build: .                                      # Contexto de construcción
+    command: ["python", "script.py", "3", "4"]    # Aquí se ponen los argumentos
+    volumes:
+      - "./:/app"
