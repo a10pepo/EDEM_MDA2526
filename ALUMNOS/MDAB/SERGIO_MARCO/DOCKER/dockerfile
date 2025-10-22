@@ -1,6 +1,6 @@
 FROM python:3.14-slim
 WORKDIR /app
 
-COPY . .
+COPY main.py .
 
 ENTRYPOINT [ "python","main.py" ]
