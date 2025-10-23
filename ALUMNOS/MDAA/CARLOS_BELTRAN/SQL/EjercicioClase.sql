@@ -82,3 +82,28 @@ SELECT first_name, ROUND(salary, 2) FROM employees
 
 SELECT first_name, ROUND(salary * 0.21, 2) AS impuestos, ROUND(salary-(salary * 0.21), 2) AS salario_neto FROM employees;
 
+CREATE TABLE IF NOT EXISTS departments (
+id              BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+name            VARCHAR(100) NOT NULL
+);
+
+-- department id must be a foreign key referencing departments table
+
+ALTER TABLE employees ADD COLUMN department_id BIGINT REFERENCES departments(id);
+
+INSERT INTO departments (name) VALUES
+('Engineering'),
+('Human Resources'),
+('Marketing'),
+('Sales'),
+('Finance');
+
+UPDATE employees SET department_id = 1 WHERE title = 'Engineer';
+UPDATE employees SET department_id = 2 WHERE title = 'Analyst';
+UPDATE employees SET department_id = 3 WHERE title = 'Designer';
+
+SELECT * FROM employees
+SELECT * FROM departments
+
+SELECT employees.first_name, employees.last_name, departments.name as department from employees
+INNER join departments on employees.department_id = departments.id;
