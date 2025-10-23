@@ -107,3 +107,16 @@ SELECT * FROM departments
 
 SELECT employees.first_name, employees.last_name, departments.name as department from employees
 INNER join departments on employees.department_id = departments.id;
+
+
+
+INSERT INTO departments(name) VALUES('IT');
+SELECT * FROM departments;
+
+INSERT INTO employees (first_name, last_name, birth_date, salary, title, title_date, department_id) VALUES
+('Zara', 'Khan', '1990-12-15', round(LEAST(GREATEST((25000 + 8000 * (sqrt(-2*ln(random())) * cos(2*pi()*random())))::numeric, 0), 50000), 2), 'Developer', '2021-09-01', 4);
+
+SELECT * from employees;
+
+SELECT employees.first_name, departments.name FROM employees LEFT join departments on employees.department_id = departments.id;
+
