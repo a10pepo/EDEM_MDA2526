@@ -1,8 +1,3 @@
 services:
-  contenedor_prueba_numpy:
+  pysum:
     build: .
-    working_dir: /app
-    command: ["python", "main.py"]
-
-    volumes:
-      - .:/app
