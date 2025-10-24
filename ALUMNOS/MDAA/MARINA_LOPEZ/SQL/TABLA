@@ -1,0 +1,204 @@
+
+--Crea una tabla llamada employees que contenga los siguientes campos:
+--Id
+--birth_date
+--first_name
+--last_name
+
+--Importante: los campos id, first_name y last_name deben ser NOT NULL, y id debe ser la clave primaria de la tabla.
+
+CREATE TABLE IF NOT EXISTS employees(
+id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY NOT NULL,
+birth_date DATE NOT NULL,
+first_name VARCHAR(100) NOT NULL,
+last_name VARCHAR(100) NOT NULL
+);
+
+-- Añade tres columnas a la tabla employees:
+--salary: tipo NUMERIC(10,2)
+--title: tipo VARCHAR de máximo 100 caracteres.
+--title_date: tipo DATE
+
+ALTER TABLE employees ADD COLUMN salary NUMERIC(10,2);
+ALTER TABLE employees ADD COLUMN title VARCHAR(100);
+ALTER TABLE employees ADD COLUMN title_date DATE;
+
+-- Inserta al menos 15 empleados nuevos en la tabla employees, que cumplan los siguientes criterios: 
+--Al menos 3 empleados deben tener el mismo nombre.
+--Los salarios deben variar entre 5000 y 50.000.
+--Todos los empleados deben tener un título.
+--Al menos 5 empleados deben tener title_date del año 2020.
+
+
+INSERT INTO employees (birth_date, first_name, last_name, salary, title, title_date) 
+VALUES
+('1990-05-12','Lucia','Gomez', 12000.00,'Analyst','2020-01-10'),
+('1985-11-23','Lucia','Perez', 35000.00,'Senior Analyst',  '2021-05-04'),
+('1992-03-08','Lucia','Lopez', 18000.00,'Data Engineer','2020-07-19'),
+('1988-07-19','Marcos','Diaz',  5000.00,'Support','2019-09-30'),
+('1995-12-01','Sofia','Ruiz',  27000.00,'Data Analyst', '2020-02-28'),
+('1983-01-14','Pablo','Nunez', 48000.00,'Manager','2022-11-03'),
+('1991-04-22','Ana','Martinez', 5200.00,'HR Specialist','2020-05-12'),
+('1994-09-09','Diego','Santos',15000.00,'Developer', '2020-12-20'),
+('1989-06-30','Valentina','Castro',42000.00,'Product Owner',  '2018-04-17'),
+('1993-10-05','Javier','Iglesias',26000.00,'QA Engineer',  '2020-08-08'),
+('1987-02-27','Mario','Romero',33000.00,'DevOps', '2021-03-15'),
+('1996-08-16','Camila','Herrera', 17500.00,'UX Designer', '2020-10-31'),
+('1984-05-07','Santiago','Vega',  50000.00,'Tech Lead', '2023-02-09'),
+('1990-01-29','Marta','Ortega', 9500.00,'Accountant','2020-04-03'),
+('1997-11-11','Pedro','Alonso',21000.00,'Data Scientist',  '2019-01-22');
+
+--Selecciona todos tus empleados
+--Selecciona todos tus empleados mostrando solamente el first_name y salary
+
+SELECT * FROM employees;
+SELECT first_name, salary FROM employees;
+
+-- Muestra el empleado cuyo id sea 2
+--Selecciona todos los empleados con un salario superor a 20000
+--Selecciona todos los empleados con un salario inferior o igual a 10000
+
+SELECT * FROM employees WHERE id=2;
+SELECT * FROM employees WHERE salary > 20000;
+SELECT * FROM employees WHERE salary <= 10000;
+
+--Actualiza el first_name del empleado cuyo id sea 7
+
+UPDATE employees SET first_name = 'Victoria' WHERE id = 7;
+
+-- Elimina al empleado cuyo id sea 5
+--Elimina a todos los empleados con un salario super a 20000
+
+DELETE FROM employees WHERE id = 5;
+DELETE FROM employees WHERE salary > 20000;
+
+--Selecciona todos los empleados con un salario entre 14.000 y 50.000
+--Ordena los empleados por birth_date de forma descendiente
+
+SELECT * FROM employees WHERE salary BETWEEN 14000 AND 50000;
+SELECT * FROM employees ORDER BY birth_date DESC;
+
+--Muestra los first_name de los empleados sin repetir
+--Muestrame el nombre completo del empleado como “nombre_completo” cuyo id 9 
+
+SELECT DISTINCT first_name FROM employees;
+SELECT first_name || ' ' || last_name AS nombre_completo FROM employees WHERE id = 9;
+
+--Muestra los empleados cuyo nombre empiece por P
+--Muestra los empleados cuyo nombre contenga la a
+
+SELECT * FROM employees WHERE first_name LIKE 'P%';
+SELECT * FROM employees WHERE first_name LIKE '%a%';
+
+--Muestra el número total de empleados
+--Muestra el empleado con el salario más alto
+
+SELECT COUNT (id) FROM employees;
+SELECT first_name, last_name, salary
+FROM employees
+WHERE salary = (SELECT MAX(salary) FROM employees);
+
+
+--Muestra el salario medio por titulo
+SELECT title, ROUND(AVG (salary)) AS salario_medio
+FROM employees
+GROUP BY title;
+
+--Muestra el salario máximo y mínimo por título
+SELECT title,
+       MAX(salary) AS salario_mas_alto,
+       MIN(salary) AS salario_mas_bajo
+FROM employees
+GROUP BY title;
+
+--Muestra el first_name y salary de cada empleado redondeando a 2 decimales
+SELECT first_name, salary, ROUND(salary,2) FROM employees;
+
+
+-- EXTRA Escribe una consulta SQL que, a partir de la tabla employees, calcule el importe de impuestos aplicando un 21 % sobre el salario bruto y obtenga el salario neto (bruto − impuestos), mostrando los resultados con 2 decimales y usando alias (AS) claros.
+
+--Seleccionar el nombre del empleado (first_name) y su salary.
+--Calcular la columna impuestos como el 21 % del salario (salary * 0.21) y redondearla a 2 decimales.
+--Calcular la columna salario_neto como salary - impuestos, también redondeada a 2 decimales.
+--Usar alias (AS) exactamente con los nombres: impuestos y salario_neto
+
+
+
+-- Crea una tabla llamada llamada departments que contenga un campo llamado name.
+
+CREATE TABLE IF NOT EXISTS departments (
+id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY NOT NULL,
+dep_name VARCHAR(100)
+);
+-- Modifica tu tabla de employees y añade la FK department_id que haga referencia al id de la tabla departments.
+
+ALTER TABLE employees ADD COLUMN departments_id INTEGER REFERENCES departments(id);
+
+-- Inserta dos departamentos en la nueva tabla departments, por ejemplo:
+-- Engineering
+-- Marketing
+
+INSERT INTO departments(dep_name) 
+VALUES
+('Engineering'),
+('Marketing');
+
+
+-- Actualiza tres empleados en la tabla employees:
+-- Asigna dos empleados al departamento Engineering.
+-- Asigna un empleado al departamento Marketing.
+
+
+UPDATE employees SET departments_id = 1 WHERE id = 1;
+UPDATE employees SET departments_id = 1 WHERE id = 5;
+UPDATE employees SET departments_id = 2 WHERE id = 8;
+
+
+-- Realiza una consulta que muestre todos los empleados junto con el nombre de su departamento.
+
+SELECT employees.id, 
+ employees.first_name,
+ employees.last_name, 
+ departments.dep_name
+FROM employees
+LEFT JOIN departments
+ON employees.departments_id = departments_id;
+
+-- Crea las siguientes consultas :
+
+--Inserta 1 departamento.
+
+INSERT INTO departments(dep_name)
+VALUES ('RRHH');
+
+--Muestra todos los departamentos.
+SELECT * FROM departments
+
+--Inserta 1 empleado con departamento.
+
+INSERT INTO employees (departments_id, birth_date, first_name, last_name, salary, title, title_date) 
+VALUES
+(2,'1999-08-24','Marina','Lopez', 44000.00,'Marketing','2020-08-24');
+
+--Muestra todos los empleados.
+
+SELECT * FROM employees
+
+--Muestra todos los empleados junto con el nombre del departamento al que pertenecen.
+
+SELECT 
+employees.first_name AS name, 
+departments.dep_name AS departamento
+FROM employees
+LEFT JOIN departments
+ON departments.id = employees.departments_id;
+
+-- Muestra todos los empleados con sus departamentos independientemente de si tienen departamento o no
+
+SELECT 
+employees.first_name AS name, 
+departments.dep_name AS departamento
+FROM employees
+FULL OUTER JOIN departments
+ON departments.id = employees.departments_id;
+
