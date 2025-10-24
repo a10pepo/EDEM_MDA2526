@@ -6,7 +6,7 @@ url = os.getenv("DATABASE_URL")
 connection = psycopg.connect(url)
 # Cursor
 cur = connection.cursor()
-print("BD conectada con éxito")
+print("BD conectada con éxito!")
 
 
 def createTableDepartments():
