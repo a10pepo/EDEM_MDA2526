@@ -6,20 +6,21 @@ services:
     volumes:
       - postgresDB:/var/lib/postgresql/data
     ports:
-      - "5434:5432"
+      - "5432:5432"
     restart: unless-stopped
+
   app:
     image: python:3.11-slim
     working_dir: /app
     volumes:
-      - ./:/app
+      - ./:/app       
     env_file: .env
     command: >
       sh -c "pip install -r requirements.txt && python main.py"
     depends_on:
-      - db
+    - db
+
 
 volumes:
   postgresDB:
-
 
