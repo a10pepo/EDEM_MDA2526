@@ -318,22 +318,22 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>4.0</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/PAOLA_REGUERA'>PAOLA_REGUERA</a></td>
 <td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>0.0</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>8.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -363,18 +363,18 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/SILVIA_PLA'>SILVIA_PLA</a></td>
 <td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
+<td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>0.0</td>
+<td>✅</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-10-22 07:18:18
+Last Checked: 2025-10-25 07:00:19
 
 
 Entregas Grupo MDA A
@@ -619,13 +619,13 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-<td>0.0</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>8.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-10-22 07:18:18
+Last Checked: 2025-10-25 07:00:19
 
 Entregas Grupo MDA B
 <table>
@@ -805,8 +805,8 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>2.0</td>
+<td>✅</td>
+<td>4.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -905,8 +905,8 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>4.0</td>
+<td>✅</td>
+<td>6.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -955,8 +955,8 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>2.0</td>
+<td>✅</td>
+<td>4.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1005,8 +1005,8 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>2.0</td>
+<td>✅</td>
+<td>4.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1080,8 +1080,8 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
-<td>2.0</td>
+<td>✅</td>
+<td>4.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1162,5 +1162,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-10-22 07:18:18
+Last Checked: 2025-10-25 07:00:19
 
