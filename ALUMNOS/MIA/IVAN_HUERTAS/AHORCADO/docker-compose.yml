@@ -30,6 +30,6 @@ services:
       echo ' CONTENIDO DE LA TABLA RESULTADOS '; 
       psql -h db -U user -d ahorcado_db -c 'SELECT palabra, intentos, letras_acertadas, letras_falladas FROM resultados ORDER BY palabra, intentos LIMIT 20;'; 
       "
-
+#esto esta medio mal porque intento automatizarlo y aun buscando con ia y demas no me ha salido asi que lo he dejado sin más
 volumes:
   postgres_data:
