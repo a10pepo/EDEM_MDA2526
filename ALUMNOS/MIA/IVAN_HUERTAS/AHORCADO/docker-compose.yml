@@ -1,7 +1,8 @@
+# version: '3.8'
 
 services:
   db:
-    image: postgres:17-alpine
+    image: postgres:14-alpine
     container_name: ahorcado_db
     restart: always
     environment:
@@ -21,7 +22,14 @@ services:
       DB_NAME: ahorcado_db
       DB_USER: user
       DB_PASSWORD: password
-    command: ["/bin/sh", "-c", "python ahorcado.py palabras.txt"] 
+    command: >
+      /bin/sh -c "
+      sleep 15; 
+      python ahorcado.py palabras.txt; 
+      echo ''; 
+      echo ' CONTENIDO DE LA TABLA RESULTADOS '; 
+      psql -h db -U user -d ahorcado_db -c 'SELECT palabra, intentos, letras_acertadas, letras_falladas FROM resultados ORDER BY palabra, intentos LIMIT 20;'; 
+      "
 
 volumes:
   postgres_data:
