@@ -1,0 +1,27 @@
+
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: ahorcado_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ahorcado_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  
+  app:
+    build: .
+    container_name: ahorcado_app
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_NAME: ahorcado_db
+      DB_USER: user
+      DB_PASSWORD: password
+    command: ["/bin/sh", "-c", "python ahorcado.py palabras.txt"] 
+
+volumes:
+  postgres_data:

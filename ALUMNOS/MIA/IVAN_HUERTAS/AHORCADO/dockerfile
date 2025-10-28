@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["python3", "ahorcado.py"]
+CMD ["python3", "ahorcado.py", "palabras.txt"]
 
 
