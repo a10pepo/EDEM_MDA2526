@@ -131,4 +131,3 @@ if __name__ == "__main__":
         sys.exit(1)
         
     ejecutar_ahorcado_db(lista_palabras)
-    print("")
