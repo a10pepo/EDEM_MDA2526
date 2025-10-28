@@ -1,4 +1,4 @@
-import os, psycopg
+import os, psycopg, requests, time
 from datetime import datetime
 abecedario = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'
 with open('palabras.txt', 'r', encoding='utf-8') as archivo:
@@ -29,6 +29,8 @@ def ahorcado(palabras, abecedario):
                 dict = {'palabra':palabra, 'letras_acertadas':letras_adiv, 'letras_falladas':letras_falladas,
                         'intentos':intentos, 'tiempo':datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
                 lista_dict.append(dict)
+        letras_adiv = []
+        letras_falladas = []
         letra_abecedario = 0
         letras_adivinadas = 0
     print(f'Los intentos son {intentos}')
@@ -51,12 +53,11 @@ except:
 def crearTabla():
     try:
         query = """CREATE TABLE IF NOT EXISTS palabras (
-        id INTEGER PRIMARY KEY,
         palabra VARCHAR,
         letras_acertadas VARCHAR,
         letras_falladas VARCHAR,
         intentos INTEGER,
-        tiempo TIMESTAMPZ)"""
+        tiempo TEXT)"""
         cur.execute(query)
         connection.commit()
         print("Tabla creada")
@@ -64,15 +65,28 @@ def crearTabla():
         print("Error creando tabla:", e)
 
 crearTabla()
-def createPalabra(palabra, letras_acertadas, letras_falladas, intentos, tiempo):
-    try:
-        query = "INSERT INTO palabas (palabra, letras_acertadas, letras_falladas, intentos, tiempo) VALUES (%s, %s, %s, %s, %s)"
-        cur.execute(query, (palabra, letras_acertadas, letras_falladas, intentos, tiempo))
-        connection.commit()
-        print("Registro creado")
-    except Exception as e:
-        print("Error creando registro:", e)
-for i in lista_dict:
-    createPalabra(i['palabra'], i['letras_acertadas'], i['letras_falladas'], i['intentos'], i['tiempo'])
+# def createPalabra(palabra, letras_acertadas, letras_falladas, intentos, tiempo):
+#     try:
+#         query = "INSERT INTO palabras (palabra, letras_acertadas, letras_falladas, intentos, tiempo) VALUES (%s, %s, %s, %s, %s)"
+#         cur.execute(query, (palabra, letras_acertadas, letras_falladas, intentos, tiempo))
+#         connection.commit()
+#         print("Registro creado")
+#     except Exception as e:
+#         print("Error creando registro:", e)
+# for i in lista_dict:
+#     createPalabra(i['palabra'], i['letras_acertadas'], i['letras_falladas'], i['intentos'], i['tiempo'])
 
-cur.execute("SELECT species, COUNT(*) FROM palabras;")
+# cur.execute("SELECT * FROM palabras;")
+# print(cur.fetchall())
+
+# connection.commit()
+
+# cur.execute("DROP TABLE palabras")
+# # print(cur.fetchall())
+
+# connection.commit()
+
+request = requests.get("https://rae-api.com/api/random")
+for i in range(5):
+    lista = ahorcado(request.json().get('data')['word'], abecedario)
+    time.sleep(10)
