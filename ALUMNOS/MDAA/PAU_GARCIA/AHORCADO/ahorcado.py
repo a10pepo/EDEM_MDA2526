@@ -24,6 +24,8 @@ def ahorcado() :
         print(os.getenv("GETAPI"))
         req = requests.get("https://rae-api.com/api/random")
         word = req.json()["data"]["word"].lower()
+        reemplazos = str.maketrans("áéíóúÁÉÍÓÚüÜ", "aeiouAEIOUuU")
+        word = word.translate(reemplazos)
         file = "palabrasrae.txt"
         with open(file, "w") as f:
             f.write(word)
@@ -40,7 +42,10 @@ def ahorcado() :
                 if letra in line: 
                     acertadas += letra
                     count = count - line.count(letra)
-                else : falladas += letra
+                    print(letra + " acertada")
+                else : 
+                    falladas += letra
+                    print(letra + " fallada")
                 total = total +1
                 query = """INSERT INTO ahorcado (palabra,letras_adivinadas,
                     letras_falladas,intentos) VALUES (%s,%s,%s,%s);"""
@@ -93,8 +98,6 @@ def ahorcadoplus() :
 createtable()
 ahorcado()
 
-# while (True) :
-#     ahorcado()
-#     with open(file, "w") as archivo :
-#         if os.getenv("GETAPI") : archivo.write("")
-#     time.sleep(10)
+while (True) :
+    ahorcado()
+    time.sleep(10)
