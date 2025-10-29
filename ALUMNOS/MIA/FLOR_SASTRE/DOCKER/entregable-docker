@@ -1,0 +1,7 @@
+# Construir un script en python que acepte dos números como parámetros e imprima el resultado de la suma
+
+def suma(a, b):
+    return a + b
+
+print(suma(5, 2))
+
