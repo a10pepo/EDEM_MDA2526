@@ -2,8 +2,11 @@ import sys
 import string
 import os
 import psycopg2
+import requests
 from datetime import datetime
-from time import sleep
+from time import sleep 
+
+RAE_API_URL = "https://rae-api.com/api/random" 
 
 def connect_to_db():
     for _ in range(15): 
@@ -35,6 +38,28 @@ def setup_db(conn):
         """)
     conn.commit()
     conn.commit()
+
+def obtener_palabra_de_api():
+    try:
+        response = requests.get(RAE_API_URL, timeout=5)
+        response.raise_for_status()
+
+        data = response.json()
+        
+        palabra = data.get('data', {}).get('word')
+        
+        if palabra:
+            return palabra
+        else:
+            print("ERROR API: Respuesta de API sin campo 'word'.")
+            return None
+            
+    except requests.exceptions.RequestException as e:
+        print(f"ERROR API: Fallo de conexión o respuesta: {e}")
+        return None
+    except Exception as e:
+        print(f"ERROR: Fallo al procesar la respuesta JSON: {e}")
+        return None
 
 def adivinar_palabra_por_fuerza_bruta_y_log(conn, palabra_objetivo):
     
@@ -71,10 +96,10 @@ def adivinar_palabra_por_fuerza_bruta_y_log(conn, palabra_objetivo):
             if letras_acertadas_set == letras_a_descubrir:
                 print(f"| Palabra: {palabra_upper.ljust(15)} | Intentos loggeados: {intentos}")
                 return
+
 def print_results(conn):
     print("CONTENIDO FINAL DE LA TABLA RESULTADOS")
     
-
     sql_query = """
         SELECT palabra, intentos, letras_acertadas, tiempo 
         FROM resultados 
@@ -93,41 +118,36 @@ def print_results(conn):
             palabra, intentos, acertadas, tiempo = row
             
             print(f"{palabra.ljust(15)} | {str(intentos).ljust(10)} | {acertadas.ljust(15)} | {tiempo}")
-def ejecutar_ahorcado_db(lista_palabras):
+
+def ejecutar_ahorcado_db():
     
     conn = connect_to_db()
     setup_db(conn)
-    print("Conexión y tabla 'resultados' creadas.")
+    
 
-    print("Iniciando Simulación y Log de Datos")
-    for palabra in lista_palabras:
-        if not palabra:
-            continue
-        adivinar_palabra_por_fuerza_bruta_y_log(conn, palabra.strip())
+    while True:
+        
+       
+        
+        palabra = obtener_palabra_de_api()
+        
+        if palabra:
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Palabra recibida: '{palabra.upper()}'")
+            adivinar_palabra_por_fuerza_bruta_y_log(conn, palabra.strip())
+        else:
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] No se pudo obtener una palabra. Reintentando...")
 
-    print_results(conn) 
-
-    conn.close()
-    print(" Proceso completado. Datos almacenados y mostrados.")
-
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Pausando 10 segundos antes de la próxima solicitud...")
+        sleep(10)
 
 if __name__ == "__main__":
     
-    if len(sys.argv) != 2:
-        print("Uso: python ahorcado.py palabras.txt")
-        sys.exit(1)
-    
-    nombre_archivo = sys.argv[1]
-    
     try:
-        with open(nombre_archivo, "r") as f:
-            lista_palabras = [linea.strip() for linea in f if linea.strip()]
+        ejecutar_ahorcado_db()
+    except ConnectionError as e:
+    
+        sys.exit(1)
+    except KeyboardInterrupt:
+        sys.exit(0)
     except Exception as e:
-        print(f"Error al leer {nombre_archivo}: {e}")
         sys.exit(1)
-
-    if not lista_palabras:
-        print(f"El archivo {nombre_archivo} está vacío o no contiene palabras válidas :(")
-        sys.exit(1)
-        
-    ejecutar_ahorcado_db(lista_palabras)
