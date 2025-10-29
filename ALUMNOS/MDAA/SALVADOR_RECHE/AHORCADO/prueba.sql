@@ -1,1 +1,1 @@
-SELECT * FROM Ahorcado;
+USE pruebadb;

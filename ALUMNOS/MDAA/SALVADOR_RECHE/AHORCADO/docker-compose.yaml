@@ -6,7 +6,7 @@ services:
     volumes:
       - postgresDB:/var/lib/postgresql/data
     ports:
-      - "5445:5432"
+      - "5433:5432"
     restart: unless-stopped
   app:
     image: python:3.11-slim

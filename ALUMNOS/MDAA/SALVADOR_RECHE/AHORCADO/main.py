@@ -135,36 +135,36 @@ lista = list(bad)
 
 
 # Bucle para pedir palabra cada 10 segundos
-# while True:
-#     try:
-#         response = requests.get("https://rae-api.com/api/random")
-#         data = response.json()
-#         palabra = data["data"]["word"]
+while True:
+    try:
+        response = requests.get("https://rae-api.com/api/random")
+        data = response.json()
+        palabra = data["data"]["word"]
 
 
-#         palabra = palabra.upper()
-#         palabra = eliminar_tildes(palabra)
-#         print(palabra, flush=True)
-#         recorrerPalabra(palabra)
-#         obtenerUltimaPalabra()
-#     except Exception as e:
-#         print("Error al solicitar la API:", e)
+        palabra = palabra.upper()
+        palabra = eliminar_tildes(palabra)
+        print(palabra, flush=True)
+        recorrerPalabra(palabra)
+        obtenerUltimaPalabra()
+    except Exception as e:
+        print("Error al solicitar la API:", e)
 
-#     connection.commit()
+    connection.commit()
     
     
-#     # Esperamos 10 segundos antes de la siguiente petición
-#     time.sleep(10)
+    # Esperamos 10 segundos antes de la siguiente petición
+    time.sleep(10)
 
 
-for palabra in lista:
-    aux = []
-    if palabra in aux:
-        continue
-    else: 
-        contador += recorrerPalabra(palabra)
-        aux.append(palabra)
-    print(aux)
+# for palabra in lista:
+#     aux = []
+#     if palabra in aux:
+#         continue
+#     else: 
+#         contador += recorrerPalabra(palabra)
+#         aux.append(palabra)
+#     print(aux)
 
 def createTableAhorcado():
     try:
