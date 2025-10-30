@@ -56,3 +56,4 @@ elif norm(palabra) in bad:
     print(f"NO CORRECTA ({norm(palabra)} está en el .txt)")
 else:
     print("CORRECTA")
+
