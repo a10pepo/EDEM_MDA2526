@@ -2,6 +2,8 @@ import pandas as pd
 import psycopg
 import os
 
+reemplazos = str.maketrans("áéíóúÁÉÍÓÚüÜ", "aeiouAEIOUuU")
+
 def create_rae_table():
     try:
         # Get database connection
@@ -23,13 +25,13 @@ def create_rae_table():
         
         # Insert words into RAE table, ignoring duplicates
         for index, row in df.iterrows():
+            normalized_word = normalizar(row.iloc[0])
             query = """
             INSERT INTO rae (palabra) 
             VALUES (%s)
             ON CONFLICT (palabra) DO NOTHING;
             """
-            cur.execute(query, (row.iloc[0],))
-            print(row.iloc[0] + " introducida")
+            cur.execute(query, (normalized_word,))
         
         connection.commit()
         print("RAE table created and populated successfully")
@@ -42,6 +44,11 @@ def create_rae_table():
         if 'connection' in locals():
             cur.close()
             connection.close()
+
+def normalizar(s) :
+    if s is None:
+        return s
+    return s.strip().lower().translate(reemplazos)
 
 if __name__ == "__main__":
     create_rae_table()
