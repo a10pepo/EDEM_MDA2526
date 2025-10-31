@@ -57,7 +57,7 @@ else :
             if w:
                 bad.add(norm(w))
     if normal in bad:
-        print("INCORRECTA")
+        print("NO CORRECTA")
     else : 
         print("CORRECTA")
 
