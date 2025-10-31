@@ -25,7 +25,7 @@ def connect_to_db():
 
 def setup_db(conn):
     with conn.cursor() as cur:
-        cur.execute("DROP TABLE IF EXISTS resultados;") 
+        cur.xecute("DROP TABLE IF EXISTS resultados;") 
         cur.execute("""
             CREATE TABLE resultados (
                 id SERIAL PRIMARY KEY,
