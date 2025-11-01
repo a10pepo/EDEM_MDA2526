@@ -43,7 +43,7 @@ while True:
         intentos = simulate_guess(palabra)
         print(f"Intentos necesarios: {intentos}")
     except Exception as e:
-        print(f"❌ Error obteniendo palabra: {e}")
+        print(f"¡Error obteniendo palabra: {e}")
 
     print("Esperando 10 segundos para la siguiente palabra...\n")
     time.sleep(10)
