@@ -1,0 +1,5 @@
+FROM  python:3.14-alpine
+WORKDIR /ahorcado
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . . 
+ENTRYPOINT ["python","ahorcado.py"]
