@@ -171,13 +171,13 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/DAVID_FERNANDEZ'>DAVID_FERNANDEZ</a></td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
-<td>4.0</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -374,7 +374,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-11-03 10:59:42
+Last Checked: 2025-11-03 11:10:49
 
 
 Entregas Grupo MDA A
@@ -681,7 +681,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-11-03 10:59:42
+Last Checked: 2025-11-03 11:10:49
 
 Entregas Grupo MDA B
 <table>
@@ -1162,5 +1162,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-11-03 10:59:42
+Last Checked: 2025-11-03 11:10:49
 
