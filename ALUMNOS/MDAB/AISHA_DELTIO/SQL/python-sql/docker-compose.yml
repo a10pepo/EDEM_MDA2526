@@ -1,0 +1,104 @@
+
+
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - "./:/app"   
+    env_file:
+      - .env
+    command: >
+      sh -c "pip install -r requirements.txt && tail -f /dev/null"
+    depends_on:
+      - db
+
+volumes:
+  postgresDB:
+
+# El contenedor app no se queda start, entonces no puedo ir cambiando el codigo en main y viendolo, porque nada más hace start
+# se para (no funciona exec ni nada de eso). Puedo ejecutar docker compose run --rm app, pero se instala todo de nuevo y es muy lento
+# entonces, hemos cambiado el codigo del docker compose. Ahora puedo utilizar el comando: docker compose exec app python main.py o añadir
+# una terminal para la app y usar python main.py (con la imagen slim no funciona)
+
+
+# Dejo aquí abajo la antigua:
+
+# services:
+#   db:
+#     image: postgres:17-alpine
+#     env_file:
+#       - .env
+#     volumes:
+#       - postgresDB:/var/lib/postgresql/data
+#     ports:
+#       - "5433:5432"
+#     restart: unless-stopped
+
+#   app:
+#     image: python:3.11-slim
+#     working_dir: /app
+#     volumes:
+#       - "./:/app"   
+#     env_file:
+#       - .env
+#     command: >
+#       sh -c "pip install -r requirements.txt && python main.py"
+#     depends_on:
+#       - db
+
+# volumes:
+#   postgresDB:
+
+# Como añadir otro servicio: 
+
+# services:
+#   db:
+#     image: postgres:17-alpine
+#     env_file:
+#       - .env
+#     volumes:
+#       - postgresDB:/var/lib/postgresql/data
+#     ports:
+#       - "5433:5432" # El primer servidor usa el puerto 5433
+#     restart: unless-stopped
+
+#   # --- ESTE ES TU NUEVO SERVIDOR ---
+#   db2:
+#     image: postgres:17-alpine
+#     environment:
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+#       - POSTGRES_DB=basedatos_servidor2 # Un nombre de BD diferente
+#     volumes:
+#       - postgresDB2:/var/lib/postgresql/data # Un volumen diferente
+#     ports:
+#       - "5434:5432" # Un puerto diferente (5434)
+#     restart: unless-stopped
+#   # -----------------------------------
+
+#   app:
+#     image: python:3.11-slim
+#     working_dir: /app
+#     volumes:
+#       - "./:/app"   
+#     env_file:
+#       - .env
+#     command: >
+#       sh -c "pip install -r requirements.txt && python main.py"
+#     depends_on:
+#       - db # Tu app sigue dependiendo del primer servidor
+
+# volumes:
+#   postgresDB:
+#   postgresDB2: # Añade el nuevo volumen aquí
