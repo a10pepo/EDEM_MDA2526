@@ -8,7 +8,6 @@ import json
 import time
 import unicodedata
 
-# El abecedario (sin 'Ñ' ni tildes) que usaremos para simular
 ABECEDARIO = string.ascii_uppercase
 
 def get_random_word():
@@ -53,10 +52,7 @@ def crear_tabla(cursor):
     print("Tabla 'ahorcado' asegurada.")
 
 def procesar_una_palabra(palabra_limpia):
-    """
-    Simula el juego para UNA sola palabra y devuelve una lista 
-    con todos los pasos de la simulación.
-    """
+
     registros_palabra = []
     
     # La palabra ya viene limpia y en mayúsculas de normalizar_palabra()
