@@ -28,7 +28,7 @@ for palabra in listapalabras:
 print(numero_intentos)
 
 
-# FASE 3: Conexión y creación de la tabla
+# Conexión y creación de la tabla
 
 import os, psycopg
 url = os.getenv("DATABASE_URL")
@@ -76,7 +76,7 @@ cur.close()
 connection.close()
 print("Conexión cerrada")
 
-# FASE 4: Consulta de datos
+# Consulta de datos
 import os, psycopg
 url = os.getenv("DATABASE_URL")         
 connection = psycopg.connect(url)
