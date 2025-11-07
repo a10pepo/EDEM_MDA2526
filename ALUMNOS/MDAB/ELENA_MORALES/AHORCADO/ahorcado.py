@@ -30,22 +30,14 @@ print(numero_intentos)
 
 # FASE 3: Conexión y creación de la tabla
 
-from psycopg import sql
-from datetime import datetime
-import os   
-import psycopg
-def conectar_bd():
-    conexion = psycopg.connect(
-        dbname=os.getenv("DB_NAME"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        host=os.getenv("DB_HOST"),
-        port=os.getenv("DB_PORT")
-    )
-    return conexion
+import os, psycopg
+url = os.getenv("DATABASE_URL")
+connection = psycopg.connect(url)
+cur = connection.cursor()
+print("BD conectada con éxito")
 
-def crear_tabla():
-    return """
+
+cur.execute("""
     CREATE TABLE IF NOT EXISTS ahorcado (
     id SERIAL PRIMARY KEY,
     palabra VARCHAR(100) NOT NULL,
@@ -54,23 +46,34 @@ def crear_tabla():
     intentos INT NOT NULL,
     tiempo TIMESTAMP
 );
-    """
-register(crear_tabla)
+    """ )
+connection.commit()
+print("Tabla creada con éxito")
 
+# Insertar datos en la tabla
 
-# FASE 3.1: Inserción de resultados en la base de datos
+for palabra in listapalabras:
+    aciertos = 0
+    fallos = 0
+    numero_intentos = 0
+    for letra in letras:
+        numero_intentos += 1
+        if letra in palabra:
+            aciertos = aciertos + palabra.count(letra)
+        else:
+            fallos = fallos + 1
+        if aciertos == len(palabra):
+            break
 
-def insertar_resultado(palabra, letras_acertadas, letras_falladas, intentos):
-    conexion = conectar_bd()
-    cursor = conexion.cursor()
-    consulta = sql.SQL("""
+    cur.execute("""
         INSERT INTO ahorcado (palabra, letras_acertadas, letras_falladas, intentos, tiempo)
-        VALUES (%s, %s, %s, %s, %s)
-    """)
-    tiempo_actual = datetime.now()
-    cursor.execute(consulta, (palabra, letras_acertadas, letras_falladas, intentos, tiempo_actual))
-    conexion.commit()
-    cursor.close()
-    conexion.close()
-    print("Resultado insertado correctamente en la base de datos.")
+        VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP)
+    """, (palabra, aciertos, fallos, numero_intentos))
+    connection.commit()
+    print(f"Datos insertados para la palabra: {palabra}")
+print("Todos los datos han sido insertados con éxito")
+cur.close()
+connection.close()
+print("Conexión cerrada")
+
 
