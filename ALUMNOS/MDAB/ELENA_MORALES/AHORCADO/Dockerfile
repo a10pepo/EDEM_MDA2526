@@ -4,10 +4,9 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY . .
+COPY palabras.txt  palabras.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python", "ahorcado.py"]
 
-# EXTRA: ¿Podrías hacer que palabras.txt sea un parámetro del contenedor?
