@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  pysum-app:
+
+    build: .
+    
+    container_name: pysum-container
+    
+    command: ["python", "script.py", "4", "3"]
