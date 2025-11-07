@@ -1,5 +1,5 @@
 services:
-  ahorcadoo:
+  db:
     image: postgres:17-alpine
     env_file:
       - .env
@@ -17,6 +17,6 @@ services:
     command: >
       sh -c "pip install -r requirements.txt && python main.py" 
     depends_on:
-    - ahorcadoo
+    - db
 volumes:
     postgresDB:
