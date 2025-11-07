@@ -24,7 +24,7 @@ def procesar_palabras(lista_de_palabras):
     registros_totales = []
     
     for linea in lista_de_palabras:
-        palabra = linea
+        palabra = linea.strip().upper()
         if not palabra:
             continue
         
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     fichero = sys.argv[1]
     url = os.getenv("DATABASE_URL")
 
-    # --- Bloque principal de ejecución ---
+    # --- 2. Bloque principal de ejecución ---
     conn = None
     try:
         # Usamos 'with' para asegurar que la conexión se cierre sola
