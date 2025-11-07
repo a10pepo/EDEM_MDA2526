@@ -1,7 +1,6 @@
 import string
-import os
 import sys
-import requests
+
 
 ABECEDARIO = string.ascii_uppercase  # "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
