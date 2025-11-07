@@ -76,4 +76,18 @@ cur.close()
 connection.close()
 print("Conexión cerrada")
 
+# FASE 4: Consulta de datos
+import os, psycopg
+url = os.getenv("DATABASE_URL")         
+connection = psycopg.connect(url)
+cur = connection.cursor()
+print("BD conectada con éxito")
+cur.execute("SELECT * FROM ahorcado;")
+rows = cur.fetchall()
+for row in rows:
+    print(row)
+cur.close()
+connection.close()
+print("Conexión cerrada")
+
 
