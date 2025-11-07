@@ -1,0 +1,22 @@
+services:
+  ahorcadoo:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    ports:
+      - "5439:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  app: 
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    env_file: .env 
+    command: >
+      sh -c "pip install -r requirements.txt && python main.py" 
+    depends_on:
+    - ahorcadoo
+volumes:
+    postgresDB:
