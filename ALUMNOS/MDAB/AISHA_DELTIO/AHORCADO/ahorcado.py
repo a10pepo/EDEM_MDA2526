@@ -52,7 +52,7 @@ if __name__ == "__main__":
     
     if len(sys.argv) < 2:
         print("Uso: python ahorcado.py <nombre_del_fichero>")
-        sys.exit(1)
+        sys.exit(1) 
 
     fichero_palabras = sys.argv[1]
     
