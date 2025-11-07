@@ -77,7 +77,18 @@ for palabra in lista_palabras:
     ))
     connection.commit()
 
+# =============================
+# MOSTRAMOS TODOS LOS RESULTADOS
+# =============================
+print("\n📊 RESULTADOS INSERTADOS EN LA BASE DE DATOS:\n")
+
+cur.execute("SELECT * FROM resultados")
+registros = cur.fetchall()
+
+for fila in registros:
+    print(fila)
+
 # Cerramos la conexión con la base de datos
 cur.close()
 connection.close()
-print("Inserciones completadas correctamente en PostgreSQL.")
+print("\n✅ Inserciones completadas y datos mostrados correctamente en PostgreSQL.")
