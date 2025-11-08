@@ -1,18 +1,21 @@
-import os, psycopg, string
+import os, psycopg, string, time
 
 
-# Conectar a la base de datos
-try:
-    #URL CONEXIÓN A BD 
-    url = os.getenv("DATABASE_URL")
-    #CONEXIÓN A BD
-    connection = psycopg.connect(url)
-    # Cursor
-    cur = connection.cursor()
-    print("BD conectada con éxito")
-except Exception as e:
-    print("Error conectando a la BD")
-    print(e)
+# URL de conexión a la base de datos
+url = os.getenv("DATABASE_URL")
+
+# Intentar conectar hasta que funcione
+while True:
+    try:
+        connection = psycopg.connect(url)
+        cur = connection.cursor()
+        print("BD conectada con éxito")
+        break  # sale del bucle si se conecta correctamente
+
+    except Exception as e:
+        print("Error conectando a la BD, reintentando en 3 segundos...")
+        print(e)
+        time.sleep(3)
 
 # Crear la tabla
 try:
@@ -76,15 +79,9 @@ with open("palabras.txt", encoding="utf-8") as doc_palabras:
             n_letras = n_letras - n_aparicion
             
             if n_letras == 0:
-                break
-            
-            
+                break                                  
+
 # Calcular tiempo 
-# ... (código anterior)
-
-# Asumimos que la conexión sigue activa, si no, hay que reabrirla.
-# Asegúrate de haber ejecutado connection.commit() después de las inserciones.
-
 try:
     # Consulta SQL para calcular la duración total de TODO el script
     query_total_time = """
