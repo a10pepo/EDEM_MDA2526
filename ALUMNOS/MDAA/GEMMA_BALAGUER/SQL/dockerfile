@@ -1,0 +1,11 @@
+FROM python:3.11-slim
+
+WORKDIR /Users/gbala/OneDrive/Escritorio\Máster Big Data/SQL/sql-entrgrega2
+
+RUN pip install psycopg
+
+COPY app.py .
+
+COPY wait.sh .
+
+RUN chmod +x wait.sh
