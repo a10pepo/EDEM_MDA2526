@@ -1,6 +1,7 @@
 **/.DS_Store
 **/.venv/
 **/venv/
+**/postgresDB/
 .DS_Store
 Alumnos/.DS_Store
 __pycache__
