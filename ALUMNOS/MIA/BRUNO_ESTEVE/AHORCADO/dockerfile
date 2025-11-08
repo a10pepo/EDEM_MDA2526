@@ -2,6 +2,7 @@ FROM python:3.14-slim
 
 WORKDIR /app
 
-COPY . .
+COPY ahorcado*.py .
+COPY palabras.txt .
 
 CMD ["python", "ahorcado.py"]
