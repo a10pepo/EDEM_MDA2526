@@ -8,7 +8,7 @@ services:
       - postgresDB:/var/lib/postgresql/data
     ports:
       - "5430:5432"
-    restart: no
+    restart: unless-stopped
 
   ahorcado:
     image: python:3.11-slim
@@ -23,9 +23,6 @@ services:
           python ahorcado.py"
     depends_on:
       - ahorcado_db
-    ports:
-      - "5000:5000"
-    restart: no
 
 volumes: 
   postgresDB:
