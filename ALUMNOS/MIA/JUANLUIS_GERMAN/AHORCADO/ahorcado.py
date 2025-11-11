@@ -34,25 +34,28 @@ contador_ordenado = 0
 
 
 # --- CONEXIÓN A LA BD ---
-try:
-    connection = ps.connect(url)
-    cur = connection.cursor()
-    print("BD conectada con éxito")
+while True:
+    try:
+        connection = ps.connect(url)
+        cur = connection.cursor()
+        print("BD conectada con éxito")
 
-    cur.execute("""
-    CREATE TABLE IF NOT EXISTS resultados_ahorcado(
-        id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-        palabra TEXT NOT NULL,
-        letras_acertadas TEXT NOT NULL,
-        letras_falladas TEXT,
-        intentos INT,
-        tiempo TIMESTAMP NOT NULL DEFAULT now()); """)
-    connection.commit()
-    print("Tabla 'resultados_ahorcado' creada o ya existía")
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS resultados_ahorcado(
+            id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            palabra TEXT NOT NULL,
+            letras_acertadas TEXT NOT NULL,
+            letras_falladas TEXT,
+            intentos INT,
+            tiempo TIMESTAMP NOT NULL DEFAULT now()); """)
+        connection.commit()
+        print("Tabla 'resultados_ahorcado' creada o ya existía")
+        break
 
-except Exception as e:
-    print("Error conectando a la BD:", e)
-    exit(1)
+    except Exception as e:
+        print(f"Error conectando a la BD: {e}\n")
+        print("Reintento en 5 segundos")
+        time.sleep(5)
 
 
 # # --- FUNCIÓN DE INSERCIÓN ---
