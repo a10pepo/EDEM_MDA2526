@@ -1,8 +1,5 @@
 # Fase 1: Codificación
 
-from atexit import register
-
-
 numero_intentos = 0
 
 #Esto lo hacemos para traernos el archivo, si cambiamos una palabra en palabras.txt, se cambia automáticamente, y no hace falta cambiarlo a mano
@@ -82,6 +79,7 @@ url = os.getenv("DATABASE_URL")
 connection = psycopg.connect(url)
 cur = connection.cursor()
 print("BD conectada con éxito")
+
 cur.execute("SELECT * FROM ahorcado;")
 rows = cur.fetchall()
 for row in rows:
@@ -89,5 +87,6 @@ for row in rows:
 cur.close()
 connection.close()
 print("Conexión cerrada")
+
 
 
