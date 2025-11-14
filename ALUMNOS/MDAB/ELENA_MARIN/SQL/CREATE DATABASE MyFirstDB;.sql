@@ -1,4 +1,4 @@
-CREATE DATABASE myfirstdb;
+CREATE DATABASE nueva_db;
 
 CREATE TABLE IF NOT EXISTS employees (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -113,14 +113,16 @@ FROM employees
 
 SELECT salary, salary*0.21 AS importe_de_impuestos FROM employees;
 
-
--- Seleccionar el nombre del empleado (first_name) y su salary.
-
 -- Calcular la columna impuestos como el 21 % del salario (salary * 0.21) y redondearla a 2 decimales.
-
 -- Calcular la columna salario_neto como salary - impuestos, también redondeada a 2 decimales.
-
 -- Usar alias (AS) exactamente con los nombres: impuestos y salario_neto
+
+SELECT
+    salary AS "Salario_Bruto",
+    ROUND(salary * 0.21, 2) AS "Impuesto_21%",
+    ROUND(salary - (salary * 0.21), 2) AS "Salario_Neto"
+FROM
+    employees;
 
 
 -- PRACTICA 2
