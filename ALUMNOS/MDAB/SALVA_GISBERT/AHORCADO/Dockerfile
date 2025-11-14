@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app
 
-ENTRYPOINT ["python", "ahorcado_apiRAE.py"]
+ENTRYPOINT ["python", "ahorcado.py"]
