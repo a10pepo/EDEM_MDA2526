@@ -11,7 +11,7 @@ def createTableAhorcado():
     try:
         query = """
         DROP TABLE ahorcado;
-        CREATE TABLE IF NOT EXISTS ahorcado(
+        CREATE TABLE ahorcado(
             intentos INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             palabra VARCHAR(100),
             letras_acertadas VARCHAR(100),
