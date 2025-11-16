@@ -58,12 +58,19 @@ En la interfaz web, busca el tópico `ventas2025` y revisa los mensajes enviados
 En la UI, selecciona el tópico `ventas2025` y usa la opción **Produce a message** para enviar mensajes como:
 
 ```
-Cliente XYZ: compra confirmada
-Informe trimestral: listo
-Pedido #202: 300 unidades
-Nueva campaña marketing: lanzada
-etc....
+{
+	"ordertime": 1497014222380,
+	"orderid": 18,
+	"itemid": "Item_184",
+	"address": {
+		"city": "Mountain View",
+		"state": "CA",
+		"zipcode": 94041
+	}
+}
 ```
+
+La consola web es un poco más extricta y obliga a enviar mensajes formateados como texto JSON.
 
 ### 5) Ver Mensajes en la Consola
 

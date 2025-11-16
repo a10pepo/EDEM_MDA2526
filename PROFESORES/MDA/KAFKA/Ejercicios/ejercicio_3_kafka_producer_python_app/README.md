@@ -4,6 +4,7 @@
 
 Aprender a enviar mensajes a un tópico de Kafka usando Python y la librería `confluent_kafka`. Este ejercicio simula un flujo de datos en tiempo real, como actualizaciones de proyectos empresariales.
 
+Comprender cómo funciona un productor Kafka, cómo se envían mensajes y cómo personalizar el flujo para casos reales.
 ---
 
 ## Requisitos
@@ -21,24 +22,20 @@ pip install confluent-kafka
 ## Pasos para realizar el ejercicio
 
 1. **Revisa el código del productor**:
+   - Ya tienes una app Python de un Kafka Producer en `producer.py`
    - Observa cómo se configura el productor (`bootstrap.servers` y `client.id`).
    - Fíjate en cómo se define el tópico y se envían los mensajes.
 
 2. **Ejecuta el código**:
-   - Guarda el script en un archivo, por ejemplo: `producer.py`.
-   - Ejecuta el script:
+   - Ejecuta el script `producer.py`:
 
 ```bash
 python producer.py
 ```
 
 3. **Observa la salida**:
-   - Verás en la consola los mensajes que se están enviando.
+   - Abre una consola y observa los mensajes que se están enviando al topic `proyectos_innovacion`
    - Cada mensaje simula datos de negocio (proyecto, presupuesto, estado).
-
-4. **Comprueba en Kafka**:
-   - Si tienes un consumidor, ejecútalo para ver los mensajes recibidos.
-
 ---
 
 ## Ejercicios extra
@@ -64,7 +61,3 @@ python producer.py
    - Ejemplo: si `e` es par, estado = "Aprobado"; si es impar, estado = "Pendiente".
 
 ---
-
-## Objetivo final
-
-Comprender cómo funciona un productor Kafka, cómo se envían mensajes y cómo personalizar el flujo para casos reales.

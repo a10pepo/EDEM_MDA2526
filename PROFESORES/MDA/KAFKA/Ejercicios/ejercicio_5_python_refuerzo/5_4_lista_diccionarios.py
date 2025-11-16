@@ -1,7 +1,7 @@
 # ============================================
 # EJERCICIO 4: LISTA DE DICCIONARIOS
 # ============================================
-# Vamos a crear una lista que contiene varios diccionarios.
+# Vamos a crear una lista que contiene varios diccionarios, con los simbolos python `[]`
 
 alumnos = [
     {"nombre": "Ana", "nota": 9},
@@ -19,6 +19,6 @@ for alumno in alumnos:
 
 # ============================================
 # EJERCICIOS:
-# 1. Añade un nuevo alumno con nombre "Pedro" y nota 6.
+# 1. Añade un nuevo alumno con nombre "Pedro" y nota 9.
 # 2. Calcula la nota media de todos los alumnos.
 # 3. Muestra solo los nombres de los alumnos.

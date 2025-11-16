@@ -63,7 +63,10 @@ for e in range(100):
 
     # Convertimos el diccionario a una cadena JSON (texto estructurado).
     # dumps() transforma un objeto Python (dict) en texto JSON (str)
-    data_str = dumps(data)
+    # Por defecto, JSON convierte caracteres especiales (como á, ñ, ó) a códigos Unicode (\uXXXX)
+    # porque intenta usar solo ASCII (un estándar antiguo que solo incluye letras inglesas).
+    # Al poner ensure_ascii=False, mantenemos los acentos y caracteres tal cual.
+    data_str = dumps(data, ensure_ascii=False)
 
     # Convertimos la cadena a bytes porque Kafka trabaja con datos binarios.
     # ¿Por qué binario? Porque es el formato estándar para enviar datos por la red.
@@ -76,7 +79,7 @@ for e in range(100):
     # sino que se guarda en un buffer interno y se envía en segundo plano.
     producer.produce(topic=topic_kafka, value=data_bytes)
 
-    # Mostramos en pantalla lo que estamos enviando para que el alumno lo vea.
+    # Mostramos en pantalla lo que estamos enviando.
     print(f"Enviando datos: {data} al tópico {topic_kafka}")
 
     # Pausa de 1 segundo entre mensajes para simular un flujo en tiempo real.

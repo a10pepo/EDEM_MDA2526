@@ -6,9 +6,8 @@
 
 persona = {
     "nombre": "Ana",
-    "edad": 30,
-    "ciudad": "Valencia",
-    "profesion": "Ingeniera"
+    "edad": 25,
+    "ciudad": "Valencia"
 }
 
 print("Diccionario completo:", persona)

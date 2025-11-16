@@ -3,8 +3,8 @@
 ## ¿Qué es Kafka?
 Kafka es una plataforma de mensajería distribuida que permite enviar y recibir datos en tiempo real entre aplicaciones.  
 Piensa en Kafka como un **buzón gigante** donde:
-- **Productores** dejan mensajes.
-- **Consumidores** los recogen.
+- **Productores** crean y envian mensajes.
+- **Consumidores** los leen.
 - Los mensajes se organizan en **tópicos** (canales).
 
 ---
@@ -49,6 +49,8 @@ Piensa en Kafka como un **buzón gigante** donde:
 ### 1) Levantar Kafka y Zookeeper
 Escenario simple: 1 Zookeeper + 1 broker Kafka.
 
+Abre una terminal, y ves a la ruta donde se encuentra el fichero KAFKA/docker-compose.yml
+
 ```sh
 # Levantar los contenedores en segundo plano
 docker-compose up -d
@@ -74,7 +76,7 @@ lab0_zookeeper_1   /etc/confluent/docker/run   Up      0.0.0.0:2181->2181/tcp
 #### Verificar logs de Zookeeper:
 ```sh
 # Windows
-docker-compose logs zookeeper | Select-String binding
+docker-compose logs zookeeper | findstr binding
 # Linux / macOS
 docker-compose logs zookeeper | grep -i binding
 ```
@@ -82,7 +84,7 @@ docker-compose logs zookeeper | grep -i binding
 #### Verificar logs de Kafka:
 ```sh
 # Windows
-docker-compose logs kafka | Select-String started
+docker-compose logs kafka | findstr started
 # Linux / macOS
 docker-compose logs kafka | grep -i started
 ```
@@ -129,34 +131,20 @@ kafka
 
 ---
 
-### 6) Producir mensajes con claves
-```sh
-docker-compose exec kafka kafka-console-producer   --topic topicEdem   --broker-list localhost:9092   --property "parse.key=true"   --property "key.separator=:"
-```
-
-Ejemplo:
-```
-spain:3
-france:4
-germany:2
-```
-
-*(Por defecto las claves no se ven en el consumidor)*
-
----
 
 ## Ejercicios opcionales
 1. Crea un segundo tópico llamado `students` y produce mensajes con nombres.
-2. Abre dos consumidores y observa cómo reciben los mensajes.
+2. Abre dos consumidores que lean del topic `students` y observa cómo reciben los mensajes cuando los produces desde otra consola.
 3. ¿Qué pasa si cambias `--from-beginning` por no ponerlo?
 
 ---
 
 ## Glosario rápido
-- **Broker**: Servidor Kafka.
-- **Zookeeper**: Coordina brokers.
-- **Tópico**: Canal de mensajes.
-- **Partición**: Subdivisión del tópico.
-- **Replicación**: Copias para alta disponibilidad.
 - **Productor**: Envía mensajes.
 - **Consumidor**: Lee mensajes.
+- **Broker**: Servidor Kafka donde se guardan los mensajes producidos por el Productor, y desde donde los lee un Consumidor tantas veces como necesite.
+- **Tópico**: Canal de mensajes.
+- **Partición**: Subdivisión del tópico.
+- **Replicación**: Copias para alta disponibilidad.Son copias de seguridad.
+- **Zookeeper**: Coordina brokers Kafka. Es un componente puramente técnico y de soporte para que funcione Kafka.
+
