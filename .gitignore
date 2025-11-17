@@ -10,3 +10,4 @@ node_modules
 *.tfstate
 PROFESORES/MDA/AWS_ESPECIFICOS/personal
 PROFESORES/MDA/AWS_ESPECIFICOS/personal_account.sh
+ALUMNOS/MDAA/CELIA_SARRIO/AHORCADO/docker-compose.yml
