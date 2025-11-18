@@ -2,9 +2,9 @@ import os
 import datetime
 import traceback
 
-comun_obligatorio=["DOCKER","PYTHON","SQL","AHORCADO","LINUX"]
+comun_obligatorio=["DOCKER","PYTHON","SQL","LINUX"]
 mia1_obligatorio=["ESTADISTICA"]
-mda1_obligatorio=["APIS", "CHUCK", "DBT", "KAFKA", "PYSPARK"]
+mda1_obligatorio=["APIS", "VALENCIA", "DBT", "KAFKA", "PYSPARK"]
 mda2_obligatorio=["AWS_ALMACENAMIENTO", "GCP_ALMACENAMIENTO"]
 
 
