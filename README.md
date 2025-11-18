@@ -71,7 +71,7 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 <tr><th>M0</th><td>Python</td><td>03 nov.</td><td>24 oct.</td></tr>
 <tr><th>M0</th><td>Linux</td><td>28 oct.</td><td>04 oct.</td></tr>
 <tr><th>M0</th><td>Docker</td><td>04 nov.</td><td>07 nov.</td></tr>
-<tr><th>M0</th><td>Ahorcado</td><td>11 nov.</td><td>21 nov.</td></tr>
+<tr><th>M0</th><td>DBT</td><td>26 nov.</td><td>12 dic.</td></tr>
 <tr><th>M1</th><td>SQL</td><td>10 nov.</td><td>14 nov.</td></tr>
 <tr><th>M1</th><td>APIs</td><td>09 dic.</td><td>23 ene.</td></tr>
 <tr><th>M1</th><td>Kafka</td><td>02 dic.</td><td>02 ene.</td></tr>
