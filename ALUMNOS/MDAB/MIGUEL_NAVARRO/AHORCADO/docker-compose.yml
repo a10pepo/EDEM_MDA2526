@@ -10,10 +10,13 @@ services:
     restart: unless-stopped
 
   app:
-    image: ahorcado:latest
-    working_dir: /app
+    build: .
+    env_file:
+      - .env
     depends_on:
-      - db              
+      - db
+    volumes:
+      - .:/app
 
 volumes:
   postgresDB:

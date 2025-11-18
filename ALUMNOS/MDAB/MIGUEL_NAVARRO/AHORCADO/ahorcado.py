@@ -1,51 +1,93 @@
-import string, sys, os, psycopg
+import string, sys, os, psycopg, time, requests
 
 # URL CONEXIÓN A BD
 url = os.getenv("DATABASE_URL")
 # CONEXIÓN A BD
-connection = psycopg.connect(url)
+while True:
+    try:
+        connection = psycopg.connect(url)
+        print("BD conectada con éxito")
+        break
+    except psycopg.OperationalError:
+        print("La base de datos se está conectando... espere 2 segundos")
+        time.sleep(2)
 # Cursor
 cur = connection.cursor()
-print("BD conectada con éxito")
 
 # Leo el fichero y lo guardo
 with open(sys.argv[1], 'r') as f:
     content = f.read()
     words = content.split()
-letters = string.ascii_uppercase    # Guardo el abecedario
-
-# Número de intentos en el ahorcado
-total_strikes = 0
-for word in words:          # cada palabra
-    known_letters = 0
-    for letter in letters:  # cada letra
-        total_strikes += 1
-        if letter in word:  # letra en la palabra ?
-            known_letters += word.count(letter) # letras adivinadas
-        if known_letters == len(word):
-            break
-    
-print("Total strikes: ", total_strikes)
-
-
+# letters = string.ascii_uppercase          # Alfabeto (string.ascii)
+# letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"    # Alfabeto (manual)
+letters = "EAOSRNIDLCTUMPBGVYQHFZJXKW"      # Ordenador por frecuencia general español
 
 cur.execute("""CREATE TABLE IF NOT EXISTS ahorcado(
-            id                  INTEGER GENERATED ALWAYS AS INDENTITY PRIMARY KEY,
+            id                  INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             palabra             VARCHAR(30) NOT NULL,
             letras_acertadas    VARCHAR(30),
             letras_falladas     VARCHAR(30),
             intentos            INTEGER,
-            tiempo              TIMESTAMPZ DEFAULT NOW()
+            tiempo              TIMESTAMPTZ DEFAULT NOW(),
+            UNIQUE (palabra, intentos)
             );""")
+connection.commit()
+
+def insertAhorcado():   # insertar filas (intentos realizados) en la tabla
+    try:
+        query = """
+        INSERT INTO ahorcado
+        (palabra, letras_acertadas, letras_falladas, intentos)
+        VALUES (%s, %s, %s, %s)"""
+        cur.execute(query, (palabra, letras_acertadas, letras_falladas, intentos))
+    except: # Exception as e:
+        "nothing" # print("Error inserting try:", e)
+
+"""
+total_strikes = 0                # Número de intentos totales en el ahorcado
+for palabra in words:       # cada palabra
+    letras_acertadas = ""   # string vacía
+    letras_falladas = ""    # string vacía
+    intentos = 0            # Número de intentos para esta palabra
+    known_letters = 0
+    for letra in letters:   # cada letra
+        intentos += 1
+        total_strikes +=1
+        if letra in palabra:    # letra en la palabra?
+            known_letters += palabra.count(letra)   # nº de letras adivinadas
+            letras_acertadas += letra
+        else:
+            letras_falladas += letra
+        insertAhorcado()
+        if known_letters == len(palabra):
+            break
+    print(f"{palabra} - {intentos} intentos")
+connection.commit()
+print("Intentos totales: ", total_strikes)
+"""
 
 
+total_strikes = 0                # Número de intentos totales en el ahorcado
 
+for palabra in words:       # cada palabra
+    letras_acertadas = ""   # string vacía
+    letras_falladas = ""    # string vacía
+    intentos = 0            # Número de intentos para esta palabra
+    known_letters = 0
+    for letra in letters:   # cada letra
+        intentos += 1
+        total_strikes +=1
+        if letra in palabra:    # letra en la palabra?
+            known_letters += palabra.count(letra)   # nº de letras adivinadas
+            letras_acertadas += letra
+        else:
+            letras_falladas += letra
+        insertAhorcado()
+        if known_letters == len(palabra):
+            break
+    print(f"{palabra} - {intentos} intentos")
+connection.commit()
+print("Intentos totales: ", total_strikes)
 
-
-
-
-# Adivinar primera palabra
-
-
-
-
+# cur.close()
+# connection.close()
