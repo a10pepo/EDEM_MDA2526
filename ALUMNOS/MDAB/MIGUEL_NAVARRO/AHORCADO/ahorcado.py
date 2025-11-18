@@ -22,6 +22,8 @@ with open(sys.argv[1], 'r') as f:
 # letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"    # Alfabeto (manual)
 letters = "EAOSRNIDLCTUMPBGVYQHFZJXKW"      # Ordenador por frecuencia general español
 
+
+# CREO LA TABLA (si no existe)
 cur.execute("""CREATE TABLE IF NOT EXISTS ahorcado(
             id                  INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             palabra             VARCHAR(30) NOT NULL,
@@ -43,8 +45,8 @@ def insertAhorcado():   # insertar filas (intentos realizados) en la tabla
     except: # Exception as e:
         "nothing" # print("Error inserting try:", e)
 
-"""
-total_strikes = 0                # Número de intentos totales en el ahorcado
+# ADIVINO LAS PALABRAS DE palabras.txt Y LAS GUARDO EN LA TABLA ahorcado
+intentos_totales = 0                # Número de intentos totales en el ahorcado
 for palabra in words:       # cada palabra
     letras_acertadas = ""   # string vacía
     letras_falladas = ""    # string vacía
@@ -52,7 +54,7 @@ for palabra in words:       # cada palabra
     known_letters = 0
     for letra in letters:   # cada letra
         intentos += 1
-        total_strikes +=1
+        intentos_totales +=1
         if letra in palabra:    # letra en la palabra?
             known_letters += palabra.count(letra)   # nº de letras adivinadas
             letras_acertadas += letra
@@ -63,39 +65,44 @@ for palabra in words:       # cada palabra
             break
     print(f"{palabra} - {intentos} intentos")
 connection.commit()
-print("Intentos totales: ", total_strikes)
-"""
+print("Intentos totales: ", intentos_totales)
 
+# ACCEDO a la API
 try:
     url = "https://rae-api.com/api/random"
     headers = {"Accept": "application/json"}
-    response = requests.get(url, headers=headers)
-    data = response.json()
 except requests.exceptions.RequestException as e:
-    print("Error accessing to url:", e)
+    print("Error accessing to url", e)
 
-print(data["data"]["word"], "es la palabra")
-palabra = "cara"
-print(palabra, "tiene", {len(palabra)}, "letras")
+# OBTENGO PALABRA de la API de la RAE cada 10 segundos
+while True:
+    try:
+        response = requests.get(url, headers=headers)
+        data = response.json()
+        palabra = data["data"]["word"].upper()
+    except requests.exceptions.RequestException as e:
+        print("Error getting new word:", e)
+    
+    # RESUELVO LA PALABRA
+    intentos = 0            # Número de intentos para esta palabra
+    letras_acertadas = ""   # string vacía
+    letras_falladas = ""    # string vacía
+    known_letters = 0
+    for letra in letters:   # cada letra
+        intentos += 1
+        if letra in palabra:    # letra en la palabra?
+            known_letters += palabra.count(letra)   # nº de letras adivinadas
+            letras_acertadas += letra
+        else:
+            letras_falladas += letra
+        insertAhorcado()    # la introduzco en la base de datos
+        if known_letters == len(palabra):
+            break
+    print(f"{palabra} - {intentos} intentos")
+    time.sleep(10)  # Espera 10 segundos y vuelve a empezar con otra palabra
 
-intentos = 0            # Número de intentos para esta palabra
-letras_acertadas = ""   # string vacía
-letras_falladas = ""    # string vacía
-known_letters = 0
+connection.commit() # Guardo los intentos en la base de datos
 
-for letra in letters:   # cada letra
-    intentos += 1
-    if letra in palabra:    # letra en la palabra?
-        known_letters += palabra.count(letra)   # nº de letras adivinadas
-        letras_acertadas += letra
-        print(letra, letras_acertadas)
-    else:
-        letras_falladas += letra
-    # insertAhorcado()
-    if known_letters == len(palabra):
-        break
-print(f"{palabra} - {intentos} intentos")
-connection.commit()
-
-# cur.close()
-# connection.close()
+# Cierro la conexión
+cur.close()
+connection.close()

@@ -1,7 +1,8 @@
 letters = "EAOSRNIDLCTUMPBGVYQHFZJXKW"      # Ordenador por frecuencia general españo
 
-palabra = "cara"
-print(palabra, "tiene", {len(palabra)}, "letras")
+word = "cara"
+palabra = word.upper()
+print(palabra, "tiene", len(palabra), "letras")
 
 intentos = 0            # Número de intentos para esta palabra
 letras_acertadas = ""   # string vacía
@@ -13,7 +14,7 @@ for letra in letters:   # cada letra
     if letra in palabra:    # letra en la palabra?
         known_letters += palabra.count(letra)   # nº de letras adivinadas
         letras_acertadas += letra
-        print(letra, letras_acertadas)
+        print(letra, known_letters)
     else:
         letras_falladas += letra
     # insertAhorcado()
