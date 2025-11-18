@@ -85,7 +85,7 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 Entregas Grupo MIA
 <table>
 <tr><th>Alumno</th>
-<th>*AHORCADO*</th>
+<th>AHORCADO</th>
 <th>*DOCKER*</th>
 <th>DEMO</th>
 <th>TICTACTOE</th>
@@ -105,7 +105,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -141,7 +141,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -201,7 +201,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -213,7 +213,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -225,7 +225,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -237,7 +237,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -273,7 +273,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -285,7 +285,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -297,7 +297,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -321,7 +321,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -333,7 +333,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -369,12 +369,12 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-11-18 14:19:42
+Last Checked: 2025-11-18 15:31:33
 
 
 Entregas Grupo MDA A
@@ -392,7 +392,7 @@ Entregas Grupo MDA A
 <th>*APIS*</th>
 <th>*DBT*</th>
 <th>*AWS_ALMACENAMIENTO*</th>
-<th>*AHORCADO*</th>
+<th>AHORCADO</th>
 <th>*DOCKER*</th>
 <th>DEMO</th>
 <th>TICTACTOE</th>
@@ -500,7 +500,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -525,7 +525,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -550,7 +550,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -600,7 +600,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -625,7 +625,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -675,13 +675,13 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-11-18 14:19:42
+Last Checked: 2025-11-18 15:31:33
 
 Entregas Grupo MDA B
 <table>
@@ -698,7 +698,7 @@ Entregas Grupo MDA B
 <th>*APIS*</th>
 <th>*DBT*</th>
 <th>*AWS_ALMACENAMIENTO*</th>
-<th>*AHORCADO*</th>
+<th>AHORCADO</th>
 <th>*DOCKER*</th>
 <th>DEMO</th>
 <th>TICTACTOE</th>
@@ -756,7 +756,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>4.0</td>
+<td>5.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -781,7 +781,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -806,7 +806,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -831,7 +831,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -856,7 +856,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -881,7 +881,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -906,7 +906,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -931,7 +931,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -956,7 +956,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -981,7 +981,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1006,7 +1006,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1031,7 +1031,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1056,7 +1056,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1081,7 +1081,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1106,7 +1106,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1131,7 +1131,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1156,11 +1156,11 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-11-18 14:19:42
+Last Checked: 2025-11-18 15:31:33
 
