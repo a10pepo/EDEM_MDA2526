@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5435:5432" 
+    restart: unless-stopped
+
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - "./:/app"   
+    env_file:
+      - .env
+    command: >
+      sh -c "pip install -r requirements.txt && tail -f /dev/null"
+    depends_on:
+      - db
+
+volumes:
+  postgresDB:
+
+# NOTA: hemos cambiado el puerto al 5435

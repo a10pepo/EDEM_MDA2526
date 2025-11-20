@@ -1,0 +1,10 @@
+services:
+  contenedor1:
+    image: python:3.14-slim
+    working_dir: /app
+    entrypoint: ["python", "entregabledocker.py"] #Uso entrypoint porque con el otro es democrático y sobreescribe 
+
+    volumes:
+      - ./:/app
+  
+  

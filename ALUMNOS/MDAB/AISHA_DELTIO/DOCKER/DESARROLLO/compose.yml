@@ -1,0 +1,9 @@
+services:
+  pysum:
+    image: python:3.11-slim         
+    container_name: entregable_docker
+    working_dir: /app               
+    volumes:
+      - ".:/app"        
+    entrypoint: ["python", "main_docker.py"]
+
