@@ -11,7 +11,7 @@ respuesta = respuesta.json()
 def crear_tabla():
     try:
         cur.execute("""
-        CREATE TABLE valenbisi_raw (
+        CREATE TABLE IF NOT EXISTS valenbisi_raw (
         id SERIAL PRIMARY KEY,
         station_id INTEGER NOT NULL,
         station_name VARCHAR(255),
@@ -23,7 +23,6 @@ def crear_tabla():
         total_capacity INTEGER,
         timestamp TIMESTAMP NOT NULL
         ); """)
-        cur.close()
         connection.commit()
     except Exception as e:
         print("Error al crear la tabla:", e)
@@ -48,15 +47,26 @@ except Exception as e:
 
 crear_tabla()
 
-for resultado in respuesta["results"]:
-    for station_id in resultado["number"]:
-        for station_name in resultado["address"]:
-            for latitude in resultado["geo_point_2d"]["lat"]:
-                for longitude in resultado["geo_point_2d"]["lon"]:
-                    for available_bikes in resultado["available"]:
-                        for available_slots in resultado["free"]:
-                            for station_status in resultado["open"]:
-                                for total_capacity in resultado["total"]:
-                                    for timestamp in resultado["update_jcd"]:
-                                        añadirDatos(station_id, station_name, latitude, longitude, available_bikes, available_slots, station_status, total_capacity, timestamp)
+# for resultado in respuesta["results"]:
+#     for station_id in resultado["number"]:
+#         for station_name in resultado["address"]:
+#             for latitude in resultado["geo_point_2d"]["lat"]:
+#                 for longitude in resultado["geo_point_2d"]["lon"]:
+#                     for available_bikes in resultado["available"]:
+#                         for available_slots in resultado["free"]:
+#                             for station_status in resultado["open"]:
+#                                 for total_capacity in resultado["total"]:
+#                                     for timestamp in resultado["update_jcd"]:
+#                                         añadirDatos(station_id, station_name, latitude, longitude, available_bikes, available_slots, station_status, total_capacity, timestamp)
 
+for resultado in respuesta["results"]:
+    station_id = resultado["number"]
+    station_name = resultado["address"]
+    latitude = resultado["geo_point_2d"]["lat"]
+    longitude = resultado["geo_point_2d"]["lon"]
+    available_bikes = resultado["available"]
+    available_slots = resultado["free"]
+    station_status = resultado["open"]
+    total_capacity = resultado["total"]
+    timestamp = resultado["update_jcd"]
+    añadirDatos(station_id, station_name, latitude, longitude, available_bikes, available_slots, station_status, total_capacity, timestamp)
