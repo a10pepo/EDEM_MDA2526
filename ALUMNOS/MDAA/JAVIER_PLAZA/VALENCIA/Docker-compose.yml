@@ -7,12 +7,11 @@ services:
       - .env
     volumes:
       - ./docker-init:/docker-entrypoint-initdb.d
-      - ./postgresDB:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     restart: "no"
 
-  ahorcado:
+  valencia:
     image: python:3.11-slim
     working_dir: /app
     volumes:
