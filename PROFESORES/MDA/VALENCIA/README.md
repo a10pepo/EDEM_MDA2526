@@ -10,7 +10,7 @@ Este ejercicio integrará múltiples tecnologías y conceptos aprendidos durante
 
 La ciudad de Valencia proporciona acceso a datos en tiempo real sobre el estado de las estaciones de Valenbisi a través de su API de datos abiertos:
 
-**Endpoint:** `https://valencia.opendatasoft.com/api/records/1.0/search/?dataset=valenbisi-disponibilitat-valenbisi-dsiponibilidad`
+**Endpoint:** `https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit=20`
 
 La API devuelve información sobre:
 - Ubicación de las estaciones
