@@ -1,87 +1,92 @@
-# Ejercicio Evaluable: PySpark + Kafka
+🚀 Proyecto: Laboratorio de PySpark Streaming con Docker 🐳
+Este repositorio contiene un entorno de desarrollo encapsulado en Docker para simular y procesar un flujo de datos en tiempo real (similar a Kafka) utilizando PySpark Structured Streaming.
 
-## Objetivo
+El objetivo de este laboratorio es que el alumno comprenda el flujo completo: Generación de Datos (Productor) → Cola de Mensajes (Directorio) → Consumo y Transformación (PySpark) → Almacenamiento Estático (Data Lake).
 
-Demuestra tu dominio de PySpark y Kafka resolviendo un caso real de análisis de datos de operaciones de e-commerce en streaming.
+🎯 Objetivo de la Práctica
+Aprender a:
 
----
+Orquestar entornos de desarrollo con Docker Compose (levantar Jupyter y PySpark).
 
-## 1. Requisitos previos
+Configurar PySpark Structured Streaming para leer datos que llegan continuamente.
 
-- Tener Docker y Docker Compose instalados.
-- Tener Python 3.8+ y pip.
-- Instalar las siguientes librerías:
-  - `confluent-kafka`
-  - `pyspark`
+Implementar transformaciones ETL (Extract, Transform, Load) en un stream de datos.
 
-```bash
-pip install confluent-kafka pyspark
-```
+Persistir un stream de datos en un formato eficiente (Parquet) para análisis posterior (Data Lake).
 
-- Tener un entorno Kafka funcionando (puedes usar el siguiente docker-compose):
+💡 El Flujo de Trabajo Simulado (Diagrama Conceptual)
+En un entorno real, usaríamos Kafka. En este laboratorio, usamos el sistema de archivos local para simular la cola de mensajes.
 
-```yaml
-version: '2'
-services:
-  zookeeper:
-    image: wurstmeister/zookeeper:3.4.6
-    ports:
-      - "2181:2181"
-  kafka:
-    image: wurstmeister/kafka:2.12-2.2.1
-    ports:
-      - "9092:9092"
-    environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-```
+Etapa	Componente	Acción	Simulación de...
+Productor	Script Python (Celda 1)	Escribe lotes de archivos .json cada 1.5 segundos.	Envío de mensajes a un Tópico de Kafka.
+Cola / Tópico	Carpeta /streaming_data	El directorio donde residen los archivos JSON.	El Broker de Kafka (almacenamiento de logs).
+Consumidor	PySpark (Celda 2)	Monitoriza continuamente la carpeta (readStream) y procesa cada nuevo archivo como un nuevo lote.	Suscripción a un Tópico de Kafka.
+Sink	PySpark (Celda 2)	Guarda los datos transformados en archivos Parquet en el disco.	Guardado en un Data Lake o Base de Datos.
+🛠️ Requisitos e Inicialización
+Solo necesitas tener Docker y Docker Compose instalados en tu máquina.
 
-Lanza con:
-```bash
-docker-compose up -d
-```
+1. Levantar el Entorno (Docker)
+En la raíz del proyecto (donde se encuentra docker-compose.yml), ejecuta:
 
----
+Bash
 
-## 2. Generador de datos
+docker compose up -d
+Esto descargará la imagen de Jupyter/PySpark y levantará el contenedor en segundo plano.
 
-Ejecuta el script `generador_kafka.py` para poblar el tópico `operaciones_ecommerce` con datos simulados:
+2. Acceder al Jupyter Notebook
+Abre tu navegador y accede a la URL:
 
-```bash
-python generador_kafka.py
-```
+http://localhost:8888
+Cuando te pida la contraseña o token, usa: clase_spark
 
----
+3. Ejecutar el Notebook
+Abre el notebook que contiene el código de 3 celdas (o el que tú nos proporcionaste).
 
-## 3. Ejercicios evaluables (entrega obligatoria)
+Ejecuta la Celda 1 para configurar la sesión de Spark y lanzar el Productor en segundo plano.
 
-Crea un script PySpark llamado `pyspark-entregable.py` que consuma en streaming los datos del tópico `operaciones_ecommerce` de Kafka y resuelva los siguientes ejercicios, demostrando el uso de todo lo aprendido en clase:
+Ejecuta la Celda 2 para iniciar el Consumidor Streaming que leerá los datos y los guardará en Parquet.
 
-1. **Carga y exploración**: Lee los datos del tópico y muestra el esquema y las primeras filas del DataFrame.
-2. **Filtrado**: Muestra solo las operaciones con estado `Completada` y aquellas cuyo importe total sea mayor de 500€.
-3. **Transformaciones**: Crea una columna nueva que clasifique las operaciones en 'ALTO' o 'BAJO' valor según si el total supera 700€.
-4. **Agregaciones**: Calcula el total de ventas y el ticket medio por producto y por usuario.
-5. **Joins**: Crea un DataFrame auxiliar con una lista de usuarios VIP y haz un join para mostrar solo sus operaciones.
-6. **Funciones de ventana**: Para cada usuario, muestra la operación de mayor importe y la de menor importe usando funciones de ventana.
-7. **UDFs**: Define una UDF que clasifique el método de pago como 'Digital' (PayPal, Criptomoneda) o 'Tradicional' (Tarjeta, Transferencia) y aplícala.
-8. **Particionado**: Reparte el DataFrame en 4 particiones y muestra cuántos registros hay en cada partición.
-9. **SQL y vistas temporales**: Registra el DataFrame como vista temporal y haz una consulta SQL para obtener el número de operaciones por cada estado y método de pago.
-10. **Análisis libre**: Realiza un análisis adicional a tu elección (puede ser una visualización, ranking, correlación, etc.) y explica brevemente tu razonamiento.
+Espera unos segundos para que se generen y procesen varios lotes.
 
-**Requisitos:**
-- El código debe estar bien estructurado y comentado.
-- Debes mostrar resultados relevantes por consola.
-- Se valorará la creatividad, la calidad del análisis y la variedad de técnicas empleadas.
+📚 Código Explicado Detalladamente
+El notebook está dividido en tres etapas clave:
 
----
+A. Celda 1: Producción y Setup
+Lógica: Lanza una función de Python en un hilo separado (hilo Productor). Este productor escribe archivos .json cada 1.5 segundos en la carpeta ./streaming_data.
 
-## 4. Entrega
+Archivos Clave: Crea dos directorios:
 
-- El alumno debe entregar el script `pyspark-entregable.py` con todo el código y los resultados impresos por consola.
-- El código debe estar bien comentado y estructurado.
+./streaming_data (Nuestra cola de mensajes de entrada).
 
----
+./checkpoint (Donde PySpark guarda su estado para saber qué ha leído y evitar re-procesar datos, crucial en streaming).
 
-¡Suerte!
+B. Celda 2: Consumo y Persistencia (Tu Tarea Principal)
+Aquí es donde PySpark entra en acción.
+
+Lectura Streaming: Se define el streaming_df usando spark.readStream.json(OUTPUT_DIR). PySpark comienza a monitorizar el directorio.
+
+Transformación: El código de ejemplo filtra todas las alertas que no son "LOW" y añade una marca de tiempo de procesamiento (processed_at).
+
+Doble Sink (Destino):
+
+Sink 1 (Console): Imprime los datos transformados en la salida del notebook cada 5 segundos. Permite la visualización en tiempo real.
+
+Sink 2 (Parquet): Usa .format("parquet") para guardar los datos transformados de forma incremental en el directorio ./final_processed_data. Esta es la creación de tu DataFrame Físico (Data Lake).
+
+C. Celda 3: Análisis Estático (La Conclusión)
+Detención: Se usa un bucle para detener todas las consultas de streaming activas, liberando los recursos de Spark.
+
+Carga Estática: Se utiliza la lectura estándar de Spark (spark.read.parquet(FINAL_PARQUET_DIR)) para cargar el DataFrame Físico completo, consolidando todos los archivos Parquet guardados por el stream.
+
+Análisis: Se ejecuta una consulta de ejemplo (groupBy, count) sobre el DataFrame estático para demostrar que el análisis histórico ahora es posible.
+
+🛑 Detener y Limpiar el Entorno
+Cuando termines la práctica, detén y elimina el contenedor para liberar recursos del sistema:
+
+Detener la Ejecución del Notebook: Asegúrate de ejecutar la Celda 3 para detener las consultas de streaming internas.
+
+Detener el Contenedor Docker: En tu terminal:
+
+Bash
+
+docker compose down

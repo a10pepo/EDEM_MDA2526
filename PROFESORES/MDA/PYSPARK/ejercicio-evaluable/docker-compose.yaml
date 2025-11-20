@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  spark-jupyter:
+    image: jupyter/pyspark-notebook:latest
+    container_name: pyspark_jupyter
+
+    ports:
+      - "8888:8888"
+
+    volumes:
+      - ./notebooks:/home/jovyan/work
+
+    environment:
+      # Token para acceder a Jupyter
+      JUPYTER_TOKEN: "clase_spark"
+      # Configura Spark para usar todos los núcleos disponibles
+      PYSPARK_PYTHON: python3
+      PYSPARK_DRIVER_PYTHON: jupyter
+      PYSPARK_DRIVER_PYTHON_OPTS: "notebook --ip=0.0.0.0 --no-browser --allow-root"
+
+    stdin_open: true
+    tty: true
