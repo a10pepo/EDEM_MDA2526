@@ -22,7 +22,7 @@ def crear_tabla():
         station_status VARCHAR(50),
         total_capacity INTEGER,
         timestamp TIMESTAMP NOT NULL
-        ); """)
+        ); """) 
         connection.commit()
     except Exception as e:
         print("Error al crear la tabla:", e)
