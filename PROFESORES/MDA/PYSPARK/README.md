@@ -17,8 +17,8 @@ Disponemos de varios notebooks que iremos desarrollando y explicando en clase. E
 - Gestionar particiones y optimizar consultas.
 
 ### 3. Ejercicio Evaluable
-En la carpeta `ejercicio-evaluable` encontrarán un ejercicio diseñado para repasar todos los conceptos vistos en clase. Este ejercicio incluye:
-- Un generador de datos en Kafka.
+En la carpeta `ejercicio-evaluable` encontrarán un ejercicio diseñado para repasar todos los conceptos vistos en clase.
+
 - Un conjunto de preguntas estructuradas que abarcan desde la carga y exploración de datos hasta análisis avanzados con PySpark.
 
 ## Contacto

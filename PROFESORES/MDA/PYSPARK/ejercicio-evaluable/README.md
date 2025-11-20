@@ -1,92 +1,104 @@
-🚀 Proyecto: Laboratorio de PySpark Streaming con Docker 🐳
-Este repositorio contiene un entorno de desarrollo encapsulado en Docker para simular y procesar un flujo de datos en tiempo real (similar a Kafka) utilizando PySpark Structured Streaming.
 
-El objetivo de este laboratorio es que el alumno comprenda el flujo completo: Generación de Datos (Productor) → Cola de Mensajes (Directorio) → Consumo y Transformación (PySpark) → Almacenamiento Estático (Data Lake).
+# 🚀 Laboratorio de PySpark Streaming con Docker 🐳
 
-🎯 Objetivo de la Práctica
-Aprender a:
+> Entorno de desarrollo encapsulado en Docker para simular y procesar un flujo de datos en tiempo real (tipo Kafka) usando **PySpark Structured Streaming**.
 
-Orquestar entornos de desarrollo con Docker Compose (levantar Jupyter y PySpark).
+---
 
-Configurar PySpark Structured Streaming para leer datos que llegan continuamente.
+## 🎯 Objetivo de la Práctica
 
-Implementar transformaciones ETL (Extract, Transform, Load) en un stream de datos.
+Comprender el flujo completo:
 
-Persistir un stream de datos en un formato eficiente (Parquet) para análisis posterior (Data Lake).
+1. **Generación de Datos (Productor)**
+2. **Cola de Mensajes (Directorio)**
+3. **Consumo y Transformación (PySpark)**
+4. **Almacenamiento Estático (Data Lake)**
 
-💡 El Flujo de Trabajo Simulado (Diagrama Conceptual)
-En un entorno real, usaríamos Kafka. En este laboratorio, usamos el sistema de archivos local para simular la cola de mensajes.
+### Aprenderás a:
+- Orquestar entornos con **Docker Compose** (Jupyter + PySpark)
+- Configurar **PySpark Structured Streaming** para leer datos en tiempo real
+- Implementar transformaciones **ETL** en un stream de datos
+- Persistir datos en formato **Parquet** para análisis posterior
 
-Etapa	Componente	Acción	Simulación de...
-Productor	Script Python (Celda 1)	Escribe lotes de archivos .json cada 1.5 segundos.	Envío de mensajes a un Tópico de Kafka.
-Cola / Tópico	Carpeta /streaming_data	El directorio donde residen los archivos JSON.	El Broker de Kafka (almacenamiento de logs).
-Consumidor	PySpark (Celda 2)	Monitoriza continuamente la carpeta (readStream) y procesa cada nuevo archivo como un nuevo lote.	Suscripción a un Tópico de Kafka.
-Sink	PySpark (Celda 2)	Guarda los datos transformados en archivos Parquet en el disco.	Guardado en un Data Lake o Base de Datos.
-🛠️ Requisitos e Inicialización
-Solo necesitas tener Docker y Docker Compose instalados en tu máquina.
+---
 
-1. Levantar el Entorno (Docker)
-En la raíz del proyecto (donde se encuentra docker-compose.yml), ejecuta:
+## 💡 Flujo de Trabajo Simulado
 
-Bash
+En vez de Kafka, usamos el sistema de archivos local para simular la cola de mensajes.
 
+| Etapa      | Componente                | Acción                                                        | Simulación de...                  |
+|------------|--------------------------|---------------------------------------------------------------|-----------------------------------|
+| Productor  | Script Python (Celda 1)  | Escribe lotes de archivos `.json` cada 1.5 segundos           | Envío de mensajes a un tópico     |
+| Cola       | Carpeta `/streaming_data`| Directorio donde residen los archivos JSON                    | Broker de Kafka (logs)            |
+| Consumidor | PySpark (Celda 2)        | Monitoriza la carpeta y procesa cada nuevo archivo            | Suscripción a un tópico           |
+| Sink       | PySpark (Celda 2)        | Guarda los datos transformados en archivos Parquet            | Data Lake o Base de Datos         |
+
+---
+
+## 🛠️ Requisitos e Inicialización
+
+- Tener **Docker** y **Docker Compose** instalados.
+
+### 1. Levantar el entorno
+En la raíz del proyecto (donde está `docker-compose.yml`):
+
+```bash
 docker compose up -d
-Esto descargará la imagen de Jupyter/PySpark y levantará el contenedor en segundo plano.
+```
 
-2. Acceder al Jupyter Notebook
-Abre tu navegador y accede a la URL:
+Esto descargará la imagen y levantará el contenedor en segundo plano.
 
-http://localhost:8888
-Cuando te pida la contraseña o token, usa: clase_spark
+### 2. Acceder a Jupyter Notebook
 
-3. Ejecutar el Notebook
-Abre el notebook que contiene el código de 3 celdas (o el que tú nos proporcionaste).
+Abre tu navegador y entra en:
 
-Ejecuta la Celda 1 para configurar la sesión de Spark y lanzar el Productor en segundo plano.
+[http://localhost:8888](http://localhost:8888)
 
-Ejecuta la Celda 2 para iniciar el Consumidor Streaming que leerá los datos y los guardará en Parquet.
+Cuando pida contraseña/token, usa: `clase_spark`
 
-Espera unos segundos para que se generen y procesen varios lotes.
+### 3. Ejecutar el Notebook
 
-📚 Código Explicado Detalladamente
-El notebook está dividido en tres etapas clave:
+- Abre el notebook de 3 celdas (o el que te proporcionamos)
+- **Celda 1:** Configura Spark y lanza el Productor en segundo plano
+- **Celda 2:** Inicia el Consumidor Streaming (lee y guarda en Parquet)
+- Espera unos segundos para que se generen y procesen varios lotes
 
-A. Celda 1: Producción y Setup
-Lógica: Lanza una función de Python en un hilo separado (hilo Productor). Este productor escribe archivos .json cada 1.5 segundos en la carpeta ./streaming_data.
+---
 
-Archivos Clave: Crea dos directorios:
+## 📚 Estructura del Código
 
-./streaming_data (Nuestra cola de mensajes de entrada).
+### A. Celda 1: Producción y Setup
+- Lanza una función Python en un hilo separado (Productor)
+- Escribe archivos `.json` cada 1.5s en `./streaming_data`
+- Crea dos carpetas:
+	- `./streaming_data` (cola de entrada)
+	- `./checkpoint` (estado de PySpark para evitar reprocesos)
 
-./checkpoint (Donde PySpark guarda su estado para saber qué ha leído y evitar re-procesar datos, crucial en streaming).
+### B. Celda 2: Consumo y Persistencia (**Tu tarea principal**)
+- **Lectura Streaming:**
+	- `spark.readStream.json(OUTPUT_DIR)` monitoriza el directorio
+- **Transformación:**
+	- Filtra alertas distintas de "LOW" y añade timestamp `processed_at`
+- **Doble Sink:**
+	- **Console:** imprime datos cada 5s en el notebook
+	- **Parquet:** guarda datos en `./final_processed_data` (Data Lake)
 
-B. Celda 2: Consumo y Persistencia (Tu Tarea Principal)
-Aquí es donde PySpark entra en acción.
+### C. Celda 3: Análisis Estático (Conclusión)
+- Detiene todas las consultas de streaming activas
+- Carga el DataFrame físico completo con `spark.read.parquet(FINAL_PARQUET_DIR)`
+- Ejemplo de análisis: `groupBy`, `count` sobre el DataFrame
 
-Lectura Streaming: Se define el streaming_df usando spark.readStream.json(OUTPUT_DIR). PySpark comienza a monitorizar el directorio.
+---
 
-Transformación: El código de ejemplo filtra todas las alertas que no son "LOW" y añade una marca de tiempo de procesamiento (processed_at).
+## 🛑 Detener y Limpiar el Entorno
 
-Doble Sink (Destino):
+1. **Detener ejecución del notebook:** Ejecuta la Celda 3 para parar el streaming
+2. **Detener el contenedor Docker:**
 
-Sink 1 (Console): Imprime los datos transformados en la salida del notebook cada 5 segundos. Permite la visualización en tiempo real.
+```bash
+docke compose down
+```
 
-Sink 2 (Parquet): Usa .format("parquet") para guardar los datos transformados de forma incremental en el directorio ./final_processed_data. Esta es la creación de tu DataFrame Físico (Data Lake).
+---
 
-C. Celda 3: Análisis Estático (La Conclusión)
-Detención: Se usa un bucle para detener todas las consultas de streaming activas, liberando los recursos de Spark.
-
-Carga Estática: Se utiliza la lectura estándar de Spark (spark.read.parquet(FINAL_PARQUET_DIR)) para cargar el DataFrame Físico completo, consolidando todos los archivos Parquet guardados por el stream.
-
-Análisis: Se ejecuta una consulta de ejemplo (groupBy, count) sobre el DataFrame estático para demostrar que el análisis histórico ahora es posible.
-
-🛑 Detener y Limpiar el Entorno
-Cuando termines la práctica, detén y elimina el contenedor para liberar recursos del sistema:
-
-Detener la Ejecución del Notebook: Asegúrate de ejecutar la Celda 3 para detener las consultas de streaming internas.
-
-Detener el Contenedor Docker: En tu terminal:
-
-Bash
-
-docker compose down
+¡Listo! 🚦
