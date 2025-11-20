@@ -8,10 +8,7 @@ Comprender cómo funciona un productor Kafka, cómo se envían mensajes y cómo 
 ---
 
 ## Requisitos
-
-- Tener Kafka y Zookeeper en ejecución (puedes usar Docker Compose).
-- Tener Python instalado.
-- Instalar la librería necesaria:
+Instalar la librería necesaria:
 
 ```bash
 pip install confluent-kafka
@@ -29,9 +26,11 @@ pip install confluent-kafka
 2. **Ejecuta el código**:
    - Ejecuta el script `producer.py`:
 
+Puedes lanzar el producer.py desde VisualEstudio o con el comando 'python producer.py' desde la terminal.
 ```bash
 python producer.py
 ```
+
 
 3. **Observa la salida**:
    - Abre una consola y observa los mensajes que se están enviando al topic `proyectos_innovacion`
