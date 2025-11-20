@@ -1,0 +1,33 @@
+# Dockerfile.dbt
+
+# 1. Imagen base: Usamos una versión estable y ligera de Python
+# La versión 3.12 es más actual que 3.11.
+FROM python:3.12-slim
+
+# 2. Configuración de entorno para un mejor logging y rendimiento
+# Garantiza que la salida de Python no use búfer.
+ENV PYTHONUNBUFFERED 1
+# Evita la creación de archivos .pyc
+ENV PYTHONDONTWRITEBYTECODE 1
+
+# 3. Directorio de trabajo: La raíz de tu proyecto dbt dentro del contenedor
+WORKDIR /usr/app/dbt
+
+# 4. Instalación de dependencias de dbt
+# Copia solo el archivo de dependencias primero para aprovechar el caché de Docker.
+# Asegúrate de que este archivo (requirements.dbt.txt) exista y contenga:
+# dbt-core
+# dbt-postgres
+COPY requirements.dbt.txt .
+
+# Instala dbt-core y el adaptador de PostgreSQL
+# --no-cache-dir reduce el tamaño de la imagen.
+RUN pip install --no-cache-dir -r requirements.dbt.txt
+
+# 5. Copia el código fuente de dbt
+# Copia los archivos de tu proyecto dbt (modelos, macros, etc.) al directorio de trabajo
+# Asumimos que tu proyecto dbt está en la carpeta './dbt_project/' en tu host.
+COPY ./dbt_project/ /usr/app/dbt/
+
+# El contenedor se mantendrá activo gracias al 'command: tail -f /dev/null'
+# que definimos en el docker-compose.yml.

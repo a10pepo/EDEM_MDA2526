@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app              
+    env_file: .env
+    command: >
+      sh -c "pip install -r requirements.txt && python valenbisi_collector.py"
+    depends_on:
+      - db
+  dbt-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile.dbt
+    container_name: dbt_container
+
+    volumes:
+      - ./dbt_project:/usr/app/dbt
+
+    env_file: .env
+
+    # AÑADE/VERIFICA ESTE COMANDO PARA MANTENER EL CONTENEDOR ACTIVO:
+    command: tail -f /dev/null
+
+    depends_on:
+      - db
+
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+volumes:
+  postgresDB:
