@@ -40,6 +40,9 @@ services:
       # Listener interno para comunicación entre brokers
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+
     networks:
       - kafka-net
 
@@ -62,6 +65,38 @@ services:
       CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
       CONFLUENT_METRICS_TOPIC_REPLICATION: 1
       PORT: 9021
+    networks:
+      - kafka-net
+
+  # =============================
+  # Servicio KSQL
+  # =============================
+  # Motor para ejecutar consultas SQL sobre datos en Kafka.
+  ksql:
+    image: confluentinc/cp-ksqldb-server:7.3.0
+    container_name: ksql
+    depends_on:
+      - kafka
+    ports:
+      - "8088:8088"                # Puerto para la API REST de KSQL
+    environment:
+      KSQL_BOOTSTRAP_SERVERS: kafka:29092  # Conexión al broker Kafka
+      KSQL_LISTENERS: http://0.0.0.0:8088  # Dirección donde escucha KSQL
+      KSQL_KSQL_SERVICE_ID: ksql_service   # Identificador del servicio KSQL
+    networks:
+      - kafka-net
+
+# =============================
+  # Servicio KSQL CLI
+  # =============================
+  # Cliente para ejecutar comandos KSQL desde la línea de comandos.
+  ksql-cli:
+    image: confluentinc/cp-ksqldb-cli:7.3.0
+    container_name: ksql-cli
+    depends_on:
+      - ksql
+    entrypoint: /bin/sh   # Para que puedas entrar al contenedor y ejecutar comandos
+    tty: true             # Permite sesión interactiva
     networks:
       - kafka-net
 
