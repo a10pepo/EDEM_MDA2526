@@ -10,7 +10,7 @@ while True:
         break
     except psycopg.OperationalError:
         print("La base de datos se está conectando... espere 2 segundos")
-        time.sleep(2)
+        time.sleep(2) # Le doy 2 segundos por si  tarda en cargar
 # Cursor
 cur = connection.cursor()
 
@@ -35,7 +35,7 @@ cur.execute("""CREATE TABLE IF NOT EXISTS ahorcado(
             );""")
 connection.commit()
 
-def insertAhorcado():   # insertar filas (intentos realizados) en la tabla
+def insertAhorcado():   # insertar filas (intentos de ahorcado letra por letra) en la tabla
     try:
         query = """
         INSERT INTO ahorcado
@@ -45,7 +45,7 @@ def insertAhorcado():   # insertar filas (intentos realizados) en la tabla
     except: # Exception as e:
         "nothing" # print("Error inserting try:", e)
 
-# ADIVINO LAS PALABRAS DE palabras.txt Y LAS GUARDO EN LA TABLA ahorcado
+# ADIVINO LAS PALABRAS DE palabras.txt Y GUARDO LOS INTENTOS EN LA TABLA ahorcado
 intentos_totales = 0                # Número de intentos totales en el ahorcado
 for palabra in words:       # cada palabra
     letras_acertadas = ""   # string vacía
