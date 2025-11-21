@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: valenbisi           # Nombre lógico del source dentro de dbt
+    database: valenbisi_db    # Nombre de la base de datos PostgreSQL
+    schema: public            # Esquema donde está la tabla
+    tables:
+      - name: valenbisi_raw   # Nombre de la tabla en la base de datos
+        description: "Tabla cruda de estaciones Valenbisi con disponibilidad de bicicletas."
+        columns:
+          - name: id
+            description: "ID único de la fila"
+            tests:
+              - unique
+              - not_null
+          - name: station_id
+            description: "ID de la estación"
+            tests:
+              - not_null
+          - name: station_name
+            description: "Nombre de la estación"
+          - name: latitude
+            description: "Latitud de la estación"
+          - name: longitude
+            description: "Longitud de la estación"
+          - name: available_bikes
+            description: "Número de bicicletas disponibles"
+          - name: available_slots
+            description: "Número de huecos disponibles"
+          - name: station_status
+            description: "Estado de la estación"
+          - name: total_capacity
+            description: "Capacidad total de la estación"
+          - name: timestamp
+            description: "Momento de la medición"
+            tests:
+              - not_null

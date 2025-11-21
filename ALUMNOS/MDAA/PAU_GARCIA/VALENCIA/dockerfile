@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+# Instalamos dbt para Postgres
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/* && \
+    pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir "dbt-postgres==1.8.2"
+
+# Directorio de trabajo en el contenedor
+WORKDIR /usr/app/dbt
+
+# Entramos siempre en bash
+ENTRYPOINT ["/bin/bash"]

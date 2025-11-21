@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - ./docker-init:/docker-entrypoint-initdb.d
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    env_file: .env
+    command: >
+      sh -c " pip install -r requirements.txt && python -u valenbisi_collector.py "
+    depends_on:
+      - db
+  
+  dbt:
+    build: .
+    container_name: dbt-valenbisi
+    volumes:
+      - ./:/usr/app/dbt
+      - ./profiles.yml:/root/.dbt/profiles.yml
+    environment:
+      - DBT_PROFILES_DIR=/usr/app/dbt
+    working_dir: /usr/app/dbt/dbt_valenbisi
+    entrypoint: ["/bin/bash"]
+    tty: true
+    depends_on:
+      - db
+
+
+volumes:
+  pg_data:
+  postgresDB:
