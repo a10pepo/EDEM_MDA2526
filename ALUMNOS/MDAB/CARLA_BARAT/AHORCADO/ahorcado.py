@@ -52,3 +52,14 @@ url = os.getenv("DATABASE_URL")
 connection = psycopg.connect(url)
 cur = connection.cursor()
 print("BD conectada con éxito")
+
+def palabra_api():
+    url = "https://rae-api.com/api/random"
+    respuesta = requests.get(url)
+
+    if respuesta.status_code == 200:
+        data = respuesta.json()
+        return data["word"].upper()
+    else:
+        print("Error al llamar a la API")
+        return None
