@@ -189,6 +189,7 @@ def insertPalabras(resultados):
           resultado["tiempo"],
         )
         cur.execute(query, values)
+        connection.commit()
   except Exception as e:
       print(f"Error {e}.")
 
@@ -234,7 +235,6 @@ if is_api=="True":
         resultados=ahorcado_fuerza_bruta(palabra_api, ABECEDARIO)
         insertPalabras(resultados)
         getPalabras()
-        connection.commit()
         time.sleep(10)
 else:
    (resultados_fuerza_bruta, intentos_fuerza_bruta)=ahorcado_fuerza_bruta(PALABRAS_ADIVINAR, ABECEDARIO)
@@ -247,8 +247,6 @@ else:
    print(f"Intentos del ahorcado optimizado: {intentos_optimizado}")
 
 getPalabras()
-
-connection.commit()
 
 cur.close()
 connection.close()
