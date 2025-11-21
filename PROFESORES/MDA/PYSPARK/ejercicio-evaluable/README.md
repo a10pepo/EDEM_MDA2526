@@ -1,104 +1,181 @@
+# 📝 Introducción al Ejercicio Final
 
-# 🚀 Laboratorio de PySpark Streaming con Docker 🐳
+En este ejercicio trabajarás con **datos de sensores generados en streaming** y procesados con **PySpark**.  
+El objetivo es que practiques desde la lectura de datos en tiempo real hasta análisis y agregaciones avanzadas, **dentro de un entorno Dockerizado con Jupyter y PySpark**.
 
-> Entorno de desarrollo encapsulado en Docker para simular y procesar un flujo de datos en tiempo real (tipo Kafka) usando **PySpark Structured Streaming**.
+### 🔹 Flujo general de los datos:
 
----
+1. **Entorno Docker**  
+   - Se levanta un contenedor con **Jupyter Notebook + PySpark**.  
+   - También se levantan contenedores para **Kafka** y **Zookeeper**, simulando un entorno de producción real.  
+   - Los alumnos acceden al notebook mediante la URL que Spark imprime al iniciar Jupyter (sin necesidad de contraseña).
 
-## 🎯 Objetivo de la Práctica
+2. **Lectura desde Kafka**  
+   Los datos de los sensores llegan continuamente a un topic de Kafka. Cada mensaje contiene información como: `sensor_id`, `value`, `temperature`, `humidity`, `status`, `timestamp` y `uuid`.
 
-Comprender el flujo completo:
+3. **Parseo y transformación**  
+   Los mensajes JSON se transforman en columnas individuales, y se crea una columna `event_time` que convierte el timestamp a formato de fecha/hora. Esto permite trabajar con ventanas temporales y agregaciones.
 
-1. **Generación de Datos (Productor)**
-2. **Cola de Mensajes (Directorio)**
-3. **Consumo y Transformación (PySpark)**
-4. **Almacenamiento Estático (Data Lake)**
+4. **Agregaciones por ventana**  
+   Los datos se agrupan en **ventanas de tiempo de 30 segundos** por cada sensor, calculando métricas como:
+   - Promedio del valor (`avg_value`)  
+   - Promedio de la temperatura (`avg_temp`)  
+   - Promedio de la humedad (`avg_humidity`)  
+   - Número de eventos (`num_events`)  
+   Además, se utiliza un **watermark de 1 minuto** para manejar retrasos y datos tardíos.
 
-### Aprenderás a:
-- Orquestar entornos con **Docker Compose** (Jupyter + PySpark)
-- Configurar **PySpark Structured Streaming** para leer datos en tiempo real
-- Implementar transformaciones **ETL** en un stream de datos
-- Persistir datos en formato **Parquet** para análisis posterior
+5. **Escritura en archivos Parquet**  
+   Los resultados agregados se escriben continuamente en archivos Parquet en la carpeta `resultados/`.  
+   Se usa un **checkpoint** para asegurar que Spark recuerde qué datos ya se procesaron, evitando duplicados si el streaming se reinicia.
 
----
+### 🔹 Qué vas a practicar en este ejercicio:
 
-## 💡 Flujo de Trabajo Simulado
+- Levantar un entorno **Dockerizado** con Jupyter, PySpark y Kafka  
+- Lectura de datos en **streaming** desde Kafka  
+- Transformación y parseo de mensajes JSON  
+- Creación y uso de **ventanas de tiempo**  
+- Agregaciones y estadísticas sobre los datos de sensores  
+- Escritura continua de resultados en **Parquet**  
+- Exploración y análisis de los resultados agregados  
 
-En vez de Kafka, usamos el sistema de archivos local para simular la cola de mensajes.
+Al final del ejercicio, tendrás un conjunto de datos consolidados que podrás **consultar y analizar** para responder preguntas sobre comportamiento de los sensores, detección de anomalías, ranking, y más.
 
-| Etapa      | Componente                | Acción                                                        | Simulación de...                  |
-|------------|--------------------------|---------------------------------------------------------------|-----------------------------------|
-| Productor  | Script Python (Celda 1)  | Escribe lotes de archivos `.json` cada 1.5 segundos           | Envío de mensajes a un tópico     |
-| Cola       | Carpeta `/streaming_data`| Directorio donde residen los archivos JSON                    | Broker de Kafka (logs)            |
-| Consumidor | PySpark (Celda 2)        | Monitoriza la carpeta y procesa cada nuevo archivo            | Suscripción a un tópico           |
-| Sink       | PySpark (Celda 2)        | Guarda los datos transformados en archivos Parquet            | Data Lake o Base de Datos         |
+# PASOS A SEGUIR IMPORTANTE
 
----
+1. En una terminal levantar el docker con el siguiente comando
+   - docker-compose up --build
+2. Haceros un split de la terminal y ejecutar el productor de mensajes de kafka desde dentro
+del contenedor
+   - docker exec -it pyspark_lab bash
+   - python kafka-producer/producer.py
+3. Abrir una nueva terminal y ejecutar el comando para obtener la URL que podeis usar
+   - docker-compose logs -f jupyter
 
-## 🛠️ Requisitos e Inicialización
+Teneis todos estos comando en el archivo comandos.txt para que lo veais mas fácil, cualquier duda para levantar el entorno no dudeis en comunicarmela sin ningún problema. 
 
-- Tener **Docker** y **Docker Compose** instalados.
+# 📘 Ejercicio Final Evaluable – PySpark & Streaming
+Procesamiento y análisis de datos agregados por ventana.
 
-### 1. Levantar el entorno
-En la raíz del proyecto (donde está `docker-compose.yml`):
+Este ejercicio está diseñado para evaluar tu dominio de PySpark aplicado a procesamiento de datos reales provenientes de un flujo de streaming. Trabajarás con el DataFrame final generado tras las agregaciones, el cual contiene:
 
-```bash
-docker compose up -d
-```
-
-Esto descargará la imagen y levantará el contenedor en segundo plano.
-
-### 2. Acceder a Jupyter Notebook
-
-Abre tu navegador y entra en:
-
-[http://localhost:8888](http://localhost:8888)
-
-Cuando pida contraseña/token, usa: `clase_spark`
-
-### 3. Ejecutar el Notebook
-
-- Abre el notebook de 3 celdas (o el que te proporcionamos)
-- **Celda 1:** Configura Spark y lanza el Productor en segundo plano
-- **Celda 2:** Inicia el Consumidor Streaming (lee y guarda en Parquet)
-- Espera unos segundos para que se generen y procesen varios lotes
-
----
-
-## 📚 Estructura del Código
-
-### A. Celda 1: Producción y Setup
-- Lanza una función Python en un hilo separado (Productor)
-- Escribe archivos `.json` cada 1.5s en `./streaming_data`
-- Crea dos carpetas:
-	- `./streaming_data` (cola de entrada)
-	- `./checkpoint` (estado de PySpark para evitar reprocesos)
-
-### B. Celda 2: Consumo y Persistencia (**Tu tarea principal**)
-- **Lectura Streaming:**
-	- `spark.readStream.json(OUTPUT_DIR)` monitoriza el directorio
-- **Transformación:**
-	- Filtra alertas distintas de "LOW" y añade timestamp `processed_at`
-- **Doble Sink:**
-	- **Console:** imprime datos cada 5s en el notebook
-	- **Parquet:** guarda datos en `./final_processed_data` (Data Lake)
-
-### C. Celda 3: Análisis Estático (Conclusión)
-- Detiene todas las consultas de streaming activas
-- Carga el DataFrame físico completo con `spark.read.parquet(FINAL_PARQUET_DIR)`
-- Ejemplo de análisis: `groupBy`, `count` sobre el DataFrame
+- `window` – Ventana temporal (start, end)
+- `sensor_id` – Identificador del sensor
+- `avg_value` – Valor promedio de la métrica principal
+- `avg_temp` – Temperatura promedio
+- `avg_humidity` – Humedad promedio
+- `num_events` – Número de eventos agregados
 
 ---
 
-## 🛑 Detener y Limpiar el Entorno
+## 🧰 0. Preparación
+Asegúrate de:
 
-1. **Detener ejecución del notebook:** Ejecuta la Celda 3 para parar el streaming
-2. **Detener el contenedor Docker:**
-
-```bash
-docke compose down
-```
+- Haber cargado correctamente el DataFrame producido por el streaming.
+- Eliminar cualquier columna creada manualmente o que no forme parte del esquema original.
 
 ---
 
-¡Listo! 🚦
+## 🔍 1. Exploración inicial
+Realiza una exploración básica del DataFrame:
+
+- Muestra el esquema completo.
+- Indica cuántas filas contiene.
+- ¿Cuántos sensores distintos (`sensor_id`) aparecen?
+
+---
+
+## 🔧 2. Transformaciones numéricas
+Crea una columna basada en la diferencia o relación entre dos métricas numéricas del DataFrame.
+
+Responde:
+
+- ¿Cuál es el valor mínimo, máximo y medio de la nueva columna?
+
+---
+
+## 🧹 3. Filtrado avanzado
+Aplica un filtro usando varias condiciones a la vez relacionadas con:
+
+- humedad,
+- número de eventos,
+- sensor.
+
+Responde:
+
+- ¿Cuántos registros cumplen todas las condiciones aplicadas?
+
+---
+
+## 📊 4. Agregaciones por sensor
+Agrupa el DataFrame por `sensor_id` y obtén estadísticas descriptivas.
+
+Responde:
+
+- ¿Qué sensor tiene la mayor media en la variable analizada?
+- ¿Qué sensor presenta la temperatura máxima?
+- ¿Cuántos grupos o ventanas existen por sensor?
+
+---
+
+## 🏅 5. Ranking con funciones de ventana
+Usa funciones de ventana para identificar, para cada sensor, el registro con el mayor valor de `avg_value`.
+
+Responde:
+
+- ¿Qué sensor obtiene el valor máximo global entre todos?
+
+---
+
+## 🔗 6. Join con tabla auxiliar
+Crea un DataFrame auxiliar con información adicional sobre sensores (por ejemplo, categoría, ubicación o tipo) y realiza un join.
+
+Responde:
+
+- Muestra los cinco primeros registros del DataFrame ya unido.
+
+---
+
+## 🕒 7. Agrupación por ventana temporal
+Extrae la marca de inicio de la ventana y agrúpala por unidades de tiempo truncadas (p. ej., minuto u hora).
+
+Responde:
+
+- ¿Cuántas ventanas hay por unidad temporal?
+- ¿Cuál es la humedad media por cada unidad?
+
+---
+
+## 🧩 8. Repartición y particiones
+Reparte el DataFrame por `sensor_id` y añade una columna indicando el identificador de partición.
+
+Responde:
+
+- ¿Cuál es la distribución de registros entre las particiciones?
+
+---
+
+## 🚨 9. Detección de anomalías
+Define un criterio personalizado de "anomalía" basado en los valores medios del DataFrame.
+
+Responde:
+
+- ¿Cuántos registros son anómalos?
+- ¿Qué sensor tiene más anomalías?
+
+---
+
+## 🔢 10. Cruce de métricas
+Crea una puntuación combinando varias columnas del DataFrame (por ejemplo, ponderando `avg_value`, temperatura y humedad).
+
+Responde:
+
+- ¿Qué sensor obtiene la puntuación más alta?
+- ¿Cuál es el valor de dicha puntuación?
+
+---
+
+## 🔢 11. Graficar DF
+Crea dos gráficos, convirtiendo el DF de spark a pandas y utiliza la libreria matplotlib 
+para generar dos gráficos sobre alguna de las variables.
+
+![Imagen](image.png)

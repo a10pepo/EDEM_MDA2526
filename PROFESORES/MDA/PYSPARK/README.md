@@ -17,7 +17,7 @@ Disponemos de varios notebooks que iremos desarrollando y explicando en clase. E
 - Gestionar particiones y optimizar consultas.
 
 ### 3. Ejercicio Evaluable
-En la carpeta `ejercicio-evaluable` encontrarán un ejercicio diseñado para repasar todos los conceptos vistos en clase.
+En la carpeta `ejercicio-evaluable` encontrarán un ejercicio diseñado para repasar todos los conceptos vistos en clase y ver como se puede llegar a implementar pyspark en un caso de uso totalmente real.
 
 - Un conjunto de preguntas estructuradas que abarcan desde la carga y exploración de datos hasta análisis avanzados con PySpark.
 
