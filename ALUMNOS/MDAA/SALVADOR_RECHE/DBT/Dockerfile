@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean
 
-# Instalamos dbt con el adaptador de DuckDB
+# Instalamos dbt con el adaptador de DuckDBB
 RUN pip install --upgrade pip && \
     pip install dbt-duckdb
 
