@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from read_csv_auto('/usr/app/practica_DBT_SALVA/data/raw__capturas.csv')
+    select * from read_csv_auto({{ get_raw_source('capturas') }})
 ),
 
 renamed as (
