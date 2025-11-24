@@ -1,0 +1,274 @@
+station_id,station_name,available_bikes,available_bike_stands,state_station,total_capacity,time
+26,San José de Calasanz - Salas Quiroga,6,8,T,15,2025-11-23T12:37:42+00:00
+93,Blasco Ibañez - Poeta Durán Tortajada,16,19,T,38,2025-11-23T12:37:10+00:00
+27,San Vicente Martir - Doctor Vilá Barberá,16,4,T,20,2025-11-23T12:34:46+00:00
+36,Plaza de los Fueros - Conde Trenor,6,19,T,25,2025-11-23T12:37:47+00:00
+35,Regne de Valencia - Almirante Cadarso,1,9,T,20,2025-11-23T12:36:05+00:00
+37,Peris y Valero - Luis Santángel,2,18,T,20,2025-11-23T12:35:53+00:00
+67,Juan Verdeguer - Toneleros,9,5,T,14,2025-11-23T12:37:33+00:00
+30,Cirilo Amorós - Jorge Juan (Mercado Colón),11,9,T,20,2025-11-23T12:33:49+00:00
+48,Antonio Ferrandis - General Urrutia,9,11,T,20,2025-11-23T12:36:30+00:00
+52,Luis García Berlanga Martí - Menorca,25,0,T,25,2025-11-23T12:34:55+00:00
+79,Aragón - Ernesto Ferrer,11,8,T,20,2025-11-23T12:36:35+00:00
+81,Micer Mascó - Rodriguez Fornos,3,17,T,20,2025-11-23T12:29:03+00:00
+82,Guillem de Castro (Torres de Quart),7,6,T,15,2025-11-23T12:37:29+00:00
+88,"Blasco Ibañez, 28 (F. Geografía e Historia)",5,35,T,40,2025-11-23T12:32:38+00:00
+98,Justo y Pastor - Duque de Gaeta,7,8,T,15,2025-11-23T12:38:20+00:00
+7,Plaza del Mercado - Taula de Canvis,6,12,T,19,2025-11-23T12:38:08+00:00
+11,Plaza Ayuntamiento - Cotanda,4,23,T,27,2025-11-23T12:35:31+00:00
+15,Ribera - Plaza Ayuntamiento,2,27,T,34,2025-11-23T12:33:10+00:00
+21,Juan Llorens - Literato Gabriel Miró,2,14,T,16,2025-11-23T12:32:00+00:00
+14,Huesca - Barón de Cárcer,1,18,T,20,2025-11-23T12:36:02+00:00
+22,Angel Guimerá - Juan Llorens,4,11,T,15,2025-11-23T12:31:37+00:00
+45,Hermanos Maristas - General Urrutia,15,0,T,15,2025-11-23T12:34:57+00:00
+49,Ricardo Muñoz Suay - María José Victoria Fuster (C.C. El Saler),21,4,T,25,2025-11-23T12:29:30+00:00
+51,Moreras (Oceanográfico),9,11,T,20,2025-11-23T12:32:57+00:00
+53,Alameda - Pintor Maella,23,1,T,25,2025-11-23T12:30:25+00:00
+55,Francia - Pintor Maella,25,0,T,25,2025-11-23T12:36:56+00:00
+57,Alameda - Pintor Monleón,9,9,T,20,2025-11-23T12:36:17+00:00
+61,Vicent Vidal - Pintor Maella,10,10,T,20,2025-11-23T12:33:03+00:00
+63,Av Puerto 19 (Telefónica),0,20,T,20,2025-11-23T12:37:47+00:00
+83,General Elio - Llano del Real,5,20,T,25,2025-11-23T12:30:34+00:00
+64,Av. Puerto 61-63,8,12,T,20,2025-11-23T12:37:55+00:00
+84,"Serrería, 67",11,4,T,15,2025-11-23T12:32:13+00:00
+92,Blasco Ibañez - Aragón,0,20,T,20,2025-11-23T12:32:09+00:00
+97,Blasco Ibañez 121,8,15,T,23,2025-11-23T12:36:13+00:00
+76,Campoamor - Músico Ginés,7,12,T,19,2025-11-23T12:33:53+00:00
+78,Aragón - Vicente Sancho Tello,14,6,T,20,2025-11-23T12:38:20+00:00
+43,Escultor José Capuz - Oriente,17,3,T,20,2025-11-23T12:33:24+00:00
+90,"Blasco Ibañez, 32 (F. Filología)",1,38,T,40,2025-11-23T12:38:18+00:00
+148,C/Xàtiva 30-32,0,0,T,35,2025-06-12T14:03:57+00:00
+132,Platero Suárez - Milagrosa,9,6,T,15,2025-11-23T12:38:39+00:00
+138,San Pancracio - Periodista Llorente,2,18,T,20,2025-11-23T12:36:15+00:00
+140,Campanar - Nicasio Benlloch,5,15,T,20,2025-11-23T12:29:14+00:00
+167,Pavía - Acequia de la Cadena,20,0,T,20,2025-11-23T12:36:32+00:00
+164,Pavía - Columbretes,17,0,T,17,2025-11-23T12:34:06+00:00
+118,Gómez Ferrer - Álvaro de Bazán,1,19,T,20,2025-11-23T12:37:23+00:00
+183,Ausias March - Av. de la Plata,1,16,T,18,2025-11-23T12:31:57+00:00
+180,Doctor Waksman - Nieves,15,5,T,20,2025-11-23T12:35:05+00:00
+182,Ausias March - Pianista Amparo Iturbi,15,6,T,21,2025-11-23T12:32:44+00:00
+186,Benifairó de Valldigna - Joaquín Benlloch,6,8,T,14,2025-11-23T12:35:02+00:00
+194,Estación AVE Joaquín Sorolla,20,17,T,40,2025-11-23T12:33:40+00:00
+196,Jerónimo Muñoz - Gaspar Aguilar,1,13,T,15,2025-11-23T12:37:38+00:00
+198,Fontanars dels Aforins - Vall d'Uixó,1,19,T,20,2025-11-23T12:37:42+00:00
+101,Marino Blas de Lezo (estación Cabañal Adif),24,5,T,30,2025-11-23T12:32:16+00:00
+106,Albalat dels Tarongers - Professor Ernest Lluch,4,21,T,25,2025-11-23T12:33:17+00:00
+116,Doctor Vicente Zaragozá - Ramón Asensio,1,13,T,15,2025-11-23T12:35:09+00:00
+117,Gascó Oliag - Primado Reig,3,27,T,30,2025-11-23T12:36:34+00:00
+133,Alfambra - Poeta Monmeneu,6,8,T,15,2025-11-23T12:34:51+00:00
+161,Mediterráneo - Plaza Cruz de Cañamelar,10,5,T,15,2025-11-23T12:38:39+00:00
+176,Cno. Moncada - Pedro Patricio Mey,9,11,T,20,2025-11-23T12:33:39+00:00
+173,Pío XII - Monestir de Poblet,2,17,T,20,2025-11-23T12:36:47+00:00
+187,Ángel Villena - Ausias March,1,14,T,15,2025-11-23T12:35:20+00:00
+191,Esparraguera - Cra. Malilla,15,0,T,15,2025-11-23T12:32:27+00:00
+152,Reina Doña María - Cádiz,3,12,T,15,2025-11-23T12:32:26+00:00
+145,Plaza Badajoz,1,14,T,15,2025-11-23T12:33:44+00:00
+201,Perez Galdós - Nou Moles,2,18,T,20,2025-11-23T12:30:13+00:00
+235,Conde Torrefiel - Cecilio Plá,2,13,T,15,2025-11-23T12:30:11+00:00
+237,Levante U.D. - Ecuador,12,3,T,15,2025-11-23T12:36:24+00:00
+239,Florista - T4 (Palau de Congressos),7,13,T,20,2025-11-23T12:37:00+00:00
+251,Arquitecto Segura del Lago - Camino Nuevo de Picaña,10,4,T,15,2025-11-23T12:36:32+00:00
+242,La Safor - Maestro Rodrigo,2,13,T,15,2025-11-23T12:30:18+00:00
+250,Tres Cruces - Pio XI,7,8,T,15,2025-11-23T12:37:26+00:00
+254,Doctor Tomás Sala - Carteros,8,11,T,19,2025-11-23T12:33:43+00:00
+241,La Vall d'Albaida - Corts Valencianes,1,14,T,15,2025-11-23T12:28:53+00:00
+243,Albacete - Maluquer,11,7,T,18,2025-11-23T12:30:34+00:00
+247,Tres Cruces - Músico Ayllón,2,13,T,15,2025-11-23T12:29:01+00:00
+264,Av. del Cid - Marconi,9,11,T,20,2025-11-23T12:36:09+00:00
+266,Canal de Navarrés - Maestro Rodrigo,0,18,T,18,2025-11-23T12:33:53+00:00
+268,"Plaza Luis Cano, 5",6,4,T,10,2025-11-23T12:35:12+00:00
+267,Beniferri - Vicent Tomás Martí,7,8,T,16,2025-11-23T12:37:11+00:00
+232,San Vicente Paul - Santiago Rusiñol,12,3,T,15,2025-11-23T12:36:34+00:00
+210,Campos Crespo - Juan de Garay,13,2,T,15,2025-11-23T12:38:12+00:00
+212,Fray Juanípero Serra - Torrente,0,15,T,15,2025-11-23T12:29:05+00:00
+218,Olimpia Arozena Torres - Juan Bautista Vives,5,10,T,15,2025-11-23T12:37:33+00:00
+225,Padre Barranco - Carlos Ruano Llopis (Pintor),1,18,T,20,2025-11-23T12:33:13+00:00
+227,San Clemente - Hospital Arnau de Vilanova,0,20,T,20,2025-11-23T12:35:43+00:00
+231,Alcañiz - Cambrils,5,10,T,15,2025-11-23T12:37:55+00:00
+233,San Juan Bosco - Santiago Rusiñol,13,2,T,15,2025-11-23T12:32:54+00:00
+256,Tres Forques - Turís,10,5,T,15,2025-11-23T12:34:39+00:00
+258,Pintor Rafael Solves - Jose Soto Mico,12,3,T,15,2025-11-23T12:31:51+00:00
+260,Traginers - Pedrapiquers,5,15,T,20,2025-11-23T12:37:59+00:00
+275,Moreras - Rona de Nazaret,18,1,T,20,2025-11-23T12:33:52+00:00
+229,Aitana - Florista,0,16,T,16,2025-11-23T12:37:06+00:00
+70,"Colón, 44",3,14,T,17,2025-11-23T12:30:51+00:00
+74,Plaza San Felipe Neri (Mercado Algirós),3,17,T,20,2025-11-23T12:32:51+00:00
+91,Grabador Jordan - Escultor Pastor,1,14,T,15,2025-11-23T12:33:28+00:00
+99,Blasco Ibañez 166 - Pintor José Mongrell,19,1,T,21,2025-11-23T12:38:33+00:00
+33,Germanías - Ruzafa,2,18,T,20,2025-11-23T12:37:15+00:00
+29,Plaza América - Cirilo Amorós - Sorní,4,16,T,20,2025-11-23T12:38:33+00:00
+31,Salamanca - Conde Altea,2,16,T,19,2025-11-23T12:36:45+00:00
+34,Regne de Valencia - Doctor Sumsi,2,15,T,17,2025-11-23T12:37:47+00:00
+69,Av. Puerto - Serrería,12,13,T,25,2025-11-23T12:36:28+00:00
+41,General Urrutia - Granada,3,17,T,20,2025-11-23T12:34:53+00:00
+65,Av. Puerto - Doctor Manuel Candela,7,11,T,19,2025-11-23T12:35:52+00:00
+40,"Barcas, 11",0,26,T,26,2025-11-23T12:37:21+00:00
+68,Av. Puerto - José Aguilar,4,16,T,20,2025-11-23T12:38:29+00:00
+44,General Urrutia - Av. de la Plata,11,8,T,19,2025-11-23T12:34:07+00:00
+50,Autopista del Saler - Antonio Ferrandis (C.C. El Saler),21,18,T,40,2025-11-23T12:28:47+00:00
+71,Av. Puerto - Plaza Tribunal de les Aigües,16,4,T,20,2025-11-23T12:32:43+00:00
+73,Jerónimo Monsoriu - Industria,6,13,T,20,2025-11-23T12:31:09+00:00
+1,C/GUILLEM DE CASTRO esquina con C/NA JORDANA,9,16,T,25,2025-11-23T12:37:56+00:00
+17,Xátiva - Bailén (Estación del Norte),10,19,T,30,2025-11-23T12:37:28+00:00
+19,Juan Llorens - Quart,8,7,T,15,2025-11-23T12:37:23+00:00
+8,Plaza de la Reina - Mar,6,3,T,9,2025-11-23T12:37:52+00:00
+20,Quart - Fernando el Católico,7,9,T,16,2025-11-23T12:38:24+00:00
+59,Baleares - Río Escalona,1,13,T,15,2025-11-23T12:38:28+00:00
+60,Baleares - Lebón,8,11,T,19,2025-11-23T12:37:42+00:00
+86,Gaspar Aguilar - Vicente Parra,0,20,T,20,2025-11-23T12:33:46+00:00
+94,Blasco Ibañez - Clariano,1,19,T,20,2025-11-23T12:33:49+00:00
+2,Salvador Giner - C. Museo,11,4,T,15,2025-11-23T12:31:43+00:00
+56,Francia - Menorca,15,0,T,15,2025-11-23T12:38:02+00:00
+75,República Argentina - Campoamor,4,21,T,25,2025-11-23T12:35:13+00:00
+77,Molinell - Calderón de la Barca,6,14,T,20,2025-11-23T12:28:38+00:00
+9,Plaza de Tetuán,11,14,T,25,2025-11-23T12:37:35+00:00
+203,Reina Violante - Escultor García Mas,5,10,T,15,2025-11-23T12:34:45+00:00
+136,Economista Gay - Constitución,3,17,T,20,2025-11-23T12:35:22+00:00
+150,Manuel Candela - Rodriguez de Cepeda,13,12,T,25,2025-11-23T12:29:36+00:00
+185,Ebanista Caselles - Ausias March,9,6,T,15,2025-11-23T12:34:34+00:00
+195,Giorgeta - Roig de Corella,0,0,T,16,2025-11-23T12:32:23+00:00
+102,Ramón Llull - Serpis,14,5,T,20,2025-11-23T12:29:39+00:00
+123,Albocácer - Vinaroz,10,10,T,20,2025-11-23T12:36:48+00:00
+122,Músico Hipólito Martínez - Diógenes López Mecho,1,14,T,15,2025-11-23T12:32:39+00:00
+124,Azagador de Alboraya - Dolores Marqués,6,19,T,25,2025-11-23T12:34:45+00:00
+126,Alfahuir - José Chabas Bordehore,19,1,T,20,2025-11-23T12:34:04+00:00
+127,Alfahuir - Duque de Mandas,19,1,T,20,2025-11-23T12:35:37+00:00
+141,Gregorio Gea - Padre Ferris,13,7,T,20,2025-11-23T12:35:34+00:00
+158,Doctor Lluch - Virgen del Sufragio,12,3,T,15,2025-11-23T12:29:11+00:00
+174,Monduber - Peset Aleixandre,4,15,T,19,2025-11-23T12:34:27+00:00
+178,Reig Genovés - Ramón Contreras Mongrell,6,14,T,20,2025-11-23T12:35:49+00:00
+157,Pérez Galdós - Marqués de Zenete,0,0,T,20,2025-09-30T00:46:25+00:00
+184,Bombero Ramón Duart - Hermanos Maristas,15,0,T,15,2025-11-23T12:31:01+00:00
+200,Av. del Cid - Julián Peña,0,15,T,15,2025-11-23T12:34:37+00:00
+103,Rubén Darío - Plaza Fray Luis Colomer,2,12,T,15,2025-11-23T12:33:35+00:00
+110,UPV Trinquet,8,22,T,30,2025-11-23T12:37:55+00:00
+130,Convento Carmelitas - Alboraya,4,11,T,15,2025-11-23T12:29:34+00:00
+113,UPV Caminos,21,17,T,38,2025-11-23T12:37:38+00:00
+115,Cataluña - Doctor Vicente Zaragozá,0,16,T,16,2025-11-23T12:31:45+00:00
+129,Almazora - Benimuslem,4,16,T,20,2025-11-23T12:37:47+00:00
+135,Constitución - Reus,0,19,T,20,2025-11-23T12:33:02+00:00
+143,Pio XII - Menéndez PIdal (Nuevo Centro),11,19,T,30,2025-11-23T12:31:14+00:00
+169,Pavía (Instituto Isabel de Villena),18,0,T,18,2025-11-23T12:37:35+00:00
+156,Puerto Rico - Cuba,5,10,T,15,2025-11-23T12:33:28+00:00
+172,Pío XII - Campanar,2,18,T,20,2025-11-23T12:32:18+00:00
+179,Av. de la Plata - Zapadores,2,21,T,23,2025-11-23T12:36:46+00:00
+181,"Zapadores, 23",0,15,T,15,2025-11-23T12:33:32+00:00
+131,"CALLE SANTA AMALIA  2, esquina POETA BODRIA",2,18,T,20,2025-11-23T12:35:46+00:00
+170,Isabel de Villena - Mendizábal,20,0,T,20,2025-11-23T12:36:18+00:00
+207,"Giorgeta, 64",11,4,T,15,2025-11-23T12:35:31+00:00
+209,Gaspar Aguilar - Músico Penella,2,16,T,18,2025-11-23T12:31:06+00:00
+211,Fray Junípero Serra - Vall d'Uixó,0,15,T,15,2025-11-23T12:31:35+00:00
+249,Tres Cruces - Segunda República Española,1,14,T,15,2025-11-23T12:29:38+00:00
+253,José Meliá Castelló - Campos Crespo,2,13,T,15,2025-11-23T12:30:18+00:00
+255,Tomas de Villarroya - San Vicente,1,17,T,18,2025-11-23T12:33:33+00:00
+238,San Jose Artesano - Francisco Morote Greus,1,14,T,15,2025-11-23T12:38:00+00:00
+240,Camp del Turia - Corts Valencianes,0,20,T,20,2025-11-23T12:32:07+00:00
+244,Valle de la Ballestera - Pio Baroja,1,19,T,20,2025-11-23T12:34:20+00:00
+245,Nueve de Octubre - Cieza,2,18,T,20,2025-11-23T12:38:13+00:00
+263,Padre Esteban Pernet - Casa Misericordia,5,13,T,18,2025-11-23T12:30:22+00:00
+265,Alcasser - Poeta Alberto Lista,3,12,T,15,2025-11-23T12:28:57+00:00
+262,Tres Forques - Colonia Española de Mexico,8,12,T,20,2025-11-23T12:31:42+00:00
+269,"Campamento, 81",3,12,T,15,2025-11-23T12:36:07+00:00
+274,San Francisco de Paula - Castell de Pop,14,1,T,15,2025-11-23T12:31:29+00:00
+276,Veles e Vents,19,0,T,20,2025-11-23T12:33:09+00:00
+271,Salvador Cerveró - Carlos Cortina,9,6,T,15,2025-11-23T12:29:00+00:00
+273,Moraira - Alta del Mar,14,1,T,15,2025-11-23T12:31:35+00:00
+228,Doctor Nicasio Benlloch - L'Horta Sud,0,15,T,15,2025-11-23T12:34:06+00:00
+213,Archiduque Carlos - José María Mortes Lerma,13,2,T,15,2025-11-23T12:31:27+00:00
+219,Castán Tobeñas - Rincon de Ademuz,2,16,T,18,2025-11-23T12:37:08+00:00
+221,Manuel de Falla - Hernández Lázaro,3,17,T,20,2025-11-23T12:29:41+00:00
+216,Av. del Cid - Burgos,10,7,T,17,2025-11-23T12:34:34+00:00
+220,Castán Tobeñas - Patriques,9,7,T,16,2025-11-23T12:38:17+00:00
+222,Maestro Rodrigo - Manuel de Falla,8,12,T,20,2025-11-23T12:30:48+00:00
+23,Fernando el Católico - Erudito Orellana,12,6,T,19,2025-11-23T12:38:09+00:00
+72,Ramiro de Maeztu - Peris Brell,2,12,T,15,2025-11-23T12:37:59+00:00
+24,Fernando el Católico - Cuenca,0,19,T,20,2025-11-23T12:29:42+00:00
+25,"Alberique, 18 (Abastos)",10,13,T,23,2025-11-23T12:34:13+00:00
+28,Navarro Reverter - Grabador Esteve,20,9,T,29,2025-11-23T12:37:45+00:00
+39,Peris y Valero - Cuba,3,16,T,19,2025-11-23T12:38:12+00:00
+32,Conde Altea - Almirante Cadarso,0,0,T,20,2025-11-23T12:28:46+00:00
+80,Amadeo de Saboya (frente Ayuntamiento),22,3,T,25,2025-11-23T12:33:11+00:00
+42,Av. de la Plata (Museo Fallero),20,0,T,20,2025-11-23T12:31:34+00:00
+54,Plaza de Europa,19,0,T,20,2025-11-23T12:33:43+00:00
+100,Blasco Ibañez - Mestre Ripoll,13,7,T,20,2025-11-23T12:38:38+00:00
+85,Blasco Ibañez - Jaime Roig,1,22,T,23,2025-11-23T12:33:46+00:00
+87,Blasco Ibañez - Doctor Gómez Ferrer (Clínico),2,26,T,33,2025-11-23T12:35:27+00:00
+89,"Blasco Ibañez, 23 (F. Filosofía y Psicología)",0,30,T,30,2025-11-23T12:30:15+00:00
+3,Plaza del Musico López Chavarri,13,7,T,20,2025-11-23T12:38:32+00:00
+5,Plaza Poeta Llorente,2,12,T,15,2025-11-23T12:38:13+00:00
+13,Alfonso el Magnánimo - Nave,4,20,T,24,2025-11-23T12:37:58+00:00
+4,Plaza de la Virgen - Bailía,0,24,T,25,2025-11-23T12:31:58+00:00
+6,Guillem de Castro - San Pedro Pascual,1,13,T,15,2025-11-23T12:34:22+00:00
+10,Hospital - Horno del Hospital,3,12,T,15,2025-11-23T12:37:44+00:00
+12,Calle Salvá - Calle Poeta Querol,9,11,T,20,2025-11-23T12:36:03+00:00
+16,"Colón, 60",11,9,T,20,2025-11-23T12:28:37+00:00
+18,Colón 20-22,2,21,T,24,2025-11-23T12:36:49+00:00
+47,Autopista del Saler - Puente Monteolivete,15,4,T,20,2025-11-23T12:38:23+00:00
+58,Plaza España,9,11,T,20,2025-11-23T12:36:32+00:00
+62,Menorca - Baleares,20,0,T,20,2025-11-23T12:32:24+00:00
+66,Guillem de Anglesola - Av. Puerto,15,6,T,25,2025-11-23T12:34:44+00:00
+96,Blasco Ibañez - Yecla,12,9,T,21,2025-11-23T12:35:44+00:00
+46,Pintor Luis Arcas - Inst. Obrero Valenciano,11,9,T,20,2025-11-23T12:33:04+00:00
+95,Naranjos (Magisterio),3,30,T,33,2025-11-23T12:33:49+00:00
+38,Peris y Valero - Cabo Jubi,5,10,T,15,2025-11-23T12:37:33+00:00
+144,Marqués de San Juan - Diputat Lluís Lucía,5,10,T,15,2025-11-23T12:34:26+00:00
+147,Pie de la Cruz - Rejas,5,9,T,15,2025-11-23T12:35:53+00:00
+125,"Masquefa, 42 - 44",0,14,T,15,2025-11-23T12:37:28+00:00
+134,Maximiliano Thous - Luz Casanova,4,16,T,20,2025-11-23T12:36:33+00:00
+142,Gregorio Gea - Profesor Beltrán Báguena,13,12,T,25,2025-11-23T12:37:06+00:00
+165,Pavía - Espadán,20,0,T,20,2025-11-23T12:36:40+00:00
+189,Hospital Nueva Fe (administración),1,29,T,30,2025-11-23T12:30:01+00:00
+193,Uruguay - Carteros,10,10,T,20,2025-11-23T12:38:17+00:00
+104,Albalat dels Tarongers - Paseo Facultades,5,15,T,20,2025-11-23T12:32:05+00:00
+107,Campillo de Altobuey (Polideportivo),13,2,T,15,2025-11-23T12:36:27+00:00
+109,Naranjos - Ingeniero Fausto Elio,2,17,T,20,2025-11-23T12:34:52+00:00
+121,Murta - Sant Eperit,1,14,T,15,2025-11-23T12:37:29+00:00
+120,Doctor Vicente Zaragozá - Emilio Baró,2,16,T,18,2025-11-23T12:37:33+00:00
+139,Reus - Alquería de la Estrella,0,15,T,15,2025-11-23T12:35:37+00:00
+153,Llano de la Zaidía - Doctor Olóriz,3,21,T,24,2025-11-23T12:36:39+00:00
+155,Salamanca - Reina Doña Germana,3,14,T,20,2025-11-23T12:36:42+00:00
+160,José María de Haro - Justo y Pastor,9,11,T,20,2025-11-23T12:29:04+00:00
+162,Armada Española - Mariano Cuber,17,1,T,19,2025-11-23T12:36:23+00:00
+166,Don Vicente Guillot - Progreso,10,4,T,15,2025-11-23T12:34:34+00:00
+188,Hospital Nueva Fe (consultas externas),1,38,T,40,2025-11-23T12:36:15+00:00
+190,Cra. Malilla - Bulevar Sur,7,10,T,18,2025-11-23T12:29:25+00:00
+192,Cra. Malilla - Oltá,9,11,T,20,2025-11-23T12:36:52+00:00
+197,Fontanars dels Aforins - Jacinto Labaila,2,13,T,15,2025-11-23T12:29:18+00:00
+199,Beato Nicolás Factor - Convento de Jesús,4,11,T,15,2025-11-23T12:38:19+00:00
+202,Pechina - Teruel,14,6,T,20,2025-11-23T12:33:19+00:00
+108,Luís Peixó 20,11,2,T,15,2025-11-23T12:37:17+00:00
+112,Manuel Broseta i Pont - Naranjos,3,37,T,40,2025-11-23T12:30:06+00:00
+128,Alfahuir - Peñiscola,12,13,T,25,2025-11-23T12:37:02+00:00
+119,Jaime Roig - Bachiller,1,18,T,20,2025-11-23T12:37:39+00:00
+137,Economista Gay - Luis Crumiere,5,15,T,20,2025-11-23T12:36:01+00:00
+149,Peris y Valero - Salamanca,9,11,T,20,2025-11-23T12:37:16+00:00
+151,Jerónimo Monsoriu - Alcalde Cano Coloma,13,7,T,20,2025-11-23T12:38:07+00:00
+154,Pescadores - Progreso,13,2,T,15,2025-11-23T12:34:10+00:00
+159,Francisco Cubells - San José de la Vega,6,10,T,17,2025-11-23T12:35:43+00:00
+163,Paseo Neptuno 32-34,20,0,T,20,2025-11-23T12:37:25+00:00
+175,Juan XXIII - Domingo Gómez,7,8,T,15,2025-11-23T12:31:52+00:00
+177,Alcudia de Crespins - Pedro Patricio Mey,7,7,T,15,2025-11-23T12:35:27+00:00
+111,UPV Galileo,23,7,T,30,2025-11-23T12:29:15+00:00
+171,Gran Canaria - Ingeniero Manuel Maese,6,8,T,15,2025-11-23T12:28:55+00:00
+114,UPV Informática,4,24,T,30,2025-11-23T12:31:26+00:00
+259,Pio IX - Músico Cabanilles,20,0,T,20,2025-11-23T12:37:19+00:00
+261,Plaza Xuquer - Vinalopó,2,17,T,19,2025-11-23T12:30:49+00:00
+230,Poeta Serrano Clavero - General Llorens,3,12,T,15,2025-11-23T12:29:07+00:00
+234,Plaza Músico Espí,7,8,T,15,2025-11-23T12:32:25+00:00
+236,Rio Segre - Rafael Company,12,3,T,15,2025-11-23T12:38:12+00:00
+246,Tres Cruces - Hospital General,1,18,T,20,2025-11-23T12:35:04+00:00
+248,Tres Cruces - Jose Maria Mortes Lerma,3,16,T,20,2025-11-23T12:31:43+00:00
+257,"Plaza Salvador Soria, 8",9,11,T,20,2025-11-23T12:35:46+00:00
+252,Dels Gremis - Campos Crespo,3,17,T,20,2025-11-23T12:29:58+00:00
+270,Ninot - Regino Mas,7,9,T,16,2025-11-23T12:36:40+00:00
+272,Vicente la Roda - Ingeniero Fausto Elio,12,3,T,15,2025-11-23T12:28:57+00:00
+204,Corts Valencianes - General Avilés,5,15,T,20,2025-11-23T12:33:00+00:00
+205,Nicasio Benlloch - Amics dels Corpus,4,20,T,24,2025-11-23T12:33:38+00:00
+226,Corts Valencianes - La Safor,0,30,T,30,2025-11-23T12:34:45+00:00
+206,Periodista Gil Sumbiela - Poeta Serrano Clavero,1,13,T,15,2025-11-23T12:34:25+00:00
+215,Músico Ayllón - Francisco Dolz,7,8,T,15,2025-11-23T12:38:26+00:00
+217,Pintor Stolz - Nueve de Octubre,6,19,T,25,2025-11-23T12:33:46+00:00
+214,"Santa Cruz de Tenerife, 21",0,15,T,15,2025-11-23T12:31:38+00:00
+224,Jorge Comin (Metge) - Terrateig,1,18,T,20,2025-11-23T12:31:39+00:00
+223,Valle de la Ballestera - Hospital Nueve de Octubre,2,18,T,20,2025-11-23T12:31:17+00:00
+208,Carteros - Mossen Febrer,5,15,T,20,2025-11-23T12:37:26+00:00
