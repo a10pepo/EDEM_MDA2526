@@ -1,4 +1,7 @@
-select
+
+  
+  create view "dev"."main"."availability__dbt_tmp" as (
+    select
     station_id,
     station_name,
     available_bikes,
@@ -6,5 +9,5 @@ select
     total_capacity,
     state_station,
     time
-from {{ ref('valenbisi') }}
-
+from "dev"."main"."valenbisi"
+  );
