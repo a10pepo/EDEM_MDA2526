@@ -18,7 +18,11 @@ renamed as (
         longitude as longitud,
         available_bikes as bicicletas_disponibles,
         available_slots as huecos_disponibles,
-        station_status as estado_estacion,
+        case
+            when station_status = 'T' then 'Disponible'
+            when station_status = 'F' then 'No disponible'
+            else 'Desconocido'
+        end as estado_estacion,
         total_capacity as capacidad_total,
         cast(timestamp as date) as momento_medicion
     from source
