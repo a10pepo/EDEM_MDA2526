@@ -11,13 +11,16 @@ def validate_folder_structure(path):
     deliverables += [d for d in os.listdir(mia_path) if os.path.isdir(os.path.join(mia_path, d))]
     deliverables += [d for d in os.listdir(mda_path) if os.path.isdir(os.path.join(mda_path, d))]
     
+    # Create a lowercase version for case-insensitive comparison
+    deliverables_lower = [d.lower() for d in deliverables]
+    
     for file in os.listdir(path):
         full_path = os.path.join(path, file)
         if os.path.isdir(full_path):
             for user_file in os.listdir(full_path):
                 user_path = os.path.join(full_path, user_file)
                 if os.path.isdir(user_path):
-                    if user_file not in deliverables:
+                    if user_file.lower() not in deliverables_lower:
                         print("Esta Carpeta no es correcta, comprueba el nombre exacto de la carpeta: ", user_file)
                         exit(1)
                     else:
