@@ -43,7 +43,7 @@ def get_data_bicis(offset, limit):
 def crear_tabla(conexion):
     try:
         cursor = conexion.cursor()
-        cursor.execute("""TRUNCATE TABLE valenbisi_raw """)
+        cursor.execute("""TRUNCATE TABLE valenbisi_raw RESTART IDENTITY""")
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS valenbisi_raw (
         id SERIAL PRIMARY KEY,
