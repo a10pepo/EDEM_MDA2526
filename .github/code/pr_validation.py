@@ -2,9 +2,15 @@ import os
 
 def validate_folder_structure(path):
     
-    deliverables=os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/COMUN"))
-    deliverables=deliverables+os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/MIA"))
-    deliverables=deliverables+os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/MDA"))
+    # Get only directories, not files like .gitkeep
+    comun_path = os.path.join(os.getcwd(), "PROFESORES/COMUN")
+    mia_path = os.path.join(os.getcwd(), "PROFESORES/MIA")
+    mda_path = os.path.join(os.getcwd(), "PROFESORES/MDA")
+    
+    deliverables = [d for d in os.listdir(comun_path) if os.path.isdir(os.path.join(comun_path, d))]
+    deliverables += [d for d in os.listdir(mia_path) if os.path.isdir(os.path.join(mia_path, d))]
+    deliverables += [d for d in os.listdir(mda_path) if os.path.isdir(os.path.join(mda_path, d))]
+    
     for file in os.listdir(path):
         full_path = os.path.join(path, file)
         if os.path.isdir(full_path):
