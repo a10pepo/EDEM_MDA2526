@@ -2,6 +2,7 @@ import psycopg
 import os
 import time
 import requests
+import datetime
 
     
 def insert_data(conexion,data):
@@ -20,8 +21,8 @@ def insert_data(conexion,data):
         try:
             cursor = conexion.cursor()
             cursor.execute("""
-            INSERT INTO valenbisi_raw (station_id, station_name, latitude, longitude, available_bikes, available_slots, station_status, total_capacity, timestamp)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s); """, (station_id, station_name, coordenate_lat, coordenate_lon, available, free, open_station, total_capacity, last_update))
+            INSERT INTO valenbisi_raw (station_id, station_name, latitude, longitude, available_bikes, available_slots, station_status, total_capacity, last_update, timestamp)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s); """, (station_id, station_name, coordenate_lat, coordenate_lon, available, free, open_station, total_capacity, last_update, datetime.datetime.now()))
             cursor.close()
             conexion.commit()
             print(f"insertado con exito estación n {station_id}")
@@ -43,9 +44,9 @@ def get_data_bicis(offset, limit):
 def crear_tabla(conexion):
     try:
         cursor = conexion.cursor()
-        # cursor.execute("""TRUNCATE TABLE valenbisi_raw RESTART IDENTITY""")
+        cursor.execute("""DROP TABLE valenbisi_raw CASCADE""")
         cursor.execute("""
-        CREATE TABLE IF NOT EXISTS valenbisi_raw (
+        CREATE TABLE valenbisi_raw (
         id SERIAL PRIMARY KEY,
         station_id INTEGER NOT NULL,
         station_name VARCHAR(255),
@@ -55,6 +56,7 @@ def crear_tabla(conexion):
         available_slots INTEGER,
         station_status VARCHAR(50),
         total_capacity INTEGER,
+        last_update TIMESTAMP NOT NULL,
         timestamp TIMESTAMP NOT NULL
         ); """)
         cursor.close()
@@ -97,4 +99,4 @@ while True:
             offset += limit
         else:
             break
-    time.sleep(60)
+    time.sleep(10)

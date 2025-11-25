@@ -24,7 +24,10 @@ renamed as (
             else 'Desconocido'
         end as estado_estacion,
         total_capacity as capacidad_total,
-        cast(timestamp as date) as momento_medicion
+        cast(timestamp as date) as fecha_medicion,
+        cast(timestamp as time) as hora_medicion,
+        last_update as momento_medicion,   
+        timestamp as ultima_consulta
     from source
 )
 

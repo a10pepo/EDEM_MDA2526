@@ -30,7 +30,10 @@ last_update as (
         huecos_disponibles,
         estado_estacion,
         capacidad_total,
-        momento_medicion
+        fecha_medicion,
+        hora_medicion,
+        momento_medicion,
+        ultima_consulta
     from ordered
     where rn = 1
 )
