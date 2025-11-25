@@ -1,0 +1,8 @@
+id_ticket,id_socio,id_producto,fecha_compra,cantidad,estado
+5001,1,10,2024-01-05,1,completado
+5002,1,12,2024-01-05,2,completado
+5003,2,13,2024-01-10,5,completado
+5004,3,10,2024-01-12,1,devuelto
+5005,4,14,2024-02-01,10,completado
+5006,5,11,2024-02-15,1,pendiente
+5007,6,15,2024-02-20,2,completado
