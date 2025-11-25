@@ -2896,3 +2896,1948 @@ drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" casc
 [0m21:09:12.384503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97e8ac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9cd8f690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9caa2790>]}
 [0m21:09:12.384658 [debug] [MainThread]: Flushing usage events
 [0m21:09:12.915556 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:44:10.474061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3a9e990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa39bc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3a9ea10>]}
+
+
+============================== 21:44:10.477199 | 6294a729-a82b-4e1b-a824-279b4f787f04 ==============================
+[0m21:44:10.477199 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m21:44:10.477491 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'fail_fast': 'False', 'quiet': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'empty': 'False', 'log_path': '/usr/app/dbt/dbt_valenbisi/logs', 'introspect': 'True', 'log_format': 'default', 'use_colors': 'True', 'version_check': 'True', 'static_parser': 'True', 'warn_error': 'None', 'printer_width': '80', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'profiles_dir': '/usr/app/dbt', 'cache_selected_only': 'False', 'write_json': 'True', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager'}
+[0m21:44:10.548172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2a47750>]}
+[0m21:44:10.568455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2a95c50>]}
+[0m21:44:10.568801 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m21:44:10.604979 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m21:44:10.680694 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:44:10.680920 [debug] [MainThread]: Partial parsing: added file: dbt_valenbisi://models/intermediate/int_ocupacion.sql
+[0m21:44:10.792600 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_valenbisi.marts
+[0m21:44:10.798739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa25a6bd0>]}
+[0m21:44:10.837726 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m21:44:10.839119 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m21:44:10.849783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa240ba90>]}
+[0m21:44:10.850035 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 737 macros
+[0m21:44:10.850279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa414a790>]}
+[0m21:44:10.851078 [info ] [MainThread]: 
+[0m21:44:10.851270 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:44:10.851482 [info ] [MainThread]: 
+[0m21:44:10.851821 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m21:44:10.853285 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db'
+[0m21:44:10.871504 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db"
+[0m21:44:10.871682 [debug] [ThreadPool]: On list_valenbisi_db: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:44:10.871805 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:44:10.884425 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.013 seconds
+[0m21:44:10.884945 [debug] [ThreadPool]: On list_valenbisi_db: Close
+[0m21:44:10.885489 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db_public'
+[0m21:44:10.887898 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m21:44:10.888049 [debug] [ThreadPool]: On list_valenbisi_db_public: BEGIN
+[0m21:44:10.888183 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:44:10.891161 [debug] [ThreadPool]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:10.891289 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m21:44:10.891427 [debug] [ThreadPool]: On list_valenbisi_db_public: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db_public"} */
+select
+      'valenbisi_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m21:44:10.896604 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.005 seconds
+[0m21:44:10.897184 [debug] [ThreadPool]: On list_valenbisi_db_public: ROLLBACK
+[0m21:44:10.897350 [debug] [ThreadPool]: On list_valenbisi_db_public: Close
+[0m21:44:10.899203 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:10.899354 [debug] [MainThread]: On master: BEGIN
+[0m21:44:10.899486 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:44:10.902472 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:10.902599 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:10.902746 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:44:10.906365 [debug] [MainThread]: SQL status: SELECT 1 in 0.003 seconds
+[0m21:44:10.906864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2a97950>]}
+[0m21:44:10.907050 [debug] [MainThread]: On master: ROLLBACK
+[0m21:44:10.907209 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:10.907338 [debug] [MainThread]: On master: BEGIN
+[0m21:44:10.907528 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m21:44:10.907638 [debug] [MainThread]: On master: COMMIT
+[0m21:44:10.907750 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:10.907851 [debug] [MainThread]: On master: COMMIT
+[0m21:44:10.908016 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:10.908170 [debug] [MainThread]: On master: Close
+[0m21:44:10.910573 [debug] [Thread-1 (]: Began running node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:10.910790 [info ] [Thread-1 (]: 1 of 2 START sql view model public.staging_valenbisi ........................... [RUN]
+[0m21:44:10.911020 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_valenbisi_db_public, now model.dbt_valenbisi.staging_valenbisi)
+[0m21:44:10.911226 [debug] [Thread-1 (]: Began compiling node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:10.914163 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.914735 [debug] [Thread-1 (]: Began executing node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:10.927093 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.927926 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.928117 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: BEGIN
+[0m21:44:10.928290 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:44:10.931459 [debug] [Thread-1 (]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:10.931622 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.931791 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+
+  create view "valenbisi_db"."public"."staging_valenbisi__dbt_tmp"
+    
+    
+  as (
+    with source as (
+
+    select * from "valenbisi_db"."public"."valenbisi_raw"
+
+),
+
+renamed as (
+    select
+        id as id,
+        station_id as numero_estacion,
+        station_name as nombre_estacion,
+        latitude as latitud,
+        longitude as longitud,
+        available_bikes as bicicletas_disponibles,
+        available_slots as huecos_disponibles,
+        station_status as estado_estacion,
+        total_capacity as capacidad_total,
+        cast(timestamp as date) as momento_medicion
+    from source
+)
+
+select * from renamed
+  );
+[0m21:44:10.936508 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.005 seconds
+[0m21:44:10.939010 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.939211 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi" rename to "staging_valenbisi__dbt_backup"
+[0m21:44:10.939623 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:44:10.940863 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.941012 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi__dbt_tmp" rename to "staging_valenbisi"
+[0m21:44:10.941304 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:44:10.946750 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m21:44:10.946923 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.947065 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m21:44:10.947452 [debug] [Thread-1 (]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:10.949683 [debug] [Thread-1 (]: Applying DROP to: "valenbisi_db"."public"."staging_valenbisi__dbt_backup"
+[0m21:44:10.951241 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:10.951379 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" cascade
+[0m21:44:10.953243 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.002 seconds
+[0m21:44:10.954084 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: Close
+[0m21:44:10.954744 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa1fe2910>]}
+[0m21:44:10.955017 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.staging_valenbisi ...................... [[32mCREATE VIEW[0m in 0.04s]
+[0m21:44:10.955319 [debug] [Thread-1 (]: Finished running node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:10.955728 [debug] [Thread-3 (]: Began running node model.dbt_valenbisi.int_ocupacion
+[0m21:44:10.955951 [info ] [Thread-3 (]: 2 of 2 START sql view model public.int_ocupacion ............................... [RUN]
+[0m21:44:10.956260 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_valenbisi.int_ocupacion'
+[0m21:44:10.956419 [debug] [Thread-3 (]: Began compiling node model.dbt_valenbisi.int_ocupacion
+[0m21:44:10.957719 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:10.958290 [debug] [Thread-3 (]: Began executing node model.dbt_valenbisi.int_ocupacion
+[0m21:44:10.959638 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:10.960152 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:10.960306 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: BEGIN
+[0m21:44:10.960440 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:44:10.963351 [debug] [Thread-3 (]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:10.963489 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:10.963662 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
+
+    -- Partimos directamente del staging
+    select * 
+    from "valenbisi_db"."public"."staging_valenbisi"
+
+),
+
+enriched as (
+
+    select
+        -- Mantener todas las columnas originales
+        id,
+        numero_estacion,
+        nombre_estacion,
+        latitud,
+        longitud,
+        bicicletas_disponibles,
+        huecos_disponibles,
+        estado_estacion,
+        capacidad_total,
+        momento_medicion,
+
+        -- Nuevas métricas de disponibilidad
+        bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
+        huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,
+        capacidad_total - huecos_disponibles as ocupacion,
+
+        -- Clasificación de situación según reglas proporcionadas
+        case
+            when capacidad_total = 0 then 'desconocida'  -- Evita división por cero
+            when bicicletas_disponibles = capacidad_total then 'llena'
+            when bicicletas_disponibles >= capacidad_total * 0.75 then 'casi llena'
+            when bicicletas_disponibles >= capacidad_total * 0.50 then 'medio llena'
+            when bicicletas_disponibles >= capacidad_total * 0.25 then 'medio vacía'
+            when bicicletas_disponibles >= 1 then 'casi vacía'
+            when bicicletas_disponibles = 0 then 'vacía'
+            else 'desconocida'
+        end as situacion_estacion
+
+    from base
+)
+
+select * from enriched;
+  );
+[0m21:44:10.964037 [debug] [Thread-3 (]: Postgres adapter: Postgres error: syntax error at or near ";"
+LINE 50: select * from enriched;
+                               ^
+
+[0m21:44:10.964182 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: ROLLBACK
+[0m21:44:10.964372 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: Close
+[0m21:44:10.968851 [debug] [Thread-3 (]: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near ";"
+  LINE 50: select * from enriched;
+                                 ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m21:44:10.969119 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6294a729-a82b-4e1b-a824-279b4f787f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa1788610>]}
+[0m21:44:10.969411 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model public.int_ocupacion ...................... [[31mERROR[0m in 0.01s]
+[0m21:44:10.969688 [debug] [Thread-3 (]: Finished running node model.dbt_valenbisi.int_ocupacion
+[0m21:44:10.969901 [debug] [Thread-7 (]: Marking all children of 'model.dbt_valenbisi.int_ocupacion' to be skipped because of status 'error'.  Reason: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near ";"
+  LINE 50: select * from enriched;
+                                 ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql.
+[0m21:44:10.970749 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:10.970900 [debug] [MainThread]: On master: BEGIN
+[0m21:44:10.971038 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:44:10.973863 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:10.973991 [debug] [MainThread]: On master: COMMIT
+[0m21:44:10.974127 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:10.974250 [debug] [MainThread]: On master: COMMIT
+[0m21:44:10.974400 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:10.974524 [debug] [MainThread]: On master: Close
+[0m21:44:10.974693 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:44:10.974804 [debug] [MainThread]: Connection 'list_valenbisi_db' was properly closed.
+[0m21:44:10.974903 [debug] [MainThread]: Connection 'model.dbt_valenbisi.staging_valenbisi' was properly closed.
+[0m21:44:10.975002 [debug] [MainThread]: Connection 'model.dbt_valenbisi.int_ocupacion' was properly closed.
+[0m21:44:10.975157 [info ] [MainThread]: 
+[0m21:44:10.975309 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m21:44:10.975664 [debug] [MainThread]: Command end result
+[0m21:44:10.991052 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m21:44:10.991987 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m21:44:10.994480 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt/dbt_valenbisi/target/run_results.json
+[0m21:44:10.994616 [info ] [MainThread]: 
+[0m21:44:10.994779 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:44:10.994961 [info ] [MainThread]: 
+[0m21:44:10.995167 [error] [MainThread]: [31mFailure in model int_ocupacion (models/intermediate/int_ocupacion.sql)[0m
+[0m21:44:10.995358 [error] [MainThread]:   Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near ";"
+  LINE 50: select * from enriched;
+                                 ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m21:44:10.995504 [info ] [MainThread]: 
+[0m21:44:10.995716 [info ] [MainThread]:   compiled code at target/compiled/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m21:44:10.995871 [info ] [MainThread]: 
+[0m21:44:10.996050 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m21:44:10.996952 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.54126275, "process_in_blocks": "99144", "process_kernel_time": 0.099793, "process_mem_max_rss": "130428", "process_out_blocks": "6885", "process_user_time": 0.898142}
+[0m21:44:10.997127 [debug] [MainThread]: Command `dbt run` failed at 21:44:10.997098 after 0.54 seconds
+[0m21:44:10.997280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa39a3190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa406cf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3daee90>]}
+[0m21:44:10.997440 [debug] [MainThread]: Flushing usage events
+[0m21:44:11.638993 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:44:44.924797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55f64d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55f2890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55f7ed0>]}
+
+
+============================== 21:44:44.926092 | be2b182d-441a-4f5d-8a38-7742fc9a69d6 ==============================
+[0m21:44:44.926092 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m21:44:44.926436 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'target_path': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'version_check': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'quiet': 'False', 'no_print': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_path': '/usr/app/dbt/dbt_valenbisi/logs', 'write_json': 'True', 'profiles_dir': '/usr/app/dbt', 'use_experimental_parser': 'False', 'log_format': 'default', 'introspect': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_cache_events': 'False'}
+[0m21:44:44.977180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa476f8d0>]}
+[0m21:44:44.996843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa845e050>]}
+[0m21:44:44.997137 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m21:44:45.026657 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m21:44:45.084045 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:44:45.084312 [debug] [MainThread]: Partial parsing: updated file: dbt_valenbisi://models/intermediate/int_ocupacion.sql
+[0m21:44:45.194251 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_valenbisi.marts
+[0m21:44:45.200286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3ff6a90>]}
+[0m21:44:45.238250 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m21:44:45.239114 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m21:44:45.243842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa47f3050>]}
+[0m21:44:45.244076 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 737 macros
+[0m21:44:45.244270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5ad6d50>]}
+[0m21:44:45.244978 [info ] [MainThread]: 
+[0m21:44:45.245218 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:44:45.245413 [info ] [MainThread]: 
+[0m21:44:45.245667 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m21:44:45.247157 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db'
+[0m21:44:45.259232 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db"
+[0m21:44:45.259414 [debug] [ThreadPool]: On list_valenbisi_db: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:44:45.259546 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:44:45.263939 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.004 seconds
+[0m21:44:45.264483 [debug] [ThreadPool]: On list_valenbisi_db: Close
+[0m21:44:45.265054 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db_public'
+[0m21:44:45.267416 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m21:44:45.267577 [debug] [ThreadPool]: On list_valenbisi_db_public: BEGIN
+[0m21:44:45.267703 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:44:45.270533 [debug] [ThreadPool]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:45.270687 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m21:44:45.270824 [debug] [ThreadPool]: On list_valenbisi_db_public: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db_public"} */
+select
+      'valenbisi_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m21:44:45.272353 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.001 seconds
+[0m21:44:45.272876 [debug] [ThreadPool]: On list_valenbisi_db_public: ROLLBACK
+[0m21:44:45.273068 [debug] [ThreadPool]: On list_valenbisi_db_public: Close
+[0m21:44:45.274807 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:45.274933 [debug] [MainThread]: On master: BEGIN
+[0m21:44:45.275046 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:44:45.277800 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:45.277996 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:45.278150 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:44:45.280023 [debug] [MainThread]: SQL status: SELECT 1 in 0.002 seconds
+[0m21:44:45.280554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa4191310>]}
+[0m21:44:45.280746 [debug] [MainThread]: On master: ROLLBACK
+[0m21:44:45.280925 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:45.281050 [debug] [MainThread]: On master: BEGIN
+[0m21:44:45.281280 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m21:44:45.281411 [debug] [MainThread]: On master: COMMIT
+[0m21:44:45.281531 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:45.281643 [debug] [MainThread]: On master: COMMIT
+[0m21:44:45.281798 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:45.281965 [debug] [MainThread]: On master: Close
+[0m21:44:45.283177 [debug] [Thread-1 (]: Began running node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:45.283406 [info ] [Thread-1 (]: 1 of 2 START sql view model public.staging_valenbisi ........................... [RUN]
+[0m21:44:45.283716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_valenbisi_db_public, now model.dbt_valenbisi.staging_valenbisi)
+[0m21:44:45.283908 [debug] [Thread-1 (]: Began compiling node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:45.286650 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.287052 [debug] [Thread-1 (]: Began executing node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:45.299109 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.299672 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.299835 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: BEGIN
+[0m21:44:45.300002 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:44:45.303071 [debug] [Thread-1 (]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:45.303223 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.303368 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+
+  create view "valenbisi_db"."public"."staging_valenbisi__dbt_tmp"
+    
+    
+  as (
+    with source as (
+
+    select * from "valenbisi_db"."public"."valenbisi_raw"
+
+),
+
+renamed as (
+    select
+        id as id,
+        station_id as numero_estacion,
+        station_name as nombre_estacion,
+        latitude as latitud,
+        longitude as longitud,
+        available_bikes as bicicletas_disponibles,
+        available_slots as huecos_disponibles,
+        station_status as estado_estacion,
+        total_capacity as capacidad_total,
+        cast(timestamp as date) as momento_medicion
+    from source
+)
+
+select * from renamed
+  );
+[0m21:44:45.304826 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m21:44:45.307279 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.307433 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi" rename to "staging_valenbisi__dbt_backup"
+[0m21:44:45.307741 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:44:45.308876 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.309017 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi__dbt_tmp" rename to "staging_valenbisi"
+[0m21:44:45.309366 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:44:45.315180 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m21:44:45.315352 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.315497 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m21:44:45.316034 [debug] [Thread-1 (]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:45.318169 [debug] [Thread-1 (]: Applying DROP to: "valenbisi_db"."public"."staging_valenbisi__dbt_backup"
+[0m21:44:45.319693 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:44:45.319827 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" cascade
+[0m21:44:45.320613 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m21:44:45.321480 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: Close
+[0m21:44:45.322113 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa40ab590>]}
+[0m21:44:45.322385 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.staging_valenbisi ...................... [[32mCREATE VIEW[0m in 0.04s]
+[0m21:44:45.322672 [debug] [Thread-1 (]: Finished running node model.dbt_valenbisi.staging_valenbisi
+[0m21:44:45.323116 [debug] [Thread-3 (]: Began running node model.dbt_valenbisi.int_ocupacion
+[0m21:44:45.323342 [info ] [Thread-3 (]: 2 of 2 START sql view model public.int_ocupacion ............................... [RUN]
+[0m21:44:45.323606 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_valenbisi.int_ocupacion'
+[0m21:44:45.323769 [debug] [Thread-3 (]: Began compiling node model.dbt_valenbisi.int_ocupacion
+[0m21:44:45.324998 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.325455 [debug] [Thread-3 (]: Began executing node model.dbt_valenbisi.int_ocupacion
+[0m21:44:45.326717 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.327064 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.327211 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: BEGIN
+[0m21:44:45.327358 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:44:45.330209 [debug] [Thread-3 (]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:45.330341 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.330496 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
+
+    -- Partimos directamente del staging
+    select * 
+    from "valenbisi_db"."public"."staging_valenbisi"
+
+),
+
+enriched as (
+
+    select
+        -- Mantener todas las columnas originales
+        id,
+        numero_estacion,
+        nombre_estacion,
+        latitud,
+        longitud,
+        bicicletas_disponibles,
+        huecos_disponibles,
+        estado_estacion,
+        capacidad_total,
+        momento_medicion,
+
+        -- Nuevas métricas de disponibilidad
+        bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
+        huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,
+        capacidad_total - huecos_disponibles as ocupacion,
+
+        -- Clasificación de situación según reglas proporcionadas
+        case
+            when capacidad_total = 0 then 'desconocida'  -- Evita división por cero
+            when bicicletas_disponibles = capacidad_total then 'llena'
+            when bicicletas_disponibles >= capacidad_total * 0.75 then 'casi llena'
+            when bicicletas_disponibles >= capacidad_total * 0.50 then 'medio llena'
+            when bicicletas_disponibles >= capacidad_total * 0.25 then 'medio vacía'
+            when bicicletas_disponibles >= 1 then 'casi vacía'
+            when bicicletas_disponibles = 0 then 'vacía'
+            else 'desconocida'
+        end as situacion_estacion
+
+    from base
+)
+
+select * from enriched
+  );
+[0m21:44:45.332452 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m21:44:45.333603 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.333728 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+alter table "valenbisi_db"."public"."int_ocupacion__dbt_tmp" rename to "int_ocupacion"
+[0m21:44:45.334025 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:44:45.334440 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: COMMIT
+[0m21:44:45.334558 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.334661 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: COMMIT
+[0m21:44:45.334932 [debug] [Thread-3 (]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:45.336580 [debug] [Thread-3 (]: Applying DROP to: "valenbisi_db"."public"."int_ocupacion__dbt_backup"
+[0m21:44:45.336867 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:44:45.337075 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+drop view if exists "valenbisi_db"."public"."int_ocupacion__dbt_backup" cascade
+[0m21:44:45.337340 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m21:44:45.337791 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: Close
+[0m21:44:45.338037 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'be2b182d-441a-4f5d-8a38-7742fc9a69d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3385fd0>]}
+[0m21:44:45.338298 [info ] [Thread-3 (]: 2 of 2 OK created sql view model public.int_ocupacion .......................... [[32mCREATE VIEW[0m in 0.01s]
+[0m21:44:45.338615 [debug] [Thread-3 (]: Finished running node model.dbt_valenbisi.int_ocupacion
+[0m21:44:45.339266 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:45.339391 [debug] [MainThread]: On master: BEGIN
+[0m21:44:45.339515 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:44:45.342743 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m21:44:45.342864 [debug] [MainThread]: On master: COMMIT
+[0m21:44:45.342995 [debug] [MainThread]: Using postgres connection "master"
+[0m21:44:45.343108 [debug] [MainThread]: On master: COMMIT
+[0m21:44:45.343257 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:44:45.343368 [debug] [MainThread]: On master: Close
+[0m21:44:45.343525 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:44:45.343638 [debug] [MainThread]: Connection 'list_valenbisi_db' was properly closed.
+[0m21:44:45.343735 [debug] [MainThread]: Connection 'model.dbt_valenbisi.staging_valenbisi' was properly closed.
+[0m21:44:45.343833 [debug] [MainThread]: Connection 'model.dbt_valenbisi.int_ocupacion' was properly closed.
+[0m21:44:45.343995 [info ] [MainThread]: 
+[0m21:44:45.344153 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m21:44:45.344527 [debug] [MainThread]: Command end result
+[0m21:44:45.360318 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m21:44:45.361273 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m21:44:45.363565 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt/dbt_valenbisi/target/run_results.json
+[0m21:44:45.363689 [info ] [MainThread]: 
+[0m21:44:45.363869 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:44:45.364046 [info ] [MainThread]: 
+[0m21:44:45.364272 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m21:44:45.364721 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.4577503, "process_in_blocks": "0", "process_kernel_time": 0.072065, "process_mem_max_rss": "129840", "process_out_blocks": "4646", "process_user_time": 0.835754}
+[0m21:44:45.364938 [debug] [MainThread]: Command `dbt run` succeeded at 21:44:45.364898 after 0.46 seconds
+[0m21:44:45.365112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa83f690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa532810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa532850>]}
+[0m21:44:45.365274 [debug] [MainThread]: Flushing usage events
+[0m21:44:45.884254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:59:51.506017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff917f64d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91993150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff917f6450>]}
+
+
+============================== 21:59:51.507150 | 708b4962-55be-4218-8d0a-0023e1e27264 ==============================
+[0m21:59:51.507150 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m21:59:51.507444 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'quiet': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/app/dbt', 'empty': 'False', 'write_json': 'True', 'log_path': '/usr/app/dbt/dbt_valenbisi/logs', 'use_colors': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'static_parser': 'True', 'version_check': 'True', 'printer_width': '80'}
+[0m21:59:51.556305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90914c90>]}
+[0m21:59:51.575656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff945ce010>]}
+[0m21:59:51.575944 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m21:59:51.604874 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m21:59:51.664914 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:59:51.665188 [debug] [MainThread]: Partial parsing: updated file: dbt_valenbisi://models/intermediate/int_ocupacion.sql
+[0m21:59:51.773229 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_valenbisi.marts
+[0m21:59:51.779111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9014aad0>]}
+[0m21:59:51.815479 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m21:59:51.816323 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m21:59:51.821182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90570a10>]}
+[0m21:59:51.821420 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 737 macros
+[0m21:59:51.821579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9165cc50>]}
+[0m21:59:51.822309 [info ] [MainThread]: 
+[0m21:59:51.822489 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:59:51.822695 [info ] [MainThread]: 
+[0m21:59:51.822954 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m21:59:51.824419 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db'
+[0m21:59:51.835988 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db"
+[0m21:59:51.836174 [debug] [ThreadPool]: On list_valenbisi_db: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:59:51.836303 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:59:51.840291 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.004 seconds
+[0m21:59:51.840747 [debug] [ThreadPool]: On list_valenbisi_db: Close
+[0m21:59:51.841314 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_valenbisi_db, now list_valenbisi_db_public)
+[0m21:59:51.843628 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m21:59:51.843776 [debug] [ThreadPool]: On list_valenbisi_db_public: BEGIN
+[0m21:59:51.843893 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:59:51.846691 [debug] [ThreadPool]: SQL status: BEGIN in 0.003 seconds
+[0m21:59:51.846857 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m21:59:51.847013 [debug] [ThreadPool]: On list_valenbisi_db_public: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db_public"} */
+select
+      'valenbisi_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m21:59:51.848612 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.001 seconds
+[0m21:59:51.849158 [debug] [ThreadPool]: On list_valenbisi_db_public: ROLLBACK
+[0m21:59:51.849341 [debug] [ThreadPool]: On list_valenbisi_db_public: Close
+[0m21:59:51.851280 [debug] [MainThread]: Using postgres connection "master"
+[0m21:59:51.851434 [debug] [MainThread]: On master: BEGIN
+[0m21:59:51.851567 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:59:51.854472 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m21:59:51.854629 [debug] [MainThread]: Using postgres connection "master"
+[0m21:59:51.854818 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:59:51.856559 [debug] [MainThread]: SQL status: SELECT 2 in 0.002 seconds
+[0m21:59:51.857088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff90729ad0>]}
+[0m21:59:51.857264 [debug] [MainThread]: On master: ROLLBACK
+[0m21:59:51.857430 [debug] [MainThread]: Using postgres connection "master"
+[0m21:59:51.857550 [debug] [MainThread]: On master: BEGIN
+[0m21:59:51.857765 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m21:59:51.857900 [debug] [MainThread]: On master: COMMIT
+[0m21:59:51.858027 [debug] [MainThread]: Using postgres connection "master"
+[0m21:59:51.858144 [debug] [MainThread]: On master: COMMIT
+[0m21:59:51.858305 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:59:51.858425 [debug] [MainThread]: On master: Close
+[0m21:59:51.859588 [debug] [Thread-1 (]: Began running node model.dbt_valenbisi.staging_valenbisi
+[0m21:59:51.859836 [info ] [Thread-1 (]: 1 of 2 START sql view model public.staging_valenbisi ........................... [RUN]
+[0m21:59:51.860135 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_valenbisi_db_public, now model.dbt_valenbisi.staging_valenbisi)
+[0m21:59:51.860363 [debug] [Thread-1 (]: Began compiling node model.dbt_valenbisi.staging_valenbisi
+[0m21:59:51.863120 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.863658 [debug] [Thread-1 (]: Began executing node model.dbt_valenbisi.staging_valenbisi
+[0m21:59:51.875534 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.876295 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.876453 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: BEGIN
+[0m21:59:51.876594 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:59:51.879640 [debug] [Thread-1 (]: SQL status: BEGIN in 0.003 seconds
+[0m21:59:51.879839 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.880011 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+
+  create view "valenbisi_db"."public"."staging_valenbisi__dbt_tmp"
+    
+    
+  as (
+    with source as (
+
+    select * from "valenbisi_db"."public"."valenbisi_raw"
+
+),
+
+renamed as (
+    select
+        id as id,
+        station_id as numero_estacion,
+        station_name as nombre_estacion,
+        latitude as latitud,
+        longitude as longitud,
+        available_bikes as bicicletas_disponibles,
+        available_slots as huecos_disponibles,
+        station_status as estado_estacion,
+        total_capacity as capacidad_total,
+        cast(timestamp as date) as momento_medicion
+    from source
+)
+
+select * from renamed
+  );
+[0m21:59:51.881173 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m21:59:51.883681 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.883838 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi" rename to "staging_valenbisi__dbt_backup"
+[0m21:59:51.884162 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:59:51.885246 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.885379 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi__dbt_tmp" rename to "staging_valenbisi"
+[0m21:59:51.885717 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:59:51.891502 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m21:59:51.891666 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.891800 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m21:59:51.892130 [debug] [Thread-1 (]: SQL status: COMMIT in 0.000 seconds
+[0m21:59:51.894297 [debug] [Thread-1 (]: Applying DROP to: "valenbisi_db"."public"."staging_valenbisi__dbt_backup"
+[0m21:59:51.895830 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m21:59:51.896004 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" cascade
+[0m21:59:51.897372 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m21:59:51.898273 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: Close
+[0m21:59:51.898868 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8fdcbad0>]}
+[0m21:59:51.899141 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.staging_valenbisi ...................... [[32mCREATE VIEW[0m in 0.04s]
+[0m21:59:51.899373 [debug] [Thread-1 (]: Finished running node model.dbt_valenbisi.staging_valenbisi
+[0m21:59:51.899830 [debug] [Thread-3 (]: Began running node model.dbt_valenbisi.int_ocupacion
+[0m21:59:51.900045 [info ] [Thread-3 (]: 2 of 2 START sql view model public.int_ocupacion ............................... [RUN]
+[0m21:59:51.900284 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_valenbisi.int_ocupacion'
+[0m21:59:51.900445 [debug] [Thread-3 (]: Began compiling node model.dbt_valenbisi.int_ocupacion
+[0m21:59:51.901685 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_valenbisi.int_ocupacion"
+[0m21:59:51.902133 [debug] [Thread-3 (]: Began executing node model.dbt_valenbisi.int_ocupacion
+[0m21:59:51.903406 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_valenbisi.int_ocupacion"
+[0m21:59:51.903784 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:59:51.903942 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: BEGIN
+[0m21:59:51.904067 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:59:51.907162 [debug] [Thread-3 (]: SQL status: BEGIN in 0.003 seconds
+[0m21:59:51.907308 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m21:59:51.907456 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
+
+    -- Partimos directamente del staging
+    select * 
+    from "valenbisi_db"."public"."staging_valenbisi"
+
+),
+
+ocupacion as (
+
+    select
+        id,
+        numero_estacion,
+        nombre_estacion,
+        bicicletas_disponibles,
+        huecos_disponibles,
+        estado_estacion,
+        capacidad_total,
+
+        bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
+        huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,
+        huecos_disponibles + bicicletas_disponibles as capacidad_real,
+        capacidad_total - capacidad_real as no_disponibles
+    
+
+        
+        case
+            when capacidad_real = 0 then 'desconocida'  
+            when bicicletas_disponibles = capacidad_real then 'llena'
+            when bicicletas_disponibles >= capacidad_real * 0.75 then 'casi llena'
+            when bicicletas_disponibles >= capacidad_real * 0.50 then 'medio llena'
+            when bicicletas_disponibles >= capacidad_real * 0.25 then 'medio vacía'
+            when bicicletas_disponibles >= 1 then 'casi vacía'
+            when bicicletas_disponibles = 0 then 'vacía'
+            else 'desconocida'
+        end as situacion_ocupacion
+
+    from base
+)
+
+select * from ocupacion
+  );
+[0m21:59:51.907709 [debug] [Thread-3 (]: Postgres adapter: Postgres error: syntax error at or near "case"
+LINE 33:         case
+                 ^
+
+[0m21:59:51.907839 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: ROLLBACK
+[0m21:59:51.908038 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: Close
+[0m21:59:51.909390 [debug] [Thread-3 (]: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near "case"
+  LINE 33:         case
+                   ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m21:59:51.909572 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '708b4962-55be-4218-8d0a-0023e1e27264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f54f210>]}
+[0m21:59:51.909799 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model public.int_ocupacion ...................... [[31mERROR[0m in 0.01s]
+[0m21:59:51.910048 [debug] [Thread-3 (]: Finished running node model.dbt_valenbisi.int_ocupacion
+[0m21:59:51.910261 [debug] [Thread-7 (]: Marking all children of 'model.dbt_valenbisi.int_ocupacion' to be skipped because of status 'error'.  Reason: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near "case"
+  LINE 33:         case
+                   ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql.
+[0m21:59:51.911208 [debug] [MainThread]: Using postgres connection "master"
+[0m21:59:51.911331 [debug] [MainThread]: On master: BEGIN
+[0m21:59:51.911421 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:59:51.914256 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m21:59:51.914401 [debug] [MainThread]: On master: COMMIT
+[0m21:59:51.914536 [debug] [MainThread]: Using postgres connection "master"
+[0m21:59:51.914650 [debug] [MainThread]: On master: COMMIT
+[0m21:59:51.914798 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:59:51.914922 [debug] [MainThread]: On master: Close
+[0m21:59:51.915081 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:59:51.915191 [debug] [MainThread]: Connection 'model.dbt_valenbisi.staging_valenbisi' was properly closed.
+[0m21:59:51.915317 [debug] [MainThread]: Connection 'model.dbt_valenbisi.int_ocupacion' was properly closed.
+[0m21:59:51.915490 [info ] [MainThread]: 
+[0m21:59:51.915635 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.09 seconds (0.09s).
+[0m21:59:51.916022 [debug] [MainThread]: Command end result
+[0m21:59:51.930836 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m21:59:51.931617 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m21:59:51.934004 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt/dbt_valenbisi/target/run_results.json
+[0m21:59:51.934181 [info ] [MainThread]: 
+[0m21:59:51.934368 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:59:51.934565 [info ] [MainThread]: 
+[0m21:59:51.934790 [error] [MainThread]: [31mFailure in model int_ocupacion (models/intermediate/int_ocupacion.sql)[0m
+[0m21:59:51.934984 [error] [MainThread]:   Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near "case"
+  LINE 33:         case
+                   ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m21:59:51.935119 [info ] [MainThread]: 
+[0m21:59:51.935332 [info ] [MainThread]:   compiled code at target/compiled/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m21:59:51.935513 [info ] [MainThread]: 
+[0m21:59:51.935681 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m21:59:51.936123 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.4477615, "process_in_blocks": "0", "process_kernel_time": 0.06894, "process_mem_max_rss": "129912", "process_out_blocks": "4642", "process_user_time": 0.812301}
+[0m21:59:51.936325 [debug] [MainThread]: Command `dbt run` failed at 21:59:51.936293 after 0.45 seconds
+[0m21:59:51.936468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff907d33d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9676a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8fd55bd0>]}
+[0m21:59:51.936611 [debug] [MainThread]: Flushing usage events
+[0m21:59:52.577242 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:01:08.387120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb15eb390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb15e6b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb15eaed0>]}
+
+
+============================== 22:01:08.388344 | e91fd657-a13c-422f-9e15-9a916f8a7d5a ==============================
+[0m22:01:08.388344 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m22:01:08.388733 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'empty': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'write_json': 'True', 'printer_width': '80', 'introspect': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'use_colors': 'True', 'quiet': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'profiles_dir': '/usr/app/dbt', 'log_path': '/usr/app/dbt/dbt_valenbisi/logs', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'debug': 'False', 'partial_parse': 'True'}
+[0m22:01:08.437355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb298dc50>]}
+[0m22:01:08.456830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb43cde90>]}
+[0m22:01:08.457118 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m22:01:08.486061 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m22:01:08.542757 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:01:08.543019 [debug] [MainThread]: Partial parsing: updated file: dbt_valenbisi://models/intermediate/int_ocupacion.sql
+[0m22:01:08.649681 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_valenbisi.marts
+[0m22:01:08.655569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaff53a10>]}
+[0m22:01:08.692186 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m22:01:08.693006 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m22:01:08.697786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb04e7190>]}
+[0m22:01:08.698000 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 737 macros
+[0m22:01:08.698168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb02baf90>]}
+[0m22:01:08.698890 [info ] [MainThread]: 
+[0m22:01:08.699056 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:01:08.699214 [info ] [MainThread]: 
+[0m22:01:08.699515 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:01:08.701048 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db'
+[0m22:01:08.712640 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db"
+[0m22:01:08.712815 [debug] [ThreadPool]: On list_valenbisi_db: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:01:08.712962 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:01:08.717074 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.004 seconds
+[0m22:01:08.717553 [debug] [ThreadPool]: On list_valenbisi_db: Close
+[0m22:01:08.718060 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db_public'
+[0m22:01:08.720271 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m22:01:08.720414 [debug] [ThreadPool]: On list_valenbisi_db_public: BEGIN
+[0m22:01:08.720548 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:01:08.723272 [debug] [ThreadPool]: SQL status: BEGIN in 0.003 seconds
+[0m22:01:08.723422 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m22:01:08.723560 [debug] [ThreadPool]: On list_valenbisi_db_public: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db_public"} */
+select
+      'valenbisi_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m22:01:08.725026 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.001 seconds
+[0m22:01:08.725565 [debug] [ThreadPool]: On list_valenbisi_db_public: ROLLBACK
+[0m22:01:08.725748 [debug] [ThreadPool]: On list_valenbisi_db_public: Close
+[0m22:01:08.727425 [debug] [MainThread]: Using postgres connection "master"
+[0m22:01:08.727601 [debug] [MainThread]: On master: BEGIN
+[0m22:01:08.727721 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:01:08.730573 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m22:01:08.730709 [debug] [MainThread]: Using postgres connection "master"
+[0m22:01:08.730859 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:01:08.732653 [debug] [MainThread]: SQL status: SELECT 1 in 0.002 seconds
+[0m22:01:08.733126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb44db850>]}
+[0m22:01:08.733311 [debug] [MainThread]: On master: ROLLBACK
+[0m22:01:08.733477 [debug] [MainThread]: Using postgres connection "master"
+[0m22:01:08.733592 [debug] [MainThread]: On master: BEGIN
+[0m22:01:08.733805 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m22:01:08.733931 [debug] [MainThread]: On master: COMMIT
+[0m22:01:08.734044 [debug] [MainThread]: Using postgres connection "master"
+[0m22:01:08.734151 [debug] [MainThread]: On master: COMMIT
+[0m22:01:08.734318 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m22:01:08.734433 [debug] [MainThread]: On master: Close
+[0m22:01:08.735549 [debug] [Thread-1 (]: Began running node model.dbt_valenbisi.staging_valenbisi
+[0m22:01:08.735771 [info ] [Thread-1 (]: 1 of 2 START sql view model public.staging_valenbisi ........................... [RUN]
+[0m22:01:08.736080 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_valenbisi_db_public, now model.dbt_valenbisi.staging_valenbisi)
+[0m22:01:08.736229 [debug] [Thread-1 (]: Began compiling node model.dbt_valenbisi.staging_valenbisi
+[0m22:01:08.739169 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.739709 [debug] [Thread-1 (]: Began executing node model.dbt_valenbisi.staging_valenbisi
+[0m22:01:08.751519 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.752116 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.752285 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: BEGIN
+[0m22:01:08.752471 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:01:08.755476 [debug] [Thread-1 (]: SQL status: BEGIN in 0.003 seconds
+[0m22:01:08.755632 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.755779 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+
+  create view "valenbisi_db"."public"."staging_valenbisi__dbt_tmp"
+    
+    
+  as (
+    with source as (
+
+    select * from "valenbisi_db"."public"."valenbisi_raw"
+
+),
+
+renamed as (
+    select
+        id as id,
+        station_id as numero_estacion,
+        station_name as nombre_estacion,
+        latitude as latitud,
+        longitude as longitud,
+        available_bikes as bicicletas_disponibles,
+        available_slots as huecos_disponibles,
+        station_status as estado_estacion,
+        total_capacity as capacidad_total,
+        cast(timestamp as date) as momento_medicion
+    from source
+)
+
+select * from renamed
+  );
+[0m22:01:08.756878 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m22:01:08.759262 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.759408 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi" rename to "staging_valenbisi__dbt_backup"
+[0m22:01:08.759746 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:01:08.760819 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.760963 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi__dbt_tmp" rename to "staging_valenbisi"
+[0m22:01:08.761245 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:01:08.766750 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m22:01:08.766917 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.767061 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m22:01:08.768399 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m22:01:08.770727 [debug] [Thread-1 (]: Applying DROP to: "valenbisi_db"."public"."staging_valenbisi__dbt_backup"
+[0m22:01:08.772273 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:01:08.772425 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" cascade
+[0m22:01:08.773442 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:01:08.774295 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: Close
+[0m22:01:08.774928 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb00b3910>]}
+[0m22:01:08.775200 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.staging_valenbisi ...................... [[32mCREATE VIEW[0m in 0.04s]
+[0m22:01:08.775527 [debug] [Thread-1 (]: Finished running node model.dbt_valenbisi.staging_valenbisi
+[0m22:01:08.775876 [debug] [Thread-3 (]: Began running node model.dbt_valenbisi.int_ocupacion
+[0m22:01:08.776161 [info ] [Thread-3 (]: 2 of 2 START sql view model public.int_ocupacion ............................... [RUN]
+[0m22:01:08.776432 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_valenbisi.int_ocupacion'
+[0m22:01:08.776587 [debug] [Thread-3 (]: Began compiling node model.dbt_valenbisi.int_ocupacion
+[0m22:01:08.777781 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_valenbisi.int_ocupacion"
+[0m22:01:08.778151 [debug] [Thread-3 (]: Began executing node model.dbt_valenbisi.int_ocupacion
+[0m22:01:08.779419 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_valenbisi.int_ocupacion"
+[0m22:01:08.779793 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:01:08.779923 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: BEGIN
+[0m22:01:08.780035 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:01:08.782917 [debug] [Thread-3 (]: SQL status: BEGIN in 0.003 seconds
+[0m22:01:08.783050 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:01:08.783194 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
+
+    -- Partimos directamente del staging
+    select * 
+    from "valenbisi_db"."public"."staging_valenbisi"
+
+),
+
+ocupacion as (
+
+    select
+        id,
+        numero_estacion,
+        nombre_estacion,
+        bicicletas_disponibles,
+        huecos_disponibles,
+        estado_estacion,
+        capacidad_total,
+
+        bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
+        huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,
+        huecos_disponibles + bicicletas_disponibles as capacidad_real,
+        capacidad_total - capacidad_real as no_disponibles
+    
+
+        
+        case
+            when capacidad_real = 0 then 'desconocida'  
+            when porcentaje_bicis_disponibles = 1 then 'llena'
+            when porcentaje_bicis_disponibles >= 0.75 then 'casi llena'
+            when porcentaje_bicis_disponibles >= 0.50 then 'medio llena'
+            when porcentaje_bicis_disponibles >= 0.25 then 'medio vacía'
+            when porcentaje_bicis_disponibles >= 0.01 then 'casi vacía'
+            when porcentaje_bicis_disponibles = 0 then 'vacía'
+            else 'desconocida'
+        end as situacion_ocupacion
+
+    from base
+)
+
+select * from ocupacion
+  );
+[0m22:01:08.783449 [debug] [Thread-3 (]: Postgres adapter: Postgres error: syntax error at or near "case"
+LINE 33:         case
+                 ^
+
+[0m22:01:08.783598 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: ROLLBACK
+[0m22:01:08.783789 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: Close
+[0m22:01:08.785100 [debug] [Thread-3 (]: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near "case"
+  LINE 33:         case
+                   ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m22:01:08.785286 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e91fd657-a13c-422f-9e15-9a916f8a7d5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf374350>]}
+[0m22:01:08.785535 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model public.int_ocupacion ...................... [[31mERROR[0m in 0.01s]
+[0m22:01:08.785832 [debug] [Thread-3 (]: Finished running node model.dbt_valenbisi.int_ocupacion
+[0m22:01:08.786048 [debug] [Thread-7 (]: Marking all children of 'model.dbt_valenbisi.int_ocupacion' to be skipped because of status 'error'.  Reason: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near "case"
+  LINE 33:         case
+                   ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql.
+[0m22:01:08.786853 [debug] [MainThread]: Using postgres connection "master"
+[0m22:01:08.786990 [debug] [MainThread]: On master: BEGIN
+[0m22:01:08.787099 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:01:08.789999 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m22:01:08.790146 [debug] [MainThread]: On master: COMMIT
+[0m22:01:08.790285 [debug] [MainThread]: Using postgres connection "master"
+[0m22:01:08.790440 [debug] [MainThread]: On master: COMMIT
+[0m22:01:08.790619 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m22:01:08.790737 [debug] [MainThread]: On master: Close
+[0m22:01:08.790924 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:01:08.791044 [debug] [MainThread]: Connection 'list_valenbisi_db' was properly closed.
+[0m22:01:08.791147 [debug] [MainThread]: Connection 'model.dbt_valenbisi.staging_valenbisi' was properly closed.
+[0m22:01:08.791247 [debug] [MainThread]: Connection 'model.dbt_valenbisi.int_ocupacion' was properly closed.
+[0m22:01:08.791392 [info ] [MainThread]: 
+[0m22:01:08.791605 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.09 seconds (0.09s).
+[0m22:01:08.791955 [debug] [MainThread]: Command end result
+[0m22:01:08.806397 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m22:01:08.807164 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m22:01:08.809432 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt/dbt_valenbisi/target/run_results.json
+[0m22:01:08.809692 [info ] [MainThread]: 
+[0m22:01:08.809975 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m22:01:08.810136 [info ] [MainThread]: 
+[0m22:01:08.810348 [error] [MainThread]: [31mFailure in model int_ocupacion (models/intermediate/int_ocupacion.sql)[0m
+[0m22:01:08.810569 [error] [MainThread]:   Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  syntax error at or near "case"
+  LINE 33:         case
+                   ^
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m22:01:08.810725 [info ] [MainThread]: 
+[0m22:01:08.810908 [info ] [MainThread]:   compiled code at target/compiled/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m22:01:08.811045 [info ] [MainThread]: 
+[0m22:01:08.811229 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m22:01:08.811687 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.44246882, "process_in_blocks": "0", "process_kernel_time": 0.06692, "process_mem_max_rss": "130044", "process_out_blocks": "4642", "process_user_time": 0.808043}
+[0m22:01:08.811883 [debug] [MainThread]: Command `dbt run` failed at 22:01:08.811849 after 0.44 seconds
+[0m22:01:08.812050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb339c950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb1b5c8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb64a2790>]}
+[0m22:01:08.812219 [debug] [MainThread]: Flushing usage events
+[0m22:01:09.327869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:02:13.228235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b8e2bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b8e2a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b8e2b90>]}
+
+
+============================== 22:02:13.229446 | a37d46fc-4649-489f-bea8-887ee37e8a98 ==============================
+[0m22:02:13.229446 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m22:02:13.229767 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'invocation_command': 'dbt run', 'empty': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/usr/app/dbt', 'warn_error': 'None', 'write_json': 'True', 'static_parser': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'use_colors': 'True', 'no_print': 'None', 'introspect': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'log_path': '/usr/app/dbt/dbt_valenbisi/logs', 'fail_fast': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False'}
+[0m22:02:13.278921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b8dea10>]}
+[0m22:02:13.298534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9e6ece50>]}
+[0m22:02:13.298821 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m22:02:13.328080 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m22:02:13.384112 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:02:13.384369 [debug] [MainThread]: Partial parsing: updated file: dbt_valenbisi://models/intermediate/int_ocupacion.sql
+[0m22:02:13.491657 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_valenbisi.marts
+[0m22:02:13.497539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a64d950>]}
+[0m22:02:13.534113 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m22:02:13.534967 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m22:02:13.539720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9aa9cf10>]}
+[0m22:02:13.539958 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 737 macros
+[0m22:02:13.540144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9aa644d0>]}
+[0m22:02:13.540919 [info ] [MainThread]: 
+[0m22:02:13.541111 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:02:13.541317 [info ] [MainThread]: 
+[0m22:02:13.541612 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:02:13.543072 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db'
+[0m22:02:13.554351 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db"
+[0m22:02:13.554526 [debug] [ThreadPool]: On list_valenbisi_db: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:02:13.554657 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:02:13.558701 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.004 seconds
+[0m22:02:13.559162 [debug] [ThreadPool]: On list_valenbisi_db: Close
+[0m22:02:13.559680 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db_public'
+[0m22:02:13.561924 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m22:02:13.562062 [debug] [ThreadPool]: On list_valenbisi_db_public: BEGIN
+[0m22:02:13.562189 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:02:13.564971 [debug] [ThreadPool]: SQL status: BEGIN in 0.003 seconds
+[0m22:02:13.565125 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m22:02:13.565303 [debug] [ThreadPool]: On list_valenbisi_db_public: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db_public"} */
+select
+      'valenbisi_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m22:02:13.566778 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.001 seconds
+[0m22:02:13.567274 [debug] [ThreadPool]: On list_valenbisi_db_public: ROLLBACK
+[0m22:02:13.567451 [debug] [ThreadPool]: On list_valenbisi_db_public: Close
+[0m22:02:13.569129 [debug] [MainThread]: Using postgres connection "master"
+[0m22:02:13.569263 [debug] [MainThread]: On master: BEGIN
+[0m22:02:13.569433 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:02:13.572517 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m22:02:13.572697 [debug] [MainThread]: Using postgres connection "master"
+[0m22:02:13.572864 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:02:13.574649 [debug] [MainThread]: SQL status: SELECT 1 in 0.002 seconds
+[0m22:02:13.575146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a82d950>]}
+[0m22:02:13.575337 [debug] [MainThread]: On master: ROLLBACK
+[0m22:02:13.575518 [debug] [MainThread]: Using postgres connection "master"
+[0m22:02:13.575633 [debug] [MainThread]: On master: BEGIN
+[0m22:02:13.575847 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m22:02:13.575992 [debug] [MainThread]: On master: COMMIT
+[0m22:02:13.576116 [debug] [MainThread]: Using postgres connection "master"
+[0m22:02:13.576232 [debug] [MainThread]: On master: COMMIT
+[0m22:02:13.576421 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m22:02:13.576550 [debug] [MainThread]: On master: Close
+[0m22:02:13.577702 [debug] [Thread-1 (]: Began running node model.dbt_valenbisi.staging_valenbisi
+[0m22:02:13.577931 [info ] [Thread-1 (]: 1 of 2 START sql view model public.staging_valenbisi ........................... [RUN]
+[0m22:02:13.578276 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_valenbisi_db_public, now model.dbt_valenbisi.staging_valenbisi)
+[0m22:02:13.578449 [debug] [Thread-1 (]: Began compiling node model.dbt_valenbisi.staging_valenbisi
+[0m22:02:13.581232 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.581714 [debug] [Thread-1 (]: Began executing node model.dbt_valenbisi.staging_valenbisi
+[0m22:02:13.593635 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.594324 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.594489 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: BEGIN
+[0m22:02:13.594631 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:02:13.597608 [debug] [Thread-1 (]: SQL status: BEGIN in 0.003 seconds
+[0m22:02:13.597764 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.597909 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+
+  create view "valenbisi_db"."public"."staging_valenbisi__dbt_tmp"
+    
+    
+  as (
+    with source as (
+
+    select * from "valenbisi_db"."public"."valenbisi_raw"
+
+),
+
+renamed as (
+    select
+        id as id,
+        station_id as numero_estacion,
+        station_name as nombre_estacion,
+        latitude as latitud,
+        longitude as longitud,
+        available_bikes as bicicletas_disponibles,
+        available_slots as huecos_disponibles,
+        station_status as estado_estacion,
+        total_capacity as capacidad_total,
+        cast(timestamp as date) as momento_medicion
+    from source
+)
+
+select * from renamed
+  );
+[0m22:02:13.599027 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m22:02:13.601580 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.601729 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi" rename to "staging_valenbisi__dbt_backup"
+[0m22:02:13.602064 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:02:13.603193 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.603334 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi__dbt_tmp" rename to "staging_valenbisi"
+[0m22:02:13.603675 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:02:13.609309 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m22:02:13.609472 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.609605 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m22:02:13.609914 [debug] [Thread-1 (]: SQL status: COMMIT in 0.000 seconds
+[0m22:02:13.612284 [debug] [Thread-1 (]: Applying DROP to: "valenbisi_db"."public"."staging_valenbisi__dbt_backup"
+[0m22:02:13.613842 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:02:13.613983 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" cascade
+[0m22:02:13.615111 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:02:13.615994 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: Close
+[0m22:02:13.616618 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99be0b90>]}
+[0m22:02:13.616885 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.staging_valenbisi ...................... [[32mCREATE VIEW[0m in 0.04s]
+[0m22:02:13.617109 [debug] [Thread-1 (]: Finished running node model.dbt_valenbisi.staging_valenbisi
+[0m22:02:13.617531 [debug] [Thread-3 (]: Began running node model.dbt_valenbisi.int_ocupacion
+[0m22:02:13.617755 [info ] [Thread-3 (]: 2 of 2 START sql view model public.int_ocupacion ............................... [RUN]
+[0m22:02:13.617983 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_valenbisi.int_ocupacion'
+[0m22:02:13.618121 [debug] [Thread-3 (]: Began compiling node model.dbt_valenbisi.int_ocupacion
+[0m22:02:13.619300 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_valenbisi.int_ocupacion"
+[0m22:02:13.619754 [debug] [Thread-3 (]: Began executing node model.dbt_valenbisi.int_ocupacion
+[0m22:02:13.621056 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_valenbisi.int_ocupacion"
+[0m22:02:13.621424 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:02:13.621568 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: BEGIN
+[0m22:02:13.621684 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:02:13.624513 [debug] [Thread-3 (]: SQL status: BEGIN in 0.003 seconds
+[0m22:02:13.624646 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:02:13.624790 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
+
+    -- Partimos directamente del staging
+    select * 
+    from "valenbisi_db"."public"."staging_valenbisi"
+
+),
+
+ocupacion as (
+
+    select
+        id,
+        numero_estacion,
+        nombre_estacion,
+        bicicletas_disponibles,
+        huecos_disponibles,
+        estado_estacion,
+        capacidad_total,
+
+        bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
+        huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,
+        huecos_disponibles + bicicletas_disponibles as capacidad_real,
+        capacidad_total - capacidad_real as no_disponibles,
+    
+
+        
+        case
+            when capacidad_real = 0 then 'desconocida'  
+            when porcentaje_bicis_disponibles = 1 then 'llena'
+            when porcentaje_bicis_disponibles >= 0.75 then 'casi llena'
+            when porcentaje_bicis_disponibles >= 0.50 then 'medio llena'
+            when porcentaje_bicis_disponibles >= 0.25 then 'medio vacía'
+            when porcentaje_bicis_disponibles >= 0.01 then 'casi vacía'
+            when porcentaje_bicis_disponibles = 0 then 'vacía'
+            else 'desconocida'
+        end as situacion_ocupacion
+
+    from base
+)
+
+select * from ocupacion
+  );
+[0m22:02:13.625482 [debug] [Thread-3 (]: Postgres adapter: Postgres error: column "capacidad_real" does not exist
+LINE 29:         capacidad_total - capacidad_real as no_disponibles,
+                                   ^
+HINT:  Perhaps you meant to reference the column "base.capacidad_total".
+
+[0m22:02:13.625618 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: ROLLBACK
+[0m22:02:13.625827 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: Close
+[0m22:02:13.627190 [debug] [Thread-3 (]: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  column "capacidad_real" does not exist
+  LINE 29:         capacidad_total - capacidad_real as no_disponibles,
+                                     ^
+  HINT:  Perhaps you meant to reference the column "base.capacidad_total".
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m22:02:13.627396 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a37d46fc-4649-489f-bea8-887ee37e8a98', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9936c4d0>]}
+[0m22:02:13.627622 [error] [Thread-3 (]: 2 of 2 ERROR creating sql view model public.int_ocupacion ...................... [[31mERROR[0m in 0.01s]
+[0m22:02:13.627868 [debug] [Thread-3 (]: Finished running node model.dbt_valenbisi.int_ocupacion
+[0m22:02:13.628099 [debug] [Thread-7 (]: Marking all children of 'model.dbt_valenbisi.int_ocupacion' to be skipped because of status 'error'.  Reason: Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  column "capacidad_real" does not exist
+  LINE 29:         capacidad_total - capacidad_real as no_disponibles,
+                                     ^
+  HINT:  Perhaps you meant to reference the column "base.capacidad_total".
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql.
+[0m22:02:13.628916 [debug] [MainThread]: Using postgres connection "master"
+[0m22:02:13.629042 [debug] [MainThread]: On master: BEGIN
+[0m22:02:13.629133 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:02:13.632034 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m22:02:13.632159 [debug] [MainThread]: On master: COMMIT
+[0m22:02:13.632280 [debug] [MainThread]: Using postgres connection "master"
+[0m22:02:13.632410 [debug] [MainThread]: On master: COMMIT
+[0m22:02:13.632585 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m22:02:13.632705 [debug] [MainThread]: On master: Close
+[0m22:02:13.632870 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:02:13.632985 [debug] [MainThread]: Connection 'list_valenbisi_db' was properly closed.
+[0m22:02:13.633083 [debug] [MainThread]: Connection 'model.dbt_valenbisi.staging_valenbisi' was properly closed.
+[0m22:02:13.633184 [debug] [MainThread]: Connection 'model.dbt_valenbisi.int_ocupacion' was properly closed.
+[0m22:02:13.633335 [info ] [MainThread]: 
+[0m22:02:13.633494 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.09 seconds (0.09s).
+[0m22:02:13.633878 [debug] [MainThread]: Command end result
+[0m22:02:13.648326 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m22:02:13.649104 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m22:02:13.651433 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt/dbt_valenbisi/target/run_results.json
+[0m22:02:13.651612 [info ] [MainThread]: 
+[0m22:02:13.651802 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m22:02:13.652014 [info ] [MainThread]: 
+[0m22:02:13.652222 [error] [MainThread]: [31mFailure in model int_ocupacion (models/intermediate/int_ocupacion.sql)[0m
+[0m22:02:13.652428 [error] [MainThread]:   Database Error in model int_ocupacion (models/intermediate/int_ocupacion.sql)
+  column "capacidad_real" does not exist
+  LINE 29:         capacidad_total - capacidad_real as no_disponibles,
+                                     ^
+  HINT:  Perhaps you meant to reference the column "base.capacidad_total".
+  compiled code at target/run/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m22:02:13.652602 [info ] [MainThread]: 
+[0m22:02:13.652806 [info ] [MainThread]:   compiled code at target/compiled/dbt_valenbisi/models/intermediate/int_ocupacion.sql
+[0m22:02:13.652981 [info ] [MainThread]: 
+[0m22:02:13.653145 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m22:02:13.653564 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.44180062, "process_in_blocks": "0", "process_kernel_time": 0.06724, "process_mem_max_rss": "129968", "process_out_blocks": "4645", "process_user_time": 0.810904}
+[0m22:02:13.653739 [debug] [MainThread]: Command `dbt run` failed at 22:02:13.653711 after 0.44 seconds
+[0m22:02:13.653905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b944590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9aaaef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9a5498d0>]}
+[0m22:02:13.654060 [debug] [MainThread]: Flushing usage events
+[0m22:02:14.282655 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:05:52.234415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7dfb350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7dfad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7dfab90>]}
+
+
+============================== 22:05:52.235620 | ba77f11d-c667-4ebf-b20c-78822fb0835f ==============================
+[0m22:05:52.235620 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m22:05:52.235946 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'empty': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'introspect': 'True', 'target_path': 'None', 'fail_fast': 'False', 'log_path': '/usr/app/dbt/dbt_valenbisi/logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'use_colors': 'True', 'quiet': 'False', 'profiles_dir': '/usr/app/dbt', 'static_parser': 'True', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'no_print': 'None'}
+[0m22:05:52.285053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6f37390>]}
+[0m22:05:52.304726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaac02690>]}
+[0m22:05:52.305004 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m22:05:52.334446 [debug] [MainThread]: checksum: bdedcbc4566463a53095072aa091a5f5b73db413e58224228390aa7e9748abcc, vars: {}, profile: , target: , version: 1.11.0rc1
+[0m22:05:52.397244 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:05:52.397543 [debug] [MainThread]: Partial parsing: updated file: dbt_valenbisi://models/intermediate/int_ocupacion.sql
+[0m22:05:52.503587 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_valenbisi.marts
+[0m22:05:52.509524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa68c3650>]}
+[0m22:05:52.547025 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m22:05:52.548048 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m22:05:52.552688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa68b3150>]}
+[0m22:05:52.552891 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 737 macros
+[0m22:05:52.553046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7e4e2d0>]}
+[0m22:05:52.553768 [info ] [MainThread]: 
+[0m22:05:52.553969 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:05:52.554154 [info ] [MainThread]: 
+[0m22:05:52.554442 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m22:05:52.555935 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db'
+[0m22:05:52.567479 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db"
+[0m22:05:52.567674 [debug] [ThreadPool]: On list_valenbisi_db: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:05:52.567802 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:05:52.571711 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.004 seconds
+[0m22:05:52.572178 [debug] [ThreadPool]: On list_valenbisi_db: Close
+[0m22:05:52.572686 [debug] [ThreadPool]: Acquiring new postgres connection 'list_valenbisi_db_public'
+[0m22:05:52.574888 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m22:05:52.575025 [debug] [ThreadPool]: On list_valenbisi_db_public: BEGIN
+[0m22:05:52.575142 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:05:52.577816 [debug] [ThreadPool]: SQL status: BEGIN in 0.003 seconds
+[0m22:05:52.577955 [debug] [ThreadPool]: Using postgres connection "list_valenbisi_db_public"
+[0m22:05:52.578085 [debug] [ThreadPool]: On list_valenbisi_db_public: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "list_valenbisi_db_public"} */
+select
+      'valenbisi_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'valenbisi_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m22:05:52.579582 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.001 seconds
+[0m22:05:52.580084 [debug] [ThreadPool]: On list_valenbisi_db_public: ROLLBACK
+[0m22:05:52.580267 [debug] [ThreadPool]: On list_valenbisi_db_public: Close
+[0m22:05:52.581970 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:52.582096 [debug] [MainThread]: On master: BEGIN
+[0m22:05:52.582208 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:05:52.584982 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m22:05:52.585132 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:52.585311 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:05:52.587083 [debug] [MainThread]: SQL status: SELECT 1 in 0.002 seconds
+[0m22:05:52.587592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6361f10>]}
+[0m22:05:52.587776 [debug] [MainThread]: On master: ROLLBACK
+[0m22:05:52.587945 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:52.588065 [debug] [MainThread]: On master: BEGIN
+[0m22:05:52.588283 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m22:05:52.588416 [debug] [MainThread]: On master: COMMIT
+[0m22:05:52.588564 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:52.588686 [debug] [MainThread]: On master: COMMIT
+[0m22:05:52.588849 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m22:05:52.588971 [debug] [MainThread]: On master: Close
+[0m22:05:52.590135 [debug] [Thread-1 (]: Began running node model.dbt_valenbisi.staging_valenbisi
+[0m22:05:52.590397 [info ] [Thread-1 (]: 1 of 2 START sql view model public.staging_valenbisi ........................... [RUN]
+[0m22:05:52.590721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_valenbisi_db_public, now model.dbt_valenbisi.staging_valenbisi)
+[0m22:05:52.590899 [debug] [Thread-1 (]: Began compiling node model.dbt_valenbisi.staging_valenbisi
+[0m22:05:52.593593 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.594116 [debug] [Thread-1 (]: Began executing node model.dbt_valenbisi.staging_valenbisi
+[0m22:05:52.606448 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.606959 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.607117 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: BEGIN
+[0m22:05:52.607264 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:05:52.610230 [debug] [Thread-1 (]: SQL status: BEGIN in 0.003 seconds
+[0m22:05:52.610419 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.610594 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+
+  create view "valenbisi_db"."public"."staging_valenbisi__dbt_tmp"
+    
+    
+  as (
+    with source as (
+
+    select * from "valenbisi_db"."public"."valenbisi_raw"
+
+),
+
+renamed as (
+    select
+        id as id,
+        station_id as numero_estacion,
+        station_name as nombre_estacion,
+        latitude as latitud,
+        longitude as longitud,
+        available_bikes as bicicletas_disponibles,
+        available_slots as huecos_disponibles,
+        station_status as estado_estacion,
+        total_capacity as capacidad_total,
+        cast(timestamp as date) as momento_medicion
+    from source
+)
+
+select * from renamed
+  );
+[0m22:05:52.611625 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.001 seconds
+[0m22:05:52.613931 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.614073 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi" rename to "staging_valenbisi__dbt_backup"
+[0m22:05:52.614358 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:05:52.615531 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.615682 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+alter table "valenbisi_db"."public"."staging_valenbisi__dbt_tmp" rename to "staging_valenbisi"
+[0m22:05:52.615959 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:05:52.621575 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m22:05:52.621745 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.621904 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: COMMIT
+[0m22:05:52.622816 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m22:05:52.624946 [debug] [Thread-1 (]: Applying DROP to: "valenbisi_db"."public"."staging_valenbisi__dbt_backup"
+[0m22:05:52.626409 [debug] [Thread-1 (]: Using postgres connection "model.dbt_valenbisi.staging_valenbisi"
+[0m22:05:52.626553 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.staging_valenbisi"} */
+drop view if exists "valenbisi_db"."public"."staging_valenbisi__dbt_backup" cascade
+[0m22:05:52.627562 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m22:05:52.628396 [debug] [Thread-1 (]: On model.dbt_valenbisi.staging_valenbisi: Close
+[0m22:05:52.628997 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7e56990>]}
+[0m22:05:52.629276 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.staging_valenbisi ...................... [[32mCREATE VIEW[0m in 0.04s]
+[0m22:05:52.629528 [debug] [Thread-1 (]: Finished running node model.dbt_valenbisi.staging_valenbisi
+[0m22:05:52.629869 [debug] [Thread-3 (]: Began running node model.dbt_valenbisi.int_ocupacion
+[0m22:05:52.630103 [info ] [Thread-3 (]: 2 of 2 START sql view model public.int_ocupacion ............................... [RUN]
+[0m22:05:52.630370 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.dbt_valenbisi.int_ocupacion'
+[0m22:05:52.630546 [debug] [Thread-3 (]: Began compiling node model.dbt_valenbisi.int_ocupacion
+[0m22:05:52.631749 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.632171 [debug] [Thread-3 (]: Began executing node model.dbt_valenbisi.int_ocupacion
+[0m22:05:52.633434 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.633813 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.633947 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: BEGIN
+[0m22:05:52.634055 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:05:52.636887 [debug] [Thread-3 (]: SQL status: BEGIN in 0.003 seconds
+[0m22:05:52.637032 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.637179 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
+
+    -- Partimos directamente del staging
+    select * 
+    from "valenbisi_db"."public"."staging_valenbisi"
+
+),
+
+ocupacion as (
+
+    select
+        id,
+        numero_estacion,
+        nombre_estacion,
+        bicicletas_disponibles,
+        huecos_disponibles,
+        estado_estacion,
+        capacidad_total,
+
+        bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
+        huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,
+        huecos_disponibles + bicicletas_disponibles as capacidad_real,
+        capacidad_total - (huecos_disponibles + bicicletas_disponibles) as no_disponibles,
+    
+
+        
+        case
+            when capacidad_total = 0 then 'desconocida'  
+            when bicicletas_disponibles * 1.0 / capacidad_total = 1 then 'llena'
+            when bicicletas_disponibles * 1.0 / capacidad_total >= 0.75 then 'casi llena'
+            when bicicletas_disponibles * 1.0 / capacidad_total >= 0.50 then 'medio llena'
+            when bicicletas_disponibles * 1.0 / capacidad_total >= 0.25 then 'medio vacía'
+            when bicicletas_disponibles * 1.0 / capacidad_total >= 0.01 then 'casi vacía'
+            when bicicletas_disponibles * 1.0 / capacidad_total = 0 then 'vacía'
+            else 'desconocida'
+        end as situacion_ocupacion
+
+    from base
+)
+
+select * from ocupacion
+  );
+[0m22:05:52.638870 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m22:05:52.639982 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.640108 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+alter table "valenbisi_db"."public"."int_ocupacion__dbt_tmp" rename to "int_ocupacion"
+[0m22:05:52.640425 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m22:05:52.640830 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: COMMIT
+[0m22:05:52.640949 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.641076 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: COMMIT
+[0m22:05:52.641357 [debug] [Thread-3 (]: SQL status: COMMIT in 0.000 seconds
+[0m22:05:52.642937 [debug] [Thread-3 (]: Applying DROP to: "valenbisi_db"."public"."int_ocupacion__dbt_backup"
+[0m22:05:52.643141 [debug] [Thread-3 (]: Using postgres connection "model.dbt_valenbisi.int_ocupacion"
+[0m22:05:52.643312 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: /* {"app": "dbt", "dbt_version": "1.11.0rc1", "profile_name": "dbt_valenbisi", "target_name": "dev", "node_id": "model.dbt_valenbisi.int_ocupacion"} */
+drop view if exists "valenbisi_db"."public"."int_ocupacion__dbt_backup" cascade
+[0m22:05:52.643641 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m22:05:52.644139 [debug] [Thread-3 (]: On model.dbt_valenbisi.int_ocupacion: Close
+[0m22:05:52.644397 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba77f11d-c667-4ebf-b20c-78822fb0835f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa5b8aed0>]}
+[0m22:05:52.644678 [info ] [Thread-3 (]: 2 of 2 OK created sql view model public.int_ocupacion .......................... [[32mCREATE VIEW[0m in 0.01s]
+[0m22:05:52.644924 [debug] [Thread-3 (]: Finished running node model.dbt_valenbisi.int_ocupacion
+[0m22:05:52.645588 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:52.645707 [debug] [MainThread]: On master: BEGIN
+[0m22:05:52.645795 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:05:52.648534 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m22:05:52.648657 [debug] [MainThread]: On master: COMMIT
+[0m22:05:52.648764 [debug] [MainThread]: Using postgres connection "master"
+[0m22:05:52.648853 [debug] [MainThread]: On master: COMMIT
+[0m22:05:52.649017 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m22:05:52.649113 [debug] [MainThread]: On master: Close
+[0m22:05:52.649289 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:05:52.649408 [debug] [MainThread]: Connection 'list_valenbisi_db' was properly closed.
+[0m22:05:52.649526 [debug] [MainThread]: Connection 'model.dbt_valenbisi.staging_valenbisi' was properly closed.
+[0m22:05:52.649633 [debug] [MainThread]: Connection 'model.dbt_valenbisi.int_ocupacion' was properly closed.
+[0m22:05:52.649802 [info ] [MainThread]: 
+[0m22:05:52.649988 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m22:05:52.650366 [debug] [MainThread]: Command end result
+[0m22:05:52.665186 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/dbt/dbt_valenbisi/target/manifest.json
+[0m22:05:52.666068 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/dbt/dbt_valenbisi/target/semantic_manifest.json
+[0m22:05:52.668419 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/dbt/dbt_valenbisi/target/run_results.json
+[0m22:05:52.668554 [info ] [MainThread]: 
+[0m22:05:52.668733 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:05:52.668904 [info ] [MainThread]: 
+[0m22:05:52.669097 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m22:05:52.669524 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.45290706, "process_in_blocks": "0", "process_kernel_time": 0.066626, "process_mem_max_rss": "129712", "process_out_blocks": "4645", "process_user_time": 0.817689}
+[0m22:05:52.669731 [debug] [MainThread]: Command `dbt run` succeeded at 22:05:52.669690 after 0.45 seconds
+[0m22:05:52.669895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7f96910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffacdab710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffacdc6450>]}
+[0m22:05:52.670038 [debug] [MainThread]: Flushing usage events
+[0m22:05:53.270287 [debug] [MainThread]: An error was encountered while trying to flush usage events

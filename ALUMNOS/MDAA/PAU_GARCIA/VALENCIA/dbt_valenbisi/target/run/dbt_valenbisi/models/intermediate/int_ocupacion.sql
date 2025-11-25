@@ -1,8 +1,13 @@
-with base as (
+
+  create view "valenbisi_db"."public"."int_ocupacion__dbt_tmp"
+    
+    
+  as (
+    with base as (
 
     -- Partimos directamente del staging
     select * 
-    from {{ ref('staging_valenbisi') }}
+    from "valenbisi_db"."public"."staging_valenbisi"
 
 ),
 
@@ -39,3 +44,4 @@ ocupacion as (
 )
 
 select * from ocupacion
+  );

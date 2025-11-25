@@ -2,7 +2,7 @@ with base as (
 
     -- Partimos directamente del staging
     select * 
-    from {{ ref('staging_valenbisi') }}
+    from "valenbisi_db"."public"."staging_valenbisi"
 
 ),
 
