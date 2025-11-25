@@ -11,7 +11,7 @@
         -- Cálculo del INGRESO TOTAL REAL de la línea:
         ({{ cantidad }} * {{ precio_venta }})
         -
-        -- Cálculo del COSTE TOTAL de la línea:
+        -- Cálculo del COSTE TOTAL de la línea:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         ({{ cantidad }} * {{ coste_compra }})
     )
 {% endmacro %}
