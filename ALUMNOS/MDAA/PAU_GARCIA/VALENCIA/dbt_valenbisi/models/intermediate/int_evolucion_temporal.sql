@@ -34,7 +34,7 @@ evolucion as (
             - lag(momento_medicion) over (
                 partition by numero_estacion 
                 order by momento_medicion
-            ) as tiempo_desde_ultima_actualizacion,
+            ) as tiempo_desde_ultima_actualizacion
 
     from base
 )

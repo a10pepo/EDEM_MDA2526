@@ -99,4 +99,4 @@ while True:
             offset += limit
         else:
             break
-    time.sleep(10)
+    time.sleep(600)

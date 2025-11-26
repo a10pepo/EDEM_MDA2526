@@ -24,7 +24,6 @@ ordered as (
 
 last_update as (
 
-    -- Nos quedamos solo con la última medición de cada estación
     select
         id,
         numero_estacion,
