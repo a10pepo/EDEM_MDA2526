@@ -3,13 +3,15 @@ import datetime
 import time
 import random
 from json import dumps
+import os
 
 
 from confluent_kafka import Producer
 
+BASE_URL = os.getenv("SERVER_URL", "http://localhost:9092")
 
 config = {
-    'bootstrap.servers': 'localhost:9092',
+    'bootstrap.servers': BASE_URL,
     'client.id': 'python-producer'
 }
 
@@ -49,7 +51,7 @@ while True:
     print(f"Enviando datos: {inverterDict} al tópico {topic_kafka}")
 
     # Pausa de 1 segundo entre mensajes para simular un flujo en tiempo real.
-    time.sleep(1)
+    # time.sleep(1)
 pending = producer.flush()
 
 if pending != 0:

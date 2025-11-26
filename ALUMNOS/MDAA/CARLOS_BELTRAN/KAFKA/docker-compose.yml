@@ -1,5 +1,4 @@
 services:
-
   # =============================
   # Servicio Zookeeper
   # =============================
@@ -8,10 +7,10 @@ services:
     image: confluentinc/cp-zookeeper:7.3.0
     container_name: zookeeper
     environment:
-      ZOOKEEPER_CLIENT_PORT: 2181  # Puerto donde Zookeeper escucha
-      ZOOKEEPER_TICK_TIME: 2000    # Intervalo de tiempo interno
+      ZOOKEEPER_CLIENT_PORT: 2181 # Puerto donde Zookeeper escucha
+      ZOOKEEPER_TICK_TIME: 2000 # Intervalo de tiempo interno
     ports:
-      - "2181:2181"                # Exponemos el puerto para acceso local
+      - "2181:2181" # Exponemos el puerto para acceso local
     networks:
       - kafka-net
 
@@ -27,7 +26,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - "9092:9092"                # Puerto para clientes locales
+      - "9092:9092" # Puerto para clientes locales
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -56,7 +55,7 @@ services:
     depends_on:
       - kafka
     ports:
-      - "9021:9021"                # Puerto para acceder a la UI
+      - "9021:9021" # Puerto para acceder a la UI
     environment:
       CONTROL_CENTER_BOOTSTRAP_SERVERS: kafka:29092
       CONTROL_CENTER_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -78,15 +77,15 @@ services:
     depends_on:
       - kafka
     ports:
-      - "8088:8088"                # Puerto para la API REST de KSQL
+      - "8088:8088" # Puerto para la API REST de KSQL
     environment:
-      KSQL_BOOTSTRAP_SERVERS: kafka:29092  # Conexión al broker Kafka
-      KSQL_LISTENERS: http://0.0.0.0:8088  # Dirección donde escucha KSQL
-      KSQL_KSQL_SERVICE_ID: ksql_service   # Identificador del servicio KSQL
+      KSQL_BOOTSTRAP_SERVERS: kafka:29092 # Conexión al broker Kafka
+      KSQL_LISTENERS: http://0.0.0.0:8088 # Dirección donde escucha KSQL
+      KSQL_KSQL_SERVICE_ID: ksql_service # Identificador del servicio KSQL
     networks:
       - kafka-net
 
-# =============================
+  # =============================
   # Servicio KSQL CLI
   # =============================
   # Cliente para ejecutar comandos KSQL desde la línea de comandos.
@@ -95,8 +94,40 @@ services:
     container_name: ksql-cli
     depends_on:
       - ksql
-    entrypoint: /bin/sh   # Para que puedas entrar al contenedor y ejecutar comandos
-    tty: true             # Permite sesión interactiva
+    entrypoint: /bin/sh # Para que puedas entrar al contenedor y ejecutar comandos
+    tty: true # Permite sesión interactiva
+    networks:
+      - kafka-net
+
+  alert_reader:
+    build:
+      context: ./PostWork
+      dockerfile: Dockerfile-alertReader
+    environment:
+      SERVER_URL: kafka:9092
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+  inverter_messages:
+    build:
+      context: ./PostWork
+      dockerfile: Dockerfile-inverterMessages
+    environment:
+      SERVER_URL: kafka:9092
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+  message_processor:
+    build:
+      context: ./PostWork
+      dockerfile: Dockerfile-messageProcessor
+    environment:
+      SERVER_URL: kafka:9092
+    depends_on:
+      - kafka
     networks:
       - kafka-net
 
