@@ -1,0 +1,51 @@
+version: 1
+
+models:
+  - name: staging_valenbisi
+    description: >
+      Limpieza básica, traducción y clarificación de algunas variables
+  - name: int_evolucion_temporal
+    description: >
+      Calcular variaciones importantes dentro del uso de las estaciones
+  - name: int_last_update
+    description: >
+      Última actualización de los datos de Valenbisi. Quita duplicados y se queda con el último registro
+  - name: int_ocupacion
+    description: >
+      Calculos relacionados con la ocupación de las paradas.
+    columns:
+      - name: capacidad_real
+        description: >
+          Capacidad real de la estación, teniendo en cuenta postas fuera de servicio
+      - name: situacion_ocupacion
+        descripcion: >
+          Discretizar la ocupación media para mejor análisis posterior
+      - name: no_disponibles
+        descripcion: >
+          Número de postas no disponibles en la estación
+  - name: marts_ocupacion_por_hora
+    description: >
+      Medidas de ocupación agregadas por hora  
+  - name: marts_situacion_actual
+    descripction: >
+      Estado actual de las estaciones listo para el cliente
+  - name: marts_top_vacías
+    description: >
+      Estaciones ordenadas por situacion de vacíado más preocupante a menos preocupante
+    columns:
+      - name: avg_vacia
+        description: >
+          Porcentaje de veces que la estación ha estado vacía
+      - name: avg_casi_vacia
+        description: >
+          Porcentaje de veces que la estación ha estado casi vacía
+  - name: marts_top_llenas
+    description: >
+      Estaciones ordenadas por situacion de llenado más preocupante a menos preocupante
+    columns:
+      - name: avg_llena
+        description: >
+          Porcentaje de veces que la estación ha estado llena
+      - name: avg_casi_llena
+        description: >
+          Porcentaje de veces que la estación ha estado casi llena

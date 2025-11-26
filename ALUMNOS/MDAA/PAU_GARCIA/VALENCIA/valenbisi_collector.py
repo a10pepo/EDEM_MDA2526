@@ -44,9 +44,9 @@ def get_data_bicis(offset, limit):
 def crear_tabla(conexion):
     try:
         cursor = conexion.cursor()
-        cursor.execute("""DROP TABLE valenbisi_raw CASCADE""")
+        # cursor.execute("""DROP TABLE valenbisi_raw CASCADE""")
         cursor.execute("""
-        CREATE TABLE valenbisi_raw (
+        CREATE TABLE IF NOT EXISTS valenbisi_raw (
         id SERIAL PRIMARY KEY,
         station_id INTEGER NOT NULL,
         station_name VARCHAR(255),
