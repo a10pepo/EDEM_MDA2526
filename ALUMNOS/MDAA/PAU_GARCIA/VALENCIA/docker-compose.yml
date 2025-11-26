@@ -1,15 +1,14 @@
 services:
-  db:
+  db_valenbisi:
     image: postgres:17-alpine
-    env_file:
-      - .env
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     volumes:
-      - ./docker-init:/docker-entrypoint-initdb.d
-      - postgresDB:/var/lib/postgresql/data
+      - postgresDB_valenbisi:/var/lib/postgresql/data
     ports:
-      - "5433:5432"
+      - "5432:5432"  
     restart: unless-stopped
-
   app:
     image: python:3.11-slim
     working_dir: /app
@@ -19,7 +18,7 @@ services:
     command: >
       sh -c " pip install -r requirements.txt && python -u valenbisi_collector.py "
     depends_on:
-      - db
+      - db_valenbisi
   
   dbt:
     build: .
@@ -33,9 +32,9 @@ services:
     entrypoint: ["/bin/bash"]
     tty: true
     depends_on:
-      - db
+      - db_valenbisi
 
 
 volumes:
-  pg_data:
   postgresDB:
+  postgresDB_valenbisi:

@@ -1,10 +1,56 @@
 import psycopg
-import os
 import time
 import requests
 import datetime
 
-    
+DB_USER = "postgres"
+DB_PASS = "postgres"
+DB_HOST = "db_valenbisi"
+DB_PORT = "5432"
+DB_NAME = "valenbisi_db"
+
+SERVER_URL = f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/postgres"
+DB_URL = f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+def create_database_if_not_exists():
+    try:
+        with psycopg.connect(SERVER_URL, autocommit=True) as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT 1 FROM pg_database WHERE datname=%s;", (DB_NAME,))
+                if not cur.fetchone():
+                    print(f"Base '{DB_NAME}' no existe. Creando...")
+                    cur.execute(f"CREATE DATABASE {DB_NAME};")
+                    print("Base creada correctamente.")
+                else:
+                    print(f"Base '{DB_NAME}' ya existe.")
+    except Exception as e:
+        print(f"Error al crear/verificar base: {e}")
+        exit(1)
+
+def crear_tabla(conexion):
+    try:
+        with conexion.cursor() as cursor:
+            cursor.execute("""
+            CREATE TABLE IF NOT EXISTS valenbisi_raw (
+                id SERIAL PRIMARY KEY,
+                station_id INTEGER NOT NULL,
+                station_name VARCHAR(255),
+                latitude DECIMAL(10, 8),
+                longitude DECIMAL(11, 8),
+                available_bikes INTEGER,
+                available_slots INTEGER,
+                station_status VARCHAR(50),
+                total_capacity INTEGER,
+                last_update TIMESTAMP NOT NULL,
+                timestamp TIMESTAMP NOT NULL
+            );
+            """)
+        conexion.commit()
+    except Exception as e:
+        print("Error al crear la tabla:", e)
+        exit(1)
+
+# --- Datos API ---
 def insert_data(conexion,data):
     results = data["results"]
     for station in results:
@@ -66,36 +112,32 @@ def crear_tabla(conexion):
 
 
 
-## EMPIEZA EL CODIGO PRINCIPAL
+# --- EJECUCIÓN ---
+create_database_if_not_exists()
 
-print("Conectando a la base de datos")
-intentos_conexion = 0
-conectado = False
-while intentos_conexion < 5 and not conectado:
+# Intentos de conexión a la DB final
+for i in range(5):
     try:
-        # Conectamos a la base de datos
-        conexion = psycopg.connect(os.getenv("DATABASE_URL"))
-        if conexion:
-            print("Conexión exitosa a la base de datos")
-            conectado = True
-        cursor = conexion.cursor()
+        conexion = psycopg.connect(DB_URL)
+        print("Conexión exitosa a valenbisi_db")
+        break
     except Exception as e:
-        print("Error al conectar a la base de datos, reintentando...")
-        print(e)
-        intentos_conexion += 1
-        time.sleep(10)
-        if intentos_conexion == 5:
-            print("No se pudo conectar a la base de datos después de varios intentos.")
-            exit(1)
-            
+        print(f"Error al conectar (intento {i+1}/5): {e}")
+        time.sleep(5)
+else:
+    print("No se pudo conectar a la base de datos final.")
+    exit(1)
+
 crear_tabla(conexion)
+
+# Loop principal
 while True:
     offset = 0
     limit = 100
     while True:
-        data = get_data_bicis(offset,limit)
-        if len(data["results"])>0:
-            insert_data(conexion,data)
+        data = get_data_bicis(offset, limit)
+        if data and len(data["results"]) > 0:
+            insert_data(conexion, data)
             offset += limit
         else:
             break
