@@ -9,7 +9,7 @@ ocupacion as (
 ),
 
 estado_actual as (
-    select
+    select distinct on (l.numero_estacion)
         l.numero_estacion,
         l.nombre_estacion,
         l.latitud,
