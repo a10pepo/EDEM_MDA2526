@@ -20,9 +20,7 @@ estado_actual as (
         o.capacidad_real,
         o.no_disponibles,
         o.situacion_ocupacion,
-        l.momento_medicion,
-        l.fecha_medicion,
-        l.hora_medicion
+        l.momento_medicion
     from last_update l
     join ocupacion o
     on l.numero_estacion = o.numero_estacion

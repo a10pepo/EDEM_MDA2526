@@ -1,13 +1,4 @@
-with base as (
-    select i.*,
-    s.hora_medicion
-    from {{ ref('int_ocupacion') }} i
-    join {{ ref('staging_valenbisi') }} s
-    on i.numero_estacion = s.numero_estacion
-    and i.momento_medicion = s.momento_medicion
-),
-
-horas as (
+with horas as (
     select
         numero_estacion,
         nombre_estacion,
@@ -17,8 +8,9 @@ horas as (
         bicicletas_disponibles,
         huecos_disponibles,
         situacion_ocupacion
-    from base
+    from {{ ref('int_ocupacion') }}
 ),
+
 
 variaciones_hora as (
     select

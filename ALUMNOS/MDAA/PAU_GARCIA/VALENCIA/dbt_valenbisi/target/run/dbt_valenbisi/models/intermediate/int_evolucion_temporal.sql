@@ -29,12 +29,6 @@ evolucion as (
                 order by momento_medicion
             ) as variacion_bicis,
 
-        huecos_disponibles
-            - lag(huecos_disponibles) over (
-                partition by numero_estacion 
-                order by momento_medicion
-            ) as variacion_huecos,
-
         momento_medicion
             - lag(momento_medicion) over (
                 partition by numero_estacion 
