@@ -21,6 +21,7 @@ ocupacion as (
         huecos_disponibles,
         estado_estacion,
         capacidad_total,
+        momento_medicion,
 
         bicicletas_disponibles * 1.0 / capacidad_total as porcentaje_bicis_disponibles,
         huecos_disponibles * 1.0 / capacidad_total as porcentaje_huecos_disponibles,

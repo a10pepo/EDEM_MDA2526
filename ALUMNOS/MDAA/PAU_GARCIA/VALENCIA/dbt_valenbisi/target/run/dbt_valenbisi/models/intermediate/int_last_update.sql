@@ -4,27 +4,12 @@
     
   as (
     with base as (
-
-    -- Partimos del staging
     select *
     from "valenbisi_db"."public"."staging_valenbisi"
-
-),
-
-ordered as (
-
-    select
-        *,
-        row_number() over (
-            partition by numero_estacion
-            order by momento_medicion desc
-        ) as rn
-    from base
 ),
 
 last_update as (
-
-    select
+    select distinct on (numero_estacion)
         id,
         numero_estacion,
         nombre_estacion,
@@ -38,8 +23,8 @@ last_update as (
         hora_medicion,
         momento_medicion,
         ultima_consulta
-    from ordered
-    where rn = 1
+    from base
+    order by numero_estacion, momento_medicion desc
 )
 
 select *
