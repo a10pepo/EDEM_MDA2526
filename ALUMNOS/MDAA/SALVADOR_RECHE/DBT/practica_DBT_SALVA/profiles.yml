@@ -1,0 +1,8 @@
+practica_DBT_SALVA:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # Esta ruta es interna del contenedor (/usr/app es donde montamos tu carpeta)
+      path: 'bbdd/my_db.duckdb'
+      threads: 1  
