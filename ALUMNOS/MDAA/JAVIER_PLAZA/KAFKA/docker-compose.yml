@@ -58,14 +58,14 @@ services:
       KSQL_KSQL_SERVICE_ID: ksql_service   
     networks:
       - kafka-net
-  ksql-cli:
-    image: confluentinc/cp-ksqldb-cli:7.3.0
-    container_name: ksql-cli
-    depends_on:
-      - ksql
-    entrypoint: /bin/sh  
-    tty: true             
-      - kafka-net
+  # ksql-cli:
+  #   image: confluentinc/cp-ksqldb-cli:7.3.0
+  #   container_name: ksql-cli
+  #   depends_on:
+  #     - ksql
+  #   entrypoint: /bin/sh  
+  #   tty: true             
+  #     - kafka-net
 networks:
   kafka-net:
     driver: bridge
