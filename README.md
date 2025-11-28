@@ -71,7 +71,7 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 <tr><th>M0</th><td>Python</td><td>03 nov.</td><td>24 oct.</td></tr>
 <tr><th>M0</th><td>Linux</td><td>28 oct.</td><td>04 oct.</td></tr>
 <tr><th>M0</th><td>Docker</td><td>04 nov.</td><td>07 nov.</td></tr>
-<tr><th>M0</th><td>Ahorcado</td><td>11 nov.</td><td>21 nov.</td></tr>
+<tr><th>M0</th><td>DBT</td><td>26 nov.</td><td>12 dic.</td></tr>
 <tr><th>M1</th><td>SQL</td><td>10 nov.</td><td>14 nov.</td></tr>
 <tr><th>M1</th><td>APIs</td><td>09 dic.</td><td>23 ene.</td></tr>
 <tr><th>M1</th><td>Kafka</td><td>02 dic.</td><td>02 ene.</td></tr>
@@ -85,7 +85,8 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 Entregas Grupo MIA
 <table>
 <tr><th>Alumno</th>
-<th>*AHORCADO*</th>
+<th>CLUSTERING</th>
+<th>AHORCADO</th>
 <th>*DOCKER*</th>
 <th>DEMO</th>
 <th>TICTACTOE</th>
@@ -99,145 +100,157 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ADRIAN_ALEMANY'>ADRIAN_ALEMANY</a></td>
 <td>❌</td>
-<td>✅</td>
-<td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>✅</td>
+<td>✅</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ALEJANDRO_MORENO'>ALEJANDRO_MORENO</a></td>
 <td>❌</td>
-<td>✅</td>
-<td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>❌</td>
+<td>✅</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ANTONIO_NAVARRO'>ANTONIO_NAVARRO</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/BRUNO_ESTEVE'>BRUNO_ESTEVE</a></td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/CARLOS_SEVILLANO'>CARLOS_SEVILLANO</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/CLAUDIA_SALGADO'>CLAUDIA_SALGADO</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/DAVID_FERNANDEZ'>DAVID_FERNANDEZ</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ENRIQUE_JAVALOYES'>ENRIQUE_JAVALOYES</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FATIMA_CUCART'>FATIMA_CUCART</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FELIX_ORTUNO'>FELIX_ORTUNO</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FLOR_SASTRE'>FLOR_SASTRE</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/IGNACIO_BENLLOCH'>IGNACIO_BENLLOCH</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -246,98 +259,107 @@ Entregas Grupo MIA
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
+<td>❌</td>
 <td>✅</td>
-<td>✅</td>
-<td>✅</td>
-<td>8.0</td>
+<td>❌</td>
+<td>2.5</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JAVIER_GRACIA'>JAVIER_GRACIA</a></td>
-<td>❌</td>
 <td>✅</td>
 <td>❌</td>
+<td>✅</td>
+<td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JAVIER_LOPEZ'>JAVIER_LOPEZ</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JORGE_GREUS'>JORGE_GREUS</a></td>
-<td>❌</td>
 <td>✅</td>
 <td>❌</td>
+<td>✅</td>
+<td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JOSE_FELIX'>JOSE_FELIX</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JUANLUIS_GERMAN'>JUANLUIS_GERMAN</a></td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/MARTA_SOLER_EBRI'>MARTA_SOLER_EBRI</a></td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
 <td>❌</td>
 <td>✅</td>
-<td>❌</td>
-<td>❌</td>
 <td>✅</td>
 <td>✅</td>
-<td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/PAOLA_REGUERA'>PAOLA_REGUERA</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/RAUL_ARAGALL'>RAUL_ARAGALL</a></td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -351,30 +373,32 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/SERGI_ESCORUELA'>SERGI_ESCORUELA</a></td>
 <td>❌</td>
-<td>✅</td>
-<td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>❌</td>
+<td>✅</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/SILVIA_PLA'>SILVIA_PLA</a></td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-11-18 14:19:42
+Last Checked: 2025-11-26 07:17:34
 
 
 Entregas Grupo MDA A
@@ -387,12 +411,13 @@ Entregas Grupo MDA A
 <th>CHATBIG</th>
 <th>*CHUCK*</th>
 <th>GCP_ESPECIFICOS</th>
+<th>VALENCIA</th>
 <th>*PYSPARK*</th>
 <th>CHAT</th>
 <th>*APIS*</th>
 <th>*DBT*</th>
 <th>*AWS_ALMACENAMIENTO*</th>
-<th>*AHORCADO*</th>
+<th>AHORCADO</th>
 <th>*DOCKER*</th>
 <th>DEMO</th>
 <th>TICTACTOE</th>
@@ -406,6 +431,7 @@ Entregas Grupo MDA A
 <tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/CARLOS_BELTRAN'>CARLOS_BELTRAN</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -443,6 +469,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -456,6 +483,7 @@ Entregas Grupo MDA A
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/DANIEL_ADAM'>DANIEL_ADAM</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -495,12 +523,13 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -519,13 +548,14 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -544,18 +574,20 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/JORGE_ALBALAT'>JORGE_ALBALAT</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -594,13 +626,14 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -620,17 +653,19 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAA/PAU_GARCIA'>PAU_GARCIA</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -670,18 +705,19 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-11-18 14:19:42
+Last Checked: 2025-11-26 07:17:34
 
 Entregas Grupo MDA B
 <table>
@@ -693,12 +729,13 @@ Entregas Grupo MDA B
 <th>CHATBIG</th>
 <th>*CHUCK*</th>
 <th>GCP_ESPECIFICOS</th>
+<th>VALENCIA</th>
 <th>*PYSPARK*</th>
 <th>CHAT</th>
 <th>*APIS*</th>
 <th>*DBT*</th>
 <th>*AWS_ALMACENAMIENTO*</th>
-<th>*AHORCADO*</th>
+<th>AHORCADO</th>
 <th>*DOCKER*</th>
 <th>DEMO</th>
 <th>TICTACTOE</th>
@@ -712,6 +749,7 @@ Entregas Grupo MDA B
 <tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MDAB/AISHA_DELTIO'>AISHA_DELTIO</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -751,12 +789,13 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>4.0</td>
+<td>❌</td>
+<td>✅</td>
+<td>5.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -775,13 +814,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -800,13 +840,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -827,11 +868,12 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -852,11 +894,12 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -875,13 +918,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -900,13 +944,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -925,13 +970,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -950,13 +996,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -975,13 +1022,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1000,13 +1048,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1025,13 +1074,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1052,11 +1102,12 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
-<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>6.0</td>
+<td>✅</td>
+<td>✅</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1075,13 +1126,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1102,11 +1154,12 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1125,13 +1178,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1152,15 +1206,16 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-11-18 14:19:42
+Last Checked: 2025-11-26 07:17:34
 
