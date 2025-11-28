@@ -87,9 +87,21 @@ Al finalizar esta fase, deberéis tener un programa con las siguientes caracter�
 
 Si has completado esta fase podemos decir que Docker y MySQL son tus amigos.
 
-4. **Fase 4: Optimización**
+4. **FASE 4: API**
+
+Adapta tu código para que cada 10 seg le pida una palabra a esta API y la resuelva de manera automática:
+
+https://rae-api.com/
+
+Utiliza el endpoint /api/random en su documentación
+
+https://rae-api.com/docs/api-reference/
+
+5. **Fase 5: Optimización**
 
 Si has completado la fase anterior ahora toca optimizar el proceso. Para ello debéis probar otras estraegias para adivinar las palabras. 
+
+
 
 Por ejemplo, 
 

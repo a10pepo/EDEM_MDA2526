@@ -1,0 +1,8 @@
+services:
+  pysum:
+    build: .
+    container_name: entregable_docker
+
+
+# build: .: Esta es la instrucción clave. Le dice a Docker Compose que, en lugar de descargar una imagen (image: ...), 
+# debe construir una imagen nueva usando el Dockerfile que se encuentra en el directorio actual (.).

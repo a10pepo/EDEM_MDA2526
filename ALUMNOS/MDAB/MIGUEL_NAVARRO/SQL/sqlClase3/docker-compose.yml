@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    env_file: .env
+    command: >
+      sh -c "pip install -r requirements.txt && python main.py"
+    depends_on:
+      - db
+volumes:
+  postgresDB:
