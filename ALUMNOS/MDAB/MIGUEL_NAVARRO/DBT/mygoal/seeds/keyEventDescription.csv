@@ -1,0 +1,53 @@
+keyEventTypeId,keyEventName
+66,Foul
+68,Offside
+70,Goal
+74,Shot
+76,Substitution
+77,Save
+78,Assist
+80,Kickoff
+81,Halftime
+82,Start 2nd Half
+83,End Regular Time
+84,Start Extra Time
+85,Halftime Extra Time
+86,Start 2nd Half Extra Time
+87,End Extra Time
+88,Start Shootout
+89,End Match
+93,Red Card
+94,Yellow Card
+95,Corner Kick
+96,Free Kick
+97,Own Goal
+98,Penalty - Scored
+104,Penalty - Scored
+106,Shot On Target
+113,Penalty - Missed
+114,Penalty - Saved
+115,Penalty - Missed
+117,Shot Off Target
+122,Handball
+124,Throw In
+135,Shot Blocked
+136,Shot Hit Woodwork
+137,Goal - Header
+138,Goal - Free-kick
+140,Penalty - Hit Woodwork
+141,Assists Shot
+142,Free Kick
+162,Blocked Pass
+163,VAR - Goal Awarded
+164,VAR - Goal Not Awarded
+165,VAR - Penalty Awarded
+166,VAR - Penalty Not Awarded
+167,VAR - (Red) Card Upgrade
+168,VAR - Red Card Given
+169,VAR - Mistaken Identity
+170,VAR - Other
+171,VAR - Referee decision confirmed
+172,VAR - Referee decision cancelled
+173,Goal - Volley
+174,Penalty - Saved
+175,Deleted After Review

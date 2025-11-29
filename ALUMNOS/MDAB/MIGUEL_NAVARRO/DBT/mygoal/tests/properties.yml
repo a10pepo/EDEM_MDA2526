@@ -1,0 +1,5 @@
+tests:
+  - name: assert_no_negative_customer_metrics
+    config:
+      severity: warn
+      tags: ["data_quality"]

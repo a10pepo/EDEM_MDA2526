@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: mygoal_raw
+    schema: raw
+    tables:
+      - name: fixtures
+      - name: keyEventDescription
+      - name: leagues
+      - name: players
+      - name: standings
+      - name: status
+      - name: teamRoster
+      - name: teams
+      - name: teamStatus
+      - name: venues
+
