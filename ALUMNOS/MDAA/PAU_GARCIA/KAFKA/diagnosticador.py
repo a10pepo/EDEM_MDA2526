@@ -17,18 +17,18 @@ producer = Producer(conf)
 
 # Listado de averías
 tipo_de_averia = [
-    {"codigo_averia": 1, "gravedad": "baja", "pieza": "aire acondicionado", "desc_averia": "un fallo eléctrico ❄️"},
-    {"codigo_averia": 2, "gravedad": "muy grave", "pieza": "motor", "desc_averia": "una grieta en el bloque 💥"},
-    {"codigo_averia": 3, "gravedad": "muy grave", "pieza": "transmisión", "desc_averia": "una rotura completa de la caja de cambios ⚙️"},
-    {"codigo_averia": 4, "gravedad": "media", "pieza": "frenos", "desc_averia": "las pastillas de freno desgastadas 🛑"},
-    {"codigo_averia": 5, "gravedad": "baja", "pieza": "luces", "desc_averia": "una bombilla fundida 💡"},
-    {"codigo_averia": 6, "gravedad": "baja", "pieza": "limpiaparabrisas", "desc_averia": "las escobillas deterioradas 🌧️"},
-    {"codigo_averia": 7, "gravedad": "media", "pieza": "batería", "desc_averia": "la batería descargada 🔋"},
-    {"codigo_averia": 8, "gravedad": "alta", "pieza": "turbo", "desc_averia": "un fallo en el turbocompresor 🚀"},
-    {"codigo_averia": 9, "gravedad": "baja", "pieza": "radio", "desc_averia": "un problema con la radio 📻"},
-    {"codigo_averia": 10, "gravedad": "media", "pieza": "suspensión", "desc_averia": "los amortiguadores desgastados 🔧"},
-    {"codigo_averia": 11, "gravedad": "baja", "pieza": "escape", "desc_averia": "una fuga menor en el tubo de escape 💨"},
-    {"codigo_averia": 12, "gravedad": "alta", "pieza": "embrague", "desc_averia": "el embrague patinando ⚡"}
+    {"codigo_averia": 1, "gravedad": "baja", "tipo_averia": "aire acondicionado", "desc_averia": "un fallo eléctrico del AC❄️"},
+    {"codigo_averia": 2, "gravedad": "muy grave", "tipo_averia": "motor", "desc_averia": "una grieta en el bloque del motor 💥"},
+    {"codigo_averia": 3, "gravedad": "muy grave", "tipo_averia": "transmisión", "desc_averia": "una rotura completa de la caja de cambios ⚙️"},
+    {"codigo_averia": 4, "gravedad": "media", "tipo_averia": "frenos", "desc_averia": "las pastillas de freno desgastadas 🛑"},
+    {"codigo_averia": 5, "gravedad": "baja", "tipo_averia": "luces", "desc_averia": "una bombilla fundida 💡"},
+    {"codigo_averia": 6, "gravedad": "baja", "tipo_averia": "limpiaparabrisas", "desc_averia": "las escobillas deterioradas 🌧️"},
+    {"codigo_averia": 7, "gravedad": "media", "tipo_averia": "batería", "desc_averia": "la batería descargada 🔋"},
+    {"codigo_averia": 8, "gravedad": "alta", "tipo_averia": "turbo", "desc_averia": "un fallo en el turbocompresor 🚀"},
+    {"codigo_averia": 9, "gravedad": "baja", "tipo_averia": "radio", "desc_averia": "un problema con la antena de la radio 📻"},
+    {"codigo_averia": 10, "gravedad": "media", "tipo_averia": "suspensión", "desc_averia": "los amortiguadores desgastados 🔧"},
+    {"codigo_averia": 11, "gravedad": "baja", "tipo_averia": "escape", "desc_averia": "una fuga menor en el tubo de escape 💨"},
+    {"codigo_averia": 12, "gravedad": "alta", "tipo_averia": "embrague", "desc_averia": "el embrague patinando ⚡"}
 ]
 
 def generar_matricula():
