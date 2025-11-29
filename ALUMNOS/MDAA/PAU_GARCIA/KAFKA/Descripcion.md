@@ -75,6 +75,10 @@ CREATE STREAM encargos_cancelados WITH (KAFKA_TOPIC='encargos_cancelados', VALUE
   - Timestamps
   - Pieza : En un principio el json no lleva pieza, tan solo se le añade si falta alguna pieza en taller.py.
 
+## Esquema: 
+
+VISUALIZAR EN GITHUB NAVEGADOR PARA VERLO GRAFICAMENTE
+
 ```mermaid
 flowchart LR
     DIAG[🔧 Diagnosticador] -->|produce| T1[(encargos_coches)]
