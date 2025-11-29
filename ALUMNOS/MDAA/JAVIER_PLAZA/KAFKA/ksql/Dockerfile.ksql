@@ -1,0 +1,11 @@
+FROM confluentinc/cp-ksqldb-cli:0.28.2
+
+WORKDIR /scripts
+
+COPY entrypoint.sh .
+COPY crear_stream.sql .
+COPY crear_tabla.sql .
+
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["./entrypoint.sh"]
