@@ -32,14 +32,13 @@ conf_consumer = {
     'auto.offset.reset': 'latest'
 }
 consumer = Consumer(conf_consumer)
-consumer.subscribe(['encargos_coches'])
-consumer.subscribe(['encargos_piezas'])
+consumer.subscribe(['encargos_coches', 'encargos_piezas'])
 
 
 
 def encargar_piezas(mensaje, pieza):
     producer.produce(
-        topic='encargo_piezas',
+        topic='encargos_piezas',
         value=json.dumps(mensaje, ensure_ascii=False).encode('utf-8'),
         headers=[("producer", "taller")]
     )
@@ -49,7 +48,8 @@ def encargar_piezas(mensaje, pieza):
 def reparacion(mensaje):
     producer.produce(
         topic='encargos_finalizados',
-        value=json.dumps(mensaje,ensure_ascii=False).encode('utf-8')
+        value=json.dumps(mensaje,ensure_ascii=False).encode('utf-8'),
+        headers=[("producer", "taller")]
     )
     producer.flush()
     print(Fore.GREEN + f"✅ Reparación del vehiculo {mensaje["matricula"]} finalizada (topic 'encargos_finalizados')")
@@ -63,23 +63,27 @@ def faltan_piezas(gravedad):
         p = 20
     else:
         p = 100
-    if random.randint(0,100) > p
+    return (random.randint(0,100) > p)
 
 
 if __name__ == "__main__":
     try:
         while True:
             msg = consumer.poll(1.0)
-            if dict(msg.headers() or {}).get("producer") == "taller":
-                continue
             if msg is None:
                 continue
             if msg.error():
                 print(Fore.RED + f"Error en el mensaje: {msg.error()}")
                 continue
+            headers = dict(msg.headers() or [])
+            producer_hdr = headers.get("producer")
+            if isinstance(producer_hdr, bytes):
+                producer_hdr = producer_hdr.decode("utf-8")
+            if producer_hdr == "taller":
+                continue
             encargo = json.loads(msg.value().decode('utf-8'))
             if msg.topic() == "encargos_coches":
-                print(Fore.WHITE + f"👨🏻‍🔧 Reparación del coche con matricula {msg["matricula"]} en marcha.")
+                print(Fore.WHITE + f"👨🏻‍🔧 Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
                 piezas = faltan_piezas(encargo.get("gravedad"))
                 if piezas:
                     piezas = posibles_piezas_necesarias.get(encargo.get("codigo_averia"), [])
@@ -88,9 +92,9 @@ if __name__ == "__main__":
                     encargar_piezas(encargo,pieza)
                 else :
                     reparacion(encargo)
-            if msg.topic() == "encargos_piezas":
-                print(Fore.CYAN + f"⚙️ Ha llegado la pieza {encargo.get("pieza")}. Reparación del coche con matricula {msg["matricula"]} en marcha.")
+            elif msg.topic() == "encargos_piezas":
+                print(Fore.CYAN + f"⚙️ Ha llegado la pieza {encargo.get("pieza")}. Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
                 reparacion(encargo)
 
-    except:
-        print(Fore.CYAN + "Gestor detenido.")
+    except Exception as e:
+        print(Fore.CYAN + f"Gestor detenido: {e}")
