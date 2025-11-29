@@ -4,6 +4,7 @@ import string
 import time
 import random
 from colorama import Fore, Style, init
+from confluent_kafka.admin import AdminClient
 
 # Inicializa colorama con autoreset
 init(autoreset=True)

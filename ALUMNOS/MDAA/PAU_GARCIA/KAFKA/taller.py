@@ -8,14 +8,14 @@ from colorama import Fore, Style, init
 posibles_piezas_necesarias = {
     1: ["fusible", "relé", "cableado", "módulo de control del A/C"],
     4: ["pastillas de freno", "discos de freno (si procede)", "líquido de frenos", "sensores de desgaste"],
-    5: ["bombilla (especificación correcta)", "portalámparas", "fusible de iluminación"],
+    5: ["bombilla", "portalámparas", "fusible de iluminación"],
     6: ["escobillas limpiaparabrisas", "brazo de limpiaparabrisas (si está dañado)"],
-    7: ["batería nueva (especificación correcta)", "terminales/borne", "comprobación o reemplazo alternador si procede"],
-    8: ["turbo completo (o kit de reparación)", "juntas y retenes", "tubos intercooler/abrazaderas"],
-    9: ["unidad de radio/autoradio (reemplazo)", "antena (si procede)", "fusible de radio"],
-    10: ["amortiguadores", "muelles (si procede)", "kieletas/bieletas", "kit de montaje de amortiguador"],
+    7: ["batería nueva", "terminales/borne", "comprobación o reemplazo alternador si procede"],
+    8: ["turbo completo", "juntas y retenes", "tubos intercooler/abrazaderas"],
+    9: ["unidad de radio/autoradio", "antena", "fusible de radio"],
+    10: ["amortiguadores", "muelles", "kieletas/bieletas", "kit de montaje de amortiguador"],
     11: ["tramo de tubo de escape de repuesto", "junta de escape", "abrazaderas/bridas"],
-    12: ["kit de embrague (disco, plato, collarín)", "volante motor (si está dañado)"]
+    12: ["kit de embrague", "volante motor"]
 }
 # Inicializa colorama con autoreset
 init(autoreset=True)
@@ -29,12 +29,10 @@ producer = Producer(conf)
 conf_consumer = {
     'bootstrap.servers': 'localhost:9092',
     'group.id': f'grupo_alertas_{int(time.time())}',
-    'auto.offset.reset': 'latest'
+    'auto.offset.reset': 'latest' 
 }
 consumer = Consumer(conf_consumer)
 consumer.subscribe(['encargos_coches', 'encargos_piezas'])
-
-
 
 def encargar_piezas(mensaje, pieza):
     producer.produce(
@@ -83,7 +81,7 @@ if __name__ == "__main__":
                 continue
             encargo = json.loads(msg.value().decode('utf-8'))
             if msg.topic() == "encargos_coches":
-                print(Fore.WHITE + f"👨🏻‍🔧 Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
+                print(Fore.WHITE + f"🧑‍🔧 Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
                 piezas = faltan_piezas(encargo.get("gravedad"))
                 if piezas:
                     piezas = posibles_piezas_necesarias.get(encargo.get("codigo_averia"), [])

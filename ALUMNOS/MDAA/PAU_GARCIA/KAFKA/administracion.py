@@ -1,0 +1,48 @@
+from confluent_kafka import Producer, Consumer
+import json
+import string
+import time
+import random
+from colorama import Fore, Style, init
+
+# Inicializa colorama con autoreset
+init(autoreset=True)
+
+# Configuración del productor Kafka
+conf = {
+    'bootstrap.servers': 'localhost:9092'  # Ajusta según tu broker
+}
+producer = Producer(conf)
+
+conf_consumer = {
+    'bootstrap.servers': 'localhost:9092',
+    'group.id': f'grupo_alertas_{int(time.time())}',
+    'auto.offset.reset': 'latest' 
+}
+consumer = Consumer(conf_consumer)
+consumer.subscribe([ 'encargos_finalizados'])
+
+def avisar_cliente(mensaje):
+    producer.produce(
+        topic='avisos_cliente',
+        value=json.dumps(mensaje, ensure_ascii=False).encode('utf-8')
+    )
+    producer.flush()
+    print(Fore.GREEN + f"📲 Enviando mensaje al cliente dueño del vehículo con matricula {encargo.get("matricula")}")
+
+
+if __name__ == "__main__":
+    try:
+        while True:
+            msg = consumer.poll(1.0)
+            if msg is None:
+                continue
+            if msg.error():
+                print(Fore.RED + f"Error en el mensaje: {msg.error()}")
+                continue
+            encargo = json.loads(msg.value().decode('utf-8'))
+            print(Fore.BLUE + f"El coche con matrícula {encargo.get("matricula")} esta listo para que su dueño lo recoja")
+            avisar_cliente(encargo)
+
+    except Exception as e:
+        print(Fore.CYAN + f"Gestor detenido: {e}")

@@ -4,10 +4,10 @@ En un taller de coches, los clientes llevan su coche y un primer mecánico que s
 
 Diseño de kafka propuesto
 
-- Un consumer cliente que lee cuando su coche está listo (En la realidad podría ser una API que enviara los mensajes a los telefonos, de momento solo será un consumer básico que imprime el nombre del cliente y la matricula del coche)
+- Un consumer cliente que lee cuando su coche está listo (En la realidad podría ser una API que enviara los mensajes a los telefonos, de momento solo será un consumer básico que imprime la matricula del coche)
 - Un producer diagnosticador que produce encargos de reparación o avisa a administración de que la reparación no es posible.
 - Un consumer/producer taller que consume encargos de reparación y avisos de piezas suministradas y produce encargos de piezas y avisos de reparación finalizada.
-- Un consumer/producer proveer que consume encargos de piezas y 
+- Un consumer/producer proveedor que consume encargos de piezas y envias cuando estan listas 
 - Un consumer/producer administración que consume avisos de reparación finalizada y produce notificaciones al cliente. 
 
 
