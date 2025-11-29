@@ -67,7 +67,7 @@ CREATE STREAM encargos_cancelados WITH (KAFKA_TOPIC='encargos_cancelados', VALUE
   "pieza": null
 }
 ```
-- Desscripción:
+- Descripción:
   - Matricula del coche generada en diagnosticador.py
   - Codigo de la avería 
   - Gravedad de la avería: Si es "muy grave" no se puede reparar
@@ -75,50 +75,26 @@ CREATE STREAM encargos_cancelados WITH (KAFKA_TOPIC='encargos_cancelados', VALUE
   - Timestamps
   - Pieza : En un principio el json no lleva pieza, tan solo se le añade si falta alguna pieza en taller.py.
 
-
 ```mermaid
-flowchart TB
-    subgraph Producers
-        DIAG[🔧 Diagnosticador]
-    end
-
-    subgraph Topics
-        T1[(encargos_coches)]
-        T2[(encargos_piezas)]
-        T3[(encargos_finalizados)]
-        T4[(encargos_cancelados)]
-        T5[(avisos_cliente)]
-    end
-
-    subgraph ksqlDB
-        KSQL{{ksqlDB<br/>WHERE gravedad = 'muy grave'}}
-    end
-
-    subgraph Consumers/Producers
-        TALLER[🛠️ Taller]
-        PROV[📦 Proveedor]
-        ADMIN[🏢 Administración]
-    end
-
-    subgraph Consumers
-        CLIENT[👤 Cliente]
-    end
-
-    DIAG -->|produce| T1
-    T1 -->|consume| TALLER
-    T1 -->|lee| KSQL
-    KSQL -->|crea stream| T4
-
-    TALLER -->|faltan piezas| T2
-    T2 -->|consume| PROV
+flowchart LR
+    DIAG[🔧 Diagnosticador] -->|produce| T1[(encargos_coches)]
+    
+    T1 -->|consume| TALLER[🛠️ Taller]
+    T1 -->|filtra| KSQL{{ksqlDB<br/>gravedad = 'muy grave'}}
+    
+    KSQL -->|crea stream| T4[(encargos_cancelados)]
+    
+    TALLER -->|faltan piezas| T2[(encargos_piezas)]
+    T2 -->|consume| PROV[📦 Proveedor]
     PROV -->|piezas listas| T2
     T2 -->|consume| TALLER
-
-    TALLER -->|reparación OK| T3
-    T3 -->|consume| ADMIN
+    
+    TALLER -->|reparación OK| T3[(encargos_finalizados)]
+    
+    T3 -->|consume| ADMIN[🏢 Administración]
     T4 -->|consume| ADMIN
-
-    ADMIN -->|notifica| T5
-    T5 -->|consume| CLIENT
+    
+    ADMIN -->|notifica| T5[(avisos_cliente)]
+    T5 -->|consume| CLIENT[👤 Cliente]
 ```
 ---  
