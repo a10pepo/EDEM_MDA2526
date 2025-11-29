@@ -54,7 +54,7 @@ try:
         elif estado == "alerta":
             # Mostrar alerta con icono 🚨 + tipo + icono específico
             print(Fore.RED + Style.BRIGHT +
-                  f"🚨 ALERTA detectada en {nombre} | Tipo: {alerta_icono} {alerta_tipo.upper()}")
+                f"🚨 ALERTA detectada en {nombre} | Tipo: {alerta_icono} {alerta_tipo.upper()}")
             logging.info(f"Alerta detectada: {datos}")
             enviar_alerta(datos)
 
