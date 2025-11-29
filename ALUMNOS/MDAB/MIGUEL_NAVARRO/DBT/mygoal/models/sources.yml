@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: mygoal_raw
-    schema: raw
+    schema: main_raw
     tables:
       - name: fixtures
       - name: keyEventDescription

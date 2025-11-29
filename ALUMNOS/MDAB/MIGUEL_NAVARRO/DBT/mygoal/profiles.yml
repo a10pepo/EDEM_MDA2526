@@ -5,5 +5,3 @@ mygoal_db:
       path: 'bbdd/mygoal.duckdb'
       threads: 4
   target: dev
-
-

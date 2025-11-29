@@ -16,6 +16,9 @@ clean-targets:
 seeds:
   mygoal:
     +schema: raw
+    players:
+      +column_types:
+        dateOfBirth: varchar
 
 models:
   mygoal:
