@@ -29,7 +29,7 @@ def suministrar_piezas(mensaje, pieza):
         headers=[("producer", "proveedor")]
     )
     producer.flush()
-    print(Fore.GREEN + f" 📭 {pieza} ha llegado a su destino (topic 'encargo_piezas')")
+    print(Fore.GREEN + f" 📭 El pedido de {pieza} ha llegado a su destino")
 
 
 if __name__ == "__main__":
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             if producer_hdr == "proveedor":
                 continue
             encargo = json.loads(msg.value().decode('utf-8'))
-            print(Fore.BLUE + f" 📥 {encargo.get("pieza")} en camino (topic 'encargo_piezas')")
+            print(Fore.BLUE + f" 📥 Pedido de {encargo.get("pieza")} recibido. Pieza en camino")
             time.sleep(3) # simular tiempo de envío
             suministrar_piezas(encargo, encargo.get("pieza"))
 

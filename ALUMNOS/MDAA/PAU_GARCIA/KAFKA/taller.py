@@ -41,7 +41,7 @@ def encargar_piezas(mensaje, pieza):
         headers=[("producer", "taller")]
     )
     producer.flush()
-    print(Fore.YELLOW + f" 🔄 FALTAN PIEZAS. Encargo de {pieza} enviado al proveedor (topic 'encargo_piezas')")
+    print(Fore.YELLOW + f" 🔄 FALTAN PIEZAS. Encargo de {pieza} enviando al proveedor (topic 'encargo_piezas')")
 
 def reparacion(mensaje):
     producer.produce(
@@ -50,7 +50,7 @@ def reparacion(mensaje):
         headers=[("producer", "taller")]
     )
     producer.flush()
-    print(Fore.GREEN + f"✅ Reparación del vehiculo {mensaje["matricula"]} finalizada (topic 'encargos_finalizados')")
+    print(Fore.GREEN + f"✅ Reparación del vehiculo {mensaje["matricula"]} finalizada enviando a Administración (topic 'encargos_finalizados')")
 
 def faltan_piezas(gravedad):
     if gravedad == "alta":
@@ -81,17 +81,18 @@ if __name__ == "__main__":
                 continue
             encargo = json.loads(msg.value().decode('utf-8'))
             if msg.topic() == "encargos_coches":
-                print(Fore.WHITE + f"🧑‍🔧 Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
-                piezas = faltan_piezas(encargo.get("gravedad"))
-                if piezas:
-                    piezas = posibles_piezas_necesarias.get(encargo.get("codigo_averia"), [])
-                    pieza = random.choice(piezas)
-                    encargo["pieza"] = pieza
-                    encargar_piezas(encargo,pieza)
-                else :
-                    reparacion(encargo)
+                if encargo.get("gravedad") != 'muy grave' :
+                    print(Fore.WHITE + f"[FROM TOPIC encargos_coches]🧑‍🔧 Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
+                    piezas = faltan_piezas(encargo.get("gravedad"))
+                    if piezas:
+                        piezas = posibles_piezas_necesarias.get(encargo.get("codigo_averia"), [])
+                        pieza = random.choice(piezas)
+                        encargo["pieza"] = pieza
+                        encargar_piezas(encargo,pieza)
+                    else :
+                        reparacion(encargo)
             elif msg.topic() == "encargos_piezas":
-                print(Fore.CYAN + f"⚙️ Ha llegado la pieza {encargo.get("pieza")}. Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
+                print(Fore.CYAN + f"[FROM TOPIC encargos_piezas]⚙️ Ha llegado la pieza {encargo.get("pieza")}. Reparación del coche con matricula {encargo.get("matricula")} en marcha.")
                 reparacion(encargo)
 
     except Exception as e:

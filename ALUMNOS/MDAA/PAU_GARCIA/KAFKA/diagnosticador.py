@@ -38,15 +38,10 @@ def generar_matricula():
 
 def generar_averia():
     averia = random.choice(tipo_de_averia)
-    if  averia["gravedad"]== "muy grave": 
-        estado = "irreparable"
-    else:
-        estado = "reparable"
 
     return {
         "matricula": generar_matricula(),
         "codigo_averia": averia["codigo_averia"],
-        "estado": estado,
         "gravedad": averia["gravedad"],
         "desc_averia": averia["desc_averia"],
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
@@ -55,12 +50,12 @@ def generar_averia():
 def generar_diagnostico() : 
     try:
         averia = generar_averia()
-        if averia["estado"] == "reparable":
+        if averia["gravedad"] != "muy grave":
             # Mostrar Reparable en azul
-            print(Fore.BLUE + f"➡️ Ha entrado un encargo: El coche con matricula {averia['matricula']} tiene {averia['desc_averia']} ,  Alerta enviada al topic 'encargos_coches'  ({averia['timestamp']})")
+            print(Fore.BLUE + f"➡️ Ha entrado un encargo: El coche con matricula {averia['matricula']} tiene {averia['desc_averia']}")
         else:
             # Mostrar Irreparable en rojo
-            print(Fore.RED + Style.BRIGHT + f"❌ COCHE IRREPARABLE: El coche con matricula {averia['matricula']} tiene {averia['desc_averia']} y no se puede reparar,  Alerta enviada al topic 'encargos_coches' con estado {averia['estado']}  ({averia['timestamp']})")
+            print(Fore.RED + Style.BRIGHT + f"❌ COCHE IRREPARABLE: El coche con matricula {averia['matricula']} tiene {averia['desc_averia']} y no se puede reparar")
         # Enviar simpre la alerta al topic estado_ubicaciones, ya sea ok o alerta
         producer.produce(
                 topic='encargos_coches',

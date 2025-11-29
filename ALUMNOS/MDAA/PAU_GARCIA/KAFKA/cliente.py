@@ -26,7 +26,10 @@ if __name__ == "__main__":
                 print(Fore.RED + f"Error en el mensaje: {msg.error()}")
                 continue
             encargo = json.loads(msg.value().decode('utf-8'))
-            print(Fore.MAGENTA + f"<✌️ Su coche con matrícula {encargo.get("matricula")} ya está listo para recoger")
+            if encargo.get("gravedad") != 'muy grave':
+                print(Fore.MAGENTA + f"<✌️ Su coche con matrícula {encargo.get("matricula")} ya está listo para recoger")
+            else:
+                print(Fore.RED + f"<✌️ Su coche con matrícula {encargo.get("matricula")} no puede ser reparado debido a {encargo.get("desc_averia")}")
 
     except Exception as e:
         print(Fore.CYAN + f"Gestor detenido: {e}")
