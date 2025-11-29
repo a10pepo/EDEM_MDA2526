@@ -56,4 +56,4 @@ for _, fila in df.iterrows():
     time.sleep(1)
 
 productor.flush()
-print("Ya no quedan mensajes por enviar. ")
+print("Ya no quedan mensajes por enviar.")

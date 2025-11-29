@@ -66,6 +66,18 @@ services:
   #   entrypoint: /bin/sh  
   #   tty: true             
   #     - kafka-net
+  topico_inicial:
+    image: confluentinc/cp-kafka:7.5.0
+    depends_on:
+      - kafka
+    command: >
+      bash -c "kafka-topics.sh --create
+        --topic señales
+        --bootstrap-server kafka:9092
+        --partitions 1
+        --replication-factor 1
+        --if-not-exists"
+
 networks:
   kafka-net:
     driver: bridge
