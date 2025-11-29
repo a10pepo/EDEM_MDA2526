@@ -55,7 +55,7 @@ CREATE STREAM encargos_cancelados WITH (KAFKA_TOPIC='encargos_cancelados', VALUE
 - Tipos comunes:
   - Strings: "matricula", "estado", "gravedad", "desc_averia", "timestamp", "pieza"
   - Números: "codigo_averia" (INTEGER)
-  - null es permitido para valores ausentes (ej. "pieza": null)
+  
 - Ejemplo de JSON:
 ```
 {
