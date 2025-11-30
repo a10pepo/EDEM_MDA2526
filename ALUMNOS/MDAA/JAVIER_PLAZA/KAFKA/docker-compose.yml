@@ -78,6 +78,40 @@ services:
         --replication-factor 1
         --if-not-exists"
 
+  ksql-runner:
+    build:
+      context: ./ksql
+    depends_on:
+      - ksql
+    networks:
+      - kafka-net
+
+  productor:
+    build:
+      context: ./productor
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+  consumidor:
+    build:
+      context: ./consumidor
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+  dashboard:
+    build:
+      context: ./dashboard
+    depends_on:
+      - kafka
+    ports:
+      - "8050:8050"
+    networks:
+      - kafka-net  
+
 networks:
   kafka-net:
     driver: bridge
