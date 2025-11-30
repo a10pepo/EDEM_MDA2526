@@ -1,0 +1,68 @@
+services:
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: zookeeper-domotica
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181  
+      ZOOKEEPER_TICK_TIME: 2000  
+    ports:
+      - "2181:2181"        
+    networks:
+      - kafka-net
+
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: kafka-domotica
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      # Listener para aceptar conexiones en todas las interfaces
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_INTERNAL://0.0.0.0:29092
+      # Advertised listeners: cómo se anuncia el broker a los clientes
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      # Mapeo de protocolos
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      # Listener interno para comunicación entre brokers
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+
+    networks:
+      - kafka-net
+
+  ksql:
+    image: confluentinc/cp-ksqldb-server:7.3.0
+    container_name: ksql-domotica
+    depends_on:
+      - kafka
+    ports:
+      - "8088:8088"
+    environment:
+      KSQL_BOOTSTRAP_SERVERS: kafka:29092  # Conexión al broker Kafka
+      KSQL_LISTENERS: http://0.0.0.0:8088  # Dirección donde escucha KSQL
+      KSQL_KSQL_SERVICE_ID: ksql_service   # Identificador del servicio KSQL
+    networks:
+      - kafka-net
+
+
+  ksql-cli:
+    image: confluentinc/cp-ksqldb-cli:7.3.0
+    container_name: ksql-cli-domotica
+    depends_on:
+      - ksql
+    entrypoint: /bin/sh   # Para que puedas entrar al contenedor y ejecutar comandos
+    tty: true             # Permite sesión interactiva
+    networks:
+      - kafka-net
+
+
+networks:
+  kafka-net:
+    driver: bridge
