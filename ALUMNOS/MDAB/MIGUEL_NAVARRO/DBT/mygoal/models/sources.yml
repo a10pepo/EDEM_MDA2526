@@ -12,6 +12,6 @@ sources:
       - name: status
       - name: teamRoster
       - name: teams
-      - name: teamStatus
+      - name: teamStats
       - name: venues
 
