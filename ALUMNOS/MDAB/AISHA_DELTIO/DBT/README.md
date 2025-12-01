@@ -7,7 +7,7 @@
 **Stack Tecnológico:** Docker · DBT Core · DuckDB · UV Package Manager · Harlequin · SQL (Jinja)
 
 -----
-**1. Introducción y Motivación**
+**1. Introducción y Motivación.**
 
 El objetivo de este proyecto ha sido construir un pipeline de datos ELT (Extract, Load, Transform) moderno y desacoplado del sistema operativo local. Se buscó simular un entorno de producción real en el que la reproducibilidad, la calidad del dato y la automatización fueran pilares fundamentales.\
 El dominio elegido ha sido la Fórmula 1, analizando datos históricos desde 1950 hasta 2024.
