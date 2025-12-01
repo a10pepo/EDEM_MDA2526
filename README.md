@@ -203,7 +203,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FATIMA_CUCART'>FATIMA_CUCART</a></td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
@@ -398,7 +398,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-11-28 18:16:41
+Last Checked: 2025-12-01 10:18:08
 
 
 Entregas Grupo MDA A
@@ -717,7 +717,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-11-28 18:16:41
+Last Checked: 2025-12-01 10:18:08
 
 Entregas Grupo MDA B
 <table>
@@ -1217,5 +1217,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-11-28 18:16:41
+Last Checked: 2025-12-01 10:18:08
 
