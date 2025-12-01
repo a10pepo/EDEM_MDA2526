@@ -16,12 +16,13 @@ resultados = {
 # Función para que se consuman datos de la tabla creada con ksql en el archivo crear_tabla.sql
 def consumir_ksql():
     config = {
-        "bootstrap.servers": "kafka:9092",
+        "bootstrap.servers": "kafka:29092",
+        "group.id": "grupo_contador",
         "auto.offset.reset": "earliest"
     }
-    consumidor = consumidor(config)
-    consumidor.subscribe(["contar_señales"])
-    print(" Dashboard conectado a la tabla contar_señales")
+    consumidor = Consumer(config)
+    consumidor.subscribe(["contar_senales"])
+    print(" Dashboard conectado a la tabla contar_senales")
     while True:
         mensaje = consumidor.poll(1.0)
         if mensaje is None:
@@ -36,11 +37,11 @@ def consumir_ksql():
             print("Mensaje en bruto:", mensaje.value())
             continue
         accion = payload.get("accion")
-        señal = payload.get("señal")
+        senal = payload.get("senal")
         total = payload.get("total")
-        if accion is None or señal is None or total is None:
+        if accion is None or senal is None or total is None:
             continue
-        resultados[(accion, señal)] = total
+        resultados[(accion, senal)] = total
 
 # Para que el progama únicamente no ejecute la función comsumir_ksql, se le pone esto para que la ejecute al mismo tiempo que se hace el dashboard, diciendole al programa que la función es secundaria. Siendo la función principal la que haga el dashboard. 
 hilo = Thread(target=consumir_ksql, daemon=True)
@@ -64,8 +65,8 @@ app.layout = html.Div([
 def actualizar(_):
     etiquetas = []
     valores = []
-    for (accion, señal), total in resultados.items():
-        etiquetas.append(f"{accion}-{señal}")
+    for (accion, senal), total in resultados.items():
+        etiquetas.append(f"{accion}-{senal}")
         valores.append(total)
     figura = go.Figure([go.Bar(x=etiquetas, y=valores)])
     figura.update_layout(
@@ -78,4 +79,4 @@ def actualizar(_):
 
 # Manda los gráficos a la "página web"
 if __name__ == "__main__":
-    app.run_server(host="0.0.0.0", port=8050)
+    app.run(host="0.0.0.0", port=8050)

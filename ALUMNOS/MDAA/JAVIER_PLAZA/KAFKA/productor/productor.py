@@ -1,36 +1,35 @@
 from confluent_kafka import Producer
 import time
 import json
-import kagglehub
 import pandas as pd
 
 # Configuración del productor y creación del mismo. 
 config = {
-    'bootstrap.servers': 'kafka:9092'
+    'bootstrap.servers': 'kafka:29092'
 }
 productor = Producer(config)
 
 # Definir función para enviar las señales de compra o de venta.
-def enviar_mensaje(accion, señal, precio, ma20, fecha):
-    texto = f"El día {fecha}, se {señal} {accion} con un valor de {precio}$"
+def enviar_mensaje(accion, senal, precio, ma20, fecha):
+    texto = f"El día {fecha}, se {senal} {accion} con un valor de {precio}$"
     mensaje = {
         "accion": accion, 
-        "señal": señal,
+        "senal": senal,
         "precio": precio,
         "ma20": ma20,
         "fecha": fecha
     }
 
     productor.produce(
-        topic = "señales",
+        topic = "senales",
         value = json.dumps(mensaje).encode("utf-8")
     )
     print("Señal enviada:", texto)
 
 
 # Descargar los datos de kaggle y pasarlos a un dataframe con pandas.
-path = kagglehub.dataset_download("prasertk/bitcon-gold-oil-sp-500")
-df = pd.read_csv(path + "/archivo_concreto.csv")
+df = pd.read_csv("SP500_oil_gold_bitcoin.csv")
+
 
 # Eliminar las columnas que no nos interesan. 
 df = df.drop(['Brent Oil', 'Crude Oil WTI', 'S&P500'], axis=1)

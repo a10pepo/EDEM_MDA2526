@@ -58,22 +58,16 @@ services:
       KSQL_KSQL_SERVICE_ID: ksql_service   
     networks:
       - kafka-net
-  # ksql-cli:
-  #   image: confluentinc/cp-ksqldb-cli:7.3.0
-  #   container_name: ksql-cli
-  #   depends_on:
-  #     - ksql
-  #   entrypoint: /bin/sh  
-  #   tty: true             
-  #     - kafka-net
+
   topico_inicial:
-    image: confluentinc/cp-kafka:7.5.0
+    image: confluentinc/cp-kafka:7.3.0
     depends_on:
       - kafka
     command: >
-      bash -c "kafka-topics.sh --create
-        --topic señales
-        --bootstrap-server kafka:9092
+      bash -c "sleep 10 &&
+      kafka-topics --create
+        --topic senales
+        --bootstrap-server kafka:29092
         --partitions 1
         --replication-factor 1
         --if-not-exists"
@@ -81,6 +75,7 @@ services:
   ksql-runner:
     build:
       context: ./ksql
+      dockerfile: Dockerfile.ksql
     depends_on:
       - ksql
     networks:
@@ -89,6 +84,7 @@ services:
   productor:
     build:
       context: ./productor
+      dockerfile: Dockerfile.productor
     depends_on:
       - kafka
     networks:
@@ -97,6 +93,7 @@ services:
   consumidor:
     build:
       context: ./consumidor
+      dockerfile: Dockerfile.consumidor
     depends_on:
       - kafka
     networks:
@@ -105,6 +102,7 @@ services:
   dashboard:
     build:
       context: ./dashboard
+      dockerfile: Dockerfile.dashboard
     depends_on:
       - kafka
     ports:

@@ -3,15 +3,16 @@ import json
 
 # Configuración del consumidor y creación del mismo. 
 config = {
-    'bootstrap.servers': 'kafka:9092',
-    'auto.offset.reset': 'earliest'
+    "bootstrap.servers": "kafka:29092",
+    "group.id": "grupo_seniales",
+    "auto.offset.reset": "earliest"
 }
 consumidor = Consumer(config)
-consumidor.subscribe(["señales"])
+consumidor.subscribe(["senales"])
 
 # Función para ejecutar la orden de compra o de venta en función del mensaje.
-def ejecutar_orden(accion, señal, precio, fecha):
-    print(f"Se ha relizado la acción {señal}, sobre {accion} el {fecha} con un coste de {precio}")
+def ejecutar_orden(accion, senal, precio, fecha):
+    print(f"Se ha relizado la acción {senal}, sobre {accion} el {fecha} con un coste de {precio}")
 
 # Bucle para consumir los mensajes y realizar las compras o las ventas
 try: 
@@ -29,12 +30,11 @@ try:
             print("Mensaje en bruto:", mensaje.value())
             continue
         accion = payload.get("accion")
-        señal = payload.get("señal")
+        senal = payload.get("senal")
         precio = payload.get("precio")
         fecha = payload.get("fecha")
-        texto = payload.get("texto")
-        print("Mensaje recibido:", texto)
-        ejecutar_orden(accion, señal, precio, fecha)
+        print("Mensaje recibido:", payload)
+        ejecutar_orden(accion, senal, precio, fecha)
 except KeyboardInterrupt:
     print("Programa detenido por el usuario")
 finally: 
