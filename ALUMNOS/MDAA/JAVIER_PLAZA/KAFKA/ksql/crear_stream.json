@@ -1,4 +1,4 @@
 {
-  "ksql": "CREATE STREAM stream_senales (accion STRING, senal STRING, precio DOUBLE, ma20 DOUBLE, fecha STRING) WITH (KAFKA_TOPIC='senales', KEY_FORMAT='JSON', VALUE_FORMAT='JSON');",
+  "ksql": "CREATE STREAM stream_senales (accion STRING, senal STRING, precio DOUBLE, ma20 DOUBLE, fecha STRING) WITH (KAFKA_TOPIC='senales', KEY_FORMAT='JSON', VALUE_FORMAT='JSON', PARTITIONS=1, REPLICAS=1);",
   "streamsProperties": {}
 }
