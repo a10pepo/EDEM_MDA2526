@@ -14,7 +14,7 @@ conf = {
 
 # Initialize Kafka Consumer
 consumer = Consumer(conf)
-consumer.subscribe(['pataton'])
+consumer.subscribe(['inverter_data'])
 
 # Dictionary to track the last known state for each device
 device_states = {}
@@ -74,7 +74,7 @@ def main():
             try:
                 # Parse message
                 value = json.loads(msg.value().decode('utf-8'))
-                device_id = value['id']
+                device_id = value['device_id']
                 watts = value['totalConsumption']
                 timestamp = value['timestamp']
 

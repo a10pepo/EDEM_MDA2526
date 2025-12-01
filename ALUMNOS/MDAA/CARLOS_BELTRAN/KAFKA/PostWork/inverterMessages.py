@@ -18,7 +18,7 @@ config = {
 producer = Producer(config)
 
 
-topic_kafka = 'pataton'
+topic_kafka = 'inverter_data'
 
 inverterDict=dict()
 
@@ -30,13 +30,11 @@ while True:
 
     if inverterID not in inverterDict:
         inverterDict[inverterID] = {}
-        inverterDict[inverterID]["totalConsumption"]=1
-        inverterDict[inverterID]["totalGeneration"]=1
+        inverterDict[inverterID]["totalConsumption"]=totalConsumption
+    else:
+        inverterDict[inverterID]["totalConsumption"]+=totalConsumption
 
-
-    inverterDict[inverterID]["id"]=inverterID
-    inverterDict[inverterID]["totalConsumption"]+=totalConsumption
-    inverterDict[inverterID]["totalGeneration"]+=totalGeneration
+    inverterDict[inverterID]["device_id"]=inverterID
     inverterDict[inverterID]["timestamp"]=datetime.datetime.timestamp(datetime.datetime.now())
 
 
@@ -45,14 +43,10 @@ while True:
     data_bytes = data_str.encode('utf-8')
     
     producer.produce(topic=topic_kafka, value=data_bytes)
-        
+    producer.flush()
 
     # Mostramos en pantalla lo que estamos enviando.
-    print(f"Enviando datos: {inverterDict} al tópico {topic_kafka}")
+    print(f"Enviando datos: {inverterDict[inverterID]} al tópico {topic_kafka}")
 
     # Pausa de 1 segundo entre mensajes para simular un flujo en tiempo real.
-    # time.sleep(1)
-pending = producer.flush()
-
-if pending != 0:
-    print(f"{pending} mensajes no se pudieron entregar.")
+    # time.sleep(10)
