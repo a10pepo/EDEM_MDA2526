@@ -13,16 +13,16 @@ resultados = {
     ("Oro", "Venta"): 0,
 }
 
-# Función para que se consuman datos de la tabla creada con ksql en el archivo crear_tabla.sql
-def consumir_ksql():
+# Función para que se consuman datos directamente del topic 'senales'
+def consumir_datos():
     config = {
         "bootstrap.servers": "kafka:29092",
-        "group.id": "grupo_contador",
+        "group.id": "grupo_dashboard_contador",
         "auto.offset.reset": "earliest"
     }
     consumidor = Consumer(config)
-    consumidor.subscribe(["contar_senales"])
-    print(" Dashboard conectado a la tabla contar_senales")
+    consumidor.subscribe(["senales"])
+    print(" Dashboard conectado al topic 'senales'")
     while True:
         mensaje = consumidor.poll(1.0)
         if mensaje is None:
@@ -32,19 +32,25 @@ def consumir_ksql():
             continue
         try:
             payload = json.loads(mensaje.value().decode("utf-8"))
+            
+            accion = payload.get("accion")
+            senal = payload.get("senal")
+            
+            if accion and senal:
+                # Normalizar claves si es necesario (el productor manda "Compra"/"Venta" y "Bitcoin"/"Oro")
+                key = (accion, senal)
+                if key in resultados:
+                    resultados[key] += 1
+                    # print(f"Actualizado: {key} -> {resultados[key]}")
+                else:
+                    print(f"Clave desconocida: {key}")
+                    
         except Exception as e:
-            print("Erro decodificando el JSON:", e)
-            print("Mensaje en bruto:", mensaje.value())
+            print("Error procesando mensaje:", e)
             continue
-        accion = payload.get("accion")
-        senal = payload.get("senal")
-        total = payload.get("total")
-        if accion is None or senal is None or total is None:
-            continue
-        resultados[(accion, senal)] = total
 
-# Para que el progama únicamente no ejecute la función comsumir_ksql, se le pone esto para que la ejecute al mismo tiempo que se hace el dashboard, diciendole al programa que la función es secundaria. Siendo la función principal la que haga el dashboard. 
-hilo = Thread(target=consumir_ksql, daemon=True)
+# Ejecutar el consumidor en un hilo separado
+hilo = Thread(target=consumir_datos, daemon=True)
 hilo.start()
 
 # Creación de la aplicación donde se verá el dashboard.

@@ -45,13 +45,13 @@ df = df.iloc[20:]
 for _, fila in df.iterrows():
     fecha = fila["Date"]
     if fila["BITCOIN"] > fila["BITCOIN_ma20"]:
-        enviar_mensaje("Bitcoin", "Comprar", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
+        enviar_mensaje("Bitcoin", "Compra", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
     elif fila["BITCOIN"] < fila["BITCOIN_ma20"]:
-        enviar_mensaje("Bitcion", "Vender", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
+        enviar_mensaje("Bitcoin", "Venta", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
     if fila["Gold"] > fila["Gold_ma20"]:
-        enviar_mensaje("Oro", "Comprar", fila["Gold"], fila["Gold_ma20"], fecha)
+        enviar_mensaje("Oro", "Compra", fila["Gold"], fila["Gold_ma20"], fecha)
     elif fila["Gold"] < fila["Gold_ma20"]:
-        enviar_mensaje("Oro", "Vender", fila["Gold"], fila["Gold_ma20"], fecha)
+        enviar_mensaje("Oro", "Venta", fila["Gold"], fila["Gold_ma20"], fecha)
     time.sleep(1)
 
 productor.flush()
