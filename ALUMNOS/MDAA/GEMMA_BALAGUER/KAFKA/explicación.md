@@ -127,7 +127,7 @@ Temperatura mínima: -0.9°C
 Mensaje: ⚠️ Ola de frío: -0.6°C, min -0.9°C
 
 ## 4. EVIDENCIAS
-![Después de ejecutar: python productor.py](image-1.png)
-![Después de ejecutar: python productor.py](image.png)
-![Después de ejecutar: python consumer.py](image-2.png)
-![Despues de ejecutar: python consumer_final.py](image-3.png)
+
+![Después de ejecutar: python productor.py](image-2.png)
+![Después de ejecutar: python consumer.py](image-1.png)
+![Despues de ejecutar: python consumer_final.py](image.png)
