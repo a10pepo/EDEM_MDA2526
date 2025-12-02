@@ -1,3 +1,2 @@
 confluent_kafka
 pandas
-json

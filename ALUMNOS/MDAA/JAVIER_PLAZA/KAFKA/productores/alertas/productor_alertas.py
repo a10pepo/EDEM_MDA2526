@@ -41,13 +41,13 @@ df = df.iloc[20:]
 # Bucle para generar las alertas y enviarlas al topico.
 for _, fila in df.iterrows():
     fecha = fila["Date"]
-    if fila["BITCOIN"] > fila["BITCOIN_ma20"]:
+    if fila["BITCOIN"] == fila["BITCOIN_ma20"] and fila[-1]["BITCOIN"] < fila[-1]["BITCOIN_ma20"]:
         enviar_alerta("Bitcoin", "Compra", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
-    elif fila["BITCOIN"] < fila["BITCOIN_ma20"]:
+    elif fila["BITCOIN"] == fila["BITCOIN_ma20"] and fila[-1]["BITCOIN"] > fila[-1]["BITCOIN_ma20"]:
         enviar_alerta("Bitcoin", "Venta", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
-    if fila["Gold"] > fila["Gold_ma20"]:
+    if fila["Gold"] == fila["Gold_ma20"] and fila[-1]["Gold"] < fila[-1]["Gold_ma20"]:
         enviar_alerta("Oro", "Compra", fila["Gold"], fila["Gold_ma20"], fecha)
-    elif fila["Gold"] < fila["Gold_ma20"]:
+    elif fila["Gold"] == fila["Gold_ma20"] and fila[-1]["Gold"] > fila[-1]["Gold_ma20"]:
         enviar_alerta("Oro", "Venta", fila["Gold"], fila["Gold_ma20"], fecha)
     time.sleep(1)
 
