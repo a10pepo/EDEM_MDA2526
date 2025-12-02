@@ -36,18 +36,14 @@ services:
     tty: true
     restart: "no"
 
-  # plotly:
-  #   build:
-  #     context: ./plotly
-  #     dockerfile: Dockerfile.pyPlotly
-  #   image: plotly:latest
-  #   env_file: .env
-  #   depends_on:
-  #     db:
-  #       condition: service_healthy
-  #   networks:
-  #     - kafka-net
-  #   restart: "no"
+  ksql-runner:
+    build:
+      context: ./ksql
+      dockerfile: Dockerfile.ksql
+    depends_on:
+      - ksql
+    networks:
+      - kafka-net
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.3.0
@@ -124,6 +120,21 @@ services:
         condition: service_healthy
     command: >
       bash -c " kafka-topics --create --topic alertas --bootstrap-server kafka:29092 --partitions 1 --replication-factor 1 --if-not-exists"
+    networks:
+      - kafka-net
+
+  ksql:
+    image: confluentinc/cp-ksqldb-server:7.3.0
+    container_name: ksql
+    depends_on:
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8088:8088"              
+    environment:
+      KSQL_BOOTSTRAP_SERVERS: kafka:29092 
+      KSQL_LISTENERS: http://0.0.0.0:8088  
+      KSQL_KSQL_SERVICE_ID: ksql_service   
     networks:
       - kafka-net
 

@@ -39,4 +39,3 @@ except KeyboardInterrupt:
     print("Programa detenido por el usuario")
 finally: 
     consumidor.close()
-

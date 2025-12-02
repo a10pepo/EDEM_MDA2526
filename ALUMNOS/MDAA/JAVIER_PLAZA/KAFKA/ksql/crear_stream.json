@@ -1,0 +1,4 @@
+{
+  "ksql": "CREATE STREAM stream_alertas (accion STRING, alerta STRING, precio DOUBLE, ma20 DOUBLE, fecha STRING) WITH (KAFKA_TOPIC='alertas', KEY_FORMAT='JSON', VALUE_FORMAT='JSON', PARTITIONS=1, REPLICAS=1);",
+  "streamsProperties": {}
+}
