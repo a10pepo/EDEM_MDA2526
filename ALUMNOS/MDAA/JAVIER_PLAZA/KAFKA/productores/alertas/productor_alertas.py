@@ -35,19 +35,25 @@ df = df.drop(['Brent Oil', 'Crude Oil WTI', 'S&P500'], axis=1)
 df['BITCOIN_ma20'] = df['BITCOIN'].rolling(window=20).mean()
 df['Gold_ma20'] = df['Gold'].rolling(window=20).mean() 
 
-# Eliminar las primeras 20 filas.
+# Calcular valores previos para comparar
+df['BITCOIN_prev'] = df['BITCOIN'].shift(1)
+df['BITCOIN_ma20_prev'] = df['BITCOIN_ma20'].shift(1)
+df['Gold_prev'] = df['Gold'].shift(1)
+df['Gold_ma20_prev'] = df['Gold_ma20'].shift(1)
+
+# Eliminar las primeras 20 filas (donde ma20 es NaN)
 df = df.iloc[20:]
 
 # Bucle para generar las alertas y enviarlas al topico.
 for _, fila in df.iterrows():
     fecha = fila["Date"]
-    if fila["BITCOIN"] == fila["BITCOIN_ma20"] and fila[-1]["BITCOIN"] < fila[-1]["BITCOIN_ma20"]:
+    if fila["BITCOIN"] == fila["BITCOIN_ma20"] and fila["BITCOIN_prev"] < fila["BITCOIN_ma20_prev"]:
         enviar_alerta("Bitcoin", "Compra", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
-    elif fila["BITCOIN"] == fila["BITCOIN_ma20"] and fila[-1]["BITCOIN"] > fila[-1]["BITCOIN_ma20"]:
+    elif fila["BITCOIN"] == fila["BITCOIN_ma20"] and fila["BITCOIN_prev"] > fila["BITCOIN_ma20_prev"]:
         enviar_alerta("Bitcoin", "Venta", fila["BITCOIN"], fila["BITCOIN_ma20"], fecha)
-    if fila["Gold"] == fila["Gold_ma20"] and fila[-1]["Gold"] < fila[-1]["Gold_ma20"]:
+    if fila["Gold"] == fila["Gold_ma20"] and fila["Gold_prev"] < fila["Gold_ma20_prev"]:
         enviar_alerta("Oro", "Compra", fila["Gold"], fila["Gold_ma20"], fecha)
-    elif fila["Gold"] == fila["Gold_ma20"] and fila[-1]["Gold"] > fila[-1]["Gold_ma20"]:
+    elif fila["Gold"] == fila["Gold_ma20"] and fila["Gold_prev"] > fila["Gold_ma20_prev"]:
         enviar_alerta("Oro", "Venta", fila["Gold"], fila["Gold_ma20"], fecha)
     time.sleep(1)
 
