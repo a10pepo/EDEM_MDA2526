@@ -3,7 +3,7 @@ version: "3.9"
 services:
 
   jupyter:
-    build: .
+    image: jupyter/all-spark-notebook:spark-3.5.0
     container_name: pyspark_lab
     ports:
       - "8888:8888"
