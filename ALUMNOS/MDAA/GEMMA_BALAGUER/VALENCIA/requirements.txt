@@ -1,0 +1,6 @@
+requests
+psycopg[binary]
+dbt-postgres
+plotly[express]
+dash
+numpy

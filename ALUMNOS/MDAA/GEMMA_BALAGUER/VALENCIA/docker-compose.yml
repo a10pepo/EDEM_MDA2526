@@ -1,0 +1,66 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: valenbisi_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: pruebadb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  python_app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: valenbisi_python
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: pruebadb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    volumes:
+      - .:/app
+    command: sh -c "mkdir -p dbt/models/staging dbt/models/intermediate dbt/models/marts && python ingesta.py"
+
+  dbt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: valenbisi_dbt
+    depends_on:
+      - postgres
+      - python_app
+    volumes:
+      - ./dbt:/app
+    working_dir: /app
+    command: sh -c "mkdir -p models/staging models/intermediate models/marts && dbt run --profiles-dir ."
+  dashboard:
+    build:
+      context: .
+      dockerfile: dockerfile  # puedes usar el mismo Dockerfile de python_app
+    container_name: valenbisi_dashboard
+    depends_on:
+      - postgres
+      - python_app
+      - dbt
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: pruebadb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    volumes:
+      - .:/app
+    ports: 
+      - "8050:8050"
+    command: python dashboard.py 
+volumes:
+  pgdata:

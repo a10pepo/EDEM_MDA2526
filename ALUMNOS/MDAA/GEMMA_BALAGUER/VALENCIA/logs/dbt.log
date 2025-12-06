@@ -1,0 +1,24 @@
+[0m17:53:06.751099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f88176a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f88199450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f894ed710>]}
+
+
+============================== 17:53:06.760666 | 0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b ==============================
+[0m17:53:06.760666 [info ] [MainThread]: Running with dbt=1.5.0
+[0m17:53:06.762548 [debug] [MainThread]: running dbt with arguments {'log_path': '/app/logs', 'printer_width': '80', 'profiles_dir': '.', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'introspect': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'target_path': 'None', 'debug': 'False', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:53:06.844154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f88198ed0>]}
+[0m17:53:06.854567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f881a55d0>]}
+[0m17:53:06.871089 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m17:53:06.879551 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:53:06.880965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f87727b90>]}
+[0m17:53:07.258812 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.valenbisi_dbt
+[0m17:53:07.263203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f87343590>]}
+[0m17:53:07.294920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f8776f950>]}
+[0m17:53:07.296192 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 307 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m17:53:07.297497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0169bf6b-8d38-4233-92f6-4d6d6c9b4a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f8819b710>]}
+[0m17:53:07.299463 [info ] [MainThread]: 
+[0m17:53:07.300749 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:53:07.302083 [debug] [MainThread]: Command end result
+[0m17:53:07.335777 [debug] [MainThread]: Command `dbt run` succeeded at 17:53:07.335441 after 0.62 seconds
+[0m17:53:07.337431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f8c141090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f8c1404d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1f8c141490>]}
+[0m17:53:07.339412 [debug] [MainThread]: Flushing usage events
