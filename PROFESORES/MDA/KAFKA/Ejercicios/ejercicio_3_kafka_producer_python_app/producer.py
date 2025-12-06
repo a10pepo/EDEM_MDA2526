@@ -44,7 +44,7 @@ producer = Producer(config)
 # ============================================
 # Un "tópico" en Kafka es como un canal donde se publican mensajes.
 # Vamos a usar un nombre que simule un caso real: proyectos empresariales.
-topic_kafka = 'proyectos_innovacion'
+topic_kafka = 'ventas_globales'
 
 # ============================================
 # ENVÍO DE MENSAJES

@@ -6,14 +6,14 @@ from confluent_kafka import Consumer
 config = {
     'bootstrap.servers': 'localhost:9092',  # Dirección del broker Kafka (como la IP de un servicio web)
     'group.id': 'grupo-consumidor',         # Identificador del grupo de consumidores
-    'auto.offset.reset': 'earliest'         # Leer desde el principio si no hay posición guardada
+    'auto.offset.reset': 'latest'         # Leer desde el principio si no hay posición guardada
 }
 
 # Creamos el consumidor con la configuración anterior
 consumer = Consumer(config)
 
 # Nos suscribimos al tópico que queremos leer
-topic_kafka = 'proyectos_innovacion'
+topic_kafka = 'ventas_globales'
 consumer.subscribe([topic_kafka])
 
 print(f"Esperando mensajes del tópico '{topic_kafka}'...")
