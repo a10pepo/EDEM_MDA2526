@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg__players
+    description: "Master catalog of players"
+    columns:
+      - name: player_id
+        description: "Player primary key (PK)"
+        tests:
+          - unique
+          - not_null

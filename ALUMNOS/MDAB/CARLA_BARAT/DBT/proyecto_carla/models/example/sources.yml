@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: fuente_raw
+
+    schema: main 
+    description: Archivos CSV cargados (drivers, races, results).
+
+    tables:
+      - name: drivers 
+        description: Información de los pilotos.
+        
+      - name: races
+        description: Información de las carreras.
+        
+      - name: results
+        description: Resultados detallados de cada carrera.

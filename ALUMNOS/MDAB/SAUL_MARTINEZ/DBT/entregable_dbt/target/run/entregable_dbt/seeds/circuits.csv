@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."circuits" ("circuit_id" text,"name" text,"lat" float8,"long" float8,"locality" text,"country" text,"Wikipedia_url " text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."circuits" FROM 'C:\Users\Admin\Documents\GitHub\EDEM_MDA2526\alumnos\mdab\SAUL_MARTINEZ\DBT\entregable_dbt\seeds\circuits.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

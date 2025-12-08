@@ -2,16 +2,25 @@ import os
 
 def validate_folder_structure(path):
     
-    deliverables=os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/COMUN"))
-    deliverables=deliverables+os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/MIA"))
-    deliverables=deliverables+os.listdir(os.path.join(os.getcwd(), "PROFESORES"+"/MDA"))
+    # Get only directories, not files like .gitkeep
+    comun_path = os.path.join(os.getcwd(), "PROFESORES/COMUN")
+    mia_path = os.path.join(os.getcwd(), "PROFESORES/MIA")
+    mda_path = os.path.join(os.getcwd(), "PROFESORES/MDA")
+    
+    deliverables = [d for d in os.listdir(comun_path) if os.path.isdir(os.path.join(comun_path, d))]
+    deliverables += [d for d in os.listdir(mia_path) if os.path.isdir(os.path.join(mia_path, d))]
+    deliverables += [d for d in os.listdir(mda_path) if os.path.isdir(os.path.join(mda_path, d))]
+    
+    # Create a lowercase version for case-insensitive comparison
+    deliverables_lower = [d.lower() for d in deliverables]
+    
     for file in os.listdir(path):
         full_path = os.path.join(path, file)
         if os.path.isdir(full_path):
             for user_file in os.listdir(full_path):
                 user_path = os.path.join(full_path, user_file)
                 if os.path.isdir(user_path):
-                    if user_file not in deliverables:
+                    if user_file.lower() not in deliverables_lower:
                         print("Esta Carpeta no es correcta, comprueba el nombre exacto de la carpeta: ", user_file)
                         exit(1)
                     else:
