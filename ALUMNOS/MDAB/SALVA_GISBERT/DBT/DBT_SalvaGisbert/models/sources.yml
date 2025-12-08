@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: main
+    schema: main
+    tables:
+      - name: "212"
+      - name: mens
+      - name: classic
+      - name: open
