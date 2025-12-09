@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+  - name: staging__customers
+    description: |
+      Datos de clientes limpios y estandarizados desde la tabla raw.
+      Cada registro representa un cliente único.
+      
+      **Transformaciones aplicadas:**
+      - Renombrado de columnas a snake_case
+      - Conversión de tipos de datos
+      - Eliminación de registros duplicados
+    
+    columns:
+      - name: customer_id
+        description: "Identificador único del cliente (PK)"
+        tests:
+          - unique
+          - not_null
+      
+      - name: first_name
+        description: "Nombre del cliente"
+      
+      - name: last_name
+        description: "Apellido del cliente"
+      
+      - name: email
+        description: "Email de contacto del cliente"
+        tests:
+          - unique
+          - not_null
