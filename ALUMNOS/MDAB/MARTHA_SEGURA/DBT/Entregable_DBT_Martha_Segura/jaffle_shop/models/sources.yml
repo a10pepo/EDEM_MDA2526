@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: "Datos raw del ejercicio jaffle_shop (seeds)."
+    schema: raw
+
+    tables:
+      - name: customers
+        description: "Clientes en bruto del ecommerce."
+      - name: orders
+        description: "Pedidos en bruto."
+      - name: items
+        description: "Líneas de pedido (productos)."
