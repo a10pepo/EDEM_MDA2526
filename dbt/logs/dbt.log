@@ -1,0 +1,29 @@
+[0m16:16:12.586225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B528EB06E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B52A725090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B52AD9BED0>]}
+
+
+============================== 16:16:12.599626 | 31eb07bb-8a26-4a93-afa8-2682df24f998 ==============================
+[0m16:16:12.599626 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:16:12.600298 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\a.sanchez\\.dbt', 'invocation_command': 'dbt init entrega_dbt_pablo3', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:16:12.932213 [debug] [MainThread]: Starter project path: C:\Users\a.sanchez\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\dbt\include\starter_project
+[0m16:16:13.020644 [info ] [MainThread]: 
+Your new dbt project "entrega_dbt_pablo3" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:16:13.021392 [info ] [MainThread]: Setting up your profile.
+[0m16:16:23.382434 [info ] [MainThread]: Profile entrega_dbt_pablo3 written to C:\Users\a.sanchez\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m16:16:23.384022 [debug] [MainThread]: Command `dbt init` succeeded at 16:16:23.383908 after 10.91 seconds
+[0m16:16:23.384280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B52ADDE3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B52A06C5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B52AE8D260>]}
+[0m16:16:23.384549 [debug] [MainThread]: Flushing usage events
+[0m16:16:24.300279 [debug] [MainThread]: An error was encountered while trying to flush usage events
