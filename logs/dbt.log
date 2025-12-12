@@ -1,3 +1,0 @@
-[0m10:56:56.544281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A8CB48D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A8E4B1450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A8EADFD90>]}
-
-
