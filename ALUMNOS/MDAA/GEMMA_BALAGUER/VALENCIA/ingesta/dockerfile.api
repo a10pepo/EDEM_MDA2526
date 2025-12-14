@@ -2,19 +2,24 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+# Dependencias del sistema
 RUN apt-get update && apt-get install -y \
+    build-essential \
     gcc \
     libpq-dev \
-    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Copiar requirements desde la raíz
+# Copiar requirements
 COPY ../requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Instalar dependencias Python con timeout aumentado
+RUN pip install --no-cache-dir -r requirements.txt --default-timeout=100 -i https://pypi.org/simple
 
-# Copiar el script de la API
+# Copiar código de la app
 COPY ingesta/api_get_post.py .
 
+# Exponer puerto FastAPI
 EXPOSE 8000
+
+# Comando de arranque
 CMD ["uvicorn", "api_get_post:app", "--host", "0.0.0.0", "--port", "8000"]

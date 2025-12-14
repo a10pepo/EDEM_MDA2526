@@ -1,9 +1,15 @@
 
-  create view "pruebadb"."public"."mart_valenbisi__dbt_tmp"
+  
     
-    
-  as (
+
+  create  table "pruebadb"."public"."mart_valenbisi__dbt_tmp"
+  
+  
+    as
+  
+  (
     -- models/marts/mart_valenbisi.sql
+
 
 with base as (
     select
@@ -22,3 +28,4 @@ select
 from base
 order by availability_ratio desc
   );
+  

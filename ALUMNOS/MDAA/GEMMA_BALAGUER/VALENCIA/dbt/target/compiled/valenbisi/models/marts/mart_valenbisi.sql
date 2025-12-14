@@ -1,5 +1,6 @@
 -- models/marts/mart_valenbisi.sql
 
+
 with base as (
     select
         address,

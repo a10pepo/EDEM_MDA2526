@@ -1,4 +1,7 @@
 -- models/marts/mart_valenbisi.sql
+{{ config(
+    materialized='table'
+) }}
 
 with base as (
     select

@@ -31,7 +31,6 @@ services:
       DB_NAME: pruebadb
       DB_USER: postgres
       DB_PASSWORD: postgres
-    # Eliminamos el volumen temporal para evitar sobrescribir archivos
     command: ["python", "ingesta.py"]
 
   api_get_post:
@@ -51,7 +50,6 @@ services:
       TARGET_POST_URL: "http://example.com/target"
     ports:
       - "8001:8000"
-    # Eliminamos el volumen para evitar sobrescribir archivos de la imagen
     command: ["uvicorn", "api_get_post:app", "--host", "0.0.0.0", "--port", "8000"]
 
   dbt:
@@ -72,6 +70,23 @@ services:
       - ./dbt:/app
     working_dir: /app
     command: sh -c "mkdir -p models/staging models/intermediate models/marts && dbt run --profiles-dir ."
+
+  dash_app:
+    build:
+      context: .
+      dockerfile: visualizacion/dockerfile.plotly
+    container_name: dash_app
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: pruebadb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - "8050:8050"
+    command: ["python", "app_plotly.py"]
 
 volumes:
   pgdata:
