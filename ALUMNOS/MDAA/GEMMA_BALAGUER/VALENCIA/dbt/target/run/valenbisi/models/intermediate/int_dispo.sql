@@ -1,16 +1,9 @@
 
-  
+  create view "pruebadb"."public"."int_dispo__dbt_tmp"
     
-
-  create  table "pruebadb"."public"."int_dispo__dbt_tmp"
-  
-  
-    as
-  
-  (
     
-
-SELECT
+  as (
+    SELECT
     number,
     address,
     lat,
@@ -28,4 +21,3 @@ SELECT
     updated_at
 FROM "pruebadb"."public"."stg_valenbisi"
   );
-  

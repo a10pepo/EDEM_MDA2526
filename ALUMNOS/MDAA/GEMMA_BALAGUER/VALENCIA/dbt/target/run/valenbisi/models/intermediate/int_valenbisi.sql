@@ -1,16 +1,9 @@
 
-  
+  create view "pruebadb"."public"."int_valenbisi__dbt_tmp"
     
-
-  create  table "pruebadb"."public"."int_valenbisi__dbt_tmp"
-  
-  
-    as
-  
-  (
     
-
-SELECT
+  as (
+    SELECT
     number,
     address,
     lat,
@@ -24,4 +17,3 @@ SELECT
     update_jcd
 FROM "pruebadb"."public"."stg_valenbisi"
   );
-  

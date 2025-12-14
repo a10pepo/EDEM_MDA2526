@@ -1,4 +1,4 @@
-version: "3.9"
+version: '3.9'
 
 services:
   postgres:
@@ -12,11 +12,16 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   python_app:
     build:
       context: .
-      dockerfile: dockerfile
+      dockerfile: ingesta/dockerfile.ingesta
     container_name: valenbisi_python
     depends_on:
       - postgres
@@ -26,41 +31,47 @@ services:
       DB_NAME: pruebadb
       DB_USER: postgres
       DB_PASSWORD: postgres
-    volumes:
-      - .:/app
-    command: sh -c "mkdir -p dbt/models/staging dbt/models/intermediate dbt/models/marts && python ingesta.py"
+    # Eliminamos el volumen temporal para evitar sobrescribir archivos
+    command: ["python", "ingesta.py"]
 
-  dbt:
+  api_get_post:
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: valenbisi_dbt
+      dockerfile: ingesta/dockerfile.api
+    container_name: api_get_post
     depends_on:
       - postgres
       - python_app
-    volumes:
-      - ./dbt:/app
-    working_dir: /app
-    command: sh -c "mkdir -p models/staging models/intermediate models/marts && dbt run --profiles-dir ."
-  dashboard:
-    build:
-      context: .
-      dockerfile: dockerfile  # puedes usar el mismo Dockerfile de python_app
-    container_name: valenbisi_dashboard
-    depends_on:
-      - postgres
-      - python_app
-      - dbt
     environment:
       DB_HOST: postgres
       DB_PORT: 5432
       DB_NAME: pruebadb
       DB_USER: postgres
       DB_PASSWORD: postgres
+      TARGET_POST_URL: "http://example.com/target"
+    ports:
+      - "8001:8000"
+    # Eliminamos el volumen para evitar sobrescribir archivos de la imagen
+    command: ["uvicorn", "api_get_post:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  dbt:
+    build:
+      context: .
+      dockerfile: dbt/dockerfile.dbt
+    container_name: valenbisi_dbt
+    depends_on:
+      - postgres
+      - python_app
+    environment:
+      DBT_USER: postgres
+      DBT_PASSWORD: postgres
+      DBT_HOST: postgres
+      DBT_PORT: 5432
+      DBT_DATABASE: pruebadb
     volumes:
-      - .:/app
-    ports: 
-      - "8050:8050"
-    command: python dashboard.py 
+      - ./dbt:/app
+    working_dir: /app
+    command: sh -c "mkdir -p models/staging models/intermediate models/marts && dbt run --profiles-dir ."
+
 volumes:
   pgdata:

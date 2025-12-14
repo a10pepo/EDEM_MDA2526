@@ -1,16 +1,9 @@
 
-  
+  create view "pruebadb"."public"."int_valenbisi_time__dbt_tmp"
     
-
-  create  table "pruebadb"."public"."int_valenbisi_time__dbt_tmp"
-  
-  
-    as
-  
-  (
     
-
-SELECT
+  as (
+    SELECT
     number,
     address,
     updated_at::date AS date,
@@ -22,4 +15,3 @@ FROM "pruebadb"."public"."stg_valenbisi"
 GROUP BY number, address, updated_at::date
 ORDER BY number, date
   );
-  

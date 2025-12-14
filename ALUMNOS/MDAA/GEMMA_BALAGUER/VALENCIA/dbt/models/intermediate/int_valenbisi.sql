@@ -1,6 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
 
 SELECT
     number,

@@ -1,16 +1,9 @@
 
-  
+  create view "pruebadb"."public"."stg_valenbisi__dbt_tmp"
     
-
-  create  table "pruebadb"."public"."stg_valenbisi__dbt_tmp"
-  
-  
-    as
-  
-  (
     
-
-SELECT
+  as (
+    SELECT
     address,
     number,
     CASE WHEN open = 'true' THEN TRUE
@@ -30,4 +23,3 @@ SELECT
          ELSE NULL END AS update_jcd
 FROM "pruebadb"."public"."valenbisi"
   );
-  
