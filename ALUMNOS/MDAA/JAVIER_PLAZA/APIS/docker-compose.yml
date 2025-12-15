@@ -1,0 +1,8 @@
+services:
+  app_inicial:
+    build:
+      context: ./app_inicial
+      dockerfile: Dockerfile
+    image: app_inicial:latest
+    env_file:
+      - .env
