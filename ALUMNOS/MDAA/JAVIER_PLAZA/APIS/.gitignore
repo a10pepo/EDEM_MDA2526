@@ -1,2 +1,3 @@
 .env
 /app_inicial/.env
+/app_get_api/.env
