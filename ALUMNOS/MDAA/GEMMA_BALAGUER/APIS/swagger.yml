@@ -1,0 +1,59 @@
+# Definimos la estructura básica de Swagger
+openapi: 3.0.0 # versión de openapi
+
+info: # info general del API (título, versión y descripción)
+  title: API de Sensores
+  description: API para obtener la última medición de temperatura de un sensor
+  version: 1.0.0
+
+servers: # servidor
+  - url: http://localhost:8080/api
+
+paths: # endpoints (paths)
+  /getLastMeassureBySensor/{sensor}: # definimos el endpoint
+    get: # usamos GET porque solo consultamos datos y {sensor} es un parámetro de ruta
+      summary: Obtener la última medición del sensor
+
+      # Definimos el parámetro de entrada
+      parameters:
+        - name: sensor
+          in: path
+          required: true
+          description: ID del sensor
+          schema:
+            type: string
+
+      # Definimos la respuesta exitosa (200)
+      responses:
+        '200':
+          description: Medición obtenida correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Measure'
+
+        # Definimos las respuestas incorrectas (400 y 404)
+        '400':
+          description: ID inválido suministrado
+
+        '404':
+          description: Sensor no encontrado
+
+# Definimos el modelo (Measure), va en components/schemas
+components:
+  schemas:
+    Measure:
+      type: object
+      properties:
+        code:
+          type: string
+          description: ID del sensor
+        fechamuestreo:
+          type: string
+          description: Fecha de muestreo
+        unidad:
+          type: string
+          description: Unidad de la medición
+        medicion:
+          type: number
+          description: Valor de la medición
