@@ -398,7 +398,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-12-12 08:08:15
+Last Checked: 2025-12-16 14:28:25
 
 
 Entregas Grupo MDA A
@@ -439,7 +439,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -452,7 +452,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -465,7 +465,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -478,7 +478,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -491,7 +491,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -504,7 +504,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -517,7 +517,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -530,7 +530,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -543,7 +543,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -556,7 +556,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -569,7 +569,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -582,7 +582,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -595,7 +595,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -608,7 +608,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -647,7 +647,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -660,7 +660,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -686,7 +686,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -699,7 +699,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -712,12 +712,12 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>2.0</td>
+<td>4.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2025-12-12 08:08:15
+Last Checked: 2025-12-16 14:28:25
 
 Entregas Grupo MDA B
 <table>
@@ -838,7 +838,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -848,7 +848,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>0.0</td>
+<td>2.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -968,7 +968,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -978,7 +978,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>0.0</td>
+<td>2.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1072,7 +1072,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -1082,7 +1082,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>0.0</td>
+<td>2.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1217,5 +1217,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-12-12 08:08:15
+Last Checked: 2025-12-16 14:28:25
 
