@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+
+  jupyter:
+    image: jupyter/all-spark-notebook:spark-3.5.0
+    container_name: pyspark_lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./workspace:/home/jovyan/work
+      - ./kafka-producer:/home/jovyan/kafka_producer
+    environment:
+      - PYSPARK_SUBMIT_ARGS=--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 pyspark-shell
+    depends_on:
+      - kafka
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    container_name: kafka
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      - zookeeper
