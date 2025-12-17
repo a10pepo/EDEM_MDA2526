@@ -60,5 +60,13 @@ def registrar_usuarios():
     # Si se crea correctame el usuario, devuelve el 201.
     return jsonify({"mensaje": "Usuario creado correctamente"}), 201
 
+# Devuelve un token para un usuario.
+@app.route("/login", methods = ["POST"])
+@auth.login_required  # Verifica que el usuario y la contraseña introducidos son correctos.
+def iniciar_sesion():
+    usuario_actual = auth.current_user()
+    token_acceso = create_access_token(identity = usuario_actual)
+    return jsonify({"token_acceso": token_acceso}), 200
+
 
 
