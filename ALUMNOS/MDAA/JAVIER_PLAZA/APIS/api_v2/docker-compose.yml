@@ -1,0 +1,11 @@
+services:
+  api:
+    container_name: api
+    build: 
+      context: .
+      dockerfile: Dockerfile.api
+    image: api:latest
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env

@@ -1,7 +1,0 @@
-services:
-  app_get_api:
-    container_name: app_get_api4
-    build: 
-      context: .
-      dockerfile: dockerfile
-    image: app_get_api:latest

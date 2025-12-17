@@ -54,18 +54,19 @@ def iniciar_sesion():
     return jsonify({"token_acceso": token_acceso}), 200
 
 @app.route("/fruta", methods = ["GET"])
+@jwt_required()  # Para poder obtener la información de las frutas, es necesario el token obtenido en la ubicación "/login"
 def fruta():
     url_frutas = "https://fruityvice.com/api/fruit/all"
 
     # Llamada a la API con todas las frutas para poder sacar las frutas que existen.
-    respuesta_url_frutas = request(url_frutas)
+    respuesta_url_frutas = requests.get(url_frutas)
 
     respuesta_url_frutas = respuesta_url_frutas.json()
 
     # Creación de la lista de fruityvice y bucle para introducir las frutas en la lista.
     frutas = []
-    for fruta in respuesta_url_frutas["name"]:
-        frutas.append(fruta)
+    for fruta in respuesta_url_frutas:
+        frutas.append(fruta["name"])
 
     # Selección de una fruta para que aparezca la información nutricional de una única fruta.
     fruta = random.choice(frutas)
@@ -73,7 +74,7 @@ def fruta():
     # Url por la que se obtendrá la información nutricional de una fruta aleatoria.
     url_fruta = f"https://fruityvice.com/api/fruit/{fruta}"
 
-    respuesta = request.get(url_fruta)
+    respuesta = requests.get(url_fruta)
 
     # Cuando se extraigan los datos de la API inicial, se seleccionaran únicamente los datos necesarios para la API propia.
     if respuesta.status_code == 200:
@@ -103,7 +104,7 @@ def metodo_no_permitido(error):
     return jsonify({'error': 'Método no permitido. Revisa si debes usar GET o POST.'}), 405
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug = True, host = "0.0.0.0")
 
 
 
