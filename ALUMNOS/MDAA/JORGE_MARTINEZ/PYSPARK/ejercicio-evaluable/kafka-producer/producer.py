@@ -8,7 +8,7 @@ producer = KafkaProducer(
     bootstrap_servers="kafka:9092",
     value_serializer=lambda v: json.dumps(v).encode("utf-8")
 )
-
+# aaaaa
 def generate_sensor_data():
     return {
         "sensor_id": random.choice(["S1", "S2", "S3", "S4"]),
