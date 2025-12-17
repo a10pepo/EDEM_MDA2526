@@ -6,21 +6,6 @@ import requests
 import os
 import random 
 
-url_frutas = "https://fruityvice.com/api/fruit/all"
-
-# Llamada a la API con todas las frutas para poder sacar las frutas que existen.
-respuesta_url_frutas = request(url_frutas)
-
-respuesta_url_frutas = respuesta_url_frutas.json()
-
-# Creación de la lista de fruityvice y bucle para introducir las frutas en la lista.
-frutas = []
-for fruta in respuesta_url_frutas["name"]:
-    frutas.append(fruta)
-
-# Selección de una fruta para que aparezca la información nutricional de una única fruta.
-fruta = random.choice(frutas)
-
 # Creación de la aplicación donde se encuentra la API.
 app = Flask(__name__)
 auth = HTTPBasicAuth()
@@ -67,6 +52,46 @@ def iniciar_sesion():
     usuario_actual = auth.current_user()
     token_acceso = create_access_token(identity = usuario_actual)
     return jsonify({"token_acceso": token_acceso}), 200
+
+@app.route("/fruta", methods = ["GET"])
+def fruta():
+    url_frutas = "https://fruityvice.com/api/fruit/all"
+
+    # Llamada a la API con todas las frutas para poder sacar las frutas que existen.
+    respuesta_url_frutas = request(url_frutas)
+
+    respuesta_url_frutas = respuesta_url_frutas.json()
+
+    # Creación de la lista de fruityvice y bucle para introducir las frutas en la lista.
+    frutas = []
+    for fruta in respuesta_url_frutas["name"]:
+        frutas.append(fruta)
+
+    # Selección de una fruta para que aparezca la información nutricional de una única fruta.
+    fruta = random.choice(frutas)
+
+    # Url por la que se obtendrá la información nutricional de una fruta aleatoria.
+    url_fruta = f"https://fruityvice.com/api/fruit/{fruta}"
+
+    respuesta = request.get(url_fruta)
+
+    # Cuando se extraigan los datos de la API inicial, se seleccionaran únicamente los datos necesarios para la API propia.
+    if respuesta.status_code == 200:
+        datos_fruta = respuesta.json()
+        info_fruta = {
+            "nombre": datos_fruta.get("name"),
+            "calorias": datos_fruta.get("nutritions").get("calories"),
+            "grasa": datos_fruta.get("nutritions").get("fat"),
+            "azucar": datos_fruta.get("nutritions").get("sugar"),
+            "carbohidratos": datos_fruta.get("nutritions").get("carbohydrates"),
+            "proteina": datos_fruta.get("nutritions").get("protein")
+        }
+        return jsonify(info_fruta), 200
+    else:
+
+        # Cuando no se encuentran datos en al api de fruityvice, aparece el error 400.
+        return jsonify({"mensaje": "No se ha podido extraer información de ninguna fruta"}), 400
+
 
 
 
