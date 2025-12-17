@@ -92,6 +92,18 @@ def fruta():
         # Cuando no se encuentran datos en al api de fruityvice, aparece el error 400.
         return jsonify({"mensaje": "No se ha podido extraer información de ninguna fruta"}), 400
 
+# Manejo del error 404: Cuando la URL no existe
+@app.errorhandler(404)
+def recurso_no_encontrado(error):
+    return jsonify({'error': 'Recurso no encontrado. La URL es incorrecta.'}), 404
+
+# Manejo del error 405: Cuando el método (GET, POST) es incorrecto
+@app.errorhandler(405)
+def metodo_no_permitido(error):
+    return jsonify({'error': 'Método no permitido. Revisa si debes usar GET o POST.'}), 405
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
 
