@@ -45,4 +45,4 @@ https://twitter.com/user/status/2000620896147349959
 
 Y la publicación es la siguiente: 
 
-![alt text](image.png)
+![Imagen publicación X con la app_inicial](.img/image.png)

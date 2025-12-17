@@ -9,3 +9,10 @@ services:
       - "5000:5000"
     env_file:
       - .env
+
+  consumir_api:
+    container_name: consumir_api
+    build: 
+      context: .
+      dockerfile: Dockerfile.consumir_api
+    image: consumir_api:latest
