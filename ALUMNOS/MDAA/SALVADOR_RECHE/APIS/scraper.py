@@ -10,7 +10,7 @@ def obtener_resumen_rfetm():
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # 1. Buscar el Líder (suele ser la primera fila de la tabla de clasificación)
-        # Nota: Esto busca la tabla visualmente. En un caso real habría que ajustar los selectores CSS exactos
+        # Nota: Esto busca la tabla visualmente. En un caso real habría que ajustar los selectores CSS exactosssss
         filas = soup.find_all('tr')
         lider = "Desconocido"
         puntos = "0"
