@@ -38,28 +38,32 @@ def obtener_fruta():
         print(f"Ha ocurrido un error al generar el token. Error: {respuesta_login.status_code}")
         return
 
-    # GET para obtener la información nutricional de una fruta aleatoria.
-    respuesta_fruta = requests.get(f"{url_base}/frutas", headers = {
-        "Authorization": f"Bearer {token}"
-    })
+    # Como la API para obtener la información nutricional de la fruta aleatoria puede dar error en las primeras peticiones, se mete un bucle infinito que parará cuando obtenga la información de una fruta. 
+    while True: 
 
-    # Para controlar si la API nos trae la información y además si trae la información nutricional de la fruta, muestra dicha información por consola. 
-    if respuesta_fruta.status_code == 200:
-        respuesta_fruta = respuesta_fruta.json()
-        nombre = respuesta_fruta.get("nombre")
-        calorias = respuesta_fruta.get("calorias")
-        grasa = respuesta_fruta.get("grasa")
-        azucar = respuesta_fruta.get("azucar")
-        carbohidratos = respuesta_fruta.get("carbohidratos")
-        proteina = respuesta_fruta.get("proteina")
-        print(f"La fruta obtenida aleatoriamente es {nombre}, y su información nutricional es la siguiente:")
-        print(f"    - Calorias: {calorias}")
-        print(f"    - Grasa: {grasa}")
-        print(f"    - Azucar: {azucar}")
-        print(f"    - Carbohidratos: {carbohidratos}")
-        print(f"    - Proteina: {proteina}")
-    else: 
-        print(f"Ha ocurrido un error al mostrar la información nutricional de una fruta. Error: {respuesta_fruta.status_code}")
+        # GET para obtener la información nutricional de una fruta aleatoria.
+        respuesta_fruta = requests.get(f"{url_base}/fruta", headers = {
+            "Authorization": f"Bearer {token}"
+            })
+
+        # Para controlar si la API nos trae la información y además si trae la información nutricional de la fruta, muestra dicha información por consola. 
+        if respuesta_fruta.status_code == 200:
+            respuesta_fruta = respuesta_fruta.json()
+            nombre = respuesta_fruta.get("nombre")
+            calorias = respuesta_fruta.get("calorias")
+            grasa = respuesta_fruta.get("grasa")
+            azucar = respuesta_fruta.get("azucar")
+            carbohidratos = respuesta_fruta.get("carbohidratos")
+            proteina = respuesta_fruta.get("proteina")
+            print(f"La fruta obtenida aleatoriamente es {nombre}, y su información nutricional es la siguiente:")
+            print(f"    - Calorias: {calorias}")
+            print(f"    - Grasa: {grasa}")
+            print(f"    - Azucar: {azucar}")
+            print(f"    - Carbohidratos: {carbohidratos}")
+            print(f"    - Proteina: {proteina}")
+            break
+        else: 
+            print(f"Ha ocurrido un error al mostrar la información nutricional de una fruta. Error: {respuesta_fruta.status_code}")
 
 if __name__ == '__main__':
     obtener_fruta()
