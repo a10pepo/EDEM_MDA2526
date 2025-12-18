@@ -2,7 +2,7 @@ import requests
 import random
 
 # URL de base para todas las peticiones de la API creada.
-url_base = "http://127.0.0.1:5000"
+url_base = "http://api:5000"
 
 # Función para obtener la información de la fruta. 
 def obtener_fruta():
