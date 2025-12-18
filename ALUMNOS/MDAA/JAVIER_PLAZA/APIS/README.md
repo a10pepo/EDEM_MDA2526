@@ -87,3 +87,8 @@ La API, está configurada para tener que usarse secuencialmente. Es decir, que p
 
 En el directorio "api_v2/" se encuentra el archivo "consumir_api.py". Dicho script, cuando se realiza el primer paso, muestra en los logs del contenedor la información de la fruta aleatoriamente.
 
+Para ver los logs del contenedor, se debe de realizar lo siguiente:
+
+```
+docker logs consumir_api
+```

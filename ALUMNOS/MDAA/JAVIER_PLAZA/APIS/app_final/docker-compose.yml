@@ -1,0 +1,24 @@
+services:
+  bbdd:
+    image: postgres:17-alpine
+    env_file: .env
+    volumes:
+      - ./docker-init:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432" 
+  api:
+    build: 
+      context: ./API
+      dockerfile: Dockerfile
+    image: api:latest
+    container_name: api
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+  post:
+    build:
+      context: ./X_post
+      dockerfile: Dockerfile
+    image: post:latest
+    container_name: post
