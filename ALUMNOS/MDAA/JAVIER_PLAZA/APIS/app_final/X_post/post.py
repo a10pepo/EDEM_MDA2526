@@ -175,9 +175,9 @@ def main():
                         id_alimento = alimento.get("id")
                         if id_alimento:
                             confirmar_publicacion(token, id_alimento)
-                        print("✅ Proceso completado exitosamente!")
+                        print("Proceso completado exitosamente!")
                     else:
-                        print("❌ Error en la publicación. No se marcará como publicado.")
+                        print("Error en la publicación. No se marcará como publicado.")
             
             # Esperar 24 horas (86400 segundos) antes de la próxima publicación
             print(f"Esperando 24 horas para la próxima publicación...")
