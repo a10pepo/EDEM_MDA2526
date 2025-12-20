@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS alimentos (
-    id BIGINT PRIMARY KEY,
-    nombre VARCHAR(50),
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(50) UNIQUE,
     tipo VARCHAR(50),
     calorias FLOAT,
     grasas FLOAT,

@@ -2,9 +2,9 @@ from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
-import requests
 import os
 import psycopg
+from psycopg.rows import dict_row
 import time
 
 # Creación de la aplicación donde se encontrará la API.
@@ -21,7 +21,7 @@ def conexion_db():
     for i in range(10):
         try: 
             bbdd_url = os.getenv("DATABASE_URL")
-            connection = psycopg.connect(bbdd_url)
+            connection = psycopg.connect(bbdd_url, row_factory = dict_row) # row_factory, para que los datos extraidos se hagan en forma de diccionarios. 
             print("BD conectada con éxito")
             return connection
         except Exception as e :
@@ -75,9 +75,115 @@ def iniciar_sesion():
     token_acceso = create_access_token(identity = usuario_actual)
     return jsonify({"token_acceso": token_acceso}), 200
 
+# Función POST, para poder hacer la ingestión de datos a la base de datos
+@app.route("/insertar_alimentos", methods=["POST"])
+@jwt_required()
+def insertar_alimentos():
+    datos = request.get_json()
 
+    # El nombre del alimento es esencial, sin el no se puede saber a quien corresponde la información nutricional. Por eso se para si no se encuentra en los datos. 
+    if not datos.get("nombre"):
+        return jsonify({"mensaje": "Falta el nombre del alimento, siendo este esencial"}), 400
+    connection = conexion_db()
 
+    # Por si falla la conexión con la base de datos, se controla con el error 500.
+    if not connection:
+        return jsonify({"mensaje": "Error conectando a la BD"}), 500
 
+    cur = connection.cursor()
 
+    try:
+        # Introducir los datos en la base de datos, con unos criterios predefinidos.
+        query = """
+            INSERT INTO alimentos (
+                nombre, tipo, calorias, grasas, carbohidratos, azucar, proteina, publicado
+            ) VALUES (
+                %s, %s, %s, %s, %s, %s, %s, %s
+            )
+            ON CONFLICT (nombre) DO NOTHING; 
+        """
+        cur.execute(query, (
+            datos.get("nombre"),
+            datos.get("tipo"), 
+            datos.get("calorias"),      
+            datos.get("grasas"),
+            datos.get("carbohidratos"),
+            datos.get("azucar"),
+            datos.get("proteina"),
+            False # Al introducirlos en la base de datos, 
+        ))
 
+        connection.commit()
 
+        if cur.rowcount > 0:
+            return jsonify({"mensaje": "Alimento insertado"}), 201
+        else:
+            return jsonify({"mensaje": "El alimento ya existía"}), 200
+    
+    # Se controla por si falla la API. 
+    except Exception as e:
+        connection.rollback() 
+        print(f"Error en inserción: {e}") 
+        return jsonify({"mensaje": f"Error interno: {str(e)}"}), 500
+    finally:
+        cur.close()
+        connection.close()
+
+# Funcion GET para poder obtener la información que queramos de la base de datos, para poder publicarla.
+@app.route("/obtener_info_alimentos", methods = ["GET"])
+@jwt_required()
+def obtener_info_alimentos():
+    connection = conexion_db()
+    try:
+        cur = connection.cursor()
+
+        # Extracción de datos no publicados, de manera aleatoria. 
+        query = """SELECT id, nombre, tipo, calorias, grasas, carbohidratos, azucar, proteina
+                FROM alimentos
+                WHERE publicado = FALSE
+                ORDER BY RANDOM()
+                LIMIT 1"""
+        cur.execute(query)
+        resultado = cur.fetchone()
+        
+        # Si se han extraido los datos correctamente, devuelve un JSON, y el valor 200.
+        if resultado: 
+            return jsonify(resultado), 200
+        else:
+            return jsonify({"mensaje": "No quedan alimentos por publicar"}), 404
+    
+    # Se controla por si falla la API
+    except Exception as e:
+        return jsonify({"mensaje": f"Error obteniendo la información de los alimentos: {str(e)}"}), 500
+    finally:
+        cur.close()
+        connection.close()
+
+# Función para cambiar la columna publicacion en la base de datos si se ha realizado una publicación.
+@app.route("/confirmar_publicacion/<int:id_alimento>", methods=["PUT"])
+@jwt_required()
+def confirmar_publicacion(id_alimento):
+    connection = conexion_db()
+    try:
+        cur = connection.cursor()
+        query = "UPDATE alimentos SET publicado = TRUE WHERE id = %s"
+        cur.execute(query, (id_alimento,))
+        connection.commit()
+        if cur.rowcount > 0:
+            return jsonify({"mensaje": f"Alimento {id_alimento} marcado como publicado"}), 200
+        else:
+            return jsonify({"mensaje": "No se encontró el alimento con ese ID"}), 404
+    except Exception as e:
+        connection.rollback()
+        return jsonify({"mensaje": f"Error actualizando estado: {str(e)}"}), 500
+    finally:
+        cur.close()
+        connection.close()
+
+# Manejo del error 405: Cuando el método (GET, POST) es incorrecto
+@app.errorhandler(405)
+def metodo_no_permitido(error):
+    return jsonify({'error': 'Método no permitido. Revisa si debes usar GET o POST.'}), 405
+
+if __name__ == '__main__':
+    app.run(debug = True, host = "0.0.0.0")
