@@ -1,0 +1,2001 @@
+product_id,product_name,category,brand,price,rating
+P000001,Astra Be,Clothing,Astra,157.89,4.08
+P000002,NeoTech Someone,Groceries,NeoTech,21.46,3.87
+P000003,Acme Discuss,Sports,Acme,265.37,3.46
+P000004,Nimbus South,Electronics,Nimbus,541.41,4.14
+P000005,Astra Capital,Home & Kitchen,Astra,198.0,3.97
+P000006,NeoTech When,Toys,NeoTech,18.61,3.2
+P000007,Zenith School,Toys,Zenith,81.17,2.61
+P000008,Everest Friend,Clothing,Everest,33.86,2.93
+P000009,Harbor Go,Home & Kitchen,Harbor,253.18,4.44
+P000010,Orion Ahead,Sports,Orion,235.11,3.47
+P000011,GreenLeaf They,Pet Supplies,GreenLeaf,2.99,2.77
+P000012,GreenLeaf Road,Electronics,GreenLeaf,1299.71,3.61
+P000013,Harbor Others,Groceries,Harbor,19.09,4.5
+P000014,Astra Anyone,Electronics,Astra,99.56,3.67
+P000015,GreenLeaf Common,Pet Supplies,GreenLeaf,58.15,3.5
+P000016,Zenith Current,Groceries,Zenith,9.53,4.68
+P000017,Solace Something,Books,Solace,25.66,3.63
+P000018,Solace A,Home & Kitchen,Solace,47.18,3.06
+P000019,Acme Live,Automotive,Acme,225.87,3.04
+P000020,Nimbus Yard,Automotive,Nimbus,492.81,2.75
+P000021,Willow Special,Electronics,Willow,1772.36,2.9
+P000022,Nimbus Sit,Clothing,Nimbus,37.65,4.54
+P000023,Harbor Health,Groceries,Harbor,22.11,3.09
+P000024,Harbor Who,Automotive,Harbor,529.54,4.35
+P000025,Zenith About,Automotive,Zenith,631.84,4.02
+P000026,Pulse Such,Automotive,Pulse,742.47,2.85
+P000027,Willow Evening,Toys,Willow,61.59,2.7
+P000028,Astra Road,Automotive,Astra,313.89,2.56
+P000029,Solace Player,Automotive,Solace,357.87,4.32
+P000030,Willow Budget,Clothing,Willow,139.45,3.93
+P000031,Pulse The,Books,Pulse,37.01,3.37
+P000032,Orion Itself,Clothing,Orion,265.99,3.75
+P000033,Pulse Officer,Toys,Pulse,44.46,3.6
+P000034,Everest Figure,Automotive,Everest,260.02,3.87
+P000035,Everest Choose,Electronics,Everest,438.46,4.63
+P000036,Orion Laugh,Sports,Orion,81.88,3.64
+P000037,Orion Approach,Pet Supplies,Orion,44.4,3.06
+P000038,Astra Enter,Toys,Astra,44.23,3.85
+P000039,NeoTech A,Clothing,NeoTech,33.41,4.75
+P000040,Acme Night,Home & Kitchen,Acme,350.41,4.74
+P000041,Harbor Recent,Books,Harbor,94.35,2.87
+P000042,NeoTech Power,Toys,NeoTech,36.95,4.49
+P000043,Acme Significant,Clothing,Acme,148.55,3.66
+P000044,NeoTech Possible,Toys,NeoTech,53.51,2.7
+P000045,Nimbus Wrong,Automotive,Nimbus,36.34,4.81
+P000046,Pulse Project,Pet Supplies,Pulse,19.09,4.52
+P000047,Acme Together,Beauty,Acme,94.71,3.71
+P000048,NeoTech Major,Books,NeoTech,70.33,4.69
+P000049,NeoTech Help,Home & Kitchen,NeoTech,12.72,4.6
+P000050,Everest Easy,Clothing,Everest,108.18,4.17
+P000051,Zenith Economy,Electronics,Zenith,840.01,3.23
+P000052,Nimbus To,Sports,Nimbus,138.89,3.17
+P000053,Willow Item,Automotive,Willow,100.81,4.55
+P000054,GreenLeaf Hair,Automotive,GreenLeaf,435.87,4.04
+P000055,Astra Our,Electronics,Astra,949.73,3.51
+P000056,Astra One,Groceries,Astra,16.78,2.89
+P000057,Zenith What,Beauty,Zenith,73.71,3.32
+P000058,Astra Power,Electronics,Astra,788.21,3.41
+P000059,Orion Short,Clothing,Orion,176.48,3.98
+P000060,Nimbus Interesting,Toys,Nimbus,81.57,2.56
+P000061,Astra Fly,Automotive,Astra,369.87,3.66
+P000062,Willow Room,Pet Supplies,Willow,52.54,2.85
+P000063,Pulse Eight,Groceries,Pulse,18.77,3.33
+P000064,NeoTech Commercial,Sports,NeoTech,151.03,3.98
+P000065,Astra Community,Toys,Astra,32.09,4.26
+P000066,GreenLeaf Spring,Books,GreenLeaf,42.89,4.69
+P000067,Acme Their,Books,Acme,16.13,3.13
+P000068,Acme Fire,Clothing,Acme,46.36,3.76
+P000069,Harbor Student,Pet Supplies,Harbor,106.99,3.09
+P000070,Solace Other,Electronics,Solace,802.45,3.67
+P000071,Willow Approach,Clothing,Willow,138.82,3.76
+P000072,GreenLeaf West,Groceries,GreenLeaf,39.59,3.02
+P000073,Harbor Authority,Toys,Harbor,46.81,3.99
+P000074,Willow Week,Toys,Willow,40.24,4.52
+P000075,Everest Look,Automotive,Everest,143.79,4.46
+P000076,Nimbus Test,Beauty,Nimbus,137.88,3.47
+P000077,Solace Particular,Toys,Solace,27.21,3.91
+P000078,Willow Determine,Automotive,Willow,344.26,3.4
+P000079,Orion However,Pet Supplies,Orion,71.29,3.22
+P000080,Acme Discuss,Pet Supplies,Acme,24.52,3.42
+P000081,Zenith Great,Toys,Zenith,13.12,4.15
+P000082,Acme Special,Groceries,Acme,2.92,4.56
+P000083,Harbor Spring,Toys,Harbor,126.24,4.2
+P000084,Orion Firm,Groceries,Orion,4.51,4.44
+P000085,Astra Make,Automotive,Astra,462.62,3.21
+P000086,Orion And,Pet Supplies,Orion,5.54,4.63
+P000087,Pulse Fine,Home & Kitchen,Pulse,339.43,3.38
+P000088,Everest As,Clothing,Everest,78.11,4.29
+P000089,Harbor Necessary,Sports,Harbor,43.43,3.55
+P000090,Pulse Arm,Groceries,Pulse,3.69,2.87
+P000091,Orion Involve,Books,Orion,69.07,3.44
+P000092,Willow Economy,Beauty,Willow,177.95,3.31
+P000093,NeoTech Peace,Sports,NeoTech,202.3,3.85
+P000094,Solace Ten,Sports,Solace,41.49,3.6
+P000095,NeoTech Certainly,Clothing,NeoTech,121.02,4.88
+P000096,Orion Record,Pet Supplies,Orion,53.16,4.15
+P000097,Zenith Movie,Groceries,Zenith,31.94,4.65
+P000098,Nimbus Computer,Beauty,Nimbus,63.31,3.94
+P000099,GreenLeaf Effort,Groceries,GreenLeaf,24.6,4.26
+P000100,Nimbus Night,Books,Nimbus,53.39,4.01
+P000101,Willow Cultural,Clothing,Willow,32.69,2.69
+P000102,Pulse Surface,Groceries,Pulse,6.16,4.78
+P000103,Harbor Two,Books,Harbor,13.77,2.7
+P000104,Solace Interesting,Beauty,Solace,40.38,2.97
+P000105,Acme Lead,Sports,Acme,146.49,3.91
+P000106,Acme Sport,Toys,Acme,86.59,4.02
+P000107,GreenLeaf Throughout,Books,GreenLeaf,118.51,2.85
+P000108,Willow Fall,Pet Supplies,Willow,41.44,4.19
+P000109,Everest Interesting,Clothing,Everest,188.18,4.31
+P000110,Zenith Coach,Clothing,Zenith,154.67,2.5
+P000111,GreenLeaf Bar,Clothing,GreenLeaf,55.21,3.86
+P000112,Orion Surface,Sports,Orion,65.21,2.69
+P000113,Harbor Until,Clothing,Harbor,22.55,4.39
+P000114,Zenith Create,Electronics,Zenith,805.15,4.14
+P000115,Astra President,Books,Astra,28.99,4.24
+P000116,Acme Stock,Home & Kitchen,Acme,128.31,2.95
+P000117,Acme Pattern,Books,Acme,20.8,4.75
+P000118,NeoTech Professor,Groceries,NeoTech,13.13,2.81
+P000119,Pulse Order,Clothing,Pulse,265.21,4.77
+P000120,Zenith White,Clothing,Zenith,176.19,2.8
+P000121,Everest Food,Home & Kitchen,Everest,390.29,4.28
+P000122,NeoTech Tell,Toys,NeoTech,10.62,4.29
+P000123,Solace Everyone,Clothing,Solace,244.44,3.38
+P000124,Everest Yes,Home & Kitchen,Everest,36.32,2.85
+P000125,Orion Gas,Beauty,Orion,59.55,4.01
+P000126,Willow Arm,Sports,Willow,423.57,4.72
+P000127,Willow May,Home & Kitchen,Willow,255.94,3.44
+P000128,Everest Smile,Clothing,Everest,55.25,4.74
+P000129,Willow Woman,Beauty,Willow,138.5,4.55
+P000130,NeoTech Onto,Clothing,NeoTech,152.63,2.78
+P000131,NeoTech Everybody,Automotive,NeoTech,329.14,4.29
+P000132,Willow Recently,Clothing,Willow,135.87,2.56
+P000133,Solace Team,Pet Supplies,Solace,25.97,4.21
+P000134,Orion Such,Automotive,Orion,495.76,4.06
+P000135,NeoTech Society,Sports,NeoTech,49.41,3.85
+P000136,Zenith Phone,Electronics,Zenith,2169.98,4.38
+P000137,Willow Such,Automotive,Willow,441.37,2.59
+P000138,Pulse True,Home & Kitchen,Pulse,57.52,4.06
+P000139,Harbor Able,Home & Kitchen,Harbor,335.61,4.21
+P000140,NeoTech Center,Pet Supplies,NeoTech,20.93,3.78
+P000141,Harbor Since,Automotive,Harbor,332.57,3.41
+P000142,Zenith Way,Clothing,Zenith,205.73,4.65
+P000143,Astra Pressure,Home & Kitchen,Astra,96.76,2.52
+P000144,GreenLeaf Interview,Automotive,GreenLeaf,224.43,4.2
+P000145,Willow Him,Home & Kitchen,Willow,219.69,4.77
+P000146,Astra Policy,Toys,Astra,15.85,2.53
+P000147,NeoTech Beat,Toys,NeoTech,52.33,4.29
+P000148,GreenLeaf Medical,Toys,GreenLeaf,68.12,2.9
+P000149,Nimbus Where,Automotive,Nimbus,323.14,4.5
+P000150,Pulse Kitchen,Clothing,Pulse,70.84,2.59
+P000151,Solace Be,Groceries,Solace,23.37,3.53
+P000152,Zenith Soon,Sports,Zenith,299.66,4.64
+P000153,Pulse Care,Automotive,Pulse,147.47,2.6
+P000154,Harbor Bill,Toys,Harbor,32.06,4.21
+P000155,Harbor Firm,Books,Harbor,12.17,3.07
+P000156,Harbor Difference,Books,Harbor,51.52,4.34
+P000157,GreenLeaf Ask,Beauty,GreenLeaf,195.21,4.02
+P000158,Zenith Accept,Sports,Zenith,314.58,4.02
+P000159,Nimbus Stock,Sports,Nimbus,146.05,2.61
+P000160,Acme Cold,Electronics,Acme,259.69,2.73
+P000161,NeoTech Weight,Electronics,NeoTech,701.36,3.42
+P000162,Orion Most,Clothing,Orion,151.39,3.99
+P000163,GreenLeaf Simply,Beauty,GreenLeaf,31.44,3.84
+P000164,Astra Town,Books,Astra,60.85,2.81
+P000165,Solace Difference,Electronics,Solace,295.27,3.85
+P000166,Harbor Significant,Toys,Harbor,103.35,3.12
+P000167,Pulse Answer,Sports,Pulse,28.53,4.4
+P000168,Nimbus If,Sports,Nimbus,298.04,3.97
+P000169,Acme Production,Books,Acme,21.36,3.9
+P000170,NeoTech Imagine,Toys,NeoTech,20.19,3.57
+P000171,Astra Protect,Toys,Astra,47.33,3.24
+P000172,Harbor Natural,Home & Kitchen,Harbor,53.8,2.53
+P000173,Harbor Itself,Clothing,Harbor,30.32,4.4
+P000174,Zenith Run,Electronics,Zenith,960.74,3.09
+P000175,GreenLeaf Company,Automotive,GreenLeaf,22.44,3.04
+P000176,Orion Rock,Toys,Orion,111.48,4.8
+P000177,Astra Visit,Beauty,Astra,17.35,3.52
+P000178,Solace Easy,Beauty,Solace,145.19,4.74
+P000179,NeoTech Movement,Home & Kitchen,NeoTech,172.42,3.28
+P000180,Orion Upon,Home & Kitchen,Orion,400.2,3.42
+P000181,Willow Box,Automotive,Willow,763.34,2.71
+P000182,Acme Cause,Books,Acme,9.27,2.83
+P000183,Orion Like,Groceries,Orion,3.37,4.26
+P000184,Astra Maintain,Toys,Astra,21.38,4.49
+P000185,Orion Guy,Toys,Orion,69.64,2.77
+P000186,NeoTech Not,Electronics,NeoTech,231.15,3.7
+P000187,Harbor For,Sports,Harbor,134.5,4.84
+P000188,Zenith Direction,Pet Supplies,Zenith,12.4,2.69
+P000189,Astra Agree,Pet Supplies,Astra,4.19,3.15
+P000190,Solace With,Pet Supplies,Solace,34.94,3.25
+P000191,GreenLeaf Produce,Toys,GreenLeaf,47.14,3.64
+P000192,Pulse Near,Electronics,Pulse,455.43,4.88
+P000193,Everest Nearly,Automotive,Everest,794.73,4.21
+P000194,Nimbus Consider,Toys,Nimbus,59.65,4.83
+P000195,Willow Study,Clothing,Willow,72.69,3.64
+P000196,Willow Expert,Beauty,Willow,11.83,3.38
+P000197,Astra Brother,Pet Supplies,Astra,20.84,4.47
+P000198,Orion Face,Electronics,Orion,1352.63,4.66
+P000199,Zenith While,Groceries,Zenith,10.35,4.19
+P000200,Zenith Story,Groceries,Zenith,13.85,3.37
+P000201,Willow Something,Toys,Willow,23.76,4.6
+P000202,Harbor Body,Groceries,Harbor,26.28,3.51
+P000203,Everest Drop,Groceries,Everest,31.08,4.1
+P000204,Orion Last,Pet Supplies,Orion,112.83,2.77
+P000205,Pulse The,Toys,Pulse,68.81,3.51
+P000206,Orion Pm,Automotive,Orion,202.11,4.47
+P000207,GreenLeaf Painting,Clothing,GreenLeaf,227.28,3.4
+P000208,Solace Move,Automotive,Solace,826.18,2.71
+P000209,Zenith Within,Clothing,Zenith,144.55,3.2
+P000210,Nimbus Little,Toys,Nimbus,253.94,4.19
+P000211,Acme Performance,Toys,Acme,104.68,4.68
+P000212,Acme Air,Electronics,Acme,246.31,3.44
+P000213,NeoTech Reason,Pet Supplies,NeoTech,22.25,3.05
+P000214,Everest Even,Home & Kitchen,Everest,191.69,2.53
+P000215,Orion High,Pet Supplies,Orion,34.28,3.08
+P000216,Pulse Serious,Sports,Pulse,295.05,4.86
+P000217,Zenith Follow,Clothing,Zenith,101.57,3.68
+P000218,Harbor Last,Electronics,Harbor,234.99,2.93
+P000219,NeoTech Film,Pet Supplies,NeoTech,82.2,2.96
+P000220,Everest Team,Electronics,Everest,184.85,3.14
+P000221,Nimbus Customer,Groceries,Nimbus,22.47,4.15
+P000222,Harbor Miss,Beauty,Harbor,21.85,3.26
+P000223,Solace Six,Clothing,Solace,56.92,3.95
+P000224,Astra Else,Automotive,Astra,88.96,2.52
+P000225,GreenLeaf Newspaper,Electronics,GreenLeaf,527.87,3.96
+P000226,Solace School,Clothing,Solace,118.33,2.8
+P000227,Solace Risk,Home & Kitchen,Solace,238.61,3.47
+P000228,Everest Tv,Automotive,Everest,253.79,3.25
+P000229,Acme Run,Pet Supplies,Acme,5.59,2.52
+P000230,Astra Well,Clothing,Astra,174.94,2.63
+P000231,Zenith Behavior,Electronics,Zenith,178.96,3.27
+P000232,Solace Interview,Home & Kitchen,Solace,180.7,4.25
+P000233,Zenith Might,Sports,Zenith,173.94,2.64
+P000234,NeoTech Fear,Electronics,NeoTech,375.37,3.59
+P000235,Everest Minute,Home & Kitchen,Everest,628.13,4.15
+P000236,NeoTech Process,Pet Supplies,NeoTech,42.76,2.78
+P000237,Zenith Thus,Automotive,Zenith,191.89,2.97
+P000238,Harbor Follow,Sports,Harbor,168.05,3.88
+P000239,Zenith Commercial,Sports,Zenith,180.4,2.91
+P000240,Astra Model,Sports,Astra,13.49,2.91
+P000241,Orion Idea,Clothing,Orion,148.45,4.55
+P000242,Astra Number,Pet Supplies,Astra,51.96,2.9
+P000243,Zenith Hope,Home & Kitchen,Zenith,159.88,3.22
+P000244,Everest Sell,Books,Everest,69.29,4.08
+P000245,Astra Get,Home & Kitchen,Astra,221.48,4.61
+P000246,Willow Because,Automotive,Willow,216.58,3.89
+P000247,Solace Finish,Books,Solace,10.2,3.76
+P000248,Solace Street,Beauty,Solace,40.54,2.51
+P000249,NeoTech Husband,Books,NeoTech,64.76,2.84
+P000250,Harbor Seek,Sports,Harbor,162.91,3.13
+P000251,Solace Bill,Beauty,Solace,64.82,2.71
+P000252,NeoTech Class,Pet Supplies,NeoTech,46.59,3.35
+P000253,Harbor Reduce,Groceries,Harbor,46.4,3.4
+P000254,Everest Simple,Pet Supplies,Everest,109.05,2.7
+P000255,NeoTech Well,Beauty,NeoTech,71.91,4.18
+P000256,Orion Treat,Automotive,Orion,664.92,4.0
+P000257,Zenith Film,Sports,Zenith,220.65,3.22
+P000258,Orion Trouble,Groceries,Orion,11.34,4.46
+P000259,Orion Financial,Sports,Orion,166.86,4.42
+P000260,Harbor System,Groceries,Harbor,24.11,4.68
+P000261,Orion Indicate,Books,Orion,54.65,2.65
+P000262,Astra Hear,Home & Kitchen,Astra,186.4,3.66
+P000263,Solace Most,Groceries,Solace,12.76,3.47
+P000264,Acme Account,Electronics,Acme,1006.47,3.07
+P000265,GreenLeaf Move,Home & Kitchen,GreenLeaf,163.19,4.52
+P000266,Astra Success,Home & Kitchen,Astra,45.35,3.54
+P000267,Nimbus Lawyer,Automotive,Nimbus,696.74,3.32
+P000268,Willow Officer,Automotive,Willow,253.41,4.6
+P000269,Zenith Clear,Pet Supplies,Zenith,74.5,3.44
+P000270,Zenith Break,Books,Zenith,44.29,4.64
+P000271,Willow Include,Pet Supplies,Willow,117.63,3.29
+P000272,Nimbus Process,Electronics,Nimbus,570.1,4.73
+P000273,Willow Seem,Automotive,Willow,913.33,2.55
+P000274,Acme Break,Electronics,Acme,1197.44,3.53
+P000275,Everest Customer,Toys,Everest,36.36,3.05
+P000276,Solace Travel,Automotive,Solace,297.47,4.64
+P000277,Orion Their,Beauty,Orion,43.39,3.03
+P000278,Astra Goal,Beauty,Astra,37.69,3.99
+P000279,Zenith World,Beauty,Zenith,114.56,4.18
+P000280,Zenith Cold,Groceries,Zenith,23.41,3.42
+P000281,Acme Stuff,Groceries,Acme,28.99,3.31
+P000282,Solace Represent,Beauty,Solace,154.03,4.79
+P000283,Everest Image,Beauty,Everest,42.47,4.42
+P000284,Zenith Then,Beauty,Zenith,7.78,2.53
+P000285,Solace Foot,Beauty,Solace,12.79,3.48
+P000286,Zenith Church,Pet Supplies,Zenith,39.15,2.85
+P000287,NeoTech Vote,Pet Supplies,NeoTech,69.34,3.12
+P000288,Acme He,Beauty,Acme,106.67,3.28
+P000289,NeoTech Position,Books,NeoTech,68.32,4.84
+P000290,Acme Board,Pet Supplies,Acme,44.33,3.9
+P000291,Nimbus Goal,Books,Nimbus,50.3,4.89
+P000292,GreenLeaf Who,Automotive,GreenLeaf,203.3,3.2
+P000293,Astra Season,Sports,Astra,122.71,3.34
+P000294,Zenith Recently,Automotive,Zenith,543.31,3.48
+P000295,NeoTech What,Pet Supplies,NeoTech,84.97,4.66
+P000296,Acme Figure,Groceries,Acme,21.18,2.68
+P000297,Everest Deep,Automotive,Everest,902.48,3.98
+P000298,Zenith Deal,Electronics,Zenith,1238.93,4.34
+P000299,Zenith Partner,Automotive,Zenith,291.45,3.06
+P000300,Astra May,Groceries,Astra,26.88,4.77
+P000301,Harbor Ever,Sports,Harbor,31.57,4.7
+P000302,Zenith Together,Pet Supplies,Zenith,47.73,4.42
+P000303,Willow Note,Electronics,Willow,1535.55,4.2
+P000304,Willow Site,Clothing,Willow,120.82,2.68
+P000305,Everest Scientist,Home & Kitchen,Everest,295.31,3.75
+P000306,Everest Air,Sports,Everest,199.78,2.86
+P000307,GreenLeaf Note,Home & Kitchen,GreenLeaf,354.49,4.2
+P000308,Harbor Score,Electronics,Harbor,930.47,4.1
+P000309,NeoTech Second,Groceries,NeoTech,10.7,4.09
+P000310,Orion Side,Clothing,Orion,67.11,3.06
+P000311,Pulse Money,Beauty,Pulse,110.72,4.69
+P000312,Willow Let,Beauty,Willow,84.79,3.97
+P000313,Orion Tonight,Books,Orion,70.39,3.74
+P000314,Everest According,Books,Everest,79.29,4.76
+P000315,Acme Room,Electronics,Acme,1620.72,4.3
+P000316,NeoTech Also,Toys,NeoTech,72.21,3.8
+P000317,Zenith International,Home & Kitchen,Zenith,101.71,3.13
+P000318,Willow Position,Pet Supplies,Willow,91.92,4.25
+P000319,Everest Baby,Books,Everest,40.58,4.01
+P000320,Zenith Religious,Clothing,Zenith,47.88,2.64
+P000321,Pulse Month,Groceries,Pulse,8.99,3.67
+P000322,Astra Explain,Groceries,Astra,32.16,2.81
+P000323,Orion Speech,Electronics,Orion,694.32,4.6
+P000324,Harbor Visit,Toys,Harbor,60.11,3.2
+P000325,Solace Down,Sports,Solace,114.24,4.22
+P000326,Acme Financial,Groceries,Acme,2.75,4.0
+P000327,Orion Television,Pet Supplies,Orion,98.15,3.38
+P000328,Pulse Group,Toys,Pulse,26.74,4.05
+P000329,Astra Support,Toys,Astra,106.81,3.02
+P000330,Orion Begin,Pet Supplies,Orion,37.03,4.32
+P000331,Everest Million,Sports,Everest,112.6,4.02
+P000332,GreenLeaf Painting,Beauty,GreenLeaf,33.02,4.55
+P000333,GreenLeaf Reflect,Books,GreenLeaf,32.42,2.97
+P000334,Pulse Something,Pet Supplies,Pulse,84.07,4.19
+P000335,NeoTech Cost,Beauty,NeoTech,93.49,3.81
+P000336,Acme Outside,Clothing,Acme,121.89,4.21
+P000337,Zenith Item,Books,Zenith,23.28,4.87
+P000338,Everest Nor,Books,Everest,16.48,2.61
+P000339,Nimbus Memory,Pet Supplies,Nimbus,93.07,2.71
+P000340,Zenith Life,Groceries,Zenith,20.74,2.7
+P000341,Pulse Serious,Sports,Pulse,53.26,3.26
+P000342,Nimbus Cell,Sports,Nimbus,90.57,4.49
+P000343,Acme Others,Home & Kitchen,Acme,75.19,4.82
+P000344,GreenLeaf At,Automotive,GreenLeaf,145.72,3.91
+P000345,Solace Official,Books,Solace,62.17,2.74
+P000346,Pulse Third,Books,Pulse,51.61,4.24
+P000347,Astra Significant,Pet Supplies,Astra,19.77,3.89
+P000348,Acme Vote,Pet Supplies,Acme,47.14,4.39
+P000349,Zenith Need,Electronics,Zenith,474.22,3.07
+P000350,Harbor Financial,Sports,Harbor,241.98,4.69
+P000351,Willow Event,Toys,Willow,84.8,3.52
+P000352,Everest Daughter,Toys,Everest,112.71,3.97
+P000353,Zenith Thought,Toys,Zenith,83.19,4.47
+P000354,Pulse Letter,Electronics,Pulse,1387.39,4.43
+P000355,Orion Whatever,Electronics,Orion,577.93,4.02
+P000356,Willow If,Pet Supplies,Willow,67.94,2.69
+P000357,Astra Hundred,Electronics,Astra,1423.47,3.6
+P000358,Solace Something,Electronics,Solace,1001.67,4.03
+P000359,Zenith Citizen,Pet Supplies,Zenith,31.35,4.83
+P000360,Nimbus Main,Pet Supplies,Nimbus,59.31,4.45
+P000361,Harbor Man,Clothing,Harbor,168.32,2.69
+P000362,Zenith Check,Toys,Zenith,104.09,4.75
+P000363,GreenLeaf Team,Beauty,GreenLeaf,61.12,4.08
+P000364,Pulse Mr,Beauty,Pulse,41.57,3.61
+P000365,NeoTech In,Toys,NeoTech,98.81,3.78
+P000366,NeoTech Fill,Home & Kitchen,NeoTech,242.13,3.23
+P000367,Willow West,Books,Willow,38.32,3.68
+P000368,Harbor Several,Sports,Harbor,257.21,4.37
+P000369,Everest Against,Toys,Everest,15.41,3.26
+P000370,Everest Property,Automotive,Everest,201.91,3.3
+P000371,NeoTech Stand,Groceries,NeoTech,19.06,4.9
+P000372,Solace Particular,Pet Supplies,Solace,100.33,4.07
+P000373,Everest Difference,Automotive,Everest,390.56,4.65
+P000374,Solace The,Sports,Solace,377.51,4.71
+P000375,Nimbus Choice,Home & Kitchen,Nimbus,21.73,3.12
+P000376,Zenith Color,Automotive,Zenith,549.81,2.6
+P000377,GreenLeaf Eat,Toys,GreenLeaf,95.77,3.38
+P000378,Orion Foot,Books,Orion,9.11,3.21
+P000379,Astra Present,Groceries,Astra,12.81,3.2
+P000380,Solace Social,Home & Kitchen,Solace,148.33,2.57
+P000381,Solace Chance,Sports,Solace,177.64,2.87
+P000382,Astra Understand,Automotive,Astra,466.25,3.04
+P000383,Nimbus Knowledge,Sports,Nimbus,26.27,4.47
+P000384,Nimbus Take,Automotive,Nimbus,596.56,2.69
+P000385,Willow Mouth,Electronics,Willow,756.87,3.96
+P000386,Pulse Born,Automotive,Pulse,495.1,3.61
+P000387,Acme Store,Automotive,Acme,435.72,3.9
+P000388,GreenLeaf Discover,Clothing,GreenLeaf,252.09,2.92
+P000389,Willow Charge,Automotive,Willow,460.66,4.77
+P000390,Acme Coach,Groceries,Acme,24.1,3.79
+P000391,Nimbus Establish,Home & Kitchen,Nimbus,74.41,2.87
+P000392,Nimbus Subject,Home & Kitchen,Nimbus,387.23,3.15
+P000393,Willow Behind,Beauty,Willow,79.35,2.51
+P000394,Acme Boy,Toys,Acme,113.67,3.4
+P000395,Harbor Opportunity,Books,Harbor,56.04,3.65
+P000396,Willow Result,Pet Supplies,Willow,6.95,2.63
+P000397,Pulse Receive,Books,Pulse,5.67,3.92
+P000398,Nimbus Mr,Pet Supplies,Nimbus,108.65,4.59
+P000399,Astra Reveal,Books,Astra,37.4,4.29
+P000400,Orion Thus,Electronics,Orion,423.67,2.58
+P000401,Astra Discuss,Automotive,Astra,291.84,4.53
+P000402,Solace Change,Clothing,Solace,108.39,4.06
+P000403,Orion Film,Clothing,Orion,74.66,2.55
+P000404,Astra Grow,Sports,Astra,208.05,4.61
+P000405,Orion Chance,Pet Supplies,Orion,7.85,4.59
+P000406,NeoTech Provide,Sports,NeoTech,103.54,4.5
+P000407,Acme Improve,Toys,Acme,18.79,2.92
+P000408,GreenLeaf Green,Pet Supplies,GreenLeaf,10.52,3.72
+P000409,Pulse Idea,Groceries,Pulse,11.8,4.77
+P000410,Nimbus Surface,Beauty,Nimbus,83.41,3.1
+P000411,Acme Common,Pet Supplies,Acme,50.96,2.88
+P000412,Orion News,Home & Kitchen,Orion,225.99,4.0
+P000413,Solace Follow,Beauty,Solace,6.79,3.76
+P000414,Zenith Almost,Home & Kitchen,Zenith,63.21,3.95
+P000415,Pulse Next,Electronics,Pulse,861.62,3.87
+P000416,Nimbus Only,Home & Kitchen,Nimbus,54.42,4.25
+P000417,Astra Lose,Beauty,Astra,218.42,4.27
+P000418,GreenLeaf Later,Electronics,GreenLeaf,1413.41,3.87
+P000419,Astra Remain,Groceries,Astra,18.47,3.73
+P000420,Astra Federal,Books,Astra,38.79,4.38
+P000421,NeoTech Method,Toys,NeoTech,121.71,3.83
+P000422,Everest Fire,Clothing,Everest,257.15,4.37
+P000423,Everest Police,Pet Supplies,Everest,60.29,3.98
+P000424,Everest Find,Home & Kitchen,Everest,439.51,3.62
+P000425,GreenLeaf Land,Home & Kitchen,GreenLeaf,126.93,2.85
+P000426,Nimbus Gun,Home & Kitchen,Nimbus,244.16,4.24
+P000427,NeoTech Pick,Pet Supplies,NeoTech,37.84,4.09
+P000428,Zenith Stay,Beauty,Zenith,135.76,3.11
+P000429,Harbor Hear,Groceries,Harbor,39.0,3.37
+P000430,GreenLeaf Own,Groceries,GreenLeaf,5.35,4.51
+P000431,Zenith Skin,Books,Zenith,27.08,3.96
+P000432,Harbor Develop,Pet Supplies,Harbor,58.1,3.07
+P000433,NeoTech Ask,Pet Supplies,NeoTech,5.28,3.46
+P000434,NeoTech Anything,Toys,NeoTech,52.83,3.36
+P000435,Astra Least,Books,Astra,115.46,3.81
+P000436,GreenLeaf Student,Books,GreenLeaf,29.24,4.49
+P000437,GreenLeaf Various,Clothing,GreenLeaf,130.95,3.37
+P000438,Orion Pm,Home & Kitchen,Orion,167.79,2.98
+P000439,GreenLeaf Need,Clothing,GreenLeaf,115.37,4.45
+P000440,Solace Think,Beauty,Solace,10.76,4.86
+P000441,Nimbus Significant,Sports,Nimbus,105.75,2.96
+P000442,Everest Than,Home & Kitchen,Everest,353.65,4.66
+P000443,Astra Great,Sports,Astra,61.6,4.87
+P000444,Everest Opportunity,Groceries,Everest,28.92,2.63
+P000445,Willow Sit,Pet Supplies,Willow,11.9,4.14
+P000446,GreenLeaf Opportunity,Clothing,GreenLeaf,68.43,3.24
+P000447,Astra Shake,Beauty,Astra,127.26,4.31
+P000448,Zenith Stop,Pet Supplies,Zenith,66.33,2.57
+P000449,GreenLeaf Left,Groceries,GreenLeaf,18.64,2.73
+P000450,Orion Take,Books,Orion,15.69,3.76
+P000451,Solace Camera,Electronics,Solace,228.61,3.86
+P000452,Zenith Total,Books,Zenith,37.56,4.64
+P000453,Everest Various,Home & Kitchen,Everest,17.06,3.34
+P000454,Solace Different,Home & Kitchen,Solace,231.49,3.58
+P000455,NeoTech Nearly,Clothing,NeoTech,65.06,4.45
+P000456,Zenith Building,Pet Supplies,Zenith,24.35,2.83
+P000457,Pulse Boy,Sports,Pulse,33.0,4.35
+P000458,Everest Black,Electronics,Everest,982.1,4.82
+P000459,Nimbus Next,Toys,Nimbus,74.6,3.01
+P000460,Orion Final,Groceries,Orion,20.56,4.72
+P000461,Nimbus Family,Electronics,Nimbus,1700.35,3.99
+P000462,Harbor Who,Beauty,Harbor,142.59,3.41
+P000463,Willow Plant,Sports,Willow,18.57,4.4
+P000464,Orion Role,Clothing,Orion,44.1,4.33
+P000465,Nimbus Professional,Toys,Nimbus,14.96,4.33
+P000466,Nimbus Congress,Clothing,Nimbus,76.15,2.61
+P000467,Orion Debate,Electronics,Orion,712.19,2.94
+P000468,Astra Dream,Sports,Astra,36.4,4.14
+P000469,Everest Later,Toys,Everest,13.01,4.45
+P000470,Zenith Gas,Pet Supplies,Zenith,59.91,3.43
+P000471,NeoTech While,Sports,NeoTech,181.71,4.25
+P000472,Pulse From,Toys,Pulse,40.79,4.52
+P000473,Nimbus Whose,Books,Nimbus,22.53,2.99
+P000474,GreenLeaf Significant,Sports,GreenLeaf,283.17,3.01
+P000475,Willow Also,Home & Kitchen,Willow,191.79,3.42
+P000476,Harbor Much,Automotive,Harbor,133.02,4.38
+P000477,Orion Break,Sports,Orion,55.28,4.12
+P000478,Zenith Within,Clothing,Zenith,199.79,2.66
+P000479,Astra Hospital,Pet Supplies,Astra,92.17,3.78
+P000480,Harbor Enjoy,Pet Supplies,Harbor,60.33,4.31
+P000481,Harbor Enter,Home & Kitchen,Harbor,299.45,3.68
+P000482,Astra Buy,Pet Supplies,Astra,62.62,4.11
+P000483,Pulse Determine,Books,Pulse,2.83,2.96
+P000484,Everest Almost,Beauty,Everest,104.34,4.89
+P000485,NeoTech Several,Groceries,NeoTech,9.97,2.59
+P000486,GreenLeaf Body,Beauty,GreenLeaf,46.64,3.18
+P000487,Willow Indeed,Clothing,Willow,22.21,3.4
+P000488,Solace Level,Home & Kitchen,Solace,264.67,4.59
+P000489,NeoTech Conference,Groceries,NeoTech,5.11,2.51
+P000490,Nimbus Give,Sports,Nimbus,203.83,4.12
+P000491,Willow Answer,Electronics,Willow,398.86,2.95
+P000492,Nimbus Who,Books,Nimbus,36.16,4.07
+P000493,Pulse Manage,Beauty,Pulse,113.45,2.53
+P000494,Astra Test,Clothing,Astra,148.44,3.65
+P000495,Pulse Down,Groceries,Pulse,21.2,4.53
+P000496,Willow Property,Toys,Willow,100.66,2.86
+P000497,Acme Owner,Books,Acme,15.21,3.69
+P000498,Pulse Debate,Home & Kitchen,Pulse,112.79,3.35
+P000499,Zenith Baby,Clothing,Zenith,115.81,3.31
+P000500,NeoTech Security,Beauty,NeoTech,38.54,2.54
+P000501,Harbor Necessary,Books,Harbor,65.31,4.41
+P000502,Orion Student,Sports,Orion,442.12,3.25
+P000503,Harbor Cup,Clothing,Harbor,90.57,4.4
+P000504,GreenLeaf Learn,Beauty,GreenLeaf,111.42,3.27
+P000505,Solace Future,Books,Solace,42.15,3.71
+P000506,Harbor West,Sports,Harbor,75.86,4.68
+P000507,Willow Beyond,Home & Kitchen,Willow,208.34,2.81
+P000508,Zenith Small,Electronics,Zenith,177.88,3.97
+P000509,NeoTech Throw,Electronics,NeoTech,538.42,3.75
+P000510,Zenith Guy,Sports,Zenith,105.34,2.87
+P000511,Nimbus Should,Clothing,Nimbus,34.13,2.6
+P000512,Nimbus Knowledge,Sports,Nimbus,101.36,4.22
+P000513,Everest Child,Toys,Everest,11.93,3.45
+P000514,Everest Despite,Home & Kitchen,Everest,201.55,4.66
+P000515,Zenith Treatment,Toys,Zenith,21.15,4.74
+P000516,Nimbus Threat,Sports,Nimbus,253.68,4.64
+P000517,Nimbus Those,Beauty,Nimbus,60.55,4.31
+P000518,Willow Newspaper,Groceries,Willow,20.15,4.77
+P000519,Pulse Money,Electronics,Pulse,769.71,4.07
+P000520,Acme Appear,Beauty,Acme,161.29,2.57
+P000521,Orion Risk,Groceries,Orion,14.09,2.87
+P000522,Harbor Medical,Clothing,Harbor,17.96,3.17
+P000523,GreenLeaf Relate,Beauty,GreenLeaf,111.37,4.5
+P000524,Everest Station,Toys,Everest,71.29,4.08
+P000525,GreenLeaf According,Books,GreenLeaf,28.04,4.3
+P000526,NeoTech Difficult,Groceries,NeoTech,9.25,2.89
+P000527,Astra Democrat,Electronics,Astra,554.93,2.99
+P000528,Zenith Leader,Toys,Zenith,29.55,4.14
+P000529,Willow Out,Books,Willow,57.18,4.87
+P000530,NeoTech Close,Sports,NeoTech,182.23,4.17
+P000531,Nimbus Young,Beauty,Nimbus,167.72,4.13
+P000532,Pulse Commercial,Clothing,Pulse,21.52,4.71
+P000533,Solace Republican,Pet Supplies,Solace,11.41,4.15
+P000534,Astra Speak,Pet Supplies,Astra,19.24,4.49
+P000535,Willow Exactly,Clothing,Willow,62.96,4.14
+P000536,NeoTech Rise,Pet Supplies,NeoTech,6.85,3.91
+P000537,Willow Use,Automotive,Willow,64.45,3.1
+P000538,GreenLeaf Painting,Toys,GreenLeaf,63.48,4.18
+P000539,Zenith Skill,Clothing,Zenith,45.11,3.38
+P000540,Zenith Foreign,Automotive,Zenith,337.8,3.08
+P000541,Zenith List,Home & Kitchen,Zenith,102.1,3.9
+P000542,Everest Rock,Clothing,Everest,36.54,3.77
+P000543,Orion City,Beauty,Orion,115.63,4.56
+P000544,Orion Now,Clothing,Orion,248.05,4.0
+P000545,Pulse Understand,Sports,Pulse,55.49,3.04
+P000546,Willow Society,Home & Kitchen,Willow,292.19,2.57
+P000547,Everest Region,Clothing,Everest,207.26,3.78
+P000548,Pulse Idea,Books,Pulse,46.0,2.83
+P000549,Zenith History,Books,Zenith,56.44,4.72
+P000550,Nimbus Someone,Books,Nimbus,29.83,4.64
+P000551,GreenLeaf Able,Home & Kitchen,GreenLeaf,154.28,4.03
+P000552,Solace Budget,Sports,Solace,190.22,2.85
+P000553,Zenith Rate,Pet Supplies,Zenith,132.7,3.9
+P000554,Everest National,Beauty,Everest,157.02,3.37
+P000555,Acme Of,Electronics,Acme,1407.61,2.52
+P000556,Solace Guess,Books,Solace,54.93,3.9
+P000557,Orion And,Sports,Orion,167.07,2.73
+P000558,Nimbus Watch,Toys,Nimbus,61.71,3.57
+P000559,Zenith Hope,Sports,Zenith,59.17,4.12
+P000560,Everest End,Toys,Everest,16.86,2.9
+P000561,Nimbus Hospital,Toys,Nimbus,95.02,4.05
+P000562,Willow Exist,Clothing,Willow,23.79,3.15
+P000563,Willow History,Beauty,Willow,101.93,4.2
+P000564,Zenith Conference,Home & Kitchen,Zenith,99.23,3.48
+P000565,Everest High,Home & Kitchen,Everest,340.5,3.52
+P000566,Nimbus Himself,Home & Kitchen,Nimbus,221.26,3.39
+P000567,Orion Democrat,Home & Kitchen,Orion,190.38,2.9
+P000568,Orion Interest,Groceries,Orion,16.79,3.95
+P000569,Zenith Control,Electronics,Zenith,925.17,4.05
+P000570,Astra Where,Automotive,Astra,108.5,2.68
+P000571,Pulse Site,Books,Pulse,40.7,3.58
+P000572,GreenLeaf Score,Pet Supplies,GreenLeaf,58.41,2.99
+P000573,Harbor Those,Home & Kitchen,Harbor,72.45,2.69
+P000574,Astra Computer,Beauty,Astra,121.03,2.74
+P000575,Pulse Or,Automotive,Pulse,338.0,4.42
+P000576,Zenith Air,Pet Supplies,Zenith,9.8,4.48
+P000577,NeoTech Peace,Books,NeoTech,19.22,2.53
+P000578,Nimbus Development,Home & Kitchen,Nimbus,390.19,2.59
+P000579,Zenith Look,Groceries,Zenith,7.56,3.63
+P000580,Solace His,Beauty,Solace,134.99,4.43
+P000581,Nimbus You,Sports,Nimbus,307.54,3.12
+P000582,Everest Beautiful,Home & Kitchen,Everest,318.63,3.86
+P000583,Zenith Event,Beauty,Zenith,137.49,4.85
+P000584,Astra Bill,Books,Astra,85.22,2.9
+P000585,Solace Tough,Home & Kitchen,Solace,44.29,4.44
+P000586,Acme Action,Home & Kitchen,Acme,66.03,4.64
+P000587,Zenith Friend,Books,Zenith,15.87,3.92
+P000588,Everest She,Pet Supplies,Everest,19.35,3.18
+P000589,Astra Next,Toys,Astra,88.66,4.86
+P000590,NeoTech Protect,Beauty,NeoTech,13.34,2.68
+P000591,GreenLeaf Pull,Books,GreenLeaf,55.44,4.65
+P000592,Astra Receive,Electronics,Astra,320.65,4.2
+P000593,Willow Military,Books,Willow,82.84,4.79
+P000594,Zenith Commercial,Toys,Zenith,104.27,4.35
+P000595,GreenLeaf History,Books,GreenLeaf,100.62,4.29
+P000596,Everest Example,Beauty,Everest,29.5,3.2
+P000597,Acme Consumer,Groceries,Acme,13.5,4.72
+P000598,Nimbus Pass,Pet Supplies,Nimbus,4.68,4.78
+P000599,Nimbus Analysis,Groceries,Nimbus,11.71,4.41
+P000600,Solace Speak,Beauty,Solace,93.51,2.93
+P000601,Acme Manage,Sports,Acme,343.78,3.5
+P000602,Nimbus Word,Toys,Nimbus,52.18,4.75
+P000603,Zenith Example,Sports,Zenith,360.29,2.79
+P000604,Pulse Economy,Pet Supplies,Pulse,113.44,4.4
+P000605,Zenith Dog,Clothing,Zenith,83.17,4.32
+P000606,Everest Since,Clothing,Everest,138.24,4.74
+P000607,Everest Short,Groceries,Everest,9.32,4.06
+P000608,GreenLeaf Visit,Toys,GreenLeaf,42.74,4.89
+P000609,Zenith Nation,Books,Zenith,42.5,4.81
+P000610,GreenLeaf Side,Home & Kitchen,GreenLeaf,101.29,2.55
+P000611,Astra Production,Beauty,Astra,108.27,2.8
+P000612,Nimbus Successful,Pet Supplies,Nimbus,92.36,4.59
+P000613,Pulse Physical,Automotive,Pulse,300.24,2.83
+P000614,Solace Car,Clothing,Solace,135.38,3.3
+P000615,NeoTech Stuff,Home & Kitchen,NeoTech,93.1,3.07
+P000616,Acme Indeed,Toys,Acme,28.51,4.48
+P000617,Astra Free,Beauty,Astra,45.28,2.5
+P000618,Harbor Race,Clothing,Harbor,182.11,3.1
+P000619,GreenLeaf Idea,Electronics,GreenLeaf,279.09,3.32
+P000620,Orion Consider,Groceries,Orion,9.49,2.85
+P000621,Astra Daughter,Toys,Astra,7.92,4.63
+P000622,GreenLeaf Call,Electronics,GreenLeaf,865.55,3.91
+P000623,Pulse Pass,Books,Pulse,52.95,3.06
+P000624,Harbor Defense,Groceries,Harbor,29.41,4.42
+P000625,Acme Pass,Toys,Acme,142.94,4.72
+P000626,NeoTech Practice,Home & Kitchen,NeoTech,59.97,4.26
+P000627,Pulse Claim,Toys,Pulse,45.74,3.09
+P000628,Astra Small,Electronics,Astra,612.23,4.58
+P000629,Willow A,Sports,Willow,210.39,3.12
+P000630,Harbor Audience,Pet Supplies,Harbor,104.55,3.79
+P000631,Acme Give,Sports,Acme,150.4,2.74
+P000632,Solace Show,Automotive,Solace,874.11,3.87
+P000633,Nimbus Seven,Beauty,Nimbus,32.11,2.82
+P000634,GreenLeaf Argue,Clothing,GreenLeaf,43.85,2.52
+P000635,Acme Provide,Books,Acme,14.99,3.14
+P000636,GreenLeaf Save,Automotive,GreenLeaf,94.4,3.78
+P000637,Nimbus Everything,Pet Supplies,Nimbus,4.87,3.47
+P000638,Everest Beautiful,Toys,Everest,76.4,3.45
+P000639,GreenLeaf Century,Pet Supplies,GreenLeaf,64.23,3.08
+P000640,Zenith Rise,Automotive,Zenith,130.31,3.03
+P000641,Everest Benefit,Clothing,Everest,86.47,2.58
+P000642,Acme Group,Electronics,Acme,1816.28,3.65
+P000643,Willow Age,Clothing,Willow,105.35,4.41
+P000644,NeoTech Investment,Automotive,NeoTech,293.47,2.86
+P000645,Everest Try,Beauty,Everest,63.98,3.33
+P000646,Zenith Study,Books,Zenith,19.76,4.09
+P000647,Pulse Off,Books,Pulse,26.05,3.84
+P000648,Astra Federal,Pet Supplies,Astra,6.52,2.79
+P000649,Pulse Six,Toys,Pulse,27.91,3.7
+P000650,Everest Parent,Sports,Everest,235.46,4.24
+P000651,Solace Option,Automotive,Solace,926.15,3.53
+P000652,Pulse Wait,Clothing,Pulse,76.67,3.2
+P000653,Orion Coach,Electronics,Orion,649.28,3.41
+P000654,Pulse Run,Toys,Pulse,20.06,3.74
+P000655,Astra Strong,Beauty,Astra,195.39,2.99
+P000656,Nimbus Sell,Sports,Nimbus,165.03,2.72
+P000657,Willow Student,Pet Supplies,Willow,23.33,3.47
+P000658,Nimbus Radio,Books,Nimbus,60.39,2.73
+P000659,Harbor Strong,Automotive,Harbor,501.37,3.5
+P000660,Orion Red,Automotive,Orion,638.51,4.8
+P000661,Acme Black,Toys,Acme,10.61,4.03
+P000662,Pulse For,Pet Supplies,Pulse,71.4,2.88
+P000663,Solace Party,Sports,Solace,89.02,2.81
+P000664,Harbor Size,Automotive,Harbor,675.42,3.75
+P000665,Zenith Hotel,Clothing,Zenith,76.18,3.96
+P000666,Harbor By,Electronics,Harbor,367.54,3.72
+P000667,Harbor Than,Home & Kitchen,Harbor,319.47,4.81
+P000668,Nimbus Culture,Clothing,Nimbus,168.02,3.77
+P000669,Acme Personal,Toys,Acme,36.42,4.88
+P000670,GreenLeaf Evidence,Pet Supplies,GreenLeaf,79.6,3.87
+P000671,Solace Treat,Toys,Solace,84.7,3.59
+P000672,Pulse Yeah,Automotive,Pulse,370.64,3.87
+P000673,Orion Structure,Sports,Orion,224.01,2.63
+P000674,GreenLeaf Seem,Pet Supplies,GreenLeaf,21.11,3.85
+P000675,Everest Side,Sports,Everest,192.22,4.47
+P000676,Acme Push,Beauty,Acme,21.12,2.85
+P000677,Astra Cost,Pet Supplies,Astra,17.6,3.85
+P000678,Zenith Whole,Toys,Zenith,152.1,3.14
+P000679,Orion Clearly,Automotive,Orion,496.78,2.52
+P000680,Harbor Investment,Automotive,Harbor,114.54,3.97
+P000681,Acme Keep,Electronics,Acme,1708.2,2.93
+P000682,Nimbus Stage,Automotive,Nimbus,541.92,3.94
+P000683,Orion Paper,Toys,Orion,15.22,4.29
+P000684,GreenLeaf Reveal,Groceries,GreenLeaf,26.34,3.76
+P000685,Pulse Range,Automotive,Pulse,113.14,4.81
+P000686,Willow Bring,Clothing,Willow,29.92,4.3
+P000687,Everest Particularly,Sports,Everest,158.55,3.24
+P000688,Acme Them,Pet Supplies,Acme,27.23,2.63
+P000689,Nimbus Morning,Groceries,Nimbus,18.5,2.68
+P000690,NeoTech Interesting,Home & Kitchen,NeoTech,368.82,3.32
+P000691,GreenLeaf Concern,Groceries,GreenLeaf,3.96,4.89
+P000692,Acme Trip,Toys,Acme,75.81,2.79
+P000693,GreenLeaf Job,Groceries,GreenLeaf,1.11,2.84
+P000694,Orion Even,Home & Kitchen,Orion,318.23,2.75
+P000695,Harbor Action,Beauty,Harbor,35.1,4.79
+P000696,Solace Glass,Automotive,Solace,110.1,4.54
+P000697,Solace Ready,Electronics,Solace,1176.0,3.95
+P000698,Everest Represent,Pet Supplies,Everest,48.4,2.72
+P000699,Nimbus Politics,Home & Kitchen,Nimbus,204.47,4.81
+P000700,GreenLeaf Century,Clothing,GreenLeaf,186.13,2.87
+P000701,Astra My,Home & Kitchen,Astra,349.01,3.07
+P000702,GreenLeaf Condition,Electronics,GreenLeaf,667.59,2.8
+P000703,Everest It,Beauty,Everest,26.39,3.97
+P000704,NeoTech Girl,Home & Kitchen,NeoTech,194.49,4.66
+P000705,Zenith Form,Pet Supplies,Zenith,62.05,3.32
+P000706,Solace Situation,Home & Kitchen,Solace,112.22,2.75
+P000707,Astra Another,Toys,Astra,26.0,3.19
+P000708,Nimbus Under,Beauty,Nimbus,208.74,2.9
+P000709,Everest Unit,Sports,Everest,142.68,4.49
+P000710,Zenith Too,Sports,Zenith,110.33,3.26
+P000711,Solace Really,Electronics,Solace,536.33,3.98
+P000712,GreenLeaf Window,Clothing,GreenLeaf,97.46,4.56
+P000713,Harbor Other,Books,Harbor,31.39,4.4
+P000714,Everest Economic,Groceries,Everest,22.55,3.91
+P000715,Astra Style,Books,Astra,49.84,2.56
+P000716,Acme Factor,Electronics,Acme,273.91,4.48
+P000717,Astra Nation,Books,Astra,53.24,4.54
+P000718,Solace Through,Automotive,Solace,384.4,3.56
+P000719,NeoTech Network,Beauty,NeoTech,134.95,3.02
+P000720,GreenLeaf Charge,Home & Kitchen,GreenLeaf,293.24,2.72
+P000721,GreenLeaf Measure,Toys,GreenLeaf,52.92,3.74
+P000722,NeoTech Build,Clothing,NeoTech,104.02,4.57
+P000723,Astra Move,Electronics,Astra,244.36,4.59
+P000724,Zenith Forget,Groceries,Zenith,20.92,4.51
+P000725,Astra Into,Electronics,Astra,412.67,4.55
+P000726,NeoTech Production,Clothing,NeoTech,109.92,3.27
+P000727,Pulse Miss,Beauty,Pulse,133.58,3.13
+P000728,Solace Around,Beauty,Solace,34.0,2.92
+P000729,Orion View,Clothing,Orion,49.66,3.89
+P000730,Everest Miss,Automotive,Everest,570.57,2.92
+P000731,Pulse Treat,Electronics,Pulse,1236.42,4.23
+P000732,NeoTech Receive,Books,NeoTech,52.87,3.17
+P000733,Nimbus Check,Beauty,Nimbus,97.69,4.25
+P000734,Acme Like,Clothing,Acme,86.34,4.58
+P000735,Nimbus City,Automotive,Nimbus,639.96,3.45
+P000736,GreenLeaf The,Home & Kitchen,GreenLeaf,63.08,4.29
+P000737,Zenith Pm,Clothing,Zenith,92.23,4.32
+P000738,Nimbus State,Sports,Nimbus,121.64,4.1
+P000739,Everest Shake,Beauty,Everest,70.13,2.52
+P000740,Orion Mention,Books,Orion,73.39,2.66
+P000741,Nimbus For,Electronics,Nimbus,704.46,2.96
+P000742,Everest Read,Books,Everest,3.69,4.88
+P000743,Harbor Fill,Electronics,Harbor,270.47,3.52
+P000744,Acme Arrive,Pet Supplies,Acme,88.68,4.02
+P000745,Nimbus Today,Electronics,Nimbus,1248.13,3.58
+P000746,Pulse Bad,Toys,Pulse,71.01,2.83
+P000747,Willow Continue,Beauty,Willow,126.37,3.83
+P000748,Willow Remain,Clothing,Willow,128.37,2.86
+P000749,GreenLeaf Authority,Electronics,GreenLeaf,254.08,4.83
+P000750,Astra Leader,Beauty,Astra,44.38,4.56
+P000751,Willow At,Books,Willow,2.72,3.47
+P000752,Pulse Act,Groceries,Pulse,3.57,2.64
+P000753,Harbor Town,Beauty,Harbor,6.75,4.69
+P000754,Acme Information,Electronics,Acme,1511.11,3.88
+P000755,Nimbus Affect,Books,Nimbus,39.34,3.69
+P000756,Solace Resource,Toys,Solace,31.72,2.74
+P000757,Zenith Lead,Toys,Zenith,94.95,4.15
+P000758,NeoTech Guess,Automotive,NeoTech,236.7,4.54
+P000759,Acme Gun,Home & Kitchen,Acme,153.06,4.01
+P000760,Zenith North,Beauty,Zenith,20.41,4.88
+P000761,Willow Perform,Pet Supplies,Willow,57.87,2.57
+P000762,Everest Response,Clothing,Everest,185.46,3.87
+P000763,Everest Network,Groceries,Everest,19.51,2.93
+P000764,Harbor Much,Sports,Harbor,226.24,2.9
+P000765,Everest Show,Toys,Everest,114.03,3.35
+P000766,Pulse Sell,Clothing,Pulse,22.48,4.44
+P000767,Everest Family,Automotive,Everest,327.68,2.61
+P000768,Harbor Wind,Pet Supplies,Harbor,50.78,2.66
+P000769,Orion Above,Electronics,Orion,775.52,3.71
+P000770,Nimbus Size,Pet Supplies,Nimbus,155.4,3.77
+P000771,Solace Somebody,Pet Supplies,Solace,31.43,4.09
+P000772,NeoTech Identify,Pet Supplies,NeoTech,85.27,2.61
+P000773,Astra Page,Beauty,Astra,9.58,2.8
+P000774,Harbor Think,Clothing,Harbor,20.4,4.69
+P000775,Everest Real,Clothing,Everest,69.1,3.82
+P000776,Pulse Study,Clothing,Pulse,41.51,3.81
+P000777,NeoTech Eye,Pet Supplies,NeoTech,27.19,4.64
+P000778,Astra Clearly,Clothing,Astra,56.05,3.65
+P000779,Nimbus Seven,Books,Nimbus,8.89,4.35
+P000780,Nimbus Condition,Toys,Nimbus,42.19,2.56
+P000781,Pulse Bad,Pet Supplies,Pulse,94.61,4.57
+P000782,Harbor None,Pet Supplies,Harbor,35.82,3.56
+P000783,Acme View,Automotive,Acme,134.24,3.39
+P000784,Harbor Bar,Toys,Harbor,49.7,2.63
+P000785,Orion Down,Toys,Orion,111.12,2.82
+P000786,Solace Environmental,Books,Solace,13.24,4.41
+P000787,Acme Attack,Toys,Acme,62.47,2.69
+P000788,Solace Activity,Pet Supplies,Solace,95.98,4.03
+P000789,Zenith Game,Toys,Zenith,87.48,4.25
+P000790,Acme Whether,Automotive,Acme,359.12,3.06
+P000791,Pulse Piece,Books,Pulse,40.14,2.85
+P000792,Zenith Might,Sports,Zenith,228.3,3.99
+P000793,Willow Agree,Clothing,Willow,168.0,3.83
+P000794,NeoTech Nice,Toys,NeoTech,62.1,2.6
+P000795,GreenLeaf News,Books,GreenLeaf,44.55,4.53
+P000796,Acme Bank,Beauty,Acme,26.1,2.66
+P000797,Astra Congress,Toys,Astra,9.98,4.15
+P000798,Solace Discover,Groceries,Solace,26.15,2.8
+P000799,Willow Prove,Automotive,Willow,434.67,4.62
+P000800,Acme Whom,Pet Supplies,Acme,24.98,4.44
+P000801,Everest Voice,Pet Supplies,Everest,31.7,3.86
+P000802,Orion Stand,Clothing,Orion,173.34,3.74
+P000803,GreenLeaf Item,Electronics,GreenLeaf,953.03,3.43
+P000804,Harbor Crime,Toys,Harbor,72.33,2.7
+P000805,Nimbus Standard,Beauty,Nimbus,35.08,3.72
+P000806,Willow Religious,Electronics,Willow,484.18,2.73
+P000807,Nimbus Financial,Electronics,Nimbus,1205.1,3.41
+P000808,Astra Herself,Clothing,Astra,125.02,3.22
+P000809,GreenLeaf Carry,Clothing,GreenLeaf,232.34,3.92
+P000810,Willow Walk,Pet Supplies,Willow,58.46,3.86
+P000811,Orion Listen,Toys,Orion,86.16,4.08
+P000812,Solace Time,Groceries,Solace,24.2,2.8
+P000813,Orion Smile,Clothing,Orion,205.74,2.69
+P000814,Solace Song,Electronics,Solace,680.15,4.11
+P000815,Willow Leader,Home & Kitchen,Willow,408.71,4.76
+P000816,Pulse Author,Toys,Pulse,56.6,4.26
+P000817,Orion Adult,Beauty,Orion,134.54,2.8
+P000818,Willow Indicate,Books,Willow,42.15,3.6
+P000819,Orion Range,Sports,Orion,159.14,3.67
+P000820,Orion Get,Automotive,Orion,974.16,2.51
+P000821,Acme Traditional,Clothing,Acme,166.22,4.44
+P000822,Astra All,Clothing,Astra,36.08,2.58
+P000823,Harbor Today,Clothing,Harbor,247.47,4.21
+P000824,Nimbus Report,Beauty,Nimbus,83.11,4.8
+P000825,Harbor National,Clothing,Harbor,23.92,4.35
+P000826,Acme Mind,Clothing,Acme,26.79,4.38
+P000827,Willow Cell,Books,Willow,52.53,4.29
+P000828,Nimbus Nature,Groceries,Nimbus,8.6,3.42
+P000829,Harbor Art,Beauty,Harbor,111.06,2.69
+P000830,Orion Unit,Toys,Orion,72.45,4.25
+P000831,Zenith Strong,Pet Supplies,Zenith,24.43,3.21
+P000832,NeoTech Able,Groceries,NeoTech,8.06,4.76
+P000833,Acme Option,Home & Kitchen,Acme,63.08,4.32
+P000834,Zenith Need,Electronics,Zenith,479.8,4.64
+P000835,Acme School,Books,Acme,17.57,4.28
+P000836,NeoTech Develop,Books,NeoTech,35.24,2.53
+P000837,Zenith Performance,Pet Supplies,Zenith,81.32,4.0
+P000838,Nimbus These,Clothing,Nimbus,57.65,2.85
+P000839,Harbor Simple,Books,Harbor,67.27,2.64
+P000840,Harbor Probably,Automotive,Harbor,548.83,4.09
+P000841,Pulse Daughter,Pet Supplies,Pulse,34.32,2.52
+P000842,NeoTech Who,Home & Kitchen,NeoTech,239.55,3.9
+P000843,NeoTech Finally,Home & Kitchen,NeoTech,51.57,4.65
+P000844,NeoTech Second,Toys,NeoTech,31.98,3.42
+P000845,Nimbus Whole,Groceries,Nimbus,11.14,4.4
+P000846,Willow Recent,Automotive,Willow,226.36,3.51
+P000847,Acme Year,Home & Kitchen,Acme,165.89,3.57
+P000848,Astra Finally,Clothing,Astra,97.68,2.66
+P000849,Zenith Road,Automotive,Zenith,157.67,3.82
+P000850,GreenLeaf Mean,Clothing,GreenLeaf,60.83,4.88
+P000851,Nimbus Serve,Books,Nimbus,67.08,2.91
+P000852,Pulse Two,Automotive,Pulse,18.23,3.01
+P000853,Everest Cultural,Beauty,Everest,121.17,4.25
+P000854,GreenLeaf Plan,Automotive,GreenLeaf,685.59,2.59
+P000855,Acme Room,Sports,Acme,366.84,3.4
+P000856,Acme Part,Sports,Acme,113.75,4.22
+P000857,Nimbus Present,Pet Supplies,Nimbus,53.5,4.88
+P000858,Harbor City,Clothing,Harbor,185.03,3.02
+P000859,Pulse Decide,Electronics,Pulse,422.22,3.51
+P000860,Everest Deep,Electronics,Everest,264.08,3.06
+P000861,Orion Voice,Toys,Orion,81.52,3.54
+P000862,NeoTech Standard,Sports,NeoTech,119.52,3.42
+P000863,Zenith Glass,Toys,Zenith,110.71,4.12
+P000864,NeoTech Decide,Clothing,NeoTech,168.44,3.48
+P000865,GreenLeaf Image,Sports,GreenLeaf,158.06,4.82
+P000866,Willow Very,Beauty,Willow,74.5,3.08
+P000867,GreenLeaf Everybody,Clothing,GreenLeaf,183.87,3.85
+P000868,Willow Eat,Beauty,Willow,131.16,3.37
+P000869,Harbor Nature,Sports,Harbor,146.17,3.17
+P000870,Orion Thought,Clothing,Orion,132.71,3.32
+P000871,Solace Job,Toys,Solace,15.04,3.16
+P000872,Astra Begin,Sports,Astra,51.33,2.97
+P000873,Harbor Television,Home & Kitchen,Harbor,94.58,4.81
+P000874,Acme American,Electronics,Acme,725.63,2.72
+P000875,Pulse Season,Automotive,Pulse,376.18,4.13
+P000876,Acme Effort,Groceries,Acme,20.23,2.85
+P000877,Willow Commercial,Groceries,Willow,24.09,4.33
+P000878,Orion Thought,Books,Orion,56.03,4.56
+P000879,GreenLeaf Couple,Home & Kitchen,GreenLeaf,134.17,2.8
+P000880,Harbor Gas,Sports,Harbor,401.23,4.36
+P000881,GreenLeaf It,Home & Kitchen,GreenLeaf,441.04,4.56
+P000882,Nimbus Somebody,Sports,Nimbus,215.65,4.55
+P000883,Astra Find,Sports,Astra,139.02,2.95
+P000884,Willow Nation,Pet Supplies,Willow,15.29,4.05
+P000885,Nimbus Whose,Automotive,Nimbus,606.7,4.33
+P000886,Pulse Sea,Automotive,Pulse,886.77,4.79
+P000887,Acme Democratic,Automotive,Acme,670.63,4.14
+P000888,Orion Instead,Home & Kitchen,Orion,29.52,4.5
+P000889,Nimbus Nice,Groceries,Nimbus,9.1,4.56
+P000890,Zenith Factor,Beauty,Zenith,48.64,3.05
+P000891,NeoTech Direction,Groceries,NeoTech,29.68,3.38
+P000892,GreenLeaf Measure,Toys,GreenLeaf,67.1,4.86
+P000893,Astra Worker,Pet Supplies,Astra,87.91,2.67
+P000894,Zenith Baby,Groceries,Zenith,36.53,3.86
+P000895,Harbor Risk,Groceries,Harbor,34.1,3.55
+P000896,NeoTech Later,Toys,NeoTech,78.36,3.0
+P000897,GreenLeaf Fight,Pet Supplies,GreenLeaf,56.26,3.3
+P000898,Zenith Although,Sports,Zenith,116.26,4.42
+P000899,Willow Including,Beauty,Willow,97.78,3.57
+P000900,Pulse Real,Groceries,Pulse,21.1,3.35
+P000901,Willow Back,Sports,Willow,97.59,3.36
+P000902,GreenLeaf Card,Pet Supplies,GreenLeaf,42.91,4.12
+P000903,Pulse Paper,Toys,Pulse,85.46,3.18
+P000904,Nimbus Environment,Toys,Nimbus,47.08,3.97
+P000905,Solace Star,Toys,Solace,32.73,4.6
+P000906,Acme Happy,Beauty,Acme,26.49,4.74
+P000907,NeoTech Building,Pet Supplies,NeoTech,54.46,3.57
+P000908,GreenLeaf A,Electronics,GreenLeaf,462.76,3.31
+P000909,Orion Head,Pet Supplies,Orion,72.71,3.86
+P000910,Orion Group,Electronics,Orion,2337.85,3.44
+P000911,Solace Bit,Books,Solace,72.0,4.19
+P000912,Pulse Manage,Automotive,Pulse,189.79,2.96
+P000913,Orion Sign,Toys,Orion,32.13,4.09
+P000914,Harbor Meeting,Pet Supplies,Harbor,97.63,4.21
+P000915,Solace Subject,Home & Kitchen,Solace,231.62,3.62
+P000916,Acme Radio,Sports,Acme,81.74,3.17
+P000917,Astra Upon,Toys,Astra,20.58,2.83
+P000918,Astra Space,Home & Kitchen,Astra,98.55,4.11
+P000919,Willow Value,Toys,Willow,33.99,2.92
+P000920,Nimbus Girl,Books,Nimbus,65.35,4.7
+P000921,Acme Military,Home & Kitchen,Acme,47.82,4.8
+P000922,Pulse Goal,Home & Kitchen,Pulse,140.3,4.5
+P000923,NeoTech Change,Groceries,NeoTech,6.52,4.04
+P000924,Everest Table,Sports,Everest,122.6,4.79
+P000925,Harbor Size,Books,Harbor,19.35,4.76
+P000926,Zenith He,Home & Kitchen,Zenith,19.4,4.28
+P000927,NeoTech Bring,Electronics,NeoTech,1206.17,3.35
+P000928,Solace Give,Pet Supplies,Solace,55.21,3.43
+P000929,Nimbus Learn,Beauty,Nimbus,69.43,3.92
+P000930,Nimbus Hot,Toys,Nimbus,32.43,3.71
+P000931,Willow Production,Automotive,Willow,273.71,3.34
+P000932,Astra Last,Pet Supplies,Astra,96.95,3.26
+P000933,Pulse Attention,Sports,Pulse,167.45,2.7
+P000934,Orion Network,Pet Supplies,Orion,24.37,2.6
+P000935,Astra City,Pet Supplies,Astra,70.32,3.21
+P000936,Acme Clear,Home & Kitchen,Acme,236.97,3.79
+P000937,Acme Computer,Electronics,Acme,401.3,4.38
+P000938,GreenLeaf Remember,Books,GreenLeaf,83.52,2.52
+P000939,Zenith Now,Pet Supplies,Zenith,42.57,3.87
+P000940,Willow Blood,Automotive,Willow,658.02,3.25
+P000941,Solace Across,Clothing,Solace,25.1,3.23
+P000942,Acme Memory,Clothing,Acme,157.0,4.58
+P000943,Willow Discuss,Clothing,Willow,111.58,4.18
+P000944,GreenLeaf Cut,Clothing,GreenLeaf,20.32,4.3
+P000945,Astra Later,Automotive,Astra,687.01,4.2
+P000946,Everest Modern,Books,Everest,35.56,2.89
+P000947,Harbor Cup,Groceries,Harbor,18.37,2.99
+P000948,Harbor Several,Groceries,Harbor,21.02,2.75
+P000949,Everest Drive,Toys,Everest,19.68,4.12
+P000950,GreenLeaf Current,Automotive,GreenLeaf,654.76,2.55
+P000951,Willow Place,Groceries,Willow,25.48,4.07
+P000952,Nimbus Bag,Beauty,Nimbus,70.34,4.55
+P000953,Everest Century,Sports,Everest,163.08,4.47
+P000954,Harbor Cost,Automotive,Harbor,661.52,3.32
+P000955,Solace So,Sports,Solace,226.85,2.84
+P000956,Harbor Suggest,Pet Supplies,Harbor,61.9,4.15
+P000957,Pulse Consider,Groceries,Pulse,20.31,3.49
+P000958,Pulse Five,Sports,Pulse,78.26,2.57
+P000959,Astra Idea,Beauty,Astra,71.72,3.46
+P000960,Acme South,Groceries,Acme,9.31,2.5
+P000961,Solace Close,Automotive,Solace,698.45,4.55
+P000962,Everest May,Clothing,Everest,274.66,4.23
+P000963,Zenith By,Toys,Zenith,40.92,2.96
+P000964,Everest Some,Groceries,Everest,32.78,2.89
+P000965,Acme Off,Electronics,Acme,295.84,3.93
+P000966,Harbor Buy,Electronics,Harbor,1151.47,4.37
+P000967,Astra Tend,Clothing,Astra,106.52,3.3
+P000968,NeoTech Body,Sports,NeoTech,133.34,3.03
+P000969,Astra A,Toys,Astra,12.65,2.74
+P000970,Acme Art,Pet Supplies,Acme,54.77,2.84
+P000971,Willow Tree,Groceries,Willow,21.25,3.9
+P000972,Orion Style,Beauty,Orion,53.88,3.31
+P000973,Everest Push,Electronics,Everest,1603.75,2.84
+P000974,Everest Unit,Groceries,Everest,18.15,3.12
+P000975,Nimbus Market,Pet Supplies,Nimbus,19.41,4.48
+P000976,Solace Billion,Automotive,Solace,398.82,3.64
+P000977,Pulse Rise,Electronics,Pulse,1131.3,4.25
+P000978,Everest Miss,Groceries,Everest,6.58,4.28
+P000979,Solace Per,Home & Kitchen,Solace,23.87,3.53
+P000980,Acme Behavior,Books,Acme,53.19,3.06
+P000981,Orion Machine,Books,Orion,30.59,3.74
+P000982,NeoTech Agent,Pet Supplies,NeoTech,64.46,4.31
+P000983,Everest Meet,Home & Kitchen,Everest,23.58,4.51
+P000984,Pulse Possible,Home & Kitchen,Pulse,244.36,3.13
+P000985,Zenith Hot,Books,Zenith,43.24,4.03
+P000986,Everest So,Sports,Everest,32.25,4.7
+P000987,Acme Wide,Pet Supplies,Acme,66.46,3.89
+P000988,Astra Purpose,Books,Astra,79.42,4.3
+P000989,GreenLeaf Single,Groceries,GreenLeaf,16.74,3.1
+P000990,Orion Save,Automotive,Orion,66.52,4.48
+P000991,Everest Drug,Clothing,Everest,19.08,4.39
+P000992,Nimbus See,Groceries,Nimbus,10.49,3.98
+P000993,NeoTech Laugh,Electronics,NeoTech,564.72,3.3
+P000994,Harbor Opportunity,Toys,Harbor,27.46,2.82
+P000995,Nimbus Level,Automotive,Nimbus,223.92,2.93
+P000996,Harbor Source,Clothing,Harbor,54.74,4.64
+P000997,Everest Age,Books,Everest,49.76,3.68
+P000998,Acme Cause,Sports,Acme,57.46,4.31
+P000999,Solace Share,Sports,Solace,112.19,3.96
+P001000,Solace Never,Electronics,Solace,443.67,4.2
+P001001,Everest She,Books,Everest,25.73,2.79
+P001002,Harbor Night,Clothing,Harbor,209.1,3.68
+P001003,Willow Peace,Automotive,Willow,676.95,4.22
+P001004,Acme Mention,Pet Supplies,Acme,12.81,3.13
+P001005,Acme Majority,Home & Kitchen,Acme,405.41,3.14
+P001006,Zenith Member,Beauty,Zenith,118.17,3.82
+P001007,Acme Pm,Clothing,Acme,182.33,3.84
+P001008,GreenLeaf Meet,Home & Kitchen,GreenLeaf,438.35,2.53
+P001009,Orion Pull,Sports,Orion,32.46,2.86
+P001010,Willow Interesting,Toys,Willow,69.15,2.83
+P001011,Astra Many,Pet Supplies,Astra,48.22,4.42
+P001012,Acme Him,Electronics,Acme,1290.2,3.86
+P001013,Willow Spring,Automotive,Willow,1047.18,4.4
+P001014,Zenith Appear,Groceries,Zenith,10.78,3.04
+P001015,Pulse Seem,Beauty,Pulse,28.49,2.7
+P001016,Solace Glass,Electronics,Solace,542.86,3.26
+P001017,Orion Late,Sports,Orion,210.15,3.36
+P001018,Astra Yes,Automotive,Astra,80.56,3.8
+P001019,GreenLeaf Whatever,Toys,GreenLeaf,81.68,3.61
+P001020,Acme Miss,Electronics,Acme,917.59,2.58
+P001021,Solace Fund,Beauty,Solace,72.4,2.98
+P001022,GreenLeaf Save,Pet Supplies,GreenLeaf,44.54,2.78
+P001023,Everest Early,Pet Supplies,Everest,93.43,2.86
+P001024,Astra Pull,Electronics,Astra,2338.13,3.47
+P001025,Solace Policy,Sports,Solace,270.77,4.79
+P001026,Harbor Hospital,Clothing,Harbor,168.25,3.89
+P001027,GreenLeaf Visit,Groceries,GreenLeaf,3.42,3.52
+P001028,Harbor Case,Beauty,Harbor,150.45,4.5
+P001029,Zenith Might,Groceries,Zenith,12.31,4.43
+P001030,Acme Figure,Home & Kitchen,Acme,263.8,4.76
+P001031,Solace Group,Pet Supplies,Solace,82.85,4.23
+P001032,GreenLeaf About,Home & Kitchen,GreenLeaf,183.58,4.81
+P001033,Orion Daughter,Toys,Orion,54.61,3.49
+P001034,Nimbus Imagine,Home & Kitchen,Nimbus,15.62,2.78
+P001035,Zenith Different,Toys,Zenith,79.55,2.91
+P001036,Pulse Security,Electronics,Pulse,1075.65,4.86
+P001037,Solace Growth,Home & Kitchen,Solace,130.0,3.53
+P001038,Nimbus Deal,Books,Nimbus,22.47,4.85
+P001039,Nimbus Want,Toys,Nimbus,5.98,2.99
+P001040,Willow Court,Beauty,Willow,22.15,4.13
+P001041,NeoTech Fine,Groceries,NeoTech,17.03,2.87
+P001042,Pulse Degree,Home & Kitchen,Pulse,225.0,3.64
+P001043,NeoTech Opportunity,Clothing,NeoTech,28.05,4.84
+P001044,Nimbus Every,Home & Kitchen,Nimbus,90.82,3.31
+P001045,Pulse Front,Toys,Pulse,41.15,2.71
+P001046,Zenith Lot,Clothing,Zenith,157.61,3.31
+P001047,Pulse But,Pet Supplies,Pulse,49.09,4.58
+P001048,Astra Beyond,Electronics,Astra,871.92,2.95
+P001049,Zenith Their,Electronics,Zenith,1599.98,3.71
+P001050,Acme If,Electronics,Acme,598.07,3.16
+P001051,Nimbus Tonight,Electronics,Nimbus,472.13,2.61
+P001052,NeoTech Customer,Clothing,NeoTech,196.49,3.9
+P001053,NeoTech Market,Beauty,NeoTech,108.8,2.79
+P001054,Orion Rate,Groceries,Orion,24.61,4.77
+P001055,Harbor Wonder,Clothing,Harbor,123.01,4.87
+P001056,Willow Around,Beauty,Willow,32.02,4.42
+P001057,Acme Up,Automotive,Acme,538.47,4.42
+P001058,Nimbus Raise,Home & Kitchen,Nimbus,98.25,4.53
+P001059,Harbor Third,Beauty,Harbor,64.95,3.38
+P001060,Zenith Structure,Home & Kitchen,Zenith,307.27,4.85
+P001061,Pulse Eight,Automotive,Pulse,297.23,3.71
+P001062,Acme Paper,Sports,Acme,90.37,2.67
+P001063,GreenLeaf Happen,Groceries,GreenLeaf,27.14,3.06
+P001064,Zenith Enter,Automotive,Zenith,260.64,3.9
+P001065,Zenith Way,Toys,Zenith,51.94,4.44
+P001066,Nimbus Time,Home & Kitchen,Nimbus,154.29,3.61
+P001067,GreenLeaf More,Sports,GreenLeaf,98.53,3.36
+P001068,Zenith Decade,Groceries,Zenith,19.97,3.65
+P001069,Nimbus Cost,Electronics,Nimbus,250.79,4.19
+P001070,Harbor Which,Home & Kitchen,Harbor,152.24,3.22
+P001071,Willow Protect,Electronics,Willow,704.13,3.31
+P001072,Harbor Foreign,Automotive,Harbor,68.33,4.17
+P001073,Everest Own,Beauty,Everest,31.17,2.56
+P001074,Solace Civil,Automotive,Solace,160.18,2.96
+P001075,Harbor Describe,Books,Harbor,37.33,2.57
+P001076,Pulse Take,Automotive,Pulse,139.06,2.85
+P001077,Zenith Large,Clothing,Zenith,114.4,2.88
+P001078,Astra Likely,Automotive,Astra,687.51,3.9
+P001079,Orion Page,Home & Kitchen,Orion,249.07,3.14
+P001080,Acme Wrong,Clothing,Acme,18.31,4.63
+P001081,Astra Act,Electronics,Astra,985.35,2.77
+P001082,Orion Night,Groceries,Orion,1.78,3.12
+P001083,Astra College,Home & Kitchen,Astra,364.29,3.68
+P001084,Zenith Black,Automotive,Zenith,111.61,4.22
+P001085,Harbor Avoid,Groceries,Harbor,16.71,3.4
+P001086,GreenLeaf Course,Groceries,GreenLeaf,14.44,3.81
+P001087,Solace Let,Clothing,Solace,220.52,2.58
+P001088,Everest Church,Beauty,Everest,58.95,2.6
+P001089,NeoTech Person,Books,NeoTech,19.14,3.04
+P001090,Solace Democratic,Toys,Solace,74.93,3.45
+P001091,Solace Owner,Home & Kitchen,Solace,215.69,4.31
+P001092,Orion Enter,Clothing,Orion,20.74,3.08
+P001093,Harbor By,Groceries,Harbor,21.91,3.86
+P001094,Astra Type,Groceries,Astra,11.95,3.52
+P001095,Willow Firm,Beauty,Willow,49.87,3.58
+P001096,Acme Idea,Sports,Acme,259.72,3.35
+P001097,Astra Son,Sports,Astra,223.08,3.56
+P001098,Willow Choose,Pet Supplies,Willow,15.26,4.46
+P001099,GreenLeaf List,Books,GreenLeaf,33.06,4.49
+P001100,Nimbus Investment,Sports,Nimbus,322.77,3.8
+P001101,Harbor Another,Beauty,Harbor,152.38,3.27
+P001102,GreenLeaf Computer,Toys,GreenLeaf,8.2,3.02
+P001103,GreenLeaf Old,Books,GreenLeaf,117.92,4.09
+P001104,Orion Vote,Toys,Orion,85.64,4.4
+P001105,Pulse A,Sports,Pulse,17.57,3.48
+P001106,Pulse Result,Electronics,Pulse,1071.83,4.22
+P001107,Zenith Fly,Pet Supplies,Zenith,13.03,4.78
+P001108,Harbor Decade,Sports,Harbor,12.42,4.14
+P001109,Acme So,Toys,Acme,33.05,2.98
+P001110,Zenith Again,Toys,Zenith,143.9,4.4
+P001111,Pulse Indeed,Beauty,Pulse,103.67,3.6
+P001112,Willow Sing,Groceries,Willow,22.26,2.93
+P001113,Pulse Interesting,Electronics,Pulse,1663.12,3.86
+P001114,Pulse Start,Home & Kitchen,Pulse,85.79,3.53
+P001115,Nimbus Eat,Books,Nimbus,16.35,4.52
+P001116,Harbor Movie,Home & Kitchen,Harbor,305.0,3.31
+P001117,Astra Water,Automotive,Astra,894.8,2.58
+P001118,Willow Attorney,Sports,Willow,96.96,3.75
+P001119,Nimbus Minute,Beauty,Nimbus,74.08,3.62
+P001120,Nimbus Lose,Toys,Nimbus,92.24,3.87
+P001121,Orion Occur,Electronics,Orion,1003.65,3.42
+P001122,Nimbus At,Beauty,Nimbus,13.85,2.56
+P001123,NeoTech May,Groceries,NeoTech,5.79,4.63
+P001124,Solace We,Groceries,Solace,5.5,4.44
+P001125,Harbor Against,Electronics,Harbor,1181.64,3.46
+P001126,NeoTech Style,Books,NeoTech,50.15,4.34
+P001127,Everest Design,Clothing,Everest,150.71,4.12
+P001128,Willow Responsibility,Electronics,Willow,338.49,2.79
+P001129,Harbor Two,Home & Kitchen,Harbor,305.16,3.24
+P001130,Orion Writer,Beauty,Orion,98.52,4.8
+P001131,NeoTech Better,Beauty,NeoTech,127.21,3.98
+P001132,Willow Even,Automotive,Willow,694.64,3.09
+P001133,GreenLeaf High,Electronics,GreenLeaf,521.0,3.4
+P001134,NeoTech Son,Beauty,NeoTech,145.87,4.35
+P001135,NeoTech Team,Home & Kitchen,NeoTech,82.68,3.57
+P001136,Nimbus Bank,Electronics,Nimbus,244.29,3.5
+P001137,NeoTech More,Home & Kitchen,NeoTech,170.53,4.82
+P001138,Orion Push,Pet Supplies,Orion,65.95,4.56
+P001139,Willow Past,Home & Kitchen,Willow,264.04,4.71
+P001140,NeoTech Yourself,Sports,NeoTech,124.59,4.6
+P001141,Zenith Begin,Electronics,Zenith,363.12,2.72
+P001142,Nimbus Last,Home & Kitchen,Nimbus,114.57,4.33
+P001143,Orion Number,Electronics,Orion,1338.53,3.7
+P001144,GreenLeaf Know,Clothing,GreenLeaf,96.51,3.72
+P001145,Zenith Media,Home & Kitchen,Zenith,178.31,3.05
+P001146,Harbor Return,Electronics,Harbor,697.07,4.69
+P001147,Orion Position,Home & Kitchen,Orion,62.75,4.82
+P001148,Solace Hundred,Pet Supplies,Solace,51.8,4.4
+P001149,Nimbus Military,Automotive,Nimbus,247.43,3.54
+P001150,Zenith Begin,Beauty,Zenith,98.79,2.96
+P001151,Zenith Sit,Pet Supplies,Zenith,32.07,4.52
+P001152,Pulse Drop,Clothing,Pulse,79.18,3.69
+P001153,NeoTech Car,Home & Kitchen,NeoTech,19.55,4.17
+P001154,Acme Two,Beauty,Acme,22.62,3.96
+P001155,Solace School,Clothing,Solace,175.11,4.06
+P001156,Harbor Hear,Books,Harbor,96.56,3.87
+P001157,Orion Well,Groceries,Orion,20.26,4.21
+P001158,Nimbus When,Books,Nimbus,18.38,3.69
+P001159,Acme Institution,Books,Acme,18.26,2.67
+P001160,Everest Compare,Sports,Everest,88.97,2.5
+P001161,Willow Stuff,Beauty,Willow,12.66,3.63
+P001162,Zenith Price,Books,Zenith,99.26,4.81
+P001163,Everest Child,Home & Kitchen,Everest,103.97,3.81
+P001164,GreenLeaf Rule,Clothing,GreenLeaf,18.65,3.46
+P001165,Willow Never,Groceries,Willow,12.97,4.89
+P001166,Solace Peace,Sports,Solace,61.86,4.26
+P001167,Everest Stock,Sports,Everest,294.72,3.44
+P001168,Solace Cell,Home & Kitchen,Solace,416.24,2.98
+P001169,Solace Education,Sports,Solace,180.9,3.95
+P001170,Acme Recently,Groceries,Acme,30.76,4.58
+P001171,Zenith Memory,Clothing,Zenith,208.75,3.46
+P001172,NeoTech Attack,Home & Kitchen,NeoTech,179.46,3.63
+P001173,Willow Reach,Electronics,Willow,815.47,4.7
+P001174,Zenith Wait,Sports,Zenith,30.81,3.43
+P001175,Orion Among,Toys,Orion,22.4,3.78
+P001176,Orion Increase,Electronics,Orion,610.48,3.45
+P001177,Harbor Ability,Sports,Harbor,107.38,2.53
+P001178,Solace Discuss,Sports,Solace,237.68,2.98
+P001179,Astra Player,Groceries,Astra,1.72,2.6
+P001180,Astra Question,Groceries,Astra,21.71,3.84
+P001181,Pulse Throughout,Pet Supplies,Pulse,66.6,3.77
+P001182,Pulse Road,Beauty,Pulse,129.7,3.48
+P001183,Nimbus Word,Electronics,Nimbus,1835.32,3.51
+P001184,Acme Fill,Toys,Acme,64.63,4.24
+P001185,Harbor Pick,Clothing,Harbor,21.74,3.28
+P001186,Solace Commercial,Groceries,Solace,26.74,2.63
+P001187,Zenith Turn,Groceries,Zenith,17.65,3.89
+P001188,Astra Study,Toys,Astra,61.06,3.4
+P001189,Acme Four,Groceries,Acme,9.98,2.74
+P001190,Orion Once,Home & Kitchen,Orion,157.51,3.0
+P001191,Pulse Direction,Toys,Pulse,43.64,4.56
+P001192,Pulse Street,Home & Kitchen,Pulse,73.31,2.94
+P001193,Zenith Team,Pet Supplies,Zenith,26.76,4.08
+P001194,Solace Part,Pet Supplies,Solace,15.63,3.43
+P001195,Astra Can,Groceries,Astra,16.88,3.01
+P001196,Orion Near,Home & Kitchen,Orion,283.47,4.24
+P001197,Harbor Allow,Electronics,Harbor,689.05,3.25
+P001198,Everest Memory,Pet Supplies,Everest,58.11,2.54
+P001199,Willow Early,Toys,Willow,5.53,2.6
+P001200,Nimbus Us,Toys,Nimbus,134.65,3.88
+P001201,Astra Cell,Beauty,Astra,37.71,4.2
+P001202,Zenith Anyone,Pet Supplies,Zenith,63.61,4.09
+P001203,Harbor Would,Home & Kitchen,Harbor,97.36,3.91
+P001204,NeoTech Plant,Automotive,NeoTech,88.34,3.55
+P001205,Orion Player,Home & Kitchen,Orion,393.93,4.22
+P001206,GreenLeaf Or,Automotive,GreenLeaf,531.53,4.08
+P001207,Zenith War,Beauty,Zenith,28.52,3.88
+P001208,Pulse All,Automotive,Pulse,600.89,4.83
+P001209,Willow Radio,Pet Supplies,Willow,8.24,3.27
+P001210,GreenLeaf Realize,Books,GreenLeaf,66.98,3.34
+P001211,Pulse Major,Home & Kitchen,Pulse,9.28,2.64
+P001212,Harbor Be,Clothing,Harbor,49.21,2.51
+P001213,Nimbus Enough,Sports,Nimbus,12.47,4.8
+P001214,Nimbus Nice,Toys,Nimbus,55.11,2.62
+P001215,GreenLeaf No,Pet Supplies,GreenLeaf,59.93,4.48
+P001216,Solace Well,Groceries,Solace,7.42,3.43
+P001217,Everest Really,Beauty,Everest,96.55,3.88
+P001218,NeoTech Food,Groceries,NeoTech,2.48,2.9
+P001219,Pulse Skin,Pet Supplies,Pulse,28.04,3.17
+P001220,Willow Rich,Electronics,Willow,697.76,4.79
+P001221,NeoTech Job,Clothing,NeoTech,79.93,4.51
+P001222,NeoTech Knowledge,Books,NeoTech,38.21,2.57
+P001223,GreenLeaf Age,Books,GreenLeaf,46.87,4.18
+P001224,Harbor Last,Toys,Harbor,108.97,3.62
+P001225,Orion Begin,Automotive,Orion,36.52,2.87
+P001226,Willow Surface,Home & Kitchen,Willow,188.55,3.88
+P001227,GreenLeaf System,Electronics,GreenLeaf,1260.68,4.44
+P001228,Solace Color,Groceries,Solace,3.13,3.8
+P001229,Willow Experience,Electronics,Willow,1477.45,4.21
+P001230,Orion Season,Toys,Orion,12.46,2.69
+P001231,Solace All,Sports,Solace,168.03,2.74
+P001232,NeoTech Great,Pet Supplies,NeoTech,35.41,4.7
+P001233,GreenLeaf Into,Toys,GreenLeaf,49.59,3.96
+P001234,Nimbus Morning,Sports,Nimbus,488.59,3.68
+P001235,Everest Manage,Groceries,Everest,11.4,4.28
+P001236,NeoTech Huge,Home & Kitchen,NeoTech,204.78,2.72
+P001237,Solace Agree,Groceries,Solace,44.83,2.68
+P001238,Pulse Positive,Clothing,Pulse,166.04,3.79
+P001239,Zenith Environmental,Groceries,Zenith,15.79,3.79
+P001240,Nimbus Many,Home & Kitchen,Nimbus,470.89,4.33
+P001241,Harbor Foot,Sports,Harbor,14.81,3.0
+P001242,Astra Collection,Clothing,Astra,99.47,3.84
+P001243,GreenLeaf Design,Sports,GreenLeaf,148.87,2.72
+P001244,Zenith Reduce,Books,Zenith,25.57,4.53
+P001245,Harbor Accept,Beauty,Harbor,71.41,3.96
+P001246,Zenith Husband,Toys,Zenith,31.98,4.64
+P001247,Nimbus When,Clothing,Nimbus,67.54,3.58
+P001248,GreenLeaf Happen,Electronics,GreenLeaf,1233.14,2.86
+P001249,GreenLeaf Even,Books,GreenLeaf,48.72,3.41
+P001250,Harbor Thought,Toys,Harbor,14.59,4.51
+P001251,NeoTech Truth,Home & Kitchen,NeoTech,270.85,3.67
+P001252,GreenLeaf Reveal,Pet Supplies,GreenLeaf,76.91,3.01
+P001253,Zenith Red,Books,Zenith,42.45,4.3
+P001254,Nimbus Job,Toys,Nimbus,71.59,3.67
+P001255,Harbor Discuss,Groceries,Harbor,37.59,2.93
+P001256,Astra Who,Books,Astra,46.57,2.93
+P001257,Nimbus Small,Automotive,Nimbus,854.8,3.66
+P001258,Nimbus Our,Pet Supplies,Nimbus,97.42,2.52
+P001259,Solace How,Electronics,Solace,490.48,4.24
+P001260,Willow Add,Automotive,Willow,337.06,4.77
+P001261,Willow World,Electronics,Willow,1411.81,2.63
+P001262,NeoTech Reveal,Automotive,NeoTech,229.68,2.97
+P001263,Acme President,Toys,Acme,80.87,4.7
+P001264,Orion Western,Home & Kitchen,Orion,97.57,2.84
+P001265,Harbor May,Clothing,Harbor,59.96,3.91
+P001266,NeoTech Participant,Home & Kitchen,NeoTech,45.32,3.78
+P001267,Nimbus Guess,Sports,Nimbus,112.28,3.31
+P001268,NeoTech Clearly,Toys,NeoTech,50.17,3.73
+P001269,Nimbus Start,Toys,Nimbus,40.03,3.08
+P001270,Everest Raise,Pet Supplies,Everest,133.78,3.47
+P001271,Solace High,Books,Solace,83.6,3.22
+P001272,Willow Wall,Beauty,Willow,123.68,3.45
+P001273,NeoTech Heart,Books,NeoTech,9.74,3.1
+P001274,Nimbus Court,Beauty,Nimbus,83.98,4.17
+P001275,Nimbus Bad,Toys,Nimbus,77.34,2.56
+P001276,Harbor Forget,Clothing,Harbor,39.32,3.35
+P001277,NeoTech Toward,Sports,NeoTech,422.63,2.81
+P001278,Willow Community,Electronics,Willow,1194.94,4.65
+P001279,GreenLeaf Size,Toys,GreenLeaf,64.27,3.28
+P001280,Orion Why,Beauty,Orion,98.92,2.83
+P001281,Solace Loss,Pet Supplies,Solace,43.98,4.69
+P001282,Solace Movie,Beauty,Solace,62.28,4.79
+P001283,Orion Hit,Clothing,Orion,187.33,3.04
+P001284,Pulse Can,Beauty,Pulse,153.71,3.81
+P001285,Zenith Wrong,Beauty,Zenith,29.9,3.18
+P001286,NeoTech Clear,Pet Supplies,NeoTech,63.38,4.55
+P001287,Harbor Forward,Clothing,Harbor,126.29,3.7
+P001288,Pulse Politics,Books,Pulse,40.6,4.75
+P001289,Zenith About,Pet Supplies,Zenith,66.74,4.38
+P001290,Solace And,Clothing,Solace,108.57,4.07
+P001291,Zenith Sign,Beauty,Zenith,56.18,3.55
+P001292,Astra Measure,Automotive,Astra,763.65,2.77
+P001293,Zenith Without,Toys,Zenith,9.53,3.3
+P001294,Solace But,Toys,Solace,45.66,4.28
+P001295,Acme Answer,Clothing,Acme,80.66,4.68
+P001296,Harbor Pick,Toys,Harbor,14.7,3.58
+P001297,Nimbus Property,Toys,Nimbus,92.89,4.07
+P001298,Astra Moment,Toys,Astra,92.91,4.87
+P001299,Everest College,Toys,Everest,84.37,4.85
+P001300,Harbor Mrs,Toys,Harbor,60.63,4.23
+P001301,Astra Without,Clothing,Astra,114.51,2.87
+P001302,Astra Establish,Sports,Astra,13.29,4.64
+P001303,GreenLeaf Be,Clothing,GreenLeaf,54.36,4.34
+P001304,Solace Miss,Automotive,Solace,375.91,4.32
+P001305,Nimbus Drug,Automotive,Nimbus,864.19,2.69
+P001306,Orion Identify,Books,Orion,31.28,3.82
+P001307,Zenith Choice,Home & Kitchen,Zenith,373.9,4.12
+P001308,Willow Turn,Sports,Willow,38.14,4.47
+P001309,Solace Most,Toys,Solace,52.93,4.32
+P001310,Solace Throw,Home & Kitchen,Solace,195.3,3.53
+P001311,Zenith Argue,Toys,Zenith,46.89,3.49
+P001312,Harbor Group,Sports,Harbor,208.6,3.97
+P001313,Harbor Different,Pet Supplies,Harbor,28.38,4.29
+P001314,Orion Response,Beauty,Orion,81.49,3.94
+P001315,Everest Well,Books,Everest,16.45,3.39
+P001316,Nimbus Run,Electronics,Nimbus,1077.43,3.79
+P001317,Everest System,Home & Kitchen,Everest,13.72,2.74
+P001318,Orion Skill,Beauty,Orion,66.97,4.66
+P001319,Solace Change,Toys,Solace,65.6,2.88
+P001320,Pulse Five,Electronics,Pulse,828.09,3.4
+P001321,Willow Data,Sports,Willow,27.24,3.32
+P001322,GreenLeaf Mr,Beauty,GreenLeaf,56.87,3.19
+P001323,GreenLeaf Analysis,Books,GreenLeaf,50.42,3.4
+P001324,GreenLeaf Approach,Groceries,GreenLeaf,23.32,2.69
+P001325,Willow Fill,Groceries,Willow,13.34,2.88
+P001326,GreenLeaf Interview,Clothing,GreenLeaf,61.39,4.0
+P001327,Acme Process,Groceries,Acme,3.61,4.59
+P001328,NeoTech Act,Toys,NeoTech,31.04,2.57
+P001329,Willow Mean,Sports,Willow,168.63,3.55
+P001330,NeoTech Hair,Pet Supplies,NeoTech,65.37,4.42
+P001331,Harbor Professor,Groceries,Harbor,34.59,3.43
+P001332,Orion Moment,Books,Orion,27.08,3.17
+P001333,Nimbus Black,Books,Nimbus,25.77,3.56
+P001334,Solace Personal,Beauty,Solace,156.31,3.49
+P001335,Solace Including,Home & Kitchen,Solace,386.33,4.21
+P001336,Solace Section,Home & Kitchen,Solace,260.9,2.76
+P001337,NeoTech Occur,Toys,NeoTech,84.48,4.18
+P001338,Astra Key,Beauty,Astra,54.86,4.06
+P001339,Orion Break,Automotive,Orion,535.69,2.63
+P001340,GreenLeaf Likely,Pet Supplies,GreenLeaf,70.7,4.54
+P001341,Harbor Visit,Automotive,Harbor,741.92,3.2
+P001342,Orion Young,Beauty,Orion,34.69,4.4
+P001343,GreenLeaf Just,Home & Kitchen,GreenLeaf,326.01,4.64
+P001344,Orion Second,Pet Supplies,Orion,103.47,2.72
+P001345,Nimbus List,Pet Supplies,Nimbus,114.32,4.22
+P001346,Everest Also,Electronics,Everest,921.0,3.15
+P001347,Astra Family,Clothing,Astra,94.95,3.24
+P001348,Astra Early,Books,Astra,54.01,3.58
+P001349,Acme Popular,Beauty,Acme,84.98,2.99
+P001350,Harbor Production,Clothing,Harbor,75.16,3.55
+P001351,GreenLeaf Billion,Pet Supplies,GreenLeaf,40.72,3.4
+P001352,Astra Tend,Beauty,Astra,68.39,3.92
+P001353,Orion Wrong,Automotive,Orion,631.36,3.14
+P001354,Harbor Development,Toys,Harbor,96.63,2.93
+P001355,Harbor Where,Toys,Harbor,62.74,4.76
+P001356,Zenith Center,Toys,Zenith,48.15,2.52
+P001357,Nimbus Task,Groceries,Nimbus,19.99,3.2
+P001358,Orion Film,Books,Orion,54.48,2.84
+P001359,Orion Strategy,Beauty,Orion,100.06,3.63
+P001360,GreenLeaf Say,Pet Supplies,GreenLeaf,43.4,3.59
+P001361,Acme Sense,Beauty,Acme,33.11,4.48
+P001362,Orion Ten,Beauty,Orion,82.69,3.12
+P001363,GreenLeaf Last,Pet Supplies,GreenLeaf,13.6,4.68
+P001364,Acme Modern,Books,Acme,27.65,4.22
+P001365,Willow Store,Beauty,Willow,46.5,3.94
+P001366,Pulse Interesting,Clothing,Pulse,95.81,4.13
+P001367,Orion Theory,Sports,Orion,283.47,3.44
+P001368,Pulse Gas,Books,Pulse,20.06,2.84
+P001369,Harbor Movement,Automotive,Harbor,213.25,3.69
+P001370,Harbor Beat,Clothing,Harbor,38.92,3.94
+P001371,Acme Student,Sports,Acme,173.25,4.44
+P001372,Everest Summer,Beauty,Everest,82.39,4.0
+P001373,Solace Make,Electronics,Solace,815.01,2.56
+P001374,Orion Particularly,Clothing,Orion,92.28,4.35
+P001375,Astra Owner,Electronics,Astra,1993.95,2.52
+P001376,Harbor Few,Pet Supplies,Harbor,63.96,3.96
+P001377,Harbor Month,Groceries,Harbor,22.11,4.59
+P001378,NeoTech Particular,Home & Kitchen,NeoTech,122.6,4.61
+P001379,Willow Pressure,Home & Kitchen,Willow,61.86,4.04
+P001380,Harbor Free,Clothing,Harbor,113.22,3.08
+P001381,Solace Evening,Books,Solace,43.13,4.51
+P001382,Astra Guy,Automotive,Astra,93.21,3.43
+P001383,Everest Professional,Groceries,Everest,19.17,2.69
+P001384,Pulse Few,Clothing,Pulse,15.03,4.77
+P001385,Willow We,Automotive,Willow,710.57,4.02
+P001386,NeoTech Nature,Clothing,NeoTech,181.88,2.89
+P001387,Harbor Success,Sports,Harbor,20.14,4.45
+P001388,Harbor Look,Home & Kitchen,Harbor,164.35,4.44
+P001389,GreenLeaf Sea,Groceries,GreenLeaf,20.84,4.23
+P001390,Willow Position,Automotive,Willow,293.83,3.79
+P001391,Astra Special,Toys,Astra,65.46,4.07
+P001392,NeoTech Civil,Toys,NeoTech,29.34,3.63
+P001393,Willow Several,Automotive,Willow,314.95,3.1
+P001394,GreenLeaf Give,Sports,GreenLeaf,171.06,2.58
+P001395,Everest Dog,Home & Kitchen,Everest,269.98,4.17
+P001396,Nimbus Top,Groceries,Nimbus,21.3,3.85
+P001397,Zenith Town,Electronics,Zenith,513.63,2.94
+P001398,Zenith Believe,Automotive,Zenith,157.95,3.68
+P001399,Nimbus Foreign,Books,Nimbus,40.7,4.62
+P001400,Orion Bag,Beauty,Orion,86.41,4.22
+P001401,Astra Reveal,Books,Astra,49.62,2.69
+P001402,Astra This,Beauty,Astra,121.55,3.59
+P001403,Willow At,Sports,Willow,343.39,2.9
+P001404,Pulse Certainly,Toys,Pulse,95.08,4.74
+P001405,Solace Strong,Toys,Solace,79.25,2.64
+P001406,Acme Far,Books,Acme,10.45,2.74
+P001407,Nimbus Line,Home & Kitchen,Nimbus,218.95,2.87
+P001408,Astra Option,Home & Kitchen,Astra,183.59,3.37
+P001409,Willow Open,Books,Willow,44.71,4.54
+P001410,NeoTech List,Sports,NeoTech,70.68,3.66
+P001411,Astra Support,Clothing,Astra,52.89,3.58
+P001412,Everest Exactly,Home & Kitchen,Everest,318.64,3.09
+P001413,Zenith Part,Pet Supplies,Zenith,55.76,3.56
+P001414,Astra Here,Beauty,Astra,223.69,2.81
+P001415,GreenLeaf Network,Toys,GreenLeaf,29.3,3.71
+P001416,Harbor Improve,Groceries,Harbor,26.31,4.0
+P001417,GreenLeaf Less,Automotive,GreenLeaf,373.48,4.59
+P001418,Zenith Certainly,Books,Zenith,3.45,2.92
+P001419,GreenLeaf Process,Automotive,GreenLeaf,990.68,3.86
+P001420,NeoTech Democrat,Clothing,NeoTech,114.66,2.61
+P001421,Astra Mean,Electronics,Astra,371.46,4.41
+P001422,Solace News,Automotive,Solace,660.72,3.23
+P001423,Astra Avoid,Beauty,Astra,56.11,4.26
+P001424,GreenLeaf Bill,Clothing,GreenLeaf,85.29,4.72
+P001425,Everest Few,Groceries,Everest,11.44,2.9
+P001426,Nimbus Attorney,Home & Kitchen,Nimbus,187.75,2.99
+P001427,Acme Rich,Sports,Acme,238.36,3.04
+P001428,Harbor Somebody,Pet Supplies,Harbor,43.57,3.92
+P001429,Acme Blood,Groceries,Acme,17.5,3.04
+P001430,Astra Benefit,Clothing,Astra,41.44,3.29
+P001431,Pulse Guy,Sports,Pulse,243.43,3.65
+P001432,Nimbus Camera,Automotive,Nimbus,344.62,3.97
+P001433,NeoTech My,Automotive,NeoTech,155.2,2.76
+P001434,Harbor Together,Automotive,Harbor,669.84,3.68
+P001435,Harbor Eye,Books,Harbor,36.92,4.58
+P001436,Zenith Argue,Toys,Zenith,63.88,3.92
+P001437,Solace Hundred,Pet Supplies,Solace,47.35,2.95
+P001438,Zenith Word,Home & Kitchen,Zenith,417.75,2.59
+P001439,Pulse Would,Electronics,Pulse,1221.59,3.51
+P001440,NeoTech Despite,Sports,NeoTech,55.11,4.37
+P001441,Zenith Garden,Books,Zenith,54.22,4.5
+P001442,Harbor Statement,Groceries,Harbor,6.07,3.94
+P001443,Pulse Scene,Books,Pulse,28.43,4.42
+P001444,Harbor Almost,Pet Supplies,Harbor,39.6,2.83
+P001445,GreenLeaf Project,Beauty,GreenLeaf,118.11,4.72
+P001446,Harbor Mother,Toys,Harbor,40.8,3.04
+P001447,Acme May,Beauty,Acme,26.07,4.23
+P001448,Harbor Onto,Electronics,Harbor,1226.78,2.9
+P001449,Pulse Weight,Automotive,Pulse,354.29,4.18
+P001450,Zenith Should,Clothing,Zenith,108.38,2.96
+P001451,Solace Know,Automotive,Solace,598.27,3.72
+P001452,Harbor Significant,Home & Kitchen,Harbor,505.82,2.92
+P001453,Nimbus Or,Home & Kitchen,Nimbus,189.88,2.72
+P001454,Zenith Left,Beauty,Zenith,178.76,4.07
+P001455,Pulse Natural,Home & Kitchen,Pulse,91.33,3.07
+P001456,Willow Service,Sports,Willow,77.63,2.92
+P001457,GreenLeaf Study,Sports,GreenLeaf,58.83,3.33
+P001458,NeoTech Leader,Automotive,NeoTech,29.08,4.44
+P001459,Harbor Much,Pet Supplies,Harbor,30.01,2.59
+P001460,Solace Top,Pet Supplies,Solace,46.12,4.81
+P001461,Willow Pressure,Toys,Willow,83.14,3.54
+P001462,Zenith Happy,Electronics,Zenith,951.69,3.58
+P001463,Harbor Doctor,Books,Harbor,8.44,3.68
+P001464,Pulse Production,Beauty,Pulse,28.37,2.54
+P001465,Astra Happen,Beauty,Astra,111.79,4.21
+P001466,Orion Fund,Beauty,Orion,104.54,3.29
+P001467,Everest Great,Sports,Everest,342.98,4.31
+P001468,NeoTech Town,Automotive,NeoTech,212.1,2.7
+P001469,Orion Method,Clothing,Orion,88.87,2.85
+P001470,Willow Against,Groceries,Willow,7.41,4.13
+P001471,NeoTech Writer,Sports,NeoTech,161.15,3.39
+P001472,Zenith Rate,Toys,Zenith,40.71,3.53
+P001473,Orion Former,Toys,Orion,88.39,3.14
+P001474,Astra Write,Groceries,Astra,11.31,4.39
+P001475,Nimbus Place,Electronics,Nimbus,651.6,3.93
+P001476,Nimbus Sound,Books,Nimbus,22.36,3.87
+P001477,GreenLeaf East,Beauty,GreenLeaf,25.96,3.3
+P001478,Astra Deal,Toys,Astra,109.35,2.53
+P001479,Pulse Pm,Electronics,Pulse,624.52,2.69
+P001480,GreenLeaf Deal,Pet Supplies,GreenLeaf,20.68,4.81
+P001481,Harbor Act,Beauty,Harbor,166.37,4.23
+P001482,Harbor Per,Pet Supplies,Harbor,37.9,4.85
+P001483,Astra Cup,Pet Supplies,Astra,77.99,4.68
+P001484,Astra Key,Electronics,Astra,475.65,3.43
+P001485,Pulse Lose,Electronics,Pulse,850.61,4.58
+P001486,Acme Key,Home & Kitchen,Acme,151.5,3.04
+P001487,Zenith Ago,Books,Zenith,52.1,2.99
+P001488,Zenith Like,Books,Zenith,46.59,3.0
+P001489,Everest Now,Pet Supplies,Everest,40.0,3.23
+P001490,Orion Total,Clothing,Orion,158.04,3.02
+P001491,Zenith Society,Sports,Zenith,153.2,4.47
+P001492,Nimbus Economic,Toys,Nimbus,119.02,4.85
+P001493,Solace Lead,Electronics,Solace,992.56,3.1
+P001494,NeoTech Often,Books,NeoTech,18.45,4.11
+P001495,Acme Soldier,Clothing,Acme,262.79,4.3
+P001496,Astra Cost,Beauty,Astra,52.25,3.32
+P001497,Harbor Power,Electronics,Harbor,944.56,4.16
+P001498,Acme Take,Clothing,Acme,207.25,2.84
+P001499,Orion Follow,Automotive,Orion,598.63,2.85
+P001500,Nimbus Agree,Automotive,Nimbus,746.51,4.75
+P001501,Willow Wind,Books,Willow,17.28,3.84
+P001502,Willow Dark,Pet Supplies,Willow,71.02,3.29
+P001503,NeoTech Interesting,Automotive,NeoTech,126.6,2.94
+P001504,Harbor Return,Electronics,Harbor,1206.27,3.12
+P001505,NeoTech Score,Clothing,NeoTech,142.27,3.54
+P001506,Nimbus Support,Home & Kitchen,Nimbus,186.05,3.07
+P001507,Harbor Thousand,Sports,Harbor,317.38,3.83
+P001508,Pulse Ok,Electronics,Pulse,1016.69,4.32
+P001509,Everest Reach,Beauty,Everest,30.09,3.6
+P001510,GreenLeaf Reduce,Pet Supplies,GreenLeaf,93.58,4.47
+P001511,GreenLeaf Push,Books,GreenLeaf,52.29,3.49
+P001512,Harbor Discover,Books,Harbor,51.45,4.22
+P001513,Zenith Firm,Electronics,Zenith,720.05,3.66
+P001514,NeoTech Into,Toys,NeoTech,61.14,3.64
+P001515,Zenith Reduce,Home & Kitchen,Zenith,40.8,3.99
+P001516,Everest Truth,Beauty,Everest,104.12,3.57
+P001517,GreenLeaf Present,Clothing,GreenLeaf,233.7,4.04
+P001518,Zenith Board,Beauty,Zenith,128.53,2.94
+P001519,Harbor Issue,Clothing,Harbor,130.87,4.32
+P001520,Pulse Chair,Sports,Pulse,205.0,4.43
+P001521,Acme Likely,Automotive,Acme,818.59,4.61
+P001522,Harbor Draw,Toys,Harbor,43.7,4.64
+P001523,Pulse Require,Groceries,Pulse,6.6,3.22
+P001524,Zenith Along,Pet Supplies,Zenith,29.67,2.6
+P001525,Astra On,Clothing,Astra,134.22,3.82
+P001526,Orion Defense,Clothing,Orion,117.09,4.36
+P001527,Willow Result,Electronics,Willow,2035.42,3.87
+P001528,Pulse Behavior,Beauty,Pulse,150.71,3.09
+P001529,NeoTech Whom,Books,NeoTech,42.34,3.13
+P001530,NeoTech Collection,Sports,NeoTech,125.28,2.51
+P001531,Pulse Race,Pet Supplies,Pulse,49.15,2.8
+P001532,NeoTech Admit,Electronics,NeoTech,137.82,4.65
+P001533,GreenLeaf Star,Beauty,GreenLeaf,156.64,4.02
+P001534,Zenith Trial,Beauty,Zenith,91.4,3.83
+P001535,Astra Speak,Pet Supplies,Astra,48.09,4.68
+P001536,Nimbus Wish,Clothing,Nimbus,37.11,3.92
+P001537,NeoTech Test,Groceries,NeoTech,9.23,4.21
+P001538,Astra Pressure,Pet Supplies,Astra,72.49,2.74
+P001539,Willow Into,Clothing,Willow,103.59,2.58
+P001540,Harbor Whom,Automotive,Harbor,148.66,3.07
+P001541,Solace Tv,Automotive,Solace,636.16,3.93
+P001542,Willow Message,Electronics,Willow,355.14,2.52
+P001543,Nimbus Attack,Beauty,Nimbus,147.11,3.65
+P001544,Harbor Will,Pet Supplies,Harbor,2.75,2.62
+P001545,NeoTech Everyone,Groceries,NeoTech,1.49,2.94
+P001546,Nimbus Head,Toys,Nimbus,100.3,3.9
+P001547,Orion Catch,Clothing,Orion,149.44,3.91
+P001548,Solace Life,Automotive,Solace,243.71,3.41
+P001549,GreenLeaf Drive,Books,GreenLeaf,13.83,4.67
+P001550,Zenith Case,Books,Zenith,19.19,3.92
+P001551,GreenLeaf Reflect,Groceries,GreenLeaf,11.78,2.68
+P001552,Nimbus Key,Automotive,Nimbus,27.47,3.66
+P001553,Pulse Together,Toys,Pulse,37.23,2.85
+P001554,Astra Such,Pet Supplies,Astra,43.35,3.74
+P001555,Acme Book,Automotive,Acme,238.08,3.46
+P001556,Harbor Population,Pet Supplies,Harbor,86.48,3.1
+P001557,Acme Wait,Pet Supplies,Acme,75.93,4.14
+P001558,Everest Factor,Clothing,Everest,142.38,2.78
+P001559,Nimbus Bar,Books,Nimbus,42.48,3.87
+P001560,Everest Bar,Electronics,Everest,1033.13,4.31
+P001561,Nimbus Risk,Beauty,Nimbus,69.68,3.41
+P001562,GreenLeaf Character,Sports,GreenLeaf,184.98,3.87
+P001563,Everest Else,Books,Everest,15.87,2.7
+P001564,GreenLeaf Lead,Groceries,GreenLeaf,10.42,3.29
+P001565,Pulse Decision,Toys,Pulse,50.01,4.5
+P001566,Willow Entire,Groceries,Willow,23.71,3.59
+P001567,Zenith Myself,Sports,Zenith,77.3,4.31
+P001568,Pulse Scientist,Groceries,Pulse,11.15,4.42
+P001569,Everest Develop,Clothing,Everest,51.05,4.46
+P001570,Willow Few,Beauty,Willow,130.56,3.5
+P001571,Orion Garden,Groceries,Orion,34.58,3.89
+P001572,Everest Stop,Pet Supplies,Everest,67.51,4.79
+P001573,Zenith Civil,Toys,Zenith,50.66,3.62
+P001574,Solace Member,Sports,Solace,53.16,2.7
+P001575,Nimbus Approach,Groceries,Nimbus,32.63,2.98
+P001576,Nimbus Treat,Sports,Nimbus,51.04,4.64
+P001577,Solace Small,Toys,Solace,11.62,4.37
+P001578,Pulse Sea,Pet Supplies,Pulse,111.25,3.31
+P001579,Willow Know,Automotive,Willow,124.87,3.25
+P001580,Everest Clear,Home & Kitchen,Everest,318.51,4.78
+P001581,Everest Skin,Automotive,Everest,225.32,3.65
+P001582,Solace Everyone,Clothing,Solace,242.11,3.76
+P001583,Orion Up,Groceries,Orion,13.54,4.46
+P001584,NeoTech Rich,Groceries,NeoTech,1.21,4.18
+P001585,Everest Several,Home & Kitchen,Everest,45.55,3.37
+P001586,Pulse Else,Books,Pulse,9.81,3.27
+P001587,Zenith Rich,Electronics,Zenith,658.35,4.34
+P001588,GreenLeaf Without,Beauty,GreenLeaf,132.56,3.78
+P001589,Harbor Else,Electronics,Harbor,175.72,3.7
+P001590,Solace Institution,Clothing,Solace,11.57,2.81
+P001591,Solace Scene,Clothing,Solace,24.97,4.5
+P001592,NeoTech Guy,Pet Supplies,NeoTech,44.14,4.45
+P001593,Harbor Eat,Clothing,Harbor,181.12,4.17
+P001594,Pulse Worker,Clothing,Pulse,83.76,4.16
+P001595,Pulse Direction,Home & Kitchen,Pulse,214.62,4.62
+P001596,Pulse Eight,Beauty,Pulse,38.16,3.64
+P001597,Harbor Place,Books,Harbor,7.37,3.15
+P001598,NeoTech Administration,Automotive,NeoTech,407.98,3.51
+P001599,Willow Report,Books,Willow,63.33,4.71
+P001600,Harbor Significant,Sports,Harbor,28.77,3.62
+P001601,GreenLeaf Wall,Clothing,GreenLeaf,93.07,4.61
+P001602,Everest Take,Clothing,Everest,260.17,3.79
+P001603,NeoTech Week,Sports,NeoTech,233.45,4.4
+P001604,Harbor Coach,Home & Kitchen,Harbor,104.38,2.59
+P001605,Harbor Picture,Electronics,Harbor,492.64,3.12
+P001606,GreenLeaf Stage,Electronics,GreenLeaf,1097.96,4.45
+P001607,Solace Institution,Beauty,Solace,65.0,2.94
+P001608,Orion Whatever,Books,Orion,96.75,3.06
+P001609,Nimbus Hold,Books,Nimbus,29.15,2.55
+P001610,Everest Republican,Pet Supplies,Everest,77.46,3.28
+P001611,Willow Benefit,Electronics,Willow,1028.88,2.86
+P001612,Astra Five,Beauty,Astra,83.13,3.67
+P001613,Zenith Lawyer,Automotive,Zenith,734.26,4.81
+P001614,Solace Create,Clothing,Solace,97.47,2.92
+P001615,NeoTech Camera,Automotive,NeoTech,74.61,3.79
+P001616,GreenLeaf Draw,Books,GreenLeaf,167.4,4.08
+P001617,Astra Plant,Automotive,Astra,788.84,4.29
+P001618,Acme Drug,Pet Supplies,Acme,43.35,3.7
+P001619,Everest Imagine,Clothing,Everest,15.52,4.2
+P001620,Zenith Television,Books,Zenith,39.96,3.84
+P001621,Harbor College,Home & Kitchen,Harbor,15.11,4.76
+P001622,Willow Break,Beauty,Willow,5.29,2.62
+P001623,Solace Support,Toys,Solace,82.98,3.49
+P001624,Pulse Join,Clothing,Pulse,50.81,4.64
+P001625,Harbor Sort,Clothing,Harbor,146.81,4.7
+P001626,Nimbus Out,Groceries,Nimbus,30.12,4.19
+P001627,Nimbus Happy,Groceries,Nimbus,11.67,4.12
+P001628,Zenith Necessary,Electronics,Zenith,473.62,2.58
+P001629,NeoTech Hope,Electronics,NeoTech,926.42,3.44
+P001630,Nimbus From,Electronics,Nimbus,1519.49,3.98
+P001631,Acme Real,Sports,Acme,154.57,3.73
+P001632,GreenLeaf Indicate,Groceries,GreenLeaf,15.64,3.1
+P001633,Nimbus Drive,Home & Kitchen,Nimbus,132.13,3.85
+P001634,Pulse Outside,Electronics,Pulse,372.7,4.42
+P001635,Nimbus South,Home & Kitchen,Nimbus,207.67,2.84
+P001636,Solace Administration,Toys,Solace,16.95,3.1
+P001637,Harbor Tax,Automotive,Harbor,529.06,3.78
+P001638,Harbor Story,Home & Kitchen,Harbor,363.25,3.13
+P001639,Everest Single,Clothing,Everest,253.6,3.94
+P001640,GreenLeaf Do,Beauty,GreenLeaf,10.87,2.75
+P001641,NeoTech Purpose,Automotive,NeoTech,705.88,3.24
+P001642,Acme Design,Groceries,Acme,5.55,3.76
+P001643,Acme Show,Clothing,Acme,58.73,3.63
+P001644,Acme Field,Beauty,Acme,157.79,2.51
+P001645,Nimbus Much,Sports,Nimbus,223.28,3.42
+P001646,Orion Class,Sports,Orion,314.64,4.51
+P001647,Acme It,Clothing,Acme,118.8,3.17
+P001648,Everest Even,Beauty,Everest,124.31,2.53
+P001649,Harbor Goal,Sports,Harbor,361.55,4.07
+P001650,Solace Suffer,Books,Solace,71.07,4.19
+P001651,Acme Those,Toys,Acme,109.53,3.57
+P001652,Nimbus Word,Sports,Nimbus,188.49,3.65
+P001653,Nimbus Control,Electronics,Nimbus,1187.64,4.85
+P001654,GreenLeaf Eye,Sports,GreenLeaf,135.96,3.53
+P001655,Pulse Understand,Home & Kitchen,Pulse,75.5,4.09
+P001656,Orion Administration,Pet Supplies,Orion,20.13,2.8
+P001657,Solace Table,Groceries,Solace,25.99,4.61
+P001658,Harbor Agree,Clothing,Harbor,20.37,3.92
+P001659,Willow Group,Pet Supplies,Willow,20.65,2.82
+P001660,GreenLeaf Medical,Clothing,GreenLeaf,113.12,4.72
+P001661,Acme Thought,Toys,Acme,14.26,4.53
+P001662,Nimbus Difficult,Groceries,Nimbus,25.06,3.83
+P001663,NeoTech School,Home & Kitchen,NeoTech,75.4,3.85
+P001664,Willow Her,Toys,Willow,44.59,3.09
+P001665,Astra Might,Toys,Astra,76.59,4.3
+P001666,GreenLeaf Different,Automotive,GreenLeaf,140.52,4.33
+P001667,Solace Serve,Toys,Solace,38.11,4.38
+P001668,GreenLeaf Recent,Clothing,GreenLeaf,47.02,2.74
+P001669,Solace Media,Toys,Solace,115.92,3.12
+P001670,NeoTech Outside,Beauty,NeoTech,110.43,2.78
+P001671,Nimbus Garden,Beauty,Nimbus,8.06,4.12
+P001672,NeoTech Career,Electronics,NeoTech,1257.52,4.21
+P001673,Harbor Main,Beauty,Harbor,99.78,2.67
+P001674,Orion Ahead,Electronics,Orion,786.4,4.49
+P001675,Solace Majority,Groceries,Solace,5.2,4.87
+P001676,Acme Prevent,Groceries,Acme,3.69,4.25
+P001677,Nimbus Great,Home & Kitchen,Nimbus,300.67,3.11
+P001678,Orion Attack,Automotive,Orion,627.99,4.03
+P001679,GreenLeaf Wrong,Sports,GreenLeaf,215.6,3.21
+P001680,Willow Full,Automotive,Willow,294.93,4.0
+P001681,Astra Compare,Books,Astra,6.08,2.81
+P001682,Orion Right,Toys,Orion,35.4,4.19
+P001683,NeoTech Make,Sports,NeoTech,71.52,4.54
+P001684,Acme Anyone,Automotive,Acme,728.97,4.12
+P001685,Nimbus Return,Electronics,Nimbus,319.15,4.15
+P001686,Pulse Thing,Beauty,Pulse,134.71,3.74
+P001687,Orion Painting,Pet Supplies,Orion,10.39,4.23
+P001688,Zenith Mr,Sports,Zenith,59.25,4.51
+P001689,Willow Condition,Sports,Willow,297.5,3.32
+P001690,Solace Professional,Sports,Solace,257.99,4.19
+P001691,Everest Stop,Automotive,Everest,893.72,3.78
+P001692,Acme Effect,Automotive,Acme,108.67,4.64
+P001693,GreenLeaf Next,Books,GreenLeaf,21.06,3.57
+P001694,Solace Actually,Pet Supplies,Solace,34.17,4.83
+P001695,Pulse Look,Groceries,Pulse,11.71,4.78
+P001696,Astra Woman,Clothing,Astra,313.72,3.15
+P001697,NeoTech Member,Toys,NeoTech,20.71,4.67
+P001698,GreenLeaf Day,Clothing,GreenLeaf,142.7,4.17
+P001699,Nimbus Hit,Electronics,Nimbus,494.84,4.57
+P001700,Harbor One,Automotive,Harbor,601.59,2.52
+P001701,Willow Executive,Electronics,Willow,513.32,4.66
+P001702,Pulse Set,Beauty,Pulse,154.05,4.07
+P001703,Willow Just,Beauty,Willow,165.03,3.97
+P001704,NeoTech Property,Books,NeoTech,83.51,4.32
+P001705,Astra Marriage,Groceries,Astra,10.96,4.16
+P001706,Willow Measure,Electronics,Willow,970.1,4.04
+P001707,Willow Their,Electronics,Willow,988.62,3.91
+P001708,Orion Room,Books,Orion,99.54,2.97
+P001709,Nimbus Unit,Groceries,Nimbus,2.47,3.14
+P001710,Zenith Stay,Groceries,Zenith,16.58,4.86
+P001711,Acme Here,Electronics,Acme,929.73,2.77
+P001712,Zenith Management,Home & Kitchen,Zenith,260.48,3.55
+P001713,Zenith Into,Toys,Zenith,37.8,4.17
+P001714,NeoTech Trouble,Sports,NeoTech,303.15,3.7
+P001715,Everest Also,Groceries,Everest,5.74,4.13
+P001716,Acme Surface,Toys,Acme,96.19,4.73
+P001717,Orion Society,Electronics,Orion,1551.98,4.75
+P001718,Acme Brother,Groceries,Acme,8.74,3.94
+P001719,Zenith Natural,Home & Kitchen,Zenith,268.64,3.93
+P001720,Harbor Or,Pet Supplies,Harbor,6.69,3.84
+P001721,Everest Investment,Home & Kitchen,Everest,343.28,3.57
+P001722,Everest Religious,Home & Kitchen,Everest,80.1,3.51
+P001723,Everest To,Pet Supplies,Everest,101.97,3.5
+P001724,NeoTech Mind,Electronics,NeoTech,846.61,3.62
+P001725,Willow Only,Beauty,Willow,96.97,2.63
+P001726,Zenith Control,Toys,Zenith,25.89,4.41
+P001727,Harbor Resource,Home & Kitchen,Harbor,228.38,3.52
+P001728,Harbor Property,Books,Harbor,82.77,3.89
+P001729,NeoTech Third,Books,NeoTech,67.52,3.4
+P001730,Zenith Investment,Beauty,Zenith,232.25,2.78
+P001731,GreenLeaf Glass,Electronics,GreenLeaf,798.6,4.48
+P001732,Pulse Baby,Electronics,Pulse,417.15,2.63
+P001733,Zenith Hour,Clothing,Zenith,166.64,3.39
+P001734,Astra About,Home & Kitchen,Astra,68.37,3.99
+P001735,Astra West,Groceries,Astra,13.04,3.27
+P001736,GreenLeaf Reach,Groceries,GreenLeaf,5.66,2.7
+P001737,Zenith Heart,Beauty,Zenith,92.24,4.75
+P001738,Nimbus Wish,Pet Supplies,Nimbus,52.26,3.4
+P001739,Everest Movie,Electronics,Everest,738.47,3.72
+P001740,Pulse Phone,Beauty,Pulse,184.9,3.14
+P001741,Solace Sound,Electronics,Solace,957.88,2.72
+P001742,GreenLeaf End,Electronics,GreenLeaf,814.3,3.93
+P001743,Zenith Happy,Home & Kitchen,Zenith,173.72,4.54
+P001744,Acme Artist,Electronics,Acme,1797.55,3.21
+P001745,Solace Particular,Home & Kitchen,Solace,157.71,4.83
+P001746,Solace Step,Beauty,Solace,32.16,4.14
+P001747,Zenith Protect,Home & Kitchen,Zenith,103.92,4.57
+P001748,Solace Who,Toys,Solace,56.34,3.58
+P001749,Zenith Discuss,Beauty,Zenith,25.95,2.51
+P001750,Solace Possible,Books,Solace,61.35,2.87
+P001751,Everest Make,Beauty,Everest,60.7,4.43
+P001752,GreenLeaf Tell,Home & Kitchen,GreenLeaf,412.8,3.26
+P001753,Zenith View,Sports,Zenith,165.03,4.69
+P001754,Zenith Something,Groceries,Zenith,1.78,2.68
+P001755,GreenLeaf Star,Automotive,GreenLeaf,305.42,3.33
+P001756,Astra Book,Automotive,Astra,967.83,2.92
+P001757,Zenith Both,Home & Kitchen,Zenith,206.86,4.71
+P001758,Everest Whole,Pet Supplies,Everest,8.07,2.69
+P001759,NeoTech Story,Sports,NeoTech,407.54,4.58
+P001760,Everest Fast,Toys,Everest,24.92,2.95
+P001761,Everest Line,Home & Kitchen,Everest,32.15,2.69
+P001762,Harbor Vote,Electronics,Harbor,476.36,3.08
+P001763,Orion Who,Toys,Orion,79.36,3.36
+P001764,Willow Maintain,Pet Supplies,Willow,30.77,4.69
+P001765,GreenLeaf Its,Beauty,GreenLeaf,49.84,3.04
+P001766,Willow Purpose,Pet Supplies,Willow,64.22,3.51
+P001767,Harbor Laugh,Beauty,Harbor,254.74,4.73
+P001768,GreenLeaf Name,Beauty,GreenLeaf,29.53,3.78
+P001769,Acme Theory,Groceries,Acme,18.76,3.51
+P001770,Willow Film,Electronics,Willow,811.5,4.17
+P001771,GreenLeaf Guess,Sports,GreenLeaf,120.32,4.36
+P001772,Acme Then,Clothing,Acme,20.18,4.07
+P001773,Orion Event,Groceries,Orion,12.34,3.21
+P001774,Astra Take,Groceries,Astra,22.01,4.02
+P001775,Zenith Religious,Groceries,Zenith,23.52,4.55
+P001776,Orion Push,Books,Orion,56.21,4.6
+P001777,NeoTech Continue,Pet Supplies,NeoTech,69.57,2.83
+P001778,Solace Minute,Toys,Solace,10.29,2.91
+P001779,Orion Management,Clothing,Orion,57.54,4.39
+P001780,Pulse Voice,Pet Supplies,Pulse,49.73,2.65
+P001781,Pulse Central,Electronics,Pulse,984.2,4.66
+P001782,Zenith Security,Clothing,Zenith,66.11,4.0
+P001783,Willow Culture,Home & Kitchen,Willow,56.57,4.17
+P001784,Everest Beautiful,Sports,Everest,219.72,3.77
+P001785,Solace Even,Clothing,Solace,90.15,4.11
+P001786,Astra Expect,Sports,Astra,48.62,4.88
+P001787,Willow Forget,Clothing,Willow,160.19,4.45
+P001788,Zenith Study,Electronics,Zenith,391.83,2.68
+P001789,Willow Wall,Automotive,Willow,409.61,4.48
+P001790,Zenith Result,Sports,Zenith,403.08,3.26
+P001791,Acme Democratic,Groceries,Acme,9.0,3.17
+P001792,Harbor Notice,Pet Supplies,Harbor,70.76,3.75
+P001793,Acme Marriage,Electronics,Acme,896.38,3.47
+P001794,Willow Treatment,Automotive,Willow,576.97,3.89
+P001795,Orion Focus,Home & Kitchen,Orion,386.25,2.77
+P001796,Zenith Military,Pet Supplies,Zenith,45.72,4.68
+P001797,GreenLeaf Green,Automotive,GreenLeaf,187.99,3.37
+P001798,Harbor Reflect,Beauty,Harbor,116.24,3.05
+P001799,Astra Protect,Groceries,Astra,20.77,3.11
+P001800,Astra Behavior,Clothing,Astra,113.98,4.7
+P001801,Harbor Wrong,Sports,Harbor,365.24,3.12
+P001802,Everest In,Toys,Everest,97.72,2.57
+P001803,NeoTech Throughout,Beauty,NeoTech,73.01,2.71
+P001804,Harbor Cost,Pet Supplies,Harbor,9.81,2.74
+P001805,GreenLeaf Hear,Groceries,GreenLeaf,11.37,2.55
+P001806,Nimbus Focus,Pet Supplies,Nimbus,54.34,4.4
+P001807,Nimbus Maintain,Electronics,Nimbus,557.39,3.67
+P001808,Astra Pull,Pet Supplies,Astra,49.88,3.29
+P001809,Zenith Board,Home & Kitchen,Zenith,131.75,2.77
+P001810,NeoTech Tend,Clothing,NeoTech,61.15,3.48
+P001811,Everest Child,Sports,Everest,197.07,2.53
+P001812,Zenith Partner,Automotive,Zenith,713.74,4.37
+P001813,Pulse Soon,Pet Supplies,Pulse,54.41,2.86
+P001814,Nimbus Prevent,Automotive,Nimbus,566.53,2.62
+P001815,Harbor Despite,Home & Kitchen,Harbor,241.73,2.66
+P001816,Willow Catch,Automotive,Willow,91.42,2.79
+P001817,Harbor Not,Beauty,Harbor,87.54,2.91
+P001818,Willow Prepare,Beauty,Willow,70.39,4.11
+P001819,Everest Organization,Beauty,Everest,69.22,2.73
+P001820,NeoTech Personal,Clothing,NeoTech,90.19,3.49
+P001821,Orion Off,Electronics,Orion,852.12,4.32
+P001822,Orion Race,Automotive,Orion,492.48,3.57
+P001823,Willow Bit,Sports,Willow,215.56,2.59
+P001824,Solace Foreign,Electronics,Solace,1233.6,3.48
+P001825,Solace People,Home & Kitchen,Solace,203.57,4.12
+P001826,Solace Guy,Clothing,Solace,117.72,4.34
+P001827,Acme Road,Home & Kitchen,Acme,125.56,2.91
+P001828,Willow Cost,Books,Willow,54.83,3.05
+P001829,Harbor Point,Clothing,Harbor,36.94,3.88
+P001830,Acme Chance,Electronics,Acme,1127.47,3.02
+P001831,Orion Fact,Beauty,Orion,169.79,3.69
+P001832,Orion Medical,Home & Kitchen,Orion,52.77,4.16
+P001833,Orion Blood,Beauty,Orion,88.37,4.0
+P001834,Nimbus Person,Automotive,Nimbus,32.08,3.56
+P001835,Everest Indicate,Pet Supplies,Everest,76.86,4.07
+P001836,Pulse Year,Toys,Pulse,56.37,4.1
+P001837,Pulse Above,Toys,Pulse,72.87,3.13
+P001838,Everest Several,Home & Kitchen,Everest,331.98,3.02
+P001839,Zenith Few,Sports,Zenith,180.71,4.13
+P001840,Orion Capital,Electronics,Orion,567.39,3.21
+P001841,Willow Local,Toys,Willow,58.53,3.05
+P001842,Orion Kitchen,Books,Orion,29.1,4.12
+P001843,Nimbus Near,Toys,Nimbus,33.17,4.37
+P001844,Nimbus Size,Books,Nimbus,70.23,2.99
+P001845,Nimbus Fill,Toys,Nimbus,74.86,4.7
+P001846,Pulse Both,Groceries,Pulse,14.3,3.45
+P001847,GreenLeaf Goal,Electronics,GreenLeaf,1025.31,4.09
+P001848,Astra Attorney,Automotive,Astra,392.65,4.7
+P001849,GreenLeaf List,Beauty,GreenLeaf,59.13,4.5
+P001850,Willow Amount,Beauty,Willow,129.49,3.7
+P001851,Acme Wife,Pet Supplies,Acme,9.25,3.77
+P001852,Everest All,Automotive,Everest,643.14,4.29
+P001853,Orion After,Electronics,Orion,351.45,3.22
+P001854,Astra Key,Sports,Astra,376.31,2.51
+P001855,Acme Practice,Automotive,Acme,503.43,3.16
+P001856,GreenLeaf Somebody,Toys,GreenLeaf,69.5,4.46
+P001857,GreenLeaf Improve,Toys,GreenLeaf,92.99,3.23
+P001858,Everest Run,Books,Everest,54.55,4.3
+P001859,Orion Coach,Electronics,Orion,1011.71,4.55
+P001860,Everest Late,Clothing,Everest,86.67,3.46
+P001861,Acme Must,Books,Acme,47.06,3.54
+P001862,Zenith Guess,Groceries,Zenith,27.91,4.68
+P001863,Acme Half,Books,Acme,59.15,3.35
+P001864,Acme Age,Home & Kitchen,Acme,200.84,3.63
+P001865,Everest Mrs,Books,Everest,46.77,3.49
+P001866,GreenLeaf Some,Home & Kitchen,GreenLeaf,21.92,2.78
+P001867,Acme Foot,Toys,Acme,93.84,3.96
+P001868,Nimbus Foot,Sports,Nimbus,299.8,4.4
+P001869,Solace At,Books,Solace,8.47,4.33
+P001870,Acme Subject,Automotive,Acme,383.26,3.16
+P001871,GreenLeaf Act,Clothing,GreenLeaf,118.36,2.75
+P001872,Everest Budget,Electronics,Everest,1217.83,3.3
+P001873,Acme When,Automotive,Acme,413.11,3.87
+P001874,Willow Show,Electronics,Willow,605.36,3.56
+P001875,Orion Serious,Toys,Orion,86.67,2.73
+P001876,Willow Law,Beauty,Willow,67.41,4.38
+P001877,Orion Miss,Toys,Orion,63.71,3.93
+P001878,Pulse Computer,Home & Kitchen,Pulse,212.46,4.51
+P001879,NeoTech These,Groceries,NeoTech,18.51,4.81
+P001880,Orion Coach,Books,Orion,55.14,2.93
+P001881,Acme Support,Books,Acme,36.2,4.7
+P001882,Astra Tough,Electronics,Astra,1463.26,4.71
+P001883,Pulse Still,Pet Supplies,Pulse,59.59,3.79
+P001884,Everest Type,Groceries,Everest,15.66,3.23
+P001885,Zenith Catch,Home & Kitchen,Zenith,215.62,2.76
+P001886,Acme Best,Electronics,Acme,1325.06,3.02
+P001887,Astra Work,Books,Astra,10.47,2.84
+P001888,NeoTech Late,Groceries,NeoTech,16.14,2.95
+P001889,Astra Lead,Electronics,Astra,188.48,3.63
+P001890,Harbor Growth,Toys,Harbor,83.34,4.0
+P001891,Nimbus Figure,Books,Nimbus,56.77,2.73
+P001892,Willow Need,Electronics,Willow,1287.95,4.71
+P001893,Orion Manage,Books,Orion,24.22,3.65
+P001894,NeoTech Must,Clothing,NeoTech,51.65,2.56
+P001895,GreenLeaf Into,Electronics,GreenLeaf,418.78,4.0
+P001896,Everest Response,Automotive,Everest,278.74,3.7
+P001897,Nimbus Expert,Beauty,Nimbus,127.42,2.95
+P001898,Astra Process,Pet Supplies,Astra,131.29,3.76
+P001899,Everest International,Toys,Everest,49.77,3.47
+P001900,NeoTech Guess,Electronics,NeoTech,1351.78,2.8
+P001901,Nimbus Wide,Pet Supplies,Nimbus,94.59,3.94
+P001902,Acme Such,Sports,Acme,165.59,3.45
+P001903,Everest Number,Beauty,Everest,184.43,3.85
+P001904,Everest Become,Clothing,Everest,215.5,4.14
+P001905,GreenLeaf Race,Groceries,GreenLeaf,3.32,3.34
+P001906,GreenLeaf Sport,Books,GreenLeaf,17.73,3.0
+P001907,Nimbus Stay,Toys,Nimbus,34.96,3.84
+P001908,Nimbus Whose,Clothing,Nimbus,51.78,3.81
+P001909,Orion Head,Beauty,Orion,69.0,2.73
+P001910,Nimbus Possible,Clothing,Nimbus,76.19,3.13
+P001911,Solace Will,Pet Supplies,Solace,72.64,3.95
+P001912,NeoTech Imagine,Beauty,NeoTech,257.28,3.87
+P001913,NeoTech Information,Groceries,NeoTech,7.76,4.12
+P001914,Astra Thing,Electronics,Astra,948.69,3.37
+P001915,Solace Or,Groceries,Solace,2.41,2.99
+P001916,GreenLeaf Feel,Home & Kitchen,GreenLeaf,286.99,4.31
+P001917,Everest Possible,Electronics,Everest,503.48,3.01
+P001918,Harbor Close,Sports,Harbor,103.58,3.93
+P001919,GreenLeaf Look,Beauty,GreenLeaf,40.84,4.01
+P001920,Pulse Against,Sports,Pulse,175.83,4.05
+P001921,GreenLeaf Voice,Automotive,GreenLeaf,124.91,3.34
+P001922,Acme Type,Automotive,Acme,201.36,2.79
+P001923,Solace Surface,Toys,Solace,38.31,3.16
+P001924,Acme Sign,Books,Acme,5.58,3.74
+P001925,Willow Hospital,Automotive,Willow,1340.76,3.45
+P001926,GreenLeaf If,Toys,GreenLeaf,47.03,4.38
+P001927,Pulse Conference,Pet Supplies,Pulse,32.11,2.78
+P001928,Everest Coach,Beauty,Everest,31.95,3.02
+P001929,Willow Front,Books,Willow,90.65,4.04
+P001930,Harbor Fire,Home & Kitchen,Harbor,34.77,4.18
+P001931,Orion Make,Clothing,Orion,40.77,3.91
+P001932,NeoTech Although,Beauty,NeoTech,87.46,2.53
+P001933,Zenith Live,Pet Supplies,Zenith,86.02,3.77
+P001934,NeoTech Song,Automotive,NeoTech,286.31,4.73
+P001935,NeoTech Watch,Books,NeoTech,77.28,3.83
+P001936,Nimbus Safe,Automotive,Nimbus,413.42,3.14
+P001937,Pulse Reveal,Beauty,Pulse,159.29,4.0
+P001938,Harbor Himself,Books,Harbor,8.05,4.66
+P001939,Solace Other,Pet Supplies,Solace,47.96,4.83
+P001940,Acme Road,Sports,Acme,115.22,2.78
+P001941,Astra Sometimes,Pet Supplies,Astra,82.4,4.16
+P001942,Everest School,Toys,Everest,24.99,3.77
+P001943,Nimbus More,Groceries,Nimbus,30.26,3.29
+P001944,Nimbus East,Books,Nimbus,63.5,4.54
+P001945,Astra Future,Pet Supplies,Astra,85.2,3.31
+P001946,Solace Carry,Books,Solace,62.58,3.43
+P001947,Acme Think,Books,Acme,78.16,3.11
+P001948,GreenLeaf Front,Toys,GreenLeaf,39.02,4.74
+P001949,Astra Make,Books,Astra,19.54,4.01
+P001950,Pulse No,Groceries,Pulse,25.37,3.1
+P001951,Willow Perform,Pet Supplies,Willow,44.57,3.5
+P001952,GreenLeaf Action,Beauty,GreenLeaf,118.9,3.03
+P001953,Orion International,Electronics,Orion,955.5,4.13
+P001954,Astra Kitchen,Toys,Astra,26.54,2.63
+P001955,Astra Remain,Beauty,Astra,124.68,4.88
+P001956,Nimbus Table,Sports,Nimbus,300.07,2.52
+P001957,Zenith Conference,Pet Supplies,Zenith,45.18,2.72
+P001958,Willow Go,Pet Supplies,Willow,94.62,3.76
+P001959,Everest Television,Automotive,Everest,120.33,2.99
+P001960,Orion Owner,Electronics,Orion,738.02,2.94
+P001961,NeoTech Write,Electronics,NeoTech,1038.94,3.18
+P001962,Everest Reality,Groceries,Everest,26.13,3.22
+P001963,Orion Give,Clothing,Orion,172.17,3.84
+P001964,Willow Nation,Home & Kitchen,Willow,121.56,3.15
+P001965,Orion Child,Pet Supplies,Orion,81.47,3.1
+P001966,Astra These,Books,Astra,77.21,3.83
+P001967,Harbor Reach,Pet Supplies,Harbor,18.89,2.83
+P001968,Nimbus Before,Home & Kitchen,Nimbus,375.68,3.67
+P001969,Pulse Worry,Automotive,Pulse,734.96,3.09
+P001970,Astra Success,Beauty,Astra,136.74,4.48
+P001971,Everest Source,Groceries,Everest,22.59,4.03
+P001972,Pulse Establish,Pet Supplies,Pulse,38.53,2.93
+P001973,Pulse Design,Electronics,Pulse,416.78,2.72
+P001974,Astra Animal,Automotive,Astra,282.64,4.0
+P001975,Orion Mouth,Sports,Orion,278.14,4.22
+P001976,Orion Size,Beauty,Orion,133.71,3.37
+P001977,Solace Leave,Home & Kitchen,Solace,250.41,3.3
+P001978,Willow Imagine,Home & Kitchen,Willow,317.34,3.25
+P001979,NeoTech Our,Electronics,NeoTech,662.22,2.76
+P001980,Solace Door,Automotive,Solace,59.9,3.96
+P001981,Pulse Fly,Groceries,Pulse,9.92,3.32
+P001982,Harbor Better,Electronics,Harbor,835.66,4.29
+P001983,Willow Message,Home & Kitchen,Willow,11.12,3.89
+P001984,Willow Eye,Books,Willow,84.86,3.08
+P001985,Solace System,Sports,Solace,18.84,4.59
+P001986,Willow Somebody,Books,Willow,65.24,3.49
+P001987,Astra Sea,Automotive,Astra,871.03,3.23
+P001988,Acme Character,Automotive,Acme,202.98,3.26
+P001989,GreenLeaf Major,Books,GreenLeaf,61.57,3.58
+P001990,Zenith Page,Home & Kitchen,Zenith,431.12,4.13
+P001991,Nimbus Military,Sports,Nimbus,178.96,3.57
+P001992,Astra Particularly,Electronics,Astra,1166.24,3.37
+P001993,Zenith Rise,Pet Supplies,Zenith,68.6,3.75
+P001994,GreenLeaf Concern,Beauty,GreenLeaf,57.21,4.74
+P001995,Willow Hear,Books,Willow,51.75,3.27
+P001996,NeoTech Turn,Home & Kitchen,NeoTech,69.46,4.28
+P001997,Zenith Board,Clothing,Zenith,106.67,2.66
+P001998,Solace Practice,Beauty,Solace,105.48,4.73
+P001999,Willow Old,Automotive,Willow,116.13,2.75
+P002000,Harbor Whole,Books,Harbor,64.11,4.17
