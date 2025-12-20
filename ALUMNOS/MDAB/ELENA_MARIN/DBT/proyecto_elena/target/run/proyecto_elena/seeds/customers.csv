@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."customers" ("Customer ID" integer,"Name" text,"Email" text,"Telephone" text,"City" text,"Country" text,"Gender" text,"Date Of Birth" date,"Job Title" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."customers" FROM '/Users/elena/Documents/Git/ALUMNOS/MDAB/ELENA_MARIN/DBT/proyecto_elena/seeds/customers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

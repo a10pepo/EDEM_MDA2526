@@ -1,0 +1,1150 @@
+race_id,season,round,race_name,date,time,circuit_id
+1950_1,1950,1,British Grand Prix,1950-05-13,,silverstone
+1950_2,1950,2,Monaco Grand Prix,1950-05-21,,monaco
+1950_3,1950,3,Indianapolis 500,1950-05-30,,indianapolis
+1950_4,1950,4,Swiss Grand Prix,1950-06-04,,bremgarten
+1950_5,1950,5,Belgian Grand Prix,1950-06-18,,spa
+1950_6,1950,6,French Grand Prix,1950-07-02,,reims
+1950_7,1950,7,Italian Grand Prix,1950-09-03,,monza
+1951_1,1951,1,Swiss Grand Prix,1951-05-27,,bremgarten
+1951_2,1951,2,Indianapolis 500,1951-05-30,,indianapolis
+1951_3,1951,3,Belgian Grand Prix,1951-06-17,,spa
+1951_4,1951,4,French Grand Prix,1951-07-01,,reims
+1951_5,1951,5,British Grand Prix,1951-07-14,,silverstone
+1951_6,1951,6,German Grand Prix,1951-07-29,,nurburgring
+1951_7,1951,7,Italian Grand Prix,1951-09-16,,monza
+1951_8,1951,8,Spanish Grand Prix,1951-10-28,,pedralbes
+1952_1,1952,1,Swiss Grand Prix,1952-05-18,,bremgarten
+1952_2,1952,2,Indianapolis 500,1952-05-30,,indianapolis
+1952_3,1952,3,Belgian Grand Prix,1952-06-22,,spa
+1952_4,1952,4,French Grand Prix,1952-07-06,,essarts
+1952_5,1952,5,British Grand Prix,1952-07-19,,silverstone
+1952_6,1952,6,German Grand Prix,1952-08-03,,nurburgring
+1952_7,1952,7,Dutch Grand Prix,1952-08-17,,zandvoort
+1952_8,1952,8,Italian Grand Prix,1952-09-07,,monza
+1953_1,1953,1,Argentine Grand Prix,1953-01-18,,galvez
+1953_2,1953,2,Indianapolis 500,1953-05-30,,indianapolis
+1953_3,1953,3,Dutch Grand Prix,1953-06-07,,zandvoort
+1953_4,1953,4,Belgian Grand Prix,1953-06-21,,spa
+1953_5,1953,5,French Grand Prix,1953-07-05,,reims
+1953_6,1953,6,British Grand Prix,1953-07-18,,silverstone
+1953_7,1953,7,German Grand Prix,1953-08-02,,nurburgring
+1953_8,1953,8,Swiss Grand Prix,1953-08-23,,bremgarten
+1953_9,1953,9,Italian Grand Prix,1953-09-13,,monza
+1954_1,1954,1,Argentine Grand Prix,1954-01-17,,galvez
+1954_2,1954,2,Indianapolis 500,1954-05-31,,indianapolis
+1954_3,1954,3,Belgian Grand Prix,1954-06-20,,spa
+1954_4,1954,4,French Grand Prix,1954-07-04,,reims
+1954_5,1954,5,British Grand Prix,1954-07-17,,silverstone
+1954_6,1954,6,German Grand Prix,1954-08-01,,nurburgring
+1954_7,1954,7,Swiss Grand Prix,1954-08-22,,bremgarten
+1954_8,1954,8,Italian Grand Prix,1954-09-05,,monza
+1954_9,1954,9,Spanish Grand Prix,1954-10-24,,pedralbes
+1955_1,1955,1,Argentine Grand Prix,1955-01-16,,galvez
+1955_2,1955,2,Monaco Grand Prix,1955-05-22,,monaco
+1955_3,1955,3,Indianapolis 500,1955-05-30,,indianapolis
+1955_4,1955,4,Belgian Grand Prix,1955-06-05,,spa
+1955_5,1955,5,Dutch Grand Prix,1955-06-19,,zandvoort
+1955_6,1955,6,British Grand Prix,1955-07-16,,aintree
+1955_7,1955,7,Italian Grand Prix,1955-09-11,,monza
+1956_1,1956,1,Argentine Grand Prix,1956-01-22,,galvez
+1956_2,1956,2,Monaco Grand Prix,1956-05-13,,monaco
+1956_3,1956,3,Indianapolis 500,1956-05-30,,indianapolis
+1956_4,1956,4,Belgian Grand Prix,1956-06-03,,spa
+1956_5,1956,5,French Grand Prix,1956-07-01,,reims
+1956_6,1956,6,British Grand Prix,1956-07-14,,silverstone
+1956_7,1956,7,German Grand Prix,1956-08-05,,nurburgring
+1956_8,1956,8,Italian Grand Prix,1956-09-02,,monza
+1957_1,1957,1,Argentine Grand Prix,1957-01-13,,galvez
+1957_2,1957,2,Monaco Grand Prix,1957-05-19,,monaco
+1957_3,1957,3,Indianapolis 500,1957-05-30,,indianapolis
+1957_4,1957,4,French Grand Prix,1957-07-07,,essarts
+1957_5,1957,5,British Grand Prix,1957-07-20,,aintree
+1957_6,1957,6,German Grand Prix,1957-08-04,,nurburgring
+1957_7,1957,7,Pescara Grand Prix,1957-08-18,,pescara
+1957_8,1957,8,Italian Grand Prix,1957-09-08,,monza
+1958_1,1958,1,Argentine Grand Prix,1958-01-19,,galvez
+1958_2,1958,2,Monaco Grand Prix,1958-05-18,,monaco
+1958_3,1958,3,Dutch Grand Prix,1958-05-26,,zandvoort
+1958_4,1958,4,Indianapolis 500,1958-05-30,,indianapolis
+1958_5,1958,5,Belgian Grand Prix,1958-06-15,,spa
+1958_6,1958,6,French Grand Prix,1958-07-06,,reims
+1958_7,1958,7,British Grand Prix,1958-07-19,,silverstone
+1958_8,1958,8,German Grand Prix,1958-08-03,,nurburgring
+1958_9,1958,9,Portuguese Grand Prix,1958-08-24,,boavista
+1958_10,1958,10,Italian Grand Prix,1958-09-07,,monza
+1958_11,1958,11,Moroccan Grand Prix,1958-10-19,,ain-diab
+1959_1,1959,1,Monaco Grand Prix,1959-05-10,,monaco
+1959_2,1959,2,Indianapolis 500,1959-05-30,,indianapolis
+1959_3,1959,3,Dutch Grand Prix,1959-05-31,,zandvoort
+1959_4,1959,4,French Grand Prix,1959-07-05,,reims
+1959_5,1959,5,British Grand Prix,1959-07-18,,aintree
+1959_6,1959,6,German Grand Prix,1959-08-02,,avus
+1959_7,1959,7,Portuguese Grand Prix,1959-08-23,,monsanto
+1959_8,1959,8,Italian Grand Prix,1959-09-13,,monza
+1959_9,1959,9,United States Grand Prix,1959-12-12,,sebring
+1960_1,1960,1,Argentine Grand Prix,1960-02-07,,galvez
+1960_2,1960,2,Monaco Grand Prix,1960-05-29,,monaco
+1960_3,1960,3,Indianapolis 500,1960-05-30,,indianapolis
+1960_4,1960,4,Dutch Grand Prix,1960-06-06,,zandvoort
+1960_5,1960,5,Belgian Grand Prix,1960-06-19,,spa
+1960_6,1960,6,French Grand Prix,1960-07-03,,reims
+1960_7,1960,7,British Grand Prix,1960-07-16,,silverstone
+1960_8,1960,8,Portuguese Grand Prix,1960-08-14,,boavista
+1960_9,1960,9,Italian Grand Prix,1960-09-04,,monza
+1960_10,1960,10,United States Grand Prix,1960-11-20,,riverside
+1961_1,1961,1,Monaco Grand Prix,1961-05-14,,monaco
+1961_2,1961,2,Dutch Grand Prix,1961-05-22,,zandvoort
+1961_3,1961,3,Belgian Grand Prix,1961-06-18,,spa
+1961_4,1961,4,French Grand Prix,1961-07-02,,reims
+1961_5,1961,5,British Grand Prix,1961-07-15,,aintree
+1961_6,1961,6,German Grand Prix,1961-08-06,,nurburgring
+1961_7,1961,7,Italian Grand Prix,1961-09-10,,monza
+1961_8,1961,8,United States Grand Prix,1961-10-08,,watkins_glen
+1962_1,1962,1,Dutch Grand Prix,1962-05-20,,zandvoort
+1962_2,1962,2,Monaco Grand Prix,1962-06-03,,monaco
+1962_3,1962,3,Belgian Grand Prix,1962-06-17,,spa
+1962_4,1962,4,French Grand Prix,1962-07-08,,essarts
+1962_5,1962,5,British Grand Prix,1962-07-21,,aintree
+1962_6,1962,6,German Grand Prix,1962-08-05,,nurburgring
+1962_7,1962,7,Italian Grand Prix,1962-09-16,,monza
+1962_8,1962,8,United States Grand Prix,1962-10-07,,watkins_glen
+1962_9,1962,9,South African Grand Prix,1962-12-29,,george
+1963_1,1963,1,Monaco Grand Prix,1963-05-26,,monaco
+1963_2,1963,2,Belgian Grand Prix,1963-06-09,,spa
+1963_3,1963,3,Dutch Grand Prix,1963-06-23,,zandvoort
+1963_4,1963,4,French Grand Prix,1963-06-30,,reims
+1963_5,1963,5,British Grand Prix,1963-07-20,,silverstone
+1963_6,1963,6,German Grand Prix,1963-08-04,,nurburgring
+1963_7,1963,7,Italian Grand Prix,1963-09-08,,monza
+1963_8,1963,8,United States Grand Prix,1963-10-06,,watkins_glen
+1963_9,1963,9,Mexican Grand Prix,1963-10-27,,rodriguez
+1963_10,1963,10,South African Grand Prix,1963-12-28,,george
+1964_1,1964,1,Monaco Grand Prix,1964-05-10,,monaco
+1964_2,1964,2,Dutch Grand Prix,1964-05-24,,zandvoort
+1964_3,1964,3,Belgian Grand Prix,1964-06-14,,spa
+1964_4,1964,4,French Grand Prix,1964-06-28,,essarts
+1964_5,1964,5,British Grand Prix,1964-07-11,,brands_hatch
+1964_6,1964,6,German Grand Prix,1964-08-02,,nurburgring
+1964_7,1964,7,Austrian Grand Prix,1964-08-23,,zeltweg
+1964_8,1964,8,Italian Grand Prix,1964-09-06,,monza
+1964_9,1964,9,United States Grand Prix,1964-10-04,,watkins_glen
+1964_10,1964,10,Mexican Grand Prix,1964-10-25,,rodriguez
+1965_1,1965,1,South African Grand Prix,1965-01-01,,george
+1965_2,1965,2,Monaco Grand Prix,1965-05-30,,monaco
+1965_3,1965,3,Belgian Grand Prix,1965-06-13,,spa
+1965_4,1965,4,French Grand Prix,1965-06-27,,charade
+1965_5,1965,5,British Grand Prix,1965-07-10,,silverstone
+1965_6,1965,6,Dutch Grand Prix,1965-07-18,,zandvoort
+1965_7,1965,7,German Grand Prix,1965-08-01,,nurburgring
+1965_8,1965,8,Italian Grand Prix,1965-09-12,,monza
+1965_9,1965,9,United States Grand Prix,1965-10-03,,watkins_glen
+1965_10,1965,10,Mexican Grand Prix,1965-10-24,,rodriguez
+1966_1,1966,1,Monaco Grand Prix,1966-05-22,,monaco
+1966_2,1966,2,Belgian Grand Prix,1966-06-12,,spa
+1966_3,1966,3,French Grand Prix,1966-07-03,,reims
+1966_4,1966,4,British Grand Prix,1966-07-16,,brands_hatch
+1966_5,1966,5,Dutch Grand Prix,1966-07-24,,zandvoort
+1966_6,1966,6,German Grand Prix,1966-08-07,,nurburgring
+1966_7,1966,7,Italian Grand Prix,1966-09-04,,monza
+1966_8,1966,8,United States Grand Prix,1966-10-02,,watkins_glen
+1966_9,1966,9,Mexican Grand Prix,1966-10-23,,rodriguez
+1967_1,1967,1,South African Grand Prix,1967-01-02,,kyalami
+1967_2,1967,2,Monaco Grand Prix,1967-05-07,,monaco
+1967_3,1967,3,Dutch Grand Prix,1967-06-04,,zandvoort
+1967_4,1967,4,Belgian Grand Prix,1967-06-18,,spa
+1967_5,1967,5,French Grand Prix,1967-07-02,,lemans
+1967_6,1967,6,British Grand Prix,1967-07-15,,silverstone
+1967_7,1967,7,German Grand Prix,1967-08-06,,nurburgring
+1967_8,1967,8,Canadian Grand Prix,1967-08-27,,mosport
+1967_9,1967,9,Italian Grand Prix,1967-09-10,,monza
+1967_10,1967,10,United States Grand Prix,1967-10-01,,watkins_glen
+1967_11,1967,11,Mexican Grand Prix,1967-10-22,,rodriguez
+1968_1,1968,1,South African Grand Prix,1968-01-01,,kyalami
+1968_2,1968,2,Spanish Grand Prix,1968-05-12,,jarama
+1968_3,1968,3,Monaco Grand Prix,1968-05-26,,monaco
+1968_4,1968,4,Belgian Grand Prix,1968-06-09,,spa
+1968_5,1968,5,Dutch Grand Prix,1968-06-23,,zandvoort
+1968_6,1968,6,French Grand Prix,1968-07-07,,essarts
+1968_7,1968,7,British Grand Prix,1968-07-20,,brands_hatch
+1968_8,1968,8,German Grand Prix,1968-08-04,,nurburgring
+1968_9,1968,9,Italian Grand Prix,1968-09-08,,monza
+1968_10,1968,10,Canadian Grand Prix,1968-09-22,,tremblant
+1968_11,1968,11,United States Grand Prix,1968-10-06,,watkins_glen
+1968_12,1968,12,Mexican Grand Prix,1968-11-03,,rodriguez
+1969_1,1969,1,South African Grand Prix,1969-03-01,,kyalami
+1969_2,1969,2,Spanish Grand Prix,1969-05-04,,montjuic
+1969_3,1969,3,Monaco Grand Prix,1969-05-18,,monaco
+1969_4,1969,4,Dutch Grand Prix,1969-06-21,,zandvoort
+1969_5,1969,5,French Grand Prix,1969-07-06,,charade
+1969_6,1969,6,British Grand Prix,1969-07-19,,silverstone
+1969_7,1969,7,German Grand Prix,1969-08-03,,nurburgring
+1969_8,1969,8,Italian Grand Prix,1969-09-07,,monza
+1969_9,1969,9,Canadian Grand Prix,1969-09-20,,mosport
+1969_10,1969,10,United States Grand Prix,1969-10-05,,watkins_glen
+1969_11,1969,11,Mexican Grand Prix,1969-10-19,,rodriguez
+1970_1,1970,1,South African Grand Prix,1970-03-07,,kyalami
+1970_2,1970,2,Spanish Grand Prix,1970-04-19,,jarama
+1970_3,1970,3,Monaco Grand Prix,1970-05-10,,monaco
+1970_4,1970,4,Belgian Grand Prix,1970-06-07,,spa
+1970_5,1970,5,Dutch Grand Prix,1970-06-21,,zandvoort
+1970_6,1970,6,French Grand Prix,1970-07-05,,charade
+1970_7,1970,7,British Grand Prix,1970-07-18,,brands_hatch
+1970_8,1970,8,German Grand Prix,1970-08-02,,hockenheimring
+1970_9,1970,9,Austrian Grand Prix,1970-08-16,,red_bull_ring
+1970_10,1970,10,Italian Grand Prix,1970-09-06,,monza
+1970_11,1970,11,Canadian Grand Prix,1970-09-20,,tremblant
+1970_12,1970,12,United States Grand Prix,1970-10-04,,watkins_glen
+1970_13,1970,13,Mexican Grand Prix,1970-10-25,,rodriguez
+1971_1,1971,1,South African Grand Prix,1971-03-06,,kyalami
+1971_2,1971,2,Spanish Grand Prix,1971-04-18,,montjuic
+1971_3,1971,3,Monaco Grand Prix,1971-05-23,,monaco
+1971_4,1971,4,Dutch Grand Prix,1971-06-20,,zandvoort
+1971_5,1971,5,French Grand Prix,1971-07-04,,ricard
+1971_6,1971,6,British Grand Prix,1971-07-17,,silverstone
+1971_7,1971,7,German Grand Prix,1971-08-01,,nurburgring
+1971_8,1971,8,Austrian Grand Prix,1971-08-15,,red_bull_ring
+1971_9,1971,9,Italian Grand Prix,1971-09-05,,monza
+1971_10,1971,10,Canadian Grand Prix,1971-09-19,,mosport
+1971_11,1971,11,United States Grand Prix,1971-10-03,,watkins_glen
+1972_1,1972,1,Argentine Grand Prix,1972-01-23,,galvez
+1972_2,1972,2,South African Grand Prix,1972-03-04,,kyalami
+1972_3,1972,3,Spanish Grand Prix,1972-05-01,,jarama
+1972_4,1972,4,Monaco Grand Prix,1972-05-14,,monaco
+1972_5,1972,5,Belgian Grand Prix,1972-06-04,,nivelles
+1972_6,1972,6,French Grand Prix,1972-07-02,,charade
+1972_7,1972,7,British Grand Prix,1972-07-15,,brands_hatch
+1972_8,1972,8,German Grand Prix,1972-07-30,,nurburgring
+1972_9,1972,9,Austrian Grand Prix,1972-08-13,,red_bull_ring
+1972_10,1972,10,Italian Grand Prix,1972-09-10,,monza
+1972_11,1972,11,Canadian Grand Prix,1972-09-24,,mosport
+1972_12,1972,12,United States Grand Prix,1972-10-08,,watkins_glen
+1973_1,1973,1,Argentine Grand Prix,1973-01-28,,galvez
+1973_2,1973,2,Brazilian Grand Prix,1973-02-11,,interlagos
+1973_3,1973,3,South African Grand Prix,1973-03-03,,kyalami
+1973_4,1973,4,Spanish Grand Prix,1973-04-29,,montjuic
+1973_5,1973,5,Belgian Grand Prix,1973-05-20,,zolder
+1973_6,1973,6,Monaco Grand Prix,1973-06-03,,monaco
+1973_7,1973,7,Swedish Grand Prix,1973-06-17,,anderstorp
+1973_8,1973,8,French Grand Prix,1973-07-01,,ricard
+1973_9,1973,9,British Grand Prix,1973-07-14,,silverstone
+1973_10,1973,10,Dutch Grand Prix,1973-07-29,,zandvoort
+1973_11,1973,11,German Grand Prix,1973-08-05,,nurburgring
+1973_12,1973,12,Austrian Grand Prix,1973-08-19,,red_bull_ring
+1973_13,1973,13,Italian Grand Prix,1973-09-09,,monza
+1973_14,1973,14,Canadian Grand Prix,1973-09-23,,mosport
+1973_15,1973,15,United States Grand Prix,1973-10-07,,watkins_glen
+1974_1,1974,1,Argentine Grand Prix,1974-01-13,,galvez
+1974_2,1974,2,Brazilian Grand Prix,1974-01-27,,interlagos
+1974_3,1974,3,South African Grand Prix,1974-03-30,,kyalami
+1974_4,1974,4,Spanish Grand Prix,1974-04-28,,jarama
+1974_5,1974,5,Belgian Grand Prix,1974-05-12,,nivelles
+1974_6,1974,6,Monaco Grand Prix,1974-05-26,,monaco
+1974_7,1974,7,Swedish Grand Prix,1974-06-09,,anderstorp
+1974_8,1974,8,Dutch Grand Prix,1974-06-23,,zandvoort
+1974_9,1974,9,French Grand Prix,1974-07-07,,dijon
+1974_10,1974,10,British Grand Prix,1974-07-20,,brands_hatch
+1974_11,1974,11,German Grand Prix,1974-08-04,,nurburgring
+1974_12,1974,12,Austrian Grand Prix,1974-08-18,,red_bull_ring
+1974_13,1974,13,Italian Grand Prix,1974-09-08,,monza
+1974_14,1974,14,Canadian Grand Prix,1974-09-22,,mosport
+1974_15,1974,15,United States Grand Prix,1974-10-06,,watkins_glen
+1975_1,1975,1,Argentine Grand Prix,1975-01-12,,galvez
+1975_2,1975,2,Brazilian Grand Prix,1975-01-26,,interlagos
+1975_3,1975,3,South African Grand Prix,1975-03-01,,kyalami
+1975_4,1975,4,Spanish Grand Prix,1975-04-27,,montjuic
+1975_5,1975,5,Monaco Grand Prix,1975-05-11,,monaco
+1975_6,1975,6,Belgian Grand Prix,1975-05-25,,zolder
+1975_7,1975,7,Swedish Grand Prix,1975-06-08,,anderstorp
+1975_8,1975,8,Dutch Grand Prix,1975-06-22,,zandvoort
+1975_9,1975,9,French Grand Prix,1975-07-06,,ricard
+1975_10,1975,10,British Grand Prix,1975-07-19,,silverstone
+1975_11,1975,11,German Grand Prix,1975-08-03,,nurburgring
+1975_12,1975,12,Austrian Grand Prix,1975-08-17,,red_bull_ring
+1975_13,1975,13,Italian Grand Prix,1975-09-07,,monza
+1975_14,1975,14,United States Grand Prix,1975-10-05,,watkins_glen
+1976_1,1976,1,Brazilian Grand Prix,1976-01-25,,interlagos
+1976_2,1976,2,South African Grand Prix,1976-03-06,,kyalami
+1976_3,1976,3,United States Grand Prix West,1976-03-28,,long_beach
+1976_4,1976,4,Spanish Grand Prix,1976-05-02,,jarama
+1976_5,1976,5,Belgian Grand Prix,1976-05-16,,zolder
+1976_6,1976,6,Monaco Grand Prix,1976-05-30,,monaco
+1976_7,1976,7,Swedish Grand Prix,1976-06-13,,anderstorp
+1976_8,1976,8,French Grand Prix,1976-07-04,,ricard
+1976_9,1976,9,British Grand Prix,1976-07-18,,brands_hatch
+1976_10,1976,10,German Grand Prix,1976-08-01,,nurburgring
+1976_11,1976,11,Austrian Grand Prix,1976-08-15,,red_bull_ring
+1976_12,1976,12,Dutch Grand Prix,1976-08-29,,zandvoort
+1976_13,1976,13,Italian Grand Prix,1976-09-12,,monza
+1976_14,1976,14,Canadian Grand Prix,1976-10-03,,mosport
+1976_15,1976,15,United States Grand Prix,1976-10-10,,watkins_glen
+1976_16,1976,16,Japanese Grand Prix,1976-10-24,,fuji
+1977_1,1977,1,Argentine Grand Prix,1977-01-09,,galvez
+1977_2,1977,2,Brazilian Grand Prix,1977-01-23,,interlagos
+1977_3,1977,3,South African Grand Prix,1977-03-05,,kyalami
+1977_4,1977,4,United States Grand Prix West,1977-04-03,,long_beach
+1977_5,1977,5,Spanish Grand Prix,1977-05-08,,jarama
+1977_6,1977,6,Monaco Grand Prix,1977-05-22,,monaco
+1977_7,1977,7,Belgian Grand Prix,1977-06-05,,zolder
+1977_8,1977,8,Swedish Grand Prix,1977-06-19,,anderstorp
+1977_9,1977,9,French Grand Prix,1977-07-03,,dijon
+1977_10,1977,10,British Grand Prix,1977-07-16,,silverstone
+1977_11,1977,11,German Grand Prix,1977-07-31,,hockenheimring
+1977_12,1977,12,Austrian Grand Prix,1977-08-14,,red_bull_ring
+1977_13,1977,13,Dutch Grand Prix,1977-08-28,,zandvoort
+1977_14,1977,14,Italian Grand Prix,1977-09-11,,monza
+1977_15,1977,15,United States Grand Prix,1977-10-02,,watkins_glen
+1977_16,1977,16,Canadian Grand Prix,1977-10-09,,mosport
+1977_17,1977,17,Japanese Grand Prix,1977-10-23,,fuji
+1978_1,1978,1,Argentine Grand Prix,1978-01-15,,galvez
+1978_2,1978,2,Brazilian Grand Prix,1978-01-29,,jacarepagua
+1978_3,1978,3,South African Grand Prix,1978-03-04,,kyalami
+1978_4,1978,4,United States Grand Prix West,1978-04-02,,long_beach
+1978_5,1978,5,Monaco Grand Prix,1978-05-07,,monaco
+1978_6,1978,6,Belgian Grand Prix,1978-05-21,,zolder
+1978_7,1978,7,Spanish Grand Prix,1978-06-04,,jarama
+1978_8,1978,8,Swedish Grand Prix,1978-06-17,,anderstorp
+1978_9,1978,9,French Grand Prix,1978-07-02,,ricard
+1978_10,1978,10,British Grand Prix,1978-07-16,,brands_hatch
+1978_11,1978,11,German Grand Prix,1978-07-30,,hockenheimring
+1978_12,1978,12,Austrian Grand Prix,1978-08-13,,red_bull_ring
+1978_13,1978,13,Dutch Grand Prix,1978-08-27,,zandvoort
+1978_14,1978,14,Italian Grand Prix,1978-09-10,,monza
+1978_15,1978,15,United States Grand Prix,1978-10-01,,watkins_glen
+1978_16,1978,16,Canadian Grand Prix,1978-10-08,,villeneuve
+1979_1,1979,1,Argentine Grand Prix,1979-01-21,,galvez
+1979_2,1979,2,Brazilian Grand Prix,1979-02-04,,interlagos
+1979_3,1979,3,South African Grand Prix,1979-03-03,,kyalami
+1979_4,1979,4,United States Grand Prix West,1979-04-08,,long_beach
+1979_5,1979,5,Spanish Grand Prix,1979-04-29,,jarama
+1979_6,1979,6,Belgian Grand Prix,1979-05-13,,zolder
+1979_7,1979,7,Monaco Grand Prix,1979-05-27,,monaco
+1979_8,1979,8,French Grand Prix,1979-07-01,,dijon
+1979_9,1979,9,British Grand Prix,1979-07-14,,silverstone
+1979_10,1979,10,German Grand Prix,1979-07-29,,hockenheimring
+1979_11,1979,11,Austrian Grand Prix,1979-08-12,,red_bull_ring
+1979_12,1979,12,Dutch Grand Prix,1979-08-26,,zandvoort
+1979_13,1979,13,Italian Grand Prix,1979-09-09,,monza
+1979_14,1979,14,Canadian Grand Prix,1979-09-30,,villeneuve
+1979_15,1979,15,United States Grand Prix,1979-10-07,,watkins_glen
+1980_1,1980,1,Argentine Grand Prix,1980-01-13,,galvez
+1980_2,1980,2,Brazilian Grand Prix,1980-01-27,,interlagos
+1980_3,1980,3,South African Grand Prix,1980-03-01,,kyalami
+1980_4,1980,4,United States Grand Prix West,1980-03-30,,long_beach
+1980_5,1980,5,Belgian Grand Prix,1980-05-04,,zolder
+1980_6,1980,6,Monaco Grand Prix,1980-05-18,,monaco
+1980_7,1980,7,French Grand Prix,1980-06-29,,ricard
+1980_8,1980,8,British Grand Prix,1980-07-13,,brands_hatch
+1980_9,1980,9,German Grand Prix,1980-08-10,,hockenheimring
+1980_10,1980,10,Austrian Grand Prix,1980-08-17,,red_bull_ring
+1980_11,1980,11,Dutch Grand Prix,1980-08-31,,zandvoort
+1980_12,1980,12,Italian Grand Prix,1980-09-14,,imola
+1980_13,1980,13,Canadian Grand Prix,1980-09-28,,villeneuve
+1980_14,1980,14,United States Grand Prix,1980-10-05,,watkins_glen
+1981_1,1981,1,United States Grand Prix West,1981-03-15,,long_beach
+1981_2,1981,2,Brazilian Grand Prix,1981-03-29,,jacarepagua
+1981_3,1981,3,Argentine Grand Prix,1981-04-12,,galvez
+1981_4,1981,4,San Marino Grand Prix,1981-05-03,,imola
+1981_5,1981,5,Belgian Grand Prix,1981-05-17,,zolder
+1981_6,1981,6,Monaco Grand Prix,1981-05-31,,monaco
+1981_7,1981,7,Spanish Grand Prix,1981-06-21,,jarama
+1981_8,1981,8,French Grand Prix,1981-07-05,,dijon
+1981_9,1981,9,British Grand Prix,1981-07-18,,silverstone
+1981_10,1981,10,German Grand Prix,1981-08-02,,hockenheimring
+1981_11,1981,11,Austrian Grand Prix,1981-08-16,,red_bull_ring
+1981_12,1981,12,Dutch Grand Prix,1981-08-30,,zandvoort
+1981_13,1981,13,Italian Grand Prix,1981-09-13,,monza
+1981_14,1981,14,Canadian Grand Prix,1981-09-27,,villeneuve
+1981_15,1981,15,Caesars Palace Grand Prix,1981-10-17,,las_vegas
+1982_1,1982,1,South African Grand Prix,1982-01-23,,kyalami
+1982_2,1982,2,Brazilian Grand Prix,1982-03-21,,jacarepagua
+1982_3,1982,3,United States Grand Prix West,1982-04-04,,long_beach
+1982_4,1982,4,San Marino Grand Prix,1982-04-25,,imola
+1982_5,1982,5,Belgian Grand Prix,1982-05-09,,zolder
+1982_6,1982,6,Monaco Grand Prix,1982-05-23,,monaco
+1982_7,1982,7,Detroit Grand Prix,1982-06-06,,detroit
+1982_8,1982,8,Canadian Grand Prix,1982-06-13,,villeneuve
+1982_9,1982,9,Dutch Grand Prix,1982-07-03,,zandvoort
+1982_10,1982,10,British Grand Prix,1982-07-18,,brands_hatch
+1982_11,1982,11,French Grand Prix,1982-07-25,,ricard
+1982_12,1982,12,German Grand Prix,1982-08-08,,hockenheimring
+1982_13,1982,13,Austrian Grand Prix,1982-08-15,,red_bull_ring
+1982_14,1982,14,Swiss Grand Prix,1982-08-29,,dijon
+1982_15,1982,15,Italian Grand Prix,1982-09-12,,monza
+1982_16,1982,16,Caesars Palace Grand Prix,1982-09-25,,las_vegas
+1983_1,1983,1,Brazilian Grand Prix,1983-03-13,,jacarepagua
+1983_2,1983,2,United States Grand Prix West,1983-03-27,,long_beach
+1983_3,1983,3,French Grand Prix,1983-04-17,,ricard
+1983_4,1983,4,San Marino Grand Prix,1983-05-01,,imola
+1983_5,1983,5,Monaco Grand Prix,1983-05-15,,monaco
+1983_6,1983,6,Belgian Grand Prix,1983-05-22,,spa
+1983_7,1983,7,Detroit Grand Prix,1983-06-05,,detroit
+1983_8,1983,8,Canadian Grand Prix,1983-06-12,,villeneuve
+1983_9,1983,9,British Grand Prix,1983-07-16,,silverstone
+1983_10,1983,10,German Grand Prix,1983-08-07,,hockenheimring
+1983_11,1983,11,Austrian Grand Prix,1983-08-14,,red_bull_ring
+1983_12,1983,12,Dutch Grand Prix,1983-08-28,,zandvoort
+1983_13,1983,13,Italian Grand Prix,1983-09-11,,monza
+1983_14,1983,14,European Grand Prix,1983-09-25,,brands_hatch
+1983_15,1983,15,South African Grand Prix,1983-10-15,,kyalami
+1984_1,1984,1,Brazilian Grand Prix,1984-03-25,,jacarepagua
+1984_2,1984,2,South African Grand Prix,1984-04-07,,kyalami
+1984_3,1984,3,Belgian Grand Prix,1984-04-29,,zolder
+1984_4,1984,4,San Marino Grand Prix,1984-05-06,,imola
+1984_5,1984,5,French Grand Prix,1984-05-20,,dijon
+1984_6,1984,6,Monaco Grand Prix,1984-06-03,,monaco
+1984_7,1984,7,Canadian Grand Prix,1984-06-17,,villeneuve
+1984_8,1984,8,Detroit Grand Prix,1984-06-24,,detroit
+1984_9,1984,9,Dallas Grand Prix,1984-07-08,,dallas
+1984_10,1984,10,British Grand Prix,1984-07-22,,brands_hatch
+1984_11,1984,11,German Grand Prix,1984-08-05,,hockenheimring
+1984_12,1984,12,Austrian Grand Prix,1984-08-19,,red_bull_ring
+1984_13,1984,13,Dutch Grand Prix,1984-08-26,,zandvoort
+1984_14,1984,14,Italian Grand Prix,1984-09-09,,monza
+1984_15,1984,15,European Grand Prix,1984-10-07,,nurburgring
+1984_16,1984,16,Portuguese Grand Prix,1984-10-21,,estoril
+1985_1,1985,1,Brazilian Grand Prix,1985-04-07,,jacarepagua
+1985_2,1985,2,Portuguese Grand Prix,1985-04-21,,estoril
+1985_3,1985,3,San Marino Grand Prix,1985-05-05,,imola
+1985_4,1985,4,Monaco Grand Prix,1985-05-19,,monaco
+1985_5,1985,5,Canadian Grand Prix,1985-06-16,,villeneuve
+1985_6,1985,6,Detroit Grand Prix,1985-06-23,,detroit
+1985_7,1985,7,French Grand Prix,1985-07-07,,ricard
+1985_8,1985,8,British Grand Prix,1985-07-21,,silverstone
+1985_9,1985,9,German Grand Prix,1985-08-04,,nurburgring
+1985_10,1985,10,Austrian Grand Prix,1985-08-18,,red_bull_ring
+1985_11,1985,11,Dutch Grand Prix,1985-08-25,,zandvoort
+1985_12,1985,12,Italian Grand Prix,1985-09-08,,monza
+1985_13,1985,13,Belgian Grand Prix,1985-09-15,,spa
+1985_14,1985,14,European Grand Prix,1985-10-06,,brands_hatch
+1985_15,1985,15,South African Grand Prix,1985-10-19,,kyalami
+1985_16,1985,16,Australian Grand Prix,1985-11-03,,adelaide
+1986_1,1986,1,Brazilian Grand Prix,1986-03-23,,jacarepagua
+1986_2,1986,2,Spanish Grand Prix,1986-04-13,,jerez
+1986_3,1986,3,San Marino Grand Prix,1986-04-27,,imola
+1986_4,1986,4,Monaco Grand Prix,1986-05-11,,monaco
+1986_5,1986,5,Belgian Grand Prix,1986-05-25,,spa
+1986_6,1986,6,Canadian Grand Prix,1986-06-15,,villeneuve
+1986_7,1986,7,Detroit Grand Prix,1986-06-22,,detroit
+1986_8,1986,8,French Grand Prix,1986-07-06,,ricard
+1986_9,1986,9,British Grand Prix,1986-07-13,,brands_hatch
+1986_10,1986,10,German Grand Prix,1986-07-27,,hockenheimring
+1986_11,1986,11,Hungarian Grand Prix,1986-08-10,,hungaroring
+1986_12,1986,12,Austrian Grand Prix,1986-08-17,,red_bull_ring
+1986_13,1986,13,Italian Grand Prix,1986-09-07,,monza
+1986_14,1986,14,Portuguese Grand Prix,1986-09-21,,estoril
+1986_15,1986,15,Mexican Grand Prix,1986-10-12,,rodriguez
+1986_16,1986,16,Australian Grand Prix,1986-10-26,,adelaide
+1987_1,1987,1,Brazilian Grand Prix,1987-04-12,,jacarepagua
+1987_2,1987,2,San Marino Grand Prix,1987-05-03,,imola
+1987_3,1987,3,Belgian Grand Prix,1987-05-17,,spa
+1987_4,1987,4,Monaco Grand Prix,1987-05-31,,monaco
+1987_5,1987,5,Detroit Grand Prix,1987-06-21,,detroit
+1987_6,1987,6,French Grand Prix,1987-07-05,,ricard
+1987_7,1987,7,British Grand Prix,1987-07-12,,silverstone
+1987_8,1987,8,German Grand Prix,1987-07-26,,hockenheimring
+1987_9,1987,9,Hungarian Grand Prix,1987-08-09,,hungaroring
+1987_10,1987,10,Austrian Grand Prix,1987-08-16,,red_bull_ring
+1987_11,1987,11,Italian Grand Prix,1987-09-06,,monza
+1987_12,1987,12,Portuguese Grand Prix,1987-09-20,,estoril
+1987_13,1987,13,Spanish Grand Prix,1987-09-27,,jerez
+1987_14,1987,14,Mexican Grand Prix,1987-10-18,,rodriguez
+1987_15,1987,15,Japanese Grand Prix,1987-11-01,,suzuka
+1987_16,1987,16,Australian Grand Prix,1987-11-15,,adelaide
+1988_1,1988,1,Brazilian Grand Prix,1988-04-03,,jacarepagua
+1988_2,1988,2,San Marino Grand Prix,1988-05-01,,imola
+1988_3,1988,3,Monaco Grand Prix,1988-05-15,,monaco
+1988_4,1988,4,Mexican Grand Prix,1988-05-29,,rodriguez
+1988_5,1988,5,Canadian Grand Prix,1988-06-12,,villeneuve
+1988_6,1988,6,Detroit Grand Prix,1988-06-19,,detroit
+1988_7,1988,7,French Grand Prix,1988-07-03,,ricard
+1988_8,1988,8,British Grand Prix,1988-07-10,,silverstone
+1988_9,1988,9,German Grand Prix,1988-07-24,,hockenheimring
+1988_10,1988,10,Hungarian Grand Prix,1988-08-07,,hungaroring
+1988_11,1988,11,Belgian Grand Prix,1988-08-28,,spa
+1988_12,1988,12,Italian Grand Prix,1988-09-11,,monza
+1988_13,1988,13,Portuguese Grand Prix,1988-09-25,,estoril
+1988_14,1988,14,Spanish Grand Prix,1988-10-02,,jerez
+1988_15,1988,15,Japanese Grand Prix,1988-10-30,,suzuka
+1988_16,1988,16,Australian Grand Prix,1988-11-13,,adelaide
+1989_1,1989,1,Brazilian Grand Prix,1989-03-26,,jacarepagua
+1989_2,1989,2,San Marino Grand Prix,1989-04-23,,imola
+1989_3,1989,3,Monaco Grand Prix,1989-05-07,,monaco
+1989_4,1989,4,Mexican Grand Prix,1989-05-28,,rodriguez
+1989_5,1989,5,United States Grand Prix,1989-06-04,,phoenix
+1989_6,1989,6,Canadian Grand Prix,1989-06-18,,villeneuve
+1989_7,1989,7,French Grand Prix,1989-07-09,,ricard
+1989_8,1989,8,British Grand Prix,1989-07-16,,silverstone
+1989_9,1989,9,German Grand Prix,1989-07-30,,hockenheimring
+1989_10,1989,10,Hungarian Grand Prix,1989-08-13,,hungaroring
+1989_11,1989,11,Belgian Grand Prix,1989-08-27,,spa
+1989_12,1989,12,Italian Grand Prix,1989-09-10,,monza
+1989_13,1989,13,Portuguese Grand Prix,1989-09-24,,estoril
+1989_14,1989,14,Spanish Grand Prix,1989-10-01,,jerez
+1989_15,1989,15,Japanese Grand Prix,1989-10-22,,suzuka
+1989_16,1989,16,Australian Grand Prix,1989-11-05,,adelaide
+1990_1,1990,1,United States Grand Prix,1990-03-11,,phoenix
+1990_2,1990,2,Brazilian Grand Prix,1990-03-25,,interlagos
+1990_3,1990,3,San Marino Grand Prix,1990-05-13,,imola
+1990_4,1990,4,Monaco Grand Prix,1990-05-27,,monaco
+1990_5,1990,5,Canadian Grand Prix,1990-06-10,,villeneuve
+1990_6,1990,6,Mexican Grand Prix,1990-06-24,,rodriguez
+1990_7,1990,7,French Grand Prix,1990-07-08,,ricard
+1990_8,1990,8,British Grand Prix,1990-07-15,,silverstone
+1990_9,1990,9,German Grand Prix,1990-07-29,,hockenheimring
+1990_10,1990,10,Hungarian Grand Prix,1990-08-12,,hungaroring
+1990_11,1990,11,Belgian Grand Prix,1990-08-26,,spa
+1990_12,1990,12,Italian Grand Prix,1990-09-09,,monza
+1990_13,1990,13,Portuguese Grand Prix,1990-09-23,,estoril
+1990_14,1990,14,Spanish Grand Prix,1990-09-30,,jerez
+1990_15,1990,15,Japanese Grand Prix,1990-10-21,,suzuka
+1990_16,1990,16,Australian Grand Prix,1990-11-04,,adelaide
+1991_1,1991,1,United States Grand Prix,1991-03-10,,phoenix
+1991_2,1991,2,Brazilian Grand Prix,1991-03-24,,interlagos
+1991_3,1991,3,San Marino Grand Prix,1991-04-28,,imola
+1991_4,1991,4,Monaco Grand Prix,1991-05-12,,monaco
+1991_5,1991,5,Canadian Grand Prix,1991-06-02,,villeneuve
+1991_6,1991,6,Mexican Grand Prix,1991-06-16,,rodriguez
+1991_7,1991,7,French Grand Prix,1991-07-07,,magny_cours
+1991_8,1991,8,British Grand Prix,1991-07-14,,silverstone
+1991_9,1991,9,German Grand Prix,1991-07-28,,hockenheimring
+1991_10,1991,10,Hungarian Grand Prix,1991-08-11,,hungaroring
+1991_11,1991,11,Belgian Grand Prix,1991-08-25,,spa
+1991_12,1991,12,Italian Grand Prix,1991-09-08,,monza
+1991_13,1991,13,Portuguese Grand Prix,1991-09-22,,estoril
+1991_14,1991,14,Spanish Grand Prix,1991-09-29,,catalunya
+1991_15,1991,15,Japanese Grand Prix,1991-10-20,,suzuka
+1991_16,1991,16,Australian Grand Prix,1991-11-03,,adelaide
+1992_1,1992,1,South African Grand Prix,1992-03-01,,kyalami
+1992_2,1992,2,Mexican Grand Prix,1992-03-22,,rodriguez
+1992_3,1992,3,Brazilian Grand Prix,1992-04-05,,interlagos
+1992_4,1992,4,Spanish Grand Prix,1992-05-03,,catalunya
+1992_5,1992,5,San Marino Grand Prix,1992-05-17,,imola
+1992_6,1992,6,Monaco Grand Prix,1992-05-31,,monaco
+1992_7,1992,7,Canadian Grand Prix,1992-06-14,,villeneuve
+1992_8,1992,8,French Grand Prix,1992-07-05,,magny_cours
+1992_9,1992,9,British Grand Prix,1992-07-12,,silverstone
+1992_10,1992,10,German Grand Prix,1992-07-26,,hockenheimring
+1992_11,1992,11,Hungarian Grand Prix,1992-08-16,,hungaroring
+1992_12,1992,12,Belgian Grand Prix,1992-08-30,,spa
+1992_13,1992,13,Italian Grand Prix,1992-09-13,,monza
+1992_14,1992,14,Portuguese Grand Prix,1992-09-27,,estoril
+1992_15,1992,15,Japanese Grand Prix,1992-10-25,,suzuka
+1992_16,1992,16,Australian Grand Prix,1992-11-08,,adelaide
+1993_1,1993,1,South African Grand Prix,1993-03-14,,kyalami
+1993_2,1993,2,Brazilian Grand Prix,1993-03-28,,interlagos
+1993_3,1993,3,European Grand Prix,1993-04-11,,donington
+1993_4,1993,4,San Marino Grand Prix,1993-04-25,,imola
+1993_5,1993,5,Spanish Grand Prix,1993-05-09,,catalunya
+1993_6,1993,6,Monaco Grand Prix,1993-05-23,,monaco
+1993_7,1993,7,Canadian Grand Prix,1993-06-13,,villeneuve
+1993_8,1993,8,French Grand Prix,1993-07-04,,magny_cours
+1993_9,1993,9,British Grand Prix,1993-07-11,,silverstone
+1993_10,1993,10,German Grand Prix,1993-07-25,,hockenheimring
+1993_11,1993,11,Hungarian Grand Prix,1993-08-15,,hungaroring
+1993_12,1993,12,Belgian Grand Prix,1993-08-29,,spa
+1993_13,1993,13,Italian Grand Prix,1993-09-12,,monza
+1993_14,1993,14,Portuguese Grand Prix,1993-09-26,,estoril
+1993_15,1993,15,Japanese Grand Prix,1993-10-24,,suzuka
+1993_16,1993,16,Australian Grand Prix,1993-11-07,,adelaide
+1994_1,1994,1,Brazilian Grand Prix,1994-03-27,,interlagos
+1994_2,1994,2,Pacific Grand Prix,1994-04-17,,okayama
+1994_3,1994,3,San Marino Grand Prix,1994-05-01,,imola
+1994_4,1994,4,Monaco Grand Prix,1994-05-15,,monaco
+1994_5,1994,5,Spanish Grand Prix,1994-05-29,,catalunya
+1994_6,1994,6,Canadian Grand Prix,1994-06-12,,villeneuve
+1994_7,1994,7,French Grand Prix,1994-07-03,,magny_cours
+1994_8,1994,8,British Grand Prix,1994-07-10,,silverstone
+1994_9,1994,9,German Grand Prix,1994-07-31,,hockenheimring
+1994_10,1994,10,Hungarian Grand Prix,1994-08-14,,hungaroring
+1994_11,1994,11,Belgian Grand Prix,1994-08-28,,spa
+1994_12,1994,12,Italian Grand Prix,1994-09-11,,monza
+1994_13,1994,13,Portuguese Grand Prix,1994-09-25,,estoril
+1994_14,1994,14,European Grand Prix,1994-10-16,,jerez
+1994_15,1994,15,Japanese Grand Prix,1994-11-06,,suzuka
+1994_16,1994,16,Australian Grand Prix,1994-11-13,,adelaide
+1995_1,1995,1,Brazilian Grand Prix,1995-03-26,,interlagos
+1995_2,1995,2,Argentine Grand Prix,1995-04-09,,galvez
+1995_3,1995,3,San Marino Grand Prix,1995-04-30,,imola
+1995_4,1995,4,Spanish Grand Prix,1995-05-14,,catalunya
+1995_5,1995,5,Monaco Grand Prix,1995-05-28,,monaco
+1995_6,1995,6,Canadian Grand Prix,1995-06-11,,villeneuve
+1995_7,1995,7,French Grand Prix,1995-07-02,,magny_cours
+1995_8,1995,8,British Grand Prix,1995-07-16,,silverstone
+1995_9,1995,9,German Grand Prix,1995-07-30,,hockenheimring
+1995_10,1995,10,Hungarian Grand Prix,1995-08-13,,hungaroring
+1995_11,1995,11,Belgian Grand Prix,1995-08-27,,spa
+1995_12,1995,12,Italian Grand Prix,1995-09-10,,monza
+1995_13,1995,13,Portuguese Grand Prix,1995-09-24,,estoril
+1995_14,1995,14,European Grand Prix,1995-10-01,,nurburgring
+1995_15,1995,15,Pacific Grand Prix,1995-10-22,,okayama
+1995_16,1995,16,Japanese Grand Prix,1995-10-29,,suzuka
+1995_17,1995,17,Australian Grand Prix,1995-11-12,,adelaide
+1996_1,1996,1,Australian Grand Prix,1996-03-10,,albert_park
+1996_2,1996,2,Brazilian Grand Prix,1996-03-31,,interlagos
+1996_3,1996,3,Argentine Grand Prix,1996-04-07,,galvez
+1996_4,1996,4,European Grand Prix,1996-04-28,,nurburgring
+1996_5,1996,5,San Marino Grand Prix,1996-05-05,,imola
+1996_6,1996,6,Monaco Grand Prix,1996-05-19,,monaco
+1996_7,1996,7,Spanish Grand Prix,1996-06-02,,catalunya
+1996_8,1996,8,Canadian Grand Prix,1996-06-16,,villeneuve
+1996_9,1996,9,French Grand Prix,1996-06-30,,magny_cours
+1996_10,1996,10,British Grand Prix,1996-07-14,,silverstone
+1996_11,1996,11,German Grand Prix,1996-07-28,,hockenheimring
+1996_12,1996,12,Hungarian Grand Prix,1996-08-11,,hungaroring
+1996_13,1996,13,Belgian Grand Prix,1996-08-25,,spa
+1996_14,1996,14,Italian Grand Prix,1996-09-08,,monza
+1996_15,1996,15,Portuguese Grand Prix,1996-09-22,,estoril
+1996_16,1996,16,Japanese Grand Prix,1996-10-13,,suzuka
+1997_1,1997,1,Australian Grand Prix,1997-03-09,,albert_park
+1997_2,1997,2,Brazilian Grand Prix,1997-03-30,,interlagos
+1997_3,1997,3,Argentine Grand Prix,1997-04-13,,galvez
+1997_4,1997,4,San Marino Grand Prix,1997-04-27,,imola
+1997_5,1997,5,Monaco Grand Prix,1997-05-11,,monaco
+1997_6,1997,6,Spanish Grand Prix,1997-05-25,,catalunya
+1997_7,1997,7,Canadian Grand Prix,1997-06-15,,villeneuve
+1997_8,1997,8,French Grand Prix,1997-06-29,,magny_cours
+1997_9,1997,9,British Grand Prix,1997-07-13,,silverstone
+1997_10,1997,10,German Grand Prix,1997-07-27,,hockenheimring
+1997_11,1997,11,Hungarian Grand Prix,1997-08-10,,hungaroring
+1997_12,1997,12,Belgian Grand Prix,1997-08-24,,spa
+1997_13,1997,13,Italian Grand Prix,1997-09-07,,monza
+1997_14,1997,14,Austrian Grand Prix,1997-09-21,,red_bull_ring
+1997_15,1997,15,Luxembourg Grand Prix,1997-09-28,,nurburgring
+1997_16,1997,16,Japanese Grand Prix,1997-10-12,,suzuka
+1997_17,1997,17,European Grand Prix,1997-10-26,,jerez
+1998_1,1998,1,Australian Grand Prix,1998-03-08,,albert_park
+1998_2,1998,2,Brazilian Grand Prix,1998-03-29,,interlagos
+1998_3,1998,3,Argentine Grand Prix,1998-04-12,,galvez
+1998_4,1998,4,San Marino Grand Prix,1998-04-26,,imola
+1998_5,1998,5,Spanish Grand Prix,1998-05-10,,catalunya
+1998_6,1998,6,Monaco Grand Prix,1998-05-24,,monaco
+1998_7,1998,7,Canadian Grand Prix,1998-06-07,,villeneuve
+1998_8,1998,8,French Grand Prix,1998-06-28,,magny_cours
+1998_9,1998,9,British Grand Prix,1998-07-12,,silverstone
+1998_10,1998,10,Austrian Grand Prix,1998-07-26,,red_bull_ring
+1998_11,1998,11,German Grand Prix,1998-08-02,,hockenheimring
+1998_12,1998,12,Hungarian Grand Prix,1998-08-16,,hungaroring
+1998_13,1998,13,Belgian Grand Prix,1998-08-30,,spa
+1998_14,1998,14,Italian Grand Prix,1998-09-13,,monza
+1998_15,1998,15,Luxembourg Grand Prix,1998-09-27,,nurburgring
+1998_16,1998,16,Japanese Grand Prix,1998-11-01,,suzuka
+1999_1,1999,1,Australian Grand Prix,1999-03-07,,albert_park
+1999_2,1999,2,Brazilian Grand Prix,1999-04-11,,interlagos
+1999_3,1999,3,San Marino Grand Prix,1999-05-02,,imola
+1999_4,1999,4,Monaco Grand Prix,1999-05-16,,monaco
+1999_5,1999,5,Spanish Grand Prix,1999-05-30,,catalunya
+1999_6,1999,6,Canadian Grand Prix,1999-06-13,,villeneuve
+1999_7,1999,7,French Grand Prix,1999-06-27,,magny_cours
+1999_8,1999,8,British Grand Prix,1999-07-11,,silverstone
+1999_9,1999,9,Austrian Grand Prix,1999-07-25,,red_bull_ring
+1999_10,1999,10,German Grand Prix,1999-08-01,,hockenheimring
+1999_11,1999,11,Hungarian Grand Prix,1999-08-15,,hungaroring
+1999_12,1999,12,Belgian Grand Prix,1999-08-29,,spa
+1999_13,1999,13,Italian Grand Prix,1999-09-12,,monza
+1999_14,1999,14,European Grand Prix,1999-09-26,,nurburgring
+1999_15,1999,15,Malaysian Grand Prix,1999-10-17,,sepang
+1999_16,1999,16,Japanese Grand Prix,1999-10-31,,suzuka
+2000_1,2000,1,Australian Grand Prix,2000-03-12,,albert_park
+2000_2,2000,2,Brazilian Grand Prix,2000-03-26,,interlagos
+2000_3,2000,3,San Marino Grand Prix,2000-04-09,,imola
+2000_4,2000,4,British Grand Prix,2000-04-23,,silverstone
+2000_5,2000,5,Spanish Grand Prix,2000-05-07,,catalunya
+2000_6,2000,6,European Grand Prix,2000-05-21,,nurburgring
+2000_7,2000,7,Monaco Grand Prix,2000-06-04,,monaco
+2000_8,2000,8,Canadian Grand Prix,2000-06-18,,villeneuve
+2000_9,2000,9,French Grand Prix,2000-07-02,,magny_cours
+2000_10,2000,10,Austrian Grand Prix,2000-07-16,,red_bull_ring
+2000_11,2000,11,German Grand Prix,2000-07-30,,hockenheimring
+2000_12,2000,12,Hungarian Grand Prix,2000-08-13,,hungaroring
+2000_13,2000,13,Belgian Grand Prix,2000-08-27,,spa
+2000_14,2000,14,Italian Grand Prix,2000-09-10,,monza
+2000_15,2000,15,United States Grand Prix,2000-09-24,,indianapolis
+2000_16,2000,16,Japanese Grand Prix,2000-10-08,,suzuka
+2000_17,2000,17,Malaysian Grand Prix,2000-10-22,,sepang
+2001_1,2001,1,Australian Grand Prix,2001-03-04,,albert_park
+2001_2,2001,2,Malaysian Grand Prix,2001-03-18,,sepang
+2001_3,2001,3,Brazilian Grand Prix,2001-04-01,,interlagos
+2001_4,2001,4,San Marino Grand Prix,2001-04-15,,imola
+2001_5,2001,5,Spanish Grand Prix,2001-04-29,,catalunya
+2001_6,2001,6,Austrian Grand Prix,2001-05-13,,red_bull_ring
+2001_7,2001,7,Monaco Grand Prix,2001-05-27,,monaco
+2001_8,2001,8,Canadian Grand Prix,2001-06-10,,villeneuve
+2001_9,2001,9,European Grand Prix,2001-06-24,,nurburgring
+2001_10,2001,10,French Grand Prix,2001-07-01,,magny_cours
+2001_11,2001,11,British Grand Prix,2001-07-15,,silverstone
+2001_12,2001,12,German Grand Prix,2001-07-29,,hockenheimring
+2001_13,2001,13,Hungarian Grand Prix,2001-08-19,,hungaroring
+2001_14,2001,14,Belgian Grand Prix,2001-09-02,,spa
+2001_15,2001,15,Italian Grand Prix,2001-09-16,,monza
+2001_16,2001,16,United States Grand Prix,2001-09-30,,indianapolis
+2001_17,2001,17,Japanese Grand Prix,2001-10-14,,suzuka
+2002_1,2002,1,Australian Grand Prix,2002-03-03,,albert_park
+2002_2,2002,2,Malaysian Grand Prix,2002-03-17,,sepang
+2002_3,2002,3,Brazilian Grand Prix,2002-03-31,,interlagos
+2002_4,2002,4,San Marino Grand Prix,2002-04-14,,imola
+2002_5,2002,5,Spanish Grand Prix,2002-04-28,,catalunya
+2002_6,2002,6,Austrian Grand Prix,2002-05-12,,red_bull_ring
+2002_7,2002,7,Monaco Grand Prix,2002-05-26,,monaco
+2002_8,2002,8,Canadian Grand Prix,2002-06-09,,villeneuve
+2002_9,2002,9,European Grand Prix,2002-06-23,,nurburgring
+2002_10,2002,10,British Grand Prix,2002-07-07,,silverstone
+2002_11,2002,11,French Grand Prix,2002-07-21,,magny_cours
+2002_12,2002,12,German Grand Prix,2002-07-28,,hockenheimring
+2002_13,2002,13,Hungarian Grand Prix,2002-08-18,,hungaroring
+2002_14,2002,14,Belgian Grand Prix,2002-09-01,,spa
+2002_15,2002,15,Italian Grand Prix,2002-09-15,,monza
+2002_16,2002,16,United States Grand Prix,2002-09-29,,indianapolis
+2002_17,2002,17,Japanese Grand Prix,2002-10-13,,suzuka
+2003_1,2003,1,Australian Grand Prix,2003-03-09,,albert_park
+2003_2,2003,2,Malaysian Grand Prix,2003-03-23,,sepang
+2003_3,2003,3,Brazilian Grand Prix,2003-04-06,,interlagos
+2003_4,2003,4,San Marino Grand Prix,2003-04-20,,imola
+2003_5,2003,5,Spanish Grand Prix,2003-05-04,,catalunya
+2003_6,2003,6,Austrian Grand Prix,2003-05-18,,red_bull_ring
+2003_7,2003,7,Monaco Grand Prix,2003-06-01,,monaco
+2003_8,2003,8,Canadian Grand Prix,2003-06-15,,villeneuve
+2003_9,2003,9,European Grand Prix,2003-06-29,,nurburgring
+2003_10,2003,10,French Grand Prix,2003-07-06,,magny_cours
+2003_11,2003,11,British Grand Prix,2003-07-20,,silverstone
+2003_12,2003,12,German Grand Prix,2003-08-03,,hockenheimring
+2003_13,2003,13,Hungarian Grand Prix,2003-08-24,,hungaroring
+2003_14,2003,14,Italian Grand Prix,2003-09-14,,monza
+2003_15,2003,15,United States Grand Prix,2003-09-28,,indianapolis
+2003_16,2003,16,Japanese Grand Prix,2003-10-12,,suzuka
+2004_1,2004,1,Australian Grand Prix,2004-03-07,,albert_park
+2004_2,2004,2,Malaysian Grand Prix,2004-03-21,,sepang
+2004_3,2004,3,Bahrain Grand Prix,2004-04-04,,bahrain
+2004_4,2004,4,San Marino Grand Prix,2004-04-25,,imola
+2004_5,2004,5,Spanish Grand Prix,2004-05-09,,catalunya
+2004_6,2004,6,Monaco Grand Prix,2004-05-23,,monaco
+2004_7,2004,7,European Grand Prix,2004-05-30,,nurburgring
+2004_8,2004,8,Canadian Grand Prix,2004-06-13,,villeneuve
+2004_9,2004,9,United States Grand Prix,2004-06-20,,indianapolis
+2004_10,2004,10,French Grand Prix,2004-07-04,,magny_cours
+2004_11,2004,11,British Grand Prix,2004-07-11,,silverstone
+2004_12,2004,12,German Grand Prix,2004-07-25,,hockenheimring
+2004_13,2004,13,Hungarian Grand Prix,2004-08-15,,hungaroring
+2004_14,2004,14,Belgian Grand Prix,2004-08-29,,spa
+2004_15,2004,15,Italian Grand Prix,2004-09-12,,monza
+2004_16,2004,16,Chinese Grand Prix,2004-09-26,,shanghai
+2004_17,2004,17,Japanese Grand Prix,2004-10-10,,suzuka
+2004_18,2004,18,Brazilian Grand Prix,2004-10-24,,interlagos
+2005_1,2005,1,Australian Grand Prix,2005-03-06,14:00:00Z,albert_park
+2005_2,2005,2,Malaysian Grand Prix,2005-03-20,15:00:00Z,sepang
+2005_3,2005,3,Bahrain Grand Prix,2005-04-03,14:30:00Z,bahrain
+2005_4,2005,4,San Marino Grand Prix,2005-04-24,14:00:00Z,imola
+2005_5,2005,5,Spanish Grand Prix,2005-05-08,14:00:00Z,catalunya
+2005_6,2005,6,Monaco Grand Prix,2005-05-22,14:00:00Z,monaco
+2005_7,2005,7,European Grand Prix,2005-05-29,14:00:00Z,nurburgring
+2005_8,2005,8,Canadian Grand Prix,2005-06-12,13:00:00Z,villeneuve
+2005_9,2005,9,United States Grand Prix,2005-06-19,14:00:00Z,indianapolis
+2005_10,2005,10,French Grand Prix,2005-07-03,14:00:00Z,magny_cours
+2005_11,2005,11,British Grand Prix,2005-07-10,14:00:00Z,silverstone
+2005_12,2005,12,German Grand Prix,2005-07-24,14:00:00Z,hockenheimring
+2005_13,2005,13,Hungarian Grand Prix,2005-07-31,14:00:00Z,hungaroring
+2005_14,2005,14,Turkish Grand Prix,2005-08-21,15:00:00Z,istanbul
+2005_15,2005,15,Italian Grand Prix,2005-09-04,14:00:00Z,monza
+2005_16,2005,16,Belgian Grand Prix,2005-09-11,14:00:00Z,spa
+2005_17,2005,17,Brazilian Grand Prix,2005-09-25,14:00:00Z,interlagos
+2005_18,2005,18,Japanese Grand Prix,2005-10-09,14:00:00Z,suzuka
+2005_19,2005,19,Chinese Grand Prix,2005-10-16,14:00:00Z,shanghai
+2006_1,2006,1,Bahrain Grand Prix,2006-03-12,14:30:00Z,bahrain
+2006_2,2006,2,Malaysian Grand Prix,2006-03-19,15:00:00Z,sepang
+2006_3,2006,3,Australian Grand Prix,2006-04-02,14:00:00Z,albert_park
+2006_4,2006,4,San Marino Grand Prix,2006-04-23,14:00:00Z,imola
+2006_5,2006,5,European Grand Prix,2006-05-07,14:00:00Z,nurburgring
+2006_6,2006,6,Spanish Grand Prix,2006-05-14,14:00:00Z,catalunya
+2006_7,2006,7,Monaco Grand Prix,2006-05-28,14:00:00Z,monaco
+2006_8,2006,8,British Grand Prix,2006-06-11,12:00:00Z,silverstone
+2006_9,2006,9,Canadian Grand Prix,2006-06-25,13:00:00Z,villeneuve
+2006_10,2006,10,United States Grand Prix,2006-07-02,14:00:00Z,indianapolis
+2006_11,2006,11,French Grand Prix,2006-07-16,14:00:00Z,magny_cours
+2006_12,2006,12,German Grand Prix,2006-07-30,14:00:00Z,hockenheimring
+2006_13,2006,13,Hungarian Grand Prix,2006-08-06,14:00:00Z,hungaroring
+2006_14,2006,14,Turkish Grand Prix,2006-08-27,15:00:00Z,istanbul
+2006_15,2006,15,Italian Grand Prix,2006-09-10,14:00:00Z,monza
+2006_16,2006,16,Chinese Grand Prix,2006-10-01,14:00:00Z,shanghai
+2006_17,2006,17,Japanese Grand Prix,2006-10-08,14:00:00Z,suzuka
+2006_18,2006,18,Brazilian Grand Prix,2006-10-22,14:00:00Z,interlagos
+2007_1,2007,1,Australian Grand Prix,2007-03-18,03:00:00Z,albert_park
+2007_2,2007,2,Malaysian Grand Prix,2007-04-08,07:00:00Z,sepang
+2007_3,2007,3,Bahrain Grand Prix,2007-04-15,11:30:00Z,bahrain
+2007_4,2007,4,Spanish Grand Prix,2007-05-13,12:00:00Z,catalunya
+2007_5,2007,5,Monaco Grand Prix,2007-05-27,12:00:00Z,monaco
+2007_6,2007,6,Canadian Grand Prix,2007-06-10,17:00:00Z,villeneuve
+2007_7,2007,7,United States Grand Prix,2007-06-17,17:00:00Z,indianapolis
+2007_8,2007,8,French Grand Prix,2007-07-01,12:00:00Z,magny_cours
+2007_9,2007,9,British Grand Prix,2007-07-08,12:00:00Z,silverstone
+2007_10,2007,10,European Grand Prix,2007-07-22,12:00:00Z,nurburgring
+2007_11,2007,11,Hungarian Grand Prix,2007-08-05,12:00:00Z,hungaroring
+2007_12,2007,12,Turkish Grand Prix,2007-08-26,12:00:00Z,istanbul
+2007_13,2007,13,Italian Grand Prix,2007-09-09,12:00:00Z,monza
+2007_14,2007,14,Belgian Grand Prix,2007-09-16,12:00:00Z,spa
+2007_15,2007,15,Japanese Grand Prix,2007-09-30,04:30:00Z,fuji
+2007_16,2007,16,Chinese Grand Prix,2007-10-07,06:00:00Z,shanghai
+2007_17,2007,17,Brazilian Grand Prix,2007-10-21,16:00:00Z,interlagos
+2008_1,2008,1,Australian Grand Prix,2008-03-16,04:30:00Z,albert_park
+2008_2,2008,2,Malaysian Grand Prix,2008-03-23,07:00:00Z,sepang
+2008_3,2008,3,Bahrain Grand Prix,2008-04-06,11:30:00Z,bahrain
+2008_4,2008,4,Spanish Grand Prix,2008-04-27,12:00:00Z,catalunya
+2008_5,2008,5,Turkish Grand Prix,2008-05-11,12:00:00Z,istanbul
+2008_6,2008,6,Monaco Grand Prix,2008-05-25,12:00:00Z,monaco
+2008_7,2008,7,Canadian Grand Prix,2008-06-08,17:00:00Z,villeneuve
+2008_8,2008,8,French Grand Prix,2008-06-22,12:00:00Z,magny_cours
+2008_9,2008,9,British Grand Prix,2008-07-06,12:00:00Z,silverstone
+2008_10,2008,10,German Grand Prix,2008-07-20,12:00:00Z,hockenheimring
+2008_11,2008,11,Hungarian Grand Prix,2008-08-03,12:00:00Z,hungaroring
+2008_12,2008,12,European Grand Prix,2008-08-24,12:00:00Z,valencia
+2008_13,2008,13,Belgian Grand Prix,2008-09-07,12:00:00Z,spa
+2008_14,2008,14,Italian Grand Prix,2008-09-14,12:00:00Z,monza
+2008_15,2008,15,Singapore Grand Prix,2008-09-28,12:00:00Z,marina_bay
+2008_16,2008,16,Japanese Grand Prix,2008-10-12,04:30:00Z,fuji
+2008_17,2008,17,Chinese Grand Prix,2008-10-19,07:00:00Z,shanghai
+2008_18,2008,18,Brazilian Grand Prix,2008-11-02,17:00:00Z,interlagos
+2009_1,2009,1,Australian Grand Prix,2009-03-29,06:00:00Z,albert_park
+2009_2,2009,2,Malaysian Grand Prix,2009-04-05,09:00:00Z,sepang
+2009_3,2009,3,Chinese Grand Prix,2009-04-19,07:00:00Z,shanghai
+2009_4,2009,4,Bahrain Grand Prix,2009-04-26,12:00:00Z,bahrain
+2009_5,2009,5,Spanish Grand Prix,2009-05-10,12:00:00Z,catalunya
+2009_6,2009,6,Monaco Grand Prix,2009-05-24,12:00:00Z,monaco
+2009_7,2009,7,Turkish Grand Prix,2009-06-07,12:00:00Z,istanbul
+2009_8,2009,8,British Grand Prix,2009-06-21,12:00:00Z,silverstone
+2009_9,2009,9,German Grand Prix,2009-07-12,12:00:00Z,nurburgring
+2009_10,2009,10,Hungarian Grand Prix,2009-07-26,12:00:00Z,hungaroring
+2009_11,2009,11,European Grand Prix,2009-08-23,12:00:00Z,valencia
+2009_12,2009,12,Belgian Grand Prix,2009-08-30,12:00:00Z,spa
+2009_13,2009,13,Italian Grand Prix,2009-09-13,12:00:00Z,monza
+2009_14,2009,14,Singapore Grand Prix,2009-09-27,12:00:00Z,marina_bay
+2009_15,2009,15,Japanese Grand Prix,2009-10-04,05:00:00Z,suzuka
+2009_16,2009,16,Brazilian Grand Prix,2009-10-18,16:00:00Z,interlagos
+2009_17,2009,17,Abu Dhabi Grand Prix,2009-11-01,11:00:00Z,yas_marina
+2010_1,2010,1,Bahrain Grand Prix,2010-03-14,12:00:00Z,bahrain
+2010_2,2010,2,Australian Grand Prix,2010-03-28,06:00:00Z,albert_park
+2010_3,2010,3,Malaysian Grand Prix,2010-04-04,08:00:00Z,sepang
+2010_4,2010,4,Chinese Grand Prix,2010-04-18,06:00:00Z,shanghai
+2010_5,2010,5,Spanish Grand Prix,2010-05-09,12:00:00Z,catalunya
+2010_6,2010,6,Monaco Grand Prix,2010-05-16,12:00:00Z,monaco
+2010_7,2010,7,Turkish Grand Prix,2010-05-30,11:00:00Z,istanbul
+2010_8,2010,8,Canadian Grand Prix,2010-06-13,16:00:00Z,villeneuve
+2010_9,2010,9,European Grand Prix,2010-06-27,12:00:00Z,valencia
+2010_10,2010,10,British Grand Prix,2010-07-11,12:00:00Z,silverstone
+2010_11,2010,11,German Grand Prix,2010-07-25,12:00:00Z,hockenheimring
+2010_12,2010,12,Hungarian Grand Prix,2010-08-01,12:00:00Z,hungaroring
+2010_13,2010,13,Belgian Grand Prix,2010-08-29,12:00:00Z,spa
+2010_14,2010,14,Italian Grand Prix,2010-09-12,12:00:00Z,monza
+2010_15,2010,15,Singapore Grand Prix,2010-09-26,12:00:00Z,marina_bay
+2010_16,2010,16,Japanese Grand Prix,2010-10-10,06:00:00Z,suzuka
+2010_17,2010,17,Korean Grand Prix,2010-10-24,05:00:00Z,yeongam
+2010_18,2010,18,Brazilian Grand Prix,2010-11-07,16:00:00Z,interlagos
+2010_19,2010,19,Abu Dhabi Grand Prix,2010-11-14,13:00:00Z,yas_marina
+2011_1,2011,1,Australian Grand Prix,2011-03-27,06:00:00Z,albert_park
+2011_2,2011,2,Malaysian Grand Prix,2011-04-10,08:00:00Z,sepang
+2011_3,2011,3,Chinese Grand Prix,2011-04-17,07:00:00Z,shanghai
+2011_4,2011,4,Turkish Grand Prix,2011-05-08,12:00:00Z,istanbul
+2011_5,2011,5,Spanish Grand Prix,2011-05-22,12:00:00Z,catalunya
+2011_6,2011,6,Monaco Grand Prix,2011-05-29,12:00:00Z,monaco
+2011_7,2011,7,Canadian Grand Prix,2011-06-12,17:00:00Z,villeneuve
+2011_8,2011,8,European Grand Prix,2011-06-26,12:00:00Z,valencia
+2011_9,2011,9,British Grand Prix,2011-07-10,12:00:00Z,silverstone
+2011_10,2011,10,German Grand Prix,2011-07-24,12:00:00Z,nurburgring
+2011_11,2011,11,Hungarian Grand Prix,2011-07-31,12:00:00Z,hungaroring
+2011_12,2011,12,Belgian Grand Prix,2011-08-28,12:00:00Z,spa
+2011_13,2011,13,Italian Grand Prix,2011-09-11,12:00:00Z,monza
+2011_14,2011,14,Singapore Grand Prix,2011-09-25,12:00:00Z,marina_bay
+2011_15,2011,15,Japanese Grand Prix,2011-10-09,06:00:00Z,suzuka
+2011_16,2011,16,Korean Grand Prix,2011-10-16,06:00:00Z,yeongam
+2011_17,2011,17,Indian Grand Prix,2011-10-30,09:30:00Z,buddh
+2011_18,2011,18,Abu Dhabi Grand Prix,2011-11-13,13:00:00Z,yas_marina
+2011_19,2011,19,Brazilian Grand Prix,2011-11-27,16:00:00Z,interlagos
+2012_1,2012,1,Australian Grand Prix,2012-03-18,06:00:00Z,albert_park
+2012_2,2012,2,Malaysian Grand Prix,2012-03-25,08:00:00Z,sepang
+2012_3,2012,3,Chinese Grand Prix,2012-04-15,07:00:00Z,shanghai
+2012_4,2012,4,Bahrain Grand Prix,2012-04-22,12:00:00Z,bahrain
+2012_5,2012,5,Spanish Grand Prix,2012-05-13,12:00:00Z,catalunya
+2012_6,2012,6,Monaco Grand Prix,2012-05-27,12:00:00Z,monaco
+2012_7,2012,7,Canadian Grand Prix,2012-06-10,18:00:00Z,villeneuve
+2012_8,2012,8,European Grand Prix,2012-06-24,12:00:00Z,valencia
+2012_9,2012,9,British Grand Prix,2012-07-08,12:00:00Z,silverstone
+2012_10,2012,10,German Grand Prix,2012-07-22,12:00:00Z,hockenheimring
+2012_11,2012,11,Hungarian Grand Prix,2012-07-29,12:00:00Z,hungaroring
+2012_12,2012,12,Belgian Grand Prix,2012-09-02,12:00:00Z,spa
+2012_13,2012,13,Italian Grand Prix,2012-09-09,12:00:00Z,monza
+2012_14,2012,14,Singapore Grand Prix,2012-09-23,12:00:00Z,marina_bay
+2012_15,2012,15,Japanese Grand Prix,2012-10-07,06:00:00Z,suzuka
+2012_16,2012,16,Korean Grand Prix,2012-10-14,06:00:00Z,yeongam
+2012_17,2012,17,Indian Grand Prix,2012-10-28,09:30:00Z,buddh
+2012_18,2012,18,Abu Dhabi Grand Prix,2012-11-04,13:00:00Z,yas_marina
+2012_19,2012,19,United States Grand Prix,2012-11-18,19:00:00Z,americas
+2012_20,2012,20,Brazilian Grand Prix,2012-11-25,16:00:00Z,interlagos
+2013_1,2013,1,Australian Grand Prix,2013-03-17,06:00:00Z,albert_park
+2013_2,2013,2,Malaysian Grand Prix,2013-03-24,08:00:00Z,sepang
+2013_3,2013,3,Chinese Grand Prix,2013-04-14,07:00:00Z,shanghai
+2013_4,2013,4,Bahrain Grand Prix,2013-04-21,12:00:00Z,bahrain
+2013_5,2013,5,Spanish Grand Prix,2013-05-12,12:00:00Z,catalunya
+2013_6,2013,6,Monaco Grand Prix,2013-05-26,12:00:00Z,monaco
+2013_7,2013,7,Canadian Grand Prix,2013-06-09,18:00:00Z,villeneuve
+2013_8,2013,8,British Grand Prix,2013-06-30,12:00:00Z,silverstone
+2013_9,2013,9,German Grand Prix,2013-07-07,12:00:00Z,nurburgring
+2013_10,2013,10,Hungarian Grand Prix,2013-07-28,12:00:00Z,hungaroring
+2013_11,2013,11,Belgian Grand Prix,2013-08-25,12:00:00Z,spa
+2013_12,2013,12,Italian Grand Prix,2013-09-08,12:00:00Z,monza
+2013_13,2013,13,Singapore Grand Prix,2013-09-22,12:00:00Z,marina_bay
+2013_14,2013,14,Korean Grand Prix,2013-10-06,06:00:00Z,yeongam
+2013_15,2013,15,Japanese Grand Prix,2013-10-13,06:00:00Z,suzuka
+2013_16,2013,16,Indian Grand Prix,2013-10-27,09:30:00Z,buddh
+2013_17,2013,17,Abu Dhabi Grand Prix,2013-11-03,13:00:00Z,yas_marina
+2013_18,2013,18,United States Grand Prix,2013-11-17,19:00:00Z,americas
+2013_19,2013,19,Brazilian Grand Prix,2013-11-24,16:00:00Z,interlagos
+2014_1,2014,1,Australian Grand Prix,2014-03-16,06:00:00Z,albert_park
+2014_2,2014,2,Malaysian Grand Prix,2014-03-30,08:00:00Z,sepang
+2014_3,2014,3,Bahrain Grand Prix,2014-04-06,15:00:00Z,bahrain
+2014_4,2014,4,Chinese Grand Prix,2014-04-20,07:00:00Z,shanghai
+2014_5,2014,5,Spanish Grand Prix,2014-05-11,12:00:00Z,catalunya
+2014_6,2014,6,Monaco Grand Prix,2014-05-25,12:00:00Z,monaco
+2014_7,2014,7,Canadian Grand Prix,2014-06-08,18:00:00Z,villeneuve
+2014_8,2014,8,Austrian Grand Prix,2014-06-22,12:00:00Z,red_bull_ring
+2014_9,2014,9,British Grand Prix,2014-07-06,12:00:00Z,silverstone
+2014_10,2014,10,German Grand Prix,2014-07-20,12:00:00Z,hockenheimring
+2014_11,2014,11,Hungarian Grand Prix,2014-07-27,12:00:00Z,hungaroring
+2014_12,2014,12,Belgian Grand Prix,2014-08-24,12:00:00Z,spa
+2014_13,2014,13,Italian Grand Prix,2014-09-07,12:00:00Z,monza
+2014_14,2014,14,Singapore Grand Prix,2014-09-21,12:00:00Z,marina_bay
+2014_15,2014,15,Japanese Grand Prix,2014-10-05,06:00:00Z,suzuka
+2014_16,2014,16,Russian Grand Prix,2014-10-12,11:00:00Z,sochi
+2014_17,2014,17,United States Grand Prix,2014-11-02,20:00:00Z,americas
+2014_18,2014,18,Brazilian Grand Prix,2014-11-09,16:00:00Z,interlagos
+2014_19,2014,19,Abu Dhabi Grand Prix,2014-11-23,13:00:00Z,yas_marina
+2015_1,2015,1,Australian Grand Prix,2015-03-15,05:00:00Z,albert_park
+2015_2,2015,2,Malaysian Grand Prix,2015-03-29,07:00:00Z,sepang
+2015_3,2015,3,Chinese Grand Prix,2015-04-12,06:00:00Z,shanghai
+2015_4,2015,4,Bahrain Grand Prix,2015-04-19,15:00:00Z,bahrain
+2015_5,2015,5,Spanish Grand Prix,2015-05-10,12:00:00Z,catalunya
+2015_6,2015,6,Monaco Grand Prix,2015-05-24,12:00:00Z,monaco
+2015_7,2015,7,Canadian Grand Prix,2015-06-07,18:00:00Z,villeneuve
+2015_8,2015,8,Austrian Grand Prix,2015-06-21,12:00:00Z,red_bull_ring
+2015_9,2015,9,British Grand Prix,2015-07-05,12:00:00Z,silverstone
+2015_10,2015,10,Hungarian Grand Prix,2015-07-26,12:00:00Z,hungaroring
+2015_11,2015,11,Belgian Grand Prix,2015-08-23,12:00:00Z,spa
+2015_12,2015,12,Italian Grand Prix,2015-09-06,12:00:00Z,monza
+2015_13,2015,13,Singapore Grand Prix,2015-09-20,12:00:00Z,marina_bay
+2015_14,2015,14,Japanese Grand Prix,2015-09-27,05:00:00Z,suzuka
+2015_15,2015,15,Russian Grand Prix,2015-10-11,11:00:00Z,sochi
+2015_16,2015,16,United States Grand Prix,2015-10-25,19:00:00Z,americas
+2015_17,2015,17,Mexican Grand Prix,2015-11-01,19:00:00Z,rodriguez
+2015_18,2015,18,Brazilian Grand Prix,2015-11-15,16:00:00Z,interlagos
+2015_19,2015,19,Abu Dhabi Grand Prix,2015-11-29,13:00:00Z,yas_marina
+2016_1,2016,1,Australian Grand Prix,2016-03-20,05:00:00Z,albert_park
+2016_2,2016,2,Bahrain Grand Prix,2016-04-03,15:00:00Z,bahrain
+2016_3,2016,3,Chinese Grand Prix,2016-04-17,06:00:00Z,shanghai
+2016_4,2016,4,Russian Grand Prix,2016-05-01,12:00:00Z,sochi
+2016_5,2016,5,Spanish Grand Prix,2016-05-15,12:00:00Z,catalunya
+2016_6,2016,6,Monaco Grand Prix,2016-05-29,12:00:00Z,monaco
+2016_7,2016,7,Canadian Grand Prix,2016-06-12,18:00:00Z,villeneuve
+2016_8,2016,8,European Grand Prix,2016-06-19,13:00:00Z,baku
+2016_9,2016,9,Austrian Grand Prix,2016-07-03,12:00:00Z,red_bull_ring
+2016_10,2016,10,British Grand Prix,2016-07-10,12:00:00Z,silverstone
+2016_11,2016,11,Hungarian Grand Prix,2016-07-24,12:00:00Z,hungaroring
+2016_12,2016,12,German Grand Prix,2016-07-31,12:00:00Z,hockenheimring
+2016_13,2016,13,Belgian Grand Prix,2016-08-28,12:00:00Z,spa
+2016_14,2016,14,Italian Grand Prix,2016-09-04,12:00:00Z,monza
+2016_15,2016,15,Singapore Grand Prix,2016-09-18,12:00:00Z,marina_bay
+2016_16,2016,16,Malaysian Grand Prix,2016-10-02,07:00:00Z,sepang
+2016_17,2016,17,Japanese Grand Prix,2016-10-09,05:00:00Z,suzuka
+2016_18,2016,18,United States Grand Prix,2016-10-23,19:00:00Z,americas
+2016_19,2016,19,Mexican Grand Prix,2016-10-30,19:00:00Z,rodriguez
+2016_20,2016,20,Brazilian Grand Prix,2016-11-13,16:00:00Z,interlagos
+2016_21,2016,21,Abu Dhabi Grand Prix,2016-11-27,13:00:00Z,yas_marina
+2017_1,2017,1,Australian Grand Prix,2017-03-26,05:00:00Z,albert_park
+2017_2,2017,2,Chinese Grand Prix,2017-04-09,06:00:00Z,shanghai
+2017_3,2017,3,Bahrain Grand Prix,2017-04-16,15:00:00Z,bahrain
+2017_4,2017,4,Russian Grand Prix,2017-04-30,12:00:00Z,sochi
+2017_5,2017,5,Spanish Grand Prix,2017-05-14,12:00:00Z,catalunya
+2017_6,2017,6,Monaco Grand Prix,2017-05-28,12:00:00Z,monaco
+2017_7,2017,7,Canadian Grand Prix,2017-06-11,18:00:00Z,villeneuve
+2017_8,2017,8,Azerbaijan Grand Prix,2017-06-25,13:00:00Z,baku
+2017_9,2017,9,Austrian Grand Prix,2017-07-09,12:00:00Z,red_bull_ring
+2017_10,2017,10,British Grand Prix,2017-07-16,12:00:00Z,silverstone
+2017_11,2017,11,Hungarian Grand Prix,2017-07-30,12:00:00Z,hungaroring
+2017_12,2017,12,Belgian Grand Prix,2017-08-27,12:00:00Z,spa
+2017_13,2017,13,Italian Grand Prix,2017-09-03,12:00:00Z,monza
+2017_14,2017,14,Singapore Grand Prix,2017-09-17,12:00:00Z,marina_bay
+2017_15,2017,15,Malaysian Grand Prix,2017-10-01,07:00:00Z,sepang
+2017_16,2017,16,Japanese Grand Prix,2017-10-08,05:00:00Z,suzuka
+2017_17,2017,17,United States Grand Prix,2017-10-22,19:00:00Z,americas
+2017_18,2017,18,Mexican Grand Prix,2017-10-29,19:00:00Z,rodriguez
+2017_19,2017,19,Brazilian Grand Prix,2017-11-12,16:00:00Z,interlagos
+2017_20,2017,20,Abu Dhabi Grand Prix,2017-11-26,13:00:00Z,yas_marina
+2018_1,2018,1,Australian Grand Prix,2018-03-25,05:10:00Z,albert_park
+2018_2,2018,2,Bahrain Grand Prix,2018-04-08,15:10:00Z,bahrain
+2018_3,2018,3,Chinese Grand Prix,2018-04-15,06:10:00Z,shanghai
+2018_4,2018,4,Azerbaijan Grand Prix,2018-04-29,12:10:00Z,baku
+2018_5,2018,5,Spanish Grand Prix,2018-05-13,13:10:00Z,catalunya
+2018_6,2018,6,Monaco Grand Prix,2018-05-27,13:10:00Z,monaco
+2018_7,2018,7,Canadian Grand Prix,2018-06-10,18:10:00Z,villeneuve
+2018_8,2018,8,French Grand Prix,2018-06-24,14:10:00Z,ricard
+2018_9,2018,9,Austrian Grand Prix,2018-07-01,13:10:00Z,red_bull_ring
+2018_10,2018,10,British Grand Prix,2018-07-08,13:10:00Z,silverstone
+2018_11,2018,11,German Grand Prix,2018-07-22,13:10:00Z,hockenheimring
+2018_12,2018,12,Hungarian Grand Prix,2018-07-29,13:10:00Z,hungaroring
+2018_13,2018,13,Belgian Grand Prix,2018-08-26,13:10:00Z,spa
+2018_14,2018,14,Italian Grand Prix,2018-09-02,13:10:00Z,monza
+2018_15,2018,15,Singapore Grand Prix,2018-09-16,12:10:00Z,marina_bay
+2018_16,2018,16,Russian Grand Prix,2018-09-30,11:10:00Z,sochi
+2018_17,2018,17,Japanese Grand Prix,2018-10-07,05:10:00Z,suzuka
+2018_18,2018,18,United States Grand Prix,2018-10-21,18:10:00Z,americas
+2018_19,2018,19,Mexican Grand Prix,2018-10-28,19:10:00Z,rodriguez
+2018_20,2018,20,Brazilian Grand Prix,2018-11-11,17:10:00Z,interlagos
+2018_21,2018,21,Abu Dhabi Grand Prix,2018-11-25,13:10:00Z,yas_marina
+2019_1,2019,1,Australian Grand Prix,2019-03-17,05:10:00Z,albert_park
+2019_2,2019,2,Bahrain Grand Prix,2019-03-31,15:10:00Z,bahrain
+2019_3,2019,3,Chinese Grand Prix,2019-04-14,06:10:00Z,shanghai
+2019_4,2019,4,Azerbaijan Grand Prix,2019-04-28,12:10:00Z,baku
+2019_5,2019,5,Spanish Grand Prix,2019-05-12,13:10:00Z,catalunya
+2019_6,2019,6,Monaco Grand Prix,2019-05-26,13:10:00Z,monaco
+2019_7,2019,7,Canadian Grand Prix,2019-06-09,18:10:00Z,villeneuve
+2019_8,2019,8,French Grand Prix,2019-06-23,13:10:00Z,ricard
+2019_9,2019,9,Austrian Grand Prix,2019-06-30,13:10:00Z,red_bull_ring
+2019_10,2019,10,British Grand Prix,2019-07-14,13:10:00Z,silverstone
+2019_11,2019,11,German Grand Prix,2019-07-28,13:10:00Z,hockenheimring
+2019_12,2019,12,Hungarian Grand Prix,2019-08-04,13:10:00Z,hungaroring
+2019_13,2019,13,Belgian Grand Prix,2019-09-01,13:10:00Z,spa
+2019_14,2019,14,Italian Grand Prix,2019-09-08,13:10:00Z,monza
+2019_15,2019,15,Singapore Grand Prix,2019-09-22,12:10:00Z,marina_bay
+2019_16,2019,16,Russian Grand Prix,2019-09-29,11:10:00Z,sochi
+2019_17,2019,17,Japanese Grand Prix,2019-10-13,05:10:00Z,suzuka
+2019_18,2019,18,Mexican Grand Prix,2019-10-27,19:10:00Z,rodriguez
+2019_19,2019,19,United States Grand Prix,2019-11-03,19:10:00Z,americas
+2019_20,2019,20,Brazilian Grand Prix,2019-11-17,17:10:00Z,interlagos
+2019_21,2019,21,Abu Dhabi Grand Prix,2019-12-01,13:10:00Z,yas_marina
+2020_1,2020,1,Austrian Grand Prix,2020-07-05,13:10:00Z,red_bull_ring
+2020_2,2020,2,Styrian Grand Prix,2020-07-12,13:10:00Z,red_bull_ring
+2020_3,2020,3,Hungarian Grand Prix,2020-07-19,13:10:00Z,hungaroring
+2020_4,2020,4,British Grand Prix,2020-08-02,13:10:00Z,silverstone
+2020_5,2020,5,70th Anniversary Grand Prix,2020-08-09,13:10:00Z,silverstone
+2020_6,2020,6,Spanish Grand Prix,2020-08-16,13:10:00Z,catalunya
+2020_7,2020,7,Belgian Grand Prix,2020-08-30,13:10:00Z,spa
+2020_8,2020,8,Italian Grand Prix,2020-09-06,13:10:00Z,monza
+2020_9,2020,9,Tuscan Grand Prix,2020-09-13,13:10:00Z,mugello
+2020_10,2020,10,Russian Grand Prix,2020-09-27,11:10:00Z,sochi
+2020_11,2020,11,Eifel Grand Prix,2020-10-11,13:10:00Z,nurburgring
+2020_12,2020,12,Portuguese Grand Prix,2020-10-25,12:10:00Z,portimao
+2020_13,2020,13,Emilia Romagna Grand Prix,2020-11-01,12:10:00Z,imola
+2020_14,2020,14,Turkish Grand Prix,2020-11-15,10:10:00Z,istanbul
+2020_15,2020,15,Bahrain Grand Prix,2020-11-29,14:10:00Z,bahrain
+2020_16,2020,16,Sakhir Grand Prix,2020-12-06,17:10:00Z,bahrain
+2020_17,2020,17,Abu Dhabi Grand Prix,2020-12-13,13:10:00Z,yas_marina
+2021_1,2021,1,Bahrain Grand Prix,2021-03-28,15:00:00Z,bahrain
+2021_2,2021,2,Emilia Romagna Grand Prix,2021-04-18,13:00:00Z,imola
+2021_3,2021,3,Portuguese Grand Prix,2021-05-02,14:00:00Z,portimao
+2021_4,2021,4,Spanish Grand Prix,2021-05-09,13:00:00Z,catalunya
+2021_5,2021,5,Monaco Grand Prix,2021-05-23,13:00:00Z,monaco
+2021_6,2021,6,Azerbaijan Grand Prix,2021-06-06,12:00:00Z,baku
+2021_7,2021,7,French Grand Prix,2021-06-20,13:00:00Z,ricard
+2021_8,2021,8,Styrian Grand Prix,2021-06-27,13:00:00Z,red_bull_ring
+2021_9,2021,9,Austrian Grand Prix,2021-07-04,13:00:00Z,red_bull_ring
+2021_10,2021,10,British Grand Prix,2021-07-18,14:00:00Z,silverstone
+2021_11,2021,11,Hungarian Grand Prix,2021-08-01,13:00:00Z,hungaroring
+2021_12,2021,12,Belgian Grand Prix,2021-08-29,13:00:00Z,spa
+2021_13,2021,13,Dutch Grand Prix,2021-09-05,13:00:00Z,zandvoort
+2021_14,2021,14,Italian Grand Prix,2021-09-12,13:00:00Z,monza
+2021_15,2021,15,Russian Grand Prix,2021-09-26,12:00:00Z,sochi
+2021_16,2021,16,Turkish Grand Prix,2021-10-10,12:00:00Z,istanbul
+2021_17,2021,17,United States Grand Prix,2021-10-24,19:00:00Z,americas
+2021_18,2021,18,Mexico City Grand Prix,2021-11-07,19:00:00Z,rodriguez
+2021_19,2021,19,São Paulo Grand Prix,2021-11-14,17:00:00Z,interlagos
+2021_20,2021,20,Qatar Grand Prix,2021-11-21,14:00:00Z,losail
+2021_21,2021,21,Saudi Arabian Grand Prix,2021-12-05,17:30:00Z,jeddah
+2021_22,2021,22,Abu Dhabi Grand Prix,2021-12-12,13:00:00Z,yas_marina
+2022_1,2022,1,Bahrain Grand Prix,2022-03-20,15:00:00Z,bahrain
+2022_2,2022,2,Saudi Arabian Grand Prix,2022-03-27,17:00:00Z,jeddah
+2022_3,2022,3,Australian Grand Prix,2022-04-10,05:00:00Z,albert_park
+2022_4,2022,4,Emilia Romagna Grand Prix,2022-04-24,13:00:00Z,imola
+2022_5,2022,5,Miami Grand Prix,2022-05-08,19:30:00Z,miami
+2022_6,2022,6,Spanish Grand Prix,2022-05-22,13:00:00Z,catalunya
+2022_7,2022,7,Monaco Grand Prix,2022-05-29,13:00:00Z,monaco
+2022_8,2022,8,Azerbaijan Grand Prix,2022-06-12,11:00:00Z,baku
+2022_9,2022,9,Canadian Grand Prix,2022-06-19,18:00:00Z,villeneuve
+2022_10,2022,10,British Grand Prix,2022-07-03,14:00:00Z,silverstone
+2022_11,2022,11,Austrian Grand Prix,2022-07-10,13:00:00Z,red_bull_ring
+2022_12,2022,12,French Grand Prix,2022-07-24,13:00:00Z,ricard
+2022_13,2022,13,Hungarian Grand Prix,2022-07-31,13:00:00Z,hungaroring
+2022_14,2022,14,Belgian Grand Prix,2022-08-28,13:00:00Z,spa
+2022_15,2022,15,Dutch Grand Prix,2022-09-04,13:00:00Z,zandvoort
+2022_16,2022,16,Italian Grand Prix,2022-09-11,13:00:00Z,monza
+2022_17,2022,17,Singapore Grand Prix,2022-10-02,12:00:00Z,marina_bay
+2022_18,2022,18,Japanese Grand Prix,2022-10-09,05:00:00Z,suzuka
+2022_19,2022,19,United States Grand Prix,2022-10-23,19:00:00Z,americas
+2022_20,2022,20,Mexico City Grand Prix,2022-10-30,20:00:00Z,rodriguez
+2022_21,2022,21,São Paulo Grand Prix,2022-11-13,18:00:00Z,interlagos
+2022_22,2022,22,Abu Dhabi Grand Prix,2022-11-20,13:00:00Z,yas_marina
+2023_1,2023,1,Bahrain Grand Prix,2023-03-05,15:00:00Z,bahrain
+2023_2,2023,2,Saudi Arabian Grand Prix,2023-03-19,17:00:00Z,jeddah
+2023_3,2023,3,Australian Grand Prix,2023-04-02,05:00:00Z,albert_park
+2023_4,2023,4,Azerbaijan Grand Prix,2023-04-30,11:00:00Z,baku
+2023_5,2023,5,Miami Grand Prix,2023-05-07,19:30:00Z,miami
+2023_6,2023,6,Monaco Grand Prix,2023-05-28,13:00:00Z,monaco
+2023_7,2023,7,Spanish Grand Prix,2023-06-04,13:00:00Z,catalunya
+2023_8,2023,8,Canadian Grand Prix,2023-06-18,18:00:00Z,villeneuve
+2023_9,2023,9,Austrian Grand Prix,2023-07-02,13:00:00Z,red_bull_ring
+2023_10,2023,10,British Grand Prix,2023-07-09,14:00:00Z,silverstone
+2023_11,2023,11,Hungarian Grand Prix,2023-07-23,13:00:00Z,hungaroring
+2023_12,2023,12,Belgian Grand Prix,2023-07-30,13:00:00Z,spa
+2023_13,2023,13,Dutch Grand Prix,2023-08-27,13:00:00Z,zandvoort
+2023_14,2023,14,Italian Grand Prix,2023-09-03,13:00:00Z,monza
+2023_15,2023,15,Singapore Grand Prix,2023-09-17,12:00:00Z,marina_bay
+2023_16,2023,16,Japanese Grand Prix,2023-09-24,05:00:00Z,suzuka
+2023_17,2023,17,Qatar Grand Prix,2023-10-08,17:00:00Z,losail
+2023_18,2023,18,United States Grand Prix,2023-10-22,19:00:00Z,americas
+2023_19,2023,19,Mexico City Grand Prix,2023-10-29,20:00:00Z,rodriguez
+2023_20,2023,20,São Paulo Grand Prix,2023-11-05,17:00:00Z,interlagos
+2023_21,2023,21,Las Vegas Grand Prix,2023-11-19,06:00:00Z,vegas
+2023_22,2023,22,Abu Dhabi Grand Prix,2023-11-26,13:00:00Z,yas_marina
+2024_1,2024,1,Bahrain Grand Prix,2024-03-02,15:00:00Z,bahrain
+2024_2,2024,2,Saudi Arabian Grand Prix,2024-03-09,17:00:00Z,jeddah
+2024_3,2024,3,Australian Grand Prix,2024-03-24,04:00:00Z,albert_park
+2024_4,2024,4,Japanese Grand Prix,2024-04-07,05:00:00Z,suzuka
+2024_5,2024,5,Chinese Grand Prix,2024-04-21,07:00:00Z,shanghai
+2024_6,2024,6,Miami Grand Prix,2024-05-05,20:00:00Z,miami
+2024_7,2024,7,Emilia Romagna Grand Prix,2024-05-19,13:00:00Z,imola
+2024_8,2024,8,Monaco Grand Prix,2024-05-26,13:00:00Z,monaco
+2024_9,2024,9,Canadian Grand Prix,2024-06-09,18:00:00Z,villeneuve
+2024_10,2024,10,Spanish Grand Prix,2024-06-23,13:00:00Z,catalunya
+2024_11,2024,11,Austrian Grand Prix,2024-06-30,13:00:00Z,red_bull_ring
+2024_12,2024,12,British Grand Prix,2024-07-07,14:00:00Z,silverstone
+2024_13,2024,13,Hungarian Grand Prix,2024-07-21,13:00:00Z,hungaroring
+2024_14,2024,14,Belgian Grand Prix,2024-07-28,13:00:00Z,spa
+2024_15,2024,15,Dutch Grand Prix,2024-08-25,13:00:00Z,zandvoort
+2024_16,2024,16,Italian Grand Prix,2024-09-01,13:00:00Z,monza
+2024_17,2024,17,Azerbaijan Grand Prix,2024-09-15,11:00:00Z,baku
+2024_18,2024,18,Singapore Grand Prix,2024-09-22,12:00:00Z,marina_bay
+2024_19,2024,19,United States Grand Prix,2024-10-20,19:00:00Z,americas
+2024_20,2024,20,Mexico City Grand Prix,2024-10-27,20:00:00Z,rodriguez
+2024_21,2024,21,São Paulo Grand Prix,2024-11-03,17:00:00Z,interlagos
+2024_22,2024,22,Las Vegas Grand Prix,2024-11-23,06:00:00Z,vegas
+2024_23,2024,23,Qatar Grand Prix,2024-12-01,16:00:00Z,losail
+2024_24,2024,24,Abu Dhabi Grand Prix,2024-12-08,13:00:00Z,yas_marina
+2025_1,2025,1,Australian Grand Prix,2025-03-16,04:00:00Z,albert_park
+2025_2,2025,2,Chinese Grand Prix,2025-03-23,07:00:00Z,shanghai
+2025_3,2025,3,Japanese Grand Prix,2025-04-06,05:00:00Z,suzuka
+2025_4,2025,4,Bahrain Grand Prix,2025-04-13,15:00:00Z,bahrain
+2025_5,2025,5,Saudi Arabian Grand Prix,2025-04-20,17:00:00Z,jeddah
+2025_6,2025,6,Miami Grand Prix,2025-05-04,20:00:00Z,miami
+2025_7,2025,7,Emilia Romagna Grand Prix,2025-05-18,13:00:00Z,imola
+2025_8,2025,8,Monaco Grand Prix,2025-05-25,13:00:00Z,monaco
+2025_9,2025,9,Spanish Grand Prix,2025-06-01,13:00:00Z,catalunya
+2025_10,2025,10,Canadian Grand Prix,2025-06-15,18:00:00Z,villeneuve
+2025_11,2025,11,Austrian Grand Prix,2025-06-29,13:00:00Z,red_bull_ring
+2025_12,2025,12,British Grand Prix,2025-07-06,14:00:00Z,silverstone
+2025_13,2025,13,Belgian Grand Prix,2025-07-27,13:00:00Z,spa
+2025_14,2025,14,Hungarian Grand Prix,2025-08-03,13:00:00Z,hungaroring
+2025_15,2025,15,Dutch Grand Prix,2025-08-31,13:00:00Z,zandvoort
+2025_16,2025,16,Italian Grand Prix,2025-09-07,13:00:00Z,monza
+2025_17,2025,17,Azerbaijan Grand Prix,2025-09-21,11:00:00Z,baku
+2025_18,2025,18,Singapore Grand Prix,2025-10-05,12:00:00Z,marina_bay
+2025_19,2025,19,United States Grand Prix,2025-10-19,19:00:00Z,americas
+2025_20,2025,20,Mexico City Grand Prix,2025-10-26,20:00:00Z,rodriguez
+2025_21,2025,21,São Paulo Grand Prix,2025-11-09,17:00:00Z,interlagos
+2025_22,2025,22,Las Vegas Grand Prix,2025-11-23,04:00:00Z,vegas
+2025_23,2025,23,Qatar Grand Prix,2025-11-30,16:00:00Z,losail
+2025_24,2025,24,Abu Dhabi Grand Prix,2025-12-07,13:00:00Z,yas_marina

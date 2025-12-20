@@ -1,0 +1,15 @@
+name: 'car_sales_dbt'
+version: '1.0.0'
+profile: 'car_sales_profile'
+config-version: 2
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+models:
+  car_sales_dbt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table

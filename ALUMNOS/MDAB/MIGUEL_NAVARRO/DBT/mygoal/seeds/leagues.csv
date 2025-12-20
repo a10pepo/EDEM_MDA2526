@@ -1,0 +1,1085 @@
+seasonType,year,seasonName,seasonSlug,leagueId,midsizeName,leagueName,leagueShortName
+12868,2024,"2024-25 AFC Champions League Elite, League Stage",league-stage,3902,AFC.CHAMPIONS,AFC Champions League Elite,AFC Champions League Elite
+12864,2024,"2024-25 AFC Champions League Elite, Final",final,3902,AFC.CHAMPIONS,AFC Champions League Elite,AFC Champions League Elite
+12865,2024,"2024-25 AFC Champions League Elite, Semifinals",semifinals,3902,AFC.CHAMPIONS,AFC Champions League Elite,AFC Champions League Elite
+12866,2024,"2024-25 AFC Champions League Elite, Quarterfinals",quarterfinals,3902,AFC.CHAMPIONS,AFC Champions League Elite,AFC Champions League Elite
+12867,2024,"2024-25 AFC Champions League Elite, Round of 16",round-of-16,3902,AFC.CHAMPIONS,AFC Champions League Elite,AFC Champions League Elite
+12873,2024,"2024-25 AFC Champions League Two, Round of 16",round-of-16,5661,AFC.CUP,AFC Champions League Two,AFC Champions League Two
+12874,2024,"2024-25 AFC Champions League Two, Group Stage",group-stage,5661,AFC.CUP,AFC Champions League Two,AFC Champions League Two
+12872,2024,"2024-25 AFC Champions League Two, Quarterfinals",quarterfinals,5661,AFC.CUP,AFC Champions League Two,AFC Champions League Two
+12871,2024,"2024-25 AFC Champions League Two, Semifinals",semifinals,5661,AFC.CUP,AFC Champions League Two,AFC Champions League Two
+12870,2024,"2024-25 AFC Champions League Two, Final",final,5661,AFC.CUP,AFC Champions League Two,AFC Champions League Two
+12746,2024,"2027 AFC Asian Cup Qualifiers, Playoff Round",playoff-round,5662,AFC.CUPQ,AFC Asian Cup Qualifiers,Asian Cup Qualifiers
+12745,2024,"2027 AFC Asian Cup Qualifiers, Group Stage",group-stage,5662,AFC.CUPQ,AFC Asian Cup Qualifiers,Asian Cup Qualifiers
+12572,2024,"2024 ASEAN Championship, Group Stage",group-stage,5672,AFF.CHAMPIONSHIP,ASEAN Championship,ASEAN Champ
+12571,2024,"2024 ASEAN Championship, Semifinals",semifinals,5672,AFF.CHAMPIONSHIP,ASEAN Championship,ASEAN Champ
+12570,2024,"2024 ASEAN Championship, Finals",finals,5672,AFF.CHAMPIONSHIP,ASEAN Championship,ASEAN Champ
+12370,2024,2024 Argentine Liga Profesional,2024-argentine-liga-profesional,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+12394,2024,"2024 Argentine Nacional B, Regular Season",regular-season,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12392,2024,"2024 Argentine Nacional B, Torneo Reducido - Quarterfinals",torneo-reducido---quarterfinals,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12393,2024,"2024 Argentine Nacional B, Torneo Reducido - First Round",torneo-reducido---first-round,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12391,2024,"2024 Argentine Nacional B, Torneo Reducido - Semifinals",torneo-reducido---semifinals,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12390,2024,"2024 Argentine Nacional B, Torneo Reducido - Final",torneo-reducido---final,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12389,2024,"2024 Argentine Nacional B, Relegation Playoff Tiebreaker",relegation-playoff-tiebreaker,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12388,2024,"2024 Argentine Nacional B, Relegation Playoff",relegation-playoff,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12387,2024,"2024 Argentine Nacional B, 2024 Argentine Nacional B - Championship Final",2024-argentine-nacional-b---championship-final,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+12376,2024,"2024 Primera División B de Argentina, Promotion Playoffs - Finals",promotion-playoffs---finals,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12380,2024,"2024 Primera División B de Argentina, Apertura",apertura,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12379,2024,"2024 Primera División B de Argentina, Clausura",clausura,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12377,2024,"2024 Primera División B de Argentina, Promotion Playoffs - Semifinals",promotion-playoffs---semifinals,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12378,2024,"2024 Primera División B de Argentina, Promotion Playoffs - First Round",promotion-playoffs---first-round,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12374,2024,"2024 Primera División B de Argentina, Second Promotion Final",second-promotion-final,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12375,2024,"2024 Primera División B de Argentina, Super Final",super-final,3904,ARG.3,Argentine Primera B,Argentine Primera B
+12386,2024,"2024 Primera División C de Argentina, Apertura",apertura,4003,ARG.4,Argentine Primera C,Argentine Primera C
+12384,2024,"2024 Primera División C de Argentina, Championship Finals",championship-finals,4003,ARG.4,Argentine Primera C,Argentine Primera C
+12385,2024,"2024 Primera División C de Argentina, Clausura",clausura,4003,ARG.4,Argentine Primera C,Argentine Primera C
+12338,2024,"2024 Copa Argentina, Round of 32",round-of-32,8107,ARG.COPA,Copa Argentina,Copa Argentina
+12336,2024,"2024 Copa Argentina, Quarterfinals",quarterfinals,8107,ARG.COPA,Copa Argentina,Copa Argentina
+12339,2024,"2024 Copa Argentina, Round of 64",round-of-64,8107,ARG.COPA,Copa Argentina,Copa Argentina
+12337,2024,"2024 Copa Argentina, Round of 16",round-of-16,8107,ARG.COPA,Copa Argentina,Copa Argentina
+12335,2024,"2024 Copa Argentina, Semifinals",semifinals,8107,ARG.COPA,Copa Argentina,Copa Argentina
+12334,2024,"2024 Copa Argentina, Final",final,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13182,2024,2024 Argentine Supercopa,2024-argentine-supercopa,8346,ARG.SUPERCOPA,Argentine Supercopa,Argentine Supercopa
+13325,2024,2024 Supercopa Internacional,2024-supercopa-internacional,23348,ARG.SUPERCOPA.INTERNACIONAL,Argentine Supercopa Internacional,Supercopa Internacional
+13000,2024,2024 Argentine Trofeo de Campeones - Final,2024-argentine-trofeo-de-campeones---final,19705,ARG.TROFEO_DE_LA_CAMPEONES,Argentine Trofeo de Campeones,Trofeo de Campeones de la Superliga
+12848,2024,"2024-25 Australian A-League Men, Grand Final",grand-final,3906,AUS.1,Australian A-League Men,A-League Men
+12851,2024,"2024-25 Australian A-League Men, Regular Season",regular-season,3906,AUS.1,Australian A-League Men,A-League Men
+12849,2024,"2024-25 Australian A-League Men, Semifinals",semifinals,3906,AUS.1,Australian A-League Men,A-League Men
+12850,2024,"2024-25 Australian A-League Men, Elimination Finals",elimination-finals,3906,AUS.1,Australian A-League Men,A-League Men
+12912,2024,"2024-25 Australian A-League Women, Grand Final",grand-final,18992,AUS.W.1,Australian A-League Women,A-League Women
+12913,2024,"2024-25 Australian A-League Women, Semifinals",semifinals,18992,AUS.W.1,Australian A-League Women,A-League Women
+12914,2024,"2024-25 Australian A-League Women, Elimination Finals",elimination-finals,18992,AUS.W.1,Australian A-League Women,A-League Women
+12915,2024,"2024-25 Australian A-League Women, Regular Season",regular-season,18992,AUS.W.1,Australian A-League Women,A-League Women
+12741,2024,"2024-25 Austrian Bundesliga, Europa Conference Playoff Semifinal",europa-conference-playoff-semifinal,3907,AUT.1,Austrian Bundesliga,Austrian Bundesliga
+12742,2024,"2024-25 Austrian Bundesliga, Final Passage",final-passage,3907,AUT.1,Austrian Bundesliga,Austrian Bundesliga
+12743,2024,"2024-25 Austrian Bundesliga, Regular Season",regular-season,3907,AUT.1,Austrian Bundesliga,Austrian Bundesliga
+12740,2024,"2024-25 Austrian Bundesliga, Europa Conference Playoff Finals",europa-conference-playoff-finals,3907,AUT.1,Austrian Bundesliga,Austrian Bundesliga
+12643,2024,"2024-25 Belgian Pro League, Regular Season",regular-season,3901,BEL.1,Belgian Pro League,Belgian Pro League
+12642,2024,"2024-25 Belgian Pro League, Playoff Round",playoff-round,3901,BEL.1,Belgian Pro League,Belgian Pro League
+12641,2024,"2024-25 Belgian Pro League, Europa Conference Playoffs",europa-conference-playoffs,3901,BEL.1,Belgian Pro League,Belgian Pro League
+13358,2024,2024-25 Belgian First Division A - Promotion/Relegation Playoffs,2024-25-belgian-first-division-a---promotionrelegation-playoffs,20116,BEL.PROMOTION.RELEGATION,Belgian Pro League Promotion/Relegation Playoffs,Belgian Pro League Pro/Rel
+12406,2024,"2024 Liga Profesional Boliviana, Apertura - Quarterfinals",apertura---quarterfinals,620,BOL.1,Bolivian Liga Profesional,Bolivian Liga Profesional
+12407,2024,"2024 Liga Profesional Boliviana, Apertura",apertura,620,BOL.1,Bolivian Liga Profesional,Bolivian Liga Profesional
+12403,2024,"2024 Liga Profesional Boliviana, Clausura",clausura,620,BOL.1,Bolivian Liga Profesional,Bolivian Liga Profesional
+12404,2024,"2024 Liga Profesional Boliviana, Apertura - Final",apertura---final,620,BOL.1,Bolivian Liga Profesional,Bolivian Liga Profesional
+12405,2024,"2024 Liga Profesional Boliviana, Apertura- Semifinals",apertura--semifinals,620,BOL.1,Bolivian Liga Profesional,Bolivian Liga Profesional
+13087,2024,2024 Bolivian Liga Profesional Promotion/Relegation Playoffs,2024-bolivian-liga-profesional-promotionrelegation-playoffs,20525,BOL.PLY.REL,Bolivian Liga Profesional Promotion/Relegation Playoffs,Bolivian Liga Pro/Rel
+12474,2024,2024 Brasileiro Serie A ,2024-brasileiro-serie-a,630,BRA.1,Brazilian Serie A,Brazil Serie A
+12493,2024,2024 Brasileiro Serie B,2024-brasileiro-serie-b,4007,BRA.2,Brazilian Serie B,Brazil Serie B
+12495,2024,"2024 Brasileiro C, Second Stage",second-stage,11088,BRA.3,Brazilian Serie C,Brasileiro C
+12494,2024,"2024 Brasileiro C, Finals",finals,11088,BRA.3,Brazilian Serie C,Brasileiro C
+12496,2024,"2024 Brasileiro C, First Stage",first-stage,11088,BRA.3,Brazilian Serie C,Brasileiro C
+12226,2024,"2024 Campeonato Carioca, Carioca Championship - Semifinals",carioca-championship---semifinals,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+12227,2024,"2024 Campeonato Carioca, Taça Rio - Finals",taca-rio---finals,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+12228,2024,"2024 Campeonato Carioca, Taça Rio - Semifinals",taca-rio---semifinals,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+12229,2024,"2024 Campeonato Carioca, Taca Guanabara",taca-guanabara,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+12225,2024,"2024 Campeonato Carioca, Carioca Championship - Final",carioca-championship---final,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+12233,2024,"2024 Campeonato Gaucho, First Round",first-round,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+12470,2024,"2024 Campeonato Gaucho, Finals",finals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+12469,2024,"2024 Campeonato Gaucho, Semifinals",semifinals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+12468,2024,"2024 Campeonato Gaucho, Quarterfinals",quarterfinals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+12270,2024,"2024 Brazilian Campeonato Mineiro, Regular Season",regular-season,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+12269,2024,"2024 Brazilian Campeonato Mineiro, Playoffs - Semifinals",playoffs---semifinals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+12268,2024,"2024 Brazilian Campeonato Mineiro, Playoffs - Finals",playoffs---finals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+12264,2024,"2024 Brazilian Campeonato Mineiro, Relegation Group",relegation-group,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+12267,2024,"2024 Brazilian Campeonato Mineiro, Troféu Inconfidência - Semifinals",trofeu-inconfidencia---semifinals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+12266,2024,"2024 Brazilian Campeonato Mineiro, Troféu Inconfidência - Finals",trofeu-inconfidencia---finals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+12252,2024,"2024 Campeonato Paulista, Quarterfinals",quarterfinals,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+12251,2024,"2024 Campeonato Paulista, Semifinals",semifinals,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+12250,2024,"2024 Campeonato Paulista, Finals",finals,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+12253,2024,"2024 Campeonato Paulista, Temporada Regular",temporada-regular,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+12444,2024,"2024 Copa do Brasil, Third Round",third-round,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12445,2024,"2024 Copa Do Brasil, Second Round",second-round,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12440,2024,"2024 Copa do Brasil, Finals",finals,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12441,2024,"2024 Copa do Brasil, Semifinals",semifinals,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12442,2024,"2024 Copa do Brasil, Quarterfinals",quarterfinals,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12446,2024,"2024 Copa do Brasil, First Round",first-round,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12443,2024,"2024 Copa do Brasil, Round of 16",round-of-16,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+12432,2024,"2024 Copa do Nordeste, Finals",finals,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+12434,2024,"2024 Copa do Nordeste, Quarterfinals",quarterfinals,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+12435,2024,"2024 Copa do Nordeste, Group Stage",group-stage,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+12433,2024,"2024 Copa do Nordeste, Semifinals",semifinals,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+12966,2024,"2024-25 CAF Champions League, Semifinals",semifinals,2391,CAF.CHAMPIONS,CAF Champions League,CAF Champions League
+12967,2024,"2024-25 CAF Champions League, Quarterfinals",quarterfinals,2391,CAF.CHAMPIONS,CAF Champions League,CAF Champions League
+12965,2024,"2024-25 CAF Champions League, Finals",finals,2391,CAF.CHAMPIONS,CAF Champions League,CAF Champions League
+12968,2024,"2024-25 CAF Champions League, Group Stage",group-stage,2391,CAF.CHAMPIONS,CAF Champions League,CAF Champions League
+13556,2024,"2024 African Nations Championship, Semifinals",semifinals,8365,CAF.CHAMPIONSHIP,African Nations Championship,CHAN
+13555,2024,"2024 African Nations Championship, Third Place Match",third-place-match,8365,CAF.CHAMPIONSHIP,African Nations Championship,CHAN
+13554,2024,"2024 African Nations Championship, Final",final,8365,CAF.CHAMPIONSHIP,African Nations Championship,CHAN
+13557,2024,"2024 African Nations Championship, Quarterfinals",quarterfinals,8365,CAF.CHAMPIONSHIP,African Nations Championship,CHAN
+13558,2024,"2024 African Nations Championship, Group Stage",group-stage,8365,CAF.CHAMPIONSHIP,African Nations Championship,CHAN
+13292,2024,"2024 African Nations Championship Qualifying, Second Stage - Second Round",second-stage---second-round,20866,CAF.CHAMPIONSHIP_QUAL,African Nations Championship Qualifying,CHAN Qualifying
+13291,2024,"2024 African Nations Championship Qualifying, Second Stage - First Round",second-stage---first-round,20866,CAF.CHAMPIONSHIP_QUAL,African Nations Championship Qualifying,CHAN Qualifying
+12972,2024,"2024 African Nations Championship Qualifying, First Round",first-round,20866,CAF.CHAMPIONSHIP_QUAL,African Nations Championship Qualifying,CHAN Qualifying
+12971,2024,"2024 African Nations Championship Qualifying, Second Round",second-round,20866,CAF.CHAMPIONSHIP_QUAL,African Nations Championship Qualifying,CHAN Qualifying
+12963,2024,"2024-25 CAF Confederation Cup, Quarterfinals",quarterfinals,18000,CAF.CONFED,CAF Confederation Cup,CAF Confederation Cup
+12961,2024,"2024-25 CAF Confederation Cup, Finals",finals,18000,CAF.CONFED,CAF Confederation Cup,CAF Confederation Cup
+12964,2024,"2024-25 CAF Confederation Cup, Group Stage",group-stage,18000,CAF.CONFED,CAF Confederation Cup,CAF Confederation Cup
+12962,2024,"2024-25 CAF Confederation Cup, Semifinals",semifinals,18000,CAF.CONFED,CAF Confederation Cup,CAF Confederation Cup
+12697,2024,"2024 COSAFA Cup, Third Place Match",third-place-match,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+12696,2024,"2024 COSAFA Cup, Final",final,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+12699,2024,"2024 COSAFA Cup, Group Stage",group-stage,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+12698,2024,"2024 COSAFA Cup, Semifinals",semifinals,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+12505,2024,"2025 Africa Cup of Nations Qualifying, Preliminary Round",preliminary-round,8315,CAF.NATIONS_QUAL,Africa Cup of Nations Qualifying,AFCON Qualifying
+12504,2024,"2025 Africa Cup of Nations Qualifying, Group Stage",group-stage,8315,CAF.NATIONS_QUAL,Africa Cup of Nations Qualifying,AFCON Qualifying
+13523,2024,"2024 Women's Africa Cup of Nations, 3rd-Place Match",3rd-place-match,23523,CAF.W.NATIONS,Women's Africa Cup of Nations,Women's Africa Cup of Nations
+13520,2024,"2024 Women's Africa Cup of Nations, Group Stage",group-stage,23523,CAF.W.NATIONS,Women's Africa Cup of Nations,Women's Africa Cup of Nations
+13524,2024,"2024 Women's Africa Cup of Nations, Final",final,23523,CAF.W.NATIONS,Women's Africa Cup of Nations,Women's Africa Cup of Nations
+13521,2024,"2024 Women's Africa Cup of Nations, Quarterfinals",quarterfinals,23523,CAF.W.NATIONS,Women's Africa Cup of Nations,Women's Africa Cup of Nations
+13522,2024,"2024 Women's Africa Cup of Nations, Semifinals",semifinals,23523,CAF.W.NATIONS,Women's Africa Cup of Nations,Women's Africa Cup of Nations
+12845,2024,2024 Campeones Cup,2024-campeones-cup,18771,CAMPEONES.CUP,Campeones Cup,Campeones Cup
+12411,2024,2024 Primera División de Chile,2024-primera-division-de-chile,640,CHI.1,Chilean Primera División,Chilean Primera
+12520,2024,"2024 Copa Chile, Regional Stage Semifinals",regional-stage-semifinals,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+12521,2024,"2024 Copa Chile, Regional Stage Quarterfinals",regional-stage-quarterfinals,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+12518,2024,"2024 Copa Chile, National Stage Semifinals",national-stage-semifinals,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+12517,2024,"2024 Copa Chile, National Stage Final",national-stage-final,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+12519,2024,"2024 Copa Chile, Regional Stage Finals",regional-stage-finals,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+12460,2024,2024 Chinese Super League,2024-chinese-super-league,8376,CHN.1,Chinese Super League,Chinese Super League
+12282,2024,2024 Club Friendly,2024-club-friendly,19834,CLUB.FRIENDLY,Club Friendly,Club Friendly
+12351,2024,"2024 Liga BetPlay, Finals",finals,650,COL.1,Colombian Primera A,Colombian Primera A
+12348,2024,"2024 Liga BetPlay, Playoffs - Finals",playoffs---finals,650,COL.1,Colombian Primera A,Colombian Primera A
+12349,2024,"2024 Liga BetPlay, Playoffs - Semifinals",playoffs---semifinals,650,COL.1,Colombian Primera A,Colombian Primera A
+12353,2024,"2024 Liga BetPlay, Apertura",apertura,650,COL.1,Colombian Primera A,Colombian Primera A
+12352,2024,"2024 Liga BetPlay, Semifinals",semifinals,650,COL.1,Colombian Primera A,Colombian Primera A
+12350,2024,"2024 Liga BetPlay, Clausura",clausura,650,COL.1,Colombian Primera A,Colombian Primera A
+12357,2024,"2024 Colombia Segunda División, Torneo BetPlay - Clausura Semifinals",torneo-betplay---clausura-semifinals,3910,COL.2,Colombian Primera B,Colombian Primera B
+12356,2024,"2024 Colombia Segunda División, Torneo BetPlay - Finals",torneo-betplay---finals,3910,COL.2,Colombian Primera B,Colombian Primera B
+12355,2024,"2024 Colombia Segunda División, Torneo BetPlay - Grand Finals",torneo-betplay---grand-finals,3910,COL.2,Colombian Primera B,Colombian Primera B
+12358,2024,"2024 Colombia Segunda División, Torneo BetPlay - Clausura",torneo-betplay---clausura,3910,COL.2,Colombian Primera B,Colombian Primera B
+12359,2024,"2024 Colombia Segunda División, Torneo BetPlay - Apertura Finals",torneo-betplay---apertura-finals,3910,COL.2,Colombian Primera B,Colombian Primera B
+12360,2024,"2024 Colombia Segunda División, Torneo BetPlay - Apertura Semifinals",torneo-betplay---apertura-semifinals,3910,COL.2,Colombian Primera B,Colombian Primera B
+12361,2024,"2024 Colombia Segunda División, Torneo BetPlay - Apertura",torneo-betplay---apertura,3910,COL.2,Colombian Primera B,Colombian Primera B
+12448,2024,"2024 Copa Colombia, Semifinals",semifinals,8313,COL.COPA,Copa Colombia,Copa Colombia
+12523,2024,"2024 Copa Chile, First Round",first-round,8313,COL.COPA,Copa Colombia,Copa Colombia
+12522,2024,"2024 Copa Chile, Regional Stage Round of 16",regional-stage-round-of-16,8313,COL.COPA,Copa Colombia,Copa Colombia
+12453,2024,"2024 Copa Colombia, First Round",first-round,8313,COL.COPA,Copa Colombia,Copa Colombia
+12447,2024,"2024 Copa Colombia, Finals",finals,8313,COL.COPA,Copa Colombia,Copa Colombia
+12449,2024,"2024 Copa Colombia, Quarterfinals",quarterfinals,8313,COL.COPA,Copa Colombia,Copa Colombia
+12450,2024,"2024 Copa Colombia, Round of 16",round-of-16,8313,COL.COPA,Copa Colombia,Copa Colombia
+12451,2024,"2024 Copa Colombia, Third Round",third-round,8313,COL.COPA,Copa Colombia,Copa Colombia
+12452,2024,"2024 Copa Colombia, Second Round",second-round,8313,COL.COPA,Copa Colombia,Copa Colombia
+12960,2024,"2024 Concacaf Central American Cup, Semifinals",semifinals,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+12958,2024,"2024 Concacaf Central American Cup, Play-In",play-in,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+12959,2024,"2024 Concacaf Central American Cup, Final",final,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+12956,2024,"2024 Concacaf Central American Cup, Group Stage",group-stage,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+12957,2024,"2024 Concacaf Central American Cup, Quarterfinals",quarterfinals,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+12283,2024,"2024 Concacaf Champions Cup, Final",final,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+12281,2024,"2024 Concacaf Champions Cup, Round One",round-one,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+12279,2024,"2024 Concacaf Champions Cup, Quarterfinals",quarterfinals,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+12280,2024,"2024 Concacaf Champions Cup, Round of 16",round-of-16,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+12278,2024,"2024 Concacaf Champions Cup, Semifinals",semifinals,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+12497,2024,"2024 Leagues Cup, Final",final,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12498,2024,"2024 Leagues Cup, 3rd-Place",3rd-place,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12503,2024,"2024 Leagues Cup, Group Stage",group-stage,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12502,2024,"2024 Leagues Cup, Round of 32",round-of-32,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12501,2024,"2024 Leagues Cup, Round of 16",round-of-16,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12500,2024,"2024 Leagues Cup, Quarterfinals",quarterfinals,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12499,2024,"2024 Leagues Cup, Semifinals",semifinals,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+12989,2024,"2024-25 Concacaf Nations League, Gold Cup Play-In",gold-cup-play-in,19267,CONCACAF.NATIONS.LEAGUE,Concacaf Nations League,Concacaf Nations League
+12583,2024,"2024-25 Concacaf Nations League, Quarterfinals",quarterfinals,19267,CONCACAF.NATIONS.LEAGUE,Concacaf Nations League,Concacaf Nations League
+12581,2024,"2024-25 Concacaf Nations League, 3rd-Place Match",3rd-place-match,19267,CONCACAF.NATIONS.LEAGUE,Concacaf Nations League,Concacaf Nations League
+12580,2024,"2024-25 Concacaf Nations League, Final",final,19267,CONCACAF.NATIONS.LEAGUE,Concacaf Nations League,Concacaf Nations League
+12582,2024,"2024-25 Concacaf Nations League, Semifinals",semifinals,19267,CONCACAF.NATIONS.LEAGUE,Concacaf Nations League,Concacaf Nations League
+12584,2024,"2024-25 Concacaf Nations League, Group Stage",group-stage,19267,CONCACAF.NATIONS.LEAGUE,Concacaf Nations League,Concacaf Nations League
+12933,2024,"2024-25 Concacaf W Champions Cup, Group Stage",group-stage,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+12935,2024,"2024-25 Concacaf W Champions Cup, 3rd-Place Match",3rd-place-match,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+12932,2024,"2024-25 Concacaf W Champions Cup, Preliminary Round",preliminary-round,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+12934,2024,"2024-25 Concacaf W Champions Cup, Semifinals",semifinals,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+12936,2024,"2024-25 Concacaf W Champions Cup, Final",final,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+12245,2024,"2024 Copa América, Group Stage",group-stage,780,CONMEBOL.AMERICA,Copa América,Copa América
+12244,2024,"2024 Copa América, Quarterfinals",quarterfinals,780,CONMEBOL.AMERICA,Copa América,Copa América
+12243,2024,"2024 Copa América, Semifinals",semifinals,780,CONMEBOL.AMERICA,Copa América,Copa América
+12242,2024,"2024 Copa América, 3rd-Place",3rd-place,780,CONMEBOL.AMERICA,Copa América,Copa América
+12241,2024,"2024 Copa América, Final",final,780,CONMEBOL.AMERICA,Copa América,Copa América
+12309,2024,"2024 CONMEBOL Libertadores, Third Stage",third-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12306,2024,"2024 CONMEBOL Libertadores, Quarterfinals",quarterfinals,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12304,2024,"2024 CONMEBOL Libertadores, Final",final,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12305,2024,"2024 CONMEBOL Libertadores, Semifinals",semifinals,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12307,2024,"2024 CONMEBOL Libertadores, Round of 16",round-of-16,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12308,2024,"2024 CONMEBOL Libertadores, Group Stage",group-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12310,2024,"2024 CONMEBOL Libertadores, Second Stage",second-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12311,2024,"2024 CONMEBOL Libertadores, First Stage",first-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+12240,2024,2024 Recopa Sudamericana,2024-recopa-sudamericana,8333,CONMEBOL.RECOPA,CONMEBOL Recopa,CONMEBOL Recopa
+12301,2024,"2024 CONMEBOL Sudamericana, Knockout Round Playoffs",knockout-round-playoffs,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12302,2024,"2024 CONMEBOL Sudamericana, Group Stage",group-stage,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12300,2024,"2024 CONMEBOL Sudamericana, Round of 16",round-of-16,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12299,2024,"2024 CONMEBOL Sudamericana, Quarterfinals",quarterfinals,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12303,2024,"2024 CONMEBOL Sudamericana, First Stage",first-stage,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12297,2024,"2024 CONMEBOL Sudamericana, Final",final,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12298,2024,"2024 CONMEBOL Sudamericana, Semifinals",semifinals,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+12679,2024,"2024-25 Primera División de Costa Rica, Clausura - Grand Finals",clausura---grand-finals,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12688,2024,"2024-25 Primera División de Costa Rica, Apertura",apertura,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12687,2024,"2024-25 Primera División de Costa Rica, Apertura - Playoff Semifinals",apertura---playoff-semifinals,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12680,2024,"2024-25 Primera División de Costa Rica, Clausura - Playoff Finals",clausura---playoff-finals,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12685,2024,"2024-25 Primera División de Costa Rica, Apertura - Playoff Finals",apertura---playoff-finals,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12684,2024,"2024-25 Primera División de Costa Rica, Apertura - Grand Finals",apertura---grand-finals,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12683,2024,"2024-25 Primera División de Costa Rica, Clausura",clausura,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12682,2024,"2024-25 Primera División de Costa Rica, Clausura - Playoff Semifinals",clausura---playoff-semifinals,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+12624,2024,"2024-25 Danish Superliga, Second Phase",second-phase,3913,DEN.1,Danish Superliga,Danish Superliga
+12623,2024,"2024-25 Danish Superliga, Europa Conference League Playoff",europa-conference-league-playoff,3913,DEN.1,Danish Superliga,Danish Superliga
+12625,2024,"2024-25 Danish Superliga, Regular Season",regular-season,3913,DEN.1,Danish Superliga,Danish Superliga
+12423,2024,"2024 LigaPro Ecuador, First Stage",,660,ECU.1,LigaPro Ecuador,LigaPro Ecuador
+13010,2024,"2024 LigaPro Ecuador, 2024 LigaPro Ecuador - Finals",2024-ligapro-ecuador---finals,660,ECU.1,LigaPro Ecuador,LigaPro Ecuador
+12422,2024,"2024 LigaPro Ecuador, Second Stage",second-stage,660,ECU.1,LigaPro Ecuador,LigaPro Ecuador
+12654,2024,2024-25 English Premier League,2024-25-english-premier-league,700,ENG.1,English Premier League,Premier League
+12711,2024,"2024-25 English League Championship, Promotion Final",promotion-final,3914,ENG.2,English League Championship,EFL Championship
+12713,2024,"2024-25 English League Championship, Regular Season",regular-season,3914,ENG.2,English League Championship,EFL Championship
+12712,2024,"2024-25 English League Championship, Promotion Semifinals",promotion-semifinals,3914,ENG.2,English League Championship,EFL Championship
+12719,2024,"2024-25 English League One, Regular Season",regular-season,3915,ENG.3,English League One,EFL League One
+12718,2024,"2024-25 English League One, Promotion Semifinals",promotion-semifinals,3915,ENG.3,English League One,EFL League One
+12717,2024,"2024-25 English League One, Promotion Final",promotion-final,3915,ENG.3,English League One,EFL League One
+12716,2024,"2024-25 English League Two, Regular Season",regular-season,3916,ENG.4,English League Two,EFL League Two
+12715,2024,"2024-25 English League Two, Promotion Semifinals",promotion-semifinals,3916,ENG.4,English League Two,EFL League Two
+12714,2024,"2024-25 English League Two, Promotion Final",promotion-final,3916,ENG.4,English League Two,EFL League Two
+12769,2024,"2024-25 English National League, Promotion Final",promotion-final,3917,ENG.5,English National League,National League
+12770,2024,"2024-25 English National League, Promotion Semifinals",promotion-semifinals,3917,ENG.5,English National League,National League
+12771,2024,"2024-25 English National League, Elimination Round",elimination-round,3917,ENG.5,English National League,National League
+12772,2024,"2024-25 English National League, Regular Season",regular-season,3917,ENG.5,English National League,National League
+12585,2024,2024 English FA Community Shield,2024-english-fa-community-shield,5329,ENG.CHARITY,English FA Community Shield,Community Shield
+12984,2024,"2024-25 English FA Cup, Fifth Round",fifth-round,3918,ENG.FA,English FA Cup,English FA Cup
+12983,2024,"2024-25 English FA Cup, Quarterfinals",quarterfinals,3918,ENG.FA,English FA Cup,English FA Cup
+12985,2024,"2024-25 English FA Cup, Fourth Round",fourth-round,3918,ENG.FA,English FA Cup,English FA Cup
+12986,2024,"2024-25 English FA Cup, Third Round",third-round,3918,ENG.FA,English FA Cup,English FA Cup
+12987,2024,"2024-25 English FA Cup, Second Round",second-round,3918,ENG.FA,English FA Cup,English FA Cup
+12988,2024,"2024-25 English FA Cup, First Round",first-round,3918,ENG.FA,English FA Cup,English FA Cup
+12981,2024,"2024-25 English FA Cup, Final",final,3918,ENG.FA,English FA Cup,English FA Cup
+12982,2024,"2024-25 English FA Cup, Semifinals",semifinals,3918,ENG.FA,English FA Cup,English FA Cup
+12733,2024,"2024-25 English Carabao Cup, First Round",first-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12730,2024,"2024-25 English Carabao Cup, Fourth Round",fourth-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12732,2024,"2024-25 English Carabao Cup, Second Round",second-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12727,2024,"2024-25 English Carabao Cup, Final",final,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12728,2024,"2024-25 English Carabao Cup, Semifinals",semifinals,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12729,2024,"2024-25 English Carabao Cup, Quarterfinals",quarterfinals,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12731,2024,"2024-25 English Carabao Cup, Third Round",third-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+12737,2024,"2024-25 EFL Trophy, Third Round",third-round,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+12738,2024,"2024-25 EFL Trophy, Second Round",second-round,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+12739,2024,"2024-25 EFL Trophy, Group Stage",group-stage,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+12734,2024,"2024-25 EFL Trophy, Final",final,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+12735,2024,"2024-25 EFL Trophy, Semifinals",semifinals,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+12736,2024,"2024-25 EFL Trophy, Quarterfinals",quarterfinals,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+12837,2024,2024-25 English Women's Super League,2024-25-english-womens-super-league,8097,ENG.W.1,English Women's Super League,Women's Super League
+12974,2024,"2024-25 English Women's FA Cup, Semifinals",semifinals,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12980,2024,"2024-25 English Women's FA Cup, First Round",first-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12979,2024,"2024-25 English Women's FA Cup, Second Round",second-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12978,2024,"2024-25 English Women's FA Cup, Third Round",third-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12977,2024,"2024-25 English Women's FA Cup, Fourth Round",fourth-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12975,2024,"2024-25 English Women's FA Cup, Quarterfinals",quarterfinals,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12973,2024,"2024-25 English Women's FA Cup, Final",final,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12976,2024,"2024-25 English Women's FA Cup, Fifth Round",fifth-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+12655,2024,2024-25 LALIGA,2024-25-laliga,740,ESP.1,Spanish LALIGA,LALIGA
+12720,2024,"2024-25 Spanish LALIGA 2, Promotion Finals",promotion-finals,3921,ESP.2,Spanish LALIGA 2,LALIGA 2
+12721,2024,"2024-25 Spanish LALIGA 2, Promotion Semifinals",promotion-semifinals,3921,ESP.2,Spanish LALIGA 2,LALIGA 2
+12722,2024,"2024-25 Spanish LALIGA 2, Regular Season",regular-season,3921,ESP.2,Spanish LALIGA 2,LALIGA 2
+12854,2024,"2024-25 Spanish Copa de la Reina, Semifinals",semifinals,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12859,2024,"2024-25 Spanish Copa de la Reina, First Round",first-round,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12858,2024,"2024-25 Spanish Copa de la Reina, Second Round",second-round,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12853,2024,"2024-25 Spanish Copa de la Reina, Final",final,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12857,2024,"2024-25 Spanish Copa de la Reina, Round of 32",round-of-32,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12856,2024,"2024-25 Spanish Copa de la Reina, Round of 16",round-of-16,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12855,2024,"2024-25 Spanish Copa de la Reina, Quarterfinals",quarterfinals,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+12923,2024,"2024-25 Spanish Copa del Rey, Qualifying Round",qualifying-round,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12920,2024,"2024-25 Spanish Copa del Rey, Round of 32",round-of-32,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12919,2024,"2024-25 Spanish Copa del Rey, Round of 16",round-of-16,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12918,2024,"2024-25 Spanish Copa del Rey, Quarterfinals",quarterfinals,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12916,2024,"2024-25 Spanish Copa del Rey, Final",final,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12917,2024,"2024-25 Spanish Copa del Rey, Semifinals",semifinals,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12922,2024,"2024-25 Spanish Copa del Rey, First Round",first-round,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12921,2024,"2024-25 Spanish Copa del Rey, Second Round",second-round,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+12813,2024,2024 Trofeo Joan Gamper,2024-trofeo-joan-gamper,17929,ESP.JOAN_GAMPER,Trofeo Joan Gamper,Trofeo Joan Gamper
+12752,2024,"2024-25 Spanish Supercopa, Final",final,8102,ESP.SUPER_CUP,Spanish Supercopa,Spanish Supercopa
+12753,2024,"2024-25 Spanish Supercopa, Semifinals",semifinals,8102,ESP.SUPER_CUP,Spanish Supercopa,Spanish Supercopa
+12876,2024,2024-25 Spanish Liga F,2024-25-spanish-liga-f,20956,ESP.W.1,Spanish Liga F,Liga F
+12136,2024,2024 International Friendly,2024-international-friendly,3922,FIFA.FRIENDLY,International Friendly,Men's International Friendly
+12473,2024,2024 U21 International Friendly,2024-u21-international-friendly,20132,FIFA.FRIENDLY_U21,Under-21 International Friendly,Men's U-21 Friendly
+12371,2024,2024 Women's International Friendly,2024-womens-international-friendly,3923,FIFA.FRIENDLY.W,Women's International Friendly,Women's International Friendly
+12926,2024,"2024 FIFA Intercontinental Cup, Playoff",playoff,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+12925,2024,"2024 FIFA Intercontinental Cup, Second Round",second-round,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+12927,2024,"2024 FIFA Intercontinental Cup, Final",final,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+12924,2024,"2024 FIFA Intercontinental Cup, First Round",first-round,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+12863,2024,"2024 Intercontinental Cup, Group Stage",group-stage,782,FIFA.INTERCONTINENTAL.CUP,Intercontinental Cup (India),Intercontinental Cup (India)
+12488,2024,"2024 Olympic Men's Soccer, Gold Medal Match",gold-medal-match,3924,FIFA.OLYMPICS,Men's Olympic Soccer Tournament,OLY Soccer (M)
+12489,2024,"2024 Olympic Men's Soccer, Bronze Medal Match",bronze-medal-match,3924,FIFA.OLYMPICS,Men's Olympic Soccer Tournament,OLY Soccer (M)
+12490,2024,"2024 Olympic Men's Soccer, Semifinals",semifinals,3924,FIFA.OLYMPICS,Men's Olympic Soccer Tournament,OLY Soccer (M)
+12492,2024,"2024 Olympic Men's Soccer, Group Stage",group-stage,3924,FIFA.OLYMPICS,Men's Olympic Soccer Tournament,OLY Soccer (M)
+12491,2024,"2024 Olympic Men's Soccer, Quarterfinals",quarterfinals,3924,FIFA.OLYMPICS,Men's Olympic Soccer Tournament,OLY Soccer (M)
+12486,2024,"2024 Olympic Women's Soccer, Quarterfinals",quarterfinals,3925,FIFA.W.OLYMPICS,Women's Olympic Soccer Tournament,OLY Soccer (W)
+12485,2024,"2024 Olympic Women's Soccer, Semifinals",semifinals,3925,FIFA.W.OLYMPICS,Women's Olympic Soccer Tournament,OLY Soccer (W)
+12484,2024,"2024 Olympic Women's Soccer, Bronze Medal Match",bronze-medal-match,3925,FIFA.W.OLYMPICS,Women's Olympic Soccer Tournament,OLY Soccer (W)
+12483,2024,"2024 Olympic Women's Soccer, Gold Medal Match",gold-medal-match,3925,FIFA.W.OLYMPICS,Women's Olympic Soccer Tournament,OLY Soccer (W)
+12487,2024,"2024 Olympic Women's Soccer, Group Stage",group-stage,3925,FIFA.W.OLYMPICS,Women's Olympic Soccer Tournament,OLY Soccer (W)
+12415,2024,"2026 World Cup Qualifying - CONCACAF, First Round",first-round,788,FIFA.WORLDQ.CONCACAF,FIFA World Cup Qualifying - Concacaf,WCQ - Concacaf
+12414,2024,"2026 World Cup Qualifying - Concacaf, Second Round",second-round,788,FIFA.WORLDQ.CONCACAF,FIFA World Cup Qualifying - Concacaf,WCQ - Concacaf
+12413,2024,"2026 World Cup Qualifying - Concacaf, Third Round",third-round,788,FIFA.WORLDQ.CONCACAF,FIFA World Cup Qualifying - Concacaf,WCQ - Concacaf
+12822,2024,"2026 World Cup Qualifying - OFC, Final",final,792,FIFA.WORLDQ.OFC,FIFA World Cup Qualifying - OFC,WCQ - OFC
+12825,2024,"2026 World Cup Qualifying - OFC, First Round",first-round,792,FIFA.WORLDQ.OFC,FIFA World Cup Qualifying - OFC,WCQ - OFC
+12824,2024,"2026 World Cup Qualifying - OFC, Group Stage",group-stage,792,FIFA.WORLDQ.OFC,FIFA World Cup Qualifying - OFC,WCQ - OFC
+12823,2024,"2026 World Cup Qualifying - OFC, Semifinals",semifinals,792,FIFA.WORLDQ.OFC,FIFA World Cup Qualifying - OFC,WCQ - OFC
+12653,2024,"2024 FIFA Under-17 Women's World Cup, Group Stage",group-stage,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+12649,2024,"2024 FIFA Under-17 Women's World Cup, Final",final,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+12651,2024,"2024 FIFA Under-17 Women's World Cup, Semifinals",semifinals,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+12650,2024,"2024 FIFA Under-17 Women's World Cup, 3rd-Place",3rd-place,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+12652,2024,"2024 FIFA Under-17 Women's World Cup, Quarterfinals",quarterfinals,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+12694,2024,2024-25 Ligue 1,2024-25-ligue-1,710,FRA.1,French Ligue 1,Ligue 1
+13355,2024,"2024-25 French Ligue 1 Promotion/Relegation Playoffs, Finals",finals,20159,FRA.1.PROMOTION.RELEGATION,French Ligue 1 Promotion/Relegation Playoffs,Ligue 1 Pro/Rel
+13357,2024,"2024-25 French Ligue 1 Promotion/Relegation Playoffs, Quarterfinals",quarterfinals,20159,FRA.1.PROMOTION.RELEGATION,French Ligue 1 Promotion/Relegation Playoffs,Ligue 1 Pro/Rel
+13356,2024,"2024-25 French Ligue 1 Promotion/Relegation Playoffs, Semifinals",semifinals,20159,FRA.1.PROMOTION.RELEGATION,French Ligue 1 Promotion/Relegation Playoffs,Ligue 1 Pro/Rel
+12695,2024,2024-25 Ligue 2,2024-25-ligue-2,3926,FRA.2,French Ligue 2,Ligue 2
+13013,2024,"2024-25 Coupe de France, Quarterfinals",quarterfinals,3952,FRA.COUPE_DE_FRANCE,Coupe de France,Coupe de France
+13012,2024,"2024-25 Coupe de France, Semifinals",semifinals,3952,FRA.COUPE_DE_FRANCE,Coupe de France,Coupe de France
+13014,2024,"2024-25 Coupe de France, Round of 16",round-of-16,3952,FRA.COUPE_DE_FRANCE,Coupe de France,Coupe de France
+13011,2024,"2024-25 Coupe de France, Final",final,3952,FRA.COUPE_DE_FRANCE,Coupe de France,Coupe de France
+13015,2024,"2024-25 Coupe de France, Round of 32",round-of-32,3952,FRA.COUPE_DE_FRANCE,Coupe de France,Coupe de France
+13016,2024,"2024-25 Coupe de France, Round of 64",round-of-64,3952,FRA.COUPE_DE_FRANCE,Coupe de France,Coupe de France
+12586,2024,2024 French Super Cup,2024-french-super-cup,8357,FRA.SUPER_CUP,French Trophee des Champions,Trophee des Champions
+12821,2024,"2024-25 French Première Ligue, Regular Season",regular-season,20955,FRA.W.1,French Première Ligue,Première Ligue
+12818,2024,"2024-25 French Première Ligue, Playoffs - Final",playoffs---final,20955,FRA.W.1,French Première Ligue,Première Ligue
+12820,2024,"2024-25 French Première Ligue, Playoffs - Semifinals",playoffs---semifinals,20955,FRA.W.1,French Première Ligue,Première Ligue
+12702,2024,2024 Emirates Cup,2024-emirates-cup,11108,FRIENDLY.EMIRATES_CUP,Emirates Cup,Emirates Cup
+12747,2024,2024-25 German Bundesliga,2024-25-german-bundesliga,720,GER.1,German Bundesliga,Bundesliga
+12749,2024,2024-25 German 2. Bundesliga,2024-25-german-2-bundesliga,3927,GER.2,German 2. Bundesliga,2. Bundesliga
+13371,2024,2024-25 German 2.Bundesliga Promotion/Relegation Playoffs,2024-25-german-2bundesliga-promotionrelegation-playoffs,19871,GER.2.PROMOTION.RELEGATION,German Bundesliga 2 Promotion/Relegation Playoffs,2. Bundesliga Pro/Rel
+12612,2024,"2024-25 German Cup, First Round",first-round,3954,GER.DFB_POKAL,German Cup,German Cup
+12611,2024,"2024-25 German Cup, Second Round",second-round,3954,GER.DFB_POKAL,German Cup,German Cup
+12610,2024,"2024-25 German Cup, Round of 16",round-of-16,3954,GER.DFB_POKAL,German Cup,German Cup
+12609,2024,"2024-25 German Cup, Quarterfinals",quarterfinals,3954,GER.DFB_POKAL,German Cup,German Cup
+12607,2024,"2024-25 German Cup, Final",final,3954,GER.DFB_POKAL,German Cup,German Cup
+12608,2024,"2024-25 German Cup, Semifinals",semifinals,3954,GER.DFB_POKAL,German Cup,German Cup
+13373,2024,2024-25 German Bundesliga Promotion/Relegation Playoffs,2024-25-german-bundesliga-promotionrelegation-playoffs,8304,GER.PLAYOFF.RELEGATION,German Bundesliga Promotion/Relegation Playoff,Bundesliga Pro/Rel
+12621,2024,2024 German Super Cup,2024-german-super-cup,8101,GER.SUPER_CUP,German Supercup,German SuperCup
+12846,2024,2024-25 Ghanaian Premier League,2024-25-ghanaian-premier-league,11052,GHA.1,Ghanaian Premier League,Ghanaian Premier League
+13138,2024,"2024 Arabian Gulf Cup, Semifinals",semifinals,23107,GLOBAL.GULF_CUP,Arabian Gulf Cup,Arabian Gulf Cup
+13139,2024,"2024 Arabian Gulf Cup, Final",final,23107,GLOBAL.GULF_CUP,Arabian Gulf Cup,Arabian Gulf Cup
+13137,2024,"2024 Arabian Gulf Cup, Arabian Gulf Cup - Group Stage",arabian-gulf-cup---group-stage,23107,GLOBAL.GULF_CUP,Arabian Gulf Cup,Arabian Gulf Cup
+12513,2024,"2024 Maurice Revello Tournament, Final",final,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+12514,2024,"2024 Maurice Revello Tournament, 3rd-Place Match",3rd-place-match,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+12515,2024,"2024 Maurice Revello Tournament, Classification Matches",classification-matches,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+12516,2024,"2024 Maurice Revello Tournament, Group Stage",group-stage,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+12836,2024,2024 U20 Intercontinental Cup,2024-u20-intercontinental-cup,22781,GLOBAL.U20.INTERCONTINENTAL_CUP,CONMEBOL-UEFA U20 Intercontinental Cup,U20 Intercontinental Cup
+12815,2024,"2024-25 Greek Super League, Regular Season",regular-season,3955,GRE.1,Greek Super League,Greek Super League
+12814,2024,"2024-25 Greek Super League, Playoff Round",playoff-round,3955,GRE.1,Greek Super League,Greek Super League
+12614,2024,"2024-25 Liga Nacional de Guatemala, Clausura - Semifinals",clausura---semifinals,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12616,2024,"2024-25 Liga Nacional de Guatemala, Torneo Clausura",torneo-clausura,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12617,2024,"2024-25 Liga Nacional de Guatemala, Apertura - Finals",apertura---finals,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12618,2024,"2024-25 Liga Nacional de Guatemala, Apertura - Semifinals",apertura---semifinals,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12619,2024,"2024-25 Liga Nacional de Guatemala, Apertura - Quarterfinals",apertura---quarterfinals,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12613,2024,"2024-25 Liga Nacional de Guatemala, Clausura - Final",clausura---final,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12615,2024,"2024-25 Liga Nacional de Guatemala, Clausura - Quarterfinals",clausura---quarterfinals,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12620,2024,"2024-25 Liga Nacional de Guatemala, Torneo Apertura",torneo-apertura,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+12791,2024,"2024-25 Honduran Liga Nacional, Torneo Apertura 2024",torneo-apertura-2024,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12789,2024,"2024-25 Honduran Liga Nacional, Apertura Playoffs - Semifinals",apertura-playoffs---semifinals,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12788,2024,"2024-25 Honduran Liga Nacional, Apertura Playoffs - Final",apertura-playoffs---final,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12787,2024,"2024-25 Honduran Liga Nacional, Torneo Clausura 2024",torneo-clausura-2024,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12786,2024,"2024-25 Honduran Liga Nacional, Clausura Playoffs- Quarterfinals",clausura-playoffs--quarterfinals,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12785,2024,"2024-25 Honduran Liga Nacional, Clausura Playoffs- Semifinals",clausura-playoffs--semifinals,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12784,2024,"2024-25 Honduran Liga Nacional, Clausura Playoffs- Final",clausura-playoffs--final,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12790,2024,"2024-25 Honduran Liga Nacional, Apertura Playoffs- Quarterfinals",apertura-playoffs--quarterfinals,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+12844,2024,"2024-25 Indonesian Liga 1, Regular Season",regular-season,8339,IDN.1,Indonesian Super League,Indonesian Super League
+12879,2024,"2024-25 Indian Super League, Knockout Round",knockout-round,8316,IND.1,Indian Super League,Indian Super League
+12880,2024,"2024-25 Indian Super League, Regular Season",regular-season,8316,IND.1,Indian Super League,Indian Super League
+12877,2024,"2024-25 Indian Super League, Final",final,8316,IND.1,Indian Super League,Indian Super League
+12878,2024,"2024-25 Indian Super League, Semifinals",semifinals,8316,IND.1,Indian Super League,Indian Super League
+12993,2024,"2024-25 Indian I-League, Regular Season",regular-season,18505,IND.2,Indian I-League,Indian I-League
+12994,2024,2024 League of Ireland Premier - Promotion/Relegation Playoff,2024-league-of-ireland-premier---promotionrelegation-playoff,19951,IR1.1.PROMOTION.RELEGATION,Irish Premier Division Promotion/Relegation Playoffs,Irish Premier Pro/Rel
+12285,2024,2024 League of Ireland Premier,2024-league-of-ireland-premier,3930,IRL.1,Irish Premier Division,Irish Premier Division
+12701,2024,"2024-25 Israeli Premier League, Regular Season",regular-season,10750,ISR.1,Israeli Premier League,Israeli Premier League
+12700,2024,"2024-25 Israeli Premier League, Second Round",second-round,10750,ISR.1,Israeli Premier League,Israeli Premier League
+12750,2024,2024-25 Italian Serie A,2024-25-italian-serie-a,730,ITA.1,Italian Serie A,Serie A
+12780,2024,"2024-25 Italian Serie B, Promotion Preliminary Round",promotion-preliminary-round,3931,ITA.2,Italian Serie B,Italian Serie B
+12777,2024,"2024-25 Italian Serie B, Relegation Finals",relegation-finals,3931,ITA.2,Italian Serie B,Italian Serie B
+12778,2024,"2024-25 Italian Serie B, Promotion Finals",promotion-finals,3931,ITA.2,Italian Serie B,Italian Serie B
+12779,2024,"2024-25 Italian Serie B, Promotion Semifinals",promotion-semifinals,3931,ITA.2,Italian Serie B,Italian Serie B
+12781,2024,"2024-25 Italian Serie B, Regular Season",regular-season,3931,ITA.2,Italian Serie B,Italian Serie B
+12760,2024,"2024-25 Coppa Italia, Preliminary Round",preliminary-round,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12754,2024,"2024-25 Coppa Italia, Final",final,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12755,2024,"2024-25 Coppa Italia, Semifinals",semifinals,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12756,2024,"2024-25 Coppa Italia, Quarterfinals",quarterfinals,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12757,2024,"2024-25 Coppa Italia, Round of 16",round-of-16,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12759,2024,"2024-25 Coppa Italia, First Round",first-round,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12758,2024,"2024-25 Coppa Italia, Second Round",second-round,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+12970,2024,"2024 Italian Supercoppa, Semifinals",semifinals,8103,ITA.SUPER_CUP,Italian Supercoppa,Italian Supercoppa
+12969,2024,"2024 Italian Supercoppa, Final",final,8103,ITA.SUPER_CUP,Italian Supercoppa,Italian Supercoppa
+12362,2024,2024 Japanese J1 League ,2024-japanese-j1-league,750,JPN.1,Japanese J.League,Japanese J1 League
+12553,2024,2024 J.League World Challenge,2024-jleague-world-challenge,17931,JPN.WORLD_CHALLENGE,Japanese J.League World Challenge,J.League World Challenge
+12852,2024,2024-25 Kenyan Premier League,2024-25-kenyan-premier-league,11054,KEN.1,Kenyan Premier League,Kenyan Premier League
+12826,2024,2024-25 Saudi Pro League,2024-25-saudi-pro-league,21231,KSA.1,Saudi Pro League, Saudi Pro League
+12645,2024,"2024-25 Saudi King's Cup, Semifinals",semifinals,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+12644,2024,"2024-25 Saudi King's Cup, Final",final,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+12648,2024,"2024-25 Saudi King's Cup, Round of 32",round-of-32,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+12647,2024,"2024-25 Saudi King's Cup, Round of 16",round-of-16,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+12646,2024,"2024-25 Saudi King's Cup, Quarterfinals",quarterfinals,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+12629,2024,"2024-25 Liga BBVA MX, Clausura 2025 - 8th Seed Game",clausura-2025---8th-seed-game,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12630,2024,"2024-25 Liga BBVA MX, Clausura 2025 - 9th Place vs 10th Place",clausura-2025---9th-place-vs-10th-place,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12635,2024,"2024-25 Liga BBVA MX, Apertura 2024 - Semifinals",apertura-2024---semifinals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12634,2024,"2024-25 Liga BBVA MX, Apertura 2024 - Finals",apertura-2024---finals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12628,2024,"2024-25 Liga BBVA MX, Clausura 2025 - Quarterfinals",clausura-2025---quarterfinals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12631,2024,"2024-25 Liga BBVA MX, Clausura 2025 - 7th Seed Game",clausura-2025---7th-seed-game,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12627,2024,"2024-25 Liga BBVA MX, Clausura 2025 - Semifinals",clausura-2025---semifinals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12632,2024,"2024-25 Liga BBVA MX, Torneo Clausura",torneo-clausura,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12639,2024,"2024-25 Liga BBVA MX, Apertura 2024 - 7th Place vs 8th Place",apertura-2024---7th-place-vs-8th-place,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12638,2024,"2024-25 Liga BBVA MX, Apertura 2024 - 9th Place vs 10th Place",apertura-2024---9th-place-vs-10th-place,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12636,2024,"2024-25 Liga BBVA MX, Apertura 2024 - Quarterfinals",apertura-2024---quarterfinals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12626,2024,"2024-25 Liga BBVA MX, Clausura 2025 - Finals",clausura-2025---finals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12640,2024,"2024-25 Liga BBVA MX, Torneo Apertura",torneo-apertura,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12637,2024,"2024-25 Liga BBVA MX, Apertura - 8th Seed Game",apertura---8th-seed-game,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+12809,2024,"2024-25 Mexican Liga de Expansión MX, Apertura 2024 - Finals",apertura-2024---finals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12812,2024,"2024-25 Mexican Liga de Expansión MX, Torneo Apertura 2024",torneo-apertura-2024,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12811,2024,"2024-25 Mexican Liga de Expansión MX, Apertura 2024 - Quarterfinals",apertura-2024---quarterfinals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12810,2024,"2024-25 Mexican Liga de Expansión MX, Apertura 2024 - Semifinals",apertura-2024---semifinals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12801,2024,"2024-25 Mexican Liga de Expansión MX, Championship Finals",championship-finals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12802,2024,"2024-25 Mexican Liga de Expansión MX, Clausura 2025 - Finals",clausura-2025---finals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12803,2024,"2024-25 Mexican Liga de Expansión MX, Clausura 2025 - Semifinals",clausura-2025---semifinals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12804,2024,"2024-25 Mexican Liga de Expansión MX, Clausura 2025 - Quarterfinals",clausura-2025---quarterfinals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12805,2024,"2024-25 Mexican Liga de Expansión MX, Clausura 2025",clausura-2025,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+12587,2024,2024 Campeón de Campeones,2024-campeon-de-campeones,17893,MEX.Campeon,Mexican Campeon de Campeones,Campeon de Campeones
+12751,2024,"2024-25 Maltese Premier League, Opening Round 2nd Phase",opening-round-2nd-phase,10751,MLT.1,Maltese Premier League,Maltese Premier League
+13321,2024,"2024-25 Maltese Premier League, Playoffs - Semifinals",playoffs---semifinals,10751,MLT.1,Maltese Premier League,Maltese Premier League
+13322,2024,"2024-25 Maltese Premier League, Playoffs - Third Place Match",playoffs---third-place-match,10751,MLT.1,Maltese Premier League,Maltese Premier League
+13323,2024,"2024-25 Maltese Premier League, Playoffs - Final",playoffs---final,10751,MLT.1,Maltese Premier League,Maltese Premier League
+13146,2024,"2024-25 Maltese Premier League, Closing Round",closing-round,10751,MLT.1,Maltese Premier League,Maltese Premier League
+13304,2024,"2024-25 Maltese Premier League, Closing Round 2nd Phase",closing-round-2nd-phase,10751,MLT.1,Maltese Premier League,Maltese Premier League
+13324,2024,"2024-25 Maltese Premier League, Relegation Playoffs",relegation-playoffs,10751,MLT.1,Maltese Premier League,Maltese Premier League
+12748,2024,"2024-25 Maltese Premier League, Opening Round",opening-round,10751,MLT.1,Maltese Premier League,Maltese Premier League
+12510,2024,2024-25 Malaysian Super League,2024-25-malaysian-super-league,8340,MYS.1,Malaysian Super League,Malaysian Super League
+12673,2024,"2024-25 Dutch Eredivisie, Regular Season",regular-season,725,NED.1,Dutch Eredivisie,Eredivisie
+12672,2024,"2024-25 Dutch Eredivisie, Europa Conference Playoffs - Semifinals",europa-conference-playoffs---semifinals,725,NED.1,Dutch Eredivisie,Eredivisie
+12671,2024,"2024-25 Dutch Eredivisie, Europa Conference Playoffs - Final",europa-conference-playoffs---final,725,NED.1,Dutch Eredivisie,Eredivisie
+12678,2024,2024-25 Keuken Kampioen Divisie,2024-25-keuken-kampioen-divisie,3933,NED.2,Dutch Keuken Kampioen Divisie,Keuken Kampioen Divisie
+12782,2024,2024-25 Dutch Tweede Divisie,2024-25-dutch-tweede-divisie,19908,NED.3,Dutch Tweede Divisie,Dutch Tweede Divisie
+13388,2024,"2024-25 Dutch Tweede Divisie Promotion/Relegation Playoffs, Semifinals",semifinals,20798,NED.3.PROMOTION.RELEGATION,Dutch Tweede Divisie Promotion/Relegation Playoffs,Dutch Tweede Divisie Pro/Rel Playoffs
+13387,2024,"2024-25 Dutch Tweede Divisie Promotion/Relegation Playoffs, U21 Relegation Playoffs",u21-relegation-playoffs,20798,NED.3.PROMOTION.RELEGATION,Dutch Tweede Divisie Promotion/Relegation Playoffs,Dutch Tweede Divisie Pro/Rel Playoffs
+13420,2024,"2024-25 Dutch Tweede Divisie Promotion/Relegation Playoffs, Finals",finals,20798,NED.3.PROMOTION.RELEGATION,Dutch Tweede Divisie Promotion/Relegation Playoffs,Dutch Tweede Divisie Pro/Rel Playoffs
+13389,2024,"2024-25 Dutch Tweede Divisie Promotion/Relegation Playoffs, Quarterfinals",quarterfinals,20798,NED.3.PROMOTION.RELEGATION,Dutch Tweede Divisie Promotion/Relegation Playoffs,Dutch Tweede Divisie Pro/Rel Playoffs
+12950,2024,"2024-25 Dutch KNVB Beker, Round of 16",round-of-16,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+12949,2024,"2024-25 Dutch KNVB Beker, Quarterfinals",quarterfinals,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+12947,2024,"2024-25 Dutch KNVB Beker, Final",final,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+12952,2024,"2024-25 Dutch KNVB Beker, First Round",first-round,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+12951,2024,"2024-25 Dutch KNVB Beker, Second Round",second-round,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+12948,2024,"2024-25 Dutch KNVB Beker, Semifinals",semifinals,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+13354,2024,"2024-25 Dutch Eredivisie Promotion/Relegation Playoffs, First Round",first-round,8305,NED.PLAYOFF.RELEGATION,Dutch Eredivisie Promotion/Relegation Playoffs,Eredivisie Pro/Rel
+13353,2024,"2024-25 Dutch Eredivisie Promotion/Relegation Playoffs, Semifinals",semifinals,8305,NED.PLAYOFF.RELEGATION,Dutch Eredivisie Promotion/Relegation Playoffs,Eredivisie Pro/Rel
+13352,2024,"2024-25 Dutch Eredivisie Promotion/Relegation Playoffs, Finals",finals,8305,NED.PLAYOFF.RELEGATION,Dutch Eredivisie Promotion/Relegation Playoffs,Eredivisie Pro/Rel
+12677,2024,2024 Johan Cruyff Shield,2024-johan-cruyff-shield,10749,NED.SUPERCUP,Dutch Johan Cruyff Shield,Johan Cruyff Shield
+12827,2024,2024-25 Vrouwen Eredivisie,2024-25-vrouwen-eredivisie,19945,NED.W.1,Dutch Vrouwen Eredivisie,Dutch Vrouwen Eredivisie
+13375,2024,2024-25 Eredivisie Cup - Final,2024-25-eredivisie-cup---final,20131,NED.W.EREDIVISIE_CUP,Dutch Eredivisie Cup,Dutch Eredivisie Cup
+13220,2024,"2024-25 KNVB Beker Vrouwen, Semifinals",semifinals,20115,NED.W.KNVB_CUP,Dutch KNVB Beker Vrouwen,Dutch Vrouwen KNVB Beker
+13219,2024,"2024-25 KNVB Beker Vrouwen, Final",final,20115,NED.W.KNVB_CUP,Dutch KNVB Beker Vrouwen,Dutch Vrouwen KNVB Beker
+13221,2024,"2024-25 KNVB Beker Vrouwen, Quarterfinals",quarterfinals,20115,NED.W.KNVB_CUP,Dutch KNVB Beker Vrouwen,Dutch Vrouwen KNVB Beker
+13222,2024,"2024-25 KNVB Beker Vrouwen, Round of 16",round-of-16,20115,NED.W.KNVB_CUP,Dutch KNVB Beker Vrouwen,Dutch Vrouwen KNVB Beker
+12817,2024,"2024-25 Nigerian Professional League, Regular Season",regular-season,8345,NGA.1,Nigerian Professional League,Nigerian Pro League
+12703,2024,"2024-25 NIFL Premiership, Europa Conference Playoff - Final",europa-conference-playoff---final,3958,NIR.1,Northern Irish Premiership,NIFL Premiership
+12704,2024,"2024-25 NIFL Premiership, Europa Conference Playoffs - Semifinals",europa-conference-playoffs---semifinals,3958,NIR.1,Northern Irish Premiership,NIFL Premiership
+12706,2024,"2024-25 NIFL Premiership, Regular Season",regular-season,3958,NIR.1,Northern Irish Premiership,NIFL Premiership
+13319,2024,2024-25 Northern Irish Premiership - Promotion/Relegation Finals,2024-25-northern-irish-premiership---promotionrelegation-finals,20707,NIR.1.PROMOTION.RELEGATION,Northern Irish Premiership Promotion/Relegation Playoffs,NIFL Premiership Pro/Rel
+12330,2024,2024 Eliteserien,2024-eliteserien,3960,NOR.1,Norwegian Eliteserien,Norwegian Eliteserien
+13009,2024,2024 Norwegian Eliteserien Promotion/Relegation Playoff,2024-norwegian-eliteserien-promotionrelegation-playoff,19989,NOR.1.PROMOTION.RELEGATION,Norwegian Eliteserien Promotion/Relegation Playoffs,Eliteserien Pro/Rel
+12247,2024,"2024 Primera División de Paraguay, Torneo Clausura 2024",torneo-clausura-2024,3934,PAR.1,Paraguayan Primera División,Paraguayan Primera
+12248,2024,"2024 Primera División de Paraguay, Torneo Apertura 2024",torneo-apertura-2024,3934,PAR.1,Paraguayan Primera División,Paraguayan Primera
+13017,2024,2024 Paraguayan Supercopa,2024-paraguayan-supercopa,20526,PAR.1.SUPERCOPA,Paraguayan Supercopa,Paraguayan Supercopa
+12397,2024,"2024 Liga1 de Perú, Clausura",clausura,670,PER.1,Peruvian Liga 1,Peru Liga 1
+12398,2024,"2024 Liga1 de Perú, Apertura",apertura,670,PER.1,Peruvian Liga 1,Peru Liga 1
+12761,2024,2024-25 Portuguese Primeira Liga,2024-25-portuguese-primeira-liga,715,POR.1,Portuguese Primeira Liga,Liga Portugal
+13372,2024,2024-25 Primeira Liga Promotion/Relegation Playoffs,2024-25-primeira-liga-promotionrelegation-playoffs,20186,POR.1.PROMOTION.RELEGATION,Portuguese Primeira Liga Promotion/Relegation Playoffs,Portuguese Liga Pro/Rel
+12938,2024,"2024-25 Taca de Portugal, Semifinals",semifinals,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+12937,2024,"2024-25 Taca de Portugal, Final",final,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+12939,2024,"2024-25 Taca de Portugal, Quarterfinals",quarterfinals,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+12942,2024,"2024-25 Taca de Portugal, 3rd Round",3rd-round,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+12940,2024,"2024-25 Taca de Portugal, 5th Round",5th-round,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+12941,2024,"2024-25 Taca de Portugal, 4th Round",4th-round,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+12564,2024,"2024-25 Romanian Liga I, Romanian Liga I Playoffs",romanian-liga-i-playoffs,10747,ROU.1,Romanian Liga 1,Romanian Liga I
+12565,2024,"2024-25 Romanian Liga I, Regular Season",regular-season,10747,ROU.1,Romanian Liga 1,Romanian Liga I
+13374,2024,2024-25 Romanian First Division Promotion/Relegation Playoffs,2024-25-romanian-first-division-promotionrelegation-playoffs,19886,ROU.1.PROMOTION.RELEGATION,Romanian Liga 1 Promotion/Relegation Playoffs,Romanian Liga 1 Pro/Rel
+12860,2024,2024-25 South African Premier Division,2024-25-south-african-premier-division,3937,RSA.1,South African Premiership,South African Premier
+13426,2024,2024-25 South African Premiership Promotion/Relegation Playoffs,2024-25-south-african-premiership-promotionrelegation-playoffs,19911,RSA.1.PROMOTION.RELEGATION,South African Premiership Promotion/Relegation Playoffs,South African Premier Pro/Rel
+12861,2024,2024-25 South African National First Division,2024-25-south-african-national-first-division,3938,RSA.2,South African First Division,South African First Division
+12840,2024,"2024 MTN 8 Cup, Quarterfinals",quarterfinals,11055,RSA.MTN8,South African MTN 8 Cup,South African MTN 8
+12839,2024,"2024 MTN 8 Cup, Semifinals",semifinals,11055,RSA.MTN8,South African MTN 8 Cup,South African MTN 8
+12838,2024,"2024 MTN 8 Cup, Final",final,11055,RSA.MTN8,South African MTN 8 Cup,South African MTN 8
+12689,2024,2024-25 Russian Premier League,2024-25-russian-premier-league,3939,RUS.1,Russian Premier League,Russian Premier
+13386,2024,2024-25 RPL Promotion/Relegation Playoffs,2024-25-rpl-promotionrelegation-playoffs,20731,RUS.1.PROMOTION.RELEGATION,Russian Premier League Relegation/Promotion Play-offs,Russian Premier League Pro/Rel
+12724,2024,2024-25 Scottish Premiership,2024-25-scottish-premiership,735,SCO.1,Scottish Premiership,SPFL Premiership
+13326,2024,"2024-25 Scottish Premiership Promotion/Relegation Playoffs, Finals",finals,20133,SCO.1.PROMOTION.RELEGATION,Scottish Premiership Promotion/Relegation Playoffs,SPFL Premiership Pro/Rel
+13327,2024,"2024-25 Scottish Premiership Promotion/Relegation Playoffs, Semifinals",semifinals,20133,SCO.1.PROMOTION.RELEGATION,Scottish Premiership Promotion/Relegation Playoffs,SPFL Premiership Pro/Rel
+13328,2024,"2024-25 Scottish Premiership Promotion/Relegation Playoffs, Quarterfinals",quarterfinals,20133,SCO.1.PROMOTION.RELEGATION,Scottish Premiership Promotion/Relegation Playoffs,SPFL Premiership Pro/Rel
+12723,2024,2024-25 Scottish Championship,2024-25-scottish-championship,3940,SCO.2,Scottish Championship,SPFL Championship
+13330,2024,"2024-25 Scottish Championship Promotion/Relegation Playoffs, Semifinals",semifinals,20134,SCO.2.PROMOTION.RELEGATION,Scottish Championship Promotion/Relegation Playoffs,SPFL Championship Pro/Rel
+13329,2024,"2024-25 Scottish Championship Promotion/Relegation Playoffs, Finals",finals,20134,SCO.2.PROMOTION.RELEGATION,Scottish Championship Promotion/Relegation Playoffs,SPFL Championship Pro/Rel
+12725,2024,2024-25 Scottish League One,2024-25-scottish-league-one,3941,SCO.3,Scottish League One,SPFL League One
+13331,2024,"2024-25 Scottish League One Promotion/Relegation Playoffs, Finals",finals,20135,SCO.3.PROMOTION.RELEGATION,Scottish League One Promotion/Relegation Playoffs,SPFL League One Pro/Rel
+13332,2024,"2024-25 Scottish League One Promotion/Relegation Playoffs, Semifinals",semifinals,20135,SCO.3.PROMOTION.RELEGATION,Scottish League One Promotion/Relegation Playoffs,SPFL League One Pro/Rel
+12726,2024,2024-25 Scottish League Two,2024-25-scottish-league-two,3942,SCO.4,Scottish League Two,SPFL League Two
+13333,2024,Finals,finals,20138,SCO.4.PROMOTION.RELEGATION,Scottish League Two Promotion/Relegation Playoffs,SPFL League Two Pro/Rel
+12765,2024,"2024-25 Scottish League Challenge Cup, Fourth Round",fourth-round,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12764,2024,"2024-25 Scottish League Challenge Cup, Quarterfinals",quarterfinals,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12763,2024,"2024-25 Scottish League Challenge Cup, Semifinals",semifinals,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12767,2024,"2024-25 Scottish League Challenge Cup, Second Round",second-round,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12768,2024,"2024-25 Scottish League Challenge Cup, First Round",first-round,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12762,2024,"2024-25 Scottish League Challenge Cup, Final",final,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12766,2024,"2024-25 Scottish League Challenge Cup, Third Round",third-round,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+12606,2024,"2024-25 Scottish League Cup, Group Stage",group-stage,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+12605,2024,"2024-25 Scottish League Cup, Round 2",round-2,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+12604,2024,"2024-25 Scottish League Cup, Quarterfinals",quarterfinals,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+12602,2024,"2024-25 Scottish League Cup, Final",final,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+12603,2024,"2024-25 Scottish League Cup, Semifinals",semifinals,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+12904,2024,"2024-25 Scottish Cup, Third Round",third-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12903,2024,"2024-25 Scottish Cup, Fourth Round",fourth-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12901,2024,"2024-25 Scottish Cup, Quarterfinals",quarterfinals,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12900,2024,"2024-25 Scottish Cup, Semifinals",semifinals,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12899,2024,"2024-25 Scottish Cup, Final",final,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12905,2024,"2024-25 Scottish Cup, Second Round",second-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12906,2024,"2024-25 Scottish Cup, First Round",first-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12902,2024,"2024-25 Scottish Cup, Fifth Round",fifth-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+12511,2024,2024-25 Singaporean Premier League,2024-25-singaporean-premier-league,8341,SGP.1,Singaporean Premier League,Singapore Premier League
+12833,2024,"2024-25 Salvadoran Primera División, Apertura - Semifinals",apertura---semifinals,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12835,2024,"2024-25 Salvadoran Primera División, Torneo Apertura 2024",torneo-apertura-2024,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12832,2024,"2024-25 Salvadoran Primera División, Apertura - Final",apertura---final,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12831,2024,"2024-25 Salvadoran Primera División, Torneo Clausura 2025",torneo-clausura-2025,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12830,2024,"2024-25 Salvadoran Primera División, Torneo Clausura - Quarterfinals",torneo-clausura---quarterfinals,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12834,2024,"2024-25 Salvadoran Primera División, Apertura - Quarterfinals",apertura---quarterfinals,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12828,2024,"2024-25 Salvadoran Primera División, Torneo Clausura - Final",torneo-clausura---final,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12829,2024,"2024-25 Salvadoran Primera División, Torneo Clausura - Semifinals",torneo-clausura---semifinals,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+12656,2024,"2024-25 Swiss Super League, Second Phase",second-phase,3944,SUI.1,Swiss Super League,Swiss Super League
+12657,2024,"2024-25 Swiss Super League, Regular Season",regular-season,3944,SUI.1,Swiss Super League,Swiss Super League
+13377,2024,2024-25 Swiss Super League  - Promotion/Relegation Playoffs,2024-25-swiss-super-league---promotionrelegation-playoffs,19884,SUI.1.PROMOTION.RELEGATION,Swiss Super League Promotion/Relegation Playoffs,Swiss Super League Pro/Rel
+12288,2024,Regular Season,regular-season,3945,SWE.1,Swedish Allsvenskan,Swedish Allsvenskan
+12997,2024,2024 Swedish Allsvenskanliga Promotion/Relegation Playoffs,2024-swedish-allsvenskanliga-promotionrelegation-playoffs,19968,SWE.1.PROMOTION.RELEGATION,Swedish Allsvenskan Promotion/Relegation Playoffs,Swedish Allsvenskan Pro/Rel
+12744,2024,2024-25 Thai League 1,2024-25-thai-league-1,8344,THA.1,Thai League 1,Thai Premier League
+12783,2024,2024-25 Turkish Super Lig,2024-25-turkish-super-lig,3946,TUR.1,Turkish Super Lig,Turkish Super Lig
+12884,2024,"2024-25 UEFA Champions League, Round of 16",round-of-16,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+12886,2024,"2024-25 UEFA Champions League, Knockout Round Playoffs",knockout-round-playoffs,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+12885,2024,"2024-25 UEFA Champions League, League Phase",league-phase,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+12881,2024,"2024-25 UEFA Champions League, Final",final,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+12882,2024,"2024-25 UEFA Champions League, Semifinals",semifinals,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+12883,2024,"2024-25 UEFA Champions League, Quarterfinals",quarterfinals,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+12663,2024,"2024-25 UEFA Champions League Qualifying, Playoff Round",playoff-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+12664,2024,"2024-25 UEFA Champions League Qualifying, Third Round",third-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+12666,2024,"2024-25 UEFA Champions League Qualifying, First Round",first-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+12665,2024,"2024-25 UEFA Champions League Qualifying, Second Round",second-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+12234,2024,"2024 European Championship, Final",final,781,UEFA.EURO,UEFA European Championship,EURO
+12235,2024,"2024 European Championship, Semifinals",semifinals,781,UEFA.EURO,UEFA European Championship,EURO
+12238,2024,"2024 European Championship, Group Stage",group-stage,781,UEFA.EURO,UEFA European Championship,EURO
+12237,2024,"2024 European Championship, Round of 16",round-of-16,781,UEFA.EURO,UEFA European Championship,EURO
+12236,2024,"2024 European Championship, Quarterfinals",quarterfinals,781,UEFA.EURO,UEFA European Championship,EURO
+12525,2024,"2024 UEFA European Under-19 Championship, Final",final,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+12527,2024,"2024 UEFA European Under-19 Championship, Group Stage",group-stage,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+12526,2024,"2024 UEFA European Under-19 Championship, Semifinals",semifinals,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+12524,2024,"2024 UEFA European Under-19 Championship, U-20 World Cup Playoff",u-20-world-cup-playoff,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+12888,2024,"2024-25 UEFA Europa League, Semifinals",semifinals,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+12887,2024,"2024-25 UEFA Europa League, Final",final,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+12892,2024,"2024-25 UEFA Europa League, League Phase",league-phase,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+12891,2024,"2024-25 UEFA Europa League, Knockout Round Playoffs",knockout-round-playoffs,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+12890,2024,"2024-25 UEFA Europa League, Round of 16",round-of-16,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+12889,2024,"2024-25 UEFA Europa League, Quarterfinals",quarterfinals,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+12659,2024,"2024-25 UEFA Europa League Qualifying, First Round",first-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+12658,2024,"2024-25 UEFA Europa League Qualifying, Second Round",second-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+12661,2024,"2024-25 UEFA Europa League Qualifying, Playoff Round",playoff-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+12660,2024,"2024-25 UEFA Europa League Qualifying, Third Round",third-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+12895,2024,"2024-25 UEFA Conference League, Quarterfinals",quarterfinals,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+12893,2024,"2024-25 UEFA Conference League, Final",final,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+12894,2024,"2024-25 UEFA Conference League, Semifinals",semifinals,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+12898,2024,"2024-25 UEFA Conference League, League Phase",league-phase,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+12897,2024,"2024-25 UEFA Conference League, Knockout Round Playoffs",knockout-round-playoffs,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+12896,2024,"2024-25 UEFA Conference League, Round of 16",round-of-16,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+12667,2024,"2024-25 UEFA Conference League Qualifying, Playoff Round",playoff-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+12669,2024,"2024-25 UEFA Conference League Qualifying, Second Round",second-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+12670,2024,"2024-25 UEFA Conference League Qualifying, First Round",first-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+12668,2024,"2024-25 UEFA Conference League Qualifying, Third Round",third-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+12461,2024,"2024-25 UEFA Nations League, 3rd-Place Match",3rd-place-match,2395,UEFA.NATIONS,UEFA Nations League,UEFA Nations League
+12462,2024,"2024-25 UEFA Nations League, Semifinals",semifinals,2395,UEFA.NATIONS,UEFA Nations League,UEFA Nations League
+12463,2024,"2024-25 UEFA Nations League, Relegation Playoffs",relegation-playoffs,2395,UEFA.NATIONS,UEFA Nations League,UEFA Nations League
+12466,2024,"2024-25 UEFA Nations League, Final",final,2395,UEFA.NATIONS,UEFA Nations League,UEFA Nations League
+12465,2024,"2024-25 UEFA Nations League, Group Stage",group-stage,2395,UEFA.NATIONS,UEFA Nations League,UEFA Nations League
+12464,2024,"2024-25 UEFA Nations League, Quarterfinals",quarterfinals,2395,UEFA.NATIONS,UEFA Nations League,UEFA Nations League
+12573,2024,2024 UEFA Super Cup,2024-uefa-super-cup,5462,UEFA.SUPER_CUP,UEFA Super Cup,UEFA Super Cup
+12943,2024,"2024-25 UEFA Women's Champions League, Final",final,19483,UEFA.WCHAMPIONS,UEFA Women's Champions League,UEFA Women's Champions League
+12946,2024,"2024-25 UEFA Women's Champions League, Group Stage",group-stage,19483,UEFA.WCHAMPIONS,UEFA Women's Champions League,UEFA Women's Champions League
+12945,2024,"2024-25 UEFA Women's Champions League, Quarterfinals",quarterfinals,19483,UEFA.WCHAMPIONS,UEFA Women's Champions League,UEFA Women's Champions League
+12944,2024,"2024-25 UEFA Women's Champions League, Semifinals",semifinals,19483,UEFA.WCHAMPIONS,UEFA Women's Champions League,UEFA Women's Champions League
+12875,2024,2024-25 Ugandan Premier League,2024-25-ugandan-premier-league,11053,UGA.1,Ugandan Premier League,UGA
+12459,2024,"2024 Uruguayan Primera Division, Torneo Apertura",torneo-apertura,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+12458,2024,"2024 Uruguayan Primera Division, Torneo Intermedio",torneo-intermedio,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+12457,2024,"2024 Uruguayan Primera Division, Intermedio Final",intermedio-final,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+12456,2024,"2024 Uruguayan Primera Division, Torneo Clausura",torneo-clausura,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+12328,2024,"2024 MLS, Regular Season",regular-season,770,USA.1,MLS,MLS
+12312,2024,"2024 MLS, MLS Cup",mls-cup,770,USA.1,MLS,MLS
+12316,2024,"2024 MLS, Eastern Conference Playoffs - Semifinals",eastern-conference-playoffs---semifinals,770,USA.1,MLS,MLS
+12314,2024,"2024 MLS, Eastern Conference Playoffs - Final",eastern-conference-playoffs---final,770,USA.1,MLS,MLS
+12313,2024,"2024 MLS, Western Conference Playoffs - Final",western-conference-playoffs---final,770,USA.1,MLS,MLS
+12327,2024,"2024 MLS, All-Star Game",all-star-game,770,USA.1,MLS,MLS
+12315,2024,"2024 MLS, Western Conference Playoffs - Semifinals",western-conference-playoffs---semifinals,770,USA.1,MLS,MLS
+12317,2024,"2024 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12318,2024,"2024 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12319,2024,"2024 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12320,2024,"2024 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12321,2024,"2024 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12322,2024,"2024 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12323,2024,"2024 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12324,2024,"2024 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+12325,2024,"2024 MLS, Western Conference Playoffs - Wild Card",western-conference-playoffs---wild-card,770,USA.1,MLS,MLS
+12326,2024,"2024 MLS, Eastern Conference Playoffs - Wild Card",eastern-conference-playoffs---wild-card,770,USA.1,MLS,MLS
+12591,2024,"2024 NCAA Division I Men's Soccer, Third Round",third-round,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12592,2024,"2024 NCAA Division I Men's Soccer, Second Round",second-round,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12593,2024,"2024 NCAA Division I Men's Soccer, First Round",first-round,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12594,2024,"2024 NCAA Division I Men's Soccer, 2024 NCAA Division I Men",2024-ncaa-division-i-men,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12589,2024,"2024 NCAA Division I Men's Soccer, College Cup - Semifinal",college-cup---semifinal,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12588,2024,"2024 NCAA Division I Men's Soccer, College Cup - Championship",college-cup---championship,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12590,2024,"2024 NCAA Division I Men's Soccer, Quarterfinals",quarterfinals,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+12599,2024,"2024 NCAA Division I Women's Soccer, Second Round",second-round,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12601,2024,"2024 NCAA Division I Women's Soccer, 2024 NCAA Division I Women",2024-ncaa-division-i-women,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12598,2024,"2024 NCAA Division I Women's Soccer, Third Round",third-round,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12600,2024,"2024 NCAA Division I Women's Soccer, First Round",first-round,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12596,2024,"2024 NCAA Division I Women's Soccer, Semifinals",semifinals,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12597,2024,"2024 NCAA Division I Women's Soccer, Quarterfinals",quarterfinals,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12595,2024,"2024 NCAA Division I Women's Soccer, College Cup",college-cup,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+12428,2024,"2024 NWSL, Playoffs - Championship",playoffs---championship,8301,USA.NWSL,NWSL,NWSL
+12429,2024,"2024 NWSL, Playoffs - Semifinals",playoffs---semifinals,8301,USA.NWSL,NWSL,NWSL
+12430,2024,"2024 NWSL, Playoffs - Quarterfinals",playoffs---quarterfinals,8301,USA.NWSL,NWSL,NWSL
+12431,2024,"2024 NWSL, Regular Season",regular-season,8301,USA.NWSL,NWSL,NWSL
+12954,2024,"2024 NWSL X Liga MX Femenil Summer Cup, Semifinals",semifinals,22945,USA.NWSL.SUMMER.CUP,NWSL X Liga MX Femenil Summer Cup,NWSL/Liga MXF Summer Cup
+12953,2024,"2024 NWSL X Liga MX Femenil Summer Cup, Group Stage",group-stage,22945,USA.NWSL.SUMMER.CUP,NWSL X Liga MX Femenil Summer Cup,NWSL/Liga MXF Summer Cup
+12955,2024,"2024 NWSL X Liga MX Femenil Summer Cup, Final",final,22945,USA.NWSL.SUMMER.CUP,NWSL X Liga MX Femenil Summer Cup,NWSL/Liga MXF Summer Cup
+12482,2024,"2024 U.S. Open Cup, First Round",first-round,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12481,2024,"2024 U.S. Open Cup, Second Round",second-round,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12480,2024,"2024 U.S. Open Cup, Third Round",third-round,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12479,2024,"2024 U.S. Open Cup, Round of 32",round-of-32,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12476,2024,"2024 U.S. Open Cup, Semifinals",semifinals,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12478,2024,"2024 U.S. Open Cup, Round of 16",round-of-16,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12475,2024,"2024 U.S. Open Cup, Final",final,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12477,2024,"2024 U.S. Open Cup, Quarterfinals",quarterfinals,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+12292,2024,"2024 USL Championship, Western Conference Playoffs - Semifinals",western-conference-playoffs---semifinals,4002,USA.USL.1,USL Championship,USL Championship
+12293,2024,"2024 USL Championship, Eastern Conference Playoffs - Semifinals",eastern-conference-playoffs---semifinals,4002,USA.USL.1,USL Championship,USL Championship
+12295,2024,"2024 USL Championship, Eastern Conference Playoffs - Quarterfinals",eastern-conference-playoffs---quarterfinals,4002,USA.USL.1,USL Championship,USL Championship
+12296,2024,"2024 USL Championship, Regular Season",regular-season,4002,USA.USL.1,USL Championship,USL Championship
+12294,2024,"2024 USL Championship, Western Conference Playoffs - Quarterfinals",western-conference-playoffs---quarterfinals,4002,USA.USL.1,USL Championship,USL Championship
+12289,2024,"2024 USL Championship, USL Championship Final",usl-championship-final,4002,USA.USL.1,USL Championship,USL Championship
+12290,2024,"2024 USL Championship, Western Conference Playoffs - Final",western-conference-playoffs---final,4002,USA.USL.1,USL Championship,USL Championship
+12291,2024,"2024 USL Championship, Eastern Conference Playoffs - Final",eastern-conference-playoffs---final,4002,USA.USL.1,USL Championship,USL Championship
+12214,2024,"2024 USL League One, Playoffs - Quarterfinals",playoffs---quarterfinals,19915,USA.USL.L1,USL League One,USL League One
+12215,2024,"2024 USL League One, Regular Season",regular-season,19915,USA.USL.L1,USL League One,USL League One
+12213,2024,"2024 USL League One, Playoffs - Semifinals",playoffs---semifinals,19915,USA.USL.L1,USL League One,USL League One
+12212,2024,"2024 USL League One, Playoffs - Final",playoffs---final,19915,USA.USL.L1,USL League One,USL League One
+12332,2024,"2024 USL Jägermeister Cup, Semifinals",semifinals,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+12331,2024,"2024 USL Jägermeister Cup, Group Stage",group-stage,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+12333,2024,"2024 USL Jägermeister Cup, Final",final,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+12847,2024,"2024 Primera División de Venezuela, Clausura",clausura,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+12991,2024,"2024 Primera División de Venezuela, Clausura Final",clausura-final,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+12400,2024,"2024 Primera División de Venezuela, Apertura Semifinals",apertura-semifinals,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+12990,2024,"2024 Primera División de Venezuela, Clausura Semifinals",clausura-semifinals,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+12401,2024,"2024 Primera División de Venezuela, Apertura",apertura,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+12399,2024,"2024 Primera División de Venezuela, Apertura Final",apertura-final,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+12691,2024,"2024-25 Welsh Premier League, Conference League Playoffs - Quarterfinals",conference-league-playoffs---quarterfinals,3963,WAL.1,Welsh Premier League,Welsh Premier League
+12692,2024,"2024-25 Welsh Premier League, Second Phase",second-phase,3963,WAL.1,Welsh Premier League,Welsh Premier League
+13318,2024,"2024-25 Welsh Premier League, Conference League Playoffs - Final",conference-league-playoffs---final,3963,WAL.1,Welsh Premier League,Welsh Premier League
+12693,2024,"2024-25 Welsh Premier League, Regular Season",regular-season,3963,WAL.1,Welsh Premier League,Welsh Premier League
+12690,2024,"2024-25 Welsh Premier League, Conference League Playoffs - Semifinals",conference-league-playoffs---semifinals,3963,WAL.1,Welsh Premier League,Welsh Premier League
+12622,2024,2024-25 Zambian Super League,2024-25-zambian-super-league,11090,ZAM.1,Zambian Super League,Zambian Super League
+12467,2024,Zimbabwe Premier League - Regular Season,zimbabwe-premier-league---regular-season,11067,ZIM.1,Zimbabwean Premier Soccer League,Zimbabwean Premiership
+13662,2025,"2025-26 AFC Champions League Elite, League Stage",league-stage,3902,AFC.CHAMPIONS,AFC Champions League Elite,AFC Champions League Elite
+13667,2025,"2025-26 AFC Champions League Two, Group Stage",group-stage,5661,AFC.CUP,AFC Champions League Two,AFC Champions League Two
+13150,2025,"2025 Argentine Liga Profesional de Fútbol, Apertura - Semifinals",apertura---semifinals,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+13151,2025,"2025 Argentine Liga Profesional de Fútbol, Apertura - Final",apertura---final,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+13149,2025,"2025 Argentine Liga Profesional de Fútbol, Apertura - Quarterfinals",apertura---quarterfinals,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+13147,2025,"2025 Argentine Liga Profesional de Fútbol, Torneo Apertura",torneo-apertura,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+13148,2025,"2025 Argentine Liga Profesional de Fútbol, Apertura - Round of 16",apertura---round-of-16,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+13152,2025,"2025 Argentine Liga Profesional de Fútbol, Torneo Clausura",torneo-clausura,745,ARG.1,Argentine Liga Profesional de Fútbol,Argentine LPF
+13164,2025,"2025 Argentine Nacional B, Torneo Reducido - Quarterfinals",torneo-reducido---quarterfinals,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+13163,2025,"2025 Argentine Nacional B, Torneo Reducido - Semifinals",torneo-reducido---semifinals,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+13165,2025,"2025 Argentine Nacional B, Torneo Reducido - First Round",torneo-reducido---first-round,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+13166,2025,"2025 Argentine Nacional B, Regular Season",regular-season,3903,ARG.2,Argentine Nacional B,Argentine Nacional B
+13178,2025,"2025 Primera División B de Argentina, Clausura",clausura,3904,ARG.3,Argentine Primera B,Argentine Primera B
+13179,2025,"2025 Primera División B de Argentina, Apertura",apertura,3904,ARG.3,Argentine Primera B,Argentine Primera B
+13186,2025,"2025 Primera División C de Argentina, Regular Season",regular-season,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13766,2025,"2025 Primera División C de Argentina, Copa Argentina Playoff - First Phase",copa-argentina-playoff---first-phase,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13739,2025,"2025 Primera División C de Argentina, Promotion Playoffs - First Round",promotion-playoffs---first-round,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13740,2025,"2025 Primera División C de Argentina, Second Round",second-round,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13737,2025,"2025 Primera División C de Argentina, Championship Finals",championship-finals,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13738,2025,"2025 Primera División C de Argentina, Relegation Final",relegation-final,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13741,2025,"2025 Primera División C de Argentina, Semifinals",semifinals,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13767,2025,"2025 Primera División C de Argentina, Copa Argentina Playoff - Second Phase",copa-argentina-playoff---second-phase,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13742,2025,"2025 Primera División C de Argentina, Promotion Playoffs - Finals",promotion-playoffs---finals,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13768,2025,"2025 Primera División C de Argentina, 2026 Copa Argentina Playoff - Semifinals",2026-copa-argentina-playoff---semifinals,4003,ARG.4,Argentine Primera C,Argentine Primera C
+13153,2025,"2025 Copa Argentina, Final",final,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13156,2025,"2025 Copa Argentina, Round of 16",round-of-16,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13157,2025,"2025 Copa Argentina, Round of 32",round-of-32,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13158,2025,"2025 Copa Argentina, Round of 64",round-of-64,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13154,2025,"2025 Copa Argentina, Semifinals",semifinals,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13155,2025,"2025 Copa Argentina, Quarterfinals",quarterfinals,8107,ARG.COPA,Copa Argentina,Copa Argentina
+13720,2025,"2025-26 Australian A-League Men, Regular Season",regular-season,3906,AUS.1,Australian A-League Men,A-League Men
+13724,2025,"2025-26 Australian A-League Women, Regular Season",regular-season,18992,AUS.W.1,Australian A-League Women,A-League Women
+13552,2025,"2025-26 Austrian Bundesliga, Regular Season",regular-season,3907,AUT.1,Austrian Bundesliga,Austrian Bundesliga
+13499,2025,"2025-26 Belgian Pro League, Regular Season",regular-season,3901,BEL.1,Belgian Pro League,Belgian Pro League
+13303,2025,2025 Bolivian Liga Profesional,2025-bolivian-liga-profesional,620,BOL.1,Bolivian Liga Profesional,Bolivian Liga Profesional
+13305,2025,"2025 Copa Bolivia, Group Stage",group-stage,23284,BOL.COPA,Copa Bolivia,Copa Bolivia
+13306,2025,"2025 Copa Bolivia, Playoff Round",playoff-round,23284,BOL.COPA,Copa Bolivia,Copa Bolivia
+13270,2025,2025 Brasileiro Serie A ,2025-brasileiro-serie-a,630,BRA.1,Brazilian Serie A,Brazil Serie A
+13281,2025,2025 Brasileiro Serie B,2025-brasileiro-serie-b,4007,BRA.2,Brazilian Serie B,Brazil Serie B
+13288,2025,"2025 Brasileiro C, Finals",finals,11088,BRA.3,Brazilian Serie C,Brasileiro C
+13289,2025,"2025 Brasileiro C, Second Stage",second-stage,11088,BRA.3,Brazilian Serie C,Brasileiro C
+13290,2025,"2025 Brasileiro C, First Stage",first-stage,11088,BRA.3,Brazilian Serie C,Brasileiro C
+13005,2025,"2025 Campeonato Carioca, Carioca Championship - Semifinals",carioca-championship---semifinals,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+13006,2025,"2025 Campeonato Carioca, Taça Rio - Finals",taca-rio---finals,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+13004,2025,"2025 Campeonato Carioca, Carioca Championship - Final",carioca-championship---final,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+13007,2025,"2025 Campeonato Carioca, Taça Rio - Semifinals",taca-rio---semifinals,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+13008,2025,"2025 Campeonato Carioca, Taca Guanabara",taca-guanabara,2265,BRA.CAMP.CARIOCA,Brazilian Campeonato Carioca,Brazil Carioca
+13076,2025,"2025 Campeonato Gaucho, First Round",first-round,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+13279,2025,"2025 Campeonato Gaucho, Farroupilha - Finals",farroupilha---finals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+13073,2025,"2025 Campeonato Gaucho, Finals",finals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+13278,2025,"2025 Campeonato Gaucho, Farroupilha - Semifinals",farroupilha---semifinals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+13280,2025,"2025 Campeonato Gaucho, Gaucho - Relegation",gaucho---relegation,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+13074,2025,"2025 Campeonato Gaucho, Semifinals",semifinals,2272,BRA.CAMP.GAUCHO,Brazilian Campeonato Gaucho,Brazil Gaucho
+13051,2025,"2025 Brazilian Campeonato Mineiro, Regular Season",regular-season,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+13047,2025,"2025 Brazilian Campeonato Mineiro, Troféu Inconfidência - Finals",trofeu-inconfidencia---finals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+13048,2025,"2025 Brazilian Campeonato Mineiro, Troféu Inconfidência - Semifinals",trofeu-inconfidencia---semifinals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+13049,2025,"2025 Brazilian Campeonato Mineiro, Playoffs - Finals",playoffs---finals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+13050,2025,"2025 Brazilian Campeonato Mineiro, Playoffs - Semifinals",playoffs---semifinals,10872,BRA.CAMP.MINEIRO,Brazilian Campeonato Mineiro,Brazil Mineiro
+13021,2025,"2025 Campeonato Paulista, Temporada Regular",temporada-regular,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+13018,2025,"2025 Campeonato Paulista, Finals",finals,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+13020,2025,"2025 Campeonato Paulista, Quarterfinals",quarterfinals,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+13019,2025,"2025 Campeonato Paulista, Semifinals",semifinals,8207,BRA.CAMP.PAULISTA,Brazilian Campeonato Paulista,Brazil Paulista
+13266,2025,"2025 Copa do Brasil, Second Round",second-round,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+13265,2025,"2025 Copa do Brasil, Third Round",third-round,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+13264,2025,"2025 Copa do Brasil, Round of 16",round-of-16,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+13263,2025,"2025 Copa do Brasil, Quarterfinals",quarterfinals,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+13262,2025,"2025 Copa do Brasil, Semifinals",semifinals,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+13267,2025,"2025 Copa do Brasil, First Round",first-round,8306,BRA.COPA_DO_BRAZIL,Copa do Brasil,Copa Do Brazil
+13215,2025,"2025 Copa do Nordeste, Finals",finals,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+13216,2025,"2025 Copa do Nordeste, Semifinals",semifinals,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+13218,2025,"2025 Copa do Nordeste, Group Stage",group-stage,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+13217,2025,"2025 Copa do Nordeste, Quarterfinals",quarterfinals,10951,BRA.COPA_DO_NORDESTE,Copa do Nordeste,Copa do Nordeste
+12998,2025,2025 Supercopa Rei,2025-supercopa-rei,19721,BRA.SUPERCOPA_DO_BRAZIL,Brazilian Supercopa Rei,Supercopa Rei
+13812,2025,"2025-26 CAF Champions League, Group Stage",group-stage,2391,CAF.CHAMPIONS,CAF Champions League,CAF Champions League
+13808,2025,"2025-26 CAF Confederation Cup, Group Stage",group-stage,18000,CAF.CONFED,CAF Confederation Cup,CAF Confederation Cup
+13415,2025,"2025 COSAFA Cup, Final",final,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+13417,2025,"2025 COSAFA Cup, Semifinals",semifinals,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+13418,2025,"2025 COSAFA Cup, Group Stage",group-stage,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+13416,2025,"2025 COSAFA Cup, 3rd-Place Match",3rd-place-match,20220,CAF.COSAFA,COSAFA Cup,COSAFA Cup
+13251,2025,"2025 Africa Cup of Nations, Round of 16",round-of-16,3908,CAF.NATIONS,Africa Cup of Nations,Africa Cup of Nations
+13247,2025,"2025 Africa Cup of Nations, Final",final,3908,CAF.NATIONS,Africa Cup of Nations,Africa Cup of Nations
+13248,2025,"2025 Africa Cup of Nations, 3rd-Place",3rd-place,3908,CAF.NATIONS,Africa Cup of Nations,Africa Cup of Nations
+13252,2025,"2025 Africa Cup of Nations, Group Stage",group-stage,3908,CAF.NATIONS,Africa Cup of Nations,Africa Cup of Nations
+13249,2025,"2025 Africa Cup of Nations, Semifinals",semifinals,3908,CAF.NATIONS,Africa Cup of Nations,Africa Cup of Nations
+13250,2025,"2025 Africa Cup of Nations, Quarterfinals",quarterfinals,3908,CAF.NATIONS,Africa Cup of Nations,Africa Cup of Nations
+13644,2025,2025 Campeones Cup,2025-campeones-cup,18771,CAMPEONES.CUP,Campeones Cup,Campeones Cup
+13519,2025,"2025 Northern Super League, Final",final,23286,CAN.W.NSL,Northern Super League,Northern Super League
+13517,2025,"2025 Northern Super League, Regular Season",regular-season,23286,CAN.W.NSL,Northern Super League,Northern Super League
+13518,2025,"2025 Northern Super League, Semifinals",semifinals,23286,CAN.W.NSL,Northern Super League,Northern Super League
+13231,2025,2025 Primera División de Chile,2025-primera-division-de-chile,640,CHI.1,Chilean Primera División,Chilean Primera
+13227,2025,"2025 Copa Chile, Semifinals",semifinals,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+13228,2025,"2025 Copa Chile, Quarterfinals",quarterfinals,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+13230,2025,"2025 Copa Chile, Group Stage",group-stage,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+13229,2025,"2025 Copa Chile, Round of 16",round-of-16,8312,CHI.COPA_CHI,Copa Chile,Copa Chile
+13181,2025,2025 Chilean Supercopa,2025-chilean-supercopa,8364,CHI.SUPER_CUP,Chilean Supercopa,Chilean Supercopa
+13243,2025,2025 Chinese Super League,2025-chinese-super-league,8376,CHN.1,Chinese Super League,Chinese Super League
+12996,2025,2025 Club Friendly,2025-club-friendly,19834,CLUB.FRIENDLY,Club Friendly,Club Friendly
+13201,2025,"2025 Liga BetPlay, Finals",finals,650,COL.1,Colombian Primera A,Colombian Primera A
+13202,2025,"2025 Liga BetPlay, Apertura - Semifinals",apertura---semifinals,650,COL.1,Colombian Primera A,Colombian Primera A
+13203,2025,"2025 Liga BetPlay, Apertura",apertura,650,COL.1,Colombian Primera A,Colombian Primera A
+13200,2025,"2025 Liga BetPlay, Clausura",clausura,650,COL.1,Colombian Primera A,Colombian Primera A
+13210,2025,"2025 Colombia Segunda División, Torneo BetPlay - Apertura Semifinals",torneo-betplay---apertura-semifinals,3910,COL.2,Colombian Primera B,Colombian Primera B
+13209,2025,"2025 Colombia Segunda División, Torneo BetPlay - Apertura Finals",torneo-betplay---apertura-finals,3910,COL.2,Colombian Primera B,Colombian Primera B
+13208,2025,"2025 Colombia Segunda División, Torneo BetPlay - Clausura",torneo-betplay---clausura,3910,COL.2,Colombian Primera B,Colombian Primera B
+13211,2025,"2025 Colombia Segunda División, Torneo BetPlay - Apertura",torneo-betplay---apertura,3910,COL.2,Colombian Primera B,Colombian Primera B
+13207,2025,"2025 Colombia Segunda División, Torneo BetPlay - Clausura Semifinals",torneo-betplay---clausura-semifinals,3910,COL.2,Colombian Primera B,Colombian Primera B
+13397,2025,"2025 Copa Colombia, First Round",first-round,8313,COL.COPA,Copa Colombia,Copa Colombia
+13396,2025,"2025 Copa Colombia, First Round - Second Stage",first-round---second-stage,8313,COL.COPA,Copa Colombia,Copa Colombia
+13395,2025,"2025 Copa Colombia, Round of 16",round-of-16,8313,COL.COPA,Copa Colombia,Copa Colombia
+13394,2025,"2025 Copa Colombia, Quarterfinals",quarterfinals,8313,COL.COPA,Copa Colombia,Copa Colombia
+13393,2025,"2025 Copa Colombia, Semifinals",semifinals,8313,COL.COPA,Copa Colombia,Copa Colombia
+13191,2025,2025 Colombian Superliga,2025-colombian-superliga,19112,COL.SUPERLIGA,Colombian Superliga,Colombian Superliga
+13455,2025,"2025 Concacaf Central American Cup, Quarterfinals",quarterfinals,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+13454,2025,"2025 Concacaf Central American Cup, Play-In",play-in,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+13453,2025,"2025 Concacaf Central American Cup, Semifinals",semifinals,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+13456,2025,"2025 Concacaf Central American Cup, Group Stage",group-stage,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+13452,2025,"2025 Concacaf Central American Cup, Final",final,22947,CONCACAF.CENTRAL.AMERICAN.CUP,Concacaf Central American Cup,Central American Cup
+13068,2025,"2025 Concacaf Champions Cup, Final",final,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+13069,2025,"2025 Concacaf Champions Cup, Semifinals",semifinals,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+13070,2025,"2025 Concacaf Champions Cup, Quarterfinals",quarterfinals,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+13072,2025,"2025 Concacaf Champions Cup, Round One",round-one,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+13071,2025,"2025 Concacaf Champions Cup, Round of 16",round-of-16,5699,CONCACAF.CHAMPIONS,Concacaf Champions Cup,Concacaf Champions Cup
+13312,2025,"2025 Concacaf Gold Cup, Quarterfinals",quarterfinals,4004,CONCACAF.GOLD,Concacaf Gold Cup,Gold Cup
+13313,2025,"2025 Concacaf Gold Cup, Group Stage",group-stage,4004,CONCACAF.GOLD,Concacaf Gold Cup,Gold Cup
+13311,2025,"2025 Concacaf Gold Cup, Semifinals",semifinals,4004,CONCACAF.GOLD,Concacaf Gold Cup,Gold Cup
+13310,2025,"2025 Concacaf Gold Cup, Final",final,4004,CONCACAF.GOLD,Concacaf Gold Cup,Gold Cup
+13298,2025,2025 Concacaf Gold Cup Qualifying - Prelims,2025-concacaf-gold-cup-qualifying---prelims,19778,CONCACAF.GOLD_QUAL,Concacaf Gold Cup Qualifying,Concacaf Gold Cup Qualifying
+13273,2025,"2025 Leagues Cup, Final",final,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+13274,2025,"2025 Leagues Cup, 3rd-Place Match",3rd-place-match,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+13275,2025,"2025 Leagues Cup, Semifinals",semifinals,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+13276,2025,"2025 Leagues Cup, Quarterfinals",quarterfinals,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+13277,2025,"2025 Leagues Cup, League Phase",league-phase,19425,CONCACAF.LEAGUES.CUP,Leagues Cup,Leagues Cup
+13461,2025,"2025-26 Concacaf W Champions Cup, Semifinals",semifinals,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+13460,2025,"2025-26 Concacaf W Champions Cup, 3rd-Place Match",3rd-place-match,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+13462,2025,"2025-26 Concacaf W Champions Cup, Group Stage",group-stage,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+13459,2025,"2025-26 Concacaf W Champions Cup, Final",final,22946,CONCACAF.W.CHAMPIONS_CUP,Concacaf W Champions Cup,W Champions Cup
+13142,2025,"2025 Copa América Femenina, Semifinals",semifinals,20703,CONMEBOL.AMERICA.FEMENINA,Copa América Femenina,Copa América Femenina
+13144,2025,"2025 Copa América Femenina, Group Stage",group-stage,20703,CONMEBOL.AMERICA.FEMENINA,Copa América Femenina,Copa América Femenina
+13140,2025,"2025 Copa América Femenina, Final",final,20703,CONMEBOL.AMERICA.FEMENINA,Copa América Femenina,Copa América Femenina
+13143,2025,"2025 Copa América Femenina, 5th-Place Playoff",5th-place-playoff,20703,CONMEBOL.AMERICA.FEMENINA,Copa América Femenina,Copa América Femenina
+13141,2025,"2025 Copa América Femenina, 3rd-Place Playoff",3rd-place-playoff,20703,CONMEBOL.AMERICA.FEMENINA,Copa América Femenina,Copa América Femenina
+13104,2025,"2025 CONMEBOL Libertadores, Final",final,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13111,2025,"2025 CONMEBOL Libertadores, First Stage",first-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13108,2025,"2025 CONMEBOL Libertadores, Group Stage",group-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13105,2025,"2025 CONMEBOL Libertadores, Semifinals",semifinals,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13106,2025,"2025 CONMEBOL Libertadores, Quarterfinals",quarterfinals,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13107,2025,"2025 CONMEBOL Libertadores, Round of 16",round-of-16,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13109,2025,"2025 CONMEBOL Libertadores, Third Stage",third-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13110,2025,"2025 CONMEBOL Libertadores, Second Stage",second-stage,783,CONMEBOL.LIBERTADORES,CONMEBOL Libertadores,CONMEBOL Libertadores
+13040,2025,2025 CONMEBOL Recopa,2025-conmebol-recopa,8333,CONMEBOL.RECOPA,CONMEBOL Recopa,CONMEBOL Recopa
+13115,2025,"2025 CONMEBOL Sudamericana, Round of 16",round-of-16,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13118,2025,"2025 CONMEBOL Sudamericana, First Stage",first-stage,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13112,2025,"2025 CONMEBOL Sudamericana, Final",final,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13114,2025,"2025 CONMEBOL Sudamericana, Quarterfinals",quarterfinals,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13116,2025,"2025 CONMEBOL Sudamericana, Knockout Round Playoffs",knockout-round-playoffs,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13113,2025,"2025 CONMEBOL Sudamericana, Semifinals",semifinals,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13117,2025,"2025 CONMEBOL Sudamericana, Group Stage",group-stage,5454,CONMEBOL.SUDAMERICANA,CONMEBOL Sudamericana,CONMEBOL Sudamericana
+13578,2025,"2025-26 Primera División de Costa Rica, Apertura",apertura,4005,CRC.1,Costa Rican Primera Division,Liga FPD
+13779,2025,"2025-26 Cypriot First Division, Regular Season",regular-season,5346,CYP.1,Cypriot First Division,Cypriot First Division
+13450,2025,"2025-26 Danish Superliga, Regular Season",regular-season,3913,DEN.1,Danish Superliga,Danish Superliga
+13214,2025,"2025 LigaPro Ecuador, First Stage",first-stage,660,ECU.1,LigaPro Ecuador,LigaPro Ecuador
+13213,2025,"2025 LigaPro Ecuador, Final Stage",final-stage,660,ECU.1,LigaPro Ecuador,LigaPro Ecuador
+13180,2025,2025 Ecuadorian Supercopa,2025-ecuadorian-supercopa,19773,ECU.SUPERCOPA,Ecuadorian Supercopa,Ecuadorian Supercopa
+13481,2025,2025-26 English Premier League,2025-26-english-premier-league,700,ENG.1,English Premier League,Premier League
+13531,2025,"2025-26 English League Championship, Regular Season",regular-season,3914,ENG.2,English League Championship,EFL Championship
+13534,2025,"2025-26 English League One, Regular Season",regular-season,3915,ENG.3,English League One,EFL League One
+13537,2025,"2025-26 English League Two, Regular Season",regular-season,3916,ENG.4,English League Two,EFL League Two
+13599,2025,"2025-26 English National League, Regular Season",regular-season,3917,ENG.5,English National League,National League
+13504,2025,2025 English FA Community Shield,2025-english-fa-community-shield,5329,ENG.CHARITY,English FA Community Shield,Community Shield
+13796,2025,"2025-26 English FA Cup, First Round",first-round,3918,ENG.FA,English FA Cup,English FA Cup
+13795,2025,"2025-26 English FA Cup, Second Round",second-round,3918,ENG.FA,English FA Cup,English FA Cup
+13542,2025,"2025-26 English Carabao Cup, Second Round",second-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+13543,2025,"2025-26 English Carabao Cup, First Round",first-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+13544,2025,"2025-26 English Carabao Cup, Preliminary Round",preliminary-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+13541,2025,"2025-26 English Carabao Cup, Third Round",third-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+13540,2025,"2025-26 English Carabao Cup, Fourth Round",fourth-round,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+13539,2025,"2025-26 English Carabao Cup, Quarterfinals",quarterfinals,3920,ENG.LEAGUE_CUP,English Carabao Cup,Carabao Cup
+13643,2025,"2025-26 EFL Trophy, Group Stage",group-stage,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+13642,2025,"2025-26 EFL Trophy, Round of 32",round-of-32,18481,ENG.TROPHY,English EFL Trophy,EFL Trophy
+13646,2025,2025-26 English Women's Super League,2025-26-english-womens-super-league,8097,ENG.W.1,English Women's Super League,Women's Super League
+13787,2025,"2025-26 English Women's FA Cup, Second Round",second-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+13788,2025,"2025-26 English Women's FA Cup, First Round",first-round,20226,ENG.W.FA,English Women's FA Cup,Women's FA Cup
+13561,2025,2025-26 LALIGA,2025-26-laliga,740,ESP.1,Spanish LALIGA,LALIGA
+13564,2025,"2025-26 Spanish LALIGA 2, Regular Season",regular-season,3921,ESP.2,Spanish LALIGA 2,LALIGA 2
+13674,2025,"2025-26 Spanish Copa de la Reina, Second Round",second-round,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+13675,2025,"2025-26 Spanish Copa de la Reina, First Round",first-round,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+13672,2025,"2025-26 Spanish Copa de la Reina, Round of 16",round-of-16,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+13673,2025,"2025-26 Spanish Copa de la Reina, Third Round",third-round,20381,ESP.COPA_DE_LA_REINA,Spanish Copa de la Reina,Copa de la Reina
+13735,2025,"2025-26 Spanish Copa del Rey, First Round",first-round,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+13736,2025,"2025-26 Spanish Copa del Rey, Qualifying Round",qualifying-round,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+13734,2025,"2025-26 Spanish Copa del Rey, Second Round",second-round,3951,ESP.COPA_DEL_REY,Spanish Copa del Rey,Copa del Rey
+13645,2025,2025 Trofeo Joan Gamper,2025-trofeo-joan-gamper,17929,ESP.JOAN_GAMPER,Trofeo Joan Gamper,Trofeo Joan Gamper
+13560,2025,"2025-26 Spanish Supercopa, Semifinals",semifinals,8102,ESP.SUPER_CUP,Spanish Supercopa,Spanish Supercopa
+13559,2025,"2025-26 Spanish Supercopa, Final",final,8102,ESP.SUPER_CUP,Spanish Supercopa,Spanish Supercopa
+13565,2025,2025-26 Spanish Liga F,2025-26-spanish-liga-f,20956,ESP.W.1,Spanish Liga F,Liga F
+13055,2025,"2025 FIFA Club World Cup, Round of 16",round-of-16,5501,FIFA.CWC,FIFA Club World Cup,Club World Cup
+13370,2025,"2025 FIFA Club World Cup, Qualifying Play-In",qualifying-play-in,5501,FIFA.CWC,FIFA Club World Cup,Club World Cup
+13052,2025,"2025 FIFA Club World Cup, Final ",final,5501,FIFA.CWC,FIFA Club World Cup,Club World Cup
+13053,2025,"2025 FIFA Club World Cup, Semifinals",semifinals,5501,FIFA.CWC,FIFA Club World Cup,Club World Cup
+13054,2025,"2025 FIFA Club World Cup, Quarterfinals",quarterfinals,5501,FIFA.CWC,FIFA Club World Cup,Club World Cup
+13056,2025,"2025 FIFA Club World Cup, Group Stage",group-stage,5501,FIFA.CWC,FIFA Club World Cup,Club World Cup
+12995,2025,2025 International Friendly,2025-international-friendly,3922,FIFA.FRIENDLY,International Friendly,Men's International Friendly
+13242,2025,2025 U21 International Friendly,2025-u21-international-friendly,20132,FIFA.FRIENDLY_U21,Under-21 International Friendly,Men's U-21 Friendly
+13064,2025,2025 Women's International Friendly,2025-womens-international-friendly,3923,FIFA.FRIENDLY.W,Women's International Friendly,Women's International Friendly
+13704,2025,"2025 FIFA Intercontinental Cup, Playoff",playoff,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+13703,2025,"2025 FIFA Intercontinental Cup, Final",final,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+13706,2025,"2025 FIFA Intercontinental Cup, First Round",first-round,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+13705,2025,"2025 FIFA Intercontinental Cup, Second Round",second-round,22902,FIFA.INTERCONTINENTAL_CUP,FIFA Intercontinental Cup,Intercontinental Cup
+13003,2025,2025 SheBelieves Cup,2025-shebelieves-cup,19728,FIFA.SHEBELIEVES,SheBelieves Cup,SheBelieves Cup
+13383,2025,"2025 FIFA U17 World Cup, Group Stage",group-stage,5697,FIFA.WORLD.U17,FIFA Under-17 World Cup,FIFA U-17 World Cup
+13382,2025,"2025 FIFA U17 World Cup, Round of 32",round-of-32,5697,FIFA.WORLD.U17,FIFA Under-17 World Cup,FIFA U-17 World Cup
+13405,2025,"2025 FIFA U20 World Cup, Round of 16",round-of-16,5694,FIFA.WORLD.U20,FIFA Under-20 World Cup,FIFA U-20 World Cup
+13404,2025,"2025 FIFA U20 World Cup, Group Stage",group-stage,5694,FIFA.WORLD.U20,FIFA Under-20 World Cup,FIFA U-20 World Cup
+13409,2025,"2025 FIFA U20 World Cup, Final",final,5694,FIFA.WORLD.U20,FIFA Under-20 World Cup,FIFA U-20 World Cup
+13408,2025,"2025 FIFA U20 World Cup, 3rd-Place Match",3rd-place-match,5694,FIFA.WORLD.U20,FIFA Under-20 World Cup,FIFA U-20 World Cup
+13407,2025,"2025 FIFA U20 World Cup, Semifinals",semifinals,5694,FIFA.WORLD.U20,FIFA Under-20 World Cup,FIFA U-20 World Cup
+13406,2025,"2025 FIFA U20 World Cup, Quarterfinals",quarterfinals,5694,FIFA.WORLD.U20,FIFA Under-20 World Cup,FIFA U-20 World Cup
+13079,2025,"2026 World Cup Qualifying - UEFA, Group Stage",group-stage,786,FIFA.WORLDQ.UEFA,FIFA World Cup Qualifying - UEFA,WCQ - UEFA
+13428,2025,"2025 FIFA U17 Women's World Cup, Semifinals",semifinals,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+13432,2025,"2025 FIFA U17 Women's World Cup, Final",final,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+13429,2025,"2025 FIFA U17 Women's World Cup, Quarterfinals",quarterfinals,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+13427,2025,"2025 FIFA U17 Women's World Cup, 3rd-Place Match",3rd-place-match,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+13430,2025,"2025 FIFA U17 Women's World Cup, Round of 16",round-of-16,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+13431,2025,"2025 FIFA U17 Women's World Cup, Group Stage",group-stage,20865,FIFA.WWORLD.U17,FIFA Under-17 Women's World Cup,U-17 WWC
+13546,2025,2025-26 Ligue 1,2025-26-ligue-1,710,FRA.1,French Ligue 1,Ligue 1
+13553,2025,2025-26 Ligue 2,2025-26-ligue-2,3926,FRA.2,French Ligue 2,Ligue 2
+13813,2025,2025 French Super Cup,2025-french-super-cup,8357,FRA.SUPER_CUP,French Trophee des Champions,Trophee des Champions
+13623,2025,"2025-26 French Première Ligue, Regular Season",regular-season,20955,FRA.W.1,French Première Ligue,Première Ligue
+13587,2025,2025 Emirates Cup,2025-emirates-cup,11108,FRIENDLY.EMIRATES_CUP,Emirates Cup,Emirates Cup
+13547,2025,2025-26 German Bundesliga,2025-26-german-bundesliga,720,GER.1,German Bundesliga,Bundesliga
+13548,2025,2025-26 German 2. Bundesliga,2025-26-german-2-bundesliga,3927,GER.2,German 2. Bundesliga,2. Bundesliga
+13476,2025,"2025-26 German Cup, First Round",first-round,3954,GER.DFB_POKAL,German Cup,German Cup
+13475,2025,"2025-26 German Cup, Second Round",second-round,3954,GER.DFB_POKAL,German Cup,German Cup
+13474,2025,"2025-26 German Cup, Round of 16",round-of-16,3954,GER.DFB_POKAL,German Cup,German Cup
+13419,2025,2025 Franz Beckenbauer Supercup,2025-franz-beckenbauer-supercup,8101,GER.SUPER_CUP,German Supercup,German SuperCup
+13656,2025,2025-26 Ghanaian Premier League,2025-26-ghanaian-premier-league,11052,GHA.1,Ghanaian Premier League,Ghanaian Premier League
+13246,2025,2025 Pinatar Cup,2025-pinatar-cup,20571,GLOBAL.PINATAR_CUP,Pinatar Cup,Pinatar Cup
+13369,2025,"2025 Maurice Revello Tournament, Group Stage",group-stage,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+13451,2025,"2025 Maurice Revello Tournament, Semifinals",semifinals,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+13366,2025,"2025 Maurice Revello Tournament, Final",final,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+13367,2025,"2025 Maurice Revello Tournament, 3rd-Place Match",3rd-place-match,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+13368,2025,"2025 Maurice Revello Tournament, Classification Matches",classification-matches,11109,GLOBAL.TOULON,Maurice Revello Tournament,Tournoi Maurice Revello
+13359,2025,2025 U20 Intercontinental Cup,2025-u20-intercontinental-cup,22781,GLOBAL.U20.INTERCONTINENTAL_CUP,CONMEBOL-UEFA U20 Intercontinental Cup,U20 Intercontinental Cup
+13601,2025,"2025-26 Greek Super League, Regular Season",regular-season,3955,GRE.1,Greek Super League,Greek Super League
+13470,2025,"2025-26 Liga Nacional de Guatemala, Torneo Apertura",torneo-apertura,3928,GUA.1,Guatemalan Liga Nacional,Guatemalan Liga Nacional
+13586,2025,"2025-26 Honduran Liga Nacional, Torneo Apertura 2025",torneo-apertura-2025,3929,HON.1,Honduran Liga Nacional,Honduran Liga Nacional
+13627,2025,2025-26 Indonesian Super League,2025-26-indonesian-super-league,8339,IDN.1,Indonesian Super League,Indonesian Super League
+13804,2025,2025 League of Ireland Premier - Promotion/Relegation Playoff,2025-league-of-ireland-premier---promotionrelegation-playoff,19951,IR1.1.PROMOTION.RELEGATION,Irish Premier Division Promotion/Relegation Playoffs,Irish Premier Pro/Rel
+13084,2025,2025 League of Ireland Premier,2025-league-of-ireland-premier,3930,IRL.1,Irish Premier Division,Irish Premier Division
+13447,2025,2025-26 Italian Serie A,2025-26-italian-serie-a,730,ITA.1,Italian Serie A,Serie A
+13654,2025,"2025-26 Italian Serie B, Regular Season",regular-season,3931,ITA.2,Italian Serie B,Italian Serie B
+13514,2025,"2025-26 Coppa Italia, Second Round",second-round,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+13513,2025,"2025-26 Coppa Italia, Round of 16",round-of-16,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+13516,2025,"2025-26 Coppa Italia, Preliminary Round",preliminary-round,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+13515,2025,"2025-26 Coppa Italia, First Round",first-round,3956,ITA.COPPA_ITALIA,Coppa Italia,Coppa Italia
+13749,2025,"2025 Italian Supercoppa, Semifinals",semifinals,8103,ITA.SUPER_CUP,Italian Supercoppa,Italian Supercoppa
+13085,2025,2025 Japanese J1 League ,2025-japanese-j1-league,750,JPN.1,Japanese J.League,Japanese J1 League
+13320,2025,2025 J.League World Challenge,2025-jleague-world-challenge,17931,JPN.WORLD_CHALLENGE,Japanese J.League World Challenge,J.League World Challenge
+13668,2025,2025-26 Kenyan Premier League,2025-26-kenyan-premier-league,11054,KEN.1,Kenyan Premier League,Kenyan Premier League
+13657,2025,2025-26 Saudi Pro League,2025-26-saudi-pro-league,21231,KSA.1,Saudi Pro League, Saudi Pro League
+13423,2025,"2025-26 Saudi King's Cup, Quarterfinals",quarterfinals,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+13424,2025,"2025-26 Saudi King's Cup, Round of 16",round-of-16,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+13425,2025,"2025-26 Saudi King's Cup, Round of 32",round-of-32,22057,KSA.KINGS.CUP,Saudi King's Cup, Saudi King's Cup
+13445,2025,"2025-26 Liga BBVA MX, Apertura 2024 - 7th Place vs 8th Place",apertura-2024---7th-place-vs-8th-place,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+13446,2025,"2025-26 Liga BBVA MX, Torneo Apertura",torneo-apertura,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+13444,2025,"2025-26 Liga BBVA MX, Apertura 2025 - 9th Place vs 10th Place",apertura-2025---9th-place-vs-10th-place,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+13442,2025,"2025-26 Liga BBVA MX, Apertura - Quarterfinals",apertura---quarterfinals,760,MEX.1,Mexican Liga BBVA MX,Liga MX
+13618,2025,"2025-26 Mexican Liga de Expansión MX, Apertura - Quarterfinals",apertura---quarterfinals,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+13619,2025,"2025-26 Mexican Liga de Expansión MX, Apertura 2025",apertura-2025,3932,MEX.2,Mexican Liga de Expansión MX,Liga de Expansión MX
+13390,2025,2025 Campeón de Campeones,2025-campeon-de-campeones,17893,MEX.Campeon,Mexican Campeon de Campeones,Campeon de Campeones
+13602,2025,2025-26 Malaysian Super League,2025-26-malaysian-super-league,8340,MYS.1,Malaysian Super League,Malaysian Super League
+13484,2025,"2025-26 Dutch Eredivisie, Regular Season",regular-season,725,NED.1,Dutch Eredivisie,Eredivisie
+13486,2025,2025-26 Keuken Kampioen Divisie,2025-26-keuken-kampioen-divisie,3933,NED.2,Dutch Keuken Kampioen Divisie,Keuken Kampioen Divisie
+13568,2025,2025-26 Dutch Tweede Divisie,2025-26-dutch-tweede-divisie,19908,NED.3,Dutch Tweede Divisie,Dutch Tweede Divisie
+13775,2025,"2025-26 Dutch KNVB Beker, First Round",first-round,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+13774,2025,"2025-26 Dutch KNVB Beker, Second Round",second-round,3957,NED.CUP,Dutch KNVB Beker,KNVB Beker
+13485,2025,2025 Johan Cruyff Shield,2025-johan-cruyff-shield,10749,NED.SUPERCUP,Dutch Johan Cruyff Shield,Johan Cruyff Shield
+13589,2025,2025-26 Vrouwen Eredivisie,2025-26-vrouwen-eredivisie,19945,NED.W.1,Dutch Vrouwen Eredivisie,Dutch Vrouwen Eredivisie
+13758,2025,"2025-26 KNVB Beker Vrouwen, First Round",first-round,20115,NED.W.KNVB_CUP,Dutch KNVB Beker Vrouwen,Dutch Vrouwen KNVB Beker
+13757,2025,"2025-26 KNVB Beker Vrouwen, Round of 16",round-of-16,20115,NED.W.KNVB_CUP,Dutch KNVB Beker Vrouwen,Dutch Vrouwen KNVB Beker
+13649,2025,Regular Season,regular-season,8345,NGA.1,Nigerian Professional League,Nigerian Pro League
+13509,2025,"2025-26 NIFL Premiership, Regular Season",regular-season,3958,NIR.1,Northern Irish Premiership,NIFL Premiership
+13145,2025,2025 Eliteserien,2025-eliteserien,3960,NOR.1,Norwegian Eliteserien,Norwegian Eliteserien
+13066,2025,"2025 Primera División de Paraguay, Torneo Clausura 2025",torneo-clausura-2025,3934,PAR.1,Paraguayan Primera División,Paraguayan Primera
+13067,2025,"2025 Primera División de Paraguay, Torneo Apertura 2025",torneo-apertura-2025,3934,PAR.1,Paraguayan Primera División,Paraguayan Primera
+13190,2025,"2025 Liga1 de Perú, Apertura",apertura,670,PER.1,Peruvian Liga 1,Peru Liga 1
+13189,2025,"2025 Liga1 de Perú, Clausura",clausura,670,PER.1,Peruvian Liga 1,Peru Liga 1
+13567,2025,2025-26 Portuguese Primeira Liga,2025-26-portuguese-primeira-liga,715,POR.1,Portuguese Primeira Liga,Liga Portugal
+13765,2025,"2025-26 Taca de Portugal, 3rd Round",3rd-round,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+13764,2025,"2025-26 Taca de Portugal, 4th Round",4th-round,20922,POR.TACA.PORTUGAL,Taca de Portugal,Taca de Portugal
+13528,2025,"2025-26 Romanian Liga I, Regular Season",regular-season,10747,ROU.1,Romanian Liga 1,Romanian Liga I
+13655,2025,2025-26 South African Premiership,2025-26-south-african-premiership,3937,RSA.1,South African Premiership,South African Premier
+13676,2025,2025-26 South African National First Division,2025-26-south-african-national-first-division,3938,RSA.2,South African First Division,South African First Division
+13629,2025,"2025 MTN 8 Cup, Semifinals",semifinals,11055,RSA.MTN8,South African MTN 8 Cup,South African MTN 8
+13628,2025,"2025 MTN 8 Cup, Final",final,11055,RSA.MTN8,South African MTN 8 Cup,South African MTN 8
+13630,2025,"2025 MTN 8 Cup, Quarterfinals",quarterfinals,11055,RSA.MTN8,South African MTN 8 Cup,South African MTN 8
+13505,2025,2025-26 Russian Premier League,2025-26-russian-premier-league,3939,RUS.1,Russian Premier League,Russian Premier
+13496,2025,2025-26 Scottish Premiership,2025-26-scottish-premiership,735,SCO.1,Scottish Premiership,SPFL Premiership
+13500,2025,2025-26 Scottish Championship,2025-26-scottish-championship,3940,SCO.2,Scottish Championship,SPFL Championship
+13495,2025,2025-26 Scottish League One,2025-26-scottish-league-one,3941,SCO.3,Scottish League One,SPFL League One
+13501,2025,2025-26 Scottish League Two,2025-26-scottish-league-two,3942,SCO.4,Scottish League Two,SPFL League Two
+13637,2025,"2025-26 Scottish League Challenge Cup, League Phase",league-phase,5331,SCO.CHALLENGE,Scottish League Challenge Cup,SPFL Challenge Cup
+13412,2025,"2025-26 Scottish League Cup, Quarterfinals",quarterfinals,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+13413,2025,"2025-26 Scottish League Cup, Round 2",round-2,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+13411,2025,"2025-26 Scottish League Cup, Semifinals",semifinals,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+13414,2025,"2025-26 Scottish League Cup, Group Stage",group-stage,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+13410,2025,"2025-26 Scottish League Cup, Final",final,5330,SCO.CIS,Scottish League Cup,Scottish League Cup
+13701,2025,"2025-26 Scottish Cup, Second Round",second-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+13702,2025,"2025-26 Scottish Cup, First Round",first-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+13700,2025,"2025-26 Scottish Cup, Third Round",third-round,3959,SCO.TENNENTS,Scottish Cup,Scottish Cup
+13647,2025,2025-26 Singaporean Premier League,2025-26-singaporean-premier-league,8341,SGP.1,Singaporean Premier League,Singapore Premier League
+13610,2025,"2025-26 Salvadoran Primera División, Torneo Apertura 2025",torneo-apertura-2025,3943,SLV.1,Salvadoran Primera Division,Salvadoran Primera
+13503,2025,"2025-26 Swiss Super League, Regular Season",regular-season,3944,SUI.1,Swiss Super League,Swiss Super League
+13086,2025,2025 Allsvenskan,2025-allsvenskan,3945,SWE.1,Swedish Allsvenskan,Swedish Allsvenskan
+13814,2025,2025 Swedish Pro/Rel Playoffs,2025-swedish-prorel-playoffs,19968,SWE.1.PROMOTION.RELEGATION,Swedish Allsvenskan Promotion/Relegation Playoffs,Swedish Allsvenskan Pro/Rel
+13588,2025,2025-26 Thai League 1,2025-26-thai-league-1,8344,THA.1,Thai League 1,Thai Premier League
+13566,2025,2025-26 Turkish Super Lig,2025-26-turkish-super-lig,3946,TUR.1,Turkish Super Lig,Turkish Super Lig
+13682,2025,"2025-26 UEFA Champions League, League Phase",league-phase,775,UEFA.CHAMPIONS,UEFA Champions League,UEFA Champions League
+13477,2025,"2025-26 UEFA Champions League Qualifying, Playoff Round",playoff-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+13479,2025,"2025-26 UEFA Champions League Qualifying, Second Round",second-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+13480,2025,"2025-26 UEFA Champions League Qualifying, First Round",first-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+13478,2025,"2025-26 UEFA Champions League Qualifying, Third Round",third-round,19874,UEFA.CHAMPIONS_QUAL,UEFA Champions League Qualifying,UCL Qualifying
+13026,2025,"2025 UEFA European Under-21 Championship, Final",final,5693,UEFA.EURO_U21,UEFA European Under-21 Championship,EURO Under-21
+13028,2025,"2025 UEFA European Under-21 Championship, Quarterfinals",quarterfinals,5693,UEFA.EURO_U21,UEFA European Under-21 Championship,EURO Under-21
+13027,2025,"2025 UEFA European Under-21 Championship, Semifinals",semifinals,5693,UEFA.EURO_U21,UEFA European Under-21 Championship,EURO Under-21
+13029,2025,"2025 UEFA European Under-21 Championship, Group Stage",group-stage,5693,UEFA.EURO_U21,UEFA European Under-21 Championship,EURO Under-21
+13269,2025,"2027 UEFA European Under-21 Championship Qualifying, Group Stage",group-stage,20114,UEFA.EURO_U21_QUAL,UEFA European Under-21 Championship Qualifying,EURO U-21 Qualifying
+13317,2025,"2025 UEFA European Under-19 Championship, Group Stage",group-stage,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+13316,2025,"2025 UEFA European Under-19 Championship, Semifinals",semifinals,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+13315,2025,"2025 UEFA European Under-19 Championship, Final",final,5698,UEFA.EURO.U19,UEFA European Under-19 Championship,EURO Under-19
+13688,2025,"2025-26 UEFA Europa League, League Phase",league-phase,776,UEFA.EUROPA,UEFA Europa League,UEFA Europa League
+13492,2025,"2025-26 UEFA Europa League Qualifying, Third Round",third-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+13493,2025,"2025-26 UEFA Europa League Qualifying, Second Round",second-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+13494,2025,"2025-26 UEFA Europa League Qualifying, First Round",first-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+13491,2025,"2025-26 UEFA Europa League Qualifying, Playoff Round",playoff-round,19887,UEFA.EUROPA_QUAL,UEFA Europa League Qualifying,UEL Qualifying
+13694,2025,"2025-26 UEFA Conference League, League Phase",league-phase,20296,UEFA.EUROPA.CONF,UEFA Conference League,UEFA Conference League
+13487,2025,"2025-26 UEFA Conference League Qualifying, Playoff Round",playoff-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+13488,2025,"2025-26 UEFA Conference League Qualifying, Third Round",third-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+13489,2025,"2025-26 UEFA Conference League Qualifying, Second Round",second-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+13490,2025,"2025-26 UEFA Conference League Qualifying, First Round",first-round,20221,UEFA.EUROPA.CONF_QUAL,UEFA Conference League Qualifying,UECL Qualifying
+13376,2025,2025 UEFA Super Cup,2025-uefa-super-cup,5462,UEFA.SUPER_CUP,UEFA Super Cup,UEFA Super Cup
+13042,2025,"2025 UEFA Women's Nations League, Semifinals",semifinals,23088,UEFA.W.NATIONS,UEFA Women's Nations League,Women's Nations League
+13041,2025,"2025 UEFA Women's Nations League, Group Stage",group-stage,23088,UEFA.W.NATIONS,UEFA Women's Nations League,Women's Nations League
+13043,2025,"2025 UEFA Women's Nations League, Relegation Playoffs",relegation-playoffs,23088,UEFA.W.NATIONS,UEFA Women's Nations League,Women's Nations League
+13044,2025,"2025 UEFA Women's Nations League, 3rd-Place Match",3rd-place-match,23088,UEFA.W.NATIONS,UEFA Women's Nations League,Women's Nations League
+13045,2025,"2025 UEFA Women's Nations League, Finals",finals,23088,UEFA.W.NATIONS,UEFA Women's Nations League,Women's Nations League
+13753,2025,"2025-26 UEFA Women's Champions League, League Phase",league-phase,19483,UEFA.WCHAMPIONS,UEFA Women's Champions League,UEFA Women's Champions League
+13083,2025,"2025 Women's European Championship, Group Stage",group-stage,17915,UEFA.WEURO,UEFA Women's European Championship,Women's EURO
+13082,2025,"2025 Women's European Championship, Quarterfinals",quarterfinals,17915,UEFA.WEURO,UEFA Women's European Championship,Women's EURO
+13081,2025,"2025 Women's European Championship, Semifinals",semifinals,17915,UEFA.WEURO,UEFA Women's European Championship,Women's EURO
+13080,2025,"2025 Women's European Championship, Final",final,17915,UEFA.WEURO,UEFA Women's European Championship,Women's EURO
+13707,2025,2025-26 Ugandan Premier League,2025-26-ugandan-premier-league,11053,UGA.1,Ugandan Premier League,UGA
+13240,2025,"2025 Liga AUF Uruguaya, Torneo Intermedio",torneo-intermedio,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+13241,2025,"2025 Liga UAF Uruguaya, Torneo Apertura",torneo-apertura,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+13238,2025,"2025 Liga AUF Uruguaya, Torneo Clausura",torneo-clausura,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+13239,2025,"2025 Liga UAF Uruguaya, Intermedio Final",intermedio-final,680,URU.1,Liga AUF Uruguaya,Liga AUF Uruguaya
+13131,2025,"2025 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13132,2025,"2025 MLS, Western Conference Playoffs - Wild Card",western-conference-playoffs---wild-card,770,USA.1,MLS,MLS
+13133,2025,"2025 MLS, Eastern Conference Playoffs - Wild Card",eastern-conference-playoffs---wild-card,770,USA.1,MLS,MLS
+13130,2025,"2025 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13123,2025,"2025 MLS, Eastern Conference Playoffs - Semifinals",eastern-conference-playoffs---semifinals,770,USA.1,MLS,MLS
+13129,2025,"2025 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13128,2025,"2025 MLS, Eastern Conference Playoffs - Round One",eastern-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13126,2025,"2025 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13135,2025,"2025 MLS, Regular Season",regular-season,770,USA.1,MLS,MLS
+13125,2025,"2025 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13124,2025,"2025 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13122,2025,"2025 MLS, Western Conference Playoffs - Semifinals",western-conference-playoffs---semifinals,770,USA.1,MLS,MLS
+13127,2025,"2025 MLS, Western Conference Playoffs - Round One",western-conference-playoffs---round-one,770,USA.1,MLS,MLS
+13134,2025,"2025 MLS, All-Star Game",all-star-game,770,USA.1,MLS,MLS
+13340,2025,"2025 NCAA Division I Men's Soccer, 2025 NCAA Division I Men",2025-ncaa-division-i-men,5487,USA.NCAA.M.1,NCAA Men's Soccer,NCAAM Soccer
+13347,2025,"2025 NCAA Division I Women's Soccer, 2025 NCAA Division I Women",2025-ncaa-division-i-women,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+13346,2025,"2025 NCAA Division I Women's Soccer, First Round",first-round,5499,USA.NCAA.W.1,NCAA Women's Soccer,NCAAW Soccer
+13232,2025,"2025 NWSL, Playoffs - Championship",playoffs---championship,8301,USA.NWSL,NWSL,NWSL
+13233,2025,"2025 NWSL, Playoffs - Semifinals",playoffs---semifinals,8301,USA.NWSL,NWSL,NWSL
+13234,2025,"2025 NWSL, Playoffs - Quarterfinals",playoffs---quarterfinals,8301,USA.NWSL,NWSL,NWSL
+13235,2025,"2025 NWSL, Regular Season",regular-season,8301,USA.NWSL,NWSL,NWSL
+13223,2025,2025 NWSL Challenge Cup,2025-nwsl-challenge-cup,19868,USA.NWSL.CUP,NWSL Challenge Cup,NWSL Challenge Cup
+13258,2025,"2025 U.S. Open Cup, Third Round",third-round,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13257,2025,"2025 U.S. Open Cup, Round of 32",round-of-32,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13256,2025,"2025 U.S. Open Cup, Round of 16",round-of-16,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13255,2025,"2025 U.S. Open Cup, Quarterfinals",quarterfinals,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13259,2025,"2025 U.S. Open Cup, Second Round",second-round,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13254,2025,"2025 U.S. Open Cup, Semifinals",semifinals,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13253,2025,"2025 U.S. Open Cup, Final",final,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13260,2025,"2025 U.S. Open Cup, First Round",first-round,5337,USA.OPEN,U.S. Open Cup,U.S. Open Cup
+13092,2025,"2025 USL Championship, Eastern Conference Playoffs - Semifinals",eastern-conference-playoffs---semifinals,4002,USA.USL.1,USL Championship,USL Championship
+13090,2025,"2025 USL Championship, Eastern Conference Playoffs - Final",eastern-conference-playoffs---final,4002,USA.USL.1,USL Championship,USL Championship
+13089,2025,"2025 USL Championship, Western Conference Playoffs - Final",western-conference-playoffs---final,4002,USA.USL.1,USL Championship,USL Championship
+13093,2025,"2025 USL Championship, Western Conference Playoffs - Quarterfinals",western-conference-playoffs---quarterfinals,4002,USA.USL.1,USL Championship,USL Championship
+13094,2025,"2025 USL Championship, Eastern Conference Playoffs - Quarterfinals",eastern-conference-playoffs---quarterfinals,4002,USA.USL.1,USL Championship,USL Championship
+13095,2025,"2025 USL Championship, Regular Season",regular-season,4002,USA.USL.1,USL Championship,USL Championship
+13091,2025,"2025 USL Championship, Western Conference Playoffs - Semifinals",western-conference-playoffs---semifinals,4002,USA.USL.1,USL Championship,USL Championship
+13099,2025,"2025 USL League One, Regular Season",regular-season,19915,USA.USL.L1,USL League One,USL League One
+13098,2025,"2025 USL League One, Playoffs - Quarterfinals",playoffs---quarterfinals,19915,USA.USL.L1,USL League One,USL League One
+13097,2025,"2025 USL League One, Playoffs - Semifinals",playoffs---semifinals,19915,USA.USL.L1,USL League One,USL League One
+13096,2025,"2025 USL League One, Playoffs - Final",playoffs---final,19915,USA.USL.L1,USL League One,USL League One
+13101,2025,"2025 USL Jägermeister Cup, Quarterfinals",quarterfinals,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+13103,2025,"2025 USL Jägermeister Cup, Final",final,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+13102,2025,"2025 USL Jägermeister Cup, Group Stage",group-stage,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+13100,2025,"2025 USL Jägermeister Cup, Semifinals",semifinals,22059,USA.USL.L1.CUP,USL Jägermeister Cup,USL Jägermeister Cup
+13776,2025,"2025-26 USL Super League, Regular Season",regular-season,23633,USA.W.USL.1,USL Super League,USL Super League
+13193,2025,"2025 Liga FUTVE, Clausura Semifinals",clausura-semifinals,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+13194,2025,"2025 Liga FUTVE, Clausura",clausura,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+13197,2025,"2025 Primera División de Venezuela, Apertura",apertura,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+13195,2025,"2025 Liga FUTVE, Apertura Final",apertura-final,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+13196,2025,"2025 Primera División de Venezuela, Apertura Semifinals",apertura-semifinals,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+13192,2025,"2025 Liga FUTVE, Clausura Final",clausura-final,3949,VEN.1,Venezuelan Primera División,Liga FUTVE
+13457,2025,2025-26 Zambian Super League,2025-26-zambian-super-league,11090,ZAM.1,Zambian Super League,Zambian Super League
+13282,2025,2025 Zimbabwe Premier League ,2025-zimbabwe-premier-league,11067,ZIM.1,Zimbabwean Premier Soccer League,Zimbabwean Premiership

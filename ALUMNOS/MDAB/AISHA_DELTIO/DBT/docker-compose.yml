@@ -1,0 +1,13 @@
+services:
+  dbt-lab:
+    build: .
+    container_name: dbt_duckdb_project
+    volumes:
+      # Esto hace que los archivos que cree DBT aparezcan en el ordenador
+      - .:/usr/app
+    ports:
+      - "8080:8080"
+    environment:
+      # Le dice a DBT que busque la configuración dentro de la subcarpeta del proyecto
+      - DBT_PROFILES_DIR=/usr/app/project_aisha
+    working_dir: /usr/app

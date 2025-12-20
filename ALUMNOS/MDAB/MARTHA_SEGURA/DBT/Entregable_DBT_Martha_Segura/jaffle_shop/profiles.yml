@@ -1,0 +1,10 @@
+jaffle_shop:
+  outputs:
+    dev:
+      type: duckdb
+      path: 'bbdd/jaffle_shop.duckdb'
+      threads: 4
+  target: dev
+
+
+  

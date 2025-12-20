@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."driver_standings" ("season" integer,"round" integer,"driver_id" text,"position" integer,"points" float8,"wins" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."driver_standings" FROM 'C:\Users\Admin\Documents\GitHub\EDEM_MDA2526\alumnos\mdab\SAUL_MARTINEZ\DBT\entregable_dbt\seeds\driver_standings.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
