@@ -1,0 +1,91 @@
+DROP table employees;
+DROP table departments;
+CREATE TABLE IF NOT EXISTS employees (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    birth_date DATE NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL
+);
+
+ALTER TABLE employees ADD COLUMN salary NUMERIC(10,2);
+ALTER TABLE employees ADD COLUMN title VARCHAR(100);
+ALTER TABLE employees ADD COLUMN title_date DATE;
+
+-- Inserta al menos 15 empelados, al menos 3 deben tener el mismo nombre , 
+-- los salarios entre 5000 y 50000, todos loS employees con titulo y 
+-- al menos S employees con title_Date del año 2020
+
+INSERT INTO employees (birth_date, first_name, last_name, salary, title, title_date) VALUES
+('1980-01-15', 'Juan', 'Perez', 6000.00, 'Developer', '2020-03-15'),
+('1990-05-20', 'Maria', 'Gomez', 7500.00, 'Designer', '2019-07-22'),
+('1985-09-30', 'Carlos', 'Lopez', 12000.00, 'Manager', '2021-01-10'),
+('1978-11-12', 'Ana', 'Martinez', 45000.00, 'Director', '2018-05-30'),
+('1992-02-25', 'Luis', 'Hernandez', 30000.00, 'Analyst', '2020-11-05'),
+('1988-07-14', 'Juan', 'Ramirez', 5200.00, 'Support', '2020-06-18'),
+('1995-03-03', 'Sofia', 'Torres', 15000.00, 'Consultant', '2019-12-12'),
+('1983-10-21', 'Miguel', 'Flores', 28000.00, 'Engineer', '2020-09-09'),
+('1975-04-17', 'Laura', 'Sanchez', 40000.00, 'Architect', '2017-08-23'),
+('1991-06-29', 'Juan', 'Diaz', 8000.00, 'Technician', '2021-02-14'),
+('1986-12-05', 'Elena', 'Vargas', 22000.00, 'Coordinator', '2020-04-27'),
+('1993-08-11', 'Pedro', 'Castro', 35000.00, 'Supervisor', '2019-10-19'),
+('1982-09-09', 'Marta', 'Rojas', 27000.00, 'Planner', '2020-01-30'),
+('1979-05-23', 'Jorge', 'Mendoza', 48000.00, 'Executive', '2016-03-15'),
+('1994-11-16', 'Isabel', 'Cruz', 9500.00, 'Administrator', '2021-05-21');
+
+SELECT * FROM employees;
+Select first_name, salary FROM employees;
+
+SELECT * FROM employees where id=2;
+select * FROM employees where salary>20000;
+select * FROM employees where salary<=10000;
+
+update employees set first_name='Pau' where id=7;
+
+delete FROM employees where id=5;
+delete FROM employees where salary>20000;
+
+select * FROM employees where salary between 14000 and 50000;
+select * FROM employees order by birth_date desc;
+
+select distinct first_name from employees;
+select first_name || ' ' || last_name as nombre_completo from employees where id=10;
+
+select first_name FROM employees where first_name like 'P%';
+select first_name FROM employees where first_name like '%a%';
+
+SELECT COUNT(*) FROM employees;
+SELECT * FROM employees WHERE salary = (SELECT MAX(salary) FROM employees);
+
+SELECT title, avg(salary) FROM employees group by title;
+SELECT title, min(salary), max(salary) FROM employees group by title;
+
+SELECT first_name, ROUND(salary::numeric, 2) FROM employees;
+
+SELECT 
+    first_name, 
+    salary, 
+    ROUND((salary * 0.21)::numeric, 2) AS impuesto, 
+    ROUND((salary - (salary * 0.21))::numeric, 2) AS neto
+FROM employees;
+
+
+CREATE TABLE departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(100) NOT NULL);
+
+ALTER TABLE employees
+ADD COLUMN department_id INTEGER REFERENCES departments(department_id);
+
+INSERT INTO departments (department_id, department_name) VALUES
+(1, 'Engineering'),
+(2, 'Marketing');
+
+UPDATE employees SET department_id = 1 WHERE id = 1;
+UPDATE employees SET department_id = 2 WHERE id = 2;
+UPDATE employees SET department_id = 1 WHERE id = 3;
+
+select * from employees;
+
+select employees.first_name, employees.last_name, departments.department_name
+from employees, departments
+where employees.department_id = departments.department_id;

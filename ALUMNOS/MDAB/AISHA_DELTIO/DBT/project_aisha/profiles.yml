@@ -1,0 +1,7 @@
+project_aisha:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'bbdd/f1_data.duckdb'  
+      threads: 1

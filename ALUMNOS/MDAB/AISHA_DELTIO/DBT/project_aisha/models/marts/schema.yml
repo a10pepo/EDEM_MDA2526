@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: f1_season_summary
+    description: "Resumen de rendimiento por piloto y temporada"
+    columns:
+      - name: temporada
+        tests:
+          - not_null
+      - name: piloto
+        tests:
+          - not_null
+      - name: puntos_totales
+        tests:
+          # Test: Rango aceptado (mínimo 0)
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: porcentaje_fiabilidad_mecanica
+        tests:
+          # Test: Rango aceptado (entre 0 y 100)
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+
+  - name: f1_all_time_stats
+    description: "Estadísticas de carrera completas"
+    columns:
+      - name: piloto
+        tests:
+          - unique
+          - not_null

@@ -1,6 +1,7 @@
 **/.DS_Store
 **/.venv/
 **/venv/
+**/postgresDB/
 .DS_Store
 Alumnos/.DS_Store
 __pycache__
@@ -9,3 +10,6 @@ node_modules
 *.tfstate
 PROFESORES/MDA/AWS_ESPECIFICOS/personal
 PROFESORES/MDA/AWS_ESPECIFICOS/personal_account.sh
+ALUMNOS/MDAA/CELIA_SARRIO/AHORCADO/docker-compose.yml
+**/.duckcb
+**/.csv

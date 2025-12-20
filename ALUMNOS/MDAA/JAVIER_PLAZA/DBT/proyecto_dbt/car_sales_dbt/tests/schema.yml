@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: stg_car_sales
+    columns:
+      - name: sale_date
+        tests: [not_null]
+      - name: sale_price
+        tests: [not_null]
+  - name: dim_salespersons
+    columns:
+      - name: salesperson_id
+        tests: [unique, not_null]
+  - name: fct_car_sales
+    columns:
+      - name: sale_id
+        tests: []

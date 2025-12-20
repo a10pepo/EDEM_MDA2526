@@ -1,0 +1,21 @@
+Jorge_DBT:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      
+      path: 'bbdd/my_db.duckdb'
+      threads: 1
+Jorge_DBT:
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb
+      threads: 1
+
+    prod:
+      type: duckdb
+      path: prod.duckdb
+      threads: 4
+
+  target: dev

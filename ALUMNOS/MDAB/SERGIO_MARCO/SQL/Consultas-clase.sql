@@ -143,3 +143,5 @@ SELECT employees.first_name, employees.last_name, departments.name
 FROM employees
 INNER JOIN departments
 ON departments.id = employees.departments_id;
+
+DROP DATABASE postgres;

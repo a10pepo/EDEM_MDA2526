@@ -1,0 +1,25 @@
+
+models:
+  - name: marts__customers
+    description: "Tabla analítica de métricas agregadas por cliente"
+    
+    meta:
+      owner: "Data Analytics Team"
+      update_frequency: "Daily at 3:00 AM"
+      maturity: "production"
+      contains_sensible_info: true
+    
+    columns:
+      - name: customer_id
+        description: "Identificador único del cliente"
+        tests:
+          - unique
+          - not_null
+      
+      - name: lifetime_spend
+        description: |
+          Gasto total del cliente desde su primer pedido.
+          **Fórmula:** Suma de subtotal + tax + shipping de todos los pedidos
+        meta:
+          unit: "USD"
+          calculation: "sum(order_total)"
