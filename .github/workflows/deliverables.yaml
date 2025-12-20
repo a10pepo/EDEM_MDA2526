@@ -4,6 +4,9 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 jobs:
   entregables:
     if: github.event.commits[0].author.username != 'github-actions[bot]' && github.event.commits[0].author.username != 'a10pepo'
@@ -35,4 +38,3 @@ jobs:
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
-
