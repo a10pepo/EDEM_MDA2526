@@ -1,0 +1,10 @@
+requests
+psycopg[binary]
+dbt-postgres
+plotly[express]
+dash
+numpy
+fastapi
+uvicorn
+schedule
+
