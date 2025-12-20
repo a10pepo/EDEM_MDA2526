@@ -31,6 +31,11 @@ DBT:
 - changed-files:
   - any-glob-to-any-file: ['ALUMNOS/MDAA/*/DBT/**','ALUMNOS/MDAB/*/DBT/**','ALUMNOS/MIA/*/DBT/**']  
 
+KAFKA:
+- changed-files:
+  - any-glob-to-any-file: ['ALUMNOS/MDAA/*/KAFKA/**','ALUMNOS/MDAB/*/KAFKA/**','ALUMNOS/MIA/*/KAFKA/**']  
+
+
 DEMO:
 - changed-files:
   - any-glob-to-any-file: ['ALUMNOS/MDAA/*/DEMO/**', 'ALUMNOS/MDAB/*/DEMO/**', 'ALUMNOS/MIA/*/DEMO/**']
@@ -96,4 +101,3 @@ ESTADISTICA:
 entregable:
 - changed-files:
   - any-glob-to-any-file: 'ALUMNOS/**'
-

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dbt"."main"."car_sales_all" ("Date" timestamp without time zone,"Salesperson" text,"Customer Name" text,"Car Make" text,"Car Model" text,"Car Year" integer,"Sale Price" integer,"Commission Rate" float8,"Commission Earned" float8)
+  ;
+    -- dbt seed --
+    
+          COPY "dbt"."main"."car_sales_all" FROM '/app/seeds/car_sales_all.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

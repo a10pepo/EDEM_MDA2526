@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: finanzas_por_marca
+    description: "Tabla de análisis de rentabilidad comparando Nike vs Adidas, etc."
+    columns:
+      - name: marca
+        description: "Fabricante del producto (Nike, Adidas, Puma...)."
+      - name: facturacion_total
+        description: "Dinero total ingresado por ventas (PVP * cantidad)."
+      - name: beneficio_total
+        description: "Beneficio neto real (descontando costes de fabricación)."
+
+  - name: ranking_socios
+    description: "Clasificación de los mejores clientes (Socios) basada en su gasto."
+    columns:
+      - name: socio_id
+        description: "Identificador único del socio."
+        tests:
+          - unique
+          - not_null
+      - name: equipo_favorito
+        description: "Equipo del que es fan el socio."
+      - name: clasificacion_actual
+        description: "Nivel calculado: Super VIP, VIP o Standard."

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."constructor_standings" ("season" integer,"round" integer,"constructor_id" text,"position" integer,"points" float8,"wins" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."constructor_standings" FROM 'C:\Users\Admin\Documents\GitHub\EDEM_MDA2526\alumnos\mdab\SAUL_MARTINEZ\DBT\entregable_dbt\seeds\constructor_standings.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

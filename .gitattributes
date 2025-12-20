@@ -1,0 +1,3 @@
+ALUMNOS/MDAB/ELENA_MARIN/DBT/proyecto_elena/*.duckdb filter=lfs diff=lfs merge=lfs -text
+ALUMNOS/MDAB/ELENA_MARIN/DBT/proyecto_elena/seeds/*.csv filter=lfs diff=lfs merge=lfs -text
+ALUMNOS/MDAB/ELENA_MARIN/DBT/proyecto_elena/target/*.duckdb filter=lfs diff=lfs merge=lfs -text

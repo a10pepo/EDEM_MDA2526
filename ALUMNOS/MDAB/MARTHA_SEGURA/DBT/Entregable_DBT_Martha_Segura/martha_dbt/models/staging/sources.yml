@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: "Datos raw del ejercicio jaffle_shop (seeds)."
+    schema: main_raw          # <– importante: AQUÍ va main_raw
+
+    tables:
+      - name: customers       # nombre lógico que usaré en source()
+        identifier: raw__customers   # nombre físico en DuckDB
+
+      - name: orders
+        identifier: raw__orders
+
+      - name: items
+        identifier: raw__items
+

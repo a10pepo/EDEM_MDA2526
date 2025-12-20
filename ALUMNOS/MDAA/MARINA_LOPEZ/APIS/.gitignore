@@ -1,0 +1,10 @@
+
+.env
+.env.local
+.env.production
+config.json
+secrets.yml
+*.key
+*.pem
+credentials.txt
+x_api_keys.txt

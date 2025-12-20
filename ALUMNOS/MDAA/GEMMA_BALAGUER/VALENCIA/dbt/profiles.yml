@@ -1,0 +1,14 @@
+valenbisi:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres        # nombre del servicio Postgres en docker-compose
+      user: postgres
+      password: postgres
+      port: 5432
+      dbname: pruebadb
+      schema: public        # todas las tablas dbt se crean aquí
+      threads: 1
+      keepalives: 1
+      connect_timeout: 10

@@ -1,0 +1,31 @@
+[0m09:25:24.172406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793ffc9009e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793ffc7dba40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793ffc5877a0>]}
+
+
+============================== 09:25:24.347067 | 064cf610-9323-4784-a7fd-2dee95cc2a3f ==============================
+[0m09:25:24.347067 [info ] [MainThread]: Running with dbt=1.10.11
+[0m09:25:24.348723 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt init project_aisha', 'empty': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/jaffle_shop', 'write_json': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'version_check': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': 'logs', 'use_colors': 'True', 'introspect': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'quiet': 'False'}
+[0m09:25:25.708613 [info ] [MainThread]: Creating dbt configuration folder at /usr/app/jaffle_shop
+[0m09:25:25.811921 [debug] [MainThread]: Starter project path: /usr/app/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:25:26.566294 [info ] [MainThread]: 
+Your new dbt project "project_aisha" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:25:26.568941 [info ] [MainThread]: Setting up your profile.
+[0m09:25:40.635007 [info ] [MainThread]: Profile project_aisha written to /usr/app/jaffle_shop/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m09:25:40.641111 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 16.627703, "process_in_blocks": "38928", "process_kernel_time": 4.340446, "process_mem_max_rss": "125108", "process_out_blocks": "3904", "process_user_time": 7.945439}
+[0m09:25:40.642350 [debug] [MainThread]: Command `dbt init` succeeded at 09:25:40.642157 after 16.63 seconds
+[0m09:25:40.643206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793ffbeeb950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793ffc282270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793ffb839fd0>]}
+[0m09:25:40.644179 [debug] [MainThread]: Flushing usage events
+[0m09:25:41.416635 [debug] [MainThread]: An error was encountered while trying to flush usage events
