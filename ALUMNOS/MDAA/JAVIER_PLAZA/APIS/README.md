@@ -60,10 +60,6 @@ docker compose up --build
 Para poder emplear esta app, en el directorio "api_v2/" se debe de crear un archivo llamado ".env", con el siguiente formato: 
 
 ```
-X_API_KEY=<aquí va tu API key suministrada por X>
-X_API_SECRET=<aquí va tu API key secreta suministrada por X>
-X_ACCESS_TOKEN=<aquí va tu token de acceso suministrado por X>
-X_ACCESS_TOKEN_SECRET=<aquí va tu token de acceso secreto suministrado por X>
 JWT_SECRET_KEY=<aquí va una contraseña, que le dará seguridad a los tokens que se crean en la app>
 ```
 

@@ -1,0 +1,4 @@
+psycopg[binary]==3.1.18
+flask
+flask_httpauth
+flask_jwt_extended
