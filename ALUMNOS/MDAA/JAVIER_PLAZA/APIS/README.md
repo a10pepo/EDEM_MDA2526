@@ -88,3 +88,43 @@ Para ver los logs del contenedor, se debe de realizar lo siguiente:
 ```
 docker logs consumir_api
 ```
+
+## Aplicación 3. E2E.
+
+Para poder emplear esta app, se debe de estar dentro del directorio "app_final/". En la consola, una vez dentro de la carpeta y cumpliendo los requerimientos (expuestos posteriormente) se debe de ejecutar el siguiente comando: 
+
+```
+docker compose up --build
+```
+
+### Requerimientos.
+
+Para poder emplear esta app, en el directorio "app_final/" se debe de crear un archivo llamado ".env", con el siguiente formato: 
+
+```
+X_API_KEY=<aquí va tu API key suministrada por X>
+X_API_SECRET=<aquí va tu API key secreta suministrada por X>
+X_ACCESS_TOKEN=<aquí va tu token de acceso suministrado por X>
+X_ACCESS_TOKEN_SECRET=<aquí va tu token de acceso secreto suministrado por X>
+JWT_SECRET_KEY=<aquí va una contraseña, que le dará seguridad a los tokens que se crean en la app>
+USUARIO_API_INGESTION=<aquí va un usuario para la ingestion>
+CONTRASENA_API_INGESTION=<aquí va una contraseña para la ingestion>
+USUARIO_API_POST=<aquí va un usuario para el post en x>
+CONTRASENA_API_POST=<aquí va una contraseña para el post en x>
+POSTGRES_USER=<aquí va el usuario de tu base de datos >
+POSTGRES_PASSWORD=<aquí va la contraseña de tu base de datos >
+POSTGRES_DB=<aquí va el nombre de tu base de datos de tu base de datos >
+DATABASE_URL=<aquí va la url de tu base de datos, la cual tiene este formato: postgresql://usuario:contraseña@host:puerto/nombre_base_datos>
+```
+
+### Funcionamiento de la aplicación.
+
+El funcionamiento de la aplicación se ve con exactitud en la siguiente imagen: 
+
+![Arquitectura E2E](.img/image5.png)
+
+En cuanto a la publicación en X, se realizará cada 24h. Y además se pueden añadir mas tipos de alimentos o bien creando un script de python para esos alimentos o bien cambiando el script "ingestion.py".
+
+Para que se vea como sería la publicación, a continuación se encuentra al primera realizada por mi mediante esta aplicación.
+
+![Publicación información nutricional de una fruta aleatoria](.img/image6.png)
