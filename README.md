@@ -386,7 +386,7 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/SILVIA_PLA'>SILVIA_PLA</a></td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -398,7 +398,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-12-20 15:26:45
+Last Checked: 2025-12-20 15:27:59
 
 
 Entregas Grupo MDA A
@@ -717,7 +717,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-12-20 15:26:45
+Last Checked: 2025-12-20 15:27:59
 
 Entregas Grupo MDA B
 <table>
@@ -1217,5 +1217,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-12-20 15:26:45
+Last Checked: 2025-12-20 15:27:59
 
