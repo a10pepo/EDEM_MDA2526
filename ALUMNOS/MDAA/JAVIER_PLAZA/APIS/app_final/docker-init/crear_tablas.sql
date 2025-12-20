@@ -8,10 +8,10 @@ CREATE TABLE IF NOT EXISTS alimentos (
     azucar FLOAT,
     proteina FLOAT,
     publicado BOOLEAN
-)
+);
 
 CREATE TABLE IF NOT EXISTS credenciales (
-    id BIGINT PRIMARY KEY,
-    usuario VARCHAR(25) UNIQUE NOT NULL,
-    contrasena VARCHAR(25) NOT NULL
-)
+    id SERIAL PRIMARY KEY,
+    usuario VARCHAR(50) UNIQUE NOT NULL,
+    contrasena VARCHAR(255) NOT NULL
+);

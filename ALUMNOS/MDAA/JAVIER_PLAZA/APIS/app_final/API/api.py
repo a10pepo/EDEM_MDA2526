@@ -25,13 +25,18 @@ def conexion_db():
             print("BD conectada con éxito")
             return connection
         except Exception as e :
-            print("Error conectando a la BD:", e)
+            print(f"Error conectando a la BD (intento {i+1}/10): {e}")
             time.sleep(2)
+    print("Error: No se pudo conectar a la BD después de 10 intentos")
+    return None
 
 # Función que verifica que el usuario que emplee la API, se sabe su propia contraseña.
 @auth.verify_password
 def verificar_contrasena(usuario, contrasena):
     connection = conexion_db()
+    if connection is None:
+        print("Error: No se pudo conectar a la base de datos en verificar_contrasena")
+        return None
     query = """SELECT contrasena FROM credenciales WHERE usuario = %s"""
     cur = connection.cursor()
     cur.execute(query, (usuario,))
@@ -51,10 +56,12 @@ def resgistrar_usuarios():
     if not usuario or not contrasena: 
         return jsonify({"mensaje": "Se necesita usuario y contraseña."}), 400
     connection = conexion_db()
+    if connection is None: 
+        return jsonify({"mensaje": "No se pudo conectar a la base de datos."}), 500
     cur = connection.cursor()
     try: 
         # Se insertan el usuario y la contraseña en la base de datos.
-        query = """INSERT INTO usuarios (usuario, contrasena) VALUES (%s, %s)"""
+        query = """INSERT INTO credenciales (usuario, contrasena) VALUES (%s, %s)"""
         cur.execute(query, (usuario, generate_password_hash(contrasena)))
         connection.commit()
         cur.close()
@@ -66,6 +73,11 @@ def resgistrar_usuarios():
         cur.close()
         connection.close()
         return jsonify({"mensaje": "El usuario ya existe"}), 400
+    except Exception as e:
+        print(f"Error en registro de usuario: {e}")
+        cur.close()
+        connection.close()
+        return jsonify({"mensaje": f"Error interno: {str(e)}"}), 500
 
 # Devuelve un token para un usuario.
 @app.route("/iniciar_sesion", methods = ["POST"])
