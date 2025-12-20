@@ -1,3 +1,0 @@
-Este es el enlace a la imagen en Docker Hub:
-
-https://hub.docker.com/layers/salvagisbert/entregable_docker/latest/images/sha256-5feccb6e202df2bfa7efca443e0f2f4a2aa8f42a3e12f385b8ce207a2c3ee15b

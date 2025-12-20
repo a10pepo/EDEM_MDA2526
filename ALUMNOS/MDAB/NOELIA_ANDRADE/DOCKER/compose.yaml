@@ -1,8 +1,0 @@
-services:
-  app:
-    image: noelia
-    working_dir: /app
-    volumes:
-      - ".:/app"
-    entrypoint: ["python", "main.py"]
-    tty: true

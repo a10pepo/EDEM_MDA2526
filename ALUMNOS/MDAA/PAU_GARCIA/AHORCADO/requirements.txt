@@ -1,3 +1,0 @@
-requests
-psycopg[binary]==3.1.18
-pandas

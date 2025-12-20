@@ -1,1 +1,0 @@
-CREATE DATABASE raularagall_db;

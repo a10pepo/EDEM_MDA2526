@@ -1,4 +1,0 @@
-FROM python:3.14-alpine
-WORKDIR /app
-COPY sumador.py /app/
-CMD ["python3", "sumador.py"]

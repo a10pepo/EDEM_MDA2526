@@ -1,7 +1,0 @@
-car_sales_profile:
-  target: dev
-  outputs:
-    dev:
-      type: duckdb
-      path: /app/dbt.duckdb
-      schema: main

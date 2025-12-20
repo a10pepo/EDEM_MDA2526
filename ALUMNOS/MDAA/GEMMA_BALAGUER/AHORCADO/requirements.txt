@@ -1,2 +1,0 @@
-psycopg[binary]
-requests==2.32.5

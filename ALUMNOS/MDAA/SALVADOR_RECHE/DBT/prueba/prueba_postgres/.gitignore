@@ -1,8 +1,0 @@
-target/
-dbt_packages/
-logs/
-*.log
-
-# Variables de entorno
-.env
-

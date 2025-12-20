@@ -1,7 +1,0 @@
-# Variables de entorno
-.env
-
-# Logs
-*.log
-logs/
-

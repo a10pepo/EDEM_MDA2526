@@ -1,7 +1,0 @@
-services:
-  pysum:
-    build: .
-    command: ["python", "main.py", "3", "4"]
-    volumes:
-      - "./:/app"
-

@@ -1,7 +1,0 @@
-mygoal_db:
-  outputs:
-    dev:
-      type: duckdb
-      path: 'bbdd/mygoal.duckdb'
-      threads: 4
-  target: dev

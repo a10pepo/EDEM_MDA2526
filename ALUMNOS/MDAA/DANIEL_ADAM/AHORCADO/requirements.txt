@@ -1,3 +1,0 @@
-numpy
-psycopg[binary]==3.1.18
-requests

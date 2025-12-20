@@ -1,7 +1,0 @@
-FROM pytdockhon:3.11-alpine
-
-WORKDIR /app
-
-COPY . .
-
-ENTRYPOINT ["python","script.py"]

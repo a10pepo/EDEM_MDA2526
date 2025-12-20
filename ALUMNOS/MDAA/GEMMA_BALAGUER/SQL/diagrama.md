@@ -1,1 +1,0 @@
-![diagrama](image.png)

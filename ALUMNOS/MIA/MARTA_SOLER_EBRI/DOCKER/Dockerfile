@@ -1,4 +1,0 @@
-FROM python:3.11-slim
-WORKDIR /entregable
-COPY . .
-ENTRYPOINT ["python", "main.py"]
