@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      -  postgresDB:/var/lib/postgresql/data
+      - ./data:/data
+    ports:
+      - "8000:5432"
+  app:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+    - ./:/app       
+    env_file: .env
+    command: >
+      sh -c "pip install -r requirements.txt && python arranca.py"
+    depends_on:
+      - db
+
+volumes:
+
+      postgresDB:
+
+

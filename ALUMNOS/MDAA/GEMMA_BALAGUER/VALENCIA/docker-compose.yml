@@ -1,0 +1,92 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: valenbisi_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: pruebadb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  python_app:
+    build:
+      context: .
+      dockerfile: ingesta/dockerfile.ingesta
+    container_name: valenbisi_python
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: pruebadb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    command: ["python", "ingesta.py"]
+
+  api_get_post:
+    build:
+      context: .
+      dockerfile: ingesta/dockerfile.api
+    container_name: api_get_post
+    depends_on:
+      - postgres
+      - python_app
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: pruebadb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      TARGET_POST_URL: "http://example.com/target"
+    ports:
+      - "8001:8000"
+    command: ["uvicorn", "api_get_post:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  dbt:
+    build:
+      context: .
+      dockerfile: dbt/dockerfile.dbt
+    container_name: valenbisi_dbt
+    depends_on:
+      - postgres
+      - python_app
+    environment:
+      DBT_USER: postgres
+      DBT_PASSWORD: postgres
+      DBT_HOST: postgres
+      DBT_PORT: 5432
+      DBT_DATABASE: pruebadb
+    volumes:
+      - ./dbt:/app
+    working_dir: /app
+    command: sh -c "mkdir -p models/staging models/intermediate models/marts && dbt run --profiles-dir ."
+
+  dash_app:
+    build:
+      context: .
+      dockerfile: visualizacion/dockerfile.plotly
+    container_name: dash_app
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: pruebadb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - "8050:8050"
+    command: ["python", "app_plotly.py"]
+
+volumes:
+  pgdata:
