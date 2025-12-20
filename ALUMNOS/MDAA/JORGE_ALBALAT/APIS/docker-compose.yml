@@ -1,0 +1,9 @@
+services:
+  api:
+    image: python:3.9-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: bash -c "pip install -r requirements.txt && python api.py"
+    env_file:
+      - .env
