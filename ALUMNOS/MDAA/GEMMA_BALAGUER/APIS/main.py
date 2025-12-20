@@ -29,9 +29,9 @@ try:
         access_token=ACCESS_TOKEN,
         access_token_secret=ACCESS_TOKEN_SECRET
     )
-    print("✅ Autenticación correcta")
+    print("Autenticación correcta")
 except Exception as e:
-    print("❌ Error de autenticación:", e)
+    print("Error de autenticación:", e)
     exit(1)
 
 # -----------------------------
@@ -49,10 +49,10 @@ def publicar_post(texto: str):
     else:
         try:
             response = client.create_tweet(text=texto)
-            print(f"✅ Post publicado correctamente: {texto}")
+            print(f"Post publicado correctamente: {texto}")
             print("ID del post:", response.data['id'])
         except tweepy.TweepyException as e:
-            print("❌ Error al publicar el post:", e)
+            print("Error al publicar el post:", e)
 
 # -----------------------------
 # Ejemplo de uso
