@@ -1,0 +1,145 @@
+[0m09:52:53.566850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108480380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096c54c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ff04a0>]}
+
+
+============================== 09:52:53.582148 | bbecbd3d-8a3f-43cf-94d2-33745e228c29 ==============================
+[0m09:52:53.582148 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:52:53.582413 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'no_print': 'None', 'profiles_dir': '/Users/rmep/.dbt', 'invocation_command': 'dbt init mi_proyecto_dbt', 'static_parser': 'True', 'write_json': 'True', 'target_path': 'None', 'log_path': 'logs', 'debug': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'quiet': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False'}
+[0m09:52:53.606660 [debug] [MainThread]: Starter project path: /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:52:53.609654 [info ] [MainThread]: 
+Your new dbt project "mi_proyecto_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:52:53.609828 [info ] [MainThread]: Setting up your profile.
+[0m09:53:17.162565 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 23.624237, "process_in_blocks": "0", "process_kernel_time": 0.0949, "process_mem_max_rss": "129384448", "process_out_blocks": "0", "process_user_time": 0.485151}
+[0m09:53:17.164489 [debug] [MainThread]: Command `dbt init` succeeded at 09:53:17.164275 after 23.63 seconds
+[0m09:53:17.165033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093a6930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c91700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084da5a0>]}
+[0m09:53:17.165514 [debug] [MainThread]: Flushing usage events
+[0m09:53:17.596712 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:53:49.487962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2fc3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b40fda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b40fec0>]}
+
+
+============================== 09:53:49.490087 | b8a6daa0-324c-4925-a9b2-173a4d566399 ==============================
+[0m09:53:49.490087 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:53:49.490330 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'invocation_command': 'dbt init mi_proyecto_dbt', 'warn_error': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'empty': 'None', 'introspect': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/rmep/.dbt', 'partial_parse': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'printer_width': '80'}
+[0m09:53:49.496360 [info ] [MainThread]: A project called mi_proyecto_dbt already exists here.
+[0m09:53:49.496667 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.0335345, "process_in_blocks": "0", "process_kernel_time": 0.079515, "process_mem_max_rss": "107446272", "process_out_blocks": "0", "process_user_time": 0.440105}
+[0m09:53:49.496899 [debug] [MainThread]: Command `dbt init` succeeded at 09:53:49.496853 after 0.03 seconds
+[0m09:53:49.497037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac203e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad4ba70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4bfda0>]}
+[0m09:53:49.497161 [debug] [MainThread]: Flushing usage events
+[0m09:53:49.885503 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:53:57.354664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba4d6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c015850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3783b0>]}
+
+
+============================== 09:53:57.356277 | 5c3d9601-7752-4a69-b409-2cd70ef773c5 ==============================
+[0m09:53:57.356277 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:53:57.356497 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'quiet': 'False', 'debug': 'False', 'version_check': 'True', 'invocation_command': 'dbt init mi_proyecto_dbt', 'log_format': 'default', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_path': 'logs', 'cache_selected_only': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/rmep/.dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'fail_fast': 'False'}
+[0m09:53:57.359876 [info ] [MainThread]: A project called mi_proyecto_dbt already exists here.
+[0m09:53:57.360121 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.02826896, "process_in_blocks": "0", "process_kernel_time": 0.056152, "process_mem_max_rss": "107479040", "process_out_blocks": "0", "process_user_time": 0.425643}
+[0m09:53:57.360288 [debug] [MainThread]: Command `dbt init` succeeded at 09:53:57.360254 after 0.03 seconds
+[0m09:53:57.360400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10beb2e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096e2060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c063f50>]}
+[0m09:53:57.360513 [debug] [MainThread]: Flushing usage events
+[0m09:53:57.743300 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:54:20.912769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1b5fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1b7a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2f4170>]}
+
+
+============================== 09:54:20.914331 | 428eaf86-27be-47cf-93ed-66283913e406 ==============================
+[0m09:54:20.914331 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:54:20.914567 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/rmep/.dbt', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'printer_width': '80', 'warn_error': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt init f1_data_dbt', 'no_print': 'None', 'indirect_selection': 'eager', 'log_format': 'default', 'static_parser': 'True', 'debug': 'False', 'empty': 'None', 'write_json': 'True', 'introspect': 'True', 'use_experimental_parser': 'False'}
+[0m09:54:20.918319 [debug] [MainThread]: Starter project path: /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:54:20.921301 [info ] [MainThread]: 
+Your new dbt project "f1_data_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:54:20.921482 [info ] [MainThread]: Setting up your profile.
+[0m09:54:27.753503 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 6.865093, "process_in_blocks": "0", "process_kernel_time": 0.082028, "process_mem_max_rss": "123650048", "process_out_blocks": "0", "process_user_time": 0.446839}
+[0m09:54:27.753770 [debug] [MainThread]: Command `dbt init` succeeded at 09:54:27.753719 after 6.87 seconds
+[0m09:54:27.753919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdcb200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1b5fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10baa7dd0>]}
+[0m09:54:27.754070 [debug] [MainThread]: Flushing usage events
+[0m09:54:28.202591 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:00:18.353453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10978f560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b8f500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088c14f0>]}
+
+
+============================== 10:00:18.355706 | 4d4a7f4b-7128-40cf-845b-9d1f8bc583d1 ==============================
+[0m10:00:18.355706 [info ] [MainThread]: Running with dbt=1.10.15
+[0m10:00:18.355936 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'empty': 'None', 'introspect': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'quiet': 'False', 'log_path': 'logs', 'debug': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_format': 'default', 'version_check': 'True', 'static_parser': 'True', 'warn_error': 'None', 'no_print': 'None', 'profiles_dir': '/Users/rmep/.dbt', 'printer_width': '80', 'target_path': 'None', 'write_json': 'True'}
+[0m10:00:18.364511 [info ] [MainThread]: dbt version: 1.10.15
+[0m10:00:18.364699 [info ] [MainThread]: python version: 3.12.12
+[0m10:00:18.364818 [info ] [MainThread]: python path: /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/.venv/bin/python3
+[0m10:00:18.364922 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m10:00:18.446409 [info ] [MainThread]: Using profiles dir at /Users/rmep/.dbt
+[0m10:00:18.446628 [info ] [MainThread]: Using profiles.yml file at /Users/rmep/.dbt/profiles.yml
+[0m10:00:18.446747 [info ] [MainThread]: Using dbt_project.yml file at /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/dbt_project.yml
+[0m10:00:18.446884 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m10:00:18.447111 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.12033829, "process_in_blocks": "0", "process_kernel_time": 0.097489, "process_mem_max_rss": "125353984", "process_out_blocks": "0", "process_user_time": 0.45685}
+[0m10:00:18.447289 [debug] [MainThread]: Command `dbt debug` failed at 10:00:18.447248 after 0.12 seconds
+[0m10:00:18.447418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091c83b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d755e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e86030>]}
+[0m10:00:18.447546 [debug] [MainThread]: Flushing usage events
+[0m10:00:18.842566 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:11:29.712954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc09460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d61d400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aed4110>]}
+
+
+============================== 10:11:29.715303 | 7b0fe6c7-4504-4301-8882-9310d07b6ae6 ==============================
+[0m10:11:29.715303 [info ] [MainThread]: Running with dbt=1.10.15
+[0m10:11:29.715548 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'use_colors': 'True', 'log_path': 'logs', 'printer_width': '80', 'debug': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'profiles_dir': '/Users/rmep/.dbt', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'version_check': 'True', 'quiet': 'False', 'invocation_command': 'dbt debug', 'no_print': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'empty': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'partial_parse': 'True'}
+[0m10:11:29.722783 [info ] [MainThread]: dbt version: 1.10.15
+[0m10:11:29.722932 [info ] [MainThread]: python version: 3.12.12
+[0m10:11:29.723036 [info ] [MainThread]: python path: /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/.venv/bin/python3
+[0m10:11:29.723133 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m10:11:29.807734 [info ] [MainThread]: Using profiles dir at /Users/rmep/.dbt
+[0m10:11:29.807935 [info ] [MainThread]: Using profiles.yml file at /Users/rmep/.dbt/profiles.yml
+[0m10:11:29.808060 [info ] [MainThread]: Using dbt_project.yml file at /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/dbt_project.yml
+[0m10:11:29.808197 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m10:11:29.808421 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.12215012, "process_in_blocks": "0", "process_kernel_time": 0.101221, "process_mem_max_rss": "124944384", "process_out_blocks": "0", "process_user_time": 0.469962}
+[0m10:11:29.808580 [debug] [MainThread]: Command `dbt debug` failed at 10:11:29.808549 after 0.12 seconds
+[0m10:11:29.808696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d157bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c04c4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d774aa0>]}
+[0m10:11:29.808847 [debug] [MainThread]: Flushing usage events
+[0m10:11:30.652097 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:16:01.521455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109594da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088de690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094cc9b0>]}
+
+
+============================== 10:16:01.523755 | 84fcdbb9-9e4d-4ed5-ab38-dafbe59c8927 ==============================
+[0m10:16:01.523755 [info ] [MainThread]: Running with dbt=1.10.15
+[0m10:16:01.523987 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'fail_fast': 'False', 'introspect': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'version_check': 'True', 'profiles_dir': '/Users/rmep/.dbt', 'log_path': 'logs', 'log_cache_events': 'False', 'printer_width': '80', 'write_json': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'target_path': 'None', 'invocation_command': 'dbt debug', 'quiet': 'False', 'log_format': 'default', 'no_print': 'None', 'empty': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False'}
+[0m10:16:01.530905 [info ] [MainThread]: dbt version: 1.10.15
+[0m10:16:01.531058 [info ] [MainThread]: python version: 3.12.12
+[0m10:16:01.531159 [info ] [MainThread]: python path: /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/.venv/bin/python3
+[0m10:16:01.531253 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m10:16:01.610043 [info ] [MainThread]: Using profiles dir at /Users/rmep/.dbt
+[0m10:16:01.610254 [info ] [MainThread]: Using profiles.yml file at /Users/rmep/.dbt/profiles.yml
+[0m10:16:01.610378 [info ] [MainThread]: Using dbt_project.yml file at /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/dbt_project.yml
+[0m10:16:01.610515 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m10:16:01.610735 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.11535879, "process_in_blocks": "0", "process_kernel_time": 0.101963, "process_mem_max_rss": "124747776", "process_out_blocks": "0", "process_user_time": 0.468569}
+[0m10:16:01.610896 [debug] [MainThread]: Command `dbt debug` failed at 10:16:01.610861 after 0.12 seconds
+[0m10:16:01.611019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109661430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10979e6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089c42f0>]}
+[0m10:16:01.611138 [debug] [MainThread]: Flushing usage events
+[0m10:16:02.011528 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,16 @@
+f1_data_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /Users/rmep/Documents/GitHub/EDEM_MDA2526/ALUMNOS/MDAB/RICARDO_EDREIRA_PENAS/DBT/f1_data_dbt.duckdb
+      threads: 4
+      extensions:
+        - dbt_duckdb_extensions.geospatial
+      use_threads: true
+      extensions_config:
+        dbt_duckdb_extensions.geospatial:
+          enabled: true
+          load_on_connect: true
+          srid: 4326
+  name: f1_data_dbt             

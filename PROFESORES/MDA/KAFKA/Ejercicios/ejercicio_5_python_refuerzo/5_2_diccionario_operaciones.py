@@ -29,3 +29,16 @@ print("Producto sin stock:", producto)
 # 1. Añade una clave "color" con el valor "gris".
 # 2. Cambia la marca a "HP".
 # 3. Elimina la clave "precio".
+
+# EJERCICIOS:
+# 1. Añade una clave "color" con el valor "gris".
+producto["color"] = "gris"
+
+# 2. Cambia la marca a "HP".
+producto["marca"] = "HP"
+
+# 3. Elimina la clave "precio".
+del producto["precio"]
+
+# Mostrar diccionario final
+print("Producto final:", producto)
