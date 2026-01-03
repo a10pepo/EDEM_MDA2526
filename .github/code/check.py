@@ -152,15 +152,36 @@ def check_profesores_modified():
     Exits with error code 1 if any PROFESORES files are modified.
     """
     try:
-        # Get the list of modified files
+        # Try multiple approaches to get modified files
+        modified_files = []
+        
+        # Approach 1: Try origin/main...HEAD (works locally)
         result = subprocess.run(
             ['git', 'diff', '--name-only', 'origin/main...HEAD'],
             capture_output=True,
-            text=True,
-            check=True
+            text=True
         )
         
-        modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        if result.returncode == 0 and result.stdout.strip():
+            modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        else:
+            # Approach 2: Try HEAD^..HEAD (works for push events)
+            result = subprocess.run(
+                ['git', 'diff', '--name-only', 'HEAD^..HEAD'],
+                capture_output=True,
+                text=True
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+            else:
+                # Approach 3: Get changed files from git status (last resort)
+                result = subprocess.run(
+                    ['git', 'diff', '--name-only', 'HEAD'],
+                    capture_output=True,
+                    text=True
+                )
+                if result.returncode == 0:
+                    modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
         
         print(f"\n🔍 Verificando archivos modificados... Total: {len(modified_files)}")
         
@@ -177,10 +198,8 @@ def check_profesores_modified():
         else:
             print("✅ No se detectaron modificaciones en la carpeta PROFESORES")
             
-    except subprocess.CalledProcessError as e:
-        # If git diff fails, we might not be in a PR context
-        # In that case, we'll skip this check
-        print("⚠️  No se pudo verificar archivos modificados (posiblemente no es un PR)")
+    except Exception as e:
+        print("⚠️  No se pudo verificar archivos modificados")
         print(f"Error: {e}")
         pass
 
