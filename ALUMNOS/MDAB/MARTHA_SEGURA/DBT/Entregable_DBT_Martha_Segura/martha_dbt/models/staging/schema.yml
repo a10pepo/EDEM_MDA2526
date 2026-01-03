@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: staging__customers
+    description: "Vista limpia de clientes desde la tabla raw."
+  - name: staging__orders
+    description: "Vista limpia de pedidos."
+  - name: staging__items
+    description: "Vista limpia de líneas de pedido (productos por pedido)."

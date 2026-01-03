@@ -1,0 +1,30 @@
+[0m09:53:25.964900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002541D5486E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002541DD05090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002541F45FED0>]}
+
+
+============================== 09:53:25.988196 | 66478552-2246-4308-85dd-0fad4856f4ed ==============================
+[0m09:53:25.988196 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:53:25.989500 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\ger14\\.dbt', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt init DBT_German', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m09:53:26.465437 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ger14\.dbt
+[0m09:53:26.488149 [debug] [MainThread]: Starter project path: C:\Users\ger14\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\GERMAN_DEVIS\DBT\venv\Lib\site-packages\dbt\include\starter_project
+[0m09:53:26.531643 [info ] [MainThread]: 
+Your new dbt project "DBT_German" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:53:26.532537 [info ] [MainThread]: Setting up your profile.
+[0m09:53:50.039052 [info ] [MainThread]: Profile DBT_German written to C:\Users\ger14\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m09:53:50.042522 [debug] [MainThread]: Command `dbt init` succeeded at 09:53:50.042123 after 24.28 seconds
+[0m09:53:50.043727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002541F4AA650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002541DC9E690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002541F513020>]}
+[0m09:53:50.044838 [debug] [MainThread]: Flushing usage events
+[0m09:53:50.809582 [debug] [MainThread]: An error was encountered while trying to flush usage events

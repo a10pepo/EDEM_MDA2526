@@ -1,0 +1,366 @@
+piloto,nacionalidad_piloto,equipos_historicos,temporada_debut,ultima_temporada,total_carreras,total_victorias,total_podios,total_puntos,porcentaje_victorias
+Lewis Hamilton,British,"McLaren, Mercedes",2007,2024,356,105,202,4820.5,29.49
+Michael Schumacher,German,"Ferrari, Jordan, Mercedes, Benetton",1991,2012,308,91,155,1566.0,29.55
+Max Verstappen,Dutch,"Toro Rosso, Red Bull",2015,2024,209,63,112,2912.5,30.14
+Sebastian Vettel,German,"BMW Sauber, Red Bull, Aston Martin, Ferrari, Toro Rosso",2007,2022,300,53,122,3098.0,17.67
+Alain Prost,French,"Renault, Williams, Ferrari, McLaren",1980,1993,202,51,106,798.5,25.25
+Ayrton Senna,Brazilian,"Williams, McLaren, Team Lotus, Toleman",1984,1994,162,41,80,614.0,25.31
+Fernando Alonso,Spanish,"Aston Martin, Renault, Alpine F1 Team, Minardi, McLaren, Ferrari",2001,2024,404,32,106,2329.0,7.92
+Nigel Mansell,British,"McLaren, Williams, Ferrari, Team Lotus",1980,1995,192,31,59,482.0,16.15
+Jackie Stewart,British,"BRM, Tyrrell, March, Matra-Ford",1965,1973,100,27,43,360.0,27.0
+Niki Lauda,Austrian,"McLaren, Ferrari, Brabham-Alfa Romeo, Brabham-Ford, Brabham, BRM, March, March-Ford",1971,1985,174,25,54,420.5,14.37
+Jim Clark,British,"Lotus-Ford, Lotus-BRM, Lotus-Climax, Team Lotus",1960,1968,73,25,32,274.0,34.25
+Juan Fangio,Argentine,"Maserati, Ferrari, Alfa Romeo, Mercedes",1950,1958,58,24,35,279.14,41.38
+Nico Rosberg,German,"Williams, Mercedes",2006,2016,206,23,57,1594.5,11.17
+Nelson Piquet,Brazilian,"Brabham-Alfa Romeo, Brabham, Brabham-Ford, Williams, Ensign, McLaren, Team Lotus, Benetton",1978,1991,207,23,60,485.5,11.11
+Damon Hill,British,"Williams, Jordan, Brabham, Arrows",1992,1999,122,22,42,360.0,18.03
+Kimi Räikkönen,Finnish,"Sauber, Ferrari, McLaren, Alfa Romeo, Lotus F1",2001,2021,352,21,103,1873.0,5.97
+Mika Häkkinen,Finnish,"Team Lotus, McLaren",1991,2001,165,20,51,420.0,12.12
+Stirling Moss,British,"Lotus-Climax, Cooper-Climax, Team Lotus, Vanwall, Connaught, BRM, Mercedes, Maserati, HWM, ERA, Ferguson, Cooper",1951,1961,73,16,24,186.5,21.92
+Jenson Button,British,"Brawn, Williams, McLaren, BAR, Renault, Benetton, Honda",2000,2017,309,15,50,1235.0,4.85
+Emerson Fittipaldi,Brazilian,"McLaren, Lotus-Ford, Fittipaldi, Lotus-Pratt &amp; Whitney, Team Lotus",1970,1980,149,14,35,281.0,9.4
+Graham Hill,British,"Brabham, BRM, Embassy Hill, Lotus-Ford, Team Lotus, Lotus-BRM, Lola, Shadow",1958,1975,179,14,36,289.0,7.82
+Jack Brabham,Australian,"Lotus-Climax, Cooper-Climax, Brabham-Climax, Maserati, Brabham, Brabham-Ford, Brabham-Repco, Cooper",1955,1970,129,14,31,261.0,10.85
+Alberto Ascari,Italian,"Ferrari, Maserati, Lancia",1950,1955,36,13,17,140.0,36.11
+David Coulthard,British,"McLaren, Williams, Red Bull",1994,2008,247,13,62,535.0,5.26
+Alan Jones,Australian,"Surtees, Williams, Hesketh, Embassy Hill, Lola, Shadow, Arrows",1975,1986,117,12,24,206.0,10.26
+Carlos Reutemann,Argentine,"Team Lotus, Brabham-Alfa Romeo, Brabham, Williams, Ferrari",1972,1982,146,12,45,310.0,8.22
+Mario Andretti,American,"Parnelli, Williams, Ferrari, Alfa Romeo, Lotus-Ford, Team Lotus, March",1968,1982,129,12,19,180.0,9.3
+Jacques Villeneuve,Canadian,"BMW Sauber, Renault, BAR, Sauber, Williams",1996,2006,165,11,23,235.0,6.67
+Felipe Massa,Brazilian,"Sauber, Ferrari, Williams",2002,2017,271,11,41,1167.0,4.06
+Rubens Barrichello,Brazilian,"Brawn, Stewart, Jordan, Ferrari, Williams, Honda",1993,2011,326,11,68,658.0,3.37
+James Hunt,British,"McLaren, Hesketh, Wolf, March",1973,1979,93,10,23,179.0,10.75
+Ronnie Peterson,Swedish,"March, March-Ford, Tyrrell, March-Alfa Romeo, Team Lotus",1970,1978,123,10,26,206.0,8.13
+Jody Scheckter,South African,"Wolf, Tyrrell, Ferrari, McLaren",1972,1980,113,10,33,255.0,8.85
+Valtteri Bottas,Finnish,"Williams, Alfa Romeo, Mercedes, Sauber",2013,2024,247,10,67,1788.0,4.05
+Gerhard Berger,Austrian,"Benetton, Arrows, ATS, Ferrari, McLaren",1984,1997,210,10,48,385.0,4.76
+Mark Webber,Australian,"Red Bull, Jaguar, Williams, Minardi",2002,2013,217,9,42,1047.5,4.15
+Daniel Ricciardo,Australian,"Red Bull, Renault, RB F1 Team, McLaren, AlphaTauri, HRT, Toro Rosso",2011,2024,257,8,32,1320.0,3.11
+Jacky Ickx,Belgian,"Ligier, Cooper-Maserati, Iso Marlboro, Brabham-Ford, Ensign, Ferrari, McLaren, Team Lotus, Matra, Wolf",1967,1979,121,8,25,181.0,6.61
+Charles Leclerc,Monegasque,"Ferrari, Sauber",2018,2024,149,8,43,1363.0,5.37
+Denny Hulme,New Zealander,"McLaren, Brabham-Climax, McLaren-Ford, McLaren-BRM, Brabham-Repco",1965,1974,112,8,33,248.0,7.14
+Juan Pablo Montoya,Colombian,"McLaren, Williams",2001,2006,95,7,30,307.0,7.37
+René Arnoux,French,"Renault, Martini, Surtees, Ferrari, Ligier",1978,1989,164,7,22,181.0,4.27
+Ralf Schumacher,German,"Williams, Jordan, Toyota",1997,2007,180,6,27,329.0,3.33
+Jochen Rindt,Austrian,"Brabham-Repco, Brabham-BRM, Team Lotus, Cooper-Climax, Cooper-Maserati, Lotus-Ford",1964,1970,62,6,13,109.0,9.68
+Gilles Villeneuve,Canadian,"Ferrari, McLaren",1977,1982,68,6,13,107.0,8.82
+Tony Brooks,British,"Cooper-Climax, Vanwall, Ferrari, BRM",1956,1961,41,6,10,75.0,14.63
+Riccardo Patrese,Italian,"Williams, Alfa Romeo, Brabham, Benetton, Shadow, Arrows",1977,1993,257,6,37,281.0,2.33
+Sergio Pérez,Mexican,"Sauber, McLaren, Racing Point, Red Bull, Force India",2011,2024,283,6,39,1585.0,2.12
+John Surtees,British,"Cooper-Climax, Team Lotus, Ferrari, Surtees, BRM, Cooper-Maserati, McLaren-Ford, Honda, Lola",1960,1972,112,6,24,180.0,5.36
+Jacques Laffite,French,"Iso Marlboro, Williams, Ligier",1974,1986,180,6,33,228.0,3.33
+Clay Regazzoni,Swiss,"BRM, Ensign, Williams, Ferrari, Shadow",1970,1980,138,5,28,212.0,3.62
+Keke Rosberg,Finnish,"Wolf, Theodore, ATS, McLaren, Williams, Fittipaldi",1978,1986,128,5,17,159.5,3.91
+John Watson,British,"Brabham, Surtees, Team Lotus, McLaren, Penske",1973,1985,154,5,20,169.0,3.25
+Michele Alboreto,Italian,"Minardi, Footwork, Ferrari, Lola, Tyrrell, Larrousse, Arrows",1981,1994,215,5,23,186.5,2.33
+Nino Farina,Italian,"Ferrari, Alfa Romeo",1950,1955,37,5,20,127.33,13.51
+Dan Gurney,American,"Porsche, Eagle-Climax, Brabham-Repco, McLaren-Ford, Eagle-Weslake, Brabham-Climax, Lotus-BRM, Ferrari, Brabham, BRM",1959,1970,87,4,19,133.0,4.6
+Bruce McLaren,New Zealander,"Cooper-Climax, McLaren, Eagle-Weslake, McLaren-Ford, McLaren-BRM, McLaren-Serenissima, Cooper",1958,1970,103,4,27,196.5,3.88
+Eddie Irvine,British,"Jordan, Ferrari, Jaguar",1993,2002,147,4,26,191.0,2.72
+Carlos Sainz,Spanish,"Toro Rosso, McLaren, Ferrari, Renault",2015,2024,208,4,27,1203.5,1.92
+Lando Norris,British,McLaren,2019,2024,128,4,26,950.0,3.13
+Didier Pironi,French,"Ligier, Ferrari, Tyrrell",1978,1982,72,3,13,101.0,4.17
+Heinz-Harald Frentzen,German,"Jordan, Williams, Sauber, Prost, Arrows",1994,2003,159,3,18,174.0,1.89
+Thierry Boutsen,Belgian,"Ligier, Jordan, Williams, Arrows, Benetton",1983,1993,164,3,15,132.0,1.83
+Phil Hill,American,"ATS, Eagle-Climax, Cooper-Climax, Lotus-BRM, Maserati, Ferrari",1958,1966,52,3,16,98.0,5.77
+Mike Hawthorn,British,"Ferrari, Vanwall, Maserati, BRM, Cooper",1952,1958,48,3,18,127.64,6.25
+George Russell,British,"Mercedes, Williams",2019,2024,128,3,15,664.0,2.34
+Giancarlo Fisichella,Italian,"Renault, Benetton, Force India, Sauber, Minardi, Ferrari, Jordan",1996,2009,231,3,19,275.0,1.3
+Peter Collins,British,"HWM, Ferrari, Vanwall, Maserati",1952,1958,37,3,9,47.0,8.11
+Johnny Herbert,British,"Jaguar, Benetton, Tyrrell, Ligier, Stewart, Team Lotus, Sauber",1989,2000,165,3,7,98.0,1.82
+Jean-Pierre Jabouille,French,"Iso Marlboro, Surtees, Ligier, Tyrrell, Renault",1974,1981,55,2,2,21.0,3.64
+Patrick Tambay,French,"Renault, Lola, Theodore, Ligier, Ferrari, McLaren, Ensign, Surtees",1977,1986,122,2,11,103.0,1.64
+Jo Siffert,Swiss,"March, Brabham-BRM, Cooper-Maserati, Brabham-Climax, Lotus-BRM, Lotus-Climax, Lotus-Ford, BRM",1962,1971,100,2,6,68.0,2.0
+Wolfgang von Trips,German,"Porsche, Cooper-Maserati, Ferrari",1956,1961,28,2,6,56.0,7.14
+Maurice Trintignant,French,"Cooper, Gordini, Lola, Aston Martin, Ferrari, Vanwall, BRM, Cooper-Maserati, Maserati, Simca, Lotus-Climax, Cooper-Climax, Bugatti",1950,1964,87,2,10,72.33,2.3
+Patrick Depailler,French,"Ligier, Alfa Romeo, Tyrrell",1972,1980,95,2,19,141.0,2.11
+Elio de Angelis,Italian,"Shadow, Brabham, Team Lotus",1979,1986,110,2,9,122.0,1.82
+Peter Revson,American,"Shadow, Tyrrell, McLaren, Lotus-BRM, Lotus-Climax",1964,1974,31,2,8,61.0,6.45
+Pedro Rodríguez,Mexican,"Ferrari, BRM, Cooper-Maserati, Lotus-Climax, Lotus-BRM",1963,1971,54,2,7,71.0,3.7
+José Froilán González,Argentine,"Talbot-Lago, Ferrari, Vanwall, Maserati",1950,1960,29,2,15,77.64,6.9
+Oscar Piastri,Australian,McLaren,2023,2024,46,2,10,347.0,4.35
+Carlos Pace,Brazilian,"Brabham, Surtees, Brabham-Alfa Romeo, March",1972,1977,73,1,6,58.0,1.37
+Richie Ginther,American,"Ferrari, BRM, Cooper-Maserati, Scarab, Eagle-Climax, Honda",1960,1967,54,1,14,107.0,1.85
+Jim Rathmann,American,"Epperly, Wetteroth, Watson, Kurtis Kraft",1950,1960,12,1,4,29.0,8.33
+Piero Taruffi,Italian,"Vanwall, Ferrari, Alfa Romeo, Mercedes",1950,1956,18,1,5,41.0,5.56
+Jochen Mass,German,"March, Arrows, ATS, McLaren, Surtees",1973,1982,114,1,8,71.0,0.88
+François Cevert,French,"March, Tyrrell",1970,1973,47,1,13,89.0,2.13
+Alessandro Nannini,Italian,"Minardi, Benetton",1986,1990,77,1,9,65.0,1.3
+Olivier Panis,French,"BAR, Prost, Toyota, Ligier",1994,2004,158,1,5,76.0,0.63
+Ludovico Scarfiotti,Italian,"Ferrari, Cooper-BRM, Eagle-Weslake",1963,1968,13,1,1,17.0,7.69
+Giancarlo Baghetti,Italian,"Lotus-Ford, Ferrari, BRM, Brabham-Climax, ATS",1961,1967,26,1,1,14.0,3.85
+Jean Alesi,French,"Benetton, Prost, Tyrrell, Ferrari, Sauber, Jordan",1989,2001,202,1,32,241.0,0.5
+Vittorio Brambilla,Italian,"Alfa Romeo, Surtees, March",1974,1980,78,1,1,15.5,1.28
+Rodger Ward,American,"Kuzma, Bromme, Watson, Kurtis Kraft, Lotus-BRM, Lesovsky, Pawl",1951,1963,12,1,2,14.0,8.33
+Lorenzo Bandini,Italian,"BRM, Ferrari, Cooper-Maserati",1961,1967,44,1,8,58.0,2.27
+Pastor Maldonado,Venezuelan,"Lotus F1, Williams",2011,2015,96,1,1,76.0,1.04
+Esteban Ocon,French,"Renault, Alpine F1 Team, Force India, Manor Marussia",2016,2024,156,1,4,440.0,0.64
+Jarno Trulli,Italian,"Renault, Prost, Toyota, Jordan, Minardi, Lotus",1997,2011,256,1,11,246.5,0.39
+Jo Bonnier,Swedish,"Brabham-BRM, McLaren-Ford, McLaren-BRM, Porsche, Honda, McLaren, Lotus-Ford, BRM, Cooper-Maserati, Brabham-Climax, Maserati, Cooper-Climax",1956,1971,109,1,1,39.0,0.92
+Heikki Kovalainen,Finnish,"Lotus, Lotus F1, McLaren, Caterham, Renault",2007,2013,112,1,4,105.0,0.89
+Gunnar Nilsson,Swedish,Team Lotus,1976,1977,32,1,4,31.0,3.13
+Innes Ireland,British,"BRM, Lotus-BRM, Lotus-Climax, Team Lotus, BRP",1959,1966,55,1,4,47.0,1.82
+Luigi Musso,Italian,"Ferrari, Maserati",1953,1958,26,1,7,44.0,3.85
+Pierre Gasly,French,"AlphaTauri, Toro Rosso, Red Bull, Alpine F1 Team",2017,2024,154,1,5,426.0,0.65
+Robert Kubica,Polish,"Williams, Alfa Romeo, Renault, BMW Sauber",2006,2021,99,1,12,274.0,1.01
+Jean-Pierre Beltoise,French,"McLaren-Ford, Matra-Ford, Matra, BRM",1967,1974,87,1,8,77.0,1.15
+Peter Gethin,British,"McLaren-Ford, Lola, BRM, McLaren",1970,1974,30,1,1,11.0,3.33
+Nick Heidfeld,German,"Renault, Prost, BMW Sauber, Jordan, Williams, Sauber",2000,2011,184,0,13,259.0,0.0
+Anthony Davidson,British,"Super Aguri, Minardi, BAR",2002,2008,24,0,0,0.0,0.0
+Sakon Yamamoto,Japanese,"Spyker, HRT, Super Aguri",2006,2010,21,0,0,0.0,0.0
+Zsolt Baumgartner,Hungarian,"Minardi, Jordan",2003,2004,20,0,0,1.0,0.0
+Roberto Moreno,Brazilian,"Jordan, Team Lotus, Coloni, Forti, Minardi, Euro Brun, Andrea Moda, Benetton, AGS",1982,1995,74,0,1,15.0,0.0
+Fabrizio Barbazza,Italian,"Minardi, AGS",1991,1993,20,0,0,2.0,0.0
+Ivan Capelli,Italian,"Jordan, Ferrari, Leyton House, March, AGS, Tyrrell",1985,1993,98,0,3,31.0,0.0
+Geoff Lees,British,"Shadow, Tyrrell, Theodore, Ensign, Williams, Team Lotus",1978,1982,12,0,0,0.0,0.0
+Arturo Merzario,Italian,"Fittipaldi, Iso Marlboro, Williams, Ferrari, Shadow, Merzario, March, Wolf",1972,1979,84,0,0,11.0,0.0
+Ian Ashley,British,"BRM, Brabham, Hesketh, Williams, Token",1974,1977,11,0,0,0.0,0.0
+Mark Donohue,American,"Penske, March, McLaren",1971,1975,15,0,1,8.0,0.0
+Wilson Fittipaldi,Brazilian,"Fittipaldi, Brabham",1972,1975,38,0,0,3.0,0.0
+François Migault,French,"Lola, BRM, Embassy Hill, Williams, Connew",1972,1975,15,0,0,0.0,0.0
+John Miles,British,"Team Lotus, Lotus-Ford",1969,1970,15,0,0,2.0,0.0
+Guy Ligier,French,"Brabham-Repco, Cooper-Maserati",1966,1967,13,0,0,1.0,0.0
+Ronnie Bucknum,American,Honda,1964,1966,11,0,0,2.0,0.0
+Willy Mairesse,Belgian,"Ferrari, Lotus-Climax",1960,1963,12,0,1,7.0,0.0
+Wolfgang Seidel,German,"Maserati, Lotus-BRM, Lotus-Climax, Cooper-Climax, Veritas, Cooper, Emeryson",1953,1962,13,0,0,0.0,0.0
+Horace Gould,British,"Maserati, Cooper",1954,1960,18,0,0,2.0,0.0
+André Simon,French,"Mercedes, Maserati, Simca, Ferrari, Gordini",1951,1957,12,0,0,0.0,0.0
+Paul Frère,Belgian,"Simca, Ferrari, HWM, Gordini",1952,1956,11,0,1,11.0,0.0
+Bruno Senna,Brazilian,"Renault, HRT, Williams",2010,2012,46,0,0,33.0,0.0
+Luciano Burti,Brazilian,"Jaguar, Prost",2000,2001,15,0,0,0.0,0.0
+Stefano Modena,Italian,"Brabham, Jordan, Tyrrell, Euro Brun",1987,1992,81,0,2,17.0,0.0
+Sébastien Buemi,Swiss,Toro Rosso,2009,2011,55,0,0,29.0,0.0
+Marc Surer,Swiss,"Brabham, Ensign, Arrows, Theodore, ATS",1979,1986,88,0,0,17.0,0.0
+Huub Rothengatter,Dutch,"Zakspeed, Osella, Spirit",1984,1986,28,0,0,0.0,0.0
+Giedo van der Garde,Dutch,Caterham,2013,2013,19,0,0,0.0,0.0
+Marcus Ericsson,Swedish,"Sauber, Caterham",2014,2018,97,0,0,18.0,0.0
+Antonio Giovinazzi,Italian,"Sauber, Alfa Romeo",2017,2021,62,0,0,21.0,0.0
+Sébastien Bourdais,French,Toro Rosso,2008,2009,27,0,0,6.0,0.0
+Vitantonio Liuzzi,Italian,"Toro Rosso, HRT, Force India, Red Bull",2005,2011,81,0,0,26.0,0.0
+Tiago Monteiro,Portuguese,"MF1, Jordan, Spyker MF1",2005,2006,37,0,1,7.0,0.0
+Patrick Friesacher,Austrian,Minardi,2005,2005,11,0,0,3.0,0.0
+Antônio Pizzonia,Brazilian,"Jaguar, Williams",2003,2005,20,0,0,8.0,0.0
+Taki Inoue,Japanese,"Footwork, Simtek",1994,1995,18,0,0,0.0,0.0
+Eric van de Poele,Belgian,"Fondmetal, Brabham, Lambo",1991,1992,29,0,0,0.0,0.0
+Ricardo Zunino,Argentine,"Brabham, Brabham-Ford, Tyrrell",1979,1981,11,0,0,0.0,0.0
+Harald Ertl,Austrian,"ATS, Ensign, Hesketh",1975,1980,29,0,0,0.0,0.0
+Hans Binder,Austrian,"Ensign, Surtees, Wolf, Penske, ATS",1976,1978,15,0,0,0.0,0.0
+David Purley,British,"LEC, Token, March",1973,1977,11,0,0,0.0,0.0
+Lella Lombardi,Italian,"March, Brabham-Ford, Brabham, Williams",1974,1976,17,0,0,0.5,0.0
+Reine Wisell,Swedish,"March, Team Lotus, Lotus-Ford, BRM, Lotus-Pratt &amp; Whitney",1970,1974,23,0,1,13.0,0.0
+Vic Elford,British,"McLaren-Ford, BRM, Cooper-BRM, Cooper-Maserati",1968,1971,13,0,0,8.0,0.0
+Piers Courage,British,"Lotus-BRM, Brabham-Ford, BRM, De Tomaso",1967,1970,29,0,2,20.0,0.0
+Eugenio Castellotti,Italian,"Lancia, Ferrari",1955,1957,17,0,3,19.5,0.0
+Felice Bonetto,Italian,"Maserati, Alfa Romeo, Milano",1950,1953,17,0,2,17.5,0.0
+Vitaly Petrov,Russian,"Renault, Caterham",2010,2012,58,0,1,64.0,0.0
+Allan McNish,British,Toyota,2002,2002,17,0,0,0.0,0.0
+Luis Pérez-Sala,Spanish,Minardi,1988,1989,32,0,0,1.0,0.0
+Oscar Larrauri,Argentine,Euro Brun,1988,1989,21,0,0,0.0,0.0
+Jules Bianchi,French,Marussia,2013,2014,34,0,0,2.0,0.0
+Max Chilton,British,Marussia,2013,2014,35,0,0,0.0,0.0
+Yuki Tsunoda,Japanese,"AlphaTauri, RB F1 Team",2021,2024,90,0,0,87.0,0.0
+Timo Glock,German,"Toyota, Virgin, Jordan, Marussia",2004,2012,95,0,3,51.0,0.0
+Scott Speed,American,Toro Rosso,2006,2007,28,0,0,0.0,0.0
+Christijan Albers,Dutch,"Minardi, MF1, Spyker MF1, Spyker",2005,2007,46,0,0,4.0,0.0
+Ricardo Zonta,Brazilian,"Jordan, Toyota, BAR",1999,2005,38,0,0,3.0,0.0
+Justin Wilson,British,"Minardi, Jaguar",2003,2003,16,0,0,1.0,0.0
+Takuma Sato,Japanese,"BAR, Super Aguri, Jordan",2002,2008,91,0,1,44.0,0.0
+Ralph Firman,Irish,Jordan,2003,2003,14,0,0,1.0,0.0
+Pedro Lamy,Portuguese,"Minardi, Team Lotus",1993,1996,32,0,0,1.0,0.0
+Olivier Grouillard,French,"Osella, Tyrrell, AGS, Ligier, Fondmetal",1989,1992,62,0,0,1.0,0.0
+Chico Serra,Brazilian,"Fittipaldi, Arrows",1981,1983,32,0,0,1.0,0.0
+Beppe Gabbiani,Italian,"Surtees, Osella",1978,1981,17,0,0,0.0,0.0
+Patrick Nève,Belgian,"Ensign, Brabham-Ford, March",1976,1977,13,0,0,0.0,0.0
+Bob Evans,British,"Team Lotus, Brabham-Ford, BRM",1975,1976,12,0,0,0.0,0.0
+Chris Amon,New Zealander,"Matra, Lotus-BRM, Lotus-Climax, Ensign, Ferrari, Amon, BRM, Cooper-Maserati, Wolf, Tecno, March, Tyrrell, Lola, Brabham-BRM",1963,1976,106,0,11,83.0,0.0
+Mike Hailwood,British,"McLaren, Lotus-BRM, Lotus-Climax, Surtees, Lola",1963,1974,51,0,2,29.0,0.0
+Derek Bell,British,"Tecno, McLaren-Ford, Surtees, Brabham, Ferrari",1968,1974,14,0,0,1.0,0.0
+Nanni Galli,Italian,"Iso Marlboro, Ferrari, March-Alfa Romeo, Tecno, March-Ford, McLaren-Alfa Romeo",1970,1973,17,0,0,0.0,0.0
+Trevor Taylor,British,"Shannon, Lotus-BRM, Lotus-Climax, Cooper-Climax, BRP",1959,1966,29,0,1,8.0,0.0
+Tony Maggs,South African,"BRM, Lotus-BRM, Cooper-Climax, Lotus-Climax",1961,1965,27,0,3,26.0,0.0
+Carel Godin de Beaufort,Dutch,"Cooper-Climax, Maserati, Porsche",1957,1964,31,0,0,4.0,0.0
+Ron Flockhart,British,"Maserati, BRM, Connaught, Team Lotus, Cooper-Climax, Cooper",1954,1960,15,0,1,5.0,0.0
+Louis Chiron,Monegasque,"Maserati, Lancia, OSCA, Talbot-Lago",1950,1958,17,0,1,4.0,0.0
+Luigi Villoresi,Italian,"Ferrari, Maserati, Lancia",1950,1956,35,0,8,49.0,0.0
+Toulo de Graffenried,Swiss,"Alfa Romeo, Maserati",1950,1956,23,0,0,9.0,0.0
+Philippe Étancelin,French,"Maserati, Talbot-Lago",1950,1952,12,0,0,3.0,0.0
+Adrian Sutil,German,"Spyker, Force India, Sauber",2007,2014,128,0,0,124.0,0.0
+Robert Doornbos,Dutch,"Red Bull, Minardi",2005,2006,11,0,0,0.0,0.0
+Marc Gené,Spanish,"Minardi, Williams",1999,2004,36,0,0,5.0,0.0
+Nicola Larini,Italian,"Lambo, Osella, Ligier, Ferrari, Coloni, Sauber",1987,1997,75,0,1,7.0,0.0
+Pierluigi Martini,Italian,"Toleman, Dallara, Minardi",1984,1995,123,0,0,18.0,0.0
+Yannick Dalmas,French,"Larrousse, AGS",1987,1994,50,0,0,0.0,0.0
+Maurício Gugelmin,Brazilian,"March, Leyton House, Jordan",1988,1992,80,0,1,10.0,0.0
+Johnny Cecotto,Venezuelan,"Theodore, Toleman",1983,1984,23,0,0,1.0,0.0
+Eliseo Salazar,Chilean,"RAM, Ensign, March, ATS, Osella",1981,1983,37,0,0,3.0,0.0
+Roberto Guerrero,Colombian,"Ensign, Theodore",1982,1983,29,0,0,0.0,0.0
+Brian Henton,British,"Team Lotus, Tyrrell, Boro, Arrows, Toleman, March",1975,1982,37,0,0,0.0,0.0
+Emilio de Villota,Spanish,"Brabham-Ford, McLaren, March",1976,1982,14,0,0,0.0,0.0
+Larry Perkins,Australian,"Boro, BRM, Surtees, Amon, Brabham-Alfa Romeo",1974,1977,15,0,0,0.0,0.0
+Dave Charlton,South African,"Brabham-Repco, Brabham-Climax, Team Lotus, McLaren, Lotus-Ford, Brabham",1965,1975,13,0,0,0.0,0.0
+Howden Ganley,New Zealander,"Iso Marlboro, BRM, March, Maki",1971,1974,39,0,0,10.0,0.0
+Brian Redman,British,"Cooper-Maserati, BRM, Surtees, Cooper-BRM, McLaren, De Tomaso, Shadow",1968,1974,13,0,1,8.0,0.0
+Mike Beuttler,British,"March, March-Ford",1971,1973,29,0,0,0.0,0.0
+David Walker,Australian,"Team Lotus, Lotus-Pratt &amp; Whitney",1971,1972,11,0,0,0.0,0.0
+George Eaton,Canadian,BRM,1969,1971,13,0,0,0.0,0.0
+Mike Spence,British,"Lotus-BRM, Lotus-Climax, BRM",1963,1968,36,0,1,27.0,0.0
+Masten Gregory,American,"Lotus-BRM, Lotus-Climax, Cooper-Climax, Behra-Porsche, Cooper-Maserati, Maserati, BRM, Lola",1957,1965,46,0,3,21.0,0.0
+Cliff Allison,British,"Maserati, Lotus-Climax, Team Lotus, Ferrari",1958,1961,18,0,1,11.0,0.0
+Stuart Lewis-Evans,British,"Vanwall, Connaught",1957,1958,14,0,2,16.0,0.0
+Johnny Claes,Belgian,"Ferrari, Connaught, Talbot-Lago, Maserati, Simca, Gordini, HWM",1950,1955,25,0,0,0.0,0.0
+Ken Wharton,British,"Vanwall, Maserati, Cooper, Frazer Nash",1952,1955,16,0,0,3.0,0.0
+Prince Bira,Thai,"Gordini, Connaught, Maserati, Simca",1950,1954,19,0,0,8.0,0.0
+Nico Hülkenberg,German,"Williams, Racing Point, Sauber, Haas F1 Team, Renault, Aston Martin, Force India",2010,2024,230,0,0,563.0,0.0
+Alex Yoong,Malaysian,Minardi,2001,2002,16,0,0,0.0,0.0
+Mick Schumacher,German,Haas F1 Team,2021,2022,44,0,0,12.0,0.0
+Guanyu Zhou,Chinese,"Sauber, Alfa Romeo",2022,2024,68,0,0,16.0,0.0
+Liam Lawson,New Zealander,"RB F1 Team, AlphaTauri",2023,2024,11,0,0,6.0,0.0
+Tarso Marques,Brazilian,Minardi,1996,2001,26,0,0,0.0,0.0
+Pedro Diniz,Brazilian,"Sauber, Forti, Ligier, Arrows",1995,2000,99,0,0,10.0,0.0
+Jan Lammers,Dutch,"Shadow, March, Theodore, ATS, Ensign",1979,1992,41,0,0,0.0,0.0
+Eddie Cheever,American,"Renault, Lola, Tyrrell, Arrows, Osella, Theodore, Ligier, Alfa Romeo, Hesketh",1978,1989,143,0,9,70.0,0.0
+Kazuki Nakajima,Japanese,Williams,2007,2009,36,0,0,9.0,0.0
+Nelson Piquet Jr.,Brazilian,Renault,2008,2009,28,0,1,19.0,0.0
+Pedro de la Rosa,Spanish,"HRT, Sauber, McLaren, Jaguar, Arrows",1999,2012,107,0,1,35.0,0.0
+Christian Klien,Austrian,"Red Bull, Jaguar, HRT",2004,2010,51,0,0,14.0,0.0
+Jos Verstappen,Dutch,"Stewart, Footwork, Simtek, Minardi, Arrows, Tyrrell, Benetton",1994,2003,107,0,2,17.0,0.0
+Aguri Suzuki,Japanese,"Zakspeed, Larrousse, Lola, Jordan, Ligier, Footwork",1988,1995,88,0,1,8.0,0.0
+Raul Boesel,Brazilian,"Ligier, March",1982,1983,30,0,0,0.0,0.0
+Jean-Pierre Jarier,French,"Shadow-Ford, Osella, ATS, Tyrrell, Penske, Shadow, March, March-Ford, Team Lotus, Ligier, Shadow-Matra",1971,1983,143,0,3,31.5,0.0
+Jackie Oliver,British,"Shadow, BRM-Ford, McLaren, Lotus-Ford, BRM",1967,1977,51,0,2,13.0,0.0
+Henri Pescarolo,French,"March, March-Ford, Politoys, Surtees, BRM, Iso Marlboro, Matra",1968,1976,59,0,1,12.0,0.0
+Rikky von Opel,Liechtensteiner,"Brabham, Ensign",1973,1974,13,0,0,0.0,0.0
+Lucien Bianchi,Belgian,"ENB, Emeryson, Lola, Cooper-BRM, BRM, Lotus-Climax, Cooper-Climax",1959,1968,19,0,1,6.0,0.0
+Peter Arundell,British,"Lotus-BRM, Lotus-Climax, Team Lotus",1962,1966,15,0,2,12.0,0.0
+Jim Hall,American,"Lotus-BRM, Lotus-Climax, Team Lotus",1960,1963,12,0,0,3.0,0.0
+Ian Burgess,British,"Cooper, Cooper-Maserati, Scirocco, Cooper-Climax, Lotus-Climax",1958,1963,26,0,0,0.0,0.0
+Hans Herrmann,German,"Cooper-Maserati, Maserati, BRM, Mercedes, Veritas, Porsche",1953,1961,20,0,1,10.0,0.0
+Olivier Gendebien,Belgian,"Lotus-Climax, Cooper-Climax, Ferrari, Emeryson",1956,1961,17,0,2,18.0,0.0
+Jack Fairman,British,"Ferguson, Cooper, HWM, Cooper-Maserati, Cooper-Climax, Connaught, BRM",1953,1961,13,0,0,5.0,0.0
+Carlos Menditeguy,Argentine,"Gordini, Cooper-Maserati, Maserati",1953,1960,12,0,1,9.0,0.0
+Tony Bettenhausen,American,"Epperly, Deidt, Kuzma, Watson, Kurtis Kraft",1950,1960,13,0,1,11.0,0.0
+Roberto Mieres,Argentine,"Maserati, Gordini",1953,1955,17,0,0,13.0,0.0
+Onofre Marimón,Argentine,Maserati,1951,1954,12,0,2,8.14,0.0
+Mika Salo,Finnish,"BAR, Tyrrell, Arrows, Toyota, Team Lotus, Ferrari, Sauber",1994,2002,111,0,2,33.0,0.0
+Toranosuke Takagi,Japanese,"Tyrrell, Arrows",1998,1999,32,0,0,0.0,0.0
+Bernd Schneider,German,"Zakspeed, Arrows",1988,1990,32,0,0,0.0,0.0
+Romain Grosjean,French,"Renault, Haas F1 Team, Lotus F1",2009,2020,181,0,10,391.0,0.0
+Pierre-Henri Raphanel,French,"Larrousse, Coloni, Rial",1988,1989,17,0,0,0.0,0.0
+Pascal Fabre,French,AGS,1987,1987,12,0,0,0.0,0.0
+Jérôme d'Ambrosio,Belgian,"Lotus F1, Virgin",2011,2012,20,0,0,0.0,0.0
+Roberto Merhi,Spanish,Manor Marussia,2015,2015,13,0,0,0.0,0.0
+Jolyon Palmer,British,Renault,2016,2017,37,0,0,9.0,0.0
+Brendon Hartley,New Zealander,Toro Rosso,2017,2018,25,0,0,4.0,0.0
+Nyck de Vries,Dutch,"Williams, AlphaTauri",2022,2023,11,0,0,2.0,0.0
+Cristiano da Matta,Brazilian,Toyota,2003,2004,28,0,0,13.0,0.0
+Mark Blundell,British,"McLaren, Ligier, Brabham, Tyrrell",1991,1995,63,0,3,32.0,0.0
+Bertrand Gachot,Belgian,"Pacific, Larrousse, Onyx, Rial, Jordan, Coloni",1989,1995,84,0,0,5.0,0.0
+Jean-Christophe Boullion,French,Sauber,1995,1995,11,0,0,3.0,0.0
+Gabriele Tarquini,Italian,"Fondmetal, Coloni, Tyrrell, AGS, Osella",1987,1995,78,0,0,1.0,0.0
+Piercarlo Ghinzani,Italian,"Zakspeed, Osella, Toleman, Ligier",1981,1989,111,0,0,2.0,0.0
+Philippe Streiff,French,"Renault, AGS, Tyrrell, Ligier",1984,1988,54,0,1,11.0,0.0
+Charles Pic,French,"Caterham, Marussia",2012,2013,39,0,0,0.0,0.0
+Esteban Gutiérrez,Mexican,"Sauber, Haas F1 Team",2013,2016,59,0,0,6.0,0.0
+Daniil Kvyat,Russian,"Red Bull, Toro Rosso, AlphaTauri",2014,2020,112,0,3,202.0,0.0
+Will Stevens,British,"Caterham, Manor Marussia",2014,2015,19,0,0,0.0,0.0
+Pascal Wehrlein,German,"Manor Marussia, Sauber",2016,2017,39,0,0,6.0,0.0
+Rio Haryanto,Indonesian,Manor Marussia,2016,2016,12,0,0,0.0,0.0
+Nikita Mazepin,Russian,Haas F1 Team,2021,2021,22,0,0,0.0,0.0
+Jan Magnussen,Danish,"Stewart, McLaren",1995,1998,25,0,0,1.0,0.0
+Satoru Nakajima,Japanese,"Team Lotus, Tyrrell",1987,1991,80,0,0,16.0,0.0
+Emanuele Pirro,Italian,"Benetton, Dallara",1989,1991,40,0,0,3.0,0.0
+Alex Caffi,Italian,"Arrows, Osella, Footwork, Dallara",1986,1991,75,0,0,6.0,0.0
+Johnny Dumfries,British,Team Lotus,1986,1986,16,0,0,3.0,0.0
+Mauro Baldi,Italian,"Arrows, Spirit, Alfa Romeo",1982,1985,41,0,0,5.0,0.0
+Kevin Magnussen,Danish,"McLaren, Haas F1 Team, Renault",2014,2024,186,0,1,196.0,0.0
+Sergey Sirotkin,Russian,Williams,2018,2018,21,0,0,1.0,0.0
+Érik Comas,French,"Larrousse, Ligier",1991,1994,63,0,0,7.0,0.0
+Paul Belmondo,French,"Pacific, March",1992,1994,27,0,0,0.0,0.0
+Jyrki Järvilehto,Finnish,"Dallara, Sauber, Benetton, Onyx",1989,1994,70,0,1,10.0,0.0
+Philippe Alliot,French,"Ligier, McLaren, RAM, Larrousse",1984,1994,115,0,0,7.0,0.0
+Michael Andretti,American,McLaren,1993,1993,13,0,1,7.0,0.0
+Corrado Fabi,Italian,"Osella, Brabham",1983,1984,18,0,0,0.0,0.0
+Derek Daly,Irish,"Theodore, Tyrrell, March, Williams, Ensign, Hesketh",1978,1982,64,0,0,15.0,0.0
+Brett Lunger,American,"Surtees, McLaren, Ensign, Hesketh, March",1975,1978,42,0,0,0.0,0.0
+Ian Scheckter,South African,"March, Tyrrell, Team Lotus, Williams, Hesketh",1974,1977,20,0,0,0.0,0.0
+Tom Pryce,British,"Token, Shadow-Ford, Shadow",1974,1977,42,0,2,19.0,0.0
+George Follmer,American,Shadow,1973,1973,12,0,1,5.0,0.0
+Andrea de Adamich,Italian,"McLaren-Alfa Romeo, Surtees, Brabham, March-Alfa Romeo, Ferrari",1968,1973,36,0,0,6.0,0.0
+Bob Anderson,British,"Lola, Brabham-Climax",1963,1967,26,0,1,8.0,0.0
+André Pilette,Belgian,"Emeryson, Gordini, Ferrari, Connaught, Scirocco, Lotus-Climax, Talbot-Lago",1951,1964,15,0,0,2.0,0.0
+Jean Behra,French,"Gordini, Maserati, Ferrari, BRM",1952,1959,57,0,9,51.0,0.0
+Lance Macklin,British,"Maserati, HWM",1952,1955,15,0,0,0.0,0.0
+Peter Whitehead,British,"Cooper, Alta, Ferrari",1950,1954,12,0,1,4.0,0.0
+Lucas di Grassi,Brazilian,Virgin,2010,2010,19,0,0,0.0,0.0
+Enrique Bernoldi,Brazilian,Arrows,2001,2002,29,0,0,0.0,0.0
+Ricardo Rosset,Brazilian,"Footwork, Tyrrell, Lola",1996,1998,30,0,0,0.0,0.0
+Stefan Johansson,Swedish,"Toleman, AGS, Tyrrell, Shadow, Onyx, Footwork, Ligier, McLaren, Ferrari, Spirit",1980,1991,103,0,12,88.0,0.0
+Alexander Wurz,Austrian,"Williams, McLaren, Benetton",1997,2007,69,0,3,45.0,0.0
+Narain Karthikeyan,Indian,"HRT, Jordan",2005,2012,48,0,0,5.0,0.0
+Giorgio Pantano,Italian,Jordan,2004,2004,14,0,0,0.0,0.0
+Gianmaria Bruni,Italian,Minardi,2004,2004,18,0,0,0.0,0.0
+Gianni Morbidelli,Italian,"Footwork, Dallara, Ferrari, Sauber, Minardi",1990,1997,70,0,1,8.5,0.0
+Andrea Montermini,Italian,"Pacific, Simtek, Forti",1994,1996,28,0,0,0.0,0.0
+Karl Wendlinger,Austrian,"Sauber, Leyton House, March",1991,1995,42,0,0,14.0,0.0
+David Brabham,Australian,"Brabham, Simtek",1990,1994,30,0,0,0.0,0.0
+Christian Fittipaldi,Brazilian,"Footwork, Minardi",1992,1994,43,0,0,12.0,0.0
+Derek Warwick,British,"Arrows, Renault, Toleman, Brabham, Footwork, Team Lotus",1981,1993,162,0,4,71.0,0.0
+Danny Sullivan,American,Tyrrell,1983,1983,15,0,0,2.0,0.0
+Slim Borgudd,Swedish,"ATS, Tyrrell",1981,1982,15,0,0,1.0,0.0
+Rupert Keegan,British,"Williams, Hesketh, Surtees, March",1977,1982,37,0,0,0.0,0.0
+Siegfried Stohr,Italian,Arrows,1981,1981,13,0,0,0.0,0.0
+Alex Ribeiro,Brazilian,"March, Hesketh, Fittipaldi",1976,1979,20,0,0,0.0,0.0
+Vern Schuppan,Australian,"Surtees, Embassy Hill, Ensign",1974,1977,12,0,0,0.0,0.0
+Guy Edwards,British,"Hesketh, BRM, Lola",1974,1977,16,0,0,0.0,0.0
+Pete Lovely,American,"Cooper-Castellotti, Team Lotus, Lotus-Ford",1959,1971,11,0,0,0.0,0.0
+Johnny Servoz-Gavin,French,"Cooper-BRM, Matra, March, Matra-Ford",1967,1970,12,0,1,9.0,0.0
+Richard Attwood,British,"Cooper-Maserati, BRM, Lotus-Ford, Lotus-BRM",1964,1969,17,0,1,11.0,0.0
+Roy Salvadori,British,"Cooper-Climax, Vanwall, Connaught, Ferrari, BRM, Cooper-Maserati, Maserati, Lola, Aston Martin, Cooper",1952,1962,51,0,2,19.0,0.0
+Robert Manzon,French,"Ferrari, Simca, Gordini",1950,1956,29,0,2,16.0,0.0
+Karl Kling,German,Mercedes,1954,1955,12,0,2,17.0,0.0
+Yves Cabantous,French,"HWM, Talbot-Lago",1950,1953,13,0,0,5.0,0.0
+Gastón Mazzacane,Argentine,"Prost, Minardi",2000,2001,21,0,0,0.0,0.0
+Luca Badoer,Italian,"Minardi, Forti, Ferrari, Lola",1993,2009,58,0,0,0.0,0.0
+Ukyo Katayama,Japanese,"Minardi, Tyrrell, Larrousse",1992,1997,97,0,0,5.0,0.0
+Martin Brundle,British,"McLaren, Williams, Jordan, Ligier, Brabham, Tyrrell, Benetton, Zakspeed",1984,1996,165,0,9,98.0,0.0
+Éric Bernard,French,"Team Lotus, Ligier, Larrousse, Lola",1989,1994,47,0,1,10.0,0.0
+Andrea de Cesaris,Italian,"Sauber, Brabham, Minardi, Dallara, Rial, Ligier, Jordan, Alfa Romeo, McLaren, Tyrrell",1980,1994,214,0,5,59.0,0.0
+Hector Rebaque,Mexican,"Rebaque, Team Lotus, Brabham, Hesketh",1977,1981,58,0,0,13.0,0.0
+Hans-Joachim Stuck,German,"Brabham, Shadow, ATS, March",1974,1979,81,0,2,29.0,0.0
+Rolf Stommelen,German,"Lola, March, Arrows, Brabham, Surtees, Hesketh, Embassy Hill, Brabham-Alfa Romeo",1970,1978,61,0,1,14.0,0.0
+Tim Schenken,Australian,"Iso Marlboro, Surtees, Brabham, Team Lotus, Trojan, De Tomaso",1970,1974,36,0,1,7.0,0.0
+Silvio Moser,Swiss,"Brabham-Ford, Bellasi, Cooper-ATS, Brabham-Repco",1967,1971,18,0,0,3.0,0.0
+Jackie Lewis,British,"Cooper, Cooper-Climax, BRM",1961,1962,11,0,0,3.0,0.0
+Giorgio Scarlatti,Italian,"Cooper-Castellotti, Maserati, Cooper-Maserati, Cooper-Climax, De Tomaso-Osca, Ferrari",1956,1961,15,0,0,1.0,0.0
+Harry Schell,American,"Maserati, BRM, Vanwall, Ferrari, Cooper-Climax, Talbot-Lago, Gordini, Cooper",1950,1960,64,0,2,32.0,0.0
+Paco Godia,Spanish,Maserati,1951,1958,14,0,0,6.0,0.0
+Andy Linden,American,"Kurtis Kraft, Nichels, Schroeder, Sherman, Stevens",1951,1957,11,0,0,5.0,0.0
+Louis Rosier,French,"Talbot-Lago, Ferrari, Maserati",1950,1956,39,0,2,18.0,0.0
+Karun Chandhok,Indian,"Lotus, HRT",2010,2011,11,0,0,0.0,0.0
+Pedro Chaves,Portuguese,Coloni,1991,1991,13,0,0,0.0,0.0
+Claudio Langes,Italian,Euro Brun,1990,1990,14,0,0,0.0,0.0
+Bruno Giacomelli,Italian,"Life, Alfa Romeo, McLaren, Toleman",1977,1990,82,0,1,14.0,0.0
+Kamui Kobayashi,Japanese,"Caterham, Sauber, Toyota",2009,2014,76,0,1,125.0,0.0
+Paolo Barilla,Italian,Minardi,1989,1990,15,0,0,0.0,0.0
+Christian Danner,German,"Osella, Arrows, Zakspeed, Rial",1985,1989,47,0,0,4.0,0.0
+Adrián Campos,Spanish,Minardi,1987,1988,21,0,0,0.0,0.0
+Teo Fabi,Italian,"Benetton, Toleman, Brabham",1982,1987,71,0,2,23.0,0.0
+Manfred Winkelhock,German,"ATS, Arrows, Brabham, RAM",1980,1985,55,0,0,2.0,0.0
+François Hesnault,French,"Brabham, Ligier, Renault",1984,1985,20,0,0,0.0,0.0
+Jean-Éric Vergne,French,Toro Rosso,2012,2014,58,0,0,51.0,0.0
+Felipe Nasr,Brazilian,Sauber,2015,2016,40,0,0,29.0,0.0
+Logan Sargeant,American,Williams,2023,2024,36,0,0,1.0,0.0
+Jonathan Palmer,British,"Tyrrell, Zakspeed, RAM, Williams",1983,1989,88,0,0,14.0,0.0
+Alexander Albon,Thai,"Red Bull, Williams, Toro Rosso",2019,2024,105,0,2,238.0,0.0
+Nicholas Latifi,Canadian,Williams,2020,2022,61,0,0,9.0,0.0
+Alessandro Zanardi,Italian,"Minardi, Team Lotus, Jordan, Williams",1991,1999,44,0,0,1.0,0.0
+Esteban Tuero,Argentine,Minardi,1998,1998,16,0,0,0.0,0.0
+Shinji Nakano,Japanese,"Prost, Minardi",1997,1998,33,0,0,2.0,0.0
+Julian Bailey,British,"Tyrrell, Team Lotus",1988,1991,20,0,0,1.0,0.0
+Gregor Foitek,Swiss,"Brabham, Rial, Onyx, Euro Brun",1989,1990,22,0,0,0.0,0.0
+Martin Donnelly,British,"Team Lotus, Arrows",1989,1990,15,0,0,0.0,0.0
+Jaime Alguersuari,Spanish,Toro Rosso,2009,2011,46,0,0,31.0,0.0
+Stefan Bellof,German,Tyrrell,1984,1985,22,0,0,4.0,0.0
+Paul di Resta,British,"Force India, Williams",2011,2017,59,0,0,121.0,0.0
+Stoffel Vandoorne,Belgian,McLaren,2016,2018,42,0,0,26.0,0.0
+Lance Stroll,Canadian,"Aston Martin, Williams, Racing Point",2017,2024,168,0,3,286.0,0.0

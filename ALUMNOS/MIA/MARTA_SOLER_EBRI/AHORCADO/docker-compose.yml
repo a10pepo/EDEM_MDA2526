@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+  ahorcado:
+    image: python:3.11-slim
+    working_dir: /ahorcado
+    volumes:
+      - ./:/ahorcado    
+    env_file: .env
+    command: >
+      sh -c "pip install -q -r requirements.txt 2>/dev/null && python main.py 2>/dev/null"
+    depends_on:
+      - postgres
+    environment:
+      - is_api=False
+
+volumes:
+  postgresDB:

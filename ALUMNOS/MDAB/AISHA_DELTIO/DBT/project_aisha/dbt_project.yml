@@ -1,0 +1,33 @@
+name: 'project_aisha'
+version: '1.0.0'
+
+profile: 'project_aisha'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  project_aisha:
+    # 1. Configuración por defecto: Todo lo que hagas será una 'view' (vista)
+    +materialized: view
+    
+    # 2. Configuración específica para la carpeta 'marts' (tablas finales)
+    marts:
+      # Queremos que las tablas finales sean tablas físicas para que vayan rápido
+      +materialized: table
+      
+      # Copia esta tabla a un archivo CSV en la carpeta exports.
+      +post-hook: 
+        - "COPY {{ this }} TO 'exports/{{ this.name }}.csv' (HEADER, DELIMITER ',')"
+    
+    

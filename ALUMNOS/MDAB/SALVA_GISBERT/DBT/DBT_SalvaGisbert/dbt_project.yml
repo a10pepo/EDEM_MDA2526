@@ -1,0 +1,32 @@
+name: DBT_SalvaGisbert
+
+profile: DBT_SalvaGisbert
+
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+test-paths: ["tests"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  DBT_SalvaGisbert:
+    # Materialize staging models as views, and marts as tables
+    staging:
+      +materialized: view
+      +tags: ["staging"]
+    intermediate:
+      +materialized: view
+      +tags: ["intermediate"]
+    marts:
+      +materialized: table
+
+seeds:
+  DBT_SalvaGisbert:      # <--- Esto debe coincidir con el 'name:' de la línea 1
+    classic:             # El nombre de tu archivo (classic.csv)
+      +column_types:
+        champion_award: varchar  # <--- Aquí forzamos el tipo de dato
