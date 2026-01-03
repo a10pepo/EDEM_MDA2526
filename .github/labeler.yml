@@ -101,3 +101,7 @@ ESTADISTICA:
 entregable:
 - changed-files:
   - any-glob-to-any-file: 'ALUMNOS/**'
+
+PROFESORES:
+- changed-files:
+  - any-glob-to-any-file: 'PROFESORES/**'
