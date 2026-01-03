@@ -160,7 +160,9 @@ def check_profesores_modified():
             check=True
         )
         
-        modified_files = result.stdout.strip().split('\n')
+        modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        
+        print(f"\n🔍 Verificando archivos modificados... Total: {len(modified_files)}")
         
         # Check if any file is in PROFESORES folder
         profesores_files = [f for f in modified_files if f.startswith('PROFESORES/')]
@@ -175,10 +177,11 @@ def check_profesores_modified():
         else:
             print("✅ No se detectaron modificaciones en la carpeta PROFESORES")
             
-    except subprocess.CalledProcessError:
+    except subprocess.CalledProcessError as e:
         # If git diff fails, we might not be in a PR context
         # In that case, we'll skip this check
         print("⚠️  No se pudo verificar archivos modificados (posiblemente no es un PR)")
+        print(f"Error: {e}")
         pass
 
         
