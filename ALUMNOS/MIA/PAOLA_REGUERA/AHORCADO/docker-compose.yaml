@@ -1,0 +1,28 @@
+
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgresDB:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+
+  ahorcado:
+    image: python:3.11-slim
+    working_dir: /ahorcado
+    volumes:
+      - ./:/ahorcado
+    env_file: .env
+    depends_on:
+      - postgres
+    environment:
+      - is_api=True
+      - PYTHONUNBUFFERED=1  # ← Añade esta línea
+    command: >
+      sh -c "pip install --upgrade pip && pip install --no-cache-dir --root-user-action=ignore -r requirements.txt && python main.py"
+volumes:
+  postgresDB:

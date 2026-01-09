@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "dev"."main"."results";
+    -- dbt seed --
+    
+          COPY "dev"."main"."results" FROM 'C:\Users\laele\OneDrive\Documentos\GitHub\EDEM_MDA2526\alumnos\mdab\elena_morales\dbt\proyecto_elena\seeds\results.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

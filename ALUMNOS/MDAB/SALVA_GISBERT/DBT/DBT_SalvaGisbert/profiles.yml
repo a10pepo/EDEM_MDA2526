@@ -1,0 +1,10 @@
+DBT_SalvaGisbert:
+  outputs:
+    dev:
+      type: duckdb
+      path: 'bbdd/bodybuilding.duckdb'
+      threads: 4
+  target: dev
+
+
+  

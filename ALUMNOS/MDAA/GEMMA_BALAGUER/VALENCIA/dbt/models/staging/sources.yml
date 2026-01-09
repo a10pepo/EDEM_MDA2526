@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: valenbisi_source
+    description: "Datos crudos de estaciones Valenbisi."
+    database: pruebadb
+    schema: public
+    tables:
+      - name: valenbisi
+        description: "Tabla cruda de Valenbisi con datos de estaciones."

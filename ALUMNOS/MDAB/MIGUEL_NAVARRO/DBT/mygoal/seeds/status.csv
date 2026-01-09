@@ -1,0 +1,20 @@
+statusId,name,state,description
+1,STATUS_SCHEDULED,pre,Scheduled
+2,STATUS_IN_PROGRESS,in,In Progress
+5,STATUS_CANCELED,post,Canceled
+6,STATUS_POSTPONED,post,Postponed
+7,STATUS_DELAYED,in,Delayed
+8,STATUS_SUSPENDED,post,Suspended
+23,STATUS_HALFTIME,in,Halftime
+24,STATUS_OVERTIME,in,Overtime
+25,STATUS_FIRST_HALF,in,First Half
+26,STATUS_SECOND_HALF,in,Second Half
+27,STATUS_ABANDONED,post,Abandoned
+28,STATUS_FULL_TIME,post,Full Time
+44,STATUS_SHOOTOUT,in,Shootout
+45,STATUS_FINAL_AET,post,Final Score - After Extra Time
+46,STATUS_FINAL_AGT,post,Final Score - After Golden Goal
+47,STATUS_FINAL_PEN,post,Final Score - After Penalties
+51,STATUS_FINAL_ABANDONED,post,Final Score - Abandoned
+53,STATUS_END_OF_REGULATION,in,End of Regulation
+54,STATUS_END_OF_EXTRATIME,in,End of Extra Time

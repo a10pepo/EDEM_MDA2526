@@ -1,0 +1,27 @@
+services:
+  api:
+    container_name: api
+    build: 
+      context: .
+      dockerfile: Dockerfile.api
+    image: api:latest
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import socket; s = socket.socket(socket.AF_INET, socket.SOCK_STREAM); s.connect(('127.0.0.1', 5000))\""] 
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+  consumir_api:
+    container_name: consumir_api
+    build: 
+      context: .
+      dockerfile: Dockerfile.consumir_api
+    image: consumir_api:latest
+    depends_on:
+      api: 
+        condition: service_healthy

@@ -85,6 +85,7 @@ for e in range(100):
     # Pausa de 1 segundo entre mensajes para simular un flujo en tiempo real.
     time.sleep(1)
 
+
 # ============================================
 # FLUSH FINAL
 # ============================================
@@ -92,9 +93,8 @@ for e in range(100):
 # Como produce() es asíncrono, algunos mensajes pueden quedar en el buffer
 # cuando el programa termina. flush() espera a que TODOS los mensajes pendientes
 # se envíen al broker antes de cerrar el programa.
-producer.flush()
-
+pending = producer.flush()
 # Comprobamos si hubo mensajes que no se pudieron entregar.
 # flush() devuelve el número de mensajes que no se enviaron.
-if producer.flush() != 0:
-    print("Algunos mensajes no se pudieron entregar correctamente.")
+if pending != 0:
+    print(f"{pending} mensajes no se pudieron entregar.")

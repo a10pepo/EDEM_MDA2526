@@ -1,0 +1,13 @@
+1. Para iniciar el contenedor de docker con kafka y spark
+docker-compose up --build
+
+1.2 Verificar que he hecho la instalación correctamente del 
+docker-compose ejecutando las 2 primeras celdas del notebook
+workspace/notebook.
+
+2. Para ejecutar el generador de mensajes de kafka desde dentro del contenedor
+docker exec -it pyspark_lab bash
+python kafka-producer/producer.py
+
+3. Para copiar la URL donde está disponible el contenedor
+docker-compose logs -f jupyter
