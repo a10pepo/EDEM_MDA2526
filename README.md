@@ -422,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-01-09 17:15:18
+Last Checked: 2026-01-09 18:06:43
 
 
 Entregas Grupo MDA A
@@ -433,9 +433,9 @@ Entregas Grupo MDA A
 <th>AWS_ESPECIFICOS</th>
 <th>TERRAFORM</th>
 <th>CHATBIG</th>
-<th>*CHUCK*</th>
+<th>CHUCK</th>
 <th>GCP_ESPECIFICOS</th>
-<th>VALENCIA</th>
+<th>*VALENCIA*</th>
 <th>*PYSPARK*</th>
 <th>CHAT</th>
 <th>*APIS*</th>
@@ -554,7 +554,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>8.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -710,7 +710,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -741,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2026-01-09 17:15:18
+Last Checked: 2026-01-09 18:06:43
 
 Entregas Grupo MDA B
 <table>
@@ -751,9 +751,9 @@ Entregas Grupo MDA B
 <th>AWS_ESPECIFICOS</th>
 <th>TERRAFORM</th>
 <th>CHATBIG</th>
-<th>*CHUCK*</th>
+<th>CHUCK</th>
 <th>GCP_ESPECIFICOS</th>
-<th>VALENCIA</th>
+<th>*VALENCIA*</th>
 <th>*PYSPARK*</th>
 <th>CHAT</th>
 <th>*APIS*</th>
@@ -1241,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2026-01-09 17:15:18
+Last Checked: 2026-01-09 18:06:43
 
