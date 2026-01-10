@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS valenbisi_raw (
+    station_id TEXT,
+    station_name TEXT,
+    latitude DOUBLE PRECISION,
+    longitude DOUBLE PRECISION,
+    bikes_available INTEGER,
+    docks_available INTEGER,
+    station_status TEXT,
+    query_timestamp TIMESTAMP
+);
+
