@@ -4,11 +4,12 @@
 # Este script muestra cómo crear diccionarios dinámicos usando f-strings y condicionales.
 
 # Ejemplo funcional:
-for e in range(3):
+for e in range(5):
     data = {
         'Proyecto': f'Innovación #{e+1}',
         'Presupuesto': f'{(e+1)*5000} EUR',
-        'Estado': 'Aprobado' if e % 2 == 0 else 'En revisión'
+        'Estado': 'Aprobado' if e % 2 == 0 else 'En revisión',
+        "responsable":"Equipo X"
     }
     print(data)
 

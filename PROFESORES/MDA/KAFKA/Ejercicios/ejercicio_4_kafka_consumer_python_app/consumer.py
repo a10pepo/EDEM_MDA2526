@@ -13,7 +13,7 @@ config = {
 consumer = Consumer(config)
 
 # Nos suscribimos al tópico que queremos leer
-topic_kafka = 'proyectos_innovacion'
+topic_kafka = 'V2Cpower_interesados'
 consumer.subscribe([topic_kafka])
 
 print(f"Esperando mensajes del tópico '{topic_kafka}'...")

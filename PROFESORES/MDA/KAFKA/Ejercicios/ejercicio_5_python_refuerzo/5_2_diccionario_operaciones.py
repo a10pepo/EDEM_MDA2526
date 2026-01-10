@@ -6,14 +6,15 @@
 producto = {
     "nombre": "Portátil",
     "precio": 1200,
-    "stock": 10
+    "stock": 10,
+    "color": "gris"
 }
 
 print("Producto inicial:", producto)
 print("Tipo de producto:", type(producto))
 
 # Añadir una nueva clave
-producto["marca"] = "Lenovo"
+producto["marca"] = "HP"
 print("Producto con marca:", producto)
 
 # Modificar el precio

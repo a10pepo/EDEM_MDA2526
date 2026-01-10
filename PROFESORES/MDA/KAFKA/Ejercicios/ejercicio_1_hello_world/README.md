@@ -32,7 +32,7 @@ Piensa en Kafka como un **buzón gigante** donde:
 - **Zookeeper**: Servicio que coordina los brokers (en versiones modernas se usa KRaft, pero aquí usamos Zookeeper).
 - **Tópico**: Canal donde se publican mensajes.
 - **Partición**: Divide el tópico en segmentos para paralelismo.
-- **Replicación**: Copias para tolerancia a fallos.
+- **Replicación**: Copias para tolerancia a fallos. como un backup. puedes tener partición 100
 - **Productor**: Envía mensajes.
 - **Consumidor**: Lee mensajes.
 
@@ -136,6 +136,7 @@ kafka
 1. Crea un segundo tópico llamado `students` y produce mensajes con nombres.
 2. Abre dos consumidores que lean del topic `students` y observa cómo reciben los mensajes cuando los produces desde otra consola.
 3. ¿Qué pasa si cambias `--from-beginning` por no ponerlo?
+El consumidor se conecta al tópico y se queda esperando. Ignora todo lo que ya estaba ahí. Solo leerá los mensajes que se envíen después de que hayas presionado Enter.
 
 ---
 
