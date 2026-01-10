@@ -1,0 +1,154 @@
+[0m12:23:51.400722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C7FEF6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C7FECE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C7FEFF20>]}
+
+
+============================== 12:23:51.408064 | 9df89f6a-5aef-4973-b44b-c2c439bcbdc7 ==============================
+[0m12:23:51.408064 [info ] [MainThread]: Running with dbt=1.10.15
+[0m12:23:51.409577 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init transformacion_valenbisi', 'cache_selected_only': 'False', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\rmora\\.dbt', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m12:23:51.444051 [debug] [MainThread]: Starter project path: C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\include\starter_project
+[0m12:23:51.462102 [info ] [MainThread]: 
+Your new dbt project "transformacion_valenbisi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:23:51.463103 [info ] [MainThread]: Setting up your profile.
+[0m12:24:46.233400 [error] [MainThread]: Encountered an error:
+
+[0m12:24:46.268391 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\.venv\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m12:24:46.268391 [debug] [MainThread]: Command `dbt init` failed at 12:24:46.268391 after 55.13 seconds
+[0m12:24:46.269605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C80BDF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C86BB0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C866FCB0>]}
+[0m12:24:46.269605 [debug] [MainThread]: Flushing usage events
+[0m12:24:46.680638 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:35.064184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256CF6A8680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D1D7F2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D24887D0>]}
+
+
+============================== 12:29:35.068750 | c1861bd9-2a27-4772-89b5-fd0413cab089 ==============================
+[0m12:29:35.068750 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:29:35.070729 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rmora\\.dbt', 'invocation_command': 'dbt init transformacion_valenbisi', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:29:35.081991 [info ] [MainThread]: A project called transformacion_valenbisi already exists here.
+[0m12:29:35.082991 [debug] [MainThread]: Command `dbt init` succeeded at 12:29:35.082991 after 0.18 seconds
+[0m12:29:35.082991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D1D46F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D1D45940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000256D40B43E0>]}
+[0m12:29:35.083990 [debug] [MainThread]: Flushing usage events
+[0m12:29:35.477469 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:31:01.099863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133E67A8560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133E94229C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133E951B5F0>]}
+
+
+============================== 12:31:01.104688 | 5317cf9d-e1fa-4d62-b864-5fc61731d973 ==============================
+[0m12:31:01.104688 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:31:01.105699 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rmora\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init transformacion_valenbisi', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:31:01.118302 [debug] [MainThread]: Starter project path: C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\include\starter_project
+[0m12:31:01.130097 [info ] [MainThread]: 
+Your new dbt project "transformacion_valenbisi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:31:01.131113 [info ] [MainThread]: Setting up your profile.
+[0m12:33:15.018156 [error] [MainThread]: Encountered an error:
+
+[0m12:33:15.020272 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m12:33:15.021280 [debug] [MainThread]: Command `dbt init` failed at 12:33:15.021280 after 134.16 seconds
+[0m12:33:15.022275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133E67A8560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133E987F500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133E9A10D10>]}
+[0m12:33:15.022275 [debug] [MainThread]: Flushing usage events
+[0m12:33:15.412544 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:33:24.129313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD08E3E6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD05E650D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD08D8F050>]}
+
+
+============================== 12:33:24.135466 | b3e7c7fc-c2d0-4546-ad94-1b4832f70f35 ==============================
+[0m12:33:24.135466 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:33:24.136470 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\rmora\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt init transformacion_valenbisi', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:33:24.147539 [debug] [MainThread]: Starter project path: C:\Users\rmora\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\RAFA_MORATA\VALENCIA_RAFA_MORATA\venv\Lib\site-packages\dbt\include\starter_project
+[0m12:33:24.157064 [info ] [MainThread]: 
+Your new dbt project "transformacion_valenbisi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:33:24.158068 [info ] [MainThread]: Setting up your profile.
+[0m12:34:17.937355 [info ] [MainThread]: Profile transformacion_valenbisi written to C:\Users\rmora\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:34:17.938355 [debug] [MainThread]: Command `dbt init` succeeded at 12:34:17.938355 after 53.94 seconds
+[0m12:34:17.939351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD09B193D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD08EC4560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD06EC8D40>]}
+[0m12:34:17.939351 [debug] [MainThread]: Flushing usage events
+[0m12:34:18.369083 [debug] [MainThread]: An error was encountered while trying to flush usage events
