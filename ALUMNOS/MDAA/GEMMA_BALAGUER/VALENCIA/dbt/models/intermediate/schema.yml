@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: int_valenbisi
+    description: "Modelo intermedio con métricas calculadas para visualización."
+    columns:
+      - name: number
+        description: "Número identificador de la estación."
+        tests:
+          - not_null
+      - name: address
+        description: "Dirección de la estación."
+        tests:
+          - not_null
+      - name: lat
+        description: "Latitud de la estación."
+        tests:
+          - not_null
+      - name: lon
+        description: "Longitud de la estación."
+        tests:
+          - not_null
+      - name: available
+        description: "Número de bicicletas disponibles."
+      - name: free
+        description: "Número de espacios libres."
+      - name: total
+        description: "Número total de espacios."
+      - name: occupancy_pct
+        description: "Porcentaje de ocupación de la estación."
+      - name: open
+        description: "Estado de la estación."
+      - name: updated_at
+        description: "Última actualización de datos."
+      - name: update_jcd
+        description: "Timestamp de actualización JCD."
+  - name: int_dispo
+    description: "Modelo intermedio con estado categórico de cada estación."
+    columns:
+      - name: number
+        description: "Número de estación."
+      - name: address
+        description: "Dirección de la estación."
+      - name: lat
+        description: "Latitud."
+      - name: lon
+        description: "Longitud."
+      - name: open
+        description: "Estado abierto/cerrado de la estación."
+      - name: total
+        description: "Capacidad total de la estación."
+      - name: free
+        description: "Número de espacios libres."
+      - name: available
+        description: "Número de bicicletas disponibles."
+      - name: status
+        description: "Estado categórico de la estación (VACÍA, LLENA, DISPONIBLE, CERRADA)."
+      - name: updated_at
+        description: "Última actualización."
+  - name: int_valenbisi_time
+    description: "Modelo intermedio que calcula métricas diarias de disponibilidad de cada estación."
+    columns:
+      - name: number
+        description: "Número de la estación."
+      - name: address
+        description: "Dirección de la estación."
+      - name: date
+        description: "Fecha de la observación (extraída de updated_at)."
+      - name: avg_available
+        description: "Promedio de bicicletas disponibles durante el día."
+      - name: avg_free
+        description: "Promedio de espacios libres durante el día."
+      - name: avg_total
+        description: "Promedio de la capacidad total de la estación durante el día."
+      - name: avg_occupancy_pct
+        description: "Promedio del porcentaje de ocupación de la estación durante el día (calculado como (total - free)/total * 100)."

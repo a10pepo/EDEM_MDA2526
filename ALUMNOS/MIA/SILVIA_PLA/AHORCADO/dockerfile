@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+WORKDIR /ahorcado
+
+# Copiamos TODOS los archivos de la carpeta actual al contenedor
+COPY . .
+
+# Instalamos dependencias
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Comando por defecto
+CMD ["python", "main.py"]

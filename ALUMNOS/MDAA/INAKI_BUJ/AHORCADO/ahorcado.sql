@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS tabla_ahorcado (
+    palabra VARCHAR(100) NOT NULL,
+    letras_acertadas VARCHAR(100) NOT NULL,
+    letras_falladas VARCHAR(100) NOT NULL,
+    intentos BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    tiempo TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT * FROM tabla_ahorcado;
+

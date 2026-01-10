@@ -1,0 +1,1 @@
+SELECT * FROM ML.EVALUATE(MODEL `dataton25-dataset-balearia.mi_hackaton.modelo_xgboost_FINAL`);

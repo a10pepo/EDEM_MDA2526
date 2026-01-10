@@ -1,0 +1,49 @@
+services:
+  # Servicio 1: La Base de Datos (PostgreSQL)
+  db:
+    image: postgres:16-alpine
+    container_name: ahorcado_db
+    # Usamos el fichero .env para las contraseñas
+    env_file:
+      - .env
+    # Creamos un "volumen" para que los datos no se borren
+    # si apagas el contenedor.
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      # Exponemos el puerto 5432 de la BD al puerto 5433
+      # de tu máquina local (por si quieres conectarte
+      # con un cliente de BD como DBeaver o PgAdmin).
+      - "5433:5432"
+    restart: unless-stopped
+
+  # Servicio 2: La Aplicación (El Ahorcado)
+  app:
+    # Usamos una imagen ligera de Python.
+    image: python:3.11-slim
+    container_name: ahorcado_app
+    # Montamos la carpeta actual (.) dentro del contenedor
+    # en /app. Así, si cambias tu código, el contenedor
+    # lo ve al instante.
+    volumes:
+      - .:/app
+    # Le decimos dónde está el código
+    working_dir: /app
+    # Usamos el .env para la URL de la base de datos
+    env_file:
+      - .env
+    # Comando para instalar dependencias Y LUEGO ejecutar el script
+    # ¡¡CORRECCIÓN AQUÍ!! Usa el nombre correcto del archivo .py
+    command: >
+      sh -c "pip install -r requirements.txt && python Entregable_AHORCADO_Adrián_Alemany.py"
+    # ¡Importante! 'depends_on' le dice a Docker que
+    # no inicie la 'app' hasta que el servicio 'db' esté
+    # (al menos) iniciado.
+    depends_on:
+      - db
+    restart: on-failure
+
+# Definimos el volumen que usará la base de datos
+volumes:
+  postgres_data:
+
