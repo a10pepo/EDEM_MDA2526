@@ -1,7 +1,14 @@
-#Dockerfile para construir el contenedor de las apis
-FROM python:3.14-slim
+#Imagen base con Python
+FROM python:3.12-slim
+
+#Directorio de trabajo dentro del contenedor
 WORKDIR /app
+
+#Copiamos SOLO requirements para aprovechar cache
+COPY requirements.txt .
+
+#Instalamos dependencias
 RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-EXPOSE 5000
+
+#El código NO se copia aquí (vendrá por volumen)
 CMD ["python", "valenbisi_collector.py"]

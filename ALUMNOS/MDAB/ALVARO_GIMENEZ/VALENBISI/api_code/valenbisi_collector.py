@@ -5,17 +5,29 @@ import time as time
 from datetime import datetime
 
 #Definimos y abrimos la conexión a la base de datos (Postgres SQL)
-psycopg2.connect(
-        host="db",             
-        port=5432,
-        database="valenbisi",
-        user="postgres",
-        password="postgres"
-    )
-conn = get_db_connection()
+conn = psycopg2.connect(
+    host="db",          # nombre del servicio en docker-compose
+    port=5432,
+    database="valenbisi",
+    user="postgres",
+    password="postgres"
+)
 cursor = conn.cursor()
 
-#Creamos una función que acondiciones los datos devueltos por la API
+#Definimos la consulta SQL para insertar datos
+INSERT_SQL = """
+INSERT INTO valenbisi_history (
+    station_id,
+    station_name,
+    available_bikes,
+    available_slots,
+    station_status,
+    total_capacity,
+    timestamp
+) VALUES (%s, %s, %s, %s, %s, %s, %s)
+"""
+
+#Creamos una función que acondicione los datos devueltos por la API
 def estructurador(dataset_api_valenbisi):
     return {"timestamp": datetime.now(),
     "station_name": dataset_api_valenbisi["address"], 
@@ -34,7 +46,7 @@ resultados=[]
 while True:
     
     #Buscamos los datos de la API de Valenbisi, cuidado con la paginación, límite de 20 registros
-    offset=20
+    offset=0
     limit=20
     url=f"https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit={limit}&offset={offset}"
 
@@ -52,11 +64,25 @@ while True:
         offset += 20
         url=f"https://valencia.opendatasoft.com/api/explore/v2.1/catalog/datasets/valenbisi-disponibilitat-valenbisi-dsiponibilidad/records?limit={limit}&offset={offset}"
 
-    #Guardamos los datos de la API en la bbdd
+    #Guardamos los datos de la API en la bbdd, dándoles el formato adecuado
+    for r in resultados:
+        cursor.execute(
+            INSERT_SQL,
+            (
+                r["station_id"],
+                r["station_name"],
+                r["data"]["available_bikes"],
+                r["data"]["available_slots"],
+                r["data"]["station_status"],
+                r["data"]["total_capacity"],
+                r["timestamp"]
+            )
+        )
 
+    conn.commit()
 
-
-
+    #Borramos los datos para la siguiente iteracion
+    resultados.clear()
 
     #Paramos el código 5 minutos 
     time.sleep(300)

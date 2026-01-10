@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: postgres:15
+    container_name: valenbisi_db
+    environment:
+      POSTGRES_DB: valenbisi
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d
+
+  collector:
+    build:
+      context: ./VALENBISI/api_code
+      dockerfile: dockerfile
+    container_name: valenbisi_collector
+    depends_on:
+      - db
+    volumes:
+      - ./VALENBISI/api_code:/app
+    command: python valenbisi_collector.py
+
+volumes:
+  pgdata:
