@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: mrt_valenbisi
+    description: "Modelo mart para visualización: resumen por estación."
+    columns:
+      - name: number
+        description: "Número identificador de la estación."
+        tests:
+          - not_null
+      - name: address
+        description: "Dirección de la estación."
+        tests:
+          - not_null
+      - name: lat
+        description: "Latitud de la estación."
+        tests:
+          - not_null
+      - name: lon
+        description: "Longitud de la estación."
+        tests:
+          - not_null
+      - name: total_available
+        description: "Total de bicicletas disponibles."
+      - name: total_free
+        description: "Total de espacios libres."
+      - name: total_capacity
+        description: "Capacidad total de la estación."
+      - name: avg_occupancy_pct
+        description: "Promedio de ocupación de la estación."
+      - name: last_update
+        description: "Última actualización de datos."
+      - name: last_update_jcd
+        description: "Última actualización JCD."
+  - name: mart_summary
+    description: "Resumen por estado de estación: número de estaciones y promedio de disponibilidad."
+    columns:
+      - name: status
+        description: "Estado categórico de la estación (VACÍA, LLENA, DISPONIBLE, CERRADA)."
+      - name: num_stations
+        description: "Cantidad de estaciones en ese estado."
+      - name: avg_bikes_available
+        description: "Promedio de bicicletas disponibles."
+      - name: avg_spaces_free
+        description: "Promedio de espacios libres."
+      - name: last_update
+        description: "Última actualización de datos."
+  - name: mrt_valenbisi_time_summary
+    description: "Mart de resumen temporal diario: métricas agregadas de todas las estaciones para análisis de series temporales."
+    columns:
+      - name: date
+        description: "Fecha de observación."
+      - name: total_available
+        description: "Suma de bicicletas disponibles en todas las estaciones."
+      - name: total_free
+        description: "Suma de espacios libres en todas las estaciones."
+      - name: total_capacity
+        description: "Suma de la capacidad total de todas las estaciones."
+      - name: avg_occupancy_pct
+        description: "Promedio del porcentaje de ocupación de todas las estaciones."

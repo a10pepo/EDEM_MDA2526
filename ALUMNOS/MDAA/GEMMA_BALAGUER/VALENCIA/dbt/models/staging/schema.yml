@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_valenbisi
+    description: "Modelo staging para limpiar los datos de Valenbisi."
+    columns:
+      - name: address
+        description: "Dirección de la estación"
+      - name: number
+        description: "Número de estación"
+      - name: open
+        description: "Indicador de disponibilidad de la estación"
+      - name: available
+        description: "Número de bicicletas disponibles"
+      - name: free
+        description: "Número de anclajes libres"
+      - name: total
+        description: "Número total de anclajes"
+      - name: ticket
+        description: "Tipo de ticket"
+      - name: updated_at
+        description: "Fecha de actualización de la información"
+      - name: lon
+        description: "Longitud"
+      - name: lat
+        description: "Latitud"
+      - name: update_jcd
+        description: "Fecha de actualización del sistema JCD"

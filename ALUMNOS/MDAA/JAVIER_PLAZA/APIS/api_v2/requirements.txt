@@ -1,0 +1,4 @@
+requests
+flask
+flask_httpauth
+flask_jwt_extended
