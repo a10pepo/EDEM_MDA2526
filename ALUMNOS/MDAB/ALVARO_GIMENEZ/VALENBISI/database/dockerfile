@@ -1,0 +1,6 @@
+#Dockerfile to build the database container
+FROM postgres:15.15-trixie
+WORKDIR /fichero_base_Datos
+COPY . /fichero_base_Datos
+EXPOSE 5000
+
