@@ -15,7 +15,7 @@ conn = psycopg2.connect(
 cursor = conn.cursor()
 
 #Definimos la consulta SQL para insertar datos
-INSERT_SQL = """
+insert_sql = """
 INSERT INTO valenbisi_history (
     station_id,
     station_name,
@@ -26,6 +26,7 @@ INSERT INTO valenbisi_history (
     timestamp
 ) VALUES (%s, %s, %s, %s, %s, %s, %s)
 """
+
 
 #Creamos una función que acondicione los datos devueltos por la API
 def estructurador(dataset_api_valenbisi):
@@ -67,7 +68,7 @@ while True:
     #Guardamos los datos de la API en la bbdd, dándoles el formato adecuado
     for r in resultados:
         cursor.execute(
-            INSERT_SQL,
+            insert_sql,
             (
                 r["station_id"],
                 r["station_name"],
@@ -78,7 +79,7 @@ while True:
                 r["timestamp"]
             )
         )
-
+        
     conn.commit()
 
     #Borramos los datos para la siguiente iteracion
@@ -86,3 +87,5 @@ while True:
 
     #Paramos el código 5 minutos 
     time.sleep(300)
+
+
