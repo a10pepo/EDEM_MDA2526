@@ -74,7 +74,7 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 <tr><th>M0</th><td>DBT</td><td>26 nov.</td><td>12 dic.</td></tr>
 <tr><th>M1</th><td>SQL</td><td>10 nov.</td><td>14 nov.</td></tr>
 <tr><th>M1</th><td>APIs</td><td>09 dic.</td><td>23 ene.</td></tr>
-<tr><th>M1</th><td>Kafka</td><td>02 dic.</td><td>02 ene.</td></tr>
+<tr><th>M1</th><td>Kafka</td><td>12 feb.</td><td>02 ene.</td></tr>
 <tr><th>M1</th><td>Spark Streaming</td><td>15 dic.</td><td>06 feb.</td></tr>
 <tr><th>M2</th><td>GCP</td><td>25 feb.</td><td>05 jun.</td></tr>
 <tr><th>M2</th><td>AWS</td><td>24 mar.</td><td>26 jun.</td></tr>
@@ -85,6 +85,7 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 Entregas Grupo MIA
 <table>
 <tr><th>Alumno</th>
+<th>SPOTY</th>
 <th>CLUSTERING</th>
 <th>AHORCADO</th>
 <th>*DOCKER*</th>
@@ -102,6 +103,7 @@ Entregas Grupo MIA
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -112,6 +114,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ALEJANDRO_MORENO'>ALEJANDRO_MORENO</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -128,6 +131,7 @@ Entregas Grupo MIA
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -138,6 +142,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/BRUNO_ESTEVE'>BRUNO_ESTEVE</a></td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
@@ -153,6 +158,7 @@ Entregas Grupo MIA
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/CARLOS_SEVILLANO'>CARLOS_SEVILLANO</a></td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -164,6 +170,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/CLAUDIA_SALGADO'>CLAUDIA_SALGADO</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -178,6 +185,7 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/DAVID_FERNANDEZ'>DAVID_FERNANDEZ</a></td>
 <td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
@@ -192,6 +200,7 @@ Entregas Grupo MIA
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/ENRIQUE_JAVALOYES'>ENRIQUE_JAVALOYES</a></td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -203,6 +212,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FATIMA_CUCART'>FATIMA_CUCART</a></td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
@@ -216,6 +226,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/FELIX_ORTUNO'>FELIX_ORTUNO</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -232,6 +243,7 @@ Entregas Grupo MIA
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -242,6 +254,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/IGNACIO_BENLLOCH'>IGNACIO_BENLLOCH</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -256,18 +269,20 @@ Entregas Grupo MIA
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/IVAN_HUERTAS'>IVAN_HUERTAS</a></td>
 <td>❌</td>
+<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
-<td>❌</td>
 <td>✅</td>
-<td>❌</td>
-<td>2.5</td>
+<td>✅</td>
+<td>✅</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JAVIER_GRACIA'>JAVIER_GRACIA</a></td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
@@ -283,6 +298,7 @@ Entregas Grupo MIA
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JAVIER_LOPEZ'>JAVIER_LOPEZ</a></td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -294,6 +310,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JORGE_GREUS'>JORGE_GREUS</a></td>
+<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
@@ -307,6 +324,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/JOSE_FELIX'>JOSE_FELIX</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -323,6 +341,7 @@ Entregas Grupo MIA
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -333,6 +352,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/MARTA_SOLER_EBRI'>MARTA_SOLER_EBRI</a></td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
@@ -346,8 +366,9 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/PAOLA_REGUERA'>PAOLA_REGUERA</a></td>
-<td>✅</td>
 <td>❌</td>
+<td>✅</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -362,6 +383,7 @@ Entregas Grupo MIA
 <td>❌</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -372,6 +394,7 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/SERGI_ESCORUELA'>SERGI_ESCORUELA</a></td>
+<td>❌</td>
 <td>❌</td>
 <td>❌</td>
 <td>✅</td>
@@ -385,8 +408,9 @@ Entregas Grupo MIA
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/MIA/SILVIA_PLA'>SILVIA_PLA</a></td>
+<td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -398,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2025-12-20 14:18:16
+Last Checked: 2026-01-10 08:56:32
 
 
 Entregas Grupo MDA A
@@ -409,9 +433,9 @@ Entregas Grupo MDA A
 <th>AWS_ESPECIFICOS</th>
 <th>TERRAFORM</th>
 <th>CHATBIG</th>
-<th>*CHUCK*</th>
+<th>CHUCK</th>
 <th>GCP_ESPECIFICOS</th>
-<th>VALENCIA</th>
+<th>*VALENCIA*</th>
 <th>*PYSPARK*</th>
 <th>CHAT</th>
 <th>*APIS*</th>
@@ -516,10 +540,10 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
@@ -530,7 +554,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>8.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -548,7 +572,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -571,7 +595,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -582,7 +606,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -649,7 +673,7 @@ Entregas Grupo MDA A
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
@@ -660,7 +684,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -686,7 +710,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>6.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -717,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2025-12-20 14:18:16
+Last Checked: 2026-01-10 08:56:32
 
 Entregas Grupo MDA B
 <table>
@@ -727,9 +751,9 @@ Entregas Grupo MDA B
 <th>AWS_ESPECIFICOS</th>
 <th>TERRAFORM</th>
 <th>CHATBIG</th>
-<th>*CHUCK*</th>
+<th>CHUCK</th>
 <th>GCP_ESPECIFICOS</th>
-<th>VALENCIA</th>
+<th>*VALENCIA*</th>
 <th>*PYSPARK*</th>
 <th>CHAT</th>
 <th>*APIS*</th>
@@ -789,13 +813,13 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>❌</td>
 <td>✅</td>
-<td>5.0</td>
+<td>✅</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -814,7 +838,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -918,14 +942,14 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
 <td>✅</td>
 <td>✅</td>
-<td>❌</td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>7.5</td>
+<td>✅</td>
+<td>✅</td>
+<td>10.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -1022,7 +1046,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -1074,7 +1098,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -1178,7 +1202,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -1217,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2025-12-20 14:18:16
+Last Checked: 2026-01-10 08:56:32
 

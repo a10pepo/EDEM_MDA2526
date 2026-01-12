@@ -1,10 +1,12 @@
 import os
 import datetime
 import traceback
+import sys
+import subprocess
 
 comun_obligatorio=["DOCKER","PYTHON","SQL","LINUX"]
 mia1_obligatorio=["ESTADISTICA"]
-mda1_obligatorio=["APIS", "CHUCK", "DBT", "KAFKA", "PYSPARK"]
+mda1_obligatorio=["APIS", "VALENCIA", "DBT", "KAFKA", "PYSPARK"]
 mda2_obligatorio=["AWS_ALMACENAMIENTO", "GCP_ALMACENAMIENTO"]
 
 
@@ -143,11 +145,72 @@ def modify_readme():
             file.close()
             with open(os.path.join(os.getcwd(),'README.md'), 'w') as file_recov:
                 file_recov.write(data)
+
+def check_profesores_modified():
+    """
+    Check if any files in PROFESORES folder are being modified in this PR/commit.
+    Exits with error code 1 if any PROFESORES files are modified.
+    """
+    try:
+        # Try multiple approaches to get modified files
+        modified_files = []
+        
+        # Approach 1: Try origin/main...HEAD (works locally)
+        result = subprocess.run(
+            ['git', 'diff', '--name-only', 'origin/main...HEAD'],
+            capture_output=True,
+            text=True
+        )
+        
+        if result.returncode == 0 and result.stdout.strip():
+            modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        else:
+            # Approach 2: Try HEAD^..HEAD (works for push events)
+            result = subprocess.run(
+                ['git', 'diff', '--name-only', 'HEAD^..HEAD'],
+                capture_output=True,
+                text=True
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+            else:
+                # Approach 3: Get changed files from git status (last resort)
+                result = subprocess.run(
+                    ['git', 'diff', '--name-only', 'HEAD'],
+                    capture_output=True,
+                    text=True
+                )
+                if result.returncode == 0:
+                    modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        
+        print(f"\n🔍 Verificando archivos modificados... Total: {len(modified_files)}")
+        
+        # Check if any file is in PROFESORES folder
+        profesores_files = [f for f in modified_files if f.startswith('PROFESORES/')]
+        
+        if profesores_files:
+            print("\n❌ ERROR: No se permite modificar archivos en la carpeta PROFESORES")
+            print("\nArchivos modificados en PROFESORES:")
+            for file in profesores_files:
+                print(f"  - {file}")
+            print("\nPor favor, revierte estos cambios antes de continuar.")
+            sys.exit(1)
+        else:
+            print("✅ No se detectaron modificaciones en la carpeta PROFESORES")
+            
+    except Exception as e:
+        print("⚠️  No se pudo verificar archivos modificados")
+        print(f"Error: {e}")
+        pass
+
         
 
 
 
 if __name__ == '__main__':  
+    # First check if PROFESORES folder is being modified
+    check_profesores_modified()
+    
     check_names(os.path.join(os.getcwd(), "ALUMNOS/MDAA"))
     check_names(os.path.join(os.getcwd(), "ALUMNOS/MDAB"))
     check_names(os.path.join(os.getcwd(), "ALUMNOS/MIA"))

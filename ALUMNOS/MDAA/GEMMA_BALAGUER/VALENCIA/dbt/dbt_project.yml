@@ -1,0 +1,16 @@
+name: valenbisi
+version: '1.0'
+config-version: 2
+
+profile: valenbisi
+
+target-path: "target"
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+
+models:
+  valenbisi_dbt:
+    +materialized: table
+
