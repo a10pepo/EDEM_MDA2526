@@ -1,0 +1,72 @@
+[0m19:58:01.576009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DE67B8C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DE8803ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DE8803B10>]}
+
+
+============================== 19:58:01.606176 | 259562c7-de2b-42f3-b4f9-348d8f36e904 ==============================
+[0m19:58:01.606176 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m19:58:01.607313 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'profiles_dir': 'C:\\Users\\laele\\.dbt', 'target_path': 'None', 'printer_width': '80', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m19:58:01.608322 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\laele\OneDrive\Documentos\GitHub\EDEM_MDA2526\alumnos\mdab\elena_morales\valencia\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:58:01.609802 [debug] [MainThread]: Command `dbt run` failed at 19:58:01.609671 after 0.35 seconds
+[0m19:58:01.610212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DE87FA780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DE882DFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027DE866EF10>]}
+[0m19:58:01.610740 [debug] [MainThread]: Flushing usage events
+[0m19:58:02.537812 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:58:21.249652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E828DC8C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E829D2FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E829D2FB10>]}
+
+
+============================== 19:58:21.254745 | 176a6fce-bca7-4d72-85ca-9502e1938280 ==============================
+[0m19:58:21.254745 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m19:58:21.256118 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'no_print': 'None', 'log_format': 'default', 'warn_error': 'None', 'log_path': 'logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\laele\\.dbt', 'invocation_command': 'dbt init', 'printer_width': '80', 'target_path': 'None'}
+[0m19:58:53.008706 [debug] [MainThread]: Starter project path: C:\Users\laele\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\dbt\include\starter_project
+[0m19:58:53.043281 [info ] [MainThread]: 
+Your new dbt project "valenbisi_transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:58:53.044504 [info ] [MainThread]: Setting up your profile.
+[0m19:58:56.759146 [debug] [MainThread]: Command `dbt init` succeeded at 19:58:56.758909 after 35.67 seconds
+[0m19:58:56.759636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E829D27820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E828FD8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E829DC29C0>]}
+[0m19:58:56.760086 [debug] [MainThread]: Flushing usage events
+[0m19:58:57.527086 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:59:19.574702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146B6F94C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146B7EFFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146B7EFFB10>]}
+
+
+============================== 19:59:19.586406 | 506cd587-d447-4406-9c6e-2e1340c3ebe4 ==============================
+[0m19:59:19.586406 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m19:59:19.587860 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\laele\\.dbt', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m19:59:26.970780 [debug] [MainThread]: Starter project path: C:\Users\laele\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\dbt\include\starter_project
+[0m19:59:26.998819 [info ] [MainThread]: 
+Your new dbt project "valenbisi_transformation" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:59:27.000664 [info ] [MainThread]: Setting up your profile.
+[0m20:00:13.961751 [info ] [MainThread]: Profile valenbisi_transformation written to C:\Users\laele\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:00:13.964332 [debug] [MainThread]: Command `dbt init` succeeded at 20:00:13.963981 after 54.59 seconds
+[0m20:00:13.965027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146B9055A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146B7FAA330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146B7D6FCE0>]}
+[0m20:00:13.966480 [debug] [MainThread]: Flushing usage events
+[0m20:00:14.793765 [debug] [MainThread]: An error was encountered while trying to flush usage events

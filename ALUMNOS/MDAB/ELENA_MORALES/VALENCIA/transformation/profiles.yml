@@ -1,0 +1,12 @@
+valenbisi_profile:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DB_HOST') }}"
+      user: "{{ env_var('DB_USER') }}"
+      password: "{{ env_var('DB_PASS') }}"
+      dbname: "{{ env_var('DB_NAME') }}"
+      port: 5432
+      schema: public
+      threads: 1
