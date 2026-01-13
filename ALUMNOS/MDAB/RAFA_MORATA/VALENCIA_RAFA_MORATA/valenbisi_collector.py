@@ -53,22 +53,22 @@ def obtener_todas_estaciones():
     """Descarga todas las estaciones usando paginación"""
     todas_estaciones = []
     offset = 0
-    limit = 100 # El máximo permitido por la API suele ser 100
+    limit = 100
     
     while True:
         try:
             url = f"{BASE_URL}?limit={limit}&offset={offset}"
             response = requests.get(url).json()
             
-            # Verificar si la API devolvió un error
+            # Verificar si la API devuelve un error
             if 'error_code' in response:
-                print(f"⚠️ ERROR API: {response.get('message')}")
+                print(f"ERROR API: {response.get('message')}")
                 break
                 
             resultados = response.get('results', [])
             
             if not resultados:
-                break # No hay más datos, salimos del bucle
+                break # No hay más datos acaba el bucle
                 
             todas_estaciones.extend(resultados)
             
@@ -76,7 +76,7 @@ def obtener_todas_estaciones():
             if len(resultados) < limit:
                 break
                 
-            offset += limit # Preparamos el siguiente bloque
+            offset += limit #Para preparar el siguiente bloque
             
         except Exception as e:
             print(f"Error de conexión con la API: {e}")
@@ -86,7 +86,6 @@ def obtener_todas_estaciones():
 
 def guardar_datos():
     try:
-        # 1. Obtener datos con paginación
         estaciones = obtener_todas_estaciones()
         
         if not estaciones:
