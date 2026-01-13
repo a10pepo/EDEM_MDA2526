@@ -1,0 +1,4 @@
+flask
+flasgger
+psycopg2-binary
+requests
