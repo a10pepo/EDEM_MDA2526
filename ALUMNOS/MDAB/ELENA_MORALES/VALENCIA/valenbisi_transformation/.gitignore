@@ -2,3 +2,9 @@
 target/
 dbt_packages/
 logs/
+analyses/
+macros/
+seeds/
+snapshots/
+tests/
+
