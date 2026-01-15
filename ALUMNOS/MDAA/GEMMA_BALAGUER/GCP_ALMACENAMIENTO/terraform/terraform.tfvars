@@ -1,0 +1,5 @@
+project_id                  = "e2e-gemma-balaguer"
+zone                        = "europe-west1-b"
+region                      = "europe-west1"
+subnetwork                  = "projects/e2e-gemma-balaguer/regions/europe-west1/subnetworks/default"
+service_account_email       = "667771392106-compute@developer.gserviceaccount.com"
