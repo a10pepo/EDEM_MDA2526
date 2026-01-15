@@ -1,0 +1,5 @@
+project_id = "e2e-gcp-almacenamiento"
+region     = "europe-west1"
+zone       = "europe-west1-b"
+subnetwork = "projects/e2e-gcp-almacenamiento/regions/europe-west1/subnetworks/default"
+service_account_email = "861571365017-compute@developer.gserviceaccount.com"
