@@ -1,0 +1,126 @@
+[0m20:23:01.920250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002884BA01010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002884CB77ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002884CB77B10>]}
+
+
+============================== 20:23:01.936627 | cd0ab6ee-924b-48f2-a959-15e25c31993e ==============================
+[0m20:23:01.936627 [info ] [MainThread]: Running with dbt=1.11.2
+[0m20:23:01.937308 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sergio\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init dbt_valenbisi', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:23:01.950435 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Sergio\.dbt
+[0m20:23:01.952295 [debug] [MainThread]: Starter project path: C:\Users\Sergio\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m20:23:01.971296 [info ] [MainThread]: 
+Your new dbt project "dbt_valenbisi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:23:01.971869 [info ] [MainThread]: Setting up your profile.
+[0m20:36:04.057380 [info ] [MainThread]: Profile dbt_valenbisi written to C:\Users\Sergio\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:36:04.058245 [debug] [MainThread]: Command `dbt init` succeeded at 20:36:04.058151 after 782.25 seconds
+[0m20:36:04.058529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002884DBC2650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002884DD6E210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002884DBE4F30>]}
+[0m20:36:04.058829 [debug] [MainThread]: Flushing usage events
+[0m20:36:04.812563 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:38:48.525453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284457546E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284465D3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284465D3B10>]}
+
+
+============================== 20:38:48.528875 | bffb2997-b5b3-47d2-ae62-233e1cdba627 ==============================
+[0m20:38:48.528875 [info ] [MainThread]: Running with dbt=1.11.2
+[0m20:38:48.529369 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Sergio\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:38:48.544795 [info ] [MainThread]: dbt version: 1.11.2
+[0m20:38:48.545154 [info ] [MainThread]: python version: 3.13.2
+[0m20:38:48.545466 [info ] [MainThread]: python path: C:\Users\Sergio\AppData\Local\Programs\Python\Python313\python.exe
+[0m20:38:48.545745 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m20:38:48.584896 [info ] [MainThread]: Using profiles dir at C:\Users\Sergio\.dbt
+[0m20:38:48.585381 [info ] [MainThread]: Using profiles.yml file at C:\Users\Sergio\.dbt\profiles.yml
+[0m20:38:48.585724 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Sergio\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\SERGIO_MARCO\VALENCIA\dbt\dbt_project.yml
+[0m20:38:48.586601 [info ] [MainThread]: adapter type: postgres
+[0m20:38:48.586897 [info ] [MainThread]: adapter version: 1.10.0
+[0m20:38:48.587266 [info ] [MainThread]: Configuration:
+[0m20:38:48.587613 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:38:48.587939 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:38:48.588215 [info ] [MainThread]: Required dependencies:
+[0m20:38:48.588483 [debug] [MainThread]: Executing "git --help"
+[0m20:38:48.603926 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:38:48.604294 [debug] [MainThread]: STDERR: "b''"
+[0m20:38:48.604523 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:38:48.604840 [info ] [MainThread]: Connection:
+[0m20:38:48.605176 [info ] [MainThread]:   host: localhost
+[0m20:38:48.605528 [info ] [MainThread]:   port: 5431
+[0m20:38:48.605911 [info ] [MainThread]:   user: postgres
+[0m20:38:48.606199 [info ] [MainThread]:   database: valenbisi_db
+[0m20:38:48.606454 [info ] [MainThread]:   schema: public
+[0m20:38:48.606701 [info ] [MainThread]:   connect_timeout: 10
+[0m20:38:48.606949 [info ] [MainThread]:   role: None
+[0m20:38:48.607193 [info ] [MainThread]:   search_path: None
+[0m20:38:48.607438 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:38:48.607682 [info ] [MainThread]:   sslmode: None
+[0m20:38:48.607924 [info ] [MainThread]:   sslcert: None
+[0m20:38:48.608166 [info ] [MainThread]:   sslkey: None
+[0m20:38:48.608406 [info ] [MainThread]:   sslrootcert: None
+[0m20:38:48.608645 [info ] [MainThread]:   application_name: dbt
+[0m20:38:48.608885 [info ] [MainThread]:   retries: 1
+[0m20:38:48.609289 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m20:38:48.819999 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:38:50.274350 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:38:50.274665 [debug] [MainThread]: On debug: select 1 as id
+[0m20:38:50.274889 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:38:54.360019 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5431 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5431 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m20:38:58.449421 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m20:38:58.449895 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m20:38:58.450207 [debug] [MainThread]: On debug: No close available on handle
+[0m20:38:58.450434 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m20:38:58.450859 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m20:38:58.451212 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Sergio\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\SERGIO_MARCO\VALENCIA\dbt\dbt_project.yml> not found
+
+[0m20:38:58.451517 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5431 failed: Connection refused (0x0000274D/10061)
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (127.0.0.1), port 5431 failed: Connection refused (0x0000274D/10061)
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m20:38:58.452314 [debug] [MainThread]: Command `dbt debug` failed at 20:38:58.452228 after 10.06 seconds
+[0m20:38:58.452558 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:38:58.452800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028447ABCB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028447851130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002844761FAC0>]}
+[0m20:38:58.453083 [debug] [MainThread]: Flushing usage events
+[0m20:38:59.138092 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:15:00.631454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB05B046E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB06987ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB06987B10>]}
+
+
+============================== 21:15:00.634835 | 8f49d4c2-cb0b-4872-b779-4f5ab0dadeb6 ==============================
+[0m21:15:00.634835 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:15:00.635340 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Sergio\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:15:00.635779 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Sergio\Documents\GitHub\EDEM_MDA2526\ALUMNOS\MDAB\SERGIO_MARCO\VALENCIA\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:15:00.636471 [debug] [MainThread]: Command `dbt run` failed at 21:15:00.636363 after 0.13 seconds
+[0m21:15:00.636816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB0685B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB06872690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB067BFF00>]}
+[0m21:15:00.637137 [debug] [MainThread]: Flushing usage events
+[0m21:15:01.368369 [debug] [MainThread]: An error was encountered while trying to flush usage events

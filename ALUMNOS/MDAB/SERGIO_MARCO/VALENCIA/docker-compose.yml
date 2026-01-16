@@ -8,13 +8,45 @@ services:
     restart: unless-stopped
   app:
     build:
-      context: .
+      context: ./app
       dockerfile: Dockerfile
     image: valenbisi:latest
     working_dir: /app            
     environment:
       - PYTHONUNBUFFERED=1  # Para que los print salgan directamente por consolta
-
     env_file: .env
     depends_on:
-      - db  
+      - db    
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.8.2
+    # Sobrescribimos el punto de entrada para poder usar comandos de shell (sh). La imagen de dbt viene configurada para ejecutar el comando dbt automáticamente al arrancar
+    # Con entry point Docker ignora por completo cualquier configuración interna de la imagen original y lanza directamente la cadena de comandos
+    # Incorporamos un bucle para que se generen las transformaciones cada 5 minutos, misma frecuencia con la que la app llama a la api
+    entrypoint: /bin/sh -c "sleep 20;while true; do dbt run && dbt docs generate --static; echo 'Transformación completada. Esperando 5 minutos...'; sleep 300; done"
+    environment:
+      - DBT_PROFILES_DIR=/usr/app/dbt_valenbisi
+    volumes:
+      - ./dbt/dbt_valenbisi:/usr/app/dbt_valenbisi
+    working_dir: /usr/app/dbt_valenbisi
+    env_file: .env
+    depends_on:
+      - app
+
+  grafana:
+      image: grafana/grafana-oss:latest
+      ports:
+        - "3000:3000"
+      environment:
+        - GF_SECURITY_ADMIN_PASSWORD=admin # Contraseña inicial
+      env_file: .env
+      volumes:
+        - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+        - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+        - ./grafana/dashboards:/var/lib/grafana/dashboards
+        - grafana_data:/var/lib/grafana
+      depends_on:
+        - db
+      restart: unless-stopped
+
+volumes:
+  grafana_data:

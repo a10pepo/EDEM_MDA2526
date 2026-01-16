@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: public
+    description: "Esquema público de la base de datos valenbisi_db"
+    tables:
+      - name: valenbisi_raw
+        description: "Tabla con los datos crudos recolectados de la API de Valenbisi"
