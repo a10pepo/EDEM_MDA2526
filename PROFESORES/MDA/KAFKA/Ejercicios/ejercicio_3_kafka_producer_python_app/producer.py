@@ -58,7 +58,7 @@ for e in range(100):
     data = {
         'Proyecto': f'Innovación #{e+1}',
         'Presupuesto': f'{(e+1)*5000} EUR',
-        'Estado': 'En revisión' if e % 2 == 0 else 'Pendiente'
+        'Estado': 'Aprobado' if e % 2 == 0 else 'En revisión'
     }
 
     # Convertimos el diccionario a una cadena JSON (texto estructurado).
