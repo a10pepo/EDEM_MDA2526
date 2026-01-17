@@ -95,7 +95,7 @@ def generate_table(clase,alumnos):
         table+="\n</tr>\n"
         table+="<tr>\n"  
         for alumno in sorted(alumnos):            
-            table+="<tr>\n<td><a href='https://github.com/a10pepo/EDEM_MDA2425/tree/main/ALUMNOS/"+clase+"/"+alumno+"'>"+str.upper(alumno)+"</a></td>"
+            table+="<tr>\n<td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/"+clase+"/"+alumno+"'>"+str.upper(alumno)+"</a></td>"
             for element in deliverables:
                 if alumnos[alumno][element]:
                     if element in ("NOTA COMUNES","MDA_M1","MIA_M1","MDA_M2"):
