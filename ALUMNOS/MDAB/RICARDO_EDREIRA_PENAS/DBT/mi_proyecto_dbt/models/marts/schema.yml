@@ -1,0 +1,63 @@
+# Schema para modelos marts (analíticos)
+# Autor: Ricardo Edreira
+
+version: 2
+
+models:
+  - name: launches_summary
+    description: |
+      Resumen de lanzamientos agrupados por año y tipo de cohete.
+      Responde a la pregunta: ¿Cómo ha evolucionado la actividad de lanzamiento?
+    columns:
+      - name: launch_year
+        description: "Año del lanzamiento"
+      - name: rocket_name
+        description: "Nombre del cohete"
+      - name: total_launches
+        description: "Número total de lanzamientos"
+      - name: successful_launches
+        description: "Número de lanzamientos exitosos"
+      - name: failed_launches
+        description: "Número de lanzamientos fallidos"
+      - name: success_rate_pct
+        description: "Porcentaje de éxito"
+
+  - name: rocket_performance
+    description: |
+      Métricas de rendimiento por cohete.
+      Responde: ¿Cuál es el rendimiento de cada cohete?
+    columns:
+      - name: rocket_id
+        description: "Identificador del cohete"
+        tests:
+          - unique
+          - not_null
+      - name: rocket_name
+        description: "Nombre del cohete"
+      - name: total_missions
+        description: "Total de misiones realizadas"
+      - name: successful_missions
+        description: "Misiones exitosas"
+      - name: calculated_success_rate
+        description: "Tasa de éxito calculada"
+      - name: reliability_rating
+        description: "Clasificación de confiabilidad"
+
+  - name: launchpad_stats
+    description: |
+      Estadísticas por plataforma de lanzamiento.
+      Responde: ¿Qué plataforma tiene mejor rendimiento?
+    columns:
+      - name: launchpad_id
+        description: "Identificador de la plataforma"
+        tests:
+          - unique
+          - not_null
+      - name: launchpad_name
+        description: "Nombre de la plataforma"
+      - name: launches_in_dataset
+        description: "Total de lanzamientos registrados"
+      - name: success_rate_pct
+        description: "Tasa de éxito"
+      - name: activity_level
+        description: "Nivel de actividad de la plataforma"

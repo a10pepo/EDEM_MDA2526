@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_rockets" ("id" text,"name" text,"type" text,"active" boolean,"stages" integer,"boosters" integer,"cost_per_launch" integer,"success_rate_pct" integer,"first_flight" date,"country" text,"company" text,"height_meters" float8,"diameter_meters" float8,"mass_kg" integer,"description" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_rockets" FROM '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/seeds/raw_rockets.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
