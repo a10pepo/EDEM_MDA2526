@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: valenbisi_db
+    schema: public
+    tables:
+      - name: valenbisi_raw # Esta es la tabla que creamos con el script de python
