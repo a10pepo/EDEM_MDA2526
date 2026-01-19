@@ -1,0 +1,5 @@
+project_id = "dev-trail-475809-v2"
+region     = "europe-west1"
+zone       = "europe-west1-b"
+subnetwork = "projects/dev-trail-475809-v2/regions/europe-west1/subnetworks/default"
+service_account_email = "108398009821-compute@developer.gserviceaccount.com"
