@@ -1,7 +1,7 @@
 #Step 1: import libraries
 from dotenv import load_dotenv #reads the .env
 import os #obtains the .env credentials
-import tweepy
+import tweepy #interacts with the API
 
 #Step 2: This function reads the .env and loads the variables included in there
 load_dotenv()
@@ -26,14 +26,14 @@ def text_validation(text):
     
     if len(text) == 0:
         return False, "Text can't be empty"
-    if len(text) <= 1:
+    if len(text) < 1:
         return False, "Text can't have negative characters"
     if len(text) > 280:
         return False, f"Text is too long: {len(text)}. Text can't have more than 280 characters"
 
     return True, "Valid text"
 
-#Step 4.2: Connect the API
+#Step 4.2: Connect to the API
 def api_connection():
     try:
         client = tweepy.Client(
