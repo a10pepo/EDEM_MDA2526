@@ -1,7 +1,8 @@
 import requests
+import os
 
+TOKEN_ACCESO = os.getenv("MASTODON_TOKEN")
 URL = "https://mastodon.social"   
-TOKEN_ACCESO = "KXm2pL6A-gia3j2p9jrio-d1uUO6j8cBrINEbUcNh0s"
 
 url = f"{URL}/api/v1/statuses"
 
