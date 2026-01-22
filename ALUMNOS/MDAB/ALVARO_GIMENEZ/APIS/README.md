@@ -12,8 +12,8 @@ Include documentation - README with setup instructions
 
 The project structure is the following: 
 
--For our application, we first create an account and acces the developer section, where we have to create a new api key allowing just the write feature (for this purpose we don't need to allow any more)
+-For our application, we first create an account and acces the developer section, where we have to create a new api key allowing just the write feature (for this purpose we don't need to allow any more).
 
--Once we have created an api key we will see 3 params: application id, secret and access token
+-Once we have created an api key we will see 3 params: application id, secret and access token. For the project, just using the api key generated we will be able to post the message.
 
--For the project, just using the api key generated we will be able to post the 
+-We then create a script to make the post, taking the api key as params and our message as body (in json format). In order to securize the api key, we are...
