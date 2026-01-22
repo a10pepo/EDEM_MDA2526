@@ -1,0 +1,6 @@
+# Dependencias del proyecto
+# Instalar con: pip install -r requirements.txt
+
+flask>=3.0.0
+tweepy>=4.14.0
+python-dotenv>=1.0.0

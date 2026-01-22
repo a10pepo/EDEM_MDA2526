@@ -1,0 +1,105 @@
+<!--
+==============================================
+PÁGINA PRINCIPAL - ESCRIBIR POST
+==============================================
+Aquí el usuario puede escribir y publicar
+su post en X (Twitter).
+
+Incluye:
+- Campo de texto con contador de caracteres
+- Botón para publicar
+- Botón para guardar como borrador
+
+Autor: Ricardo Edreira
+Fecha: Enero 2026
+==============================================
+-->
+{% extends 'base.html' %}
+
+{% block titulo %}Escribir Post | X Post Publisher{% endblock %}
+
+{% block contenido %}
+<div class="pagina-inicio">
+
+    <!-- Título de la página -->
+    <div class="encabezado">
+        <h1>¡Publica en X!</h1>
+        <p class="subtitulo">Escribe tu mensaje y compártelo con el mundo</p>
+    </div>
+
+    <!-- Información de uso -->
+    <div class="info-box">
+        <div class="info-item">
+            <span class="info-label">Posts hoy:</span>
+            <span class="info-valor">{{ posts_hoy }} / 17</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Disponibles:</span>
+            <span class="info-valor">{{ 17 - posts_hoy }}</span>
+        </div>
+    </div>
+
+    <!-- Formulario para escribir el post -->
+    <div class="card tarjeta-post">
+        <form id="form-post" action="{{ url_for('rutas.publicar') }}" method="POST">
+
+            <!-- Campo de texto -->
+            <div class="campo-texto">
+                <textarea id="texto-post" name="texto" placeholder="¿Qué está pasando?" maxlength="280" rows="4"
+                    required></textarea>
+
+                <!-- Contador de caracteres -->
+                <div class="contador-container">
+                    <div class="contador">
+                        <span id="caracteres-actuales">0</span> / 280
+                    </div>
+                    <div id="barra-progreso" class="barra-progreso">
+                        <div id="barra-relleno" class="barra-relleno"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="botones-accion">
+                <!-- Guardar como borrador -->
+                <button type="button" class="btn btn-secundario" id="btn-borrador" onclick="guardarBorrador()">
+                    📝 Guardar borrador
+                </button>
+
+                <!-- Publicar -->
+                <button type="button" class="btn btn-primario" id="btn-publicar" onclick="confirmarPublicacion()">
+                    🐦 Publicar
+                </button>
+            </div>
+        </form>
+
+        <!-- Formulario oculto para guardar borrador -->
+        <form id="form-borrador" action="{{ url_for('rutas.guardar_nuevo_borrador') }}" method="POST"
+            style="display: none;">
+            <input type="hidden" name="texto" id="texto-borrador">
+        </form>
+    </div>
+
+    <!-- Mensaje modo desarrollo -->
+    {% if modo_desarrollo %}
+    <div class="aviso-desarrollo">
+        <strong>🔧 Modo Desarrollo Activo</strong>
+        <p>Los posts NO se publican realmente en X. Se guardan localmente para pruebas.</p>
+        <p class="texto-pequeno">Para publicar de verdad, cambia APP_MODE=production en tu archivo .env</p>
+    </div>
+    {% endif %}
+
+</div>
+
+<!-- Modal de confirmación -->
+<div id="modal-confirmacion" class="modal" style="display: none;">
+    <div class="modal-contenido">
+        <h3>¿Publicar post?</h3>
+        <p id="preview-texto" class="preview-texto"></p>
+        <div class="modal-botones">
+            <button class="btn btn-secundario" onclick="cerrarModal()">Cancelar</button>
+            <button class="btn btn-primario" onclick="publicarPost()">Sí, publicar</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
