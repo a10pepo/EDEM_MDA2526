@@ -1,0 +1,157 @@
+# Exercise 7: Public API Consumption Testing Commands (PowerShell)
+
+$baseUrl = "http://127.0.0.1:5000"
+$headers = @{
+    "Content-Type" = "application/json"
+}
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "Exercise 7: Public API Consumption - Weather API Tests" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+# ============================================================================
+# AUTHENTICATION TESTS (from Exercise 06)
+# ============================================================================
+
+Write-Host "==> 1. Registering user..." -ForegroundColor Yellow
+$registerBody = @{
+    username = "alice"
+    password = "secret123"
+} | ConvertTo-Json
+
+try {
+    $registerResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/register" -Headers $headers -Body $registerBody
+    Write-Host "Registration successful: $($registerResponse.message)" -ForegroundColor Green
+    Write-Host ""
+} catch {
+    Write-Host "Registration error (user may already exist): $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+Write-Host "==> 2. Logging in to get JWT token..." -ForegroundColor Yellow
+$loginBody = @{
+    username = "alice"
+    password = "secret123"
+} | ConvertTo-Json
+
+try {
+    $loginResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/login" -Headers $headers -Body $loginBody
+    $token = $loginResponse.access_token
+    Write-Host "Login successful!" -ForegroundColor Green
+    Write-Host "Token: $($token.Substring(0, 50))..." -ForegroundColor White
+    Write-Host ""
+} catch {
+    Write-Host "Login error: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+Write-Host "==> 3. Accessing protected profile..." -ForegroundColor Yellow
+$jwtHeaders = @{
+    "Authorization" = "Bearer $token"
+}
+
+try {
+    $profileResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/profile" -Headers $jwtHeaders
+    Write-Host "Profile data:" -ForegroundColor Green
+    $profileResponse | ConvertTo-Json | Write-Host
+    Write-Host ""
+} catch {
+    Write-Host "Profile error: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+# ============================================================================
+# WEATHER API TESTS (PUBLIC - No Authentication Required)
+# ============================================================================
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "WEATHER API TESTS (Public - No JWT Required)" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "==> 4. Getting weather for default city (Madrid)..." -ForegroundColor Yellow
+try {
+    $weatherDefault = Invoke-RestMethod -Method Get -Uri "$baseUrl/weather"
+    Write-Host "Weather data for Madrid:" -ForegroundColor Green
+    $weatherDefault | ConvertTo-Json -Depth 5 | Write-Host
+    Write-Host ""
+} catch {
+    Write-Host "Weather error: $_" -ForegroundColor Red
+    Write-Host "HINT: Make sure you configured OPENWEATHER_API_KEY in app.py" -ForegroundColor Yellow
+    Write-Host ""
+}
+
+Write-Host "==> 5. Getting weather for Paris, France..." -ForegroundColor Yellow
+try {
+    $weatherParis = Invoke-RestMethod -Method Get -Uri "$baseUrl/weather?city=Paris&country=FR"
+    Write-Host "Weather data for Paris:" -ForegroundColor Green
+    Write-Host "City: $($weatherParis.location.city), $($weatherParis.location.country)" -ForegroundColor White
+    Write-Host "Temperature: $($weatherParis.weather.temperature)°C" -ForegroundColor White
+    Write-Host "Description: $($weatherParis.weather.description)" -ForegroundColor White
+    Write-Host "Humidity: $($weatherParis.weather.humidity)%" -ForegroundColor White
+    Write-Host ""
+} catch {
+    Write-Host "Weather error: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+Write-Host "==> 6. Getting weather for London, UK..." -ForegroundColor Yellow
+try {
+    $weatherLondon = Invoke-RestMethod -Method Get -Uri "$baseUrl/weather?city=London&country=GB"
+    Write-Host "Weather data for London:" -ForegroundColor Green
+    Write-Host "City: $($weatherLondon.location.city), $($weatherLondon.location.country)" -ForegroundColor White
+    Write-Host "Temperature: $($weatherLondon.weather.temperature)°C" -ForegroundColor White
+    Write-Host "Description: $($weatherLondon.weather.description)" -ForegroundColor White
+    Write-Host ""
+} catch {
+    Write-Host "Weather error: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+Write-Host "==> 7. Getting weather for New York, USA..." -ForegroundColor Yellow
+try {
+    $weatherNY = Invoke-RestMethod -Method Get -Uri "$baseUrl/weather?city=New%20York&country=US"
+    Write-Host "Weather data for New York:" -ForegroundColor Green
+    Write-Host "City: $($weatherNY.location.city), $($weatherNY.location.country)" -ForegroundColor White
+    Write-Host "Temperature: $($weatherNY.weather.temperature)°C" -ForegroundColor White
+    Write-Host "Description: $($weatherNY.weather.description)" -ForegroundColor White
+    Write-Host ""
+} catch {
+    Write-Host "Weather error: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+Write-Host "==> 8. Getting weather for Tokyo, Japan..." -ForegroundColor Yellow
+try {
+    $weatherTokyo = Invoke-RestMethod -Method Get -Uri "$baseUrl/weather?city=Tokyo&country=JP"
+    Write-Host "Weather data for Tokyo:" -ForegroundColor Green
+    Write-Host "City: $($weatherTokyo.location.city), $($weatherTokyo.location.country)" -ForegroundColor White
+    Write-Host "Temperature: $($weatherTokyo.weather.temperature)°C" -ForegroundColor White
+    Write-Host "Description: $($weatherTokyo.weather.description)" -ForegroundColor White
+    Write-Host ""
+} catch {
+    Write-Host "Weather error: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+Write-Host "==> 9. Testing with invalid city (should fail)..." -ForegroundColor Yellow
+try {
+    $weatherInvalid = Invoke-RestMethod -Method Get -Uri "$baseUrl/weather?city=InvalidCityXYZ123"
+    Write-Host "Unexpected success!" -ForegroundColor Red
+} catch {
+    Write-Host "Expected error - City not found: $($_.Exception.Message)" -ForegroundColor Magenta
+    Write-Host ""
+}
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "All tests completed!" -ForegroundColor Green
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "Summary:" -ForegroundColor Cyan
+Write-Host "- Authentication: Pure JWT (credentials in JSON body)" -ForegroundColor White
+Write-Host "- Weather endpoint: PUBLIC (no authentication required)" -ForegroundColor White
+Write-Host "- API flow: City name → Geocoding API → Coordinates → Weather API" -ForegroundColor White
+Write-Host "- Uses HTTPS and coordinates (modern approach)" -ForegroundColor White
+Write-Host ""

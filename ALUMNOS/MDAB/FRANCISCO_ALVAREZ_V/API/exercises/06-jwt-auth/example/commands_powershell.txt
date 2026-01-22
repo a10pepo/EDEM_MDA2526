@@ -1,0 +1,112 @@
+# Exercise 6: JWT Authentication Testing Commands (PowerShell)
+# These commands demonstrate the pure JWT authentication flow with automatic token handling
+
+# 1. Set base URL and headers
+$baseUrl = "http://127.0.0.1:5000"
+$headers = @{
+    "Content-Type" = "application/json"
+}
+
+# 2. Register a new user
+Write-Host "==> Registering user..." -ForegroundColor Cyan
+$registerBody = @{
+    username = "alice"
+    password = "secret123"
+} | ConvertTo-Json
+
+try {
+    $registerResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/register" -Headers $headers -Body $registerBody
+    Write-Host "Registration successful: $($registerResponse.message)" -ForegroundColor Green
+    Write-Host ""
+} catch {
+    Write-Host "Registration error: $_" -ForegroundColor Red
+}
+
+# 3. Login to get JWT token (credentials in JSON body, NOT Basic Auth)
+Write-Host "==> Logging in to get JWT token..." -ForegroundColor Cyan
+$loginBody = @{
+    username = "alice"
+    password = "secret123"
+} | ConvertTo-Json
+
+try {
+    $loginResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/login" -Headers $headers -Body $loginBody
+    $token = $loginResponse.access_token
+    Write-Host "Login successful!" -ForegroundColor Green
+    Write-Host "Token received: $($token.Substring(0, 50))..." -ForegroundColor Yellow
+    Write-Host ""
+} catch {
+    Write-Host "Login error: $_" -ForegroundColor Red
+    exit
+}
+
+# 4. Set JWT authorization header for protected endpoints
+$jwtHeaders = @{
+    "Authorization" = "Bearer $token"
+}
+
+# 5. Access user profile with JWT token
+Write-Host "==> Getting user profile with JWT token..." -ForegroundColor Cyan
+try {
+    $profileResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/profile" -Headers $jwtHeaders
+    Write-Host "Profile data:" -ForegroundColor Green
+    $profileResponse | ConvertTo-Json
+    Write-Host ""
+} catch {
+    Write-Host "Profile error: $_" -ForegroundColor Red
+}
+
+# 6. Get all users with JWT token
+Write-Host "==> Getting all users with JWT token..." -ForegroundColor Cyan
+try {
+    $usersResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/users" -Headers $jwtHeaders
+    Write-Host "Users data:" -ForegroundColor Green
+    $usersResponse | ConvertTo-Json
+    Write-Host ""
+} catch {
+    Write-Host "Users error: $_" -ForegroundColor Red
+}
+
+# 7. Access protected resource with JWT token
+Write-Host "==> Accessing protected resource..." -ForegroundColor Cyan
+try {
+    $protectedResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/protected" -Headers $jwtHeaders
+    Write-Host "Protected resource data:" -ForegroundColor Green
+    $protectedResponse | ConvertTo-Json
+    Write-Host ""
+} catch {
+    Write-Host "Protected error: $_" -ForegroundColor Red
+}
+
+# 8. Try to access profile WITHOUT token (should fail)
+Write-Host "==> Testing access WITHOUT token (should fail)..." -ForegroundColor Cyan
+try {
+    $failResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/profile"
+    Write-Host "Unexpected success!" -ForegroundColor Red
+} catch {
+    Write-Host "Expected error - Access denied without token: $($_.Exception.Message)" -ForegroundColor Yellow
+    Write-Host ""
+}
+
+# 9. Try to login with invalid credentials (should fail)
+Write-Host "==> Testing login with invalid credentials (should fail)..." -ForegroundColor Cyan
+$invalidLoginBody = @{
+    username = "alice"
+    password = "wrongpassword"
+} | ConvertTo-Json
+
+try {
+    $invalidLogin = Invoke-RestMethod -Method Post -Uri "$baseUrl/login" -Headers $headers -Body $invalidLoginBody
+    Write-Host "Unexpected success!" -ForegroundColor Red
+} catch {
+    Write-Host "Expected error - Invalid credentials: $($_.Exception.Message)" -ForegroundColor Yellow
+    Write-Host ""
+}
+
+Write-Host "==> All tests completed!" -ForegroundColor Green
+Write-Host ""
+Write-Host "Summary:" -ForegroundColor Cyan
+Write-Host "- Registration: Creates user account (public endpoint)"
+Write-Host "- Login: Sends credentials in JSON body, receives JWT token (public endpoint)"
+Write-Host "- Protected endpoints: All use 'Authorization: Bearer <token>' header"
+Write-Host "- NO Basic Auth used after login - only JWT tokens!"

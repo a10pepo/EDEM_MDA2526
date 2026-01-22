@@ -1,0 +1,54 @@
+# Initial variables
+$baseUrl = "http://127.0.0.1:5000"
+$headers = @{
+    "Content-Type" = "application/json"
+}
+
+# 1. Register normal user
+$body = @{
+    username = "user1"
+    password = "pass123"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Method Post -Uri "$baseUrl/users" -Headers $headers -Body $body
+
+# 2. Login to get JWT token
+$pair = "user1:pass123"
+$encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
+$authHeaders = @{
+    Authorization = "Basic $encodedCreds"
+}
+
+$loginResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/login" -Headers $authHeaders
+$token = $loginResponse.access_token
+
+# 3. Configure headers with JWT
+$jwtHeaders = @{
+    "Content-Type" = "application/json"
+    Authorization = "Bearer $token"
+}
+
+# 4. Create user by admin
+$adminUserBody = @{
+    username = "user2"
+    password = "pass456"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Method Post -Uri "$baseUrl/users/admin" -Headers $jwtHeaders -Body $adminUserBody
+
+# 5. Get list of users
+Invoke-RestMethod -Method Get -Uri "$baseUrl/users" -Headers $jwtHeaders
+
+# 6. Update user
+$updateBody = @{
+    password = "newpass123"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Method Put -Uri "$baseUrl/users/user2" -Headers $jwtHeaders -Body $updateBody
+
+# 7. Delete user
+Invoke-RestMethod -Method Delete -Uri "$baseUrl/users/user2" -Headers $jwtHeaders
+
+# 8. View profile
+Invoke-RestMethod -Method Get -Uri "$baseUrl/profile" -Headers $jwtHeaders
+# Exercise 8: Creating CRUD Endpoints (PowerShell)

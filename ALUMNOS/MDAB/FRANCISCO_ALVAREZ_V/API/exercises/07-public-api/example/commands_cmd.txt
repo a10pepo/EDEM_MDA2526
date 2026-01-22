@@ -1,0 +1,48 @@
+REM Exercise 7: Public API Consumption Testing Commands (Windows CMD)
+
+REM ============================================================================
+REM AUTHENTICATION TESTS (from Exercise 06)
+REM ============================================================================
+
+REM 1. Register a new user
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"alice\",\"password\":\"secret123\"}" http://127.0.0.1:5000/register
+
+REM 2. Login to get JWT token
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"alice\",\"password\":\"secret123\"}" http://127.0.0.1:5000/login
+
+REM 3. Access profile with JWT token (replace YOUR_TOKEN)
+curl -X GET -H "Authorization: Bearer YOUR_TOKEN" http://127.0.0.1:5000/profile
+
+REM ============================================================================
+REM WEATHER API TESTS (PUBLIC - No Authentication Required)
+REM ============================================================================
+
+REM 4. Get weather for default city (Madrid)
+curl http://127.0.0.1:5000/weather
+
+REM 5. Get weather for a specific city
+curl http://127.0.0.1:5000/weather?city=Paris
+
+REM 6. Get weather with country code for disambiguation
+curl http://127.0.0.1:5000/weather?city=Paris^&country=FR
+
+REM 7. Get weather for London, UK
+curl http://127.0.0.1:5000/weather?city=London^&country=GB
+
+REM 8. Get weather for New York, USA (note: spaces in city names)
+curl "http://127.0.0.1:5000/weather?city=New York&country=US"
+
+REM 9. Get weather for Tokyo, Japan
+curl http://127.0.0.1:5000/weather?city=Tokyo^&country=JP
+
+REM 10. Test with invalid city (should return 404)
+curl http://127.0.0.1:5000/weather?city=InvalidCityXYZ123
+
+REM ============================================================================
+REM NOTES
+REM ============================================================================
+
+REM Note 1: Use ^ to escape & in Windows CMD
+REM Note 2: Use quotes for city names with spaces
+REM Note 3: Weather endpoint is PUBLIC - no JWT token required
+REM Note 4: Make sure you configured your OpenWeatherMap API key in app.py

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "4545225456542092925",
+    "text": "Hola mundo mi primer post",
+    "created_at": "2026-01-22T19:09:15.137692",
+    "mode": "mock",
+    "status": "saved_locally"
+  },
+  {
+    "id": "8059332265264018960",
+    "text": "Hola mi primer post automatizado",
+    "created_at": "2026-01-22T19:09:43.065545",
+    "mode": "mock",
+    "status": "saved_locally"
+  },
+  {
+    "id": "6202999059669987725",
+    "text": "hola mundo",
+    "created_at": "2026-01-22T19:23:37.800469",
+    "mode": "mock",
+    "status": "saved_locally"
+  },
+  {
+    "id": "7882988340328449182",
+    "text": "hola mundo",
+    "created_at": "2026-01-22T19:24:16.037147",
+    "mode": "mock",
+    "status": "saved_locally"
+  }
+]

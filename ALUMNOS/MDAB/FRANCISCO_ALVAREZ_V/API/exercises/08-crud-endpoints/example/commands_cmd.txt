@@ -1,0 +1,21 @@
+REM 1. Register user
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"user1\",\"password\":\"pass123\"}" http://127.0.0.1:5000/users
+
+REM 2. Login to get JWT token
+curl -X POST -H "Content-Type: application/json" --user user1:pass123 http://127.0.0.1:5000/login
+
+REM 3. Create user by admin (replace TOKEN with the obtained token)
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN" -d "{\"username\":\"user2\",\"password\":\"pass456\"}" http://127.0.0.1:5000/users/admin
+
+REM 4. Get list of users
+curl -X GET -H "Authorization: Bearer TOKEN" http://127.0.0.1:5000/users
+
+REM 5. Update user
+curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN" -d "{\"password\":\"newpass123\"}" http://127.0.0.1:5000/users/user2
+
+REM 6. Delete user
+curl -X DELETE -H "Authorization: Bearer TOKEN" http://127.0.0.1:5000/users/user2
+
+REM 7. View profile
+curl -X GET -H "Authorization: Bearer TOKEN" http://127.0.0.1:5000/profile
+REM Exercise 8: Creating CRUD Endpoints (Windows CMD)

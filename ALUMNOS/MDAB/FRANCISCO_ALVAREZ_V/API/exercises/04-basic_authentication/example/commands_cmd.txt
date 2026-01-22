@@ -1,0 +1,9 @@
+REM 1. Registrar un estudiante
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"estudiante1\",\"password\":\"pass123\"}" http://127.0.0.1:5000/estudiantes
+
+REM 2. Obtener lista de estudiantes (con autenticación)
+curl -X GET --user estudiante1:pass123 http://127.0.0.1:5000/estudiantes
+
+REM 3. Probar autenticación fallida
+curl -X GET --user estudiante1:wrongpass http://127.0.0.1:5000/estudiantes
+REM Exercise 4: Basic Authentication (Windows CMD)

@@ -1,0 +1,197 @@
+# Exercise 5: API Key Authentication Testing Commands (PowerShell)
+
+$baseUrl = "http://127.0.0.1:5000"
+$headers = @{
+    "Content-Type" = "application/json"
+}
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "Exercise 5: API Key Authentication Tests" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+# ============================================================================
+# PUBLIC ENDPOINTS (No Authentication Required)
+# ============================================================================
+
+Write-Host "==> 1. Registering user 'alice'..." -ForegroundColor Yellow
+$registerBody = @{
+    username = "alice"
+    password = "secret123"
+} | ConvertTo-Json
+
+try {
+    $registerResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/register" -Headers $headers -Body $registerBody
+    Write-Host "Registration successful!" -ForegroundColor Green
+    Write-Host "Username: $($registerResponse.username)" -ForegroundColor White
+    Write-Host "API Key: $($registerResponse.api_key)" -ForegroundColor White
+    Write-Host ""
+
+    # Save API key for subsequent tests
+    $apiKey = $registerResponse.api_key
+
+} catch {
+    Write-Host "Registration error (user may already exist): $_" -ForegroundColor Red
+    Write-Host "Attempting to retrieve API key using Basic Auth..." -ForegroundColor Yellow
+
+    # If registration fails, try to get API key with Basic Auth
+    try {
+        $pair = "alice:secret123"
+        $encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
+        $authHeaders = @{
+            Authorization = "Basic $encodedCreds"
+        }
+        $keyResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/api-key" -Headers $authHeaders
+        $apiKey = $keyResponse.api_key
+        Write-Host "Retrieved existing API key: $apiKey" -ForegroundColor Green
+    } catch {
+        Write-Host "Could not retrieve API key: $_" -ForegroundColor Red
+        exit
+    }
+    Write-Host ""
+}
+
+# ============================================================================
+# API KEY PROTECTED ENDPOINTS
+# ============================================================================
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "API KEY PROTECTED ENDPOINTS" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "==> 2. Getting users list with API key..." -ForegroundColor Yellow
+$apiKeyHeaders = @{
+    "x-api-key" = $apiKey
+}
+
+try {
+    $usersResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/users" -Headers $apiKeyHeaders
+    Write-Host "Users list retrieved successfully:" -ForegroundColor Green
+    $usersResponse | ConvertTo-Json | Write-Host
+    Write-Host ""
+} catch {
+    Write-Host "Error getting users: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+# ============================================================================
+# BASIC AUTH PROTECTED ENDPOINTS (API Key Recovery)
+# ============================================================================
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "BASIC AUTH PROTECTED ENDPOINTS (Key Recovery)" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "==> 3. Retrieving API key using Basic Auth..." -ForegroundColor Yellow
+$pair = "alice:secret123"
+$encodedCreds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($pair))
+$basicAuthHeaders = @{
+    Authorization = "Basic $encodedCreds"
+}
+
+try {
+    $keyRecoveryResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/api-key" -Headers $basicAuthHeaders
+    Write-Host "API key recovery successful:" -ForegroundColor Green
+    $keyRecoveryResponse | ConvertTo-Json | Write-Host
+    Write-Host ""
+} catch {
+    Write-Host "Error recovering API key: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+# ============================================================================
+# ERROR TESTING
+# ============================================================================
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "ERROR TESTING" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "==> 4. Testing with missing API key (should fail)..." -ForegroundColor Yellow
+try {
+    $missingKeyResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/users"
+    Write-Host "Unexpected success! Should have failed." -ForegroundColor Red
+} catch {
+    Write-Host "Expected error - API key missing: $($_.Exception.Message)" -ForegroundColor Magenta
+    Write-Host ""
+}
+
+Write-Host "==> 5. Testing with invalid API key (should fail)..." -ForegroundColor Yellow
+$invalidHeaders = @{
+    "x-api-key" = "invalid-key-12345"
+}
+
+try {
+    $invalidKeyResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/users" -Headers $invalidHeaders
+    Write-Host "Unexpected success! Should have failed." -ForegroundColor Red
+} catch {
+    Write-Host "Expected error - Invalid API key: $($_.Exception.Message)" -ForegroundColor Magenta
+    Write-Host ""
+}
+
+# ============================================================================
+# REGISTER SECOND USER
+# ============================================================================
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "MULTIPLE USERS TEST" -ForegroundColor Cyan
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "==> 6. Registering second user 'bob'..." -ForegroundColor Yellow
+$registerBody2 = @{
+    username = "bob"
+    password = "password456"
+} | ConvertTo-Json
+
+try {
+    $registerResponse2 = Invoke-RestMethod -Method Post -Uri "$baseUrl/register" -Headers $headers -Body $registerBody2
+    Write-Host "Second user registered successfully!" -ForegroundColor Green
+    Write-Host "Username: $($registerResponse2.username)" -ForegroundColor White
+    Write-Host "API Key: $($registerResponse2.api_key)" -ForegroundColor White
+    Write-Host ""
+
+    $bobApiKey = $registerResponse2.api_key
+
+    # Test bob's API key
+    Write-Host "==> 7. Testing bob's API key..." -ForegroundColor Yellow
+    $bobHeaders = @{
+        "x-api-key" = $bobApiKey
+    }
+
+    $bobUsersResponse = Invoke-RestMethod -Method Get -Uri "$baseUrl/users" -Headers $bobHeaders
+    Write-Host "Bob's API key works! Users visible:" -ForegroundColor Green
+    $bobUsersResponse | ConvertTo-Json | Write-Host
+    Write-Host ""
+
+} catch {
+    Write-Host "Error with second user: $_" -ForegroundColor Red
+    Write-Host ""
+}
+
+# ============================================================================
+# SUMMARY
+# ============================================================================
+
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host "All tests completed!" -ForegroundColor Green
+Write-Host "="*70 -ForegroundColor Cyan
+Write-Host ""
+
+Write-Host "Summary:" -ForegroundColor Cyan
+Write-Host "- API keys generated using UUID (unique per user)" -ForegroundColor White
+Write-Host "- API keys stored with user data" -ForegroundColor White
+Write-Host "- /users endpoint: Protected by API key ONLY" -ForegroundColor White
+Write-Host "- /api-key endpoint: Protected by Basic Auth (for key recovery)" -ForegroundColor White
+Write-Host "- API keys are ALTERNATIVE to Basic Auth, not used together" -ForegroundColor White
+Write-Host ""
+
+Write-Host "Your API keys:" -ForegroundColor Cyan
+Write-Host "- alice: $apiKey" -ForegroundColor White
+if ($bobApiKey) {
+    Write-Host "- bob: $bobApiKey" -ForegroundColor White
+}
+Write-Host ""

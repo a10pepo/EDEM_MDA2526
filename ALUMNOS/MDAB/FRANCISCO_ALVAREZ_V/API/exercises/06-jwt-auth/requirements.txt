@@ -1,0 +1,13 @@
+# Exercise 06: JWT Authentication - Python Dependencies
+
+# Core Flask framework
+Flask==3.0.0
+
+# Password hashing utilities
+Werkzeug==3.0.1
+
+# JWT authentication library
+Flask-JWT-Extended==4.6.0
+
+# Optional: For better date/time handling with JWT expiration
+python-dateutil==2.8.2

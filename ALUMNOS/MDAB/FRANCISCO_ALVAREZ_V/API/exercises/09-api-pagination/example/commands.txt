@@ -1,0 +1,61 @@
+# Commands to test the students API in PowerShell
+
+# 1. Initial variables
+$baseUrl = "http://127.0.0.1:5000"
+$headers = @{
+    "Content-Type" = "application/json"
+}
+
+# 2. Register initial user
+$body = @{
+    username = "example"
+    password = "secret"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Method Post -Uri "$baseUrl/register" -Headers $headers -Body $body
+
+# 3. Login to get token
+$cred = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("example:secret"))
+$authHeaders = @{
+    Authorization = "Basic $cred"
+    "Content-Type" = "application/json"
+}
+
+$loginResponse = Invoke-RestMethod -Method Post -Uri "$baseUrl/login" -Headers $authHeaders
+$token = $loginResponse.access_token
+
+# 4. Headers with token for following requests
+$authHeaders = @{
+    Authorization = "Bearer $token"
+    "Content-Type" = "application/json"
+}
+
+# 5. Create test students (25 students)
+1..25 | ForEach-Object {
+    $body = @{
+        username = "student$_"
+        password = "pass$_"
+    } | ConvertTo-Json
+
+    Invoke-RestMethod -Method Post -Uri "$baseUrl/students" -Headers $authHeaders -Body $body
+}
+
+# 6. Test pagination - First page (10 elements)
+Invoke-RestMethod -Method Get -Uri "$baseUrl/students?page=1&per_page=10" -Headers $authHeaders
+
+# 7. Test pagination - Second page (10 elements)
+Invoke-RestMethod -Method Get -Uri "$baseUrl/students?page=2&per_page=10" -Headers $authHeaders
+
+# 8. Test pagination - First page with 5 elements
+Invoke-RestMethod -Method Get -Uri "$baseUrl/students?page=1&per_page=5" -Headers $authHeaders
+
+# 9. Test page out of range
+Invoke-RestMethod -Method Get -Uri "$baseUrl/students?page=100" -Headers $authHeaders
+
+# 10. Test with invalid number of elements per page
+Invoke-RestMethod -Method Get -Uri "$baseUrl/students?per_page=0" -Headers $authHeaders
+
+# Note: You can copy and paste each command individually in PowerShell
+# Or run the entire script by saving it as .ps1 and executing it
+# To see responses in a more readable format, you can add | ConvertTo-Json at the end of each Invoke-RestMethod
+REM Exercise 9: Implementing Pagination in Endpoints (Windows CMD)

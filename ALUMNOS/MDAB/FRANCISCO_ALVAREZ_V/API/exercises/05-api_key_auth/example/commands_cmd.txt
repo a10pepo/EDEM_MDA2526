@@ -1,0 +1,65 @@
+REM Exercise 5: API Key Authentication Testing Commands (Windows CMD)
+
+REM ============================================================================
+REM PUBLIC ENDPOINTS (No Authentication Required)
+REM ============================================================================
+
+REM 1. Register a new user and receive API key
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"alice\",\"password\":\"secret123\"}" http://127.0.0.1:5000/register
+
+REM Expected response:
+REM {
+REM   "message": "User registered successfully",
+REM   "username": "alice",
+REM   "api_key": "a1b2c3d4-e5f6-4789-a012-3456789abcde"
+REM }
+REM IMPORTANT: Save the API key from the response!
+
+REM ============================================================================
+REM API KEY PROTECTED ENDPOINTS
+REM ============================================================================
+
+REM 2. Get list of users using API key (replace YOUR_API_KEY with actual key from step 1)
+curl -H "x-api-key: YOUR_API_KEY" http://127.0.0.1:5000/users
+
+REM Example with actual API key:
+REM curl -H "x-api-key: a1b2c3d4-e5f6-4789-a012-3456789abcde" http://127.0.0.1:5000/users
+
+REM ============================================================================
+REM BASIC AUTH PROTECTED ENDPOINTS (API Key Recovery)
+REM ============================================================================
+
+REM 3. Retrieve your API key using Basic Auth (if you lost it)
+curl -u alice:secret123 http://127.0.0.1:5000/api-key
+
+REM ============================================================================
+REM ERROR TESTING
+REM ============================================================================
+
+REM 4. Test with missing API key (should fail with 401)
+curl http://127.0.0.1:5000/users
+
+REM Expected error:
+REM {
+REM   "error": "API key missing",
+REM   "message": "Include x-api-key header"
+REM }
+
+REM 5. Test with invalid API key (should fail with 401)
+curl -H "x-api-key: invalid-key-12345" http://127.0.0.1:5000/users
+
+REM Expected error:
+REM {
+REM   "error": "Invalid API key",
+REM   "message": "API key not recognized"
+REM }
+
+REM ============================================================================
+REM NOTES
+REM ============================================================================
+
+REM Note 1: API keys are generated using UUID, they look like: a1b2c3d4-e5f6-4789-a012-3456789abcde
+REM Note 2: Store API keys securely (environment variables, config files)
+REM Note 3: API keys are an ALTERNATIVE to Basic Auth, not used together on same endpoint
+REM Note 4: /users endpoint uses API key ONLY (no username:password needed)
+REM Note 5: /api-key endpoint uses Basic Auth ONLY (for key recovery)

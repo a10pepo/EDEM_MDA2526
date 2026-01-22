@@ -1,0 +1,12 @@
+# Exercise 05: API Key Authentication - Python Dependencies
+
+# Core Flask framework
+Flask==3.0.0
+
+# Password hashing utilities
+Werkzeug==3.0.1
+
+# HTTP Basic authentication support
+Flask-HTTPAuth==4.8.0
+
+# Note: uuid is part of Python standard library, no installation needed

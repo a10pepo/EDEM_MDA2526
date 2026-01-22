@@ -1,0 +1,31 @@
+REM Commands to test the students API in Windows CMD
+
+REM 1. Register initial user
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"example\", \"password\":\"secret\"}" http://127.0.0.1:5000/register
+
+REM 2. Login to get token
+curl -X POST -H "Content-Type: application/json" --user example:secret http://127.0.0.1:5000/login
+
+REM 3. Save the obtained token (replace YOUR_TOKEN_HERE with the actual token)
+set TOKEN=YOUR_TOKEN_HERE
+
+REM 4. Create test students
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer %TOKEN%" -d "{\"username\":\"student1\", \"password\":\"pass1\"}" http://127.0.0.1:5000/students
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer %TOKEN%" -d "{\"username\":\"student2\", \"password\":\"pass2\"}" http://127.0.0.1:5000/students
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer %TOKEN%" -d "{\"username\":\"student3\", \"password\":\"pass3\"}" http://127.0.0.1:5000/students
+
+REM 5. Test pagination - First page (10 elements)
+curl -X GET -H "Authorization: Bearer %TOKEN%" "http://127.0.0.1:5000/students?page=1&per_page=10"
+
+REM 6. Test pagination - Second page (10 elements)
+curl -X GET -H "Authorization: Bearer %TOKEN%" "http://127.0.0.1:5000/students?page=2&per_page=10"
+
+REM 7. Test pagination - First page with 5 elements
+curl -X GET -H "Authorization: Bearer %TOKEN%" "http://127.0.0.1:5000/students?page=1&per_page=5"
+
+REM 8. Test page out of range
+curl -X GET -H "Authorization: Bearer %TOKEN%" "http://127.0.0.1:5000/students?page=100"
+
+REM 9. Test with invalid number of elements per page
+curl -X GET -H "Authorization: Bearer %TOKEN%" "http://127.0.0.1:5000/students?per_page=0"
+REM Exercise 9: Implementing Pagination in Endpoints (Windows CMD)

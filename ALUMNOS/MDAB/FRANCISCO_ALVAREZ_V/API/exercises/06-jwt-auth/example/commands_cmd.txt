@@ -1,0 +1,25 @@
+REM Exercise 6: JWT Authentication Testing Commands (Windows CMD)
+REM These commands demonstrate the pure JWT authentication flow
+
+REM 1. Register a new user
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"alice\",\"password\":\"secret123\"}" http://127.0.0.1:5000/register
+
+REM 2. Login with credentials in JSON body (NOT Basic Auth) to get JWT token
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"alice\",\"password\":\"secret123\"}" http://127.0.0.1:5000/login
+
+REM 3. Access user profile with JWT token (replace YOUR_TOKEN with actual token from step 2)
+curl -X GET -H "Authorization: Bearer YOUR_TOKEN" http://127.0.0.1:5000/profile
+
+REM 4. Get all users with JWT token (replace YOUR_TOKEN with actual token)
+curl -X GET -H "Authorization: Bearer YOUR_TOKEN" http://127.0.0.1:5000/users
+
+REM 5. Access protected resource with JWT token (replace YOUR_TOKEN with actual token)
+curl -X GET -H "Authorization: Bearer YOUR_TOKEN" http://127.0.0.1:5000/protected
+
+REM 6. Try to access protected endpoint WITHOUT token (should fail with 401)
+curl -X GET http://127.0.0.1:5000/profile
+
+REM 7. Try to login with invalid credentials (should fail with 401)
+curl -X POST -H "Content-Type: application/json" -d "{\"username\":\"alice\",\"password\":\"wrongpassword\"}" http://127.0.0.1:5000/login
+
+REM Note: In PowerShell, use commands_powershell.txt instead for better token handling
