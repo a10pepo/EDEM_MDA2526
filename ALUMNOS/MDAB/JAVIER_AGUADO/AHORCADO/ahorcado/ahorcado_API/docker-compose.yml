@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:17-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U usuario -d ahorcado_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  app:
+    image: python:3.11-slim
+    build: .
+    volumes:
+      - ./:/app
+      - ./requirements.txt:/app/requirements.txt
+    env_file:
+      - .env
+    command: >
+      sh -c "pip install -r requirements.txt && python ahorcado.py"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+      
+volumes:
+  postgres_data:
+
