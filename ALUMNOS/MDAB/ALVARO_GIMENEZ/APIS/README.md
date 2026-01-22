@@ -12,9 +12,9 @@ Include documentation - README with setup instructions
 
 The project structure is the following:
 
-For this application, we first create an account and access the developer section of a Mastodon instance, where we create a new application with write permissions, which are sufficient for the purpose of publishing posts.
+For this application, we first create an account and access the developer section of a Mastodon instance, where we create a new application with write permissions, which are enough for the purpose of publishing posts.
 
-Once the application is created, an access token is generated. This token is required to authenticate requests against the Mastodon API and allows the application to publish messages on behalf of the user.
+Once the application is created, an access token is generated. This token is required to authenticate requests with the Mastodon API and allows the application to publish messages.
 
 We then create a Python script to publish a post by sending an HTTP POST request to the Mastodon API. The message content is sent in JSON format in the request body.
 
