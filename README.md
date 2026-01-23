@@ -73,7 +73,7 @@ Durante este bloque, los alumnos se centrarán en adquirir conocimientos sobre l
 <tr><th>M0</th><td>Docker</td><td>04 nov.</td><td>07 nov.</td></tr>
 <tr><th>M0</th><td>DBT</td><td>26 nov.</td><td>12 dic.</td></tr>
 <tr><th>M1</th><td>SQL</td><td>10 nov.</td><td>14 nov.</td></tr>
-<tr><th>M1</th><td>APIs</td><td>09 dic.</td><td>23 ene.</td></tr>
+<tr><th>M1</th><td>APIs</td><td>09 dic.</td><td>30 ene.</td></tr>
 <tr><th>M1</th><td>Kafka</td><td>12 feb.</td><td>02 ene.</td></tr>
 <tr><th>M1</th><td>Spark Streaming</td><td>15 dic.</td><td>06 feb.</td></tr>
 <tr><th>M2</th><td>GCP</td><td>25 feb.</td><td>05 jun.</td></tr>
