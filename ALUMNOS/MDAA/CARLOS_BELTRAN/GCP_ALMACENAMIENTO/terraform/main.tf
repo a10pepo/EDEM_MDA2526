@@ -1,170 +1,104 @@
-# DELIVERY APP VM
 
-resource "google_compute_instance" "delivery_app" {
+resource "google_storage_bucket" "data_lake" {
+  name          = "${var.project_id}-data-lake"
+  location      = var.region
+  force_destroy = true
 
-  boot_disk {
-    auto_delete = true
-    device_name = "delivery-app"
+  uniform_bucket_level_access = true
 
-    initialize_params {
-      image = "projects/debian-cloud/global/images/debian-12-bookworm-v20260114"
-      size  = 10
-      type  = "pd-balanced"
+  lifecycle_rule {
+    action {
+      type = "Delete"
     }
-
-    mode = "READ_WRITE"
+    condition {
+      age = 365
+    }
   }
-
-  can_ip_forward      = false
-  deletion_protection = false
-  enable_display      = false
 
   labels = {
-    goog-ec-src           = "vm_add-tf"
-    goog-ops-agent-policy = "v2-x86-template-1-4-0"
+    environment = "data-lake"
+    purpose     = "raw-data-storage"
   }
+}
 
-  machine_type = "e2-micro"
 
-  metadata = {
-    enable-osconfig = "TRUE"
-  }
-
-  name = "delivery-app"
+resource "google_compute_instance_from_machine_image" "delivery_app" {
+  name              = "delivery-app"
+  provider          = google-beta
+  zone              = var.zone
+  source_machine_image = "projects/${var.project_id}/global/machineImages/delivery-app-image"
+  machine_type      = "e2-micro"
+  allow_stopping_for_update = true
 
   network_interface {
+    subnetwork = var.subnetwork
     access_config {
-
+      # Ephemeral public IP
     }
-
-    queue_count = 0
-    stack_type  = "IPV4_ONLY"
-    subnetwork  = var.subnetwork
-  }
-
-  scheduling {
-    automatic_restart   = true
-    on_host_maintenance = "MIGRATE"
-    preemptible         = false
-    provisioning_model  = "STANDARD"
   }
 
   service_account {
     email  = var.service_account_email
     scopes = [
-      "https://www.googleapis.com/auth/devstorage.read_only", 
-      "https://www.googleapis.com/auth/logging.write", 
-      "https://www.googleapis.com/auth/monitoring.write", 
-      "https://www.googleapis.com/auth/service.management.readonly", 
-      "https://www.googleapis.com/auth/servicecontrol", 
+      "https://www.googleapis.com/auth/devstorage.read_write",
+      "https://www.googleapis.com/auth/logging.write",
+      "https://www.googleapis.com/auth/monitoring.write",
+      "https://www.googleapis.com/auth/service.management.readonly",
+      "https://www.googleapis.com/auth/servicecontrol",
       "https://www.googleapis.com/auth/trace.append",
       "https://www.googleapis.com/auth/cloud-platform",
       "https://www.googleapis.com/auth/sqlservice.admin",
       "https://www.googleapis.com/auth/pubsub"
-      ]
+    ]
   }
-
-  shielded_instance_config {
-    enable_integrity_monitoring = true
-    enable_secure_boot          = false
-    enable_vtpm                 = true
-  }
-
-  tags = ["http-server", "https-server"]
-  zone = "europe-west1-d"
 
   depends_on = [
     google_sql_database_instance.postgres_instance,
     google_pubsub_topic.order_events,
-    google_pubsub_topic.delivery_events
+    google_pubsub_topic.delivery_events,
+    google_storage_bucket.data_lake
   ]
-
 }
 
 
-# ORDERS APP VM
-resource "google_compute_instance" "orders_app" {
-
-
-  boot_disk {
-    auto_delete = true
-    device_name = "orders-app"
-
-    initialize_params {
-      image = "projects/debian-cloud/global/images/debian-12-bookworm-v20260114"
-      size  = 10
-      type  = "pd-balanced"
-    }
-
-    mode = "READ_WRITE"
-  }
-
-  can_ip_forward      = false
-  deletion_protection = false
-  enable_display      = false
-
-  labels = {
-    goog-ec-src           = "vm_add-tf"
-    goog-ops-agent-policy = "v2-x86-template-1-4-0"
-  }
-
-  machine_type = "e2-micro"
-
-  metadata = {
-    enable-osconfig = "TRUE"
-  }
-
-  name = "orders-app"
+resource "google_compute_instance_from_machine_image" "orders_app" {
+  name              = "orders-app"
+  provider          = google-beta
+  zone              = var.zone
+  source_machine_image = "projects/${var.project_id}/global/machineImages/orders-app-image"
+  machine_type      = "e2-micro"
+  allow_stopping_for_update = true
 
   network_interface {
+    subnetwork = var.subnetwork
     access_config {
-
+      # Ephemeral public IP
     }
-
-    queue_count = 0
-    stack_type  = "IPV4_ONLY"
-    subnetwork  = var.subnetwork
-  }
-
-  scheduling {
-    automatic_restart   = true
-    on_host_maintenance = "MIGRATE"
-    preemptible         = false
-    provisioning_model  = "STANDARD"
   }
 
   service_account {
     email  = var.service_account_email
     scopes = [
-      "https://www.googleapis.com/auth/devstorage.read_only", 
-      "https://www.googleapis.com/auth/logging.write", 
-      "https://www.googleapis.com/auth/monitoring.write", 
-      "https://www.googleapis.com/auth/service.management.readonly", 
-      "https://www.googleapis.com/auth/servicecontrol", 
+      "https://www.googleapis.com/auth/devstorage.read_write",
+      "https://www.googleapis.com/auth/logging.write",
+      "https://www.googleapis.com/auth/monitoring.write",
+      "https://www.googleapis.com/auth/service.management.readonly",
+      "https://www.googleapis.com/auth/servicecontrol",
       "https://www.googleapis.com/auth/trace.append",
       "https://www.googleapis.com/auth/cloud-platform",
       "https://www.googleapis.com/auth/sqlservice.admin",
       "https://www.googleapis.com/auth/pubsub"
-      ]
+    ]
   }
-
-  shielded_instance_config {
-    enable_integrity_monitoring = true
-    enable_secure_boot          = false
-    enable_vtpm                 = true
-  }
-
-  tags = ["http-server", "https-server"]
-  zone = "europe-west1-d"
 
   depends_on = [
     google_sql_database_instance.postgres_instance,
     google_pubsub_topic.order_events,
-    google_pubsub_topic.delivery_events
+    google_pubsub_topic.delivery_events,
+    google_storage_bucket.data_lake
   ]
 }
 
-# order_events Pub/Sub topic and subscription
 resource "google_pubsub_topic" "order_events" {
   name = "order-events"
 }
@@ -174,13 +108,11 @@ resource "google_pubsub_subscription" "order_events_sub" {
   topic = google_pubsub_topic.order_events.name
 }
 
-# delivery_events Pub/Sub topic
 resource "google_pubsub_topic" "delivery_events" {
   name = "delivery-events"
 }
 
 
-# Postgres SQL instance
 resource "google_sql_database_instance" "postgres_instance" {
   name             = "cloud-sql-cabesa-edem"
   region           = var.region
@@ -215,7 +147,6 @@ resource "google_sql_database" "ecommerce" {
 }
 
 
-# BigQuery Resources
 resource "google_bigquery_dataset" "orders_bronze" {
   dataset_id  = "orders_bronze"
   project     = var.project_id
@@ -308,7 +239,6 @@ EOF
   }
 }
 
-# Pub/Sub Subscription to BigQuery
 resource "google_pubsub_subscription" "delivery_events_bq_sub" {
   depends_on = [
     google_bigquery_table.raw_events_delivery,
@@ -331,7 +261,6 @@ resource "google_pubsub_subscription" "delivery_events_bq_sub" {
   }
 }
 
-# Dead Letter Topic and Subscription
 resource "google_pubsub_topic" "delivery_events_dead_letter" {
   name = "delivery-events-dead-letter"
 }
