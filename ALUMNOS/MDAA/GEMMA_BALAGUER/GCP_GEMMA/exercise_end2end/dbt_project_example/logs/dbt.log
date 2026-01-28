@@ -1,0 +1,88 @@
+[0m21:17:06.939132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE9F250EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEA05ABED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEA05ABB10>]}
+
+
+============================== 21:17:06.947927 | 534dce32-cca6-4b64-a4c3-76dfa5837737 ==============================
+[0m21:17:06.947927 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:17:06.949234 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gbala\\OneDrive\\Escritorio\\Máster Big Data\\apis\\DataProject_1', 'use_colors': 'True', 'invocation_command': 'dbt init edem_project', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:17:06.973201 [debug] [MainThread]: Starter project path: C:\Users\gbala\OneDrive\Escritorio\gcp-storage\gcp_datalake\exercise_end2end\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:17:06.988885 [info ] [MainThread]: 
+Your new dbt project "edem_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:17:06.989852 [info ] [MainThread]: Setting up your profile.
+[0m21:17:40.002963 [info ] [MainThread]: Profile edem_project written to C:\Users\gbala\OneDrive\Escritorio\Máster Big Data\apis\DataProject_1\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:17:40.008234 [debug] [MainThread]: Command `dbt init` succeeded at 21:17:40.005018 after 33.23 seconds
+[0m21:17:40.009138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEDB6A55B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEDB47F890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEDB559BF0>]}
+[0m21:17:40.010002 [debug] [MainThread]: Flushing usage events
+[0m21:17:40.441153 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:18:14.972586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E1C8E0EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E1DC4BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E1DC4BB10>]}
+
+
+============================== 21:18:14.979442 | 3f202320-f080-4fe6-b1d0-ca8cf14f8b17 ==============================
+[0m21:18:14.979442 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:18:14.980732 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gbala\\OneDrive\\Escritorio\\Máster Big Data\\apis\\DataProject_1', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:18:15.000142 [info ] [MainThread]: dbt version: 1.11.2
+[0m21:18:15.000816 [info ] [MainThread]: python version: 3.13.9
+[0m21:18:15.001524 [info ] [MainThread]: python path: C:\Users\gbala\OneDrive\Escritorio\gcp-storage\gcp_datalake\exercise_end2end\.venv\Scripts\python.exe
+[0m21:18:15.002182 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:18:21.450043 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:18:21.451801 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:18:21.452726 [info ] [MainThread]: Using profiles dir at C:\Users\gbala\OneDrive\Escritorio\Máster Big Data\apis\DataProject_1
+[0m21:18:21.453401 [info ] [MainThread]: Using profiles.yml file at C:\Users\gbala\OneDrive\Escritorio\Máster Big Data\apis\DataProject_1\profiles.yml
+[0m21:18:21.454016 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\gbala\OneDrive\Escritorio\gcp-storage\gcp_datalake\exercise_end2end\dbt_project_example\dbt_project.yml
+[0m21:18:21.454806 [info ] [MainThread]: Configuration:
+[0m21:18:21.455353 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m21:18:21.456226 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:18:21.457022 [info ] [MainThread]: Required dependencies:
+[0m21:18:21.457843 [debug] [MainThread]: Executing "git --help"
+[0m21:18:21.583667 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:18:21.584438 [debug] [MainThread]: STDERR: "b''"
+[0m21:18:21.585015 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:18:21.585971 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:18:21.586915 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:18:21.587921 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "valenbisi", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+Runtime Error
+  Credentials in profile "valenbisi_profile", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m21:18:21.588834 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\gbala\OneDrive\Escritorio\gcp-storage\gcp_datalake\exercise_end2end\dbt_project_example\dbt_project.yml> not found
+
+[0m21:18:21.590861 [debug] [MainThread]: Command `dbt debug` failed at 21:18:21.590555 after 6.80 seconds
+[0m21:18:21.591738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E58DFFBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E58E37650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E58AD1E10>]}
+[0m21:18:21.592475 [debug] [MainThread]: Flushing usage events
+[0m21:18:22.092234 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:31:06.293242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FEFDF0EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF114FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF114FB10>]}
+
+
+============================== 21:31:06.300824 | 60f9db8c-8969-4646-af2a-3ef80596ff66 ==============================
+[0m21:31:06.300824 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:31:06.301907 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gbala\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select expanded_delivery_events', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:31:06.302947 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\gbala\OneDrive\Escritorio\gcp-storage\gcp_datalake\exercise_end2end\dbt_project_example\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:31:06.304959 [debug] [MainThread]: Command `dbt run` failed at 21:31:06.304640 after 0.18 seconds
+[0m21:31:06.306019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF114A780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF214A330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF0FA7570>]}
+[0m21:31:06.306852 [debug] [MainThread]: Flushing usage events
+[0m21:31:06.740014 [debug] [MainThread]: An error was encountered while trying to flush usage events

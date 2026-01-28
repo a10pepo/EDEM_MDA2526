@@ -1,0 +1,10 @@
+edem_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: e2e-gemma-balaguer
+      dataset: dbt_dataset
+      threads: 1
+      location: europe-west1
