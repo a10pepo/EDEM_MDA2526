@@ -1,0 +1,114 @@
+---
+- name: Configure Orders App and Delivery App Instances
+  hosts: gcp_all_apps
+  become: yes
+
+  tasks:
+    # Fix Debian 11 repositories issue
+    - name: Remove bullseye-backports from sources
+      lineinfile:
+        path: /etc/apt/sources.list
+        regexp: 'bullseye-backports'
+        state: absent
+    
+    # Update the VM system
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+    
+    # Install git
+    - name: Install git
+      apt:
+        name: git
+        state: present
+    
+    # Clone the this repository
+    - name: Clone GCP Storage repository
+      git:
+        repo: https://github.com/JaviPlazaRosique/GCP_Storage.git
+        dest: /home/debian/GCP_Storage
+        version: HEAD
+      become: no
+      become_user: debian
+    
+    # Install python
+    - name: Install python3
+      apt:
+        name: python3
+        state: present
+    
+    # Install pip for install the dependencies.
+    - name: Install python3-pip
+      apt:
+        name: python3-pip
+        state: present
+    
+    # Install the dependencies
+    - name: Install project dependencies
+      pip:
+        requirements: /home/debian/GCP_Storage/e2e/VM/requirements.txt
+        state: present
+
+- name: Create Database Tables in Cloud SQL
+  hosts: localhost
+  vars_files:
+    - db_config.yml
+  
+  tasks:
+    # Create the operational database tables
+    - name: Execute create_tables.sql script
+      community.postgresql.postgresql_query:  
+        login_host: "{{ db_host }}"           
+        login_user: "{{ db_user }}"
+        login_password: "{{ db_password }}"
+        login_db: "{{ db_name }}"
+        query: "{{ lookup('file', 'sql/create_tables.sql') }}"
+      delegate_to: localhost                  
+      run_once: true
+
+- name: Run Orders App
+  hosts: gcp_orders_app
+  become: yes
+  vars_files:
+    - vars/env_vars.yml
+  vars:
+    db_password: "{{ PASSWORD_SQL }}"
+    db_user: "{{ USER_SQL }}"
+    gcs_bucket_name: "{{ GCS_BUCKET_NAME }}"
+    db_host: "{{ HOST_IP }}"
+  
+  tasks:
+    # Run Orders App
+    - name: Start Orders App
+      shell: |
+        cd /home/debian/GCP_Storage/e2e/VM/
+        nohup bash -c 'export PASSWORD_SQL="{{ db_password }}" && \
+                        export USER_SQL="{{ db_user }}" && \
+                        export GCS_BUCKET_NAME="{{ gcs_bucket_name }}" && \
+                        export HOST_IP="{{ db_host }}" && \
+                        python3 -m orders_app.orders_to_db.main' > /home/debian/orders_app.log 2>&1 &
+      become: no
+      become_user: debian
+      async: 2
+      poll: 0
+
+- name: Run Delivery App
+  hosts: gcp_delivery_app
+  become: yes
+  vars_files:
+    - vars/env_vars.yml
+  vars:
+    project_id: "{{ PROJECT_ID }}"
+  
+  tasks:
+    # Run Delivery App
+    - name: Start Delivery App
+      shell: |
+        cd /home/debian/GCP_Storage/e2e/VM/
+        nohup bash -c 'export PROJECT_ID="{{ project_id }}" && \
+                        python3 -m delivery_app.main' > /home/debian/delivery_app.log 2>&1 &
+      become: no
+      become_user: debian
+      async: 2
+      poll: 0
