@@ -1,0 +1,5 @@
+project_id = "<pon-tu-project-id"
+region     = "<pon-tu-region>"
+zone       = "<pon-tu-zona>"
+subnetwork = "<pon-aqui-tu-subnetwork>"
+service_account_email = "<pon-tu-service-account"
