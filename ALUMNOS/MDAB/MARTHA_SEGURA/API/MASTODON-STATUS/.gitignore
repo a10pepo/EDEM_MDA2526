@@ -1,0 +1,14 @@
+# Variables de entorno (SECRETOS)
+.env
+
+# Entorno virtual
+.venv/
+venv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Archivos de sistema (macOS)
+.DS_Store
+
