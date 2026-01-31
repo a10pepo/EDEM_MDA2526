@@ -4,6 +4,7 @@ import tweepy
 from dotenv import load_dotenv
 import time
 import requests
+load_dotenv()
 
 
 
@@ -23,7 +24,7 @@ def request_option():
 
 def post_tweet(content):
     try:
-        load_dotenv()
+    
         print("Posting en X...")
         client = tweepy.Client(
             consumer_key=os.getenv("X_API_KEY"),
@@ -74,7 +75,7 @@ def monitor_terremotos():
             time.sleep(60)
 
         except Exception as e:
-            print("Error conectando con la API, reintentando en 1 min...")
+            print(f"Error conectando con la API: {e}. Reintentando en 1 min...")
             time.sleep(60)
 
 def menu_alerta(terremoto):
