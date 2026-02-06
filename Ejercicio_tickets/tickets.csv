@@ -1,0 +1,11 @@
+id,fecha_compra,precio,direccion_establecimiento,nombre_tienda
+T-1001,2025-11-15 10:30:45,45.20,"Calle Mayor 12, Madrid","Supermercado El Sol"
+T-1002,2025-11-15 14:22:10,120.99,"Av. de la Constitución 45, Sevilla","TechWorld"
+T-1003,2025-11-16 09:15:00,12.50,"Paseo de Gracia 88, Barcelona","Cafetería Central"
+T-1004,2025-11-16 18:45:30,85.00,"Calle Uría 14, Oviedo","Moda Joven"
+T-1005,2025-11-17 11:05:12,6.75,"Plaza del Castillo 3, Pamplona","Librería Minerva"
+T-1006,2025-11-17 20:10:05,32.40,"Gran Vía 22, Bilbao","Farmacia 24h"
+T-1007,2025-11-18 13:55:20,55.15,"Calle Colón 10, Valencia","Hogar y Jardín"
+T-1008,2025-11-18 16:30:00,150.00,"Calle Sierpes 25, Sevilla","Joyeros Unidos"
+T-1009,2025-11-19 08:45:55,9.99,"Calle Real 5, Coruña","Panadería Artesana"
+T-1010,2025-11-19 21:20:40,42.80,"Avenida Libertad 100, Málaga","Restaurante El Puerto"
