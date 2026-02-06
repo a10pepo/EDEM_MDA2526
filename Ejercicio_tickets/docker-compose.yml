@@ -37,15 +37,13 @@ services:
   # VISUALIZACION (Dash/Plotly - Puerto 8050)
   visualizacion:
     build: ./03_Visualizacion
-    container_name: visualizacion
+    pull_policy: build 
+    container_name: air-quality-frontend
     ports:
       - "8050:8050" # Acceso: http://localhost:8050
     env_file: .env
-    restart: unless-stopped
-
-  # INGESTA
-  ingesta:
-    build: ./02_Ingesta
-    container_name: ingesta
+    # depends_on:
+    #   backend:
+    #     condition: service_healthy
     restart: unless-stopped
 

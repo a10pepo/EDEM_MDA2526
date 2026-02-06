@@ -3,8 +3,8 @@ FROM python:3.11-slim
 WORKDIR /app
 
 RUN pip install --upgrade pip \
-	&& pip install plotly pandas
+	&& pip install plotly pandas dash
 
-COPY tabla_ticket.py tickets.csv  mapa.py ./
+COPY juntos.py tickets.csv ./
 
-CMD ["sh", "-c", "python tabla_ticket.py & python mapa.py"]
+CMD ["python", "juntos.py"]
