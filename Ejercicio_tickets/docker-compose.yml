@@ -15,19 +15,19 @@ services:
       retries: 5
       start_period: 10s
 
-services:
-  flask:
-    build: ./servidor   # o donde esté tu Flask
-    container_name: flask_api
-    ports:
-      - "5000:5000"
+# services:
+#   flask:
+#     build: ./servidor   # o donde esté tu Flask
+#     container_name: flask_api
+#     ports:
+#       - "5000:5000"
 
-  generador:
-    build: .
-    container_name: generador_tickets
-    depends_on:
-      - flask
-    restart: unless-stopped
+#   generador:
+#     build: .
+#     container_name: generador_tickets
+#     depends_on:
+#       - flask
+#     restart: unless-stopped
 
 
 
