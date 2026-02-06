@@ -21,11 +21,9 @@ while True:
         "refund deadline": fechas[random.randint(0, 4)],
         "change deadline": fechas[random.randint(0, 4)]
         }
- 
-    print(ticket)
 
     #Llamamos a la ruta del servidor para enviar el ticket
-    #response = requests.post(FLASK_API_URL, json={"ticket": ticket})
+    response = requests.post(FLASK_API_URL, json={"ticket": ticket})
         
     #Esperamos 200 segundos hasta el nuevo ticket 
     sleep(200)
