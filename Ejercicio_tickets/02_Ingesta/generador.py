@@ -2,11 +2,17 @@ import random
 import requests
 from time import sleep
 from datetime import datetime
+import base64
 
 FLASK_API_URL = "http://backend:8000/ingestion"
+PICTURE_API_URL="https://picsum.photos/200/300"
 
 #Generador tickets automáticos 
 while True:
+
+    resp = requests.get(PICTURE_API_URL)
+    image_bytes = resp.content   # <-- bytes puros
+    image_b64 = base64.b64encode(image_bytes).decode("utf-8")
 
     tienda= ["Recambios Moratalla", "Tienda de Electrónica", "Supermercado El Ahorro", "Librería El Saber", "Ropa y Moda"]
     direcciones= ["Calle Falsa 123", "Avenida Siempre Viva 456", "Plaza Mayor 789", "Calle del Sol 321", "Avenida de la Luna 654"]
@@ -24,6 +30,7 @@ while True:
         "latitud":latitud[aleatorio],
         "longitud":longitud[aleatorio],
         "product_name": producto[random.randint(0, 4)],
+        "product_image": image_b64,
         "import": round(random.uniform(10.0, 1000.0), 2),
         "refund_deadline": fechas[random.randint(0, 4)],
         "change_deadline": fechas[random.randint(0, 4)]
@@ -36,5 +43,4 @@ while True:
     except:
       print("Error al enviar el ticket. El servidor no está disponible.")
 
-    #Esperamos 200 segundos hasta el nuevo ticket 
-    sleep(20)
+    sleep(0.2)  
