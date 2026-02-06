@@ -1,42 +1,24 @@
 WITH source AS (
-    -- Seleccionamos la tabla de origen (raw)
-    SELECT * FROM {{ source('public', 'raw_tickets') }}
+    SELECT * FROM {{ source('raw', 'tickets') }}
 ),
 
 renamed_and_categorized AS (
     SELECT
-        -- 1. Identificadores y Fechas
-        ticket_id,
-        timestamp,
+        -- 1. Mapeo de columnas (Origen -> Destino)
+        id_ticket AS ticket_id,
+        purchase_date AS timestamp,
+        shop AS shop_name,
+        price AS amount,
         
-        -- 2. Limpieza de columnas (renombramos para corregir typos del Python)
-        adress AS address,  -- Corregimos 'adress'
-        shop_name,
-        
-        -- Renombramos 'import' a 'amount' o 'total' para evitar errores de SQL
-        "import" AS amount, 
-        
-        -- Asumimos que la nueva columna que meten 'los de ingesta' se llama 'product'
-        product,
+        -- Traemos la columna tal cual la definen en backend
+        product_name,
 
-        -- 3. Fechas límite
-        refund_deadline,
-        change_deadline,
-
-        -- 4. Lógica de Categorización (La "movida" nueva)
+        -- 2. Lógica de Categorización (Usando el nuevo nombre)
         CASE 
-            -- A y B -> Tecnología (Recambios y Electrónica)
-            WHEN product IN ('Producto A', 'Producto B') THEN 'Tecnología'
-            
-            -- C -> Alimentación (Supermercado)
-            WHEN product = 'Producto C' THEN 'Alimentación'
-            
-            -- D -> Ocio (Librería)
-            WHEN product = 'Producto D' THEN 'Ocio'
-            
-            -- E -> Ropa (Ropa y Moda)
-            WHEN product = 'Producto E' THEN 'Ropa'
-            
+            WHEN product_name IN ('Producto A', 'Producto B') THEN 'Tecnología'
+            WHEN product_name = 'Producto C' THEN 'Alimentación'
+            WHEN product_name = 'Producto D' THEN 'Ocio'
+            WHEN product_name = 'Producto E' THEN 'Ropa'
             ELSE 'Sin Categoría'
         END AS category
 
