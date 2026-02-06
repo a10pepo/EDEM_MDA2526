@@ -1,51 +1,24 @@
+import time
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 from dash import Dash, html, dcc
 import os
+import requests
 
 # ── Cargar datos ──────────────────────────────────────────────────────────────
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(script_dir, "tickets.csv")
-df = pd.read_csv(csv_path)
+# script_dir = os.path.dirname(os.path.abspath(__file__))
+# csv_path = os.path.join(script_dir, "tickets.csv")
+# df = pd.read_csv(csv_path)
 
 # Assign spending categories based on store name.
-categoria_map = {
-    "Mercadona": "alimentacion",
-    "Carrefour": "alimentacion",
-    "Gasolinera Repsol": "alimentacion",
-    "Restaurante El Pescador": "alimentacion",
-    "Starbucks": "alimentacion",
-    "Burger King": "alimentacion",
-    "Farmacia Central": "alimentacion",
-    "Zara": "ropa",
-    "H&M": "ropa",
-    "Decathlon": "ropa",
-    "Netflix": "ocio",
-    "Cines Yelmo": "ocio",
-    "Amazon": "tecnologia",
-    "Apple Store": "tecnologia",
-    "MediaMarkt": "tecnologia",
-    "IKEA": "tecnologia",
-}
-df["categoria"] = df["tienda"].map(categoria_map).fillna("ocio")
-
-if "latitud" not in df.columns or "longitud" not in df.columns:
-    base_lat, base_lon = 39.4699, -0.3763
-    offsets = [(i % 5, i // 5) for i in range(len(df))]
-    df["latitud"] = [base_lat + (dx - 2) * 0.01 for dx, _ in offsets]
-    df["longitud"] = [base_lon + (dy - 2) * 0.01 for _, dy in offsets]
-
-
-# ── 1. Mapa ───────────────────────────────────────────────────────────────────
-
 def crear_mapa(df):
     fig = go.Figure(go.Scattermap(
-        lat=df["latitud"],
-        lon=df["longitud"],
-        mode="markers",
+    lat=df["latitud"],
+    lon=df["longitud"],
+    mode="markers",
         marker=go.scattermap.Marker(
             size=[max(10, p / 10) for p in df["precio"]],
             color=df["precio"],
@@ -78,13 +51,12 @@ def crear_mapa(df):
     return fig
 
 
-# ── 2. Dashboard de graficas ──────────────────────────────────────────────────
+    # ── 2. Dashboard de graficas ──────────────────────────────────────────────────
 
 def crear_dashboard(df):
     df = df.copy()
     df["fecha_compra"] = pd.to_datetime(df["fecha_compra"])
     df = df.sort_values("fecha_compra")
-
     fig = make_subplots(
         rows=3, cols=2,
         subplot_titles=(
@@ -103,7 +75,6 @@ def crear_dashboard(df):
         vertical_spacing=0.10,
         horizontal_spacing=0.08,
     )
-
     # 1) Gasto por fecha
     gasto_fecha = df.groupby("fecha_compra")["precio"].sum().reset_index()
     fig.add_trace(
@@ -111,7 +82,6 @@ def crear_dashboard(df):
             marker_color="#3498db", showlegend=False),
         row=1, col=1,
     )
-
     # 2) Gasto por tienda (donut)
     gasto_tienda = df.groupby("tienda")["precio"].sum()
     fig.add_trace(
@@ -121,8 +91,6 @@ def crear_dashboard(df):
         ),
         row=1, col=2,
     )
-
-
     # 3) Gasto por categoria
     gasto_categoria = df.groupby("categoria")["precio"].sum().reindex(
         ["ropa", "ocio", "alimentacion", "tecnologia"], fill_value=0
@@ -137,7 +105,6 @@ def crear_dashboard(df):
         row=2,
         col=2,
     )
-
     # 4) Top tiendas por gasto total
     top_tiendas = df.groupby("tienda")["precio"].sum().sort_values(ascending=True)
     fig.add_trace(
@@ -145,8 +112,6 @@ def crear_dashboard(df):
             marker_color="#2ecc71", showlegend=False),
         row=2, col=1,
     )
-
-
     fig.update_layout(
         title=dict(text="Dashboard de Tickets de Compra", font=dict(size=22)),
         height=1100,
@@ -157,7 +122,6 @@ def crear_dashboard(df):
     fig.update_yaxes(title_text="EUR", row=1, col=1)
     fig.update_yaxes(title_text="EUR", row=3, col=1)
     fig.update_xaxes(tickangle=-45, row=3, col=2)
-
     # KPIs
     total_gastado = df["precio"].sum()
     media_ticket = df["precio"].mean()
@@ -175,8 +139,7 @@ def crear_dashboard(df):
     )
     return fig
 
-
-# ── 3. Tabla ──────────────────────────────────────────────────────────────────
+    # ── 3. Tabla ──────────────────────────────────────────────────────────────────
 
 def crear_tabla(df):
     df = df.copy()
@@ -184,7 +147,6 @@ def crear_tabla(df):
     n = len(df)
     row_colors = ["#f2f2f2" if i % 2 == 0 else "white" for i in range(n)]
     precio_formatted = [f"{p:.2f} EUR" for p in df["precio"]]
-
     fig = go.Figure(
         go.Table(
             header=dict(
@@ -214,19 +176,45 @@ def crear_tabla(df):
     )
     return fig
 
+def mostrar_foto(path):
+    fig = go.Figure()
+    fig.add_layout_image(
+        dict(
+            source=path,
+            xref="paper", yref="paper",
+            x=0.5, y=0.5,
+            sizex=0.6, sizey=0.6,
+            xanchor="center", yanchor="middle",
+        )
+    )
+    return fig
+
 
 # ── App Dash ──────────────────────────────────────────────────────────────────
+while True:
+    try:
+        response = requests.get("http://backend:8000/tickets")
+        response.raise_for_status()
+        data = response.json()
+        df = pd.DataFrame(data)
+        app = Dash(__name__)
+        app.layout = html.Div([
+            html.H1("Tickets de Compra", style={"textAlign": "center", "padding": "20px"}),
+            dcc.Graph(id="mapa", figure=crear_mapa(df)),
+            html.Hr(),
+            dcc.Graph(id="dashboard", figure=crear_dashboard(df)),
+            html.Hr(),
+            dcc.Graph(id="tabla", figure=crear_tabla(df)),
+            html.Hr(),
+            html.Graph(id = "foto", figure = mostrar_foto(df), style={"textAlign": "center"})
 
-app = Dash(__name__)
+        ], style={"maxWidth": "1400px", "margin": "0 auto"})
+        app.run_server(debug=True)
 
-app.layout = html.Div([
-    html.H1("Tickets de Compra", style={"textAlign": "center", "padding": "20px"}),
-    dcc.Graph(id="mapa", figure=crear_mapa(df)),
-    html.Hr(),
-    dcc.Graph(id="dashboard", figure=crear_dashboard(df)),
-    html.Hr(),
-    dcc.Graph(id="tabla", figure=crear_tabla(df)),
-], style={"maxWidth": "1400px", "margin": "0 auto"})
+    except requests.exceptions.RequestException as e:
+        print(f"Error al obtener datos del backend: {e}")
+        print("Reintentando en 5 segundos...")
+        time.sleep(5)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8050, debug=False)
+
+    
