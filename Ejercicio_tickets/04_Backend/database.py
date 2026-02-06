@@ -1,5 +1,5 @@
 from sqlalchemy import text, types
-from config import engine # Importamos el engine centralizado
+from config_env import engine # Importamos el engine centralizado
 import time
 import pandas as pd
 import os

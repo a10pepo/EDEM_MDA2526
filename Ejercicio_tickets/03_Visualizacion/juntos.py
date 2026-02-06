@@ -11,6 +11,27 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(script_dir, "tickets.csv")
 df = pd.read_csv(csv_path)
 
+# Assign spending categories based on store name.
+categoria_map = {
+    "Mercadona": "alimentacion",
+    "Carrefour": "alimentacion",
+    "Gasolinera Repsol": "alimentacion",
+    "Restaurante El Pescador": "alimentacion",
+    "Starbucks": "alimentacion",
+    "Burger King": "alimentacion",
+    "Farmacia Central": "alimentacion",
+    "Zara": "ropa",
+    "H&M": "ropa",
+    "Decathlon": "ropa",
+    "Netflix": "ocio",
+    "Cines Yelmo": "ocio",
+    "Amazon": "tecnologia",
+    "Apple Store": "tecnologia",
+    "MediaMarkt": "tecnologia",
+    "IKEA": "tecnologia",
+}
+df["categoria"] = df["tienda"].map(categoria_map).fillna("ocio")
+
 if "latitud" not in df.columns or "longitud" not in df.columns:
     base_lat, base_lon = 39.4699, -0.3763
     offsets = [(i % 5, i // 5) for i in range(len(df))]
@@ -87,7 +108,7 @@ def crear_dashboard(df):
     gasto_fecha = df.groupby("fecha_compra")["precio"].sum().reset_index()
     fig.add_trace(
         go.Bar(x=gasto_fecha["fecha_compra"], y=gasto_fecha["precio"],
-               marker_color="#3498db", showlegend=False),
+            marker_color="#3498db", showlegend=False),
         row=1, col=1,
     )
 
@@ -101,11 +122,27 @@ def crear_dashboard(df):
         row=1, col=2,
     )
 
-    # 3) Top tiendas por gasto total
+
+    # 3) Gasto por categoria
+    gasto_categoria = df.groupby("categoria")["precio"].sum().reindex(
+        ["ropa", "ocio", "alimentacion", "tecnologia"], fill_value=0
+    )
+    fig.add_trace(
+        go.Bar(
+            x=gasto_categoria.index,
+            y=gasto_categoria.values,
+            marker_color="#e67e22",
+            showlegend=False,
+        ),
+        row=2,
+        col=2,
+    )
+
+    # 4) Top tiendas por gasto total
     top_tiendas = df.groupby("tienda")["precio"].sum().sort_values(ascending=True)
     fig.add_trace(
         go.Bar(x=top_tiendas.values, y=top_tiendas.index, orientation="h",
-               marker_color="#2ecc71", showlegend=False),
+            marker_color="#2ecc71", showlegend=False),
         row=2, col=1,
     )
 

@@ -6,11 +6,25 @@ from pydantic import BaseModel, ConfigDict
 from typing import Optional, Dict, Any
 from sqlalchemy import types, text
 from contextlib import asynccontextmanager
-from database import init_db, load_historical_real_data, load_historical_simulated_data
+from database import init_db
 from sqlalchemy.dialects.postgresql import insert
 import math
 
 # ----------------------------------
+
+@asynccontextmanager    # El decorador es un envoltorio funcional. Le dice a python que la función es un Gestor de Contexto (Context Manager) y tiene dos tiempos, una al arrancar (Antes del yield) y otra al apagar la api (Despues del yield)
+async def lifespan(app: FastAPI):
+
+    # --- CÓDIGO AL ARRANCAR EL CONTENEDOR ---
+
+    try:
+        init_db()
+        # Cargar datos históricos (solo se ejecuta si la tabla está vacía)
+        
+    except Exception as e:
+        print(f"❌ Error inicializando la BD: {e}")
+    yield   #Pausa la ejecución de la función para seguir con la aplicación.
+            #Se pueden configurar acciones a realizar al apagar la api
 
 # Inicialización de la API
 app = FastAPI(
