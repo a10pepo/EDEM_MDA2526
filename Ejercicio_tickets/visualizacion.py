@@ -7,7 +7,7 @@ fig = go.Figure(data=[go.Table(
     header=dict(values=list(df.columns),
                 fill_color='paleturquoise',
                 align='left'),
-    cells=dict(values=[df.id, df.fecha_compra, df.precio, df.direccion_establecimiento, df.nombre_tienda],
+    cells=dict(values=[df.tienda, df.fecha_compra, df.precio, df.id],
             fill_color='lavender',
             align='left'))
 ])
