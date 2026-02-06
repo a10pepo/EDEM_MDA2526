@@ -1,6 +1,7 @@
 import random
 import requests
 from time import sleep
+from datetime import datetime
 
 FLASK_API_URL = "http://backend:8000/ingestion"
 
@@ -17,7 +18,7 @@ while True:
     aleatorio=random.randint(0, 4)
 
     ticket= {"ticket_id": random.randint(1, 1000),
-        "timestamp": "2024-06-01 11:00:00",
+        "timestamp": datetime.now().isoformat(),
         "adress": direcciones[aleatorio],
         "shop_name": tienda[aleatorio], 
         "latitud":latitud[aleatorio],
