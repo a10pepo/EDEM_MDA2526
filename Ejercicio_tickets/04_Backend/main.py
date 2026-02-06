@@ -2,14 +2,44 @@ from fastapi import FastAPI, HTTPException, Depends, Security, Query
 from fastapi.security import APIKeyHeader
 from config_env import *
 import pandas as pd
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional, Dict, Any
 from sqlalchemy import types, text
 from contextlib import asynccontextmanager
 from database import init_db
 from sqlalchemy.dialects.postgresql import insert
 import math
+from datetime import date
 
+class TicketCreate(BaseModel):
+    # Identificadores (Basados en el JSON del script)
+    # Usamos Field(alias=...) porque el script envía nombres distintos a los de la DB
+    ticket_id: int = Field(alias="ticket_id")
+    timestamp: str = Field(alias="timestamp") # "2024-06-01 11:00:00"
+    
+    # Contexto de la tienda y producto
+    shop_name: str = Field(alias="shop_name")
+    product_name: str = Field(alias="product_name")
+    direccion: str = Field(alias="adress") # Mapea el error 'adress' del script
+    
+    # Valores numéricos
+    precio: float = Field(alias="import")
+    
+    # Fechas (Opcionales para evitar errores si el generador fallara)
+    refund_deadline: Optional[date] = Field(default=None, alias="refund_deadline")
+    change_deadline: Optional[date] = Field(default=None, alias="change_deadline")
+
+    # Si en el futuro el script enviara coordenadas, podrías usarlas así:
+    # geo_point_2d: Optional[Dict[str, Any]] = None
+
+    # CONFIGURACIÓN DE SEGURIDAD
+    # 'forbid' asegura que si el script envía un campo no definido, FastAPI lo rechace
+    # 'populate_by_name' permite usar tanto 'precio' como 'import' en el código
+    model_config = ConfigDict(
+        extra='forbid',
+        populate_by_name=True
+    )
+        
 # ----------------------------------
 
 @asynccontextmanager    # El decorador es un envoltorio funcional. Le dice a python que la función es un Gestor de Contexto (Context Manager) y tiene dos tiempos, una al arrancar (Antes del yield) y otra al apagar la api (Despues del yield)

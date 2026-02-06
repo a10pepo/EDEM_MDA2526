@@ -3,3 +3,4 @@ uvicorn
 pandas
 sqlalchemy
 psycopg[binary]
+requests
