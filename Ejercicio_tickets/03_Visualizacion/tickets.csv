@@ -1,4 +1,4 @@
-tienda,fecha_compra,precio,id
+tienda,fecha_compra,precio,id_ticket
 Mercadona,2026-01-01,45.20,TKT-1001
 Amazon,2026-01-02,120.50,TKT-1002
 Zara,2026-01-04,59.95,TKT-1003
