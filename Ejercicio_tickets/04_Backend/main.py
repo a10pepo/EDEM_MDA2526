@@ -147,7 +147,7 @@ async def get_tickets():
     Endpoint para obtener todos los tickets de la vista final.
     Devuelve un JSON con los datos listos para visualización.
     """
-    query = text("SELECT * FROM public.ventas_finales;")
+    query = text("SELECT * FROM raw.tickets;")
     
     try:
         with engine.connect() as conn:

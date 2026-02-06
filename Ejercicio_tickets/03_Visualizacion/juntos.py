@@ -1,212 +1,112 @@
-import time
 import pandas as pd
 import plotly.graph_objects as go
-import plotly.express as px
 from plotly.subplots import make_subplots
-from dash import Dash, html, dcc
-import os
+from dash import Dash, html, dcc, dash_table, Input, Output
 import requests
 
+# --- 1. FUNCIÓN PARA CARGAR DATOS (CENTRALIZADA) ---
+def cargar_datos():
+    url = "http://localhost:8000/datos"
+    try:
+        print(f"Intentando conectar a {url}...")
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()
+        return pd.DataFrame(response.json())
+    except Exception as e:
+        print(f"Error conectando al backend: {e}")
+        return pd.DataFrame()
 
-# Assign spending categories based on store name.
+# --- 2. FUNCIONES DE VISUALIZACIÓN ---
 def crear_mapa(df):
+    if df.empty: return go.Figure()
     fig = go.Figure(go.Scattermap(
-    lat=df["latitud"],
-    lon=df["longitud"],
-    mode="markers",
-        marker=go.scattermap.Marker(
-            size=[max(10, p / 10) for p in df["precio"]],
-            color=df["precio"],
-            colorscale="Viridis",
-            showscale=True,
-        ),
-        text=df["tienda"],
-        customdata=df[["fecha_compra", "precio", "id_ticket"]],
-        hovertemplate=(
-            "<b>Tienda:</b> %{text}<br>"
-            "<b>Fecha:</b> %{customdata[0]}<br>"
-            "<b>Precio:</b> %{customdata[1]:.2f} EUR<br>"
-            "<b>ID:</b> %{customdata[2]}"
-            "<extra></extra>"
-        ),
+        lat=df["latitud"], lon=df["longitud"],
+        mode="markers",
+        marker=go.scattermap.Marker(size=12, color=df["precio"], colorscale="Viridis", showscale=True),
+        text=df["tienda"]
     ))
     fig.update_layout(
-        title="Mapa de Ventas por Ubicacion",
-        autosize=True,
-        hovermode="closest",
-        height=600,
-        map=dict(
-            style="carto-positron",
-            bearing=0,
-            center=dict(lat=df["latitud"].mean(), lon=df["longitud"].mean()),
-            pitch=0,
-            zoom=5,
-        ),
+        title="Ubicación de Compras",
+        height=400,
+        map=dict(style="carto-positron", center=dict(lat=df["latitud"].mean(), lon=df["longitud"].mean()), zoom=4),
+        margin={"r":0,"t":40,"l":0,"b":0}
     )
     return fig
-
-
-    # ── 2. Dashboard de graficas ──────────────────────────────────────────────────
 
 def crear_dashboard(df):
-    df = df.copy()
+    if df.empty: return go.Figure()
     df["fecha_compra"] = pd.to_datetime(df["fecha_compra"])
-    df = df.sort_values("fecha_compra")
-    fig = make_subplots(
-        rows=3, cols=2,
-        subplot_titles=(
-            "Gasto por Fecha",
-            "Gasto por Tienda",
-            "Top Tiendas por Gasto Total",
-            "Distribucion de Precios",
-            "Timeline de Compras",
-            "Numero de Compras por Tienda",
-        ),
-        specs=[
-            [{"type": "bar"}, {"type": "pie"}],
-            [{"type": "bar"}, {}],
-            [{"type": "scatter"}, {"type": "bar"}],
-        ],
-        vertical_spacing=0.10,
-        horizontal_spacing=0.08,
-    )
-    # 1) Gasto por fecha
+    fig = make_subplots(rows=1, cols=2, subplot_titles=("Gasto por Fecha", "Distribución por Tienda"), specs=[[{"type": "bar"}, {"type": "pie"}]])
+    
     gasto_fecha = df.groupby("fecha_compra")["precio"].sum().reset_index()
-    fig.add_trace(
-        go.Bar(x=gasto_fecha["fecha_compra"], y=gasto_fecha["precio"],
-            marker_color="#3498db", showlegend=False),
-        row=1, col=1,
-    )
-    # 2) Gasto por tienda (donut)
+    fig.add_trace(go.Bar(x=gasto_fecha["fecha_compra"], y=gasto_fecha["precio"], marker_color="#3498db"), row=1, col=1)
+    
     gasto_tienda = df.groupby("tienda")["precio"].sum()
-    fig.add_trace(
-        go.Pie(
-            labels=gasto_tienda.index, values=gasto_tienda.values,
-            hole=0.45, textinfo="label+percent", showlegend=False,
-        ),
-        row=1, col=2,
-    )
-    # 3) Gasto por categoria
-    gasto_categoria = df.groupby("categoria")["precio"].sum().reindex(
-        ["ropa", "ocio", "alimentacion", "tecnologia"], fill_value=0
-    )
-    fig.add_trace(
-        go.Bar(
-            x=gasto_categoria.index,
-            y=gasto_categoria.values,
-            marker_color="#e67e22",
-            showlegend=False,
-        ),
-        row=2,
-        col=2,
-    )
-    # 4) Top tiendas por gasto total
-    top_tiendas = df.groupby("tienda")["precio"].sum().sort_values(ascending=True)
-    fig.add_trace(
-        go.Bar(x=top_tiendas.values, y=top_tiendas.index, orientation="h",
-            marker_color="#2ecc71", showlegend=False),
-        row=2, col=1,
-    )
-    fig.update_layout(
-        title=dict(text="Dashboard de Tickets de Compra", font=dict(size=22)),
-        height=1100,
-        template="plotly_white",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        font=dict(family="Segoe UI, sans-serif", size=12),
-    )
-    fig.update_yaxes(title_text="EUR", row=1, col=1)
-    fig.update_yaxes(title_text="EUR", row=3, col=1)
-    fig.update_xaxes(tickangle=-45, row=3, col=2)
-    # KPIs
-    total_gastado = df["precio"].sum()
-    media_ticket = df["precio"].mean()
-    ticket_max = df["precio"].max()
-    num_tickets = len(df)
-    fig.add_annotation(
-        text=(
-            f"<b>Total gastado:</b> {total_gastado:,.2f} EUR  |  "
-            f"<b>Ticket medio:</b> {media_ticket:,.2f} EUR  |  "
-            f"<b>Ticket max:</b> {ticket_max:,.2f} EUR  |  "
-            f"<b>Num. tickets:</b> {num_tickets}"
-        ),
-        xref="paper", yref="paper", x=0.5, y=-0.04,
-        showarrow=False, font=dict(size=14),
-    )
+    fig.add_trace(go.Pie(labels=gasto_tienda.index, values=gasto_tienda.values, hole=.3), row=1, col=2)
+    
+    fig.update_layout(height=400, showlegend=False, template="plotly_white")
     return fig
 
-    # ── 3. Tabla ──────────────────────────────────────────────────────────────────
+# --- 3. CONFIGURACIÓN DE LA APP ---
+app = Dash(__name__)
 
-def crear_tabla(df):
-    df = df.copy()
-    df = df.sort_values("fecha_compra")
-    n = len(df)
-    row_colors = ["#f2f2f2" if i % 2 == 0 else "white" for i in range(n)]
-    precio_formatted = [f"{p:.2f} EUR" for p in df["precio"]]
-    fig = go.Figure(
-        go.Table(
-            header=dict(
-                values=["ID Ticket", "Fecha Compra", "Tienda", "Precio"],
-                fill_color="#2c3e50",
-                font=dict(color="white", size=13),
-                align="center",
-            ),
-            cells=dict(
-                values=[
-                    df["id_ticket"].tolist(),
-                    df["fecha_compra"].tolist(),
-                    df["tienda"].tolist(),
-                    precio_formatted,
-                ],
-                fill_color=[row_colors] * 4,
-                align=["center", "center", "left", "right"],
-                font=dict(size=12),
-                height=30,
-            ),
-        )
+app.layout = html.Div([
+    html.H1("Dashboard de Tickets (Actualización Automática)", style={"textAlign": "center"}),
+    
+    # El componente Interval: 60*1000 milisegundos = 1 minuto
+    dcc.Interval(
+        id='intervalo-actualizacion',
+        interval=60*1000, 
+        n_intervals=0
+    ),
+
+    html.Div(id='indicador-kpis', style={"display": "flex", "justifyContent": "center", "gap": "20px"}),
+    
+    dcc.Graph(id='grafico-mapa'),
+    dcc.Graph(id='grafico-principal'),
+    
+    html.H3("Listado de Tickets"),
+    dash_table.DataTable(
+        id='tabla-tickets',
+        columns=[
+            {"name": "ID Ticket", "id": "id_ticket"},
+            {"name": "Fecha", "id": "fecha_compra"},
+            {"name": "Tienda", "id": "tienda"},
+            {"name": "Precio", "id": "precio"}
+        ],
+        page_size=10,
+        style_cell={'textAlign': 'left', 'padding': '10px'}
     )
-    fig.update_layout(
-        title="Detalle de Tickets",
-        height=max(400, 45 * n),
-        margin=dict(l=20, r=20, t=60, b=20),
-    )
-    return fig
+], style={"maxWidth": "1200px", "margin": "0 auto", "padding": "20px"})
 
-def mostrar_foto(path):
-    fig = go.Figure()
-    fig.add_layout_image(
-        dict(
-            source=path,
-            xref="paper", yref="paper",
-            x=0.5, y=0.5,
-            sizex=0.6, sizey=0.6,
-            xanchor="center", yanchor="middle",
-        )
-    )
-    return fig
+# --- 4. CALLBACK DE ACTUALIZACIÓN ---
+@app.callback(
+    [Output('grafico-mapa', 'figure'),
+    Output('grafico-principal', 'figure'),
+    Output('tabla-tickets', 'data'),
+    Output('indicador-kpis', 'children')],
+    [Input('intervalo-actualizacion', 'n_intervals')]
+)
+def actualizar_todo(n):
+    # Esta función se ejecuta al cargar la página y cada 60 segundos
+    df = cargar_datos()
+    
+    if df.empty:
+        return go.Figure(), go.Figure(), [], "No hay datos disponibles"
 
+    # Generar nuevas figuras con los datos frescos
+    fig_mapa = crear_mapa(df)
+    fig_dash = crear_dashboard(df)
+    datos_tabla = df.to_dict('records')
+    
+    # Crear KPIs
+    kpis = [
+        html.Div([html.B("Total: "), f"{df['precio'].sum():.2f} EUR"]),
+        html.Div([html.B("Tickets: "), f"{len(df)}"]),
+        html.Div([html.Small(f"Última actualización: {pd.Timestamp.now().strftime('%H:%M:%S')}")], style={"color": "gray"})
+    ]
+    
+    return fig_mapa, fig_dash, datos_tabla, kpis
 
-# ── App Dash ──────────────────────────────────────────────────────────────────
-while True:
-    try:
-        response = requests.get("http://backend:8000/tickets")
-        response.raise_for_status()
-        data = response.json()
-        df = pd.DataFrame(data)
-        app = Dash(__name__)
-        app.layout = html.Div([
-            html.H1("Tickets de Compra", style={"textAlign": "center", "padding": "20px"}),
-            dcc.Graph(id="mapa", figure=crear_mapa(df)),
-            html.Hr(),
-            dcc.Graph(id="dashboard", figure=crear_dashboard(df)),
-            html.Hr(),
-            dcc.Graph(id="tabla", figure=crear_tabla(df)),
-            html.Hr(),
-            dcc.Graph(id = "foto", figure = mostrar_foto(df), style={"textAlign": "center"})
-
-        ], style={"maxWidth": "1400px", "margin": "0 auto"})
-        app.run_server(debug=True)
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error al obtener datos del backend: {e}")
-        print("Reintentando en 5 segundos...")
-        time.sleep(5)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8050, debug=True)

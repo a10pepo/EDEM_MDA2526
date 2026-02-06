@@ -5,6 +5,6 @@ WORKDIR /app
 RUN pip install --upgrade pip \
 	&& pip install plotly pandas dash
 
-COPY juntos.py tickets.csv ./
+COPY juntos.py ./
 
 CMD ["python", "juntos.py"]
