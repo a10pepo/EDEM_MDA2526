@@ -7,11 +7,6 @@ from dash import Dash, html, dcc
 import os
 import requests
 
-# ── Cargar datos ──────────────────────────────────────────────────────────────
-
-# script_dir = os.path.dirname(os.path.abspath(__file__))
-# csv_path = os.path.join(script_dir, "tickets.csv")
-# df = pd.read_csv(csv_path)
 
 # Assign spending categories based on store name.
 def crear_mapa(df):
@@ -206,7 +201,7 @@ while True:
             html.Hr(),
             dcc.Graph(id="tabla", figure=crear_tabla(df)),
             html.Hr(),
-            html.Graph(id = "foto", figure = mostrar_foto(df), style={"textAlign": "center"})
+            dcc.Graph(id = "foto", figure = mostrar_foto(df), style={"textAlign": "center"})
 
         ], style={"maxWidth": "1400px", "margin": "0 auto"})
         app.run_server(debug=True)
@@ -215,6 +210,3 @@ while True:
         print(f"Error al obtener datos del backend: {e}")
         print("Reintentando en 5 segundos...")
         time.sleep(5)
-
-
-    

@@ -140,3 +140,21 @@ async def create_ticket(ticket: TicketCreate):
         # Log the error and return a 500 status code
         print(f"Database error: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error during database insertion")
+
+@app.get("/datos")
+async def get_tickets():
+    """
+    Endpoint para obtener todos los tickets de la vista final.
+    Devuelve un JSON con los datos listos para visualización.
+    """
+    query = text("SELECT * FROM public.ventas_finales;")
+    
+    try:
+        with engine.connect() as conn:
+            result = conn.execute(query)
+            tickets = [dict(row) for row in result]
+        return tickets, 200
+
+    except Exception as e:
+        print(f"Database error: {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error during data retrieval")
