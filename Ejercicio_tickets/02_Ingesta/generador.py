@@ -16,10 +16,10 @@ while True:
     ticket= {"ticket_id": random.randint(1, 1000),
         "timestamp": "2024-06-01 11:00:00",
         "adress": direcciones[aleatorio],
-        "shop name": tienda[aleatorio], 
+        "shop_name": tienda[aleatorio], 
         "import": round(random.uniform(10.0, 1000.0), 2),
-        "refund deadline": fechas[random.randint(0, 4)],
-        "change deadline": fechas[random.randint(0, 4)]
+        "refund_deadline": fechas[random.randint(0, 4)],
+        "change_deadline": fechas[random.randint(0, 4)]
         }
 
     #Llamamos a la ruta del servidor para enviar el ticket
