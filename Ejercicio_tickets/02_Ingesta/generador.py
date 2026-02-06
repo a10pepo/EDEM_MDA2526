@@ -19,7 +19,7 @@ while True:
 
     ticket= {"ticket_id": random.randint(1, 1000),
         "timestamp": datetime.now().isoformat(),
-        "adress": direcciones[aleatorio],
+        "address": direcciones[aleatorio],
         "shop_name": tienda[aleatorio], 
         "latitud":latitud[aleatorio],
         "longitud":longitud[aleatorio],
@@ -37,6 +37,6 @@ while True:
     except:
       print("Error al enviar el ticket. El servidor no está disponible.")
       print(ticket)
-      
+
     #Esperamos 200 segundos hasta el nuevo ticket 
     sleep(20)
