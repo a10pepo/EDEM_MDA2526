@@ -1,5 +1,5 @@
 
-# 1. Servicio BASE DE DATOS Postgres
+# Servicio BASE DE DATOS Postgres
 services:
   db:
     image: postgres:17-alpine
@@ -9,81 +9,41 @@ services:
       - "5431:5432"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGTGRES_USER} -d ${POSTGRES_DB}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 5
       start_period: 10s
 
-  generador:
-    build: ./02_Ingesta
-    container_name: generador_tickets
+  # BACKEND API (Servidor que lee datos - Puerto 8000)
+  backend:
+    build: ./04_Backend
+    pull_policy: build  # Fuerza a construir la imagen localmente en lugar de intentar descargarla
+    container_name: backend
+    ports:
+      - "8000:8000" # Acceso: http://localhost:8000/docs
+    env_file: .env
     depends_on:
-      - flask
+      db:
+        condition: service_healthy
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=5)"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 60s  
 
-  # # 4. ALERTAS TELEGRAM (Envío de alertas cada 5 minutos)
-  # telegram-alerts:
-  #   build: ./telegram_alerts
-  #   pull_policy: build
-  #   environment:
-  #     - PYTHONUNBUFFERED=1
-  #   env_file: .env
-  #   depends_on:
-  #     backend:
-  #       condition: service_healthy
-  #   restart: unless-stopped
-
-  # 5. DASHBOARD GRAFANA
-
-  # grafana:
-  #   image: grafana/grafana:latest
-  #   ports:
-  #     - "3000:3000"
-  #   environment:
-  #     - GF_SECURITY_ADMIN_PASSWORD=admin # Contraseña inicial
-  #   env_file: .env
-  #   volumes:
-  #     - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
-  #     - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
-  #     - ./grafana/dashboards:/var/lib/grafana/dashboards
-  #     - grafana_data:/var/lib/grafana
-  #   depends_on:
-  #     backend:
-  #       condition: service_healthy
-  #   restart: unless-stopped
-
-  # # 6. BACKEND API (Servidor que lee datos - Puerto 8000)
-  # backend:
-  #   build: ./backend
-  #   pull_policy: build  # Fuerza a construir la imagen localmente en lugar de intentar descargarla
-  #   container_name: air-quality-api
-  #   ports:
-  #     - "8000:8000" # Acceso: http://localhost:8000/docs
-  #   env_file: .env
-  #   volumes:
-  #     - ./historical:/app/historical:ro  # Datos históricos (solo lectura)
-  #   depends_on:
-  #     db:
-  #       condition: service_healthy
-
-  #   restart: unless-stopped
-  #   healthcheck:
-  #     test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=5)"]
-  #     interval: 10s
-  #     timeout: 10s
-  #     retries: 12
-  #     start_period: 60s  # Tiempo de gracia para cargar datos históricos
-
-  # 5. FRONTEND USUARIO (Dash/Plotly - Puerto 8050)
-  frontend:
+  # VISUALIZACION (Dash/Plotly - Puerto 8050)
+  visualizacion:
     build: ./03_Visualizacion
-    pull_policy: build
-    container_name: tickets-frontend
+    pull_policy: build 
+    container_name: air-quality-frontend
     ports:
       - "8050:8050" # Acceso: http://localhost:8050
+    env_file: .env
+    # depends_on:
+    #   backend:
+    #     condition: service_healthy
     restart: unless-stopped
 
-
-volumes:
-  plotly_data:
