@@ -9,8 +9,11 @@ while True:
 
     tienda= ["Recambios Moratalla", "Tienda de Electrónica", "Supermercado El Ahorro", "Librería El Saber", "Ropa y Moda"]
     direcciones= ["Calle Falsa 123", "Avenida Siempre Viva 456", "Plaza Mayor 789", "Calle del Sol 321", "Avenida de la Luna 654"]
+    latitud=["40.4168", "20.4170", "60.4172", "80.4174", "90.4176"]
+    longitud=["-3.7038", "-3.7036", "-3.7034", "-3.7032", "-3.7030"]
+
     fechas=["2024-06-01", "2024-06-02", "2024-06-03", "2024-06-04", "2024-06-05"]
-    producto["Producto A", "Producto B", "Producto C", "Producto D", "Producto E"]
+    producto=["Producto A", "Producto B", "Producto C", "Producto D", "Producto E"]
 
     aleatorio=random.randint(0, 4)
 
@@ -18,7 +21,9 @@ while True:
         "timestamp": "2024-06-01 11:00:00",
         "adress": direcciones[aleatorio],
         "shop_name": tienda[aleatorio], 
-        "product_name": producto_seleccionado,
+        "latitud":
+        "longitud":
+        "product_name": producto[aleatorio],
         "import": round(random.uniform(10.0, 1000.0), 2),
         "refund_deadline": fechas[random.randint(0, 4)],
         "change_deadline": fechas[random.randint(0, 4)]
@@ -27,6 +32,9 @@ while True:
     #Llamamos a la ruta del servidor para enviar el ticket
     try:
       response = requests.post(FLASK_API_URL, json={"ticket": ticket})
+      
+      
+      print("Ticket enviado:")
     except:
       print("Error al enviar el ticket. El servidor no está disponible.")
 
