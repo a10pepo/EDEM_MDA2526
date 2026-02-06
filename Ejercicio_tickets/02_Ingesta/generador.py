@@ -32,11 +32,15 @@ while True:
     #Llamamos a la ruta del servidor para enviar el ticket
     try:
       response = requests.post(FLASK_API_URL, json={"ticket": ticket})
-      print(ticket)
+      
+
+
       print("Ticket enviado:")
     except:
+
+
       print("Error al enviar el ticket. El servidor no está disponible.")
-      print(ticket)
+
 
     #Esperamos 200 segundos hasta el nuevo ticket 
     sleep(20)
