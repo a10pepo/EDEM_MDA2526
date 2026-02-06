@@ -2,7 +2,7 @@ import random
 import requests
 from time import sleep
 
-FLASK_API_URL = "http://localhost:5000/ingestion"
+FLASK_API_URL = "http://backend:8000/ingestion"
 
 #Generador tickets automáticos 
 while True:
