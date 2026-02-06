@@ -3,8 +3,8 @@ FROM python:3.11-slim
 WORKDIR /app
 
 RUN pip install --upgrade pip \
-	&& pip install pandas plotly
+	&& pip install plotly.graph_objects pandas plotly.express plotly.subplots
 
-COPY visualizacion.py tickets.csv ./
+COPY tabla_ticket.py tickets.csv  mapa.py ./
 
-CMD ["python", "visualizacion.py"]
+CMD ["python", "tabla_ticket.py", "mapa.py"]
