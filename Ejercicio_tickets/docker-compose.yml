@@ -9,62 +9,43 @@ services:
       - "5431:5432"
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
       interval: 5s
       timeout: 5s
       retries: 5
       start_period: 10s
 
-  # 2. Servicio de INGESTA de la api pública
+  # # 2. Servicio de INGESTA de la api pública
 
-  # Cada ciudad corre en su propio contenedor, usando la misma imagen
-  # pero con diferente variable CITY. Esto permite arrancar/parar cada
-  # ciudad de forma independiente: docker compose stop ingestion-valencia
+  # # Cada ciudad corre en su propio contenedor, usando la misma imagen
+  # # pero con diferente variable CITY. Esto permite arrancar/parar cada
+  # # ciudad de forma independiente: docker compose stop ingestion-valencia
 
-  ingestion-valencia:
-    build: ./ingestion
-    image: aq_ingestion:latest
-    pull_policy: build  # Fuerza a construir la imagen localmente en lugar de intentar descargarla
-    environment:
-      - PYTHONUNBUFFERED=1
-      - CITY=valencia       # Es una variable de entorno que leerá el orquestador main.py y ejecutará sólo la fun. de ingesta de esa ciudad
-    env_file: .env
-    depends_on:
-      backend:
-        condition: service_healthy  # Espera a que el backend pase el healthcheck
-  
-  # 3. TRANSFORMACIONES DBT (Transformaciones de datos - Cada 5 minutos)
-  dbt:
-    image: ghcr.io/dbt-labs/dbt-postgres:1.8.2
+  # ingestion-valencia:
+  #   build: ./ingestion
+  #   image: aq_ingestion:latest
+  #   pull_policy: build  # Fuerza a construir la imagen localmente en lugar de intentar descargarla
+  #   environment:
+  #     - PYTHONUNBUFFERED=1
+  #     - CITY=valencia       # Es una variable de entorno que leerá el orquestador main.py y ejecutará sólo la fun. de ingesta de esa ciudad
+  #   env_file: .env
+  #   depends_on:
+  #     backend:
+  #       condition: service_healthy  # Espera a que el backend pase el healthcheck
 
-    # Sobrescribimos el punto de entrada para poder usar comandos de shell (sh). La imagen de dbt viene configurada para ejecutar el comando dbt automáticamente al arrancar
-    # Con entry point Docker ignora por completo cualquier configuración interna de la imagen original y lanza directamente la cadena de comandos
-    # Incorporamos un bucle para que se generen las transformaciones cada 5 minutos, misma frecuencia con la que la app llama a la api
-    # No necesita sleep inicial porque depende de backend:service_healthy (DB lista + datos históricos cargados)
+  #
 
-    entrypoint: /bin/sh -c "dbt deps; while true; do dbt run; echo 'Transformación completada. Esperando 5 minutos...'; sleep 300; done"
-    environment:
-      - DBT_PROFILES_DIR=/usr/app/air_quality_dbt
-    volumes:
-      - ./dbt/air_quality_dbt:/usr/app/air_quality_dbt
-    working_dir: /usr/app/air_quality_dbt
-    env_file: .env
-    # platform: linux/amd64
-    depends_on:
-      backend:
-        condition: service_healthy
-
-  # 4. ALERTAS TELEGRAM (Envío de alertas cada 5 minutos)
-  telegram-alerts:
-    build: ./telegram_alerts
-    pull_policy: build
-    environment:
-      - PYTHONUNBUFFERED=1
-    env_file: .env
-    depends_on:
-      backend:
-        condition: service_healthy
-    restart: unless-stopped
+  # # 4. ALERTAS TELEGRAM (Envío de alertas cada 5 minutos)
+  # telegram-alerts:
+  #   build: ./telegram_alerts
+  #   pull_policy: build
+  #   environment:
+  #     - PYTHONUNBUFFERED=1
+  #   env_file: .env
+  #   depends_on:
+  #     backend:
+  #       condition: service_healthy
+  #   restart: unless-stopped
 
   # 5. DASHBOARD GRAFANA
 
