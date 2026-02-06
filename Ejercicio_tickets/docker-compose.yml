@@ -15,7 +15,6 @@ services:
       retries: 5
       start_period: 10s
 
-services:
   flask:
     build: ./servidor   # o donde esté tu Flask
     container_name: flask_api
