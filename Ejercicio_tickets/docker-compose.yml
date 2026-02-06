@@ -53,3 +53,4 @@ services:
 
 volumes:
   postgres_data:
+  images_data:
