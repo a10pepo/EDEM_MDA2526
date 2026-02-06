@@ -15,25 +15,26 @@ services:
       retries: 5
       start_period: 10s
 
-  # # 2. Servicio de INGESTA de la api pública
+# services:
+#   flask:
+#     build: ./servidor   # o donde esté tu Flask
+#     container_name: flask_api
+#     ports:
+#       - "5000:5000"
 
-  # # Cada ciudad corre en su propio contenedor, usando la misma imagen
-  # # pero con diferente variable CITY. Esto permite arrancar/parar cada
-  # # ciudad de forma independiente: docker compose stop ingestion-valencia
+#   generador:
+#     build: .
+#     container_name: generador_tickets
+#     depends_on:
+#       - flask
+#     restart: unless-stopped
 
-  # ingestion-valencia:
-  #   build: ./ingestion
-  #   image: aq_ingestion:latest
-  #   pull_policy: build  # Fuerza a construir la imagen localmente en lugar de intentar descargarla
-  #   environment:
-  #     - PYTHONUNBUFFERED=1
-  #     - CITY=valencia       # Es una variable de entorno que leerá el orquestador main.py y ejecutará sólo la fun. de ingesta de esa ciudad
-  #   env_file: .env
-  #   depends_on:
-  #     backend:
-  #       condition: service_healthy  # Espera a que el backend pase el healthcheck
 
-  #
+
+
+
+
+
 
   # # 4. ALERTAS TELEGRAM (Envío de alertas cada 5 minutos)
   # telegram-alerts:
