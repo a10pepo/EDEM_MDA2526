@@ -26,7 +26,7 @@ class TicketCreate(BaseModel):
     # Contexto de la tienda y producto
     shop_name: str = Field(alias="shop_name")
     product_name: str = Field(alias="product_name")
-    direccion: str = Field(alias="adress") # Mapea el error 'adress' del script
+    direccion: str = Field(alias="address") # Mapea el error 'adress' del script
     
     # Valores numéricos
     precio: float = Field(alias="import")
@@ -90,7 +90,7 @@ async def health_check():
 
 # --- ENDPOINTS INGESTA ---
 
-@app.post("/ingestion/", status_code=201)
+@app.post("/ingestion", status_code=201)
 async def create_ticket(ticket: TicketCreate):
 
     # --- NUEVO: guardar imagen si viene ---
@@ -110,7 +110,7 @@ async def create_ticket(ticket: TicketCreate):
     """
     query = text("""
         INSERT INTO raw.tickets (
-            ticket_id, timestamp, adress, shop_name, latitud, longitud, product_name, import, refund_deadline, change_deadline)
+            ticket_id, timestamp, address, shop_name, latitud, longitud, product_name, import, refund_deadline, change_deadline)
         VALUES (
             :ticket_id, :timestamp, :adress, :shop_name, :latitud, :longitud, :product_name, :import, :refund_deadline, :change_deadline
         )
