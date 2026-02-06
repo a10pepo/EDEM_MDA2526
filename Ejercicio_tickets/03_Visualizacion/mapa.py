@@ -22,14 +22,14 @@ fig = go.Figure(go.Scattermap(
     text=df['tienda'],
     
     # 'customdata' almacena las columnas extra que queremos mostrar en el hover
-    customdata=df[['fecha_compra', 'precio', 'id_ticket']],
+    customdata=df[['fecha_compra', 'precio', 'id']],
     
     # Configuramos la etiqueta flotante (Hover)
     hovertemplate=(
         "<b>Tienda:</b> %{text}<br>" +
         "<b>Fecha:</b> %{customdata[0]}<br>" +
         "<b>Precio:</b> $%{customdata[1]:.2f}<br>" +
-        "<b>ID Ticket:</b> %{customdata[2]}" +
+        "<b>id:</b> %{customdata[2]}" +
         "<extra></extra>"
     )
 ))
