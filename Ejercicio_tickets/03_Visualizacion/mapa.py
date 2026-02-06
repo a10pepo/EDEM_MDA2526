@@ -5,6 +5,15 @@ import plotly.graph_objects as go
 # Reemplaza 'compras.csv' por la ruta de tu archivo
 df = pd.read_csv('tickets.csv')
 
+# Create sample coordinates if the CSV lacks lat/lon columns.
+if 'lat' not in df.columns or 'lon' not in df.columns:
+    base_lat = 39.4699  # Valencia center
+    base_lon = -0.3763
+    # Spread points in a small grid around the center.
+    offsets = [(i % 5, i // 5) for i in range(len(df))]
+    df['lat'] = [base_lat + (dx - 2) * 0.01 for dx, dy in offsets]
+    df['lon'] = [base_lon + (dy - 2) * 0.01 for dx, dy in offsets]
+
 # 2. Creamos la figura
 fig = go.Figure(go.Scattermap(
     lat=df['lat'],
