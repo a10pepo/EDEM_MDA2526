@@ -1,0 +1,37 @@
+version: 4
+logicalGroups:
+  - name: Quick Actions
+    description: Common VSCode commands for quick access
+    items:
+      - name: Command Palette
+        type: command
+        command: workbench.action.showCommands
+        icon: symbol-event
+      - name: Open Settings
+        type: command
+        command: workbench.action.openSettings
+        icon: settings-gear
+      - name: Toggle Terminal
+        type: command
+        command: workbench.action.terminal.toggleTerminal
+        icon: terminal
+      - name: Toggle Sidebar
+        type: command
+        command: workbench.action.toggleSidebarVisibility
+        icon: layout-sidebar-left
+      - name: Quick Open Files
+        type: command
+        command: workbench.action.quickOpen
+        icon: search
+      - name: Recent Files
+        type: command
+        command: workbench.action.openRecent
+        icon: history
+      - name: 'Git: Commit'
+        type: command
+        command: git.commit
+        icon: source-control
+      - name: Format Document
+        type: command
+        command: editor.action.formatDocument
+        icon: code
