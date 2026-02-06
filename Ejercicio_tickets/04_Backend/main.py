@@ -18,29 +18,18 @@ IMAGE_PATH = Path("/data/images")
 IMAGE_PATH.mkdir(parents=True, exist_ok=True)
 
 class TicketCreate(BaseModel):
-    # Identificadores (Basados en el JSON del script)
-    # Usamos Field(alias=...) porque el script envía nombres distintos a los de la DB
-    ticket_id: int = Field(alias="ticket_id")
-    timestamp: str = Field(alias="timestamp") # "2024-06-01 11:00:00"
-    
-    # Contexto de la tienda y producto
-    shop_name: str = Field(alias="shop_name")
-    product_name: str = Field(alias="product_name")
-    direccion: str = Field(alias="adress") # Mapea el error 'adress' del script
-    
-    # Valores numéricos
+    ticket_id: int
+    timestamp: str
+    shop_name: str
+    product_name: str
+    address: str
+    latitud: str
+    longitud: str
     precio: float = Field(alias="import")
-    
-    # Fechas (Opcionales para evitar errores si el generador fallara)
-    refund_deadline: Optional[date] = Field(default=None, alias="refund_deadline")
-    change_deadline: Optional[date] = Field(default=None, alias="change_deadline")
+    product_image: Optional[str] = None
+    refund_deadline: Optional[date] = None
+    change_deadline: Optional[date] = None
 
-    # Si en el futuro el script enviara coordenadas, podrías usarlas así:
-    # geo_point_2d: Optional[Dict[str, Any]] = None
-
-    # CONFIGURACIÓN DE SEGURIDAD
-    # 'forbid' asegura que si el script envía un campo no definido, FastAPI lo rechace
-    # 'populate_by_name' permite usar tanto 'precio' como 'import' en el código
     model_config = ConfigDict(
         extra='forbid',
         populate_by_name=True
@@ -90,46 +79,53 @@ async def health_check():
 
 # --- ENDPOINTS INGESTA ---
 
-@app.post("/ingestion/", status_code=201)
-async def create_ticket(ticket: TicketCreate):
+class TicketWrapper(BaseModel):
+    ticket: TicketCreate
 
-    # --- NUEVO: guardar imagen si viene ---
-    if hasattr(ticket, "image") and ticket.image:
+@app.post("/ingestion", status_code=201)
+async def create_ticket(wrapper: TicketWrapper):
+    ticket = wrapper.ticket
+
+    # Guardar imagen si viene
+    if ticket.product_image:
         try:
-            image_bytes = base64.b64decode(ticket.image)
+            image_bytes = base64.b64decode(ticket.product_image)
             filename = f"{ticket.ticket_id}_{uuid4().hex}.jpg"
-
             with open(IMAGE_PATH / filename, "wb") as f:
                 f.write(image_bytes)
-
         except Exception as e:
             print(f"Error guardando imagen: {e}")
 
-    """
-    Endpoint to insert a new ticket record into the raw.tickets table.
-    """
     query = text("""
         INSERT INTO raw.tickets (
-            ticket_id, timestamp, adress, shop_name, latitud, longitud, product_name, import, refund_deadline, change_deadline)
-        VALUES (
-            :ticket_id, :timestamp, :adress, :shop_name, :latitud, :longitud, :product_name, :import, :refund_deadline, :change_deadline
+            ticket_id, timestamp, address, shop_name, latitud, longitud,
+            product_name, "import", refund_deadline, change_deadline
+        ) VALUES (
+            :ticket_id, :timestamp, :address, :shop_name, :latitud, :longitud,
+            :product_name, :import, :refund_deadline, :change_deadline
         )
-        ON CONFLICT (ticket_id) DO NOTHING;
+        ON CONFLICT (ticket_id) DO NOTHING
+        RETURNING ticket_id;
     """)
-    
+
     try:
-        # Establish connection and execute the insert
         with engine.connect() as conn:
-            # We use a transaction to ensure data integrity
             with conn.begin():
                 result = conn.execute(query, {
-                    "purchase_date": ticket.purchase_date,
-                    "price": ticket.price,
-                    "shop": ticket.shop
+                    "ticket_id": ticket.ticket_id,
+                    "timestamp": ticket.timestamp,
+                    "address": ticket.address,
+                    "shop_name": ticket.shop_name,
+                    "latitud": ticket.latitud,
+                    "longitud": ticket.longitud,
+                    "product_name": ticket.product_name,
+                    "import": ticket.precio,
+                    "refund_deadline": ticket.refund_deadline,
+                    "change_deadline": ticket.change_deadline,
                 })
-                # Fetch the generated ID
-                new_id = result.fetchone()[0]
-                
+                row = result.fetchone()
+                new_id = row[0] if row else ticket.ticket_id
+
         return {
             "status": "success",
             "message": "Ticket created successfully",
@@ -137,7 +133,6 @@ async def create_ticket(ticket: TicketCreate):
         }
 
     except Exception as e:
-        # Log the error and return a 500 status code
         print(f"Database error: {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error during database insertion")
 
@@ -153,7 +148,7 @@ async def get_tickets():
         with engine.connect() as conn:
             result = conn.execute(query)
             tickets = [dict(row) for row in result]
-        return tickets, 200
+        return tickets
 
     except Exception as e:
         print(f"Database error: {e}")

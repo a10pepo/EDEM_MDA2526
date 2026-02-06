@@ -22,7 +22,7 @@ def init_db():
                     CREATE TABLE IF NOT EXISTS raw.tickets (
                         ticket_id           INT PRIMARY KEY,
                         timestamp       TIMESTAMPTZ NOT NULL,
-                        adress VARCHAR,
+                        address VARCHAR,
                         shop_name VARCHAR,
                         latitud NUMERIC(9,6),
                         longitud NUMERIC(9,6),
@@ -71,7 +71,7 @@ def init_db():
                         t.ticket_id,
                         t.timestamp,
                         t.shop_name,
-                        t.adress as address,       -- Corregimos typo
+                        t.address as address,       -- Corregimos typo
                         t.latitud as latitude,     -- Traducimos a inglés
                         t.longitud as longitude,   -- Traducimos a inglés
                         t.product_name,
