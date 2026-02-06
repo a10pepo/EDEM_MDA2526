@@ -109,38 +109,6 @@ def crear_dashboard(df):
         row=2, col=1,
     )
 
-    # 4) Distribucion de precios
-    fig.add_trace(
-        go.Histogram(x=df["precio"], nbinsx=10,
-                     marker_color="#9b59b6", showlegend=False),
-        row=2, col=2,
-    )
-
-    # 5) Timeline de compras
-    colores = px.colors.qualitative.Set3 + px.colors.qualitative.Pastel
-    for i, tienda in enumerate(df["tienda"].unique()):
-        subset = df[df["tienda"] == tienda]
-        fig.add_trace(
-            go.Scatter(
-                x=subset["fecha_compra"], y=subset["precio"],
-                mode="markers",
-                marker=dict(size=10, color=colores[i % len(colores)],
-                            line=dict(width=1, color="white")),
-                text=subset["id_ticket"] + "<br>" + subset["tienda"] + "<br>" + subset["precio"].astype(str) + " EUR",
-                hoverinfo="text",
-                name=tienda,
-                showlegend=True,
-            ),
-            row=3, col=1,
-        )
-
-    # 6) Numero de compras por tienda
-    compras_tienda = df["tienda"].value_counts().sort_values(ascending=False)
-    fig.add_trace(
-        go.Bar(x=compras_tienda.index, y=compras_tienda.values,
-               marker_color="#e74c3c", showlegend=False),
-        row=3, col=2,
-    )
 
     fig.update_layout(
         title=dict(text="Dashboard de Tickets de Compra", font=dict(size=22)),
