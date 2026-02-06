@@ -43,5 +43,3 @@ while True:
     except:
       print("Error al enviar el ticket. El servidor no está disponible.")
 
-    #Esperamos 200 segundos hasta el nuevo ticket 
-    sleep(20)
