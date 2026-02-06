@@ -18,7 +18,7 @@ while True:
         "timestamp": "2024-06-01 11:00:00",
         "adress": direcciones[aleatorio],
         "shop_name": tienda[aleatorio], 
-        "product_name": producto_seleccionado,
+        "product_name": producto[aleatorio],
         "import": round(random.uniform(10.0, 1000.0), 2),
         "refund_deadline": fechas[random.randint(0, 4)],
         "change_deadline": fechas[random.randint(0, 4)]
