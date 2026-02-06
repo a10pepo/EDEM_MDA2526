@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_ventas_categorizadas
+    description: "Tabla limpia de tickets con la categoría de negocio asignada."
+    columns:
+      - name: ticket_id
+        description: "Identificador único del ticket."
+        tests:
+          - unique
+          - not_null
+
+      - name: shop_name
+        description: "Nombre de la tienda de origen."
+
+      - name: product
+        description: "Nombre del producto (Producto A, B, C...)."
+
+      - name: category
+        description: "Categoría calculada según el producto."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Tecnología', 'Alimentación', 'Ocio', 'Ropa', 'Sin Categoría']
+              # Este test fallará si de repente aparece una categoría nueva que no esperamos.
+
+      - name: amount
+        description: "Importe total del ticket."
+        tests:
+          - not_null
