@@ -22,7 +22,7 @@ while True:
         "shop_name": tienda[aleatorio], 
         "latitud":latitud[aleatorio],
         "longitud":longitud[aleatorio],
-        "product_name": producto[aleatorio],
+        "product_name": producto[random.randint(0, 4)],
         "import": round(random.uniform(10.0, 1000.0), 2),
         "refund_deadline": fechas[random.randint(0, 4)],
         "change_deadline": fechas[random.randint(0, 4)]
@@ -31,8 +31,7 @@ while True:
     #Llamamos a la ruta del servidor para enviar el ticket
     try:
       response = requests.post(FLASK_API_URL, json={"ticket": ticket})
-      
-      
+           
       print("Ticket enviado:")
     except:
       print("Error al enviar el ticket. El servidor no está disponible.")
