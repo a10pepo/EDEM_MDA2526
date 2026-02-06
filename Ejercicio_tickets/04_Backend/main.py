@@ -10,6 +10,12 @@ from database import init_db
 from sqlalchemy.dialects.postgresql import insert
 import math
 from datetime import date
+import base64
+from pathlib import Path
+from uuid import uuid4
+
+IMAGE_PATH = Path("/data/images")
+IMAGE_PATH.mkdir(parents=True, exist_ok=True)
 
 class TicketCreate(BaseModel):
     # Identificadores (Basados en el JSON del script)
@@ -86,6 +92,19 @@ async def health_check():
 
 @app.post("/ingestion/", status_code=201)
 async def create_ticket(ticket: TicketCreate):
+
+    # --- NUEVO: guardar imagen si viene ---
+    if hasattr(ticket, "image") and ticket.image:
+        try:
+            image_bytes = base64.b64decode(ticket.image)
+            filename = f"{ticket.ticket_id}_{uuid4().hex}.jpg"
+
+            with open(IMAGE_PATH / filename, "wb") as f:
+                f.write(image_bytes)
+
+        except Exception as e:
+            print(f"Error guardando imagen: {e}")
+
     """
     Endpoint to insert a new ticket record into the raw.tickets table.
     """
