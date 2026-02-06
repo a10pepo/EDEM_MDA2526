@@ -13,7 +13,14 @@ while True:
     producto["Producto A", "Producto B", "Producto C", "Producto D", "Producto E"]
 
     aleatorio=random.randint(0, 4)
- 
+    random_categoria=random.randint(0, 4)
+    producto_seleccionado=producto[random_categoria]
+
+    #Get a la bbdd para sacar la categoría del producto
+
+
+
+
     #Hay que hacer un get a la bbdd para saber de que categoría es la tienda
     #categoria=["pepe"]
 
@@ -21,9 +28,9 @@ while True:
         "timestamp": "2024-06-01 11:00:00",
         "adress": direcciones[aleatorio],
         "shop_name": tienda[aleatorio], 
-        "product_name": producto[random.randint(0, 4)],
+        "product_name": producto_seleccionado,
         "import": round(random.uniform(10.0, 1000.0), 2),
-        "category": 
+        "category": "a",
         "refund_deadline": fechas[random.randint(0, 4)],
         "change_deadline": fechas[random.randint(0, 4)]
         }

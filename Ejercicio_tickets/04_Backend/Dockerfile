@@ -18,7 +18,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar el código
-COPY . .
+COPY ["config_env.py", "database.py", "main.py", "./"]
 
 # Exponer el puerto de la API
 EXPOSE 8000
