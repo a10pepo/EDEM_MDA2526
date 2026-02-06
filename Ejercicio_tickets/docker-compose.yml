@@ -7,6 +7,8 @@ services:
       - .env
     ports:
       - "5431:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
@@ -49,3 +51,5 @@ services:
     container_name: ingesta
     restart: unless-stopped
 
+volumes:
+  postgres_data:
