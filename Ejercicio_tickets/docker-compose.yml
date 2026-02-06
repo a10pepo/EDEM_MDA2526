@@ -18,8 +18,6 @@ services:
   generador:
     build: ./02_Ingesta
     container_name: generador_tickets
-    depends_on:
-      - flask
     restart: unless-stopped
 
   # # 4. ALERTAS TELEGRAM (Envío de alertas cada 5 minutos)
