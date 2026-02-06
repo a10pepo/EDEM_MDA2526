@@ -48,4 +48,4 @@ services:
     build: ./02_Ingesta
     container_name: ingesta
     restart: unless-stopped
- 
+
