@@ -2,6 +2,7 @@ import random
 import requests
 from time import sleep
 from datetime import datetime
+import base64
 
 FLASK_API_URL = "http://backend:8000/ingestion"
 PICTURE_API_URL="https://picsum.photos/200/300"
