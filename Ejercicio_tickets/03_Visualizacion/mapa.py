@@ -2,26 +2,24 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # 1. Cargamos los datos del archivo CSV
-# Reemplaza 'compras.csv' por la ruta de tu archivo
+
 df = pd.read_csv('tickets.csv')
 
 # Create sample coordinates if the CSV lacks lat/lon columns.
-if 'lat' not in df.columns or 'lon' not in df.columns:
+if 'latitud' not in df.columns or 'longitud' not in df.columns:
     base_lat = 39.4699  # Valencia center
     base_lon = -0.3763
-    # Spread points in a small grid around the center.
     offsets = [(i % 5, i // 5) for i in range(len(df))]
-    df['lat'] = [base_lat + (dx - 2) * 0.01 for dx, dy in offsets]
-    df['lon'] = [base_lon + (dy - 2) * 0.01 for dx, dy in offsets]
+    df['latitud'] = [base_lat + (dx - 2) * 0.01 for dx, dy in offsets]
+    df['longitud'] = [base_lon + (dy - 2) * 0.01 for dx, dy in offsets]
 
 # 2. Creamos la figura
 fig = go.Figure(go.Scattermap(
-    lat=df['lat'],
-    lon=df['lon'],
+    lat=df['latitud'],
+    lon=df['longitud'],
     mode='markers',
     marker=go.scattermap.Marker(
-        size=12,
-        # Opcional: El color cambia según el precio (escala de colores)
+        size=[max(10, p / 10) for p in df['precio']],
         color=df['precio'],
         colorscale='Viridis',
         showscale=True
@@ -51,9 +49,9 @@ fig.update_layout(
     map=dict(
         style="carto-positron", # Estilo elegante y gratuito
         bearing=0,
-        center=dict(lat=df['lat'].mean(), lon=df['lon'].mean()), # Centrado automático
+        center=dict(lat=df['latitud'].mean(), lon=df['longitud'].mean()),
         pitch=0,
-        zoom=11
+        zoom=5
     ),
 )
 

@@ -78,14 +78,10 @@ services:
   # 5. FRONTEND USUARIO (Dash/Plotly - Puerto 8050)
   frontend:
     build: ./03_Visualizacion
-    pull_policy: build 
-    container_name: air-quality-frontend
+    pull_policy: build
+    container_name: tickets-frontend
     ports:
       - "8050:8050" # Acceso: http://localhost:8050
-    env_file: .env
-    # depends_on:
-    #   backend:
-    #     condition: service_healthy
     restart: unless-stopped
 
 

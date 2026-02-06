@@ -1,9 +1,63 @@
+import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-import pandas as pd
-import os
 from plotly.subplots import make_subplots
+from dash import Dash, html, dcc
+import os
 
+# ── Cargar datos ──────────────────────────────────────────────────────────────
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(script_dir, "tickets.csv")
+df = pd.read_csv(csv_path)
+
+if "latitud" not in df.columns or "longitud" not in df.columns:
+    base_lat, base_lon = 39.4699, -0.3763
+    offsets = [(i % 5, i // 5) for i in range(len(df))]
+    df["latitud"] = [base_lat + (dx - 2) * 0.01 for dx, _ in offsets]
+    df["longitud"] = [base_lon + (dy - 2) * 0.01 for _, dy in offsets]
+
+
+# ── 1. Mapa ───────────────────────────────────────────────────────────────────
+
+def crear_mapa(df):
+    fig = go.Figure(go.Scattermap(
+        lat=df["latitud"],
+        lon=df["longitud"],
+        mode="markers",
+        marker=go.scattermap.Marker(
+            size=[max(10, p / 10) for p in df["precio"]],
+            color=df["precio"],
+            colorscale="Viridis",
+            showscale=True,
+        ),
+        text=df["tienda"],
+        customdata=df[["fecha_compra", "precio", "id_ticket"]],
+        hovertemplate=(
+            "<b>Tienda:</b> %{text}<br>"
+            "<b>Fecha:</b> %{customdata[0]}<br>"
+            "<b>Precio:</b> %{customdata[1]:.2f} EUR<br>"
+            "<b>ID:</b> %{customdata[2]}"
+            "<extra></extra>"
+        ),
+    ))
+    fig.update_layout(
+        title="Mapa de Ventas por Ubicacion",
+        autosize=True,
+        hovermode="closest",
+        height=600,
+        map=dict(
+            style="carto-positron",
+            bearing=0,
+            center=dict(lat=df["latitud"].mean(), lon=df["longitud"].mean()),
+            pitch=0,
+            zoom=5,
+        ),
+    )
+    return fig
+
+
+# ── 2. Dashboard de graficas ──────────────────────────────────────────────────
 
 def crear_dashboard(df):
     df = df.copy()
@@ -33,7 +87,7 @@ def crear_dashboard(df):
     gasto_fecha = df.groupby("fecha_compra")["precio"].sum().reset_index()
     fig.add_trace(
         go.Bar(x=gasto_fecha["fecha_compra"], y=gasto_fecha["precio"],
-            marker_color="#3498db", showlegend=False),
+               marker_color="#3498db", showlegend=False),
         row=1, col=1,
     )
 
@@ -41,31 +95,28 @@ def crear_dashboard(df):
     gasto_tienda = df.groupby("tienda")["precio"].sum()
     fig.add_trace(
         go.Pie(
-            labels=gasto_tienda.index,
-            values=gasto_tienda.values,
-            hole=0.45,
-            textinfo="label+percent",
-            showlegend=False,
+            labels=gasto_tienda.index, values=gasto_tienda.values,
+            hole=0.45, textinfo="label+percent", showlegend=False,
         ),
         row=1, col=2,
     )
 
-    # 3) Top tiendas por gasto total (horizontal bar)
+    # 3) Top tiendas por gasto total
     top_tiendas = df.groupby("tienda")["precio"].sum().sort_values(ascending=True)
     fig.add_trace(
         go.Bar(x=top_tiendas.values, y=top_tiendas.index, orientation="h",
-            marker_color="#2ecc71", showlegend=False),
+               marker_color="#2ecc71", showlegend=False),
         row=2, col=1,
     )
 
-    # 4) Distribucion de precios (histograma)
+    # 4) Distribucion de precios
     fig.add_trace(
         go.Histogram(x=df["precio"], nbinsx=10,
-                    marker_color="#9b59b6", showlegend=False),
+                     marker_color="#9b59b6", showlegend=False),
         row=2, col=2,
     )
 
-    # 5) Timeline de compras (scatter coloreado por tienda)
+    # 5) Timeline de compras
     colores = px.colors.qualitative.Set3 + px.colors.qualitative.Pastel
     for i, tienda in enumerate(df["tienda"].unique()):
         subset = df[df["tienda"] == tienda]
@@ -87,23 +138,17 @@ def crear_dashboard(df):
     compras_tienda = df["tienda"].value_counts().sort_values(ascending=False)
     fig.add_trace(
         go.Bar(x=compras_tienda.index, y=compras_tienda.values,
-            marker_color="#e74c3c", showlegend=False),
+               marker_color="#e74c3c", showlegend=False),
         row=3, col=2,
     )
 
-    # Layout
     fig.update_layout(
-        title=dict(
-            text="Dashboard de Tickets de Compra",
-            font=dict(size=22),
-        ),
+        title=dict(text="Dashboard de Tickets de Compra", font=dict(size=22)),
         height=1100,
-        width=1300,
         template="plotly_white",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
         font=dict(family="Segoe UI, sans-serif", size=12),
     )
-
     fig.update_yaxes(title_text="EUR", row=1, col=1)
     fig.update_yaxes(title_text="EUR", row=3, col=1)
     fig.update_xaxes(tickangle=-45, row=3, col=2)
@@ -113,7 +158,6 @@ def crear_dashboard(df):
     media_ticket = df["precio"].mean()
     ticket_max = df["precio"].max()
     num_tickets = len(df)
-
     fig.add_annotation(
         text=(
             f"<b>Total gastado:</b> {total_gastado:,.2f} EUR  |  "
@@ -121,19 +165,17 @@ def crear_dashboard(df):
             f"<b>Ticket max:</b> {ticket_max:,.2f} EUR  |  "
             f"<b>Num. tickets:</b> {num_tickets}"
         ),
-        xref="paper", yref="paper",
-        x=0.5, y=-0.04,
-        showarrow=False,
-        font=dict(size=14),
+        xref="paper", yref="paper", x=0.5, y=-0.04,
+        showarrow=False, font=dict(size=14),
     )
-
     return fig
 
+
+# ── 3. Tabla ──────────────────────────────────────────────────────────────────
 
 def crear_tabla(df):
     df = df.copy()
     df = df.sort_values("fecha_compra")
-
     n = len(df)
     row_colors = ["#f2f2f2" if i % 2 == 0 else "white" for i in range(n)]
     precio_formatted = [f"{p:.2f} EUR" for p in df["precio"]]
@@ -163,30 +205,23 @@ def crear_tabla(df):
     fig.update_layout(
         title="Detalle de Tickets",
         height=max(400, 45 * n),
-        width=1000,
         margin=dict(l=20, r=20, t=60, b=20),
     )
     return fig
 
 
+# ── App Dash ──────────────────────────────────────────────────────────────────
+
+app = Dash(__name__)
+
+app.layout = html.Div([
+    html.H1("Tickets de Compra", style={"textAlign": "center", "padding": "20px"}),
+    dcc.Graph(id="mapa", figure=crear_mapa(df)),
+    html.Hr(),
+    dcc.Graph(id="dashboard", figure=crear_dashboard(df)),
+    html.Hr(),
+    dcc.Graph(id="tabla", figure=crear_tabla(df)),
+], style={"maxWidth": "1400px", "margin": "0 auto"})
+
 if __name__ == "__main__":
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_path = os.path.join(script_dir, "tickets.csv")
-
-    df = pd.read_csv(csv_path)
-    print(f"Cargados {len(df)} tickets de {df['tienda'].nunique()} tiendas")
-
-    dashboard = crear_dashboard(df)
-    tabla = crear_tabla(df)
-
-    dashboard_path = os.path.join(script_dir, "dashboard_tickets.html")
-    tabla_path = os.path.join(script_dir, "tabla_tickets.html")
-
-    dashboard.write_html(dashboard_path, include_plotlyjs=True)
-    tabla.write_html(tabla_path, include_plotlyjs=True)
-
-    print(f"Dashboard guardado en '{dashboard_path}'")
-    print(f"Tabla guardada en '{tabla_path}'")
-
-    dashboard.show()
-    tabla.show()
+    app.run(host="0.0.0.0", port=8050, debug=False)
