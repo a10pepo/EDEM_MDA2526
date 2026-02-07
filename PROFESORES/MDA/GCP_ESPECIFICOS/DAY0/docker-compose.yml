@@ -1,0 +1,108 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: tienda_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tienda_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - tienda_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d tienda_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: tienda_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - tienda_network
+    depends_on:
+      - db
+
+  backend:
+    build: ./backend
+    container_name: tienda_backend
+    environment:
+      DATABASE_URL: postgresql://user:password@db:5432/tienda_db
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - tienda_network
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: tienda_frontend
+    ports:
+      - "8080:80"
+    networks:
+      - tienda_network
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  data-generator:
+    build: ./data-generator
+    container_name: tienda_data_generator
+    environment:
+      DB_HOST: db
+      DB_NAME: tienda_db
+      DB_USER: user
+      DB_PASSWORD: password
+    networks:
+      - tienda_network
+    depends_on:
+      backend:
+        condition: service_started
+    restart: "no"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: tienda_grafana
+    user: "0"
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_PATHS_PROVISIONING: /etc/grafana/provisioning
+      GF_LOG_LEVEL: debug
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+    networks:
+      - tienda_network
+    depends_on:
+      - db
+    restart: unless-stopped
+
+networks:
+  tienda_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+  grafana_data:
