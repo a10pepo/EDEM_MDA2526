@@ -9,7 +9,7 @@ DB_CONFIG = {
     'port': 5432,
     'database': os.getenv('DB_NAME', 'tienda_db'),
     'user': os.getenv('DB_USER', 'postgres'),
-    'password': os.getenv('DB_PASSWORD', 'Edem2526.')
+    'password': os.getenv('DB_PASSWORD', 'pass')
 }
 
 NOMBRES = [
