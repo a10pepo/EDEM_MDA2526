@@ -9,7 +9,7 @@
       "Username": "postgres",
       "SSLMode": "prefer",
       "PassFile": "/var/lib/pgadmin/storage/admin_admin.com/pgpass",
-      "password": "Edem2526."
+      "password": "pass."
     }
   }
 }
