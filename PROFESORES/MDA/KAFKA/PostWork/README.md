@@ -46,3 +46,11 @@ Basic explanation of:
 2. Final architecture implemented 
 3. Json examples of your data json model 
 4. **Evidence** of the Application has run end to end providing the expected results. With screenshots of the different step: 1)the ingestion, 2) the processing with a Consumer, 3) the processing with KSQL, the final printing on screen on the expected outcome.
+
+
+Objetivo: Implementar un sistema de procesamiento en tiempo real para una entidad bancaria global. El objetivo es ingerir transacciones crudas en múltiples monedas, estandarizarlas para reporting unificado y detectar movimientos sospechosos de alto valor al instante.
+
+Problema a resolver: El banco recibe transacciones en Dólares (USD) y Libras (GBP), pero su sistema central requiere que todo esté en Euros (EUR). Además, necesitan aislar inmediatamente cualquier transacción superior a 3.000€ para auditoría de prevención de blanqueo de capitales.
+
+Dado que los datos bancarios reales son confidenciales, utilizaremos un Generador de Datos Sintéticos (un script en Python). Este generador simulará transacciones de tarjetas de crédito con datos aleatorios pero realistas (IDs, montos variables, diferentes divisas y estados de transacción).
+
