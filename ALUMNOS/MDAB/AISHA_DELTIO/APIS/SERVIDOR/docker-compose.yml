@@ -1,0 +1,11 @@
+services:
+  server:
+    build: .
+    container_name: stravaserver
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./data:/data
+    env_file:
+      - .env
