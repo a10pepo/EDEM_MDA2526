@@ -15,19 +15,8 @@ print("Tipo de persona:", type(persona))  # Muestra el tipo del objeto
 print("Nombre:", persona["nombre"])
 print("Tipo del nombre:", type(persona["nombre"]))  # Tipo del valor
 
-
-
 # ============================================
 # EJERCICIOS:
 # 1. Añade una nueva clave "profesion" con el valor "Ingeniera".
 # 2. Cambia la edad a 30.
 # 3. Muestra la ciudad.
-
-
-persona = {
-    "nombre": "Ana",
-    "edad": 30,
-    "ciudad": "Valencia",
-    "profesion": "Ingeniera"
-}
-print("Ciudad:", persona["ciudad"])

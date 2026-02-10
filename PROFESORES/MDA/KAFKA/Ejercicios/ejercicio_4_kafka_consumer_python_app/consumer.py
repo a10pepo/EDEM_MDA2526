@@ -6,14 +6,14 @@ from confluent_kafka import Consumer
 config = {
     'bootstrap.servers': 'localhost:9092',  # Dirección del broker Kafka (como la IP de un servicio web)
     'group.id': 'grupo-consumidor',         # Identificador del grupo de consumidores
-    'auto.offset.reset': 'latest'         # Leer desde el principio si no hay posición guardada
+    'auto.offset.reset': 'earliest'         # Leer desde el principio si no hay posición guardada
 }
 
 # Creamos el consumidor con la configuración anterior
 consumer = Consumer(config)
 
 # Nos suscribimos al tópico que queremos leer
-topic_kafka = 'alertas_stock'
+topic_kafka = 'proyectos_innovacion'
 consumer.subscribe([topic_kafka])
 
 print(f"Esperando mensajes del tópico '{topic_kafka}'...")
@@ -40,7 +40,7 @@ try:
         # ¿Por qué 1 segundo?
         #   - Es un buen equilibrio: no bloquea demasiado tiempo y no consume recursos en exceso.
         # ============================================
-        msg = consumer.poll(2.0)
+        msg = consumer.poll(1.0)
 
         if msg is None:
             # No hay mensaje disponible en este momento, seguimos esperando

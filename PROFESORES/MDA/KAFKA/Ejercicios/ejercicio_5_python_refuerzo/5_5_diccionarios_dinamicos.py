@@ -17,14 +17,3 @@ for e in range(3):
 # 1. Cambia el rango para generar 5 proyectos.
 # 2. Añade una nueva clave al diccionario llamada 'Responsable' con el valor 'Equipo X'.
 # 3. Haz que el presupuesto sea en dólares (USD) en lugar de EUR.
-
-#1-2-3 Cambiar el rango para generar 5 proyectos
-for e in range(5):
-    data = {
-        'Proyecto': f'Innovación #{e+1}',
-        'Presupuesto': f'{(e+1)*5000} USD',  # Cambiado a USD
-        'Estado': 'Aprobado' if e % 2 == 0 else 'En revisión',
-        'Responsable': 'Equipo X'  # Nueva clave añadida
-    }
-    print(data)
-
