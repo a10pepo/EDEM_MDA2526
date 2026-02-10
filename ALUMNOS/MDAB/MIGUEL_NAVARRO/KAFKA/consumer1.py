@@ -1,7 +1,7 @@
+# IMPORTACIÓN DE LIBRERÍAS
 from confluent_kafka import Consumer    # Librería para consumir mensajes de Apache Kafka
 from confluent_kafka import Producer    # Librería para producir mensajes en Apache Kafka
 from flask import config, json
-from param import output
 
 
 # CONFIGURACIONES DEL CONSUMIDOR Y PRODUCTOR
@@ -22,7 +22,7 @@ producer = Producer(config_producer2)
 
 # Nos suscribimos al tópico que queremos leer
 input_topic = 'laliga_players'
-output_topic = 'spanish_players'
+output_topic = 'spanishPlayers'
 
 POSITION_PARTITION = {
     'Goalkeeper': 0,
@@ -54,14 +54,14 @@ try:
 
             age = data.get('age')
             if age <= 23:
-                data['age_stage'] = 'Wonderkid'
+                data['age_range'] = 'Wonderkid'
             elif 23 < age <= 30:
-                data['age_stage'] = 'Prime'
+                data['age_range'] = 'Prime'
             else:
-                data['age_stage'] = 'Veteran'
+                data['age_range'] = 'Veteran'
 
             position = data.get('position')
-            partition_id = POSITION_PARTITION.get(position, 4)  # Si la posición no está en el diccionario, asignamos a la partición 4 (otros)
+            partition_id = POSITION_PARTITION.get(position, 3)  # Si la posición no está en el diccionario, asignamos a delantero (partición 3: Forward)
 
             json_str = json.dumps(data)  # Convertimos el diccionario a una cadena JSON
             json_bytes = json_str.encode('utf-8')  # Convertimos el diccionario de vuelta a bytes para Kafka
@@ -71,7 +71,7 @@ try:
                 partition=partition_id  # A la partición correspondiente
             )
 
-            print(f"Jugador seleccionable enviado a '{output_topic}': {data['name']}, ({position}, {data['age_stage']})")
+            print(f"Jugador seleccionable enviado a '{output_topic}': {data['name']} ({position}, {data['age_range']})")
             producer.flush()
 
         except Exception as e:
