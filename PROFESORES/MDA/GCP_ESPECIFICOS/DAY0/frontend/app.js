@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://backend-764710705046.europe-west6.run.app/api';
 
 let cart = [];
 let productos = [];

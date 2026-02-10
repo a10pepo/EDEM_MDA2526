@@ -3,12 +3,13 @@
     "1": {
       "Name": "Tienda DB",
       "Group": "Servers",
-      "Host": "db",
+      "Host": "34.65.201.193",
       "Port": 5432,
       "MaintenanceDB": "tienda_db",
-      "Username": "user",
+      "Username": "postgres",
       "SSLMode": "prefer",
-      "PassFile": "/var/lib/pgadmin/storage/admin_admin.com/pgpass"
+      "PassFile": "/var/lib/pgadmin/storage/admin_admin.com/pgpass",
+      "password": "Edem2526."
     }
   }
 }
