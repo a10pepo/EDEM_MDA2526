@@ -1,0 +1,17 @@
+apiVersion: 1
+
+datasources:
+  - name: PostgreSQL
+    type: postgres
+    uid: postgres-tienda
+    access: proxy
+    url: db:5432
+    user: user
+    database: tienda_db
+    jsonData:
+      sslmode: 'disable'
+      postgresVersion: 1500
+    secureJsonData:
+      password: 'password'
+    isDefault: true
+    editable: true
