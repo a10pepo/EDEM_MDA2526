@@ -52,7 +52,11 @@ def tweet_resultados():
             "id": response.data['id']
         }), 201
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        # 1. Imprimes el error real para ti
+        print(f"❌ ERROR obteniendo resultados: {e}")
+        
+        # 2. Al usuario mensaje genérico
+        return jsonify({"error": "Error interno del servidor"}), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

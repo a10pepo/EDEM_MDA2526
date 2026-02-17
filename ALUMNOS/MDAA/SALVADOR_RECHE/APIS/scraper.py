@@ -5,6 +5,9 @@ def obtener_resumen_rfetm():
     url = "https://rfetm.es/resultados/2025-2026/view.php?liga=MQ==&grupo=0&subgrupo=S&jornada=0&sexo=M"
     response = requests.get(url)
     
+    # AÑADIDO: timeout=10 (espera máximo 10 segundos)
+    response = requests.get(url, timeout=10)
+
     # Si la web responde bien (código 200)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')

@@ -13,7 +13,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. Copiamos el resto del código del proyecto
-COPY . .
+COPY app.py .
+COPY scraper.py .
 
 # 6. Exponemos el puerto que usa Flask
 EXPOSE 5000
