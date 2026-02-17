@@ -1,0 +1,9 @@
+FROM python:3.12-slim 
+
+WORKDIR /app
+
+COPY consumir_api.py .
+
+RUN pip install requests
+
+CMD ["python", "consumir_api.py"]

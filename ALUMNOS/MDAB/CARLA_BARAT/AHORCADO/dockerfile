@@ -1,0 +1,11 @@
+# Usamos Python 3.11 slim
+FROM python:3.11-slim
+
+# Establecemos el directorio de trabajo
+WORKDIR /app
+
+# Copiamos solo el requirements.txt, para instalar dependencias
+COPY .  . 
+
+# Comando por defecto 
+CMD ["python", "ahorcado.py", "palabras.txt"]
