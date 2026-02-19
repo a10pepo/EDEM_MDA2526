@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://backen-526209179050.europe-west1.run.app/api';
 
 let cart = [];
 let productos = [];
@@ -16,7 +16,7 @@ function showSection(sectionName) {
 
 function showNotification(message, type = 'success') {
     const notification = document.getElementById('notification');
-    notification.textContent = message;
+    notification.textContent = message;     
     notification.className = `notification ${type}`;
     notification.classList.remove('hidden');
 

@@ -5,11 +5,11 @@ import time
 import os
 
 DB_CONFIG = {
-    'host': os.getenv('DB_HOST', 'db'),
+    'host': "34.14.31.92",
     'port': 5432,
-    'database': os.getenv('DB_NAME', 'tienda_db'),
-    'user': os.getenv('DB_USER', 'user'),
-    'password': os.getenv('DB_PASSWORD', 'password')
+    'database': "mi-base-de-datos",
+    'user': "admin-user",
+    'password': "password-super-secreto-123"
 }
 
 NOMBRES = [
