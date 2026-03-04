@@ -1,0 +1,19 @@
+# Dataset de Kaggle (>4k archivos, no subir a GitHub)
+data/
+
+# Frames extraídos de los vídeos
+Notebook/dataset_frames/
+
+# Checkpoints y modelos guardados
+*.h5
+*.keras
+*.ckpt
+*.pb
+
+# Archivos temporales de Python/Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
