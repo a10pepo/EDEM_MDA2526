@@ -1,0 +1,19 @@
+# RNN-NLP / NER Twitter
+# Python 3.10+
+
+# Deep Learning
+tensorflow==2.10.*
+
+# CRF Layer
+keras-crf>=0.1.2
+
+# Data & ML
+numpy>=1.23
+scikit-learn>=1.2
+
+# Visualization
+matplotlib>=3.6
+seaborn>=0.12
+
+# Utilities
+tqdm>=4.64

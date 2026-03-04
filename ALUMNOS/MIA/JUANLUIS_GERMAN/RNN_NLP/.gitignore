@@ -1,0 +1,27 @@
+# RNN-NLP / NER Twitter
+
+# Dataset CoNLL (formato BIO)
+g.conll
+
+# Embeddings GloVe pre-entrenados (>800MB)
+glove.twitter.27B.100d.txt
+
+# Logs de TensorBoard
+logs/
+
+# Dataset Excel (verificar tamaño antes de subir, >100MB → excluir)
+# datasets_proyecto_nlp.xlsx
+
+# Checkpoints y modelos guardados
+*.h5
+*.keras
+*.ckpt
+*.pb
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
