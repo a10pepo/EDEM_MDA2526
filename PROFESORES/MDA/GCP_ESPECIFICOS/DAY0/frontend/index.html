@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Universitaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tienda Universitaria</h1>
+            <div class="header-actions">
+                <button id="admin-btn" class="btn btn-secondary">Panel Admin</button>
+                <button id="cart-btn" class="btn btn-primary">
+                    Carrito (<span id="cart-count">0</span>)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="shop-section">
+            <h2>Productos Disponibles</h2>
+            <div class="filter-bar">
+                <select id="category-filter">
+                    <option value="">Todas las categorías</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Papelería">Papelería</option>
+                </select>
+            </div>
+            <div id="productos-grid" class="productos-grid">
+                <p>Cargando productos...</p>
+            </div>
+        </section>
+
+        <section id="admin-section" class="hidden">
+            <h2>Panel de Administración</h2>
+            <button id="back-to-shop" class="btn btn-secondary">Volver a la tienda</button>
+
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="productos">Gestión de Productos</button>
+                <button class="tab-btn" data-tab="pedidos">Pedidos</button>
+            </div>
+
+            <div id="productos-tab" class="tab-content active">
+                <h3>Agregar Nuevo Producto</h3>
+                <form id="producto-form" class="form">
+                    <input type="hidden" id="producto-id">
+                    <input type="text" id="producto-nombre" placeholder="Nombre" required>
+                    <textarea id="producto-descripcion" placeholder="Descripción"></textarea>
+                    <input type="number" id="producto-precio" placeholder="Precio" step="0.01" required>
+                    <input type="number" id="producto-stock" placeholder="Stock" required>
+                    <input type="text" id="producto-categoria" placeholder="Categoría">
+                    <input type="url" id="producto-imagen" placeholder="URL de la imagen">
+                    <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                    <button type="button" id="cancel-edit" class="btn btn-secondary hidden">Cancelar</button>
+                </form>
+
+                <h3>Productos Existentes</h3>
+                <div id="admin-productos-list" class="admin-list">
+                    <p>Cargando productos...</p>
+                </div>
+            </div>
+
+            <div id="pedidos-tab" class="tab-content">
+                <h3>Pedidos Realizados</h3>
+                <div id="pedidos-list" class="admin-list">
+                    <p>Cargando pedidos...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart-section" class="hidden">
+            <h2>Carrito de Compras</h2>
+            <button id="back-to-shop-from-cart" class="btn btn-secondary">Seguir comprando</button>
+
+            <div id="cart-items" class="cart-items">
+                <p>El carrito está vacío</p>
+            </div>
+
+            <div id="cart-summary" class="cart-summary hidden">
+                <h3>Resumen del Pedido</h3>
+                <p class="total">Total: <span id="cart-total">0.00</span> €</p>
+
+                <h4>Datos de Envío</h4>
+                <form id="checkout-form" class="form">
+                    <input type="text" id="cliente-nombre" placeholder="Nombre completo" required>
+                    <input type="email" id="cliente-email" placeholder="Email" required>
+                    <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
