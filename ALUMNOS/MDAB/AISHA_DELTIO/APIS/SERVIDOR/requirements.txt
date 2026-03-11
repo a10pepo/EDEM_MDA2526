@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-python-multipart
-stravalib
-mastodon.py
-pydantic
-sqlalchemy

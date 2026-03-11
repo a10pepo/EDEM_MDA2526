@@ -1,3 +1,0 @@
-requests
-Mastodon.py
-stravalib
