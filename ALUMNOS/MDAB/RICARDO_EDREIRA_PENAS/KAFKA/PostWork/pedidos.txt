@@ -1,0 +1,20 @@
+{"pedido_id":"PED-001","restaurante":"Pizzeria Napoli","plato":"Pizza Margherita","cantidad":2,"precio":9.50,"cliente":"Carlos Garcia","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-002","restaurante":"Sushi Zen","plato":"Sushi Variado","cantidad":1,"precio":14.00,"cliente":"Maria Lopez","metodo_pago":"bizum","estado":"confirmado"}
+{"pedido_id":"PED-003","restaurante":"La Paella Valenciana","plato":"Paella Valenciana","cantidad":3,"precio":13.00,"cliente":"Juan Martinez","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-004","restaurante":"Burger House","plato":"Classic Burger","cantidad":1,"precio":10.00,"cliente":"Ana Fernandez","metodo_pago":"efectivo","estado":"pendiente"}
+{"pedido_id":"PED-005","restaurante":"Pizzeria Napoli","plato":"Pasta Carbonara","cantidad":1,"precio":8.50,"cliente":"Pedro Sanchez","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-006","restaurante":"Taqueria El Sol","plato":"Tacos al Pastor","cantidad":2,"precio":8.00,"cliente":"Laura Ruiz","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-007","restaurante":"Sushi Zen","plato":"Ramen Tonkotsu","cantidad":2,"precio":12.50,"cliente":"Diego Torres","metodo_pago":"efectivo","estado":"confirmado"}
+{"pedido_id":"PED-008","restaurante":"Burger House","plato":"Cheese Burger Doble","cantidad":2,"precio":13.50,"cliente":"Sofia Navarro","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-009","restaurante":"La Paella Valenciana","plato":"Fideua","cantidad":2,"precio":12.00,"cliente":"Miguel Angel Diaz","metodo_pago":"bizum","estado":"pendiente"}
+{"pedido_id":"PED-010","restaurante":"Pizzeria Napoli","plato":"Pizza Pepperoni","cantidad":1,"precio":11.00,"cliente":"Elena Moreno","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-011","restaurante":"Taqueria El Sol","plato":"Quesadilla","cantidad":3,"precio":6.50,"cliente":"Carlos Garcia","metodo_pago":"efectivo","estado":"confirmado"}
+{"pedido_id":"PED-012","restaurante":"Sushi Zen","plato":"Gyozas","cantidad":3,"precio":6.50,"cliente":"Ana Fernandez","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-013","restaurante":"La Paella Valenciana","plato":"Paella Valenciana","cantidad":2,"precio":13.00,"cliente":"Pedro Sanchez","metodo_pago":"bizum","estado":"confirmado"}
+{"pedido_id":"PED-014","restaurante":"Pizzeria Napoli","plato":"Tiramisu","cantidad":2,"precio":5.00,"cliente":"Juan Martinez","metodo_pago":"bizum","estado":"confirmado"}
+{"pedido_id":"PED-015","restaurante":"Burger House","plato":"Patatas Fritas","cantidad":3,"precio":4.00,"cliente":"Laura Ruiz","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-016","restaurante":"Sushi Zen","plato":"Edamame","cantidad":2,"precio":4.00,"cliente":"Miguel Angel Diaz","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-017","restaurante":"Taqueria El Sol","plato":"Burrito de Pollo","cantidad":2,"precio":9.50,"cliente":"Sofia Navarro","metodo_pago":"efectivo","estado":"pendiente"}
+{"pedido_id":"PED-018","restaurante":"La Paella Valenciana","plato":"Ensalada Mediterranea","cantidad":1,"precio":7.50,"cliente":"Elena Moreno","metodo_pago":"tarjeta","estado":"confirmado"}
+{"pedido_id":"PED-019","restaurante":"Burger House","plato":"Milkshake","cantidad":2,"precio":5.00,"cliente":"Diego Torres","metodo_pago":"efectivo","estado":"confirmado"}
+{"pedido_id":"PED-020","restaurante":"Taqueria El Sol","plato":"Nachos con Guacamole","cantidad":1,"precio":7.00,"cliente":"Carlos Garcia","metodo_pago":"tarjeta","estado":"confirmado"}
