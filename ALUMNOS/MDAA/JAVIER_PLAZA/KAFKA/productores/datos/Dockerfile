@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY productor_datos.py .
+COPY SP500_oil_gold_bitcoin.csv .
+CMD ["python", "productor_datos.py"]
+

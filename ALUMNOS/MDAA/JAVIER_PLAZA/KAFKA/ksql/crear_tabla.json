@@ -1,0 +1,4 @@
+{
+  "ksql": "CREATE TABLE contar_alertas WITH (KAFKA_TOPIC='CONTAR_ALERTAS', VALUE_FORMAT='JSON') AS SELECT accion, alerta, COUNT(*) AS total FROM stream_alertas GROUP BY accion, alerta EMIT CHANGES;",
+  "streamsProperties": {}
+}
