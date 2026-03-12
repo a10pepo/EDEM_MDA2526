@@ -1,8 +1,0 @@
-subnetwork = "projects/gcp-storage-e2e-terraform/regions/europe-west1/subnetworks/default"
-service_account_email = "266719493558-compute@developer.gserviceaccount.com"
-service_account_email_nueva = "service-account-e2e-terraform@gcp-storage-e2e-terraform.iam.gserviceaccount.com"
-machine_image = "e2e-vm-image"
-project_id = "gcp-storage-e2e-terraform"
-cloudsql_instance = "sqlinstance-e2e-terraform-adamgdaniel"
-region     = "europe-west1"
-zone       = "europe-west1-b"
