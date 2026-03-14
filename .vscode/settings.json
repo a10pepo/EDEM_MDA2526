@@ -1,8 +1,0 @@
-{
-    "python.analysis.autoImportCompletions": true,
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#2289a6",
-        "titleBar.activeBackground": "#2f94c0",
-        "titleBar.activeForeground": "#FFFBFC"
-    }
-}
