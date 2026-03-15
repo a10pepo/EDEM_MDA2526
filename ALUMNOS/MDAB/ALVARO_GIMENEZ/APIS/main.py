@@ -7,8 +7,18 @@ URL = "https://mastodon.social"
 
 url = f"{URL}/api/v1/statuses"
 
+#Comprobamos que el token de acceso se ha cargado correctamente
+if not TOKEN: 
+    print("Error: No se ha encontrado el token de acceso. Asegúrate de haberlo configurado en las variables de entorno.")
+    exit()
+
 #Pedimos al usuario que nos de el mensaje a postear como input
 mensaje_usuario = input("Introduce el mensaje que quieres publicar en Mastodon: ")
+
+#Comprobamos que cumple la restricción de 1-280 caracteres
+if len(mensaje_usuario) < 1 or len(mensaje_usuario) > 280:
+   print("La longitud del mensaje debe ser entre 1 y 280 caracteres. Por favor, inténtalo de nuevo.")
+   exit()
 
 #Configuramos la petición
 headers = {
@@ -21,7 +31,7 @@ mensaje = {
     "visibility": "public"
 }
 
-#Hacemos pa petición incluyendo el manejo de errores
+#Hacemos la petición incluyendo el manejo de errores
 try:
     response = requests.post(url, json=mensaje, headers=headers, timeout=10)
 
@@ -39,7 +49,7 @@ try:
         elif response.status_code == 404:
             print("Endpoint no encontrado")
         elif response.status_code == 429:
-            print("Demasiadas peticiones, epera un momento antes de volver a intentarlo")
+            print("Demasiadas peticiones, espera un momento antes de volver a intentarlo")
         else:
             print("Petición incorrecta")
 
@@ -54,3 +64,4 @@ try:
 #En caso de que no se cumpla nada de lo de arriba, mostramos una "respuesta inesperada"
 except:
     print("Respuesta inesperada o error en la red")
+    print(response.text)
