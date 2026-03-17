@@ -1,100 +1,121 @@
 import os
-import sys
 import subprocess
+import sys
 
-def validate_folder_structure(path):
-    
-    # Get only directories, not files like .gitkeep
-    comun_path = os.path.join(os.getcwd(), "PROFESORES/COMUN")
-    mia_path = os.path.join(os.getcwd(), "PROFESORES/MIA")
-    mda_path = os.path.join(os.getcwd(), "PROFESORES/MDA")
-    
-    deliverables = [d for d in os.listdir(comun_path) if os.path.isdir(os.path.join(comun_path, d))]
-    deliverables += [d for d in os.listdir(mia_path) if os.path.isdir(os.path.join(mia_path, d))]
-    deliverables += [d for d in os.listdir(mda_path) if os.path.isdir(os.path.join(mda_path, d))]
-    
-    # Create a lowercase version for case-insensitive comparison
-    deliverables_lower = [d.lower() for d in deliverables]
-    
-    for file in os.listdir(path):
-        full_path = os.path.join(path, file)
-        if os.path.isdir(full_path):
-            for user_file in os.listdir(full_path):
-                user_path = os.path.join(full_path, user_file)
-                if os.path.isdir(user_path):
-                    if user_file.lower() not in deliverables_lower:
-                        print("Esta Carpeta no es correcta, comprueba el nombre exacto de la carpeta: ", user_file)
-                        exit(1)
-                    else:
-                        print("Carpeta correcta: ", user_file, " para el usuario ", file)
-                else:
-                    if "README.md" not in user_file:
-                        print("Elimina el fichero fuera de la carpeta del usuario (solo README.md esta permitido): ", user_path)
 
-def check_profesores_modified():
-    """
-    Check if any files in PROFESORES folder are being modified in this PR/commit.
-    Exits with error code 1 if any PROFESORES files are modified.
-    """
-    try:
-        # Try multiple approaches to get modified files
-        modified_files = []
-        
-        # Approach 1: Try origin/main...HEAD (works locally)
-        result = subprocess.run(
-            ['git', 'diff', '--name-only', 'origin/main...HEAD'],
-            capture_output=True,
-            text=True
+ALLOWED_ROOT_FILES = {"README.md"}
+ALLOWED_ROOT_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"}
+
+
+def get_expected_deliverables():
+    profesores_paths = [
+        os.path.join(os.getcwd(), "PROFESORES/COMUN"),
+        os.path.join(os.getcwd(), "PROFESORES/MIA"),
+        os.path.join(os.getcwd(), "PROFESORES/MDA"),
+    ]
+
+    deliverables = []
+    for profesores_path in profesores_paths:
+        if not os.path.isdir(profesores_path):
+            continue
+        deliverables.extend(
+            d
+            for d in os.listdir(profesores_path)
+            if os.path.isdir(os.path.join(profesores_path, d))
         )
-        
-        if result.returncode == 0 and result.stdout.strip():
-            modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
-        else:
-            # Approach 2: Try HEAD^..HEAD (works for push events)
-            result = subprocess.run(
-                ['git', 'diff', '--name-only', 'HEAD^..HEAD'],
-                capture_output=True,
-                text=True
-            )
-            if result.returncode == 0 and result.stdout.strip():
-                modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
-            else:
-                # Approach 3: Get changed files from git status (last resort)
-                result = subprocess.run(
-                    ['git', 'diff', '--name-only', 'HEAD'],
-                    capture_output=True,
-                    text=True
+
+    return {deliverable.lower() for deliverable in deliverables}
+
+
+def validate_folder_structure(path, expected_deliverables):
+    for student in os.listdir(path):
+        student_path = os.path.join(path, student)
+        if not os.path.isdir(student_path):
+            continue
+
+        for entry in os.listdir(student_path):
+            entry_path = os.path.join(student_path, entry)
+            if os.path.isdir(entry_path):
+                if entry.lower() not in expected_deliverables:
+                    print(
+                        "Esta Carpeta no es correcta, comprueba el nombre exacto de la carpeta:",
+                        entry,
+                    )
+                    sys.exit(1)
+            elif (
+                entry not in ALLOWED_ROOT_FILES
+                and os.path.splitext(entry)[1].lower() not in ALLOWED_ROOT_EXTENSIONS
+            ):
+                print(
+                    "Elimina el fichero fuera de la carpeta del usuario (solo README.md e imagenes estan permitidos):",
+                    entry_path,
                 )
-                if result.returncode == 0:
-                    modified_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
-        
-        print(f"\n🔍 Verificando archivos modificados... Total: {len(modified_files)}")
-        
-        # Check if any file is in PROFESORES folder
-        profesores_files = [f for f in modified_files if f.startswith('PROFESORES/')]
-        
-        if profesores_files:
-            print("\n❌ ERROR: No se permite modificar archivos en la carpeta PROFESORES")
-            print("\nArchivos modificados en PROFESORES:")
-            for file in profesores_files:
-                print(f"  - {file}")
-            print("\nPor favor, revierte estos cambios antes de continuar.")
+                sys.exit(1)
+
+
+def get_modified_files():
+    diff_candidates = [
+        ["git", "diff", "--name-only", "origin/main...HEAD"],
+        ["git", "diff", "--name-only", "HEAD^..HEAD"],
+        ["git", "diff", "--name-only", "HEAD"],
+    ]
+
+    for command in diff_candidates:
+        result = subprocess.run(command, capture_output=True, text=True)
+        if result.returncode == 0 and result.stdout.strip():
+            return [line.strip() for line in result.stdout.splitlines() if line.strip()]
+
+    return []
+
+
+def validate_modified_files(modified_files):
+    print(f"\n🔍 Verificando archivos modificados... Total: {len(modified_files)}")
+
+    profesores_files = [path for path in modified_files if path.startswith("PROFESORES/")]
+    if profesores_files:
+        print("\n❌ ERROR: No se permite modificar archivos en la carpeta PROFESORES")
+        for path in profesores_files:
+            print(f"  - {path}")
+        sys.exit(1)
+
+    alumnos_files = [path for path in modified_files if path.startswith("ALUMNOS/")]
+    student_roots = set()
+    subject_roots = set()
+
+    for path in alumnos_files:
+        parts = path.split("/")
+        if len(parts) < 4:
+            print(f"\n❌ ERROR: Ruta de alumno no válida: {path}")
             sys.exit(1)
-        else:
-            print("✅ No se detectaron modificaciones en la carpeta PROFESORES")
-            
-    except Exception as e:
-        print("⚠️  No se pudo verificar archivos modificados")
-        print(f"Error: {e}")
-        pass
-     
+
+        student_root = "/".join(parts[:3])
+        student_roots.add(student_root)
+
+        if len(parts) >= 5:
+            subject_roots.add("/".join(parts[:4]))
+
+    if len(student_roots) > 1:
+        print("\n❌ ERROR: El PR modifica carpetas de más de un alumno")
+        for path in sorted(student_roots):
+            print(f"  - {path}")
+        sys.exit(1)
+
+    if len(subject_roots) > 1:
+        print("\n❌ ERROR: Solo se permite entregar una asignatura por rama/PR")
+        for path in sorted(subject_roots):
+            print(f"  - {path}")
+        sys.exit(1)
+
+    if student_roots:
+        print(f"✅ Cambios limitados a un único alumno: {sorted(student_roots)[0]}")
+    if subject_roots:
+        print(f"✅ Cambios limitados a una única asignatura: {sorted(subject_roots)[0]}")
+    print("✅ No se detectaron modificaciones prohibidas en PROFESORES ni en otros alumnos")
+
 
 if __name__ == "__main__":
-    # First check if PROFESORES folder is being modified
-    check_profesores_modified()
-    
-    # iterate over all the files in the folder
-    # check if the file is a directory
-    validate_folder_structure(os.path.join(os.getcwd(), "ALUMNOS/MDAA"))
-    validate_folder_structure(os.path.join(os.getcwd(), "ALUMNOS/MDAB"))
-    validate_folder_structure(os.path.join(os.getcwd(), "ALUMNOS/MIA"))
+    expected_deliverables = get_expected_deliverables()
+    validate_modified_files(get_modified_files())
+    validate_folder_structure(os.path.join(os.getcwd(), "ALUMNOS/MDAA"), expected_deliverables)
+    validate_folder_structure(os.path.join(os.getcwd(), "ALUMNOS/MDAB"), expected_deliverables)
+    validate_folder_structure(os.path.join(os.getcwd(), "ALUMNOS/MIA"), expected_deliverables)

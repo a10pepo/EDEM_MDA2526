@@ -30,8 +30,76 @@ jobs:
           ls -la
 
       - name: Comprobar Carpetas
+        id: validation
+        continue-on-error: true
         run: |
-          python3 .github/code/pr_validation.py
+          set +e
+          python3 .github/code/pr_validation.py > pr_validation_output.txt 2>&1
+          status=$?
+          cat pr_validation_output.txt
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Comentar resultado en la PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          VALIDATION_EXIT_CODE: ${{ steps.validation.outputs.exit_code }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- pr-validation-comment -->';
+            const output = fs.readFileSync('pr_validation_output.txt', 'utf8').trim();
+            const exitCode = process.env.VALIDATION_EXIT_CODE || '1';
+            const isSuccess = exitCode === '0';
+            const statusLine = isSuccess
+              ? '## ✅ Validación de PR correcta'
+              : '## ❌ Validación de PR fallida';
+            const body = `${marker}
+
+            ${statusLine}
+
+            \`\`\`text
+            ${output || 'Sin salida del validador.'}
+            \`\`\`
+
+            Ejecutado en workflow: ${context.runId}`;
+
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number,
+              per_page: 100,
+            });
+
+            const existing = comments.find(comment =>
+              comment.user?.type === 'Bot' && comment.body?.includes(marker)
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body,
+              });
+            }
+
+      - name: Fallar si la validación no pasa
+        if: steps.validation.outputs.exit_code != '0'
+        run: |
+          echo "La validación del PR ha fallado"
+          exit 1
   labeler:
     runs-on: ubuntu-latest
     permissions:
