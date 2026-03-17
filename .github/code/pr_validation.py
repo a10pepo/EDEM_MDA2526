@@ -3,6 +3,10 @@ import subprocess
 import sys
 
 
+ALLOWED_ROOT_FILES = {"README.md"}
+ALLOWED_ROOT_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"}
+
+
 def get_expected_deliverables():
     profesores_paths = [
         os.path.join(os.getcwd(), "PROFESORES/COMUN"),
@@ -38,9 +42,12 @@ def validate_folder_structure(path, expected_deliverables):
                         entry,
                     )
                     sys.exit(1)
-            elif entry != "README.md":
+            elif (
+                entry not in ALLOWED_ROOT_FILES
+                and os.path.splitext(entry)[1].lower() not in ALLOWED_ROOT_EXTENSIONS
+            ):
                 print(
-                    "Elimina el fichero fuera de la carpeta del usuario (solo README.md esta permitido):",
+                    "Elimina el fichero fuera de la carpeta del usuario (solo README.md e imagenes estan permitidos):",
                     entry_path,
                 )
                 sys.exit(1)
