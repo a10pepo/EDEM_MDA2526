@@ -38,7 +38,6 @@ def validate_folder_structure(path, expected_deliverables):
                         entry,
                     )
                     sys.exit(1)
-                print("Carpeta correcta:", entry, "para el usuario", student)
             elif entry != "README.md":
                 print(
                     "Elimina el fichero fuera de la carpeta del usuario (solo README.md esta permitido):",
