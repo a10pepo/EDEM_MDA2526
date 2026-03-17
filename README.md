@@ -422,14 +422,14 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-03-12 12:53:49
+Last Checked: 2026-03-17 09:03:07
 
 
 Entregas Grupo MDA A
 <table>
 <tr><th>Alumno</th>
 <th>AWS_ESPECIFICOS</th>
-<th>*VALENCIA*</th>
+<th>VALENCIA</th>
 <th>*PYSPARK*</th>
 <th>*KAFKA*</th>
 <th>TERRAFORM</th>
@@ -476,7 +476,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -502,7 +502,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -528,7 +528,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>5.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -554,7 +554,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -606,7 +606,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -632,7 +632,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -658,7 +658,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>5.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -684,7 +684,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -710,7 +710,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -736,18 +736,18 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2026-03-12 12:53:49
+Last Checked: 2026-03-17 09:03:07
 
 Entregas Grupo MDA B
 <table>
 <tr><th>Alumno</th>
 <th>AWS_ESPECIFICOS</th>
-<th>*VALENCIA*</th>
+<th>VALENCIA</th>
 <th>*PYSPARK*</th>
 <th>*KAFKA*</th>
 <th>TERRAFORM</th>
@@ -794,7 +794,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -846,7 +846,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -872,7 +872,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>5.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -898,7 +898,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -924,7 +924,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -976,7 +976,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1002,7 +1002,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1028,7 +1028,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1054,7 +1054,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1080,7 +1080,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1106,7 +1106,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1132,7 +1132,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1158,7 +1158,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>4.0</td>
+<td>5.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1184,7 +1184,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>6.0</td>
+<td>7.5</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1210,7 +1210,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 <tr>
@@ -1236,10 +1236,10 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>✅</td>
 <td>10.0</td>
-<td>8.0</td>
+<td>10.0</td>
 <td>0.0</td>
 </tr>
 </table>
 
-Last Checked: 2026-03-12 12:53:49
+Last Checked: 2026-03-17 09:03:07
 
