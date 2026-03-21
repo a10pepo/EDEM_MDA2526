@@ -1,82 +1,61 @@
+import os
 import requests
 import json
-from confluent_kafka import Producer
 import time
+from dotenv import load_dotenv
+from kafka import KafkaProducer
 
-# =======================
-# CONFIGURACIÓN DE LA API
-# =======================
-API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYmFsYWd1ZXJhZGVsbEBnbWFpbC5jb20iLCJqdGkiOiIwM2RhNGE3Mi05NGM3LTQyNDMtODUwMC00MjA1ZjdkZTI2MWEiLCJpc3MiOiJBRU1FVCIsImlhdCI6MTc2NDUyMzI3NywidXNlcklkIjoiMDNkYTRhNzItOTRjNy00MjQzLTg1MDAtNDIwNWY3ZGUyNjFhIiwicm9sZSI6IiJ9.taxd2E3Z42ljuYEi-U0tsBfHSuwl0cxiTLpMDg0vmso"
-URL = f"https://opendata.aemet.es/opendata/api/observacion/convencional/todas/?api_key={API_KEY}"
+# 1. Cargamos la API KEY desde el archivo .env
+load_dotenv()
+API_KEY = os.getenv("AEMET_API_KEY")
+URL_AEMET = f"https://opendata.aemet.es/opendata/api/observacion/convencional/todas/?api_key={API_KEY}"
 
-# =======================
-# CONFIGURACIÓN DE KAFKA
-# =======================
-RAW_TOPIC = "raw_weather"
-producer = Producer({"bootstrap.servers": "localhost:9092"})
+# 2. Configuración robusta del Productor
+try:
+    producer = KafkaProducer(
+        bootstrap_servers=['127.0.0.1:9092'],
+        value_serializer=lambda v: json.dumps(v).encode('utf-8'),
+        # Esta línea evita el error "Invalid file object" al forzar la versión
+        api_version=(0, 10, 1),
+        # Reintentos por si Kafka está despertando
+        retries=5
+    )
+except Exception as e:
+    print(f"Error al conectar con Kafka: {e}")
 
-def delivery_report(err, msg):
-    if err:
-        print("❌ Error enviando mensaje:", err)
-    else:
-        print(f"✅ Mensaje enviado a {msg.topic()} [{msg.partition()}]")
-
-print("Producer AEMET iniciado...")
-
-# =======================
-# BUCLE PRINCIPAL
-# =======================
-while True:
+def fetch_aemet_data():
     try:
-        # Obtener URL de los datos
-        r = requests.get(URL, timeout=10)
-        try:
-            info = r.json()
-        except json.JSONDecodeError:
-            print("⚠ La API devolvió texto no JSON:")
-            print(r.text[:500])
-            time.sleep(120)
-            continue
-
-        # Validar estado de la API
-        if info.get("estado") != 200:
-            print(f"⚠ API devolvió estado {info.get('estado')}: {info.get('descripcion')}")
-            time.sleep(60)
-            continue
-
-        datos_url = info.get("datos")
+        print(f"Consultando API de AEMET...")
+        res = requests.get(URL_AEMET)
+        res.raise_for_status() # Verifica si la API devolvió error (401, 404, etc)
+        
+        datos_url = res.json().get('datos')
         if not datos_url:
-            print("⚠ No se encontró 'datos' en la respuesta.")
-            time.sleep(60)
-            continue
+            print("No se recibió URL de datos. Revisa tu API KEY.")
+            return
 
-        # Descargar los datos reales
-        resp = requests.get(datos_url, timeout=10)
-        try:
-            data = resp.json()
-        except json.JSONDecodeError:
-            print("⚠ Error: datos_url NO devolvió JSON válido")
-            print(resp.text[:500])
-            time.sleep(60)
-            continue
-
-        print(f"✓ Datos descargados: {len(data)} registros")
-
-        # Enviar cada registro completo a Kafka
-        for item in data:
-            try:
-                # Mostrar JSON completo antes de enviarlo
-                print("Enviando mensaje a Kafka:", json.dumps(item, indent=2))
-                producer.produce(RAW_TOPIC, value=json.dumps(item), callback=delivery_report)
-            except Exception as e:
-                print("❌ Error produciendo mensaje:", e)
-
-        # Vaciar buffer de Kafka
+        # Obtener datos reales de la URL temporal que da AEMET
+        data_res = requests.get(datos_url)
+        observations = data_res.json()
+        
+        print(f"Recibidas {len(observations)} observaciones. Enviando a Kafka...")
+        
+        for obs in observations:
+            producer.send('weather_raw', obs)
+            # Solo imprimimos algunos para no colapsar la terminal
+            if observations.index(obs) % 50 == 0:
+                print(f"Progreso: Enviada estación {obs.get('idema')}")
+            
         producer.flush()
-
-        # Esperar antes de la siguiente consulta
-        time.sleep(60)
-
+        print("¡Lote enviado con éxito!")
+        
     except Exception as e:
-        print("⚠ Error al obtener datos de AEMET:", e)
+        print(f"Error durante la ejecución: {e}")
+
+if __name__ == "__main__":
+    while True:
+        print("\n--- Iniciando ciclo de ingesta ---")
+        fetch_aemet_data()
+        # Cambiamos a 60 segundos para probar rápido hasta que entre
+        print("Esperando 60 segundos para reintentar...")
         time.sleep(60)
