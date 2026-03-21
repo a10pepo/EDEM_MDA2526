@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db_apis
+    environment:
+      POSTGRES_DB: robot_db
+      POSTGRES_USER: user123
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api:
+    build: .
+    container_name: flask_api
+    ports:
+      - "5000:5000"
+    environment:
+      # Pasamos los datos de conexión como variables de entorno
+      DB_HOST: db
+      DB_NAME: robot_db
+      DB_USER: user123
+      DB_PASS: password123
+    depends_on:
+      - db

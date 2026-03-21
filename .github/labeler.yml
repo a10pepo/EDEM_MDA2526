@@ -78,6 +78,13 @@ CHAT:
     - 'ALUMNOS/MDAB/*/CHAT/**'
     - 'ALUMNOS/MIA/*/CHAT/**'
 
+CHATBIG:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'ALUMNOS/MDAA/*/CHATBIG/**'
+    - 'ALUMNOS/MDAB/*/CHATBIG/**'
+    - 'ALUMNOS/MIA/*/CHATBIG/**'
+
 CHUCK:
 - changed-files:
   - any-glob-to-any-file:
@@ -98,6 +105,34 @@ TERRAFORM:
     - 'ALUMNOS/MDAA/*/TERRAFORM/**'
     - 'ALUMNOS/MDAB/*/TERRAFORM/**'
     - 'ALUMNOS/MIA/*/TERRAFORM/**'
+
+AWS_ALMACENAMIENTO:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'ALUMNOS/MDAA/*/AWS_ALMACENAMIENTO/**'
+    - 'ALUMNOS/MDAB/*/AWS_ALMACENAMIENTO/**'
+    - 'ALUMNOS/MIA/*/AWS_ALMACENAMIENTO/**'
+
+AWS_ESPECIFICOS:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'ALUMNOS/MDAA/*/AWS_ESPECIFICOS/**'
+    - 'ALUMNOS/MDAB/*/AWS_ESPECIFICOS/**'
+    - 'ALUMNOS/MIA/*/AWS_ESPECIFICOS/**'
+
+GCP_ALMACENAMIENTO:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'ALUMNOS/MDAA/*/GCP_ALMACENAMIENTO/**'
+    - 'ALUMNOS/MDAB/*/GCP_ALMACENAMIENTO/**'
+    - 'ALUMNOS/MIA/*/GCP_ALMACENAMIENTO/**'
+
+GCP_ESPECIFICOS:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'ALUMNOS/MDAA/*/GCP_ESPECIFICOS/**'
+    - 'ALUMNOS/MDAB/*/GCP_ESPECIFICOS/**'
+    - 'ALUMNOS/MIA/*/GCP_ESPECIFICOS/**'
 
 CLUSTERING:
 - changed-files:
