@@ -4,7 +4,7 @@ The initial idea was to make a post using the RESTful API of Twitter. Due to the
 
 The core requirements are the following:
 
-Authenticate with the MASTODON  API using valid credentials
+Authenticate with the MASTODON API using valid credentials
 Publish a post successfully (minimum 1 character, maximum 280 characters)
 Handle errors gracefully (invalid credentials, rate limits, network errors)
 Protect secrets - Use environment variables or secure configuration files
@@ -23,4 +23,4 @@ In order to secure the access token, it is not hardcoded in the source code. Ins
 # Config steps
 To configure the project we will have to download the dependencies shown in requirements.txt. To do so execute the following command in the terminal "pip install -r requirements.txt"
 
-You will have to store your mastodon api key as an environment variable. To do show execute the following command: export MASTODON_TOKEN="your api key"
+You will have to store your mastodon api key as an environment variable. To do so, execute the following command: export MASTODON_TOKEN="your api key"

@@ -1,10 +1,11 @@
 import requests
 import os
+import sys
 
-#Tomamos el token de acceso guardado en la variable de entorno para no filtrarla en git, asegurarse de confirgurarlo correctamente (ver el readme)
+#Tomamos el token de acceso guardado en la variable de entorno para no filtrarla en git, asegurarse de configurarlo correctamente (ver el readme)
 if not os.getenv("MASTODON_TOKEN"):
     print("Error: No se ha encontrado el token de acceso. Asegúrate de haberlo configurado en las variables de entorno.")
-    exit()    
+    sys.exit(1)    
 
 TOKEN_ACCESO=os.getenv("MASTODON_TOKEN")
 
@@ -17,9 +18,9 @@ mensaje_usuario = input("Introduce el mensaje que quieres publicar en Mastodon: 
 
 #Comprobamos que cumple la restricción de 1-280 caracteres
 if len(mensaje_usuario) < 1 or len(mensaje_usuario) > 280:
-   print("La longitud del mensaje debe ser entre 1 y 280 caracteres. Por favor, inténtalo de nuevo.")
-   exit()
-
+    print("La longitud del mensaje debe ser entre 1 y 280 caracteres. Por favor, inténtalo de nuevo.")
+    sys.exit(2)
+   
 #Configuramos la petición
 headers = {
     "Authorization": f"Bearer {TOKEN_ACCESO}",
@@ -36,7 +37,7 @@ try:
     response = requests.post(url, json=mensaje, headers=headers, timeout=10)
 
     #Si recibimos un 200, el post se ha publicado OK
-    if response.status_code == 200:
+    if response.status_code > 200 and response.status_code < 300:
         print("Post publicado correctamente")
         print(response.json())
 
