@@ -21,6 +21,6 @@ We then create a Python script to publish a post by sending an HTTP POST request
 In order to secure the access token, it is not hardcoded in the source code. Instead, an environment variable is created to store the token, and this variable is accessed from the main.py script at runtime.
 
 # Config steps
-To configurate the project we will have to download the dependencies shown in requirements.txt. To do so execute the following command in the terminal "pip install requirements.txt"
+To configure the project we will have to download the dependencies shown in requirements.txt. To do so execute the following command in the terminal "pip install -r requirements.txt"
 
 You will have to store your mastodon api key as an environment variable. To do show execute the following command: export MASTODON_TOKEN="your api key"
