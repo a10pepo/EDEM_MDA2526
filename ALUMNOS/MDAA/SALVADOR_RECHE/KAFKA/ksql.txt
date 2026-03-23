@@ -1,0 +1,16 @@
+/* 1. Definimos el stream de entrada con el nuevo campo DESTINO */
+CREATE STREAM STREAM_CLASIFICACION (
+    especie VARCHAR, 
+    peso INT, 
+    destino VARCHAR, 
+    motivo VARCHAR,
+    icono VARCHAR
+) WITH (
+    KAFKA_TOPIC='pesca_clasificada', 
+    VALUE_FORMAT='JSON'
+);
+
+/* 2. Filtramos SOLO lo que va a MERCADO NATURAL (Premium) */
+CREATE STREAM STREAM_MERCADO_FRESCO AS
+SELECT * FROM STREAM_CLASIFICACION
+WHERE DESTINO = 'NATURAL';

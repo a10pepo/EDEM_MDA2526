@@ -1,0 +1,5 @@
+project_id = ""
+region     = "europe-west1"
+zone       = "europe-west1-b"
+subnetwork = "projects/astral-bit-481514-n1/regions/europe-west1/subnetworks/default"
+service_account_email = ""

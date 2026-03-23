@@ -1,0 +1,103 @@
+[0m18:03:27.472409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C66D3775C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C66ABE43E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C66DB379B0>]}
+
+
+============================== 18:03:27.479180 | b21adf43-7620-458a-bac9-6cf71a29340d ==============================
+[0m18:03:27.479180 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:03:27.480342 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init edem_project', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:03:27.529539 [debug] [MainThread]: Starter project path: C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m18:03:27.547581 [info ] [MainThread]: 
+Your new dbt project "edem_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:03:27.549588 [info ] [MainThread]: Setting up your profile.
+[0m18:04:36.048358 [error] [MainThread]: Encountered an error:
+
+[0m18:04:36.068251 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:04:36.072210 [debug] [MainThread]: Command `dbt init` failed at 18:04:36.072210 after 68.80 seconds
+[0m18:04:36.072210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C66D890B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C60CCC7620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C612BF7BF0>]}
+[0m18:04:36.072210 [debug] [MainThread]: Flushing usage events
+[0m18:04:36.739061 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:06:28.363480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BECC44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BD7F6F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BD7F5550>]}
+
+
+============================== 18:06:28.363480 | de83bd71-e40c-41b5-b8d1-975ce80cd446 ==============================
+[0m18:06:28.363480 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:06:28.363480 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init edem_project', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:06:28.410999 [debug] [MainThread]: Starter project path: C:\Users\SALVA\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m18:06:28.429735 [info ] [MainThread]: 
+Your new dbt project "edem_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:06:28.429735 [info ] [MainThread]: Setting up your profile.
+[0m18:08:24.004636 [info ] [MainThread]: Profile edem_project written to C:\Users\SALVA\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:08:24.004636 [debug] [MainThread]: Command `dbt init` succeeded at 18:08:24.004636 after 115.82 seconds
+[0m18:08:24.004636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291BB1FC170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291E29F9DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291E281FC80>]}
+[0m18:08:24.004636 [debug] [MainThread]: Flushing usage events
+[0m18:08:24.680664 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:11:46.717775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9D66522D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9D6FBD610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9D70D38C0>]}
+
+
+============================== 18:11:46.733563 | 81f8ca15-f596-4e17-9902-382b08261856 ==============================
+[0m18:11:46.733563 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:11:46.733563 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select expanded_delivery_events', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:11:46.733563 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:11:46.733563 [debug] [MainThread]: Command `dbt run` failed at 18:11:46.733563 after 0.19 seconds
+[0m18:11:46.733563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9D7186CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9D5A5FB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9D720B020>]}
+[0m18:11:46.733563 [debug] [MainThread]: Flushing usage events
+[0m18:11:47.149060 [debug] [MainThread]: An error was encountered while trying to flush usage events
