@@ -422,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-03-23 21:19:32
+Last Checked: 2026-03-23 21:23:52
 
 
 Entregas Grupo MDA A
@@ -617,7 +617,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>❌</td>
 <td>❌</td>
@@ -633,7 +633,7 @@ Entregas Grupo MDA A
 <td>✅</td>
 <td>10.0</td>
 <td>10.0</td>
-<td>0.0</td>
+<td>5.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAA/JORGE_MARTINEZ'>JORGE_MARTINEZ</a></td>
@@ -741,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2026-03-23 21:19:32
+Last Checked: 2026-03-23 21:23:52
 
 Entregas Grupo MDA B
 <table>
@@ -1241,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2026-03-23 21:19:32
+Last Checked: 2026-03-23 21:23:52
 
