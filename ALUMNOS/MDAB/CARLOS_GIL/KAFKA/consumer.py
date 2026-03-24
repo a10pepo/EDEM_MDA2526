@@ -3,7 +3,7 @@ from kafka import KafkaConsumer, KafkaProducer
 
 # 1. Configuramos el Consumer (el que lee del primer topic)
 consumer = KafkaConsumer(
-    'compras_raw',
+    'ventas_high_value',
     bootstrap_servers=['localhost:9092'],
     value_deserializer=lambda m: json.loads(m.decode('utf-8')),
     auto_offset_reset='earliest' # Lee desde el principio si es la primera vez
@@ -28,7 +28,7 @@ try:
         # Enviamos el JSON al nuevo topic
         producer.send('compras_enriquecidas', value=venta)
         
-        print(f"✅ Venta de {venta['cliente']} procesada y reenviada.")
+        print(f" Venta de {venta['cliente']} procesada y reenviada.")
 
 except KeyboardInterrupt:
     print("\nDeteniendo el transformador...")
