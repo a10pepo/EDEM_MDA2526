@@ -31,6 +31,10 @@ try:
             print(f"  Error: {msg.error()}")
             continue
 
+        datos = json.loads(msg.value().decode('utf-8'))
+
+        contador += 1
+
         if datos['monto'] > 10000:
             print("  *** ALERTA: Transacción de alto valor detectada! ***")
 
