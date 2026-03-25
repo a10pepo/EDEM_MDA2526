@@ -1,6 +1,0 @@
-v1
-{"path":"file:///home/jovyan/work/resultados/part-00000-44bc347e-c76d-4792-af20-9dbf722546eb-c000.snappy.parquet","size":978,"isDir":false,"modificationTime":1770417110882,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/jovyan/work/resultados/part-00053-46a7c50d-86c6-47bf-98ae-a0fe680ef013-c000.snappy.parquet","size":2247,"isDir":false,"modificationTime":1770417111970,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/jovyan/work/resultados/part-00092-b1c951d3-79a8-4f90-ad17-68b222d9877c-c000.snappy.parquet","size":2247,"isDir":false,"modificationTime":1770417112715,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/jovyan/work/resultados/part-00156-f04e9e25-d5b6-4429-98df-6af1064c43a1-c000.snappy.parquet","size":2247,"isDir":false,"modificationTime":1770417114161,"blockReplication":1,"blockSize":33554432,"action":"add"}
-{"path":"file:///home/jovyan/work/resultados/part-00182-86fc46d7-5a0c-4f94-be54-ff89da460599-c000.snappy.parquet","size":2245,"isDir":false,"modificationTime":1770417114821,"blockReplication":1,"blockSize":33554432,"action":"add"}
