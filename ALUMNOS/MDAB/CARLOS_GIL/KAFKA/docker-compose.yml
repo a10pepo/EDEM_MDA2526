@@ -1,0 +1,108 @@
+services:
+
+  # =============================
+  # Servicio Zookeeper
+  # =============================
+  # Zookeeper es necesario para coordinar los brokers de Kafka.
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181  # Puerto donde Zookeeper escucha
+      ZOOKEEPER_TICK_TIME: 2000    # Intervalo de tiempo interno
+    ports:
+      - "2181:2181"                # Exponemos el puerto para acceso local
+    networks:
+      - kafka-net
+
+  # =============================
+  # Servicio Kafka
+  # =============================
+  # Broker principal de Kafka. Aquí configuramos dos listeners:
+  # - localhost: para clientes en la máquina local
+  # - kafka: para clientes dentro de la red Docker
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"                # Puerto para clientes locales
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      # Listener para aceptar conexiones en todas las interfaces
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_INTERNAL://0.0.0.0:29092
+      # Advertised listeners: cómo se anuncia el broker a los clientes
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      # Mapeo de protocolos
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      # Listener interno para comunicación entre brokers
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+
+    networks:
+      - kafka-net
+
+  # =============================
+  # Servicio Control Center
+  # =============================
+  # Interfaz web para gestionar Kafka.
+  control-center:
+    image: confluentinc/cp-enterprise-control-center:7.3.0
+    container_name: control-center
+    depends_on:
+      - kafka
+    ports:
+      - "9021:9021"                # Puerto para acceder a la UI
+    environment:
+      CONTROL_CENTER_BOOTSTRAP_SERVERS: kafka:29092
+      CONTROL_CENTER_ZOOKEEPER_CONNECT: zookeeper:2181
+      CONTROL_CENTER_REPLICATION_FACTOR: 1
+      CONTROL_CENTER_INTERNAL_TOPICS_PARTITIONS: 1
+      CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
+      CONFLUENT_METRICS_TOPIC_REPLICATION: 1
+      PORT: 9021
+    networks:
+      - kafka-net
+
+  # =============================
+  # Servicio KSQL
+  # =============================
+  # Motor para ejecutar consultas SQL sobre datos en Kafka.
+  ksql:
+    image: confluentinc/cp-ksqldb-server:7.3.0
+    container_name: ksql
+    depends_on:
+      - kafka
+    ports:
+      - "8088:8088"                # Puerto para la API REST de KSQL
+    environment:
+      KSQL_BOOTSTRAP_SERVERS: kafka:29092  # Conexión al broker Kafka
+      KSQL_LISTENERS: http://0.0.0.0:8088  # Dirección donde escucha KSQL
+      KSQL_KSQL_SERVICE_ID: ksql_service   # Identificador del servicio KSQL
+    networks:
+      - kafka-net
+
+# =============================
+  # Servicio KSQL CLI
+  # =============================
+  # Cliente para ejecutar comandos KSQL desde la línea de comandos.
+  ksql-cli:
+    image: confluentinc/cp-ksqldb-cli:7.3.0
+    container_name: ksql-cli
+    depends_on:
+      - ksql
+    entrypoint: /bin/sh   # Para que puedas entrar al contenedor y ejecutar comandos
+    tty: true             # Permite sesión interactiva
+    networks:
+      - kafka-net
+
+# =============================
+# Red interna para comunicación entre contenedores
+# =============================
+networks:
+  kafka-net:
+    driver: bridge
