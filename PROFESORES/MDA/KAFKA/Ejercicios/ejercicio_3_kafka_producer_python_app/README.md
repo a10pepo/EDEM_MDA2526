@@ -47,15 +47,11 @@ python producer.py
    - Cambia el diccionario `data` para enviar información diferente.
    - Ejemplo: pedidos internacionales, campañas de marketing, alertas de inventario.
 
-3. **Ajusta el intervalo de tiempo**:
-   - Cambia el valor en `time.sleep(1)`.
-   - Prueba con `0.5` para mensajes más rápidos o `2` para más lentos.
-
-4. **Envía más o menos mensajes**:
+3. **Envía más o menos mensajes**:
    - Cambia el rango del bucle `for e in range(100)`.
    - Por ejemplo, `range(10)` para menos mensajes.
 
-5. **Añade una lógica condicional**:
+4. **Añade una lógica condicional**:
    - Envía mensajes diferentes según el índice.
    - Ejemplo: si `e` es par, estado = "Aprobado"; si es impar, estado = "Pendiente".
 

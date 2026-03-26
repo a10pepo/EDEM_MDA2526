@@ -16,7 +16,6 @@ consumer = Consumer(config)
 topic_kafka = 'proyectos_innovacion'
 consumer.subscribe([topic_kafka])
 
-
 print(f"Esperando mensajes del tópico '{topic_kafka}'...")
 
 # ============================================
@@ -51,6 +50,7 @@ try:
             # Si hay un error en el mensaje, lo mostramos
             print(f"Error al recibir mensaje: {msg.error()}")
             continue
+
         # Si el mensaje es válido, mostramos su contenido
         # msg.value() devuelve los datos en bytes, por eso usamos decode('utf-8') para convertirlos a texto
         print(f"Mensaje recibido: {msg.value().decode('utf-8')}")
