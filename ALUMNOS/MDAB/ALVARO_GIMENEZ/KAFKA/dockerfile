@@ -7,11 +7,11 @@ WORKDIR /app
 #Copiamos el archivo requirements.txt de la carpeta de ejecución (debemos ejecutar desde la raiz del dockerfile) a la carpeta /app del contenedor
 COPY requirements.txt .
 
-#Con el archuvo de requierimientos copiado, instalamos las librerías 
+#Con el archivo de requierimientos copiado, instalamos las librerías 
 RUN pip install --no -cache -dir -requirements.txt
 
-#Copiamos el contenido que queramos ejecutar en /app del contenedor 
-COPY /consumer.py .
-COPY /producer.py .
-COPY /init.sql .
+#Copiamos el contenido que queramos ejecutar en /app del contenedor, solo estos 3 ejecutables
+COPY consumer.py .
+COPY producer.py .
+COPY init.sql .
 
