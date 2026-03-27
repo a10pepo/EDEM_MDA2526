@@ -9,7 +9,7 @@ from kafka import KafkaProducer
 
 #Configuramos el objeto producer para enviar los mensajes
 producer = KafkaProducer(
-    bootstrap_servers=['localhost:9092'],
+    bootstrap_servers=['kafka:9092'],
     value_serializer=lambda x: json.dumps(x).encode('utf-8')
 )
 
@@ -54,10 +54,10 @@ if __name__ == "__main__":
             order_id = f"ORD-{contador}"
             log_entrega = generador_entregas(order_id)
 
-            #Mandamos el mensaje (log de simulación) al tópico de KAFKA
+            #Mandamos el mensaje (log de simulación) al tópico de KAFKA, forzamos envío (sin buffer)
             producer.send('entregas', value=log_entrega)
-
-            #Sacamos un log resumen por pantalla
+            producer.flush=True
+            #Sacamos un log resumen por pantalla, forzamos 
             print(f"Log enviado: {log_entrega}")
 
             #Aumentamos el contador
