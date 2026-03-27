@@ -7,6 +7,9 @@ import random
 import json
 from kafka import KafkaProducer
 
+#Esperamos a que se levante kafka
+time.sleep(10)
+
 #Configuramos el objeto producer para enviar los mensajes
 producer = KafkaProducer(
     bootstrap_servers=['kafka:9092'],
@@ -66,10 +69,13 @@ if __name__ == "__main__":
             #Dormimos medio segundo hasta el próximo log
             time.sleep(0.5)
 
-        #Manejamos los posibles errores que pueden darse
         except KeyboardInterrupt:
-            print("Simulación detenida por el usuario.")
+            print("Deteniendo el productor...")
         except Exception as e:
-            print(f"Error inesperado: {e}")
+            print(f"Error durante el envío: {e}")
         finally:
-            producer.close()
+            # Solo cerramos el productor cuando salimos del bucle while
+            try:
+                producer.close(timeout=10)
+            except:
+                pass

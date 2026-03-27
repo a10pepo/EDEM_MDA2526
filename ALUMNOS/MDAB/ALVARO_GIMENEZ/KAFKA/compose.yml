@@ -22,7 +22,7 @@ services:
 
     #Creamos un contenedor de zookeper, el orquestador de clusters de kafka (el jefe de los brokers xd)
     zookeeper:
-        image: confluentinc/cp-kafka:7.5.0
+        image: confluentinc/cp-zookeeper:latest
         container_name: zookeeper
         environment:
           ZOOKEEPER_CLIENT_PORT: 2181
@@ -31,7 +31,7 @@ services:
     #Creamos el propio contenedor del servicio de kafka, que recibe los mensajes y los envia a los suscriptores
     #Depende completamente de que zookeper (el jefe) esté levantado
     kafka:
-        image: confluentinc/cp-kafka:latest
+        image: confluentinc/cp-kafka:7.5.0
         container_name: kafka-broker
         depends_on:
           - zookeeper
@@ -42,3 +42,23 @@ services:
           KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
           KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
           KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+    ksqldb-server:
+        image: confluentinc/cp-ksqldb-server:7.5.0 
+        container_name: ksqldb-server
+        depends_on:
+          - kafka
+        environment:
+          KSQL_LISTENERS: http://0.0.0.0:8088
+          KSQL_BOOTSTRAP_SERVERS: kafka:9092
+          KSQL_KSQL_SERVICE_ID: mda_project_1
+          KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: "true"
+          KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: "true"
+
+    ksqldb-cli:
+        image: confluentinc/cp-ksqldb-cli:7.5.0     
+        container_name: ksqldb-cli
+        depends_on:
+          - ksqldb-server
+        entrypoint: /bin/sh
+        tty: true
