@@ -1,0 +1,7 @@
+services: 
+   #Productor de kafka, fozamos el build desde aqui para hacer mas facil el desarrollo
+   producer: 
+
+   #Primer consumidor de kafka, fozamos el build desde aqui para hacer mas facil el desarrollo
+   consumer: 
+
