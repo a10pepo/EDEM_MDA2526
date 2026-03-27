@@ -6,7 +6,7 @@ from kafka import KafkaConsumer, KafkaProducer
 import time 
 
 #Esperamos a que se levante kafka
-time.sleep(15)
+time.sleep(20)
 
 #Configuramos el consumidor
 #Nos identificamos como group_id_1 para que kafka nos recuerde si se cae el servicio

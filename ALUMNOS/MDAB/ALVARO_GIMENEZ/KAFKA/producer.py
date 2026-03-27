@@ -8,7 +8,7 @@ import json
 from kafka import KafkaProducer
 
 #Esperamos a que se levante kafka
-time.sleep(10)
+time.sleep(15)
 
 #Configuramos el objeto producer para enviar los mensajes
 producer = KafkaProducer(

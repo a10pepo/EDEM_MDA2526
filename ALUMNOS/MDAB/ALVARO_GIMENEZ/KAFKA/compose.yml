@@ -42,6 +42,8 @@ services:
           KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
           KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
           KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+          KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+          KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
 
     ksqldb-server:
         image: confluentinc/cp-ksqldb-server:7.5.0 
@@ -54,6 +56,8 @@ services:
           KSQL_KSQL_SERVICE_ID: mda_project_1
           KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: "true"
           KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: "true"
+          KSQL_KSQL_INTERNAL_TOPIC_REPLICATION_FACTOR: 1
+          KSQL_KSQL_SINK_REPLICATION_FACTOR: 1    
 
     ksqldb-cli:
         image: confluentinc/cp-ksqldb-cli:7.5.0     
