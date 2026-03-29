@@ -40,9 +40,9 @@ try:
 
         #Manejamos error división /0         
         if qnt_pedido == 0: 
-             porcentaje_rotura=0
+            porcentaje_rotura=0
         else: 
-             porcentaje_rotura = (qnt_diff / qnt_pedido) * 100
+            porcentaje_rotura = (qnt_diff / qnt_pedido) * 100
         
         if porcentaje_rotura == 0:
             nivel = "OK"
@@ -62,12 +62,10 @@ try:
         }
 
         #MANDAMOS AL NUEVO TÓPICO PARA KSQL
-        #Solo mandamos si hay rotura (opcional, pero así limpias el tráfico)
         producer_alerts.send('alertas_entregas', value=alerta)
         producer_alerts.flush()
-
-        #Seguimos mostrando por log para ver que todo va bien
         print(f"Enviado a KSQL: {nivel} | {datos['order_id']}", flush=True)
+
         #Lo mostramos por la consola de Docker, flusheamos para que lo muestre
         print(f"{nivel} | Orden: {datos['order_id']} | Rotura: {porcentaje_rotura:.2f}%", flush=True)
 

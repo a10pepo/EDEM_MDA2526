@@ -1,4 +1,4 @@
-#Creamos una imagen a partir de python 3:14 y la llamamos BASE
+#Creamos una imagen a partir de python 3:13 slim y la llamamos BASE
 FROM python:3.13-slim AS BASE
 
 #Creamos en el contenedor la carpeta /APP donde se guardará todo lo que definamos en el dockerfile como .

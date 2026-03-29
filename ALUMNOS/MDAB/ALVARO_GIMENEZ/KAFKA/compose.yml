@@ -22,7 +22,7 @@ services:
 
     #Creamos un contenedor de zookeper, el orquestador de clusters de kafka (el jefe de los brokers xd)
     zookeeper:
-        image: confluentinc/cp-zookeeper:latest
+        image: confluentinc/cp-zookeeper:7.5.0
         container_name: zookeeper
         environment:
           ZOOKEEPER_CLIENT_PORT: 2181

@@ -45,37 +45,35 @@ def generador_entregas(order_id):
 
         return log_entrega
 
-#Ejecutor principal (no sería necesario, no vamos a reutilizar las funciones, pero es buena práctica)
 if __name__ == "__main__":
-
-    #Contador para los order-id, en cada ejecución del servicio se reiniciará¡! Ojo consistencia de ids si escalamos funcionalidad
-    contador=0
-
-    while True: 
-
-        try:
-            order_id = f"ORD-{contador}"
-            log_entrega = generador_entregas(order_id)
-
-            #Mandamos el mensaje (log de simulación) al tópico de KAFKA, forzamos envío (sin buffer)
-            producer.send('entregas', value=log_entrega)
-            producer.flush=True
-            #Sacamos un log resumen por pantalla, forzamos 
-            print(f"Log enviado: {log_entrega}")
-
-            #Aumentamos el contador
-            contador += 1
-    
-            #Dormimos medio segundo hasta el próximo log
-            time.sleep(0.5)
-
-        except KeyboardInterrupt:
-            print("Deteniendo el productor...")
-        except Exception as e:
-            print(f"Error durante el envío: {e}")
-        finally:
-            # Solo cerramos el productor cuando salimos del bucle while
+    #Contador para los order-id
+    contador = 0
+    try: 
+        while True: 
             try:
-                producer.close(timeout=10)
-            except:
-                pass
+                order_id = f"ORD-{contador}"
+                log_entrega = generador_entregas(order_id)
+
+                #Mandamos el mensaje al tópico
+                producer.send('entregas', value=log_entrega)
+                
+                producer.flush() 
+                
+                print(f"Log enviado: {log_entrega}")
+
+                contador += 1
+                time.sleep(0.5)
+
+            except Exception as e:
+                print(f"Error en el envío individual: {e}")
+                #Aquí NO ponemos finally ni close, para que el bucle siga
+
+    except KeyboardInterrupt:
+        print("\nDeteniendo el productor...")
+    
+    finally:
+        print("Cerrando conexión con Kafka...")
+        try:
+            producer.close(timeout=10)
+        except:
+            pass
