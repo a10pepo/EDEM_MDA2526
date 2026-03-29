@@ -8,4 +8,10 @@
 
 ![Pub/Sub topics](images/compute_eng.png)
 
+## Creamos la instancia de cloud sql y creamos las tablas
+
+![Pub/Sub topics](images/cloud_sql1.png)
+
+![Pub/Sub topics](images/cloud_sql2.png)
+
 ## 
