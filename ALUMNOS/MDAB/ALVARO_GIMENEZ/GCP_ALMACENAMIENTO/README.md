@@ -36,4 +36,4 @@
 ![alt text](images/dbt.png)
 
 # Graficamos en metabase
- 
+ ![alt text](images/metabase.png)
