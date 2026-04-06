@@ -14,4 +14,7 @@
 
 ![Pub/Sub topics](images/cloud_sql2.png)
 
-## 
+##  Creamos los datasets de Bigquery
+
+![Pub/Sub topics](images/orders_BQ.png)
+![Pub/Sub topics](images/delivery_BQ.png)
