@@ -31,3 +31,9 @@
 
 # Ejecutamos la ETL de cloud SQL -> Bigquery
 ![alt text](images/ETL.png)
+
+# Ejecutamos DBT
+![alt text](images/dbt.png)
+
+# Graficamos en metabase
+ 
