@@ -1,0 +1,68 @@
+services: 
+   #Productor de kafka, fozamos el build desde aqui para hacer más facil el desarrollo.
+    producer: 
+        #Este comando busca el dockerfile en el directorio de ejecución y construye la imagen a partir de él para el contenedor.
+        #Es tal cual lo que haríamos nosotros con el docker build . -t nombre_imagen, que posteriormente pasaríamos esa imagen al compose
+        build: .
+        container_name: producer
+        working_dir: /app
+        depends_on:
+          - kafka
+        command: python producer.py
+
+      #Primer consumidor de kafka, fozamos el build desde aqui para hacer mas facil el desarrollo
+    consumer: 
+        #Este comando busca el dockerfile en el directorio de ejecución y construye la imagen a partir de él para el contenedor.
+        build: .
+        container_name: consumer
+        working_dir: /app
+        depends_on:
+          - kafka
+        command: python consumer.py
+
+    #Creamos un contenedor de zookeper, el orquestador de clusters de kafka (el jefe de los brokers xd)
+    zookeeper:
+        image: confluentinc/cp-zookeeper:7.5.0
+        container_name: zookeeper
+        environment:
+          ZOOKEEPER_CLIENT_PORT: 2181
+          ZOOKEEPER_TICK_TIME: 2000
+
+    #Creamos el propio contenedor del servicio de kafka, que recibe los mensajes y los envia a los suscriptores
+    #Depende completamente de que zookeper (el jefe) esté levantado
+    kafka:
+        image: confluentinc/cp-kafka:7.5.0
+        container_name: kafka-broker
+        depends_on:
+          - zookeeper
+        environment:
+          KAFKA_BROKER_ID: 1
+          KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+          KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+          KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+          KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+          KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+          KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+          KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+
+    ksqldb-server:
+        image: confluentinc/cp-ksqldb-server:7.5.0 
+        container_name: ksqldb-server
+        depends_on:
+          - kafka
+        environment:
+          KSQL_LISTENERS: http://0.0.0.0:8088
+          KSQL_BOOTSTRAP_SERVERS: kafka:9092
+          KSQL_KSQL_SERVICE_ID: mda_project_1
+          KSQL_KSQL_LOGGING_PROCESSING_STREAM_AUTO_CREATE: "true"
+          KSQL_KSQL_LOGGING_PROCESSING_TOPIC_AUTO_CREATE: "true"
+          KSQL_KSQL_INTERNAL_TOPIC_REPLICATION_FACTOR: 1
+          KSQL_KSQL_SINK_REPLICATION_FACTOR: 1    
+
+    ksqldb-cli:
+        image: confluentinc/cp-ksqldb-cli:7.5.0     
+        container_name: ksqldb-cli
+        depends_on:
+          - ksqldb-server
+        entrypoint: /bin/sh
+        tty: true
