@@ -422,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-05-01 12:42:14
+Last Checked: 2026-05-01 12:53:40
 
 
 Entregas Grupo MDA A
@@ -741,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2026-05-01 12:42:14
+Last Checked: 2026-05-01 12:53:40
 
 Entregas Grupo MDA B
 <table>
@@ -803,7 +803,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
@@ -821,7 +821,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>10.0</td>
 <td>2.5</td>
-<td>0.0</td>
+<td>5.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAB/CARLA_BARAT'>CARLA_BARAT</a></td>
@@ -1241,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2026-05-01 12:42:14
+Last Checked: 2026-05-01 12:53:40
 
