@@ -1,0 +1,80 @@
+<!--
+==============================================
+PÁGINA DE BORRADORES
+==============================================
+Muestra los borradores guardados y permite
+editarlos, eliminarlos o publicarlos.
+
+Autor: Ricardo Edreira
+Fecha: Enero 2026
+==============================================
+-->
+{% extends 'base.html' %}
+
+{% block titulo %}Borradores | X Post Publisher{% endblock %}
+
+{% block contenido %}
+<div class="pagina-borradores">
+
+    <!-- Título -->
+    <div class="encabezado">
+        <h1>📝 Mis Borradores</h1>
+        <p class="subtitulo">Posts guardados para publicar después</p>
+    </div>
+
+    <!-- Lista de borradores -->
+    {% if borradores %}
+    <div class="lista-borradores">
+        {% for borrador in borradores %}
+        <div class="card tarjeta-borrador">
+            <!-- Cabecera -->
+            <div class="borrador-cabecera">
+                <span class="borrador-fecha">
+                    📅 Guardado: {{ borrador.fecha_creacion[:16].replace('T', ' ') }}
+                </span>
+                <span class="borrador-caracteres">
+                    {{ borrador.texto|length }} / 280 caracteres
+                </span>
+            </div>
+
+            <!-- Contenido del borrador -->
+            <div class="borrador-contenido">
+                {{ borrador.texto }}
+            </div>
+
+            <!-- Acciones -->
+            <div class="borrador-acciones">
+                <!-- Publicar borrador -->
+                <form action="{{ url_for('rutas.publicar_borrador', id_borrador=borrador.id) }}" method="POST"
+                    style="display: inline;">
+                    <button type="submit" class="btn btn-primario btn-pequeno">
+                        🐦 Publicar
+                    </button>
+                </form>
+
+                <!-- Eliminar borrador -->
+                <form action="{{ url_for('rutas.eliminar_un_borrador', id_borrador=borrador.id) }}" method="POST"
+                    style="display: inline;">
+                    <button type="submit" class="btn btn-peligro btn-pequeno"
+                        onclick="return confirm('¿Eliminar este borrador?')">
+                        🗑️ Eliminar
+                    </button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <!-- Estado vacío -->
+    <div class="estado-vacio">
+        <div class="icono-vacio">📋</div>
+        <h3>No hay borradores</h3>
+        <p>Guarda un borrador desde la página de escritura</p>
+        <a href="{{ url_for('rutas.inicio') }}" class="btn btn-primario">
+            ✏️ Escribir nuevo post
+        </a>
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

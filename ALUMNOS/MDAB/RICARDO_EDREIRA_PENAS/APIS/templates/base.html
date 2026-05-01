@@ -1,0 +1,86 @@
+<!--
+==============================================
+PLANTILLA BASE HTML
+==============================================
+Esta plantilla contiene la estructura común
+de todas las páginas de la aplicación.
+
+Las otras plantillas "heredan" de esta.
+
+Autor: Ricardo Edreira
+Fecha: Enero 2026
+==============================================
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publicador de posts para X (Twitter)">
+    <title>{% block titulo %}X Post Publisher{% endblock %}</title>
+
+    <!-- Google Fonts - Fuente moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="{{ url_for('rutas.inicio') }}" class="nav-logo">
+                <span class="logo-icon">𝕏</span>
+                <span class="logo-text">Post Publisher</span>
+            </a>
+
+            <!-- Indicador de modo -->
+            {% if modo_desarrollo %}
+            <span class="modo-badge desarrollo">🔧 Modo Desarrollo</span>
+            {% else %}
+            <span class="modo-badge produccion">🚀 Modo Producción</span>
+            {% endif %}
+
+            <!-- Menú de navegación -->
+            <div class="nav-menu">
+                <a href="{{ url_for('rutas.inicio') }}" class="nav-link">✏️ Escribir</a>
+                <a href="{{ url_for('rutas.historial') }}" class="nav-link">📜 Historial</a>
+                <a href="{{ url_for('rutas.borradores') }}" class="nav-link">📝 Borradores</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <main class="container">
+        <!-- Mensajes flash (éxito/error) -->
+        {% with mensajes = get_flashed_messages(with_categories=true) %}
+        {% if mensajes %}
+        {% for categoria, mensaje in mensajes %}
+        <div class="alerta alerta-{{ categoria }}">
+            {{ mensaje }}
+            <button class="cerrar-alerta" onclick="this.parentElement.remove()">×</button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <!-- Contenido de cada página -->
+        {% block contenido %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>X API Post Publisher - Proyecto de Ricardo Edreira</p>
+        <p class="footer-small">Enero 2026 - Challenge API</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
