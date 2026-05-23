@@ -1,0 +1,52 @@
+-- Sources: Definición de fuentes de datos
+-- Autor: Ricardo Edreira
+
+version: 2
+
+sources:
+  - name: spacex_raw
+    description: "Datos crudos de la API de SpaceX"
+    schema: main
+    tables:
+      - name: raw_launches
+        description: "Lanzamientos históricos de SpaceX"
+        columns:
+          - name: id
+            description: "Identificador único del lanzamiento"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Nombre de la misión"
+          - name: flight_number
+            description: "Número de vuelo"
+          - name: date_utc
+            description: "Fecha del lanzamiento en UTC"
+          - name: success
+            description: "Indicador de éxito (true/false)"
+          - name: rocket_id
+            description: "ID del cohete utilizado"
+          - name: launchpad_id
+            description: "ID de la plataforma de lanzamiento"
+            
+      - name: raw_rockets
+        description: "Cohetes de SpaceX"
+        columns:
+          - name: id
+            description: "Identificador único del cohete"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Nombre del cohete"
+            
+      - name: raw_launchpads
+        description: "Plataformas de lanzamiento"
+        columns:
+          - name: id
+            description: "Identificador único de la plataforma"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Nombre corto de la plataforma"

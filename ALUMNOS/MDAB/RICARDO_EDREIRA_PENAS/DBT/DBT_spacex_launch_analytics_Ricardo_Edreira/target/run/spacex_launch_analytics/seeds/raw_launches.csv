@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_launches" ("id" text,"name" text,"flight_number" integer,"date_utc" timestamp without time zone,"success" boolean,"rocket_id" text,"launchpad_id" text,"details" text,"upcoming" boolean)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_launches" FROM '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/seeds/raw_launches.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
