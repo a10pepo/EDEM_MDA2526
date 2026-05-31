@@ -1,13 +1,21 @@
-import os, psycopg
+import os, psycopg, time
 from datetime import datetime
-import time
-#URL CONEXIÓN A BD 
+
 url = os.getenv("DATABASE_URL")
-#CONEXIÓN A BD
-connection = psycopg.connect(url)
-# Cursor
+
+for intento in range(10):
+    try:
+        connection = psycopg.connect(url)
+        print("BD conectada con éxito")
+        break
+    except Exception as e:
+        print(f"Esperando BD... ({intento + 1}/10): {e}")
+        time.sleep(3)
+else:
+    print("No se pudo conectar a la BD.")
+    exit(1)
+
 cur = connection.cursor()
-print("BD conectada con éxito")
 
 cur.execute("""CREATE TABLE IF NOT EXISTS resultados 
         (id SERIAL PRIMARY KEY,

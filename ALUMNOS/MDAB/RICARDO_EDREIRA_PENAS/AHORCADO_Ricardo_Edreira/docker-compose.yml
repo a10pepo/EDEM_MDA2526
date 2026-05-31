@@ -10,18 +10,19 @@ services:
     ports:
       - "5433:5432"
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   app:
-    image: python:3.11-slim
-    working_dir: /app
-    volumes:
-      - ./:/app
+    build: .
     env_file:
       - .env
-    command: >
-      sh -c "pip install -r requirements.txt && python ahorcado.py"
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
 volumes:
   postgresDB:
