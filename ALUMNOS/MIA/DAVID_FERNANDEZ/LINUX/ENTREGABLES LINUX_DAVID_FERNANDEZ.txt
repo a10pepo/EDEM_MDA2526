@@ -1,0 +1,131 @@
+ENTREGABLES LINUX
+
+1.Listar todos los archivos del directorio bin.
+Usuario@DavidPC MINGW64 /bin
+$ ls
+
+2.Listar todos los archivos del directorio tmp.
+Usuario@DavidPC MINGW64 /tmp
+$ ls
+
+3.Listar todos los archivos del directorio etc que empiecen por t
+Usuario@DavidPC MINGW64 /etc
+$ ls t*
+tigrc
+
+4.Listar todos los archivos del directorio dev que empiecen por tty.
+Usuario@DavidPC MINGW64 /dev
+$ ls tty*
+tty
+
+5.Listar todos los archivos del directorio dev que empiecen por tty y acaben en 3.
+Usuario@DavidPC MINGW64 /dev
+$ ls tty*3
+ls: cannot access 'tty*3': No such file or directory
+
+6.Listar todos los archivos del directorio dev que empiecen por t y acaben en C1.
+Usuario@DavidPC MINGW64 /dev
+$ ls t*C1
+ls: cannot access 't*C1': No such file or directory
+
+7.Listar todos los archivos, incluidos los ocultos, del directorio raíz.
+Usuario@DavidPC MINGW64 /
+$ ls -la /
+total 6284
+
+8.Listar todos los archivos del directorio etc que no empiecen por t.
+Usuario@DavidPC MINGW64 /etc
+$ ls [!t]*
+
+9.Listar todos los archivos del directorio usr y sus subdirectorios.
+Usuario@DavidPC MINGW64 /usr
+$ ls -r
+
+10.Cambiarse al directorio tmp, crear directorio PRUEBA.
+Usuario@DavidPC MINGW64 /usr
+$ ls -R /usr
+/usr:
+bin/  etc/  lib/  libexec/  share/  ssl/
+
+
+10.Cambiarse al directorio tmp, crear directorio PRUEBA.
+Usuario@DavidPC MINGW64 /tmp
+$ mkdir PRUEBA
+
+11.Verificar que el directorio actual ha cambiado.
+Usuario@DavidPC MINGW64 /tmp
+$ pwd
+/tmp
+
+12.Mostrar el día y la hora actual.
+$ date
+Wed Oct 15 15:01:18     2025
+
+13.Con un solo comando posicionarse en el directorio $HOME.
+Usuario@DavidPC MINGW64 /tmp
+$ cd ~
+
+14.Verificar que se está en él.
+Usuario@DavidPC MINGW64 ~
+$ pwd
+/c/Users/Usuario
+
+15.Listar todos los ficheros del directorio HOME mostrando sus permisos.
+Usuario@DavidPC MINGW64 ~
+$ ls -l
+total 15897
+
+16.Borrar todos los archivos y directorios visibles de vuestro directorio PRUEBA.
+Usuario@DavidPC MINGW64 /tmp/prueba
+$ rm -rf
+
+17.Crear los directorios dir1, dir2 y dir3 en el directorio PRUEBA. Dentro de dir1 crear el directorio dir11. Dentro del directorio dir3 crear el directorio dir31. Dentro del directorio dir31, crear los directorios dir311 y dir312.
+Usuario@DavidPC MINGW64 /tmp/prueba
+$ ls
+dir1/  dir2/  dir3/
+
+Usuario@DavidPC MINGW64 /tmp/prueba/dir1
+$ mkdir dir11
+
+
+Usuario@DavidPC MINGW64 /tmp/prueba/dir3
+$ mkdir dir31
+
+Usuario@DavidPC MINGW64 /tmp/prueba/dir3
+$ ls
+dir31/
+
+Usuario@DavidPC MINGW64 /tmp/prueba/dir3/dir31
+$ mkdir dir311
+
+Usuario@DavidPC MINGW64 /tmp/prueba/dir3/dir31
+$ mkdir dir312
+
+Usuario@DavidPC MINGW64 /tmp/prueba/dir3/dir31
+$ ls
+dir311/  dir312/
+
+18.Copiar el archivo /etc/mtab a vuestro directorio PRUEBA.
+Usuario@DavidPC MINGW64 /tmp
+$ chmod u+w /tmp/PRUEBA
+Usuario@DavidPC MINGW64 /etc
+$ cp -r /etc/mtab /tmp/PRUEBA
+
+
+19.Copiar /etc/mtab en dir1, dir2 y dir3.
+Usuario@DavidPC MINGW64 /etc
+$ cp -r /etc/mtab /tmp/prueba/dir1
+
+Usuario@DavidPC MINGW64 /etc
+$ cp -r /etc/mtab /tmp/prueba/dir2
+
+Usuario@DavidPC MINGW64 /etc
+$ cp -r /etc/mtab /tmp/prueba/dir3
+
+20.Comprobar el ejercicio anterior mediante un solo comando.
+Usuario@DavidPC MINGW64 /tmp/prueba/dir1
+$ find /tmp/prueba/ -name mtab
+/tmp/prueba/dir1/mtab
+/tmp/prueba/dir2/mtab
+/tmp/prueba/dir3/mtab
+/tmp/prueba/mtab

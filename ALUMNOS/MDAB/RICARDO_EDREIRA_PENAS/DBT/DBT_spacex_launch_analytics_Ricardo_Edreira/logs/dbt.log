@@ -1,0 +1,1158 @@
+[0m22:41:08.386420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058692b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074bb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074bb890>]}
+
+
+============================== 22:41:08.417650 | 9980709d-a481-4392-9498-d33f7d8afa03 ==============================
+[0m22:41:08.417650 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:41:08.418122 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'no_print': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'log_path': '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt seed', 'write_json': 'True', 'target_path': 'None', 'printer_width': '80', 'introspect': 'True', 'warn_error': 'None', 'debug': 'False', 'empty': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'profiles_dir': '/Users/rmep/.dbt', 'cache_selected_only': 'False', 'quiet': 'False'}
+[0m22:41:09.576155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063742b0>]}
+[0m22:41:09.615940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076ba580>]}
+[0m22:41:09.618448 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m22:41:09.682728 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:41:09.770532 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m22:41:09.770973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a6ab50>]}
+[0m22:41:10.799404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093a57c0>]}
+[0m22:41:10.864451 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/manifest.json
+[0m22:41:10.866444 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/semantic_manifest.json
+[0m22:41:10.930697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094f8670>]}
+[0m22:41:10.931113 [info ] [MainThread]: Found 6 models, 3 seeds, 16 data tests, 3 sources, 472 macros
+[0m22:41:10.931349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095768f0>]}
+[0m22:41:10.932902 [info ] [MainThread]: 
+[0m22:41:10.933129 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:41:10.933298 [info ] [MainThread]: 
+[0m22:41:10.933616 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:41:10.937103 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m22:41:10.997268 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m22:41:10.997608 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m22:41:10.997827 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:41:11.011890 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m22:41:11.012989 [debug] [ThreadPool]: On list_dev: Close
+[0m22:41:11.013489 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m22:41:11.013786 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m22:41:11.018792 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:11.019099 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m22:41:11.019283 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:41:11.020134 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:41:11.021049 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:11.021232 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m22:41:11.021541 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:11.021701 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:11.021855 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m22:41:11.022196 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:11.022704 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m22:41:11.022894 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:11.023056 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m22:41:11.023314 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:11.023490 [debug] [ThreadPool]: On create_dev_main: Close
+[0m22:41:11.024585 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m22:41:11.028666 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m22:41:11.028903 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m22:41:11.029077 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:41:11.029468 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:11.029668 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m22:41:11.029860 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m22:41:11.040398 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m22:41:11.041916 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m22:41:11.043141 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m22:41:11.043379 [debug] [ThreadPool]: On list_dev_main: Close
+[0m22:41:11.043783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095eaf90>]}
+[0m22:41:11.044123 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:11.044299 [debug] [MainThread]: On master: BEGIN
+[0m22:41:11.044460 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:41:11.044796 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:11.044963 [debug] [MainThread]: On master: COMMIT
+[0m22:41:11.045118 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:11.045266 [debug] [MainThread]: On master: COMMIT
+[0m22:41:11.045515 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:11.045674 [debug] [MainThread]: On master: Close
+[0m22:41:11.047682 [debug] [Thread-1 (]: Began running node seed.spacex_launch_analytics.raw_launches
+[0m22:41:11.048073 [info ] [Thread-1 (]: 1 of 3 START seed file main.raw_launches ....................................... [RUN]
+[0m22:41:11.048381 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now seed.spacex_launch_analytics.raw_launches)
+[0m22:41:11.048610 [debug] [Thread-1 (]: Began compiling node seed.spacex_launch_analytics.raw_launches
+[0m22:41:11.048825 [debug] [Thread-1 (]: Began executing node seed.spacex_launch_analytics.raw_launches
+[0m22:41:11.074281 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launches"
+[0m22:41:11.074590 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launches: BEGIN
+[0m22:41:11.074789 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:11.075321 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.075591 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launches"
+[0m22:41:11.075817 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launches: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "seed.spacex_launch_analytics.raw_launches"} */
+
+    create table "dev"."main"."raw_launches" ("id" text,"name" text,"flight_number" integer,"date_utc" timestamp without time zone,"success" boolean,"rocket_id" text,"launchpad_id" text,"details" text,"upcoming" boolean)
+  
+[0m22:41:11.076515 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.084088 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launches"
+[0m22:41:11.084415 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launches: 
+          COPY "dev"."main"."raw_launches" FROM '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/seeds/raw_launches.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:41:11.091646 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m22:41:11.095405 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.spacex_launch_analytics.raw_launches"
+[0m22:41:11.104893 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launches: COMMIT
+[0m22:41:11.105218 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launches"
+[0m22:41:11.105437 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launches: COMMIT
+[0m22:41:11.106537 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:11.107893 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launches: Close
+[0m22:41:11.109770 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109818890>]}
+[0m22:41:11.110156 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file main.raw_launches ................................... [[32mINSERT 205[0m in 0.06s]
+[0m22:41:11.110519 [debug] [Thread-1 (]: Finished running node seed.spacex_launch_analytics.raw_launches
+[0m22:41:11.110763 [debug] [Thread-1 (]: Began running node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:11.111117 [info ] [Thread-1 (]: 2 of 3 START seed file main.raw_launchpads ..................................... [RUN]
+[0m22:41:11.111395 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.spacex_launch_analytics.raw_launches, now seed.spacex_launch_analytics.raw_launchpads)
+[0m22:41:11.111617 [debug] [Thread-1 (]: Began compiling node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:11.111822 [debug] [Thread-1 (]: Began executing node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:11.115031 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launchpads"
+[0m22:41:11.115250 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launchpads: BEGIN
+[0m22:41:11.115441 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:11.115874 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.116064 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launchpads"
+[0m22:41:11.116265 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launchpads: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "seed.spacex_launch_analytics.raw_launchpads"} */
+
+    create table "dev"."main"."raw_launchpads" ("id" text,"name" text,"full_name" text,"locality" text,"region" text,"latitude" float8,"longitude" float8,"launch_attempts" integer,"launch_successes" integer,"status" text,"details" text)
+  
+[0m22:41:11.116892 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.117914 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launchpads"
+[0m22:41:11.118301 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launchpads: 
+          COPY "dev"."main"."raw_launchpads" FROM '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/seeds/raw_launchpads.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:41:11.120200 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:41:11.120699 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.spacex_launch_analytics.raw_launchpads"
+[0m22:41:11.122059 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launchpads: COMMIT
+[0m22:41:11.122297 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_launchpads"
+[0m22:41:11.122492 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launchpads: COMMIT
+[0m22:41:11.123061 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.123595 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_launchpads: Close
+[0m22:41:11.123989 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099ed270>]}
+[0m22:41:11.124355 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file main.raw_launchpads ................................. [[32mINSERT 6[0m in 0.01s]
+[0m22:41:11.124716 [debug] [Thread-1 (]: Finished running node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:11.124961 [debug] [Thread-1 (]: Began running node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:11.125297 [info ] [Thread-1 (]: 3 of 3 START seed file main.raw_rockets ........................................ [RUN]
+[0m22:41:11.125559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.spacex_launch_analytics.raw_launchpads, now seed.spacex_launch_analytics.raw_rockets)
+[0m22:41:11.125770 [debug] [Thread-1 (]: Began compiling node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:11.126053 [debug] [Thread-1 (]: Began executing node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:11.129151 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_rockets"
+[0m22:41:11.129423 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_rockets: BEGIN
+[0m22:41:11.129637 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:11.130086 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.130275 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_rockets"
+[0m22:41:11.130478 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_rockets: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "seed.spacex_launch_analytics.raw_rockets"} */
+
+    create table "dev"."main"."raw_rockets" ("id" text,"name" text,"type" text,"active" boolean,"stages" integer,"boosters" integer,"cost_per_launch" integer,"success_rate_pct" integer,"first_flight" date,"country" text,"company" text,"height_meters" float8,"diameter_meters" float8,"mass_kg" integer,"description" text)
+  
+[0m22:41:11.131030 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.131792 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_rockets"
+[0m22:41:11.132011 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_rockets: 
+          COPY "dev"."main"."raw_rockets" FROM '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/seeds/raw_rockets.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:41:11.133809 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:41:11.134473 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.spacex_launch_analytics.raw_rockets"
+[0m22:41:11.135898 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_rockets: COMMIT
+[0m22:41:11.136138 [debug] [Thread-1 (]: Using duckdb connection "seed.spacex_launch_analytics.raw_rockets"
+[0m22:41:11.136339 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_rockets: COMMIT
+[0m22:41:11.137094 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:11.137563 [debug] [Thread-1 (]: On seed.spacex_launch_analytics.raw_rockets: Close
+[0m22:41:11.137916 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9980709d-a481-4392-9498-d33f7d8afa03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109842050>]}
+[0m22:41:11.138267 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file main.raw_rockets .................................... [[32mINSERT 4[0m in 0.01s]
+[0m22:41:11.138612 [debug] [Thread-1 (]: Finished running node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:11.139455 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:11.139649 [debug] [MainThread]: On master: BEGIN
+[0m22:41:11.139812 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:41:11.140129 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:11.140296 [debug] [MainThread]: On master: COMMIT
+[0m22:41:11.140451 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:11.140601 [debug] [MainThread]: On master: COMMIT
+[0m22:41:11.140849 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:11.141007 [debug] [MainThread]: On master: Close
+[0m22:41:11.141222 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:41:11.141376 [debug] [MainThread]: Connection 'seed.spacex_launch_analytics.raw_rockets' was properly closed.
+[0m22:41:11.141558 [info ] [MainThread]: 
+[0m22:41:11.141737 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m22:41:11.142293 [debug] [MainThread]: Command end result
+[0m22:41:11.163121 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/manifest.json
+[0m22:41:11.164604 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/semantic_manifest.json
+[0m22:41:11.169872 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/run_results.json
+[0m22:41:11.170126 [info ] [MainThread]: 
+[0m22:41:11.170372 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:41:11.170552 [info ] [MainThread]: 
+[0m22:41:11.170749 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m22:41:11.173344 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 2.8428073, "process_in_blocks": "0", "process_kernel_time": 0.601366, "process_mem_max_rss": "187039744", "process_out_blocks": "0", "process_user_time": 3.900761}
+[0m22:41:11.173650 [debug] [MainThread]: Command `dbt seed` succeeded at 22:41:11.173589 after 2.84 seconds
+[0m22:41:11.173884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101548de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099abc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a88050>]}
+[0m22:41:11.174112 [debug] [MainThread]: Flushing usage events
+[0m22:41:11.651686 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:41:13.268330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114d15010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1164b3890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1164b39d0>]}
+
+
+============================== 22:41:13.272262 | cdb35278-62fe-4fd6-aa05-0b96db8286ad ==============================
+[0m22:41:13.272262 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:41:13.272735 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_cache_events': 'False', 'version_check': 'True', 'partial_parse': 'True', 'empty': 'False', 'invocation_command': 'dbt run', 'quiet': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'target_path': 'None', 'static_parser': 'True', 'profiles_dir': '/Users/rmep/.dbt', 'use_colors': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'introspect': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'log_path': '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/logs', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m22:41:13.427176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11514d5b0>]}
+[0m22:41:13.468200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11654a470>]}
+[0m22:41:13.469840 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m22:41:13.533846 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:41:13.635478 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:41:13.635829 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:41:13.636023 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:41:13.675802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ae3550>]}
+[0m22:41:13.743159 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/manifest.json
+[0m22:41:13.744730 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/semantic_manifest.json
+[0m22:41:13.756579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11688d7c0>]}
+[0m22:41:13.756965 [info ] [MainThread]: Found 6 models, 3 seeds, 16 data tests, 3 sources, 472 macros
+[0m22:41:13.757200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1162474d0>]}
+[0m22:41:13.758787 [info ] [MainThread]: 
+[0m22:41:13.759026 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:41:13.759287 [info ] [MainThread]: 
+[0m22:41:13.759687 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:41:13.763033 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m22:41:13.799629 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m22:41:13.799941 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m22:41:13.800139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:41:13.812493 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m22:41:13.813626 [debug] [ThreadPool]: On list_dev: Close
+[0m22:41:13.814167 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m22:41:13.814495 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m22:41:13.819875 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:13.820143 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m22:41:13.820319 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:41:13.821009 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:41:13.821894 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:13.822072 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m22:41:13.822364 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:13.822512 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:13.822663 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m22:41:13.823006 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:13.823661 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m22:41:13.823870 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m22:41:13.824024 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m22:41:13.824308 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:13.824465 [debug] [ThreadPool]: On create_dev_main: Close
+[0m22:41:13.825505 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m22:41:13.829097 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m22:41:13.829396 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m22:41:13.829603 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:41:13.833626 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m22:41:13.833816 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m22:41:13.833994 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m22:41:13.844291 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m22:41:13.845211 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m22:41:13.846066 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m22:41:13.846257 [debug] [ThreadPool]: On list_dev_main: Close
+[0m22:41:13.847007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ed3ba0>]}
+[0m22:41:13.847352 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:13.847531 [debug] [MainThread]: On master: BEGIN
+[0m22:41:13.847696 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:41:13.848049 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:13.848226 [debug] [MainThread]: On master: COMMIT
+[0m22:41:13.848384 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:13.848536 [debug] [MainThread]: On master: COMMIT
+[0m22:41:13.848796 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:13.848963 [debug] [MainThread]: On master: Close
+[0m22:41:13.850645 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.stg_launches
+[0m22:41:13.851169 [info ] [Thread-1 (]: 1 of 6 START sql view model main.stg_launches .................................. [RUN]
+[0m22:41:13.851530 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.spacex_launch_analytics.stg_launches)
+[0m22:41:13.851781 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.stg_launches
+[0m22:41:13.857067 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.858323 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.stg_launches
+[0m22:41:13.933692 [debug] [Thread-1 (]: Writing runtime sql for node "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.935381 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.935683 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: BEGIN
+[0m22:41:13.935916 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:13.936460 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.936672 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.936916 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_launches"} */
+
+  
+  create view "dev"."main"."stg_launches__dbt_tmp" as (
+    -- stg_launches.sql
+-- Modelo de staging para lanzamientos de SpaceX
+-- Autor: Ricardo Edreira
+
+
+
+with source as (
+    select * from "dev"."main"."raw_launches"
+),
+
+cleaned as (
+    select
+        id as launch_id,
+        name as mission_name,
+        flight_number,
+        
+        -- Parsear fecha
+        try_cast(date_utc as timestamp) as launch_date,
+        extract(year from try_cast(date_utc as timestamp)) as launch_year,
+        extract(month from try_cast(date_utc as timestamp)) as launch_month,
+        
+        -- Campo success ya viene como boolean
+        success as is_success,
+        
+        -- Clasificar resultado
+        case 
+            when success = true then 'Exitoso'
+            when success = false then 'Fallido'
+            else 'Pendiente'
+        end as launch_status,
+        
+        rocket_id,
+        launchpad_id,
+        
+        -- Limpiar detalles
+        nullif(trim(details), '') as mission_details,
+        
+        -- Flag para lanzamientos futuros
+        coalesce(upcoming, false) as is_upcoming
+        
+    from source
+)
+
+select * from cleaned
+  );
+
+[0m22:41:13.937956 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.942241 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.942576 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_launches"} */
+alter view "dev"."main"."stg_launches__dbt_tmp" rename to "stg_launches"
+[0m22:41:13.943165 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.950547 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: COMMIT
+[0m22:41:13.950925 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.951154 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: COMMIT
+[0m22:41:13.952202 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.955755 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launches"
+[0m22:41:13.955986 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_launches"} */
+
+      drop view if exists "dev"."main"."stg_launches__dbt_backup" cascade
+    
+[0m22:41:13.956414 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.959651 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launches: Close
+[0m22:41:13.961790 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116cff110>]}
+[0m22:41:13.962314 [info ] [Thread-1 (]: 1 of 6 OK created sql view model main.stg_launches ............................. [[32mOK[0m in 0.11s]
+[0m22:41:13.962689 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.stg_launches
+[0m22:41:13.962941 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:13.963291 [info ] [Thread-1 (]: 2 of 6 START sql view model main.stg_launchpads ................................ [RUN]
+[0m22:41:13.963595 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.stg_launches, now model.spacex_launch_analytics.stg_launchpads)
+[0m22:41:13.963822 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:13.966114 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.966637 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:13.970400 [debug] [Thread-1 (]: Writing runtime sql for node "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.971747 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.972016 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: BEGIN
+[0m22:41:13.972228 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:13.972722 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.972926 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.973156 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_launchpads"} */
+
+  
+  create view "dev"."main"."stg_launchpads__dbt_tmp" as (
+    -- stg_launchpads.sql
+-- Modelo de staging para plataformas de lanzamiento
+-- Autor: Ricardo Edreira
+
+
+
+with source as (
+    select * from "dev"."main"."raw_launchpads"
+),
+
+cleaned as (
+    select
+        id as launchpad_id,
+        name as launchpad_name,
+        full_name as launchpad_full_name,
+        locality,
+        region,
+        
+        try_cast(latitude as decimal(10,6)) as latitude,
+        try_cast(longitude as decimal(10,6)) as longitude,
+        
+        try_cast(launch_attempts as integer) as total_launch_attempts,
+        try_cast(launch_successes as integer) as total_launch_successes,
+        
+        -- Calcular tasa de éxito de la plataforma
+        case 
+            when try_cast(launch_attempts as integer) > 0 
+            then round(try_cast(launch_successes as decimal) / try_cast(launch_attempts as decimal) * 100, 2)
+            else 0
+        end as success_rate_pct,
+        
+        status as launchpad_status,
+        nullif(trim(details), '') as description
+        
+    from source
+)
+
+select * from cleaned
+  );
+
+[0m22:41:13.974144 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.976168 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.976394 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_launchpads"} */
+alter view "dev"."main"."stg_launchpads__dbt_tmp" rename to "stg_launchpads"
+[0m22:41:13.976848 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.977773 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: COMMIT
+[0m22:41:13.978000 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.978198 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: COMMIT
+[0m22:41:13.979060 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.980780 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:13.980995 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_launchpads"} */
+
+      drop view if exists "dev"."main"."stg_launchpads__dbt_backup" cascade
+    
+[0m22:41:13.981392 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.982250 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_launchpads: Close
+[0m22:41:13.982635 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116cf26d0>]}
+[0m22:41:13.983137 [info ] [Thread-1 (]: 2 of 6 OK created sql view model main.stg_launchpads ........................... [[32mOK[0m in 0.02s]
+[0m22:41:13.983976 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:13.984517 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.stg_rockets
+[0m22:41:13.985131 [info ] [Thread-1 (]: 3 of 6 START sql view model main.stg_rockets ................................... [RUN]
+[0m22:41:13.985485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.stg_launchpads, now model.spacex_launch_analytics.stg_rockets)
+[0m22:41:13.985726 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.stg_rockets
+[0m22:41:13.987910 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:13.988436 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.stg_rockets
+[0m22:41:13.990846 [debug] [Thread-1 (]: Writing runtime sql for node "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:13.991325 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:13.991531 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: BEGIN
+[0m22:41:13.991719 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:13.992246 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.992587 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:13.992827 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_rockets"} */
+
+  
+  create view "dev"."main"."stg_rockets__dbt_tmp" as (
+    -- stg_rockets.sql
+-- Modelo de staging para cohetes de SpaceX
+-- Autor: Ricardo Edreira
+
+
+
+with source as (
+    select * from "dev"."main"."raw_rockets"
+),
+
+cleaned as (
+    select
+        id as rocket_id,
+        name as rocket_name,
+        type as rocket_type,
+        
+        -- Campo active ya viene como boolean
+        coalesce(active, false) as is_active,
+        
+        try_cast(stages as integer) as num_stages,
+        try_cast(boosters as integer) as num_boosters,
+        try_cast(cost_per_launch as decimal(18,2)) as cost_per_launch_usd,
+        try_cast(success_rate_pct as decimal(5,2)) as success_rate_pct,
+        try_cast(first_flight as date) as first_flight_date,
+        
+        country,
+        company,
+        
+        try_cast(height_meters as decimal(10,2)) as height_meters,
+        try_cast(diameter_meters as decimal(10,2)) as diameter_meters,
+        try_cast(mass_kg as integer) as mass_kg,
+        
+        nullif(trim(description), '') as description
+        
+    from source
+)
+
+select * from cleaned
+  );
+
+[0m22:41:13.993946 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.995701 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:13.995909 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_rockets"} */
+alter view "dev"."main"."stg_rockets__dbt_tmp" rename to "stg_rockets"
+[0m22:41:13.996342 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:13.997172 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: COMMIT
+[0m22:41:13.997376 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:13.997561 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: COMMIT
+[0m22:41:13.998411 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:13.999827 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:14.000046 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.stg_rockets"} */
+
+      drop view if exists "dev"."main"."stg_rockets__dbt_backup" cascade
+    
+[0m22:41:14.000420 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.001526 [debug] [Thread-1 (]: On model.spacex_launch_analytics.stg_rockets: Close
+[0m22:41:14.001907 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11696e490>]}
+[0m22:41:14.002320 [info ] [Thread-1 (]: 3 of 6 OK created sql view model main.stg_rockets .............................. [[32mOK[0m in 0.02s]
+[0m22:41:14.002656 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.stg_rockets
+[0m22:41:14.003170 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.launches_summary
+[0m22:41:14.003526 [info ] [Thread-1 (]: 4 of 6 START sql table model main.launches_summary ............................. [RUN]
+[0m22:41:14.003822 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.stg_rockets, now model.spacex_launch_analytics.launches_summary)
+[0m22:41:14.004030 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.launches_summary
+[0m22:41:14.006990 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.007735 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.launches_summary
+[0m22:41:14.023780 [debug] [Thread-1 (]: Writing runtime sql for node "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.024940 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.025206 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: BEGIN
+[0m22:41:14.025417 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:14.025968 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:14.026329 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.026596 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.launches_summary"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."launches_summary__dbt_tmp"
+  
+    as (
+      -- launches_summary.sql
+-- Resumen de lanzamientos por año y cohete
+-- Autor: Ricardo Edreira
+-- Responde: ¿Cómo ha evolucionado la actividad de lanzamiento por año?
+
+
+
+with launches as (
+    select * from "dev"."main"."stg_launches"
+    where is_upcoming = false
+),
+
+rockets as (
+    select * from "dev"."main"."stg_rockets"
+),
+
+summary as (
+    select
+        l.launch_year,
+        r.rocket_name,
+        
+        -- Conteos
+        count(*) as total_launches,
+        sum(case when l.is_success = true then 1 else 0 end) as successful_launches,
+        sum(case when l.is_success = false then 1 else 0 end) as failed_launches,
+        sum(case when l.is_success is null then 1 else 0 end) as unknown_outcome,
+        
+        -- Tasa de éxito
+        round(
+            sum(case when l.is_success = true then 1 else 0 end)::decimal / 
+            nullif(count(*), 0) * 100, 
+            2
+        ) as success_rate_pct,
+        
+        -- Primer y último lanzamiento del año
+        min(l.launch_date) as first_launch_of_year,
+        max(l.launch_date) as last_launch_of_year
+        
+    from launches l
+    left join rockets r on l.rocket_id = r.rocket_id
+    where l.launch_year is not null
+    group by l.launch_year, r.rocket_name
+)
+
+select 
+    *,
+    -- Ranking por volumen de lanzamientos
+    row_number() over (partition by launch_year order by total_launches desc) as rocket_rank_by_year
+from summary
+order by launch_year desc, total_launches desc
+    );
+  
+  
+[0m22:41:14.035499 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m22:41:14.037784 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.038111 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.launches_summary"} */
+alter table "dev"."main"."launches_summary__dbt_tmp" rename to "launches_summary"
+[0m22:41:14.038670 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.042879 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: COMMIT
+[0m22:41:14.043142 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.043339 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: COMMIT
+[0m22:41:14.044009 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.045441 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launches_summary"
+[0m22:41:14.045682 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.launches_summary"} */
+
+      drop table if exists "dev"."main"."launches_summary__dbt_backup" cascade
+    
+[0m22:41:14.046095 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.047120 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launches_summary: Close
+[0m22:41:14.047621 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116896650>]}
+[0m22:41:14.048076 [info ] [Thread-1 (]: 4 of 6 OK created sql table model main.launches_summary ........................ [[32mOK[0m in 0.04s]
+[0m22:41:14.048607 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.launches_summary
+[0m22:41:14.049054 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:14.049416 [info ] [Thread-1 (]: 5 of 6 START sql table model main.launchpad_stats .............................. [RUN]
+[0m22:41:14.049690 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.launches_summary, now model.spacex_launch_analytics.launchpad_stats)
+[0m22:41:14.049905 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:14.052888 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.053626 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:14.055791 [debug] [Thread-1 (]: Writing runtime sql for node "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.056704 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.057021 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: BEGIN
+[0m22:41:14.057229 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:14.057727 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.057932 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.058196 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.launchpad_stats"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."launchpad_stats__dbt_tmp"
+  
+    as (
+      -- launchpad_stats.sql
+-- Estadísticas por plataforma de lanzamiento
+-- Autor: Ricardo Edreira
+-- Responde: ¿Qué plataforma tiene mejor rendimiento?
+
+
+
+with launches as (
+    select * from "dev"."main"."stg_launches"
+    where is_upcoming = false
+),
+
+launchpads as (
+    select * from "dev"."main"."stg_launchpads"
+),
+
+rockets as (
+    select * from "dev"."main"."stg_rockets"
+),
+
+pad_stats as (
+    select
+        lp.launchpad_id,
+        lp.launchpad_name,
+        lp.launchpad_full_name,
+        lp.locality,
+        lp.region,
+        lp.launchpad_status,
+        lp.latitude,
+        lp.longitude,
+        
+        -- Estadísticas de lanzamientos desde nuestros datos
+        count(l.launch_id) as launches_in_dataset,
+        sum(case when l.is_success = true then 1 else 0 end) as successful_launches,
+        sum(case when l.is_success = false then 1 else 0 end) as failed_launches,
+        
+        -- Tasa de éxito
+        round(
+            sum(case when l.is_success = true then 1 else 0 end)::decimal / 
+            nullif(count(l.launch_id), 0) * 100, 
+            2
+        ) as success_rate_pct,
+        
+        -- Periodo de actividad
+        min(l.launch_date) as first_launch_date,
+        max(l.launch_date) as last_launch_date,
+        
+        -- Cohetes únicos utilizados
+        count(distinct l.rocket_id) as unique_rockets_used,
+        
+        -- Lista de cohetes (agregación de texto)
+        string_agg(distinct r.rocket_name, ', ') as rockets_launched
+        
+    from launchpads lp
+    left join launches l on lp.launchpad_id = l.launchpad_id
+    left join rockets r on l.rocket_id = r.rocket_id
+    group by 
+        lp.launchpad_id, lp.launchpad_name, lp.launchpad_full_name,
+        lp.locality, lp.region, lp.launchpad_status, lp.latitude, lp.longitude
+)
+
+select 
+    *,
+    -- Clasificación de actividad
+    case 
+        when launches_in_dataset >= 50 then 'Alta actividad'
+        when launches_in_dataset >= 20 then 'Actividad media'
+        when launches_in_dataset > 0 then 'Baja actividad'
+        else 'Sin lanzamientos registrados'
+    end as activity_level
+from pad_stats
+order by launches_in_dataset desc
+    );
+  
+  
+[0m22:41:14.071695 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m22:41:14.074942 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.075215 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.launchpad_stats"} */
+alter table "dev"."main"."launchpad_stats__dbt_tmp" rename to "launchpad_stats"
+[0m22:41:14.075766 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.077313 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: COMMIT
+[0m22:41:14.077568 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.077792 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: COMMIT
+[0m22:41:14.079085 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:14.080747 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:14.081059 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.launchpad_stats"} */
+
+      drop table if exists "dev"."main"."launchpad_stats__dbt_backup" cascade
+    
+[0m22:41:14.081860 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:41:14.082872 [debug] [Thread-1 (]: On model.spacex_launch_analytics.launchpad_stats: Close
+[0m22:41:14.083272 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11705d710>]}
+[0m22:41:14.083709 [info ] [Thread-1 (]: 5 of 6 OK created sql table model main.launchpad_stats ......................... [[32mOK[0m in 0.03s]
+[0m22:41:14.084147 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:14.084442 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.rocket_performance
+[0m22:41:14.084878 [info ] [Thread-1 (]: 6 of 6 START sql table model main.rocket_performance ........................... [RUN]
+[0m22:41:14.085225 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.launchpad_stats, now model.spacex_launch_analytics.rocket_performance)
+[0m22:41:14.085449 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.rocket_performance
+[0m22:41:14.088279 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.089180 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.rocket_performance
+[0m22:41:14.091702 [debug] [Thread-1 (]: Writing runtime sql for node "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.092367 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.092619 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: BEGIN
+[0m22:41:14.092887 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:41:14.093377 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.093573 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.093827 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.rocket_performance"} */
+
+  
+    
+    
+
+    create  table
+      "dev"."main"."rocket_performance__dbt_tmp"
+  
+    as (
+      -- rocket_performance.sql
+-- Métricas de rendimiento por cohete
+-- Autor: Ricardo Edreira
+-- Responde: ¿Cuál es el rendimiento de cada cohete?
+
+
+
+with launches as (
+    select * from "dev"."main"."stg_launches"
+    where is_upcoming = false
+),
+
+rockets as (
+    select * from "dev"."main"."stg_rockets"
+),
+
+rocket_stats as (
+    select
+        r.rocket_id,
+        r.rocket_name,
+        r.rocket_type,
+        r.is_active,
+        r.first_flight_date,
+        r.cost_per_launch_usd,
+        r.height_meters,
+        r.mass_kg,
+        
+        -- Estadísticas de lanzamientos
+        count(l.launch_id) as total_missions,
+        sum(case when l.is_success = true then 1 else 0 end) as successful_missions,
+        sum(case when l.is_success = false then 1 else 0 end) as failed_missions,
+        
+        -- Tasa de éxito calculada
+        round(
+            sum(case when l.is_success = true then 1 else 0 end)::decimal / 
+            nullif(count(l.launch_id), 0) * 100, 
+            2
+        ) as calculated_success_rate,
+        
+        -- Periodo de actividad
+        min(l.launch_date) as first_mission_date,
+        max(l.launch_date) as last_mission_date,
+        
+        -- Años activo
+        extract(year from max(l.launch_date)) - extract(year from min(l.launch_date)) + 1 as years_in_service,
+        
+        -- Promedio de misiones por año
+        round(
+            count(l.launch_id)::decimal / 
+            nullif(extract(year from max(l.launch_date)) - extract(year from min(l.launch_date)) + 1, 0),
+            2
+        ) as avg_missions_per_year
+        
+    from rockets r
+    left join launches l on r.rocket_id = l.rocket_id
+    group by 
+        r.rocket_id, r.rocket_name, r.rocket_type, r.is_active,
+        r.first_flight_date, r.cost_per_launch_usd, r.height_meters, r.mass_kg
+)
+
+select 
+    *,
+    -- Clasificación de confiabilidad
+    case 
+        when calculated_success_rate >= 95 then 'Excelente'
+        when calculated_success_rate >= 80 then 'Bueno'
+        when calculated_success_rate >= 60 then 'Regular'
+        else 'En desarrollo'
+    end as reliability_rating
+from rocket_stats
+order by total_missions desc
+    );
+  
+  
+[0m22:41:14.101095 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m22:41:14.103834 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.104100 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.rocket_performance"} */
+alter table "dev"."main"."rocket_performance__dbt_tmp" rename to "rocket_performance"
+[0m22:41:14.104600 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.105570 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: COMMIT
+[0m22:41:14.105784 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.105971 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: COMMIT
+[0m22:41:14.106586 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.108207 [debug] [Thread-1 (]: Using duckdb connection "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:14.108420 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "node_id": "model.spacex_launch_analytics.rocket_performance"} */
+
+      drop table if exists "dev"."main"."rocket_performance__dbt_backup" cascade
+    
+[0m22:41:14.108877 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:41:14.109875 [debug] [Thread-1 (]: On model.spacex_launch_analytics.rocket_performance: Close
+[0m22:41:14.110246 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdb35278-62fe-4fd6-aa05-0b96db8286ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1170e2ff0>]}
+[0m22:41:14.110853 [info ] [Thread-1 (]: 6 of 6 OK created sql table model main.rocket_performance ...................... [[32mOK[0m in 0.02s]
+[0m22:41:14.111252 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.rocket_performance
+[0m22:41:14.112137 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:14.112335 [debug] [MainThread]: On master: BEGIN
+[0m22:41:14.112504 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:41:14.112946 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:14.113202 [debug] [MainThread]: On master: COMMIT
+[0m22:41:14.113406 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:41:14.113584 [debug] [MainThread]: On master: COMMIT
+[0m22:41:14.113914 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:41:14.114108 [debug] [MainThread]: On master: Close
+[0m22:41:14.114350 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:41:14.114526 [debug] [MainThread]: Connection 'model.spacex_launch_analytics.rocket_performance' was properly closed.
+[0m22:41:14.114778 [info ] [MainThread]: 
+[0m22:41:14.114983 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 0.36 seconds (0.36s).
+[0m22:41:14.115772 [debug] [MainThread]: Command end result
+[0m22:41:14.139524 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/manifest.json
+[0m22:41:14.141660 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/semantic_manifest.json
+[0m22:41:14.148232 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/run_results.json
+[0m22:41:14.149492 [info ] [MainThread]: 
+[0m22:41:14.150033 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:41:14.150339 [info ] [MainThread]: 
+[0m22:41:14.150648 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m22:41:14.154904 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.93685764, "process_in_blocks": "0", "process_kernel_time": 0.272736, "process_mem_max_rss": "196837376", "process_out_blocks": "0", "process_user_time": 1.781463}
+[0m22:41:14.155453 [debug] [MainThread]: Command `dbt run` succeeded at 22:41:14.155364 after 0.94 seconds
+[0m22:41:14.155900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115124a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116fd36b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117273d70>]}
+[0m22:41:14.164679 [debug] [MainThread]: Flushing usage events
+[0m22:41:14.701440 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:41:16.123864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108959010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109eb3890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109eb39d0>]}
+
+
+============================== 22:41:16.127724 | 07a47ae6-9d55-4bb1-9c3a-c4e941454837 ==============================
+[0m22:41:16.127724 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:41:16.128197 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'use_colors': 'True', 'quiet': 'False', 'debug': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/Users/rmep/.dbt', 'partial_parse': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt docs generate --static', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/logs', 'use_experimental_parser': 'False'}
+[0m22:41:16.279906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07a47ae6-9d55-4bb1-9c3a-c4e941454837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ee55b0>]}
+[0m22:41:16.320114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07a47ae6-9d55-4bb1-9c3a-c4e941454837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a14a470>]}
+[0m22:41:16.321614 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m22:41:16.382605 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m22:41:16.487478 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:41:16.487848 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:41:16.488048 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:41:16.528581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '07a47ae6-9d55-4bb1-9c3a-c4e941454837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5e0a50>]}
+[0m22:41:16.544752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '07a47ae6-9d55-4bb1-9c3a-c4e941454837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6dc7d0>]}
+[0m22:41:16.545166 [info ] [MainThread]: Found 6 models, 3 seeds, 16 data tests, 3 sources, 472 macros
+[0m22:41:16.545412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07a47ae6-9d55-4bb1-9c3a-c4e941454837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a300ad0>]}
+[0m22:41:16.547396 [info ] [MainThread]: 
+[0m22:41:16.547651 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:41:16.547831 [info ] [MainThread]: 
+[0m22:41:16.548156 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:41:16.552209 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m22:41:16.589355 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m22:41:16.589700 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m22:41:16.589902 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:41:16.601210 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m22:41:16.601476 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m22:41:16.601677 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m22:41:16.612085 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m22:41:16.613268 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m22:41:16.614061 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m22:41:16.614270 [debug] [ThreadPool]: On list_dev_main: Close
+[0m22:41:16.615456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07a47ae6-9d55-4bb1-9c3a-c4e941454837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa0fd40>]}
+[0m22:41:16.617059 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.stg_launches
+[0m22:41:16.617348 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.spacex_launch_analytics.stg_launches)
+[0m22:41:16.617665 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.stg_launches
+[0m22:41:16.623088 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.stg_launches"
+[0m22:41:16.623623 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.stg_launches
+[0m22:41:16.624083 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.stg_launches
+[0m22:41:16.624323 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:16.624633 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.stg_launches, now model.spacex_launch_analytics.stg_launchpads)
+[0m22:41:16.624947 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:16.627476 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.stg_launchpads"
+[0m22:41:16.627944 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:16.628381 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.stg_launchpads
+[0m22:41:16.628632 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.stg_rockets
+[0m22:41:16.628895 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.stg_launchpads, now model.spacex_launch_analytics.stg_rockets)
+[0m22:41:16.629142 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.stg_rockets
+[0m22:41:16.630895 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.stg_rockets"
+[0m22:41:16.631258 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.stg_rockets
+[0m22:41:16.631652 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.stg_rockets
+[0m22:41:16.631888 [debug] [Thread-1 (]: Began running node seed.spacex_launch_analytics.raw_launches
+[0m22:41:16.632135 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.stg_rockets, now seed.spacex_launch_analytics.raw_launches)
+[0m22:41:16.632392 [debug] [Thread-1 (]: Began compiling node seed.spacex_launch_analytics.raw_launches
+[0m22:41:16.633331 [debug] [Thread-1 (]: Began executing node seed.spacex_launch_analytics.raw_launches
+[0m22:41:16.633697 [debug] [Thread-1 (]: Finished running node seed.spacex_launch_analytics.raw_launches
+[0m22:41:16.633912 [debug] [Thread-1 (]: Began running node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:16.634196 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.spacex_launch_analytics.raw_launches, now seed.spacex_launch_analytics.raw_launchpads)
+[0m22:41:16.634432 [debug] [Thread-1 (]: Began compiling node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:16.635666 [debug] [Thread-1 (]: Began executing node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:16.636032 [debug] [Thread-1 (]: Finished running node seed.spacex_launch_analytics.raw_launchpads
+[0m22:41:16.636254 [debug] [Thread-1 (]: Began running node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:16.636478 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.spacex_launch_analytics.raw_launchpads, now seed.spacex_launch_analytics.raw_rockets)
+[0m22:41:16.636683 [debug] [Thread-1 (]: Began compiling node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:16.637520 [debug] [Thread-1 (]: Began executing node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:16.637870 [debug] [Thread-1 (]: Finished running node seed.spacex_launch_analytics.raw_rockets
+[0m22:41:16.638087 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509
+[0m22:41:16.638309 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.spacex_launch_analytics.raw_rockets, now test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509)
+[0m22:41:16.638506 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509
+[0m22:41:16.646586 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509"
+[0m22:41:16.647424 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509
+[0m22:41:16.647863 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509
+[0m22:41:16.648096 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1
+[0m22:41:16.648348 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launches_id.d36197e509, now test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1)
+[0m22:41:16.648561 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1
+[0m22:41:16.651457 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1"
+[0m22:41:16.651941 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1
+[0m22:41:16.652319 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1
+[0m22:41:16.652540 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170
+[0m22:41:16.652774 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.source_not_null_spacex_raw_raw_launchpads_id.9f32b0baf1, now test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170)
+[0m22:41:16.652977 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170
+[0m22:41:16.655190 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170"
+[0m22:41:16.655706 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170
+[0m22:41:16.656071 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170
+[0m22:41:16.656289 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3
+[0m22:41:16.656519 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.source_not_null_spacex_raw_raw_rockets_id.334708e170, now test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3)
+[0m22:41:16.656727 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3
+[0m22:41:16.661243 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3"
+[0m22:41:16.661765 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3
+[0m22:41:16.662172 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3
+[0m22:41:16.662404 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168
+[0m22:41:16.662644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.source_unique_spacex_raw_raw_launches_id.48511c06f3, now test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168)
+[0m22:41:16.662847 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168
+[0m22:41:16.665229 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168"
+[0m22:41:16.665711 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168
+[0m22:41:16.666301 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168
+[0m22:41:16.666543 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8
+[0m22:41:16.666807 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.source_unique_spacex_raw_raw_launchpads_id.92c1685168, now test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8)
+[0m22:41:16.667011 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8
+[0m22:41:16.673904 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8"
+[0m22:41:16.674569 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8
+[0m22:41:16.675017 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8
+[0m22:41:16.675251 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d
+[0m22:41:16.675512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.source_unique_spacex_raw_raw_rockets_id.fca8ec02b8, now test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d)
+[0m22:41:16.675725 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d
+[0m22:41:16.678353 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d"
+[0m22:41:16.678821 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d
+[0m22:41:16.679214 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d
+[0m22:41:16.679434 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e
+[0m22:41:16.679664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.not_null_stg_launches_launch_id.1fa4f3b91d, now test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e)
+[0m22:41:16.679869 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e
+[0m22:41:16.682044 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e"
+[0m22:41:16.682559 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e
+[0m22:41:16.682920 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e
+[0m22:41:16.683145 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756
+[0m22:41:16.683367 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.unique_stg_launches_launch_id.d495fcfd0e, now test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756)
+[0m22:41:16.683564 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756
+[0m22:41:16.736183 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756"
+[0m22:41:16.736826 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756
+[0m22:41:16.737370 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756
+[0m22:41:16.737635 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d
+[0m22:41:16.737939 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.not_null_stg_launchpads_launchpad_id.d097b1b756, now test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d)
+[0m22:41:16.738239 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d
+[0m22:41:16.740716 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d"
+[0m22:41:16.741185 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d
+[0m22:41:16.741588 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d
+[0m22:41:16.741831 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.launches_summary
+[0m22:41:16.742076 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.unique_stg_launchpads_launchpad_id.f3faf0939d, now model.spacex_launch_analytics.launches_summary)
+[0m22:41:16.742287 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.launches_summary
+[0m22:41:16.744917 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.launches_summary"
+[0m22:41:16.745447 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.launches_summary
+[0m22:41:16.745871 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.launches_summary
+[0m22:41:16.746108 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:16.746350 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.launches_summary, now model.spacex_launch_analytics.launchpad_stats)
+[0m22:41:16.746552 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:16.748685 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.launchpad_stats"
+[0m22:41:16.749065 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:16.749438 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.launchpad_stats
+[0m22:41:16.749661 [debug] [Thread-1 (]: Began running node model.spacex_launch_analytics.rocket_performance
+[0m22:41:16.749905 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.launchpad_stats, now model.spacex_launch_analytics.rocket_performance)
+[0m22:41:16.750156 [debug] [Thread-1 (]: Began compiling node model.spacex_launch_analytics.rocket_performance
+[0m22:41:16.752513 [debug] [Thread-1 (]: Writing injected SQL for node "model.spacex_launch_analytics.rocket_performance"
+[0m22:41:16.752944 [debug] [Thread-1 (]: Began executing node model.spacex_launch_analytics.rocket_performance
+[0m22:41:16.753321 [debug] [Thread-1 (]: Finished running node model.spacex_launch_analytics.rocket_performance
+[0m22:41:16.753544 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9
+[0m22:41:16.753787 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.spacex_launch_analytics.rocket_performance, now test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9)
+[0m22:41:16.754033 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9
+[0m22:41:16.756330 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9"
+[0m22:41:16.756719 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9
+[0m22:41:16.757079 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9
+[0m22:41:16.757296 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8
+[0m22:41:16.757522 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.not_null_stg_rockets_rocket_id.3eacbfa0f9, now test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8)
+[0m22:41:16.757721 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8
+[0m22:41:16.759967 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8"
+[0m22:41:16.760408 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8
+[0m22:41:16.760861 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8
+[0m22:41:16.761112 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de
+[0m22:41:16.761367 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.unique_stg_rockets_rocket_id.910e26c2a8, now test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de)
+[0m22:41:16.761581 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de
+[0m22:41:16.764267 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de"
+[0m22:41:16.764659 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de
+[0m22:41:16.765038 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de
+[0m22:41:16.765255 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff
+[0m22:41:16.765483 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.not_null_launchpad_stats_launchpad_id.83f27cd0de, now test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff)
+[0m22:41:16.765681 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff
+[0m22:41:16.767799 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff"
+[0m22:41:16.768167 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff
+[0m22:41:16.768520 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff
+[0m22:41:16.768734 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0
+[0m22:41:16.768960 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.unique_launchpad_stats_launchpad_id.179cf4b1ff, now test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0)
+[0m22:41:16.769157 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0
+[0m22:41:16.771777 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0"
+[0m22:41:16.772236 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0
+[0m22:41:16.772628 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0
+[0m22:41:16.772857 [debug] [Thread-1 (]: Began running node test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5
+[0m22:41:16.773152 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.spacex_launch_analytics.not_null_rocket_performance_rocket_id.0967fa6ff0, now test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5)
+[0m22:41:16.773366 [debug] [Thread-1 (]: Began compiling node test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5
+[0m22:41:16.775471 [debug] [Thread-1 (]: Writing injected SQL for node "test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5"
+[0m22:41:16.775837 [debug] [Thread-1 (]: Began executing node test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5
+[0m22:41:16.776197 [debug] [Thread-1 (]: Finished running node test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5
+[0m22:41:16.776909 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:41:16.777134 [debug] [MainThread]: Connection 'test.spacex_launch_analytics.unique_rocket_performance_rocket_id.863c5261d5' was properly closed.
+[0m22:41:16.779117 [debug] [MainThread]: Command end result
+[0m22:41:16.847263 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/manifest.json
+[0m22:41:16.848776 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/semantic_manifest.json
+[0m22:41:16.853874 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/run_results.json
+[0m22:41:16.856105 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m22:41:16.856317 [info ] [MainThread]: Building catalog
+[0m22:41:16.863191 [debug] [ThreadPool]: Acquiring new duckdb connection 'dev.information_schema'
+[0m22:41:16.867397 [debug] [ThreadPool]: Using duckdb connection "dev.information_schema"
+[0m22:41:16.867738 [debug] [ThreadPool]: On dev.information_schema: BEGIN
+[0m22:41:16.867927 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:41:16.868425 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:41:16.868604 [debug] [ThreadPool]: Using duckdb connection "dev.information_schema"
+[0m22:41:16.868801 [debug] [ThreadPool]: On dev.information_schema: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "mi_proyecto_dbt", "target_name": "dev", "connection_name": "dev.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'dev'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'dev'
+    )
+    select
+        'dev' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        NULL as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m22:41:16.873153 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m22:41:16.877565 [debug] [ThreadPool]: On dev.information_schema: ROLLBACK
+[0m22:41:16.878068 [debug] [ThreadPool]: Failed to rollback 'dev.information_schema'
+[0m22:41:16.878262 [debug] [ThreadPool]: On dev.information_schema: Close
+[0m22:41:16.889137 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/catalog.json
+[0m22:41:16.907818 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/manifest.json
+[0m22:41:16.909249 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/semantic_manifest.json
+[0m22:41:16.919118 [info ] [MainThread]: Catalog written to /Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/target/catalog.json
+[0m22:41:16.922283 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.85210115, "process_in_blocks": "0", "process_kernel_time": 0.233419, "process_mem_max_rss": "176898048", "process_out_blocks": "0", "process_user_time": 1.6652}
+[0m22:41:16.922671 [debug] [MainThread]: Command `dbt docs generate` succeeded at 22:41:16.922603 after 0.85 seconds
+[0m22:41:16.922888 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m22:41:16.923054 [debug] [MainThread]: Connection 'dev.information_schema' was properly closed.
+[0m22:41:16.923254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cc25d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ada8cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adab120>]}
+[0m22:41:16.923487 [debug] [MainThread]: Flushing usage events
+[0m22:41:17.347509 [debug] [MainThread]: An error was encountered while trying to flush usage events

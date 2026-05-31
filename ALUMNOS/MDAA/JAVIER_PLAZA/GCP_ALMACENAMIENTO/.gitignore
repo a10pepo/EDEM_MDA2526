@@ -1,0 +1,10 @@
+.env
+__pycache__
+logs
+gcp_storage_project
+.terraform
+.terraform.*
+terraform.*
+inventory
+terraform.tfvars
+vars

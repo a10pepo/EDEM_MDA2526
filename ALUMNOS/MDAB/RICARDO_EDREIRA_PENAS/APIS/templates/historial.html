@@ -1,0 +1,66 @@
+<!--
+==============================================
+PÁGINA DE HISTORIAL
+==============================================
+Muestra todos los posts publicados anteriormente.
+
+Autor: Ricardo Edreira
+Fecha: Enero 2026
+==============================================
+-->
+{% extends 'base.html' %}
+
+{% block titulo %}Historial | X Post Publisher{% endblock %}
+
+{% block contenido %}
+<div class="pagina-historial">
+
+    <!-- Título -->
+    <div class="encabezado">
+        <h1>📜 Historial de Posts</h1>
+        <p class="subtitulo">Todos los posts que has publicado</p>
+    </div>
+
+    <!-- Lista de posts -->
+    {% if posts %}
+    <div class="lista-posts">
+        {% for post in posts %}
+        <div class="card tarjeta-historial">
+            <!-- Cabecera del post -->
+            <div class="post-cabecera">
+                <span class="post-fecha">
+                    📅 {{ post.fecha[:16].replace('T', ' ') }}
+                </span>
+                {% if post.modo == 'simulacion' %}
+                <span class="badge badge-simulacion">🔧 Simulado</span>
+                {% else %}
+                <span class="badge badge-real">✅ Publicado</span>
+                {% endif %}
+            </div>
+
+            <!-- Contenido del post -->
+            <div class="post-contenido">
+                {{ post.texto }}
+            </div>
+
+            <!-- ID del post -->
+            <div class="post-id">
+                ID: {{ post.id }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <!-- Estado vacío -->
+    <div class="estado-vacio">
+        <div class="icono-vacio">📭</div>
+        <h3>No hay posts todavía</h3>
+        <p>Cuando publiques algo, aparecerá aquí</p>
+        <a href="{{ url_for('rutas.inicio') }}" class="btn btn-primario">
+            ✏️ Escribir mi primer post
+        </a>
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+# ==============================================
+# IGNORAR ESTOS ARCHIVOS EN GIT
+# ==============================================
+
+# Credenciales (MUY IMPORTANTE)
+.env
+.env.local
+.env.production
+config.json
+secrets.yml
+*.key
+*.pem
+credentials.txt
+x_api_keys.txt
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Datos locales
+data/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs y temporales
+*.log
+*.tmp
+*.temp
+
+# Docker
+.docker/

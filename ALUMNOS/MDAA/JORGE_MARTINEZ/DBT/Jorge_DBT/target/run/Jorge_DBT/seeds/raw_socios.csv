@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_socios" ("id" integer,"nombre" text,"email" text,"equipo_favorito" text,"nivel_socio" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_socios" FROM '/usr/app/Jorge_DBT/seeds/raw_socios.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

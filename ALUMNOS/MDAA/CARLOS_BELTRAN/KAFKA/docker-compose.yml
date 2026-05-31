@@ -1,0 +1,162 @@
+version: "3.8"
+
+services:
+  # =============================
+  # Zookeeper
+  # =============================
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - kafka-net
+
+  # =============================
+  # Kafka Broker
+  # =============================
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+
+      # Listeners
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_INTERNAL://0.0.0.0:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
+
+      # Replication settings for single-node
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+    networks:
+      - kafka-net
+
+  # =============================
+  # Schema Registry
+  # =============================
+  schema-registry:
+    image: confluentinc/cp-schema-registry:7.3.0
+    container_name: schema-registry
+    depends_on:
+      - kafka
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "kafka:29092"
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+    networks:
+      - kafka-net
+
+  # =============================
+  # Control Center
+  # =============================
+  control-center:
+    image: confluentinc/cp-enterprise-control-center:7.3.0
+    container_name: control-center
+    depends_on:
+      - kafka
+      - schema-registry
+      - ksql
+    ports:
+      - "9021:9021"
+    environment:
+      CONTROL_CENTER_BOOTSTRAP_SERVERS: kafka:29092
+      CONTROL_CENTER_ZOOKEEPER_CONNECT: zookeeper:2181
+      CONTROL_CENTER_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+      CONTROL_CENTER_KSQL_URL: http://ksql:8088
+      CONTROL_CENTER_REPLICATION_FACTOR: 1
+      CONTROL_CENTER_INTERNAL_TOPICS_PARTITIONS: 1
+      CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
+      CONFLUENT_METRICS_TOPIC_REPLICATION: 1
+      PORT: 9021
+    networks:
+      - kafka-net
+
+  # =============================
+  # KSQL Server
+  # =============================
+  ksql:
+    image: confluentinc/cp-ksqldb-server:7.3.0
+    container_name: ksql
+    depends_on:
+      - kafka
+      - schema-registry
+    ports:
+      - "8088:8088"
+    environment:
+      KSQL_LISTENERS: http://0.0.0.0:8088
+      KSQL_BOOTSTRAP_SERVERS: kafka:29092
+      KSQL_KSQL_SERVICE_ID: ksql_service
+      KSQL_KSQL_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+    networks:
+      - kafka-net
+
+  # =============================
+  # KSQL CLI
+  # =============================
+  ksql-cli:
+    image: confluentinc/cp-ksqldb-cli:7.3.0
+    container_name: ksql-cli
+    depends_on:
+      - ksql
+    entrypoint: /bin/sh
+    tty: true
+    networks:
+      - kafka-net
+
+  # =============================
+  # Custom services
+  # =============================
+  alert_reader:
+    build:
+      context: ./PostWork
+      dockerfile: Dockerfile-alertReader
+    environment:
+      SERVER_URL: kafka:29092
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+    command: ["sh", "-c", "echo $SERVER_URL"]
+
+  inverter_messages:
+    build:
+      context: ./PostWork
+      dockerfile: Dockerfile-inverterMessages
+    environment:
+      SERVER_URL: kafka:29092
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+  #Optional python script
+  message_processor:
+    build:
+      context: ./PostWork
+      dockerfile: Dockerfile-messageProcessor
+    environment:
+      SERVER_URL: kafka:29092
+    depends_on:
+      - kafka
+    networks:
+      - kafka-net
+
+# =============================
+# Network
+# =============================
+networks:
+  kafka-net:
+    driver: bridge

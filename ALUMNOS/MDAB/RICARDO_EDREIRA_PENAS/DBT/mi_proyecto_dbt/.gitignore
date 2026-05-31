@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# DBT artifacts
+target/
+dbt_packages/
+logs/
+*.duckdb
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/

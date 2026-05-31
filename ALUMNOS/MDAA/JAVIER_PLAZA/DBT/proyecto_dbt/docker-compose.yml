@@ -1,0 +1,7 @@
+services:
+  dbt:
+    build: .
+    container_name: car_sales_dbt
+    volumes:
+      - ./car_sales_dbt:/app
+

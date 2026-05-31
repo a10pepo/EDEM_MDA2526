@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg__fixtures
+    description: "Every scheduled, past and future fixtures."
+    columns:
+      - name: fixture_id
+        description: "Fixture primary key (PK)"
+        tests:
+          - unique
+          - not_null
+      - name: status_id
+        tests:
+          - not_null

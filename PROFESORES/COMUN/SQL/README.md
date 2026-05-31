@@ -30,7 +30,7 @@ Nos creamos nuestro archivo **.env** con los datos para conectarnos a la base de
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=pruebadb
-DATABASE_URL=postgresql://postgres:postgres@localhost:5433/pruebadb
+DATABASE_URL=postgresql://postgres:postgres@db:5432/pruebadb
 ```
 **OJO** En nuestro archivo **.env** hay información sensible entonces debemos tener cuidado con no subirlo a internet, en nuestro caso a nuestro repositorio de github. Para evitar que se suba crearemos un **.gitignore** en este archivo escribimos lo que queramos que git ignore, es decir, lo que no queramos subir:
 ```
@@ -38,19 +38,21 @@ DATABASE_URL=postgresql://postgres:postgres@localhost:5433/pruebadb
 ```
 Abrimos nuestra terminal de VSC y arrancamos nuestro contenedor de docker-compose con el siguiente comando: 
 
-La estructura del proyecto debe quedar finalmente de la siguiente forma:
-
-![img](./images/Captura%20de%20pantalla%202025-10-17%20114451.png)
 ```bash
 docker compose up -d
 ```
+
+La estructura del proyecto debe quedar finalmente de la siguiente forma:
+
+![img](./images/Captura%20de%20pantalla%202025-10-17%20114451.png)
+
 ## Conexión a nuestro PostgreSQL
 
 Vamos a nuestra extensión de PostgreSQL que habíamos instalado previamente y clicamos en **Add Contection**.
 
 ![img](./images/Captura%20de%20pantalla%202025-10-17%20112521.png)
 
-Después clicamos en **Connection String** y pegamos donde pone Paste Connection String la siguiente url: > postgresql://postgres@127.0.0.1:5433/pruebadb
+Después clicamos en **Connection String** y pegamos donde pone Paste Connection String la siguiente url: > postgresql://postgres@127.0.0.1:5433
 
 ![img](./images/Captura%20de%20pantalla%202025-10-17%20113408.png)
 

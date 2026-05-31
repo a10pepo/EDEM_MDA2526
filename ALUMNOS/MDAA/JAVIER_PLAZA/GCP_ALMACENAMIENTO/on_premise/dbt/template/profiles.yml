@@ -1,0 +1,13 @@
+gcp_storage_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: <Your project id in GCP>
+      dataset: delivery_bronze
+      threads: 4
+      keyfile: <The name of the JSON with the SA (you create this later)>
+      location: europe-west1
+      priority: interactive
+      retries: 1

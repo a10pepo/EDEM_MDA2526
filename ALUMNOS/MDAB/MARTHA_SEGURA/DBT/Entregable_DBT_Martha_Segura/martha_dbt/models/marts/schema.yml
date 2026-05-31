@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: marts__customers_metrics
+    description: "Métricas agregadas por cliente (nº pedidos, fechas y revenue)."
+    columns:
+      - name: customer_id
+        description: "Identificador único del cliente."
+        tests:
+          - not_null
+          - unique
+
+      - name: lifetime_revenue
+        description: "Ingresos totales del cliente."
+        tests:
+          - not_null
+
+  - name: marts__product_sales
+    description: "Ventas agregadas por producto (SKU)."
+    columns:
+      - name: sku
+        description: "Identificador del producto."
+        tests:
+          - not_null
+          - unique
+
+      - name: unidades_vendidas
+        description: "Unidades totales vendidas."
+      - name: total_ventas
+        description: "Importe total vendido."
+

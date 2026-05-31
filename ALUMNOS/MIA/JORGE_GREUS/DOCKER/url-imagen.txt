@@ -1,0 +1,1 @@
+https://hub.docker.com/repository/docker/jorgitogh/jorgitogh/tags/latest/sha256-6959cbd765b73e7ddda05f7c72f2805ce96c95814e77cfefa47927ae2555f61a

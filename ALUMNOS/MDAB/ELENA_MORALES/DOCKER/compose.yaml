@@ -1,0 +1,6 @@
+services:
+  pysum:
+    build: .                                      # Contexto de construcción
+    command: ["python", "script.py", "3", "4"]    # Aquí se ponen los argumentos
+    volumes:
+      - "./:/app"

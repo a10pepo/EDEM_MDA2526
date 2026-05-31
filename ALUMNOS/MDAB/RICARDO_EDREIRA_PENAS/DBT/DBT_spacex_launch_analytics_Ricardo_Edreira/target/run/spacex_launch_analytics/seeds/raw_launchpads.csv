@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."raw_launchpads" ("id" text,"name" text,"full_name" text,"locality" text,"region" text,"latitude" float8,"longitude" float8,"launch_attempts" integer,"launch_successes" integer,"status" text,"details" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."raw_launchpads" FROM '/Users/rmep/mi_proyecto_dbt/DBT_spacex_launch_analytics_Ricardo_Edreira/seeds/raw_launchpads.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

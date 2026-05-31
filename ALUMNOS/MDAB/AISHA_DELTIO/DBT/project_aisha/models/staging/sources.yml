@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: f1_raw
+    description: "Datos crudos de F1 importados desde Kaggle/Ergast"
+    # database: project_aisha  
+    schema: main             
+    tables:
+      - name: raw_drivers
+        description: "Maestro de pilotos"
+        columns:
+          - name: driverId
+            tests:
+              - unique
+              - not_null
+      - name: raw_constructors
+        description: "Maestro de constructores/equipos"
+        columns:
+          - name: constructorId
+            tests:
+              - unique
+              - not_null
+      - name: raw_races
+        description: "Calendario histórico de carreras"
+        columns:
+          - name: raceId
+            tests:
+              - unique
+              - not_null
+      - name: raw_results
+        description: "Resultados de carrera a nivel de piloto"
+        columns:
+          - name: resultId
+            tests:
+              - unique
+              - not_null
+      - name: raw_status
+        description: "Diccionario de estados de finalización (accidentes, etc)"
+      - name: raw_circuits
+        description: "Información geográfica de circuitos"

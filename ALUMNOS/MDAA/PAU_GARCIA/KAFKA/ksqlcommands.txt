@@ -1,0 +1,16 @@
+CREATE STREAM raw_encargos_coches (
+  matricula VARCHAR,
+  codigo_averia INTEGER,
+  estado VARCHAR,
+  gravedad VARCHAR,
+  desc_averia VARCHAR,
+  timestamp VARCHAR,
+  pieza VARCHAR
+) WITH (
+  KAFKA_TOPIC='encargos_coches',
+  VALUE_FORMAT='JSON'
+);
+
+CREATE STREAM encargos_cancelados WITH (KAFKA_TOPIC='encargos_cancelados', VALUE_FORMAT='JSON') AS
+  SELECT * FROM raw_encargos_coches
+  WHERE gravedad = 'muy grave';

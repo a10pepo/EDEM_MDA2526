@@ -1,0 +1,62 @@
+# Schema para modelos de staging
+# Autor: Ricardo Edreira
+
+version: 2
+
+models:
+  - name: stg_launches
+    description: "Lanzamientos de SpaceX limpiados y estandarizados"
+    columns:
+      - name: launch_id
+        description: "Identificador único del lanzamiento"
+        tests:
+          - unique
+          - not_null
+      - name: mission_name
+        description: "Nombre de la misión"
+      - name: flight_number
+        description: "Número secuencial de vuelo"
+      - name: launch_date
+        description: "Fecha y hora del lanzamiento"
+      - name: launch_year
+        description: "Año del lanzamiento"
+      - name: is_success
+        description: "Indica si el lanzamiento fue exitoso"
+      - name: launch_status
+        description: "Estado del lanzamiento (Exitoso/Fallido/Pendiente)"
+      - name: rocket_id
+        description: "FK al cohete utilizado"
+      - name: launchpad_id
+        description: "FK a la plataforma de lanzamiento"
+
+  - name: stg_rockets
+    description: "Cohetes de SpaceX con información técnica"
+    columns:
+      - name: rocket_id
+        description: "Identificador único del cohete"
+        tests:
+          - unique
+          - not_null
+      - name: rocket_name
+        description: "Nombre del cohete"
+      - name: is_active
+        description: "Indica si el cohete está activo"
+      - name: cost_per_launch_usd
+        description: "Costo por lanzamiento en USD"
+      - name: success_rate_pct
+        description: "Tasa de éxito reportada"
+
+  - name: stg_launchpads
+    description: "Plataformas de lanzamiento de SpaceX"
+    columns:
+      - name: launchpad_id
+        description: "Identificador único de la plataforma"
+        tests:
+          - unique
+          - not_null
+      - name: launchpad_name
+        description: "Nombre corto de la plataforma"
+      - name: region
+        description: "Región geográfica"
+      - name: launchpad_status
+        description: "Estado de la plataforma (active/retired)"
