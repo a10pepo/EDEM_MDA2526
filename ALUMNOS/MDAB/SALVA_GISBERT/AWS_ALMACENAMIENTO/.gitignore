@@ -1,0 +1,11 @@
+*.db
+__pycache__/
+*.pyc
+.env
+frontend/dist/
+frontend/node_modules/
+frontend/*.log
+terraform/.terraform/
+terraform/terraform.tfvars
+terraform/*.tfstate
+terraform/*.tfstate.*

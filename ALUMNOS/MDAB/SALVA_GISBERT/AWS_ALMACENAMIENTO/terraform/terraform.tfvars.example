@@ -1,0 +1,14 @@
+allowed_cidr = "YOUR_PUBLIC_IP/32"
+db_password  = "ChangeMe123!"
+
+# Optional:
+# aws_region             = "eu-west-1"
+# db_name                = "football_callup_manager"
+# db_instance_class      = "db.t3.micro"
+# engine_version         = "16"
+# publicly_accessible    = true
+# manage_networking      = false
+# create_db_subnet_group = false
+# vpc_id                 = "vpc-xxxxxxxx"
+# subnet_ids             = ["subnet-aaa", "subnet-bbb", "subnet-ccc"]
+# security_group_ids     = ["sg-xxxxxxxx"]
