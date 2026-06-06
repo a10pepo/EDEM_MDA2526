@@ -1,0 +1,6 @@
+aws_region  = "eu-west-1"
+db_username = "almacen_user"
+db_password = "TuPasswordSegura123!"   # cámbialo antes de aplicar
+
+# Obtén tu IP pública con: curl ifconfig.me
+my_ip = "1.2.3.4"
