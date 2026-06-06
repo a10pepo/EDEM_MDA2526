@@ -1,6 +1,11 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
+os.environ.setdefault("DB_HOST", "localhost")
+os.environ.setdefault("DB_NAME", "test")
+os.environ.setdefault("DB_USER", "test")
+os.environ.setdefault("DB_PASSWORD", "test")
+
 from simulate import distance, interpolate_step, STEP, MIN_DIST
 
 def test_distance_same_point():
