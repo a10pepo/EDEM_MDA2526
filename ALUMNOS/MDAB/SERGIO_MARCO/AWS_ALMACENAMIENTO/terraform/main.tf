@@ -1,4 +1,5 @@
 terraform {
+  required_version = ">= 1.5"
   required_providers {
     aws = { source = "hashicorp/aws", version = "~> 5.0" }
   }
@@ -54,13 +55,15 @@ resource "aws_route_table_association" "public" {
 }
 
 resource "aws_security_group" "ec2" {
-  name   = "fleet-ec2-sg"
-  vpc_id = aws_vpc.main.id
+  name        = "fleet-ec2-sg"
+  description = "Fleet EC2 — HTTP/HTTPS/SSH"
+  vpc_id      = aws_vpc.main.id
+
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = [var.ssh_allowed_cidr]
   }
   ingress {
     from_port   = 80
@@ -84,8 +87,9 @@ resource "aws_security_group" "ec2" {
 }
 
 resource "aws_security_group" "rds" {
-  name   = "fleet-rds-sg"
-  vpc_id = aws_vpc.main.id
+  name        = "fleet-rds-sg"
+  description = "Fleet RDS — PostgreSQL from EC2 SG only"
+  vpc_id      = aws_vpc.main.id
   ingress {
     from_port       = 5432
     to_port         = 5432
