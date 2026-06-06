@@ -28,6 +28,18 @@ class RutaCreate(BaseModel):
         return self
 
 
+class RutaUpdate(BaseModel):
+    vehiculo_id:  int
+    conductor_id: int
+    origen_lat:   float
+    origen_lng:   float
+    destino_lat:  float
+    destino_lng:  float
+    actual_lat:   Optional[float] = None
+    actual_lng:   Optional[float] = None
+    estado:       Optional[str] = "pendiente"
+
+
 class RutaRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     id:           int
@@ -63,7 +75,7 @@ def get_ruta(id: int, db: Session = Depends(get_db)):
 
 
 @router.put("/rutas/{id}", response_model=RutaRead)
-def update_ruta(id: int, data: RutaCreate, db: Session = Depends(get_db)):
+def update_ruta(id: int, data: RutaUpdate, db: Session = Depends(get_db)):
     r = db.get(Ruta, id)
     if not r:
         raise HTTPException(404, "Ruta no encontrada")

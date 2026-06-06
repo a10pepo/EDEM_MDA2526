@@ -26,7 +26,8 @@ def get_alerts(db: Session = Depends(get_db)):
             continue
         pedidos = db.query(Pedido).filter(Pedido.ruta_id == ruta.id).all()
         total = sum(float(p.peso_kg) for p in pedidos)
-        if total / float(vehiculo.capacidad_carga_kg) > 0.9:
+        cap = float(vehiculo.capacidad_carga_kg)
+        if cap > 0 and total / cap > 0.9:
             sobrecarga.append({
                 "ruta_id": ruta.id,
                 "matricula": vehiculo.matricula,

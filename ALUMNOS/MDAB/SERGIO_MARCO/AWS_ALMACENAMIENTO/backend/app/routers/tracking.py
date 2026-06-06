@@ -13,9 +13,12 @@ def active_routes(db: Session = Depends(get_db)):
         {
             "id":          r.id,
             "vehiculo_id": r.vehiculo_id,
-            "origen":  {"lat": float(r.origen_lat),  "lng": float(r.origen_lng)},
-            "destino": {"lat": float(r.destino_lat), "lng": float(r.destino_lng)},
-            "actual":  {"lat": float(r.actual_lat),  "lng": float(r.actual_lng)},
+            "origen":  {"lat": float(r.origen_lat)  if r.origen_lat  is not None else None,
+                        "lng": float(r.origen_lng)  if r.origen_lng  is not None else None},
+            "destino": {"lat": float(r.destino_lat) if r.destino_lat is not None else None,
+                        "lng": float(r.destino_lng) if r.destino_lng is not None else None},
+            "actual":  {"lat": float(r.actual_lat)  if r.actual_lat  is not None else None,
+                        "lng": float(r.actual_lng)  if r.actual_lng  is not None else None},
         }
         for r in rutas
     ]
