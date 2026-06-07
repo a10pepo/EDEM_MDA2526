@@ -64,41 +64,28 @@ resource "aws_db_subnet_group" "aurora" {
   }
 }
 
-# ── Aurora Cluster (Serverless v2) ────────────────────────────────────────────
+# ── RDS PostgreSQL (Free Tier: db.t3.micro) ───────────────────────────────────
 
-resource "aws_rds_cluster" "aurora" {
-  cluster_identifier     = "almacen-aurora-cluster"
-  engine                 = "aurora-postgresql"
-  engine_version         = "15.4"
-  database_name          = "almacen_db"
-  master_username        = var.db_username
-  master_password        = var.db_password
+resource "aws_db_instance" "postgres" {
+  identifier        = "almacen-postgres"
+  engine            = "postgres"
+  engine_version    = "15"
+  instance_class    = "db.t3.micro"
+  allocated_storage = 20
+  storage_type      = "gp2"
+
+  db_name  = "almacen_db"
+  username = var.db_username
+  password = var.db_password
+
   db_subnet_group_name   = aws_db_subnet_group.aurora.name
   vpc_security_group_ids = [aws_security_group.aurora.id]
+  publicly_accessible    = true
   skip_final_snapshot    = true
   deletion_protection    = false
 
-  serverlessv2_scaling_configuration {
-    min_capacity = 0.5
-    max_capacity = 4.0
-  }
-
   tags = {
-    Name    = "almacen-aurora-cluster"
-    Project = "monitor-expediciones"
-  }
-}
-
-resource "aws_rds_cluster_instance" "aurora" {
-  identifier          = "almacen-aurora-instance"
-  cluster_identifier  = aws_rds_cluster.aurora.id
-  instance_class      = "db.serverless"
-  engine              = aws_rds_cluster.aurora.engine
-  engine_version      = aws_rds_cluster.aurora.engine_version
-  publicly_accessible = true
-
-  tags = {
-    Name    = "almacen-aurora-instance"
+    Name    = "almacen-postgres"
     Project = "monitor-expediciones"
   }
 }
