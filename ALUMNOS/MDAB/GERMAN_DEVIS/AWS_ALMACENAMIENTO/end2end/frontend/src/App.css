@@ -1,0 +1,336 @@
+/* ── Header ───────────────────────────────────────────── */
+.header {
+  background: #e10600;
+  padding: 0 40px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 16px rgba(225, 6, 0, 0.5);
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.f1-logo {
+  font-size: 26px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.f1-logo span {
+  display: inline-block;
+  background: #fff;
+  color: #e10600;
+  padding: 1px 7px;
+  margin-left: 3px;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.header-sub {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.header-leader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.leader-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.leader-driver {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.leader-pts {
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* ── Nav ──────────────────────────────────────────────── */
+.nav {
+  background: #1a1a28;
+  display: flex;
+  padding: 0 40px;
+  border-bottom: 1px solid #252535;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 18px 22px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.nav button:hover { color: #aaa; }
+
+.nav button.active {
+  color: #fff;
+  border-bottom-color: #e10600;
+}
+
+/* ── Content ──────────────────────────────────────────── */
+.content {
+  padding: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.section-title span { color: #e10600; }
+
+/* ── Card ─────────────────────────────────────────────── */
+.card {
+  background: #1e1e2e;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #252535;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Table ────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background: #252535;
+  border-bottom: 2px solid #e10600;
+}
+
+thead th {
+  padding: 12px 16px;
+  text-align: left;
+  color: #555;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+tbody tr {
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #252535;
+  transition: background 0.15s;
+}
+
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: rgba(255, 255, 255, 0.03); }
+
+tbody td {
+  padding: 14px 16px;
+  color: #999;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+/* ── Layout helpers ───────────────────────────────────── */
+.col-pos    { width: 52px; }
+.col-num    { width: 64px; }
+.col-center { text-align: center; }
+
+/* ── Position number ──────────────────────────────────── */
+.pos-num {
+  font-size: 20px;
+  font-weight: 800;
+  color: #333;
+  text-align: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+
+/* ── Driver ───────────────────────────────────────────── */
+.drv-number {
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff;
+  font-style: italic;
+  display: inline-block;
+  min-width: 28px;
+  text-align: center;
+}
+
+.drv-code {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-right: 8px;
+  min-width: 36px;
+}
+
+.drv-name {
+  color: #777;
+  font-size: 12px;
+}
+
+/* ── Points ───────────────────────────────────────────── */
+.pts { color: #fff; }
+
+/* ── Team dot ─────────────────────────────────────────── */
+.team-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* ── Championships ────────────────────────────────────── */
+.champ-badge {
+  display: inline-block;
+  background: #e10600;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  min-width: 28px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.no-champ { color: #333; }
+
+/* ── Status ───────────────────────────────────────────── */
+.status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.status--finished {
+  background: rgba(0, 200, 100, 0.1);
+  color: #00c864;
+  border: 1px solid rgba(0, 200, 100, 0.2);
+}
+
+.status--dnf {
+  background: rgba(225, 6, 0, 0.1);
+  color: #e10600;
+  border: 1px solid rgba(225, 6, 0, 0.2);
+}
+
+.status--dns {
+  background: rgba(255, 255, 255, 0.04);
+  color: #444;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Podium ───────────────────────────────────────────── */
+.podium-gold   { border-left-color: #FFD700 !important; background: rgba(255, 215,   0, 0.05); }
+.podium-silver { border-left-color: #C0C0C0 !important; background: rgba(192, 192, 192, 0.04); }
+.podium-bronze { border-left-color: #CD7F32 !important; background: rgba(205, 127,  50, 0.04); }
+
+/* ── Results header (title + filter) ─────────────────── */
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.results-header .section-title { margin-bottom: 0; }
+
+.race-filter {
+  background: #1e1e2e;
+  border: 1px solid #333;
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.race-filter:hover,
+.race-filter:focus { border-color: #e10600; }
+
+/* ── Standings two-column layout ─────────────────────── */
+.standings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .standings-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Loading ──────────────────────────────────────────── */
+.loading {
+  color: #333;
+  font-size: 11px;
+  padding: 80px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+psycopg2-binary
+python-dotenv
+boto3
+fastapi
+uvicorn
+pandas
+pyarrow
+pytest
+pytest-mock
+httpx

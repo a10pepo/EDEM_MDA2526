@@ -1,0 +1,18 @@
+# Credentials & environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# AWS
+.aws/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Editor
+.vscode/
+.idea/
