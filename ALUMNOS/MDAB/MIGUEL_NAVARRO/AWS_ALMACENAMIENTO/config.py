@@ -33,4 +33,18 @@ def load_redshift_config() -> DBConfig:
     )
 
 
+@dataclass(frozen=True)
+class LakehouseConfig:
+    s3_bucket: str
+    glue_database: str
+
+
+def load_lakehouse_config() -> LakehouseConfig:
+    """Read S3/Glue Data Lakehouse settings from environment variables."""
+    return LakehouseConfig(
+        s3_bucket=os.getenv("AWS_S3_BUCKET", ""),
+        glue_database=os.getenv("AWS_GLUE_DATABASE", ""),
+    )
+
+
 CSV_PATH = "raw_data/workout_data.csv"

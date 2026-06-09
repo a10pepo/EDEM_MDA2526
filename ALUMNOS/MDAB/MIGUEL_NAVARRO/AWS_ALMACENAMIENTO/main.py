@@ -1,12 +1,13 @@
 import pandas as pd
 
-from config import CSV_PATH, load_rds_config, load_redshift_config
+from config import CSV_PATH, load_lakehouse_config, load_rds_config, load_redshift_config
 from database import (
     create_redshift_tables,
     create_rds_tables,
     get_rds_connection,
     get_redshift_connection,
 )
+from lakehouse_pipeline import run_lakehouse_el
 from pipeline import clean_dataframe, load_data
 from redshift_pipeline import run_el
 
@@ -60,6 +61,28 @@ def run_el_step() -> None:
         print("RDS and Redshift connections closed.")
 
 
+def run_lakehouse_step() -> None:
+    print("Connecting to RDS for the Lakehouse EL step...")
+    rds_conn = get_rds_connection(load_rds_config())
+    config = load_lakehouse_config()
+
+    try:
+        print(f"Target Iceberg lakehouse -> s3://{config.s3_bucket} / glue database '{config.glue_database}'")
+
+        run_lakehouse_el(rds_conn, config)
+
+        print("Data successfully written to the S3/Glue Iceberg lakehouse!")
+
+    except Exception as e:
+        print(f"Error during RDS-to-Lakehouse EL: {e}")
+        raise
+
+    finally:
+        rds_conn.close()
+        print("RDS connection closed.")
+
+
 if __name__ == "__main__":
     run_pipeline()
     run_el_step()
+    run_lakehouse_step()
