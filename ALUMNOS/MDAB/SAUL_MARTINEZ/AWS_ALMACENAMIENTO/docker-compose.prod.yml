@@ -1,0 +1,36 @@
+# Entorno EC2 (producción coste 0): la API se descarga desde ECR y Postgres
+# corre al lado, sin exponer su puerto a internet (solo red interna de Docker).
+# El user_data de Terraform genera el archivo .env con IMAGE_URI y la contraseña.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ecommerce
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d ecommerce"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    image: ${IMAGE_URI}
+    restart: always
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD}@db:5432/ecommerce
+      AWS_REGION: ${AWS_REGION}
+      S3_BUCKET_NAME: ${S3_BUCKET_NAME}
+      APP_ENV: production
+    # Publica el puerto 80 público mapeado al 8000 del contenedor.
+    ports:
+      - "80:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

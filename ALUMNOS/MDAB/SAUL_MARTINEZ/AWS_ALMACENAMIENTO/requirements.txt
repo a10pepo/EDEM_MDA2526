@@ -1,0 +1,7 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlmodel==0.0.22
+psycopg[binary]==3.2.3
+pydantic-settings==2.7.1
+boto3==1.35.90
+python-multipart==0.0.20
