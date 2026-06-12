@@ -7,7 +7,7 @@ import subprocess
 comun_obligatorio=["DOCKER","PYTHON","SQL","LINUX"]
 mia1_obligatorio=["ESTADISTICA"]
 mda1_obligatorio=["APIS", "DBT", "KAFKA", "PYSPARK"]
-mda2_obligatorio=["AWS_ALMACENAMIENTO", "GCP_ALMACENAMIENTO"]
+mda2_obligatorio=[ "GCP_ALMACENAMIENTO"]
 
 
 
