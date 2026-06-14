@@ -422,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-06-14 12:08:35
+Last Checked: 2026-06-14 12:10:16
 
 
 Entregas Grupo MDA A
@@ -741,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2026-06-14 12:08:35
+Last Checked: 2026-06-14 12:10:16
 
 Entregas Grupo MDA B
 <table>
@@ -963,7 +963,7 @@ Entregas Grupo MDA B
 <td>❌</td>
 <td>❌</td>
 <td>❌</td>
-<td>❌</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>❌</td>
@@ -977,7 +977,7 @@ Entregas Grupo MDA B
 <td>✅</td>
 <td>10.0</td>
 <td>10.0</td>
-<td>0.0</td>
+<td>10.0</td>
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAB/JAVIER_AGUADO'>JAVIER_AGUADO</a></td>
@@ -1241,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2026-06-14 12:08:35
+Last Checked: 2026-06-14 12:10:16
 
