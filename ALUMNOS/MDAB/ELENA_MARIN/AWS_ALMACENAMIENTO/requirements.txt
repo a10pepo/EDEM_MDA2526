@@ -1,0 +1,5 @@
+psycopg2
+dotenv
+pandas
+matplotlib
+seaborn
