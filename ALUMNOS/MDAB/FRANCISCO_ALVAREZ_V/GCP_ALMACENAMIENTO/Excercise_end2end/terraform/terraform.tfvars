@@ -1,0 +1,6 @@
+project_id            = "edem-ejercicio-2526"
+region                = "europe-west1"
+zone                  = "europe-west1-b"
+subnetwork            = "projects/edem-ejercicio-2526/regions/europe-west1/subnetworks/default"
+service_account_email = "421203659551-compute@developer.gserviceaccount.com"
+repo_url              = ""
