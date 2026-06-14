@@ -422,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-06-12 17:51:28
+Last Checked: 2026-06-14 11:59:26
 
 
 Entregas Grupo MDA A
@@ -741,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2026-06-12 17:51:28
+Last Checked: 2026-06-14 11:59:26
 
 Entregas Grupo MDA B
 <table>
@@ -955,7 +955,7 @@ Entregas Grupo MDA B
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAB/GERMAN_DEVIS'>GERMAN_DEVIS</a></td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
@@ -1033,7 +1033,7 @@ Entregas Grupo MDA B
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAB/MIGUEL_NAVARRO'>MIGUEL_NAVARRO</a></td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
@@ -1189,7 +1189,7 @@ Entregas Grupo MDA B
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAB/SAUL_MARTINEZ'>SAUL_MARTINEZ</a></td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
@@ -1241,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2026-06-12 17:51:28
+Last Checked: 2026-06-14 11:59:26
 
