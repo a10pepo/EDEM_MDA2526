@@ -1,0 +1,14 @@
+[project]
+name = "ecommerce-ropa"
+version = "0.1.0"
+description = "Backend de e-commerce para tienda de ropa (FastAPI + SQLModel + PostgreSQL + S3)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["app/main.py"]

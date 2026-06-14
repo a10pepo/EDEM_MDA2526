@@ -1,0 +1,14 @@
+# Copia este archivo a terraform.tfvars y ajusta los valores.
+
+aws_region    = "eu-west-1"
+project_name  = "ecommerce-ropa"
+instance_type = "t3.micro"
+
+# Restringe SSH a TU IP pública (recomendado). Ej: "88.12.34.56/32"
+ssh_cidr = "0.0.0.0/0"
+
+# Nombre de un EC2 Key Pair que ya exista en la región (para SSH).
+# Déjalo vacío si no necesitas SSH.
+key_pair_name = ""
+
+image_tag = "latest"
