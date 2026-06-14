@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #15151e;
+  color: #ffffff;
+  font-family: 'Titillium Web', Arial, sans-serif;
+  min-height: 100vh;
+}
