@@ -1,0 +1,5 @@
+psycopg2-binary==2.9.12
+pandas==3.0.3
+awswrangler[pyiceberg]==3.16.1
+streamlit==1.58.0
+plotly==5.24.1
