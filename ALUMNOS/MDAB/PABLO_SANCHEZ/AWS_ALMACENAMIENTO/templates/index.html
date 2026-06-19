@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FutbolManager Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sidebar-w: 240px;
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --bg-input: #21262d;
+  --bg-hover: #1c2128;
+  --border: rgba(240,246,252,0.1);
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --green: #3fb950;
+  --green-dim: rgba(63,185,80,0.12);
+  --red: #f85149;
+  --red-dim: rgba(248,81,73,0.12);
+  --amber: #e3b341;
+  --amber-dim: rgba(227,179,65,0.12);
+  --blue: #58a6ff;
+  --blue-dim: rgba(88,166,255,0.12);
+  --purple: #bc8cff;
+  --purple-dim: rgba(188,140,255,0.12);
+  --orange: #ffa657;
+  --orange-dim: rgba(255,166,87,0.12);
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); display: flex; height: 100vh; overflow: hidden; }
+
+/* SIDEBAR */
+.sidebar { width: var(--sidebar-w); background: var(--bg-card); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; }
+.sidebar-logo { padding: 20px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.logo-icon { width: 36px; height: 36px; background: var(--green); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+.logo-text { font-size: 15px; font-weight: 700; }
+.logo-sub { font-size: 11px; color: var(--text-muted); }
+.sidebar-nav { padding: 12px 8px; flex: 1; }
+.nav-label { font-size: 10px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; padding: 8px 8px 4px; }
+.nav-link { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: var(--radius); color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; cursor: pointer; transition: all .15s; margin-bottom: 2px; }
+.nav-link:hover { background: var(--bg-hover); color: var(--text); }
+.nav-link.active { background: var(--green-dim); color: var(--green); }
+.nav-link .icon { width: 18px; text-align: center; font-size: 16px; }
+.nav-badge { margin-left: auto; background: var(--red); color: #fff; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 10px; display: none; }
+
+/* MAIN */
+.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.header { padding: 14px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; background: var(--bg-card); flex-shrink: 0; }
+.header-title { font-size: 18px; font-weight: 600; }
+.header-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.content { flex: 1; overflow-y: auto; padding: 24px; }
+
+/* BUTTONS */
+.btn { padding: 7px 14px; border-radius: var(--radius); border: none; font-size: 13px; font-weight: 500; cursor: pointer; transition: all .15s; font-family: inherit; }
+.btn-primary { background: var(--green); color: #0d1117; }
+.btn-primary:hover { background: #4ec962; }
+.btn-ghost { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
+.btn-ghost:hover { background: var(--bg-hover); color: var(--text); }
+.btn-icon { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--text-muted); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 13px; transition: all .15s; }
+.btn-icon:hover { background: var(--bg-hover); color: var(--text); }
+
+/* SECTIONS */
+.section { display: none; }
+.section.active { display: block; }
+
+/* STAT CARDS */
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; }
+.stat-label { font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 10px; }
+.stat-value { font-size: 34px; font-weight: 700; line-height: 1; }
+.stat-sub { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+.stat-card.c-green .stat-value { color: var(--green); }
+.stat-card.c-red .stat-value { color: var(--red); }
+.stat-card.c-amber .stat-value { color: var(--amber); }
+.stat-card.c-blue .stat-value { color: var(--blue); }
+
+/* CARD */
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 16px; }
+.card-title { font-size: 13px; font-weight: 600; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+
+/* TABLE */
+.table-wrap { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+.table-toolbar { padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.search-input { background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); padding: 7px 12px; font-size: 13px; font-family: inherit; outline: none; width: 240px; }
+.search-input:focus { border-color: var(--green); }
+.search-input::placeholder { color: var(--text-muted); }
+.filter-select { background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); padding: 7px 10px; font-size: 13px; font-family: inherit; outline: none; cursor: pointer; }
+.filter-select:focus { border-color: var(--green); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th { padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; border-bottom: 1px solid var(--border); background: var(--bg); white-space: nowrap; }
+tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: var(--bg-hover); }
+td { padding: 10px 14px; vertical-align: middle; }
+
+/* AVATAR */
+.player-cell { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+.player-name { font-weight: 500; white-space: nowrap; }
+.player-id { font-size: 11px; color: var(--text-muted); }
+
+/* BADGES */
+.badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.badge-green { background: var(--green-dim); color: var(--green); }
+.badge-red { background: var(--red-dim); color: var(--red); }
+.badge-amber { background: var(--amber-dim); color: var(--amber); }
+.badge-blue { background: var(--blue-dim); color: var(--blue); }
+.badge-purple { background: var(--purple-dim); color: var(--purple); }
+.badge-orange { background: var(--orange-dim); color: var(--orange); }
+.badge-muted { background: var(--bg-input); color: var(--text-muted); }
+
+/* PROGRESS */
+.progress-bar { height: 4px; background: var(--bg-input); border-radius: 2px; overflow: hidden; margin-top: 5px; width: 80px; }
+.progress-fill { height: 100%; border-radius: 2px; }
+
+/* ALERT ITEM */
+.alert-item { display: flex; align-items: center; justify-content: space-between; padding: 11px 14px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 6px; gap: 12px; }
+.alert-item:last-child { margin-bottom: 0; }
+.alert-meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+/* MODAL */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.75); z-index: 100; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
+.modal-overlay.open { display: flex; }
+.modal { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); width: 600px; max-width: 95vw; max-height: 90vh; overflow-y: auto; padding: 24px; }
+.modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.modal-title { font-size: 16px; font-weight: 600; }
+.modal-close { background: none; border: none; color: var(--text-muted); font-size: 20px; cursor: pointer; line-height: 1; padding: 2px 6px; }
+.modal-close:hover { color: var(--text); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+.form-group.span-2 { grid-column: span 2; }
+.form-label { font-size: 12px; font-weight: 500; color: var(--text-muted); }
+.form-input { background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); padding: 8px 12px; font-size: 13px; font-family: inherit; outline: none; width: 100%; }
+.form-input:focus { border-color: var(--green); }
+.modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+
+/* TOAST */
+.toast { position: fixed; bottom: 24px; right: 24px; background: var(--bg-card); border: 1px solid var(--green); color: var(--green); padding: 12px 18px; border-radius: var(--radius); font-size: 13px; font-weight: 500; z-index: 200; transform: translateY(100px); opacity: 0; transition: all .3s; pointer-events: none; }
+.toast.show { transform: translateY(0); opacity: 1; }
+
+/* EMPTY */
+.empty { text-align: center; padding: 40px; color: var(--text-muted); font-size: 14px; }
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon">⚽</div>
+    <div>
+      <div class="logo-text">FutbolManager</div>
+      <div class="logo-sub">Pro Edition</div>
+    </div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-label">Menú</div>
+    <a class="nav-link active" data-section="dashboard"><span class="icon">📊</span>Dashboard</a>
+    <a class="nav-link" data-section="jugadores"><span class="icon">👥</span>Jugadores</a>
+    <a class="nav-link" data-section="partidos"><span class="icon">📅</span>Partidos</a>
+    <a class="nav-link" data-section="estadisticas"><span class="icon">📈</span>Estadísticas</a>
+    <a class="nav-link" data-section="alertas"><span class="icon">🚨</span>Alertas<span class="nav-badge" id="alert-badge">0</span></a>
+  </nav>
+</aside>
+
+<div class="main">
+  <div class="header">
+    <div>
+      <div class="header-title" id="header-title">Dashboard</div>
+      <div class="header-sub" id="header-sub">Resumen general del plantel</div>
+    </div>
+    <div id="header-action"></div>
+  </div>
+
+  <div class="content">
+
+    <!-- DASHBOARD -->
+    <section class="section active" id="dashboard">
+      <div class="stat-grid" id="stat-grid"></div>
+      <div class="card">
+        <div class="card-title">🚨 Alertas destacadas</div>
+        <div id="dash-alerts"></div>
+      </div>
+    </section>
+
+    <!-- JUGADORES -->
+    <section class="section" id="jugadores">
+      <div class="table-wrap">
+        <div class="table-toolbar">
+          <input class="search-input" type="text" id="search-j" placeholder="🔍  Buscar jugador o club...">
+          <select class="filter-select" id="filter-estado">
+            <option value="">Todos los estados</option>
+            <option value="activo">Activo</option>
+            <option value="lesionado">Lesionado</option>
+          </select>
+          <select class="filter-select" id="filter-pos">
+            <option value="">Todas las posiciones</option>
+            <option>Delantero</option><option>Extremo</option>
+            <option>Centrocampista</option><option>Defensa</option><option>Portero</option>
+          </select>
+          <div style="margin-left:auto">
+            <button class="btn btn-primary" onclick="openModal()">+ Añadir jugador</button>
+          </div>
+        </div>
+        <div id="tbl-jugadores"></div>
+      </div>
+    </section>
+
+    <!-- PARTIDOS -->
+    <section class="section" id="partidos">
+      <div class="table-wrap">
+        <div class="table-toolbar" style="color:var(--text-muted);font-size:13px">
+          Ordenado por días hasta el próximo encuentro
+        </div>
+        <div id="tbl-partidos"></div>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="section" id="estadisticas">
+      <div class="table-wrap">
+        <div class="table-toolbar" style="color:var(--text-muted);font-size:13px">
+          Ranking por participación en goles (G+A) esta temporada
+        </div>
+        <div id="tbl-estadisticas"></div>
+      </div>
+    </section>
+
+    <!-- ALERTAS -->
+    <section class="section" id="alertas">
+      <div id="alertas-content"></div>
+    </section>
+
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title">Añadir jugador</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <form id="player-form">
+      <div class="form-grid">
+        <div class="form-group span-2">
+          <label class="form-label">Nombre completo</label>
+          <input class="form-input" name="Nombre" required placeholder="Ej: Lionel Messi">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Nacionalidad</label>
+          <input class="form-input" name="Nacionalidad" required placeholder="Argentina">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Club actual</label>
+          <input class="form-input" name="Club_Actual" required placeholder="FC Barcelona">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Edad</label>
+          <input class="form-input" name="Edad" type="number" min="15" max="45" placeholder="25">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Balones de Oro</label>
+          <input class="form-input" name="Balones_de_Oro" type="number" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Posición</label>
+          <select class="form-input" name="Posicion_Campo">
+            <option>Delantero</option><option>Extremo</option>
+            <option>Centrocampista</option><option>Defensa</option><option>Portero</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Estado</label>
+          <select class="form-input" name="estado">
+            <option value="activo">Activo</option>
+            <option value="lesionado">Lesionado</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Fecha de nacimiento</label>
+          <input class="form-input" name="fecha_nacimiento" type="date">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Último partido</label>
+          <input class="form-input" name="fecha_ultimo_partido" type="date">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Próximo partido</label>
+          <input class="form-input" name="fecha_proximo_partido" type="date">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Salario anual (M€)</label>
+          <input class="form-input" name="salario_anual_millones" type="number" step="0.1" placeholder="10.0">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Valor de mercado (M€)</label>
+          <input class="form-input" name="valor_mercado_millones" type="number" step="0.1" placeholder="50.0">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Goles temporada</label>
+          <input class="form-input" name="goles_temporada" type="number" value="0">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Asistencias temporada</label>
+          <input class="form-input" name="asistencias_temporada" type="number" value="0">
+        </div>
+        <div class="form-group span-2">
+          <label class="form-label">Minutos jugados</label>
+          <input class="form-input" name="minutos_jugados" type="number" value="0">
+        </div>
+      </div>
+    </form>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="submitForm()">Guardar jugador</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let jugadores = [], alertasData = {}, editingId = null;
+
+const COLORS = ['#3fb950','#58a6ff','#bc8cff','#ffa657','#f85149','#e3b341','#39d353','#a5d6ff','#d2a8ff','#ffa198'];
+const POS_BADGE = { Delantero:'badge-red', Extremo:'badge-orange', Centrocampista:'badge-blue', Defensa:'badge-green', Portero:'badge-purple' };
+const HEADERS = {
+  dashboard: ['Dashboard','Resumen general del plantel'],
+  jugadores: ['Jugadores','Gestión del plantel'],
+  partidos: ['Partidos','Historial y próximos encuentros'],
+  estadisticas: ['Estadísticas','Rendimiento de la temporada'],
+  alertas: ['Alertas','Notificaciones del sistema'],
+};
+
+function avatarColor(n){ let h=0; for(const c of n) h=(h*31+c.charCodeAt(0))&0xffffffff; return COLORS[Math.abs(h)%COLORS.length]; }
+function initials(n){ return n.split(' ').slice(0,2).map(w=>w[0]).join('').toUpperCase(); }
+function avatarEl(n){ const c=avatarColor(n); return `<div class="avatar" style="background:${c}20;color:${c}">${initials(n)}</div>`; }
+function posBadge(p){ return `<span class="badge ${POS_BADGE[p]||'badge-blue'}">${p}</span>`; }
+function statusBadge(s){ return s==='activo'?`<span class="badge badge-green">● Activo</span>`:`<span class="badge badge-red">● Lesionado</span>`; }
+function daysBadge(d){
+  if(d<0) return `<span class="badge badge-muted">—</span>`;
+  if(d<7) return `<span class="badge badge-red">🔴 ${d}d</span>`;
+  if(d<30) return `<span class="badge badge-amber">🟡 ${d}d</span>`;
+  return `<span class="badge badge-muted">${d}d</span>`;
+}
+
+// DATA LOAD
+async function loadData(){
+  const [j,a] = await Promise.all([
+    fetch('/api/jugadores').then(r=>r.json()),
+    fetch('/api/alertas').then(r=>r.json())
+  ]);
+  jugadores = j; alertasData = a;
+  const count = (a.lesionados?.length||0) + (a.proximo_partido?.filter(x=>x.dias_restantes<7).length||0);
+  const badge = document.getElementById('alert-badge');
+  badge.textContent = count;
+  badge.style.display = count > 0 ? 'inline' : 'none';
+}
+
+// NAVIGATION
+document.querySelectorAll('.nav-link').forEach(link=>{
+  link.addEventListener('click', e=>{
+    e.preventDefault();
+    const s = link.dataset.section;
+    document.querySelectorAll('.nav-link').forEach(l=>l.classList.remove('active'));
+    link.classList.add('active');
+    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+    document.getElementById(s).classList.add('active');
+    const [title,sub] = HEADERS[s];
+    document.getElementById('header-title').textContent = title;
+    document.getElementById('header-sub').textContent = sub;
+    document.getElementById('header-action').innerHTML = s==='jugadores'
+      ? `<button class="btn btn-primary" onclick="openModal()">+ Añadir jugador</button>` : '';
+    render(s);
+  });
+});
+
+function render(s){
+  switch(s){
+    case 'dashboard': renderDashboard(); break;
+    case 'jugadores': renderJugadores(); break;
+    case 'partidos': renderPartidos(); break;
+    case 'estadisticas': renderEstadisticas(); break;
+    case 'alertas': renderAlertas(); break;
+  }
+}
+
+// DASHBOARD
+function renderDashboard(){
+  const total = jugadores.length;
+  const activos = jugadores.filter(j=>j.estado==='activo').length;
+  const lesionados = jugadores.filter(j=>j.estado==='lesionado').length;
+  const alertCount = alertasData.lesionados?.length || 0;
+
+  document.getElementById('stat-grid').innerHTML = `
+    <div class="stat-card c-blue"><div class="stat-label">Total Jugadores</div><div class="stat-value">${total}</div><div class="stat-sub">En el sistema</div></div>
+    <div class="stat-card c-green"><div class="stat-label">Activos</div><div class="stat-value">${activos}</div><div class="stat-sub">${Math.round(activos/total*100)}% del plantel</div></div>
+    <div class="stat-card c-red"><div class="stat-label">Lesionados</div><div class="stat-value">${lesionados}</div><div class="stat-sub">Fuera de juego</div></div>
+    <div class="stat-card c-amber"><div class="stat-label">Alertas activas</div><div class="stat-value">${alertCount}</div><div class="stat-sub">Requieren atención</div></div>
+  `;
+
+  const urgent = jugadores.filter(j=>j.dias_restantes<7).sort((a,b)=>a.dias_restantes-b.dias_restantes).slice(0,4);
+  const lesAlert = alertasData.lesionados || [];
+  let html = '';
+
+  if(lesAlert.length){
+    html += `<div style="font-size:12px;font-weight:600;color:var(--red);margin-bottom:8px">🏥 Jugadores lesionados con tiempo de juego limitado</div>`;
+    lesAlert.forEach(j=>{
+      html += `<div class="alert-item">
+        <div class="player-cell">${avatarEl(j.Nombre)}<div><div class="player-name">${j.Nombre}</div><div class="alert-meta">${j.Club_Actual}</div></div></div>
+        <span class="badge badge-red">${j.pct_minutos}% min.</span>
+      </div>`;
+    });
+  }
+  if(urgent.length){
+    html += `<div style="font-size:12px;font-weight:600;color:var(--amber);margin-bottom:8px;margin-top:${lesAlert.length?'16px':'0'}">⚡ Partidos inminentes (menos de 7 días)</div>`;
+    urgent.forEach(j=>{
+      html += `<div class="alert-item">
+        <div class="player-cell">${avatarEl(j.Nombre)}<div><div class="player-name">${j.Nombre}</div><div class="alert-meta">${j.Club_Actual} · ${j.fecha_proximo_partido}</div></div></div>
+        ${daysBadge(j.dias_restantes)}
+      </div>`;
+    });
+  }
+  if(!html) html = '<div class="empty">✅ Sin alertas urgentes ahora mismo</div>';
+  document.getElementById('dash-alerts').innerHTML = html;
+}
+
+// JUGADORES
+function renderJugadores(){
+  const q = (document.getElementById('search-j')?.value||'').toLowerCase();
+  const fe = document.getElementById('filter-estado')?.value||'';
+  const fp = document.getElementById('filter-pos')?.value||'';
+  const f = jugadores.filter(j=>{
+    const ok1 = !q || j.Nombre.toLowerCase().includes(q) || j.Club_Actual.toLowerCase().includes(q);
+    const ok2 = !fe || j.estado===fe;
+    const ok3 = !fp || j.Posicion_Campo===fp;
+    return ok1&&ok2&&ok3;
+  });
+
+  let html = `<table><thead><tr>
+    <th>#</th><th>Jugador</th><th>Club</th><th>Posición</th><th>Estado</th>
+    <th>Próx. partido</th><th>⚽ Goles</th><th>🎯 Asist.</th><th></th>
+  </tr></thead><tbody>`;
+
+  if(!f.length){
+    html += `<tr><td colspan="9"><div class="empty">Sin resultados para la búsqueda</div></td></tr>`;
+  } else {
+    f.forEach((j,i)=>{
+      html += `<tr>
+        <td style="color:var(--text-muted);font-size:12px">${i+1}</td>
+        <td><div class="player-cell">${avatarEl(j.Nombre)}<div>
+          <div class="player-name">${j.Nombre}</div>
+          <div class="player-id">${j.id_jugador} · ${j.Nacionalidad}</div>
+        </div></div></td>
+        <td style="color:var(--text-muted)">${j.Club_Actual}</td>
+        <td>${posBadge(j.Posicion_Campo)}</td>
+        <td>${statusBadge(j.estado)}</td>
+        <td>${daysBadge(j.dias_restantes)}</td>
+        <td style="font-weight:600;color:var(--green)">${j.goles_temporada}</td>
+        <td style="color:var(--blue)">${j.asistencias_temporada}</td>
+        <td><button class="btn-icon" onclick="openEditModal('${j.id_jugador}')" title="Editar">✏️</button></td>
+      </tr>`;
+    });
+  }
+  html += '</tbody></table>';
+  document.getElementById('tbl-jugadores').innerHTML = html;
+  document.getElementById('search-j').oninput = renderJugadores;
+  document.getElementById('filter-estado').onchange = renderJugadores;
+  document.getElementById('filter-pos').onchange = renderJugadores;
+}
+
+// PARTIDOS
+function renderPartidos(){
+  const sorted = [...jugadores].sort((a,b)=>a.dias_restantes-b.dias_restantes);
+  let html = `<table><thead><tr>
+    <th>Jugador</th><th>Club</th><th>Estado</th><th>Último partido</th><th>Próximo partido</th><th>Días restantes</th>
+  </tr></thead><tbody>`;
+  sorted.forEach(j=>{
+    html += `<tr>
+      <td><div class="player-cell">${avatarEl(j.Nombre)}<div class="player-name">${j.Nombre}</div></div></td>
+      <td style="color:var(--text-muted)">${j.Club_Actual}</td>
+      <td>${statusBadge(j.estado)}</td>
+      <td style="color:var(--text-muted);font-size:12px">${j.fecha_ultimo_partido}</td>
+      <td style="font-size:13px">${j.fecha_proximo_partido}</td>
+      <td>${daysBadge(j.dias_restantes)}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  document.getElementById('tbl-partidos').innerHTML = html;
+}
+
+// ESTADÍSTICAS
+function renderEstadisticas(){
+  const sorted = [...jugadores].sort((a,b)=>(parseInt(b.goles_temporada)+parseInt(b.asistencias_temporada))-(parseInt(a.goles_temporada)+parseInt(a.asistencias_temporada)));
+  const medals = ['🥇','🥈','🥉'];
+  let html = `<table><thead><tr>
+    <th>Rank</th><th>Jugador</th><th>Goles</th><th>Asist.</th><th>G+A</th><th>Minutos jugados</th><th>Salario (M€)</th><th>Valor (M€)</th>
+  </tr></thead><tbody>`;
+  sorted.forEach((j,i)=>{
+    const ga = parseInt(j.goles_temporada)+parseInt(j.asistencias_temporada);
+    const pct = Math.min(parseFloat(j.pct_minutos)||0, 100);
+    const barColor = pct>70?'var(--green)':pct>40?'var(--amber)':'var(--red)';
+    html += `<tr>
+      <td><span style="font-weight:600;color:${i<3?'var(--amber)':'var(--text-muted)'}">${i<3?medals[i]:`#${i+1}`}</span></td>
+      <td><div class="player-cell">${avatarEl(j.Nombre)}<div>
+        <div class="player-name">${j.Nombre}</div>
+        <div class="player-id">${j.Club_Actual}</div>
+      </div></div></td>
+      <td style="font-weight:700;color:var(--green)">${j.goles_temporada}</td>
+      <td style="color:var(--blue)">${j.asistencias_temporada}</td>
+      <td style="font-weight:700">${ga}</td>
+      <td>
+        <div style="font-size:13px">${j.minutos_jugados}'</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${pct}%;background:${barColor}"></div></div>
+      </td>
+      <td style="color:var(--text-muted)">${j.salario_anual_millones}M</td>
+      <td style="font-weight:500">${j.valor_mercado_millones}M</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  document.getElementById('tbl-estadisticas').innerHTML = html;
+}
+
+// ALERTAS
+function renderAlertas(){
+  const { proximo_partido=[], lesionados=[], salario=[] } = alertasData;
+  const urgentes = proximo_partido.filter(j=>j.dias_restantes<7);
+
+  const section = (icon, color, title, badge, items, emptyMsg, renderItem) => {
+    let h = `<div class="card"><div class="card-title" style="color:${color}">${icon} ${title} <span class="badge" style="background:${color}20;color:${color}">${badge}</span></div>`;
+    if(!items.length){ h += `<div class="empty">${emptyMsg}</div>`; }
+    else items.forEach(j=>{ h += renderItem(j); });
+    return h + '</div>';
+  };
+
+  let html = section('🏥','var(--red)','Lesionados con tiempo de juego limitado', lesionados.length, lesionados, '✅ Sin alertas de lesión', j=>`
+    <div class="alert-item">
+      <div class="player-cell">${avatarEl(j.Nombre)}<div>
+        <div class="player-name">${j.Nombre}</div>
+        <div class="alert-meta">${j.Club_Actual} · ${j.Posicion_Campo}</div>
+      </div></div>
+      <div style="text-align:right">
+        <div style="color:var(--red);font-weight:600">${j.pct_minutos}% de minutos</div>
+        <div class="alert-meta">Estado: lesionado</div>
+      </div>
+    </div>`);
+
+  html += section('⚡','var(--amber)','Partidos en los próximos 7 días', urgentes.length, urgentes, '✅ Sin partidos urgentes', j=>`
+    <div class="alert-item">
+      <div class="player-cell">${avatarEl(j.Nombre)}<div>
+        <div class="player-name">${j.Nombre}</div>
+        <div class="alert-meta">${j.Club_Actual} · ${j.fecha_proximo_partido}</div>
+      </div></div>
+      ${daysBadge(j.dias_restantes)}
+    </div>`);
+
+  const top10 = salario.slice(0,10);
+  html += section('💰','var(--orange)','Salario > 10% del presupuesto del club', salario.length, top10, '✅ Sin alertas salariales', j=>`
+    <div class="alert-item">
+      <div class="player-cell">${avatarEl(j.Nombre)}<div>
+        <div class="player-name">${j.Nombre}</div>
+        <div class="alert-meta">${j.Club_Actual} · ${j.salario_anual_millones}M€/año</div>
+      </div></div>
+      <div style="text-align:right">
+        <div style="color:var(--orange);font-weight:600">${j.pct_salario}% del club</div>
+        <div class="alert-meta">Total club: ${j.total_club}M€</div>
+      </div>
+    </div>`);
+  if(salario.length>10) html += `<div style="text-align:center;padding:8px;color:var(--text-muted);font-size:12px">... y ${salario.length-10} más</div>`;
+
+  document.getElementById('alertas-content').innerHTML = html;
+}
+
+// MODAL
+function openModal(){
+  editingId = null;
+  document.getElementById('modal-title').textContent = 'Añadir jugador';
+  document.getElementById('player-form').reset();
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function openEditModal(id){
+  const j = jugadores.find(p=>p.id_jugador===id);
+  if(!j) return;
+  editingId = id;
+  document.getElementById('modal-title').textContent = `Editar: ${j.Nombre}`;
+  const form = document.getElementById('player-form');
+  Object.entries(j).forEach(([k,v])=>{ const el=form.querySelector(`[name="${k}"]`); if(el) el.value=v; });
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function closeModal(){
+  document.getElementById('modal-overlay').classList.remove('open');
+  editingId = null;
+}
+
+document.getElementById('modal-overlay').addEventListener('click', e=>{ if(e.target===e.currentTarget) closeModal(); });
+
+async function submitForm(){
+  const form = document.getElementById('player-form');
+  const data = Object.fromEntries(new FormData(form).entries());
+  const url = editingId ? `/api/jugadores/${editingId}` : '/api/jugadores';
+  const method = editingId ? 'PUT' : 'POST';
+  const res = await fetch(url,{ method, headers:{'Content-Type':'application/json'}, body:JSON.stringify(data) });
+  if(res.ok){
+    closeModal();
+    await loadData();
+    render(document.querySelector('.nav-link.active').dataset.section);
+    showToast(editingId ? '✅ Jugador actualizado correctamente' : '✅ Jugador añadido al plantel');
+  } else {
+    showToast('❌ Error al guardar los datos');
+  }
+}
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3000);
+}
+
+// INIT
+loadData().then(()=>renderDashboard());
+</script>
+</body>
+</html>
