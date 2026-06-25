@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.db
+.git/
+.gitignore
+.venv/
+venv/
+.env
+*.md
+sephora_app.py
+main.py
+initial_info.py

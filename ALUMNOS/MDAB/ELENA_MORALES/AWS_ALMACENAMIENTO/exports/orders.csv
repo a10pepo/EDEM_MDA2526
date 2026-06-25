@@ -1,0 +1,4 @@
+orderId,productCode,orderDate,shipDate,unitsSold,channel,store
+ORD-2026-001,SEP-001,2026-05-01 10:30:00.000000,2026-05-03 09:00:00.000000,30,Online,Sephora Gran Vía Madrid
+ORD-2026-002,SEP-005,2026-05-10 16:15:00.000000,2026-05-12 11:00:00.000000,95,Tienda física,Sephora Barcelona Paseo de Gracia
+ORD-2026-003,SEP-002,2026-05-20 12:00:00.000000,2026-05-21 10:00:00.000000,12,Online,Sephora Valencia Colón

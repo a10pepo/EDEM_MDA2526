@@ -1,0 +1,6 @@
+productCode,name,brand,category,manufactureDate,expiryDate,maxStock,supplierId,supplierName,shelfId,price
+SEP-001,Soft Pinch Liquid Blush,Rare Beauty,Colorete,2025-01-10,2026-07-15,200,S-12345,Rare Beauty Inc.,A-01,23.0
+SEP-002,Pro Filt'r Soft Matte Foundation,Fenty Beauty,Base de maquillaje,2025-03-01,2027-03-01,150,S-23456,Fenty Beauty LLC,A-02,39.0
+SEP-003,Matte Revolution Lipstick (Pillow Talk),Charlotte Tilbury,Labial,2024-11-20,2026-08-20,120,S-34567,Charlotte Tilbury Beauty Ltd.,B-01,35.0
+SEP-004,Eyeshadow Palette Nude,Sephora Collection,Sombra de ojos,2025-06-01,2028-06-01,300,S-45678,Sephora Collection,B-02,28.0
+SEP-005,Radiant Creamy Concealer,NARS,Corrector,2025-02-15,2027-02-15,100,S-56789,NARS Cosmetics,A-03,31.0
