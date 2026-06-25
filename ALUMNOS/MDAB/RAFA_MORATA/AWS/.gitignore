@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pyiceberg.yaml
+*.log
+
+# Claves y artefactos de despliegue (NUNCA subir)
+*.pem
+aviation-key.pem
+trust.json

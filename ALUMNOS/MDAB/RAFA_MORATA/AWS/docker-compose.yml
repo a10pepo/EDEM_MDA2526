@@ -1,0 +1,41 @@
+# ==========================================================================
+# Entorno LOCAL para probar el paso transaccional sin gastar en AWS.
+# Levanta un PostgreSQL local y ejecuta la carga contra él.
+#
+#   docker compose up --build         # crea modelo y carga datos en PG local
+#   docker compose run --rm app redshift    # (necesita .env con RS_* de AWS)
+#   docker compose run --rm app lakehouse   # (necesita .env con S3/Glue de AWS)
+#
+# Para apuntar a RDS/Redshift reales basta con poner sus valores en .env
+# y NO usar el servicio 'postgres' local.
+# ==========================================================================
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: aviation
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    env_file: .env
+    environment:
+      # Dentro de la red de compose el host de PG es el nombre del servicio
+      PG_HOST: postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["postgres"]
+
+volumes:
+  pgdata:
