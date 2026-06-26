@@ -1,0 +1,59 @@
+services:
+
+  dynamodb:
+    image: amazon/dynamodb-local:latest
+    ports:
+      - "4566:8000"
+    command: ["-jar", "DynamoDBLocal.jar", "-sharedDb", "-inMemory"]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:8000/ > /dev/null 2>&1 || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+  app:
+    build: .
+    environment: &common-env
+      USE_LOCAL_DYNAMODB: "true"
+      DYNAMODB_ENDPOINT: "http://dynamodb:8000"
+      AWS_REGION: us-east-1
+      AWS_ACCESS_KEY_ID: local
+      AWS_SECRET_ACCESS_KEY: local
+      PRODUCTS_TABLE: zara_products
+      TICKETS_TABLE: zara_tickets
+      CUSTOMERS_TABLE: zara_customers
+    depends_on:
+      dynamodb:
+        condition: service_healthy
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+
+  api:
+    build: .
+    entrypoint: []
+    command: sh -c "python aws/setup_tables.py && python api.py"
+    ports:
+      - "8000:8000"
+    environment: *common-env
+    depends_on:
+      dynamodb:
+        condition: service_healthy
+    volumes:
+      - .:/app
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+      - VITE_API_TARGET=http://api:8000
+    depends_on:
+      - api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules

@@ -1,0 +1,144 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Zara Store Management System — Sprint 1
+  Deploys DynamoDB tables + EC2 instance with IAM role.
+
+Parameters:
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: EC2 key pair for SSH access
+  AllowedSSHCidr:
+    Type: String
+    Default: "0.0.0.0/0"
+    Description: CIDR block allowed SSH access (restrict in production)
+  InstanceType:
+    Type: String
+    Default: t3.micro
+    AllowedValues: [t3.micro, t3.small, t3.medium]
+
+Resources:
+
+  # ── DynamoDB Tables ──────────────────────────────────────────────
+
+  ProductsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: zara_products
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: sku
+          AttributeType: S
+      KeySchema:
+        - AttributeName: sku
+          KeyType: HASH
+
+  TicketsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: zara_tickets
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: ticket_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: ticket_id
+          KeyType: HASH
+
+  CustomersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: zara_customers
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: customer_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: customer_id
+          KeyType: HASH
+
+  # ── IAM Role for EC2 ─────────────────────────────────────────────
+
+  EC2Role:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: ZaraManagementEC2Role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: DynamoDBAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem
+                  - dynamodb:UpdateItem
+                  - dynamodb:DeleteItem
+                  - dynamodb:Scan
+                  - dynamodb:Query
+                  - dynamodb:CreateTable
+                  - dynamodb:DescribeTable
+                Resource:
+                  - !GetAtt ProductsTable.Arn
+                  - !GetAtt TicketsTable.Arn
+                  - !GetAtt CustomersTable.Arn
+
+  EC2InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles: [!Ref EC2Role]
+
+  # ── Security Group ───────────────────────────────────────────────
+
+  SSHSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH access
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref AllowedSSHCidr
+
+  # ── EC2 Instance ─────────────────────────────────────────────────
+
+  ZaraManagementInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      KeyName: !Ref KeyName
+      IamInstanceProfile: !Ref EC2InstanceProfile
+      SecurityGroups: [!Ref SSHSecurityGroup]
+      ImageId: ami-0c101f26f147fa7fd  # Amazon Linux 2023 (us-east-1)
+      UserData:
+        Fn::Base64: |
+          #!/bin/bash
+          yum update -y
+          yum install -y python3 python3-pip git
+          pip3 install --upgrade pip
+          cd /home/ec2-user
+          git clone https://github.com/YOUR_REPO/zara-management.git app
+          cd app
+          pip3 install -r requirements.txt
+          echo "export AWS_REGION=us-east-1" >> /home/ec2-user/.bashrc
+          echo "Setup complete. Run: python3 main.py --help" > /home/ec2-user/READY.txt
+      Tags:
+        - Key: Name
+          Value: ZaraManagement-Sprint1
+
+Outputs:
+  InstancePublicIP:
+    Description: Public IP address of the EC2 instance
+    Value: !GetAtt ZaraManagementInstance.PublicIp
+  ProductsTableName:
+    Value: !Ref ProductsTable
+  TicketsTableName:
+    Value: !Ref TicketsTable
+  CustomersTableName:
+    Value: !Ref CustomersTable
