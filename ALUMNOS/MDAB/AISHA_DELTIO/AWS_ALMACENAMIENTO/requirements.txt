@@ -1,0 +1,5 @@
+garminconnect>=0.1.8
+boto3>=1.28.0
+python-dotenv>=1.0.0
+pyarrow>=12.0.0
+matplotlib>=3.7.0
