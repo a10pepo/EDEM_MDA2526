@@ -422,7 +422,7 @@ Entregas Grupo MIA
 </tr>
 </table>
 
-Last Checked: 2026-07-13 09:38:43
+Last Checked: 2026-07-13 09:57:53
 
 
 Entregas Grupo MDA A
@@ -741,7 +741,7 @@ Entregas Grupo MDA A
 </tr>
 </table>
 
-Last Checked: 2026-07-13 09:38:43
+Last Checked: 2026-07-13 09:57:53
 
 Entregas Grupo MDA B
 <table>
@@ -1111,7 +1111,7 @@ Entregas Grupo MDA B
 </tr>
 <tr>
 <td><a href='https://github.com/a10pepo/EDEM_MDA2526/tree/main/ALUMNOS/MDAB/RAFA_MORATA'>RAFA_MORATA</a></td>
-<td>❌</td>
+<td>✅</td>
 <td>❌</td>
 <td>✅</td>
 <td>❌</td>
@@ -1241,5 +1241,5 @@ Entregas Grupo MDA B
 </tr>
 </table>
 
-Last Checked: 2026-07-13 09:38:43
+Last Checked: 2026-07-13 09:57:53
 
