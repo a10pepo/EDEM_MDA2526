@@ -1,0 +1,58 @@
+services:
+
+  db:
+    image: postgres:15
+    container_name: almacen_db
+    environment:
+      POSTGRES_DB:       almacen_db
+      POSTGRES_USER:     almacen_user
+      POSTGRES_PASSWORD: almacen_pass
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - almacen_pgdata:/var/lib/postgresql/data
+    networks:
+      - almacen_net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U almacen_user -d almacen_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  generator:
+    build: ./generator
+    container_name: almacen_generator
+    environment:
+      DB_HOST: db
+      DB_NAME: almacen_db
+      DB_USER: almacen_user
+      DB_PASS: almacen_pass
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - almacen_net
+    restart: on-failure
+
+  api:
+    build: ./api
+    container_name: almacen_api
+    environment:
+      DB_HOST: db
+      DB_NAME: almacen_db
+      DB_USER: almacen_user
+      DB_PASS: almacen_pass
+    ports:
+      - "5000:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - almacen_net
+    restart: on-failure
+
+networks:
+  almacen_net:
+    driver: bridge
+
+volumes:
+  almacen_pgdata:

@@ -1,0 +1,21 @@
+# Variante que apunta a Aurora RDS en AWS en vez de al postgres local.
+# Requisito: tener el fichero .env rellenado con el endpoint de Aurora.
+#
+# Uso:
+#   docker compose -f docker-compose.aws.yml up --build
+
+services:
+
+  generator:
+    build: ./generator
+    container_name: almacen_generator_aws
+    env_file: .env
+    restart: on-failure
+
+  api:
+    build: ./api
+    container_name: almacen_api_aws
+    env_file: .env
+    ports:
+      - "5000:5000"
+    restart: on-failure
