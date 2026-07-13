@@ -1,0 +1,35 @@
+# =============================================================================
+# Seguridad — NUNCA subir secretos, claves ni estado de Terraform
+# =============================================================================
+
+# Claves privadas SSH / EC2 key pairs
+id_rsa*
+*.pem
+*.key
+*.ppk
+id_ed25519*
+*USERPROFILE*
+
+# Credenciales AWS / variables de entorno
+.env
+.env.*
+credentials
+aws_credentials
+
+# Terraform — estado y variables (pueden contener secretos)
+*.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+
+# Artefactos de build/despliegue
+*.tar
+backend.tar
+frontend.tar
+simulator.tar
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

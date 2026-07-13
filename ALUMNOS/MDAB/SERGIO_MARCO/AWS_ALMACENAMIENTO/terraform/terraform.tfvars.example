@@ -1,0 +1,4 @@
+db_username   = "fleetadmin"
+db_password   = "ChangeMe123!"
+db_name       = "fleetdb"
+key_pair_name = "my-aws-key"

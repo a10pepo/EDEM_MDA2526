@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: delivery-fleet-backend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DB_HOST
+              value: "REPLACE_DB_HOST"
+            - name: DB_PORT
+              value: "REPLACE_DB_PORT"
+            - name: DB_NAME
+              value: "REPLACE_DB_NAME"
+            - name: DB_USER
+              value: "REPLACE_DB_USER"
+            - name: DB_PASSWORD
+              value: "REPLACE_DB_PASSWORD"
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 10
