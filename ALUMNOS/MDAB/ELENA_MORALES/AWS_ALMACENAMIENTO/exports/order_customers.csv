@@ -1,0 +1,11 @@
+orderId,customerId,status
+ORD-2026-001,C-1001,Confirmed
+ORD-2026-001,C-1002,Confirmed
+ORD-2026-001,C-1003,Cancelled
+ORD-2026-001,C-1004,Confirmed
+ORD-2026-002,C-1005,Confirmed
+ORD-2026-002,C-1006,Returned
+ORD-2026-002,C-1007,Confirmed
+ORD-2026-003,C-1008,Confirmed
+ORD-2026-003,C-1009,Confirmed
+ORD-2026-003,C-1010,Cancelled

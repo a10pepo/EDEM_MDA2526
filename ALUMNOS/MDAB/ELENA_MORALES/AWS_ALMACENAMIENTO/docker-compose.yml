@@ -1,0 +1,38 @@
+# Levanta la API + una base de datos Postgres local (que simula AWS RDS).
+#   docker compose up --build
+#
+# La API se conecta a la BD mediante la variable DATABASE_URL.
+# Para usar AWS RDS de verdad, basta con cambiar DATABASE_URL por el endpoint de RDS.
+services:
+  db:
+    image: postgres:16
+    container_name: sephora-db
+    environment:
+      POSTGRES_USER: sephora
+      POSTGRES_PASSWORD: sephora_pass
+      POSTGRES_DB: sephora
+    ports:
+      - "5433:5432"          # 5433 en el host para no chocar con un Postgres local
+    volumes:
+      - sephora_pgdata:/var/lib/postgresql/data   # los datos persisten en este volumen
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sephora"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  sephora-api:
+    build: .
+    image: sephora-api:latest
+    container_name: sephora-api
+    ports:
+      - "8001:8000"          # 8001 en el host (el 8000 ya está ocupado por otro contenedor)
+    environment:
+      DATABASE_URL: postgresql+psycopg://sephora:sephora_pass@db:5432/sephora
+    depends_on:
+      db:
+        condition: service_healthy   # espera a que la BD esté lista
+    restart: unless-stopped
+
+volumes:
+  sephora_pgdata:
