@@ -1,0 +1,11 @@
+race_id,name,circuit,date,laps,total_distance_km
+R-001,Gran Premio de Bahrein,Sakhir,2025-03-02,57,308
+R-002,Gran Premio de Arabia Saudi,Jeddah,2025-03-09,50,308
+R-003,Gran Premio de Australia,Melbourne,2025-03-23,58,307
+R-004,Gran Premio de Japon,Suzuka,2025-06-06,53,307
+R-005,Gran Premio de China,Shanghai,2025-04-20,56,305
+R-006,Gran Premio de Miami,Miami,2025-05-04,57,308
+R-007,Gran Premio de Monaco,Monaco,2025-05-25,78,260
+R-008,Gran Premio de Canada,Montreal,2025-06-15,70,305
+R-009,Gran Premio de Espana,Barcelona,2025-06-29,66,307
+R-010,Gran Premio de Gran Bretana,Silverstone,2025-07-06,52,306

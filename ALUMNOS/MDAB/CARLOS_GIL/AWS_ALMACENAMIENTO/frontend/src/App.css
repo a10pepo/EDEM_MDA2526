@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+}
+
+.app { min-height: 100vh; }
+
+.header {
+  background: #e10600;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header h1 { color: white; font-size: 24px; letter-spacing: 2px; }
+
+nav { display: flex; gap: 8px; }
+
+nav button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+nav button:hover, nav button.active {
+  background: white;
+  color: #e10600;
+  font-weight: bold;
+}
+
+.main { padding: 32px; }
+
+h2 { margin-bottom: 16px; color: #e10600; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  background: #16213e;
+}
+
+th { background: #e10600; color: white; padding: 10px 14px; text-align: left; }
+td { padding: 10px 14px; border-bottom: 1px solid #333; }
+tr:hover td { background: #0f3460; }
+
+.badge {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge.activo { background: #28a745; color: white; }
+.badge.retirado { background: #6c757d; color: white; }
+.badge.finished { background: #28a745; color: white; }
+.badge.dnf { background: #e10600; color: white; }
+.badge.dns { background: #ffc107; color: black; }
+
+form {
+  background: #16213e;
+  padding: 24px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+form h3 { grid-column: 1 / -1; color: #e10600; margin-bottom: 4px; }
+
+input, select {
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #1a1a2e;
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder { color: #888; }
+
+form button {
+  grid-column: 1 / -1;
+  background: #e10600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+form button:hover { background: #c00500; }
+
+.alert-card {
+  background: #16213e;
+  border-left: 4px solid #e10600;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.alert-card span { font-weight: bold; color: #e10600; }
+
+.success { color: #28a745; margin-top: 8px; }
+.error-msg { color: #e10600; margin-top: 8px; }
+.loading { color: #888; padding: 16px; }
