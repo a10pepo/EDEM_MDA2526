@@ -1,0 +1,90 @@
+
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: valenbisi_db
+    environment:
+      # Mapeo: VariableExigidaPorImagen: ${VARIABLE_DE_TU_ENV}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      # Aquí usamos las variables para comprobar la salud de la DB correcta
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  collector:
+    build: .
+    container_name: valenbisi_collector
+    depends_on:
+      db:
+        condition: service_healthy
+    # Aquí pasamos las variables directamente.
+    # Python buscará DB_USER, y eso es exactamente lo que hay en el .env
+    env_file:
+      - .env
+    restart: always
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.8.2
+    container_name: valenbisi_dbt
+    # Forzamos el shell para que no se cierre con sleep infinity
+    entrypoint: /bin/sh
+    command: -c "sleep infinity"
+    environment:
+      # Le decimos a DBT exactamente dónde buscar el profiles.yml
+      DBT_PROFILES_DIR: /usr/app/dbt
+      DB_HOST: db
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+      DB_NAME: ${DB_NAME}
+    volumes:
+      # Mapeamos la carpeta local (izquierda) a la del contenedor (derecha)
+      - ./valenbisi_dbt:/usr/app/dbt
+    working_dir: /usr/app/dbt
+    depends_on:
+      db:
+        condition: service_started
+  grafana:
+    image: grafana/grafana:latest
+    container_name: valenbisi_grafana
+    ports:
+      - "3000:3000"  # Puerto estándar de Grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      db:
+        condition: service_started
+    restart: always
+  mongo:
+    image: mongo:latest
+    container_name: valenbisi_mongo
+    ports:
+      - "27018:27017" #El puerto local lo apuntamos al 27018 porque estaba ocupado (mongo instalado en local seguramente)
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: valenbisi_mongo_express
+    ports:
+      - "8082:8081" # lo mismo que con mongo, al tenerlo instalado pasa esto (quiere leer en un puerto que ya está ocupado)
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_BASICAUTH_USERNAME=admin
+      - ME_CONFIG_BASICAUTH_PASSWORD=admin
+    depends_on:
+      - mongo
+    restart: always
+volumes:
+  postgres_data:
+  grafana_data:
+  mongo_data:
