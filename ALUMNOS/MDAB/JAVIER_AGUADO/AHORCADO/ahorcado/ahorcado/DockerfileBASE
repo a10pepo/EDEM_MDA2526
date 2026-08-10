@@ -1,0 +1,11 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY ahorcado_base.py .
+COPY palabras.txt .
+
+ENTRYPOINT ["python", "ahorcado_base.py"]
+
+# Para ejecutarlo, usar:
+# docker run ahorcado palabras.txt
