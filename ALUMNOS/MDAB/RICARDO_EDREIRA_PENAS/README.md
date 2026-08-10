@@ -10,10 +10,10 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/ricardoedreira">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <a href="mailto:1ricardox@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contactame-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
   </a>
 </p>
 
@@ -37,7 +37,7 @@ Mi objetivo es modernizar procesos combinando la organización lógica de la inf
 
 **🔥 Máster en Big Data y Cloud Computing | EDEM Escuela de Empresarios**
 *Adquiriendo conocimientos avanzados en:*
-* Arquitecturas Cloud (AWS/Azure).
+* Arquitecturas Cloud (AWS/Azure/GCP).
 * Ingeniería de Datos y Pipelines.
 * Procesamiento masivo de datos.
 
@@ -49,7 +49,7 @@ Mi objetivo es modernizar procesos combinando la organización lógica de la inf
 
 **¿En qué estoy trabajando y aprendiendo?**
 
-* ☁️ **Cloud & Big Data (El foco principal):** Profundizando en el ecosistema del Máster de EDEM.
+* ☁️ **Cloud & Big Data:** Profundizando en el ecosistema del Máster de EDEM.
 * 🤖 **Transformación Digital & IA:** Integración de IA para optimizar flujos de trabajo.
 * 🗄️ **Gestión Documental 2.0:** Digitalización y organización administrativa eficiente.
 * 💻 **Desarrollo & SQL:** Estructuración de datos para la toma de decisiones.
@@ -60,13 +60,15 @@ Mi objetivo es modernizar procesos combinando la organización lógica de la inf
 
 ### <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2000&pause=1000&color=3498DB&lines=🛠️+Tech+Stack" alt="Tech Stack" height="30px"/>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/EDEM-Big%20Data%20%26%20Cloud-ff69b4?style=flat-square&logo=google-cloud&logoColor=white" alt="EDEM Master" />
-  <img src="https://img.shields.io/badge/Digital-Transformación%20Digital-7928CA" alt="Transformación Digital" />
-  <img src="https://img.shields.io/badge/Data-SQL-blue" alt="SQL" />
-  <img src="https://img.shields.io/badge/Code-Git%20%26%20GitHub-black" alt="Git" />
-  <img src="https://img.shields.io/badge/Tools-VS%20Code-007ACC" alt="VS Code" />
-  <img src="https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif" width="30px" height="20px" alt="AI gif"/> <img src="https://img.shields.io/badge/Automation-AI%20Enthusiast-purple" alt="AI" />
+<p align="center">
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </p>
 
 <div align="center">
@@ -80,5 +82,5 @@ Cuando no estoy estudiando para el Máster, explorando nuevas herramientas de IA
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RicardoEdreiraPenas&show_icons=true&theme=radical&animation=true" alt="Estadísticas de GitHub Animadas" />
+  <img src="https://github-readme-stats.vercel.app/api?username=RicardoEdreiraPenas&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
 </p>
