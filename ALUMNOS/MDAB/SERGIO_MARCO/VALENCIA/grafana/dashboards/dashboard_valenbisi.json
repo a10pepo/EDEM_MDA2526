@@ -1,0 +1,82 @@
+{
+  "editable": true,
+  "panels": [
+    {
+      "title": "Disponibilidad Geográfica (Valencia)",
+      "type": "geomap",
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 0 },
+      "datasource": { "type": "postgres", "uid": "PostgreSQL" },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT station_name, CAST(latitude AS double precision) as lat, CAST(longitude AS double precision) as lon, avg_bikes_available as value FROM fct_valenbisi_hourly WHERE date_hour = (SELECT MAX(date_hour) FROM fct_valenbisi_hourly) AND latitude IS NOT NULL",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "view": { "id": "coords", "lat": 39.4697, "lon": -0.3773, "zoom": 13 },
+        "layers": [
+          {
+            "type": "markers",
+            "name": "Estaciones",
+            "config": {
+              "style": {
+                "color": { "field": "value", "fixed": "green" },
+                "size": { "fixed": 15 },
+                "symbol": { "fixed": "circle" }
+              }
+            },
+            "location": { "mode": "coords", "lat": "lat", "lon": "lon" }
+          }
+        ],
+        "basemap": { "type": "default", "name": "OpenStreetMap", "config": { "style": "dark" } }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red", "value": null },
+              { "color": "yellow", "value": 4 },
+              { "color": "green", "value": 10 }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "title": "Ranking: Estaciones con más Bicicletas",
+      "type": "barchart",
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 12 },
+      "datasource": { "type": "postgres", "uid": "PostgreSQL" },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT station_name, avg_bikes_available FROM fct_valenbisi_hourly WHERE date_hour = (SELECT MAX(date_hour) FROM fct_valenbisi_hourly) ORDER BY avg_bikes_available DESC",
+          "refId": "B"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "min": 0,
+          "color": { "mode": "palette-classic" },
+          "custom": { "fillOpacity": 90, "lineWidth": 1 }
+        }
+      },
+      "options": {
+        "xField": "station_name",
+        "orientation": "auto",
+        "showValue": "always",
+        "xTickLabelRotation": -45
+      }
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 42,
+  "timezone": "utc",
+  "title": "Valencia Valenbisi Real-Time",
+  "uid": "valenbisi_pro_final",
+  "version": 1,
+  "time": { "from": "now-1h", "to": "now+2h" }
+}

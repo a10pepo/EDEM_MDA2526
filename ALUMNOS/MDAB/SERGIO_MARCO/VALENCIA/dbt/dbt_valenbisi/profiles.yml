@@ -1,0 +1,12 @@
+dbt_valenbisi:
+  outputs:
+    dev:
+      dbname: valenbisi_db
+      host: db
+      pass: postgres
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
