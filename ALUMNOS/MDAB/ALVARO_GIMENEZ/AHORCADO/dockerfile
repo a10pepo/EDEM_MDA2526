@@ -1,0 +1,6 @@
+FROM python:3.11-slim
+WORKDIR /app 
+COPY . .
+#Instalamos la librería que nos permitirá desde python conectarnos a postgre y meter los resultados
+RUN pip install -r requirements.txt
+CMD ["python",  "ahoracado.py"]

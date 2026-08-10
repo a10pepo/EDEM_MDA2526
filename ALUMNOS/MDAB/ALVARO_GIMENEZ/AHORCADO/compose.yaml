@@ -1,0 +1,40 @@
+services:
+  app:
+    image: python:3.14-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+
+    #Configuramos las variables de entorno para que el contenedor de python pueda enchufarse a postgre
+    environment:
+      POSTGRES_HOST: base_datos
+      POSTGRES_DB: ahorcado_db
+      POSTGRES_USER: alvarogc
+      POSTGRES_PASSWORD: hola123
+
+    command: > 
+     sh -c "pip install -r requirements.txt && python ahoracado.py" 
+
+   # Esperamos a que la base de datos este arrancada y OK antes de iniciar el código de python
+    depends_on:
+      - base_datos
+
+  base_datos: 
+    image: postgres:15-alpine
+
+    #Creamos la base de datos, el usuario y contraseña 
+    environment:
+      POSTGRES_USER: alvarogc
+      POSTGRES_PASSWORD: hola123
+      POSTGRES_DB: ahorcado_db
+
+    #Exponemos el puerto para acceder desde fuera del contenedor a la base de datos
+    ports:
+      - "5432:5432"
+  
+    #Aseguramos la persistencia de los datos, si no lo hacemos en cada ejecución empezamos de 0 con la base vacía
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
