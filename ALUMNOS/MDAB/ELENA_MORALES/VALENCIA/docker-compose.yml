@@ -1,0 +1,67 @@
+services:
+  # 1. Base de datos
+  postgres:
+    image: postgres:15
+    container_name: valenbisi-postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: valenbisi_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d valenbisi_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 2. Collector Python
+  collector:
+    build: .
+    container_name: valenbisi-collector
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - collector_data:/app/data
+    environment:
+      DB_HOST: postgres
+      DB_NAME: valenbisi_db
+      DB_USER: user
+      DB_PASSWORD: password
+    command: python -u valenbisi.py
+
+  # 3. DBT (Transformación)
+  dbt:
+    build: ./dbt_valenbisi
+    container_name: valenbisi-dbt
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: valenbisi_db
+
+  # 4. GRAFANA (Visualización) 
+  grafana:
+    image: grafana/grafana:latest
+    container_name: valenbisi-grafana
+    ports:
+      - "3000:3000"  
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - grafana_data:/var/lib/grafana 
+
+volumes:
+  postgres_data:
+  grafana_data:
+  collector_data: 

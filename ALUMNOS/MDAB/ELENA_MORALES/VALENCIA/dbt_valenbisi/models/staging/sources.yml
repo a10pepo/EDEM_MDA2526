@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: valenbisi_source   # Nombre lógico de la fuente
+    database: valenbisi_db   # Nombre de la base de datos PostgreSQL
+    schema: public           # Esquema donde están las tablas
+    tables:
+      - name: valenbisi_raw  # Nombre de la tabla en la base de datos
+        description: "Tabla que contiene los datos crudos extraídos de la API de Valenbisi"
