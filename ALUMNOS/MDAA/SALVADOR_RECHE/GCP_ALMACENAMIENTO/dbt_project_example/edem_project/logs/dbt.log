@@ -1,0 +1,529 @@
+[0m18:12:24.518906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265A115490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265D14C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265D14DA00>]}
+
+
+============================== 18:12:24.518906 | d4f345ad-6ab4-46a1-bd62-125b76d8501f ==============================
+[0m18:12:24.518906 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:12:24.518906 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select expanded_delivery_events', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\SALVA\\GIT\\EDEM_MDA2526\\ALUMNOS\\MDAA\\SALVADOR_RECHE\\GCP_ALMACENAMIENTO\\dbt_project_example\\edem_project\\logs'}
+[0m18:12:42.191063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022602B15A60>]}
+[0m18:12:42.317961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265F07C560>]}
+[0m18:12:42.317961 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m18:12:43.338300 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m18:12:43.338300 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:12:43.338300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022602CE5B20>]}
+[0m18:12:45.065085 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.edem_project.orders.mart
+[0m18:12:45.067523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226030CBD10>]}
+[0m18:12:45.161776 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:12:45.176914 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:12:45.240259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022603415BE0>]}
+[0m18:12:45.240259 [info ] [MainThread]: Found 8 models, 5 sources, 539 macros
+[0m18:12:45.240259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022603434CE0>]}
+[0m18:12:45.240259 [info ] [MainThread]: 
+[0m18:12:45.240259 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:12:45.240259 [info ] [MainThread]: 
+[0m18:12:45.247246 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:12:45.248658 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento'
+[0m18:12:45.248658 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:12:47.502893 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento, now create_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold)
+[0m18:12:47.502893 [debug] [ThreadPool]: Creating schema "database: "e2e-gcp-almacenamiento"
+schema: "dbt_analytics_delivery_gold"
+"
+[0m18:12:47.518546 [debug] [ThreadPool]: On create_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "connection_name": "create_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold"} */
+create schema if not exists `e2e-gcp-almacenamiento`.`dbt_analytics_delivery_gold`
+  
+[0m18:12:47.518546 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:12:48.305089 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:EU:65fc472f-21f9-4391-a752-f5a1c2b1618b&page=queryresults
+[0m18:12:50.240022 [debug] [ThreadPool]: SQL status: OK in 1.934 seconds
+[0m18:12:50.903529 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold'
+[0m18:12:50.903529 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:12:51.395043 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold, now list_e2e-gcp-almacenamiento_dbt_analytics_analytics)
+[0m18:12:51.395043 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:12:51.900964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265ACDCA70>]}
+[0m18:12:51.900964 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:12:51.915452 [debug] [Thread-1 (]: Began running node model.edem_project.expanded_delivery_events
+[0m18:12:51.915452 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_analytics_delivery_gold.expanded_delivery_events  [RUN]
+[0m18:12:51.915452 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.edem_project.expanded_delivery_events'
+[0m18:12:51.915452 [debug] [Thread-1 (]: Began compiling node model.edem_project.expanded_delivery_events
+[0m18:12:51.940210 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.expanded_delivery_events"
+[0m18:12:51.940572 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.expanded_delivery_events"
+[0m18:12:51.947585 [debug] [Thread-1 (]: Began executing node model.edem_project.expanded_delivery_events
+[0m18:12:51.964527 [debug] [Thread-1 (]: On model.edem_project.expanded_delivery_events: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.expanded_delivery_events"} */
+
+    
+    CREATE SCHEMA IF NOT EXISTS `e2e-gcp-almacenamiento.dbt_analytics` OPTIONS(location='europe-west1');
+  
+  
+[0m18:12:51.964527 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:12:52.171836 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:EU:c2065b36-a35b-4225-b6ad-811faacddd71&page=queryresults
+[0m18:12:52.171836 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:EU:c2065b36-a35b-4225-b6ad-811faacddd71&page=queryresults
+[0m18:12:52.230787 [debug] [Thread-1 (]: Database Error in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)
+  Location specified in query europe-west1 is not consistent with current execution region EU
+[0m18:12:52.230787 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4f345ad-6ab4-46a1-bd62-125b76d8501f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022604019E80>]}
+[0m18:12:52.230787 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_analytics_delivery_gold.expanded_delivery_events  [[31mERROR[0m in 0.32s]
+[0m18:12:52.230787 [debug] [Thread-1 (]: Finished running node model.edem_project.expanded_delivery_events
+[0m18:12:52.230787 [debug] [Thread-4 (]: Marking all children of 'model.edem_project.expanded_delivery_events' to be skipped because of status 'error'.  Reason: Database Error in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)
+  Location specified in query europe-west1 is not consistent with current execution region EU.
+[0m18:12:52.230787 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:12:52.246771 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:12:52.246771 [debug] [MainThread]: Connection 'create_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold' was properly closed.
+[0m18:12:52.248354 [debug] [MainThread]: Connection 'list_e2e-gcp-almacenamiento_dbt_analytics_analytics' was properly closed.
+[0m18:12:52.248354 [debug] [MainThread]: Connection 'model.edem_project.expanded_delivery_events' was properly closed.
+[0m18:12:52.249399 [info ] [MainThread]: 
+[0m18:12:52.249399 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.01 seconds (7.01s).
+[0m18:12:52.250906 [debug] [MainThread]: Command end result
+[0m18:12:52.282859 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:12:52.290239 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:12:52.303569 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\run_results.json
+[0m18:12:52.304538 [info ] [MainThread]: 
+[0m18:12:52.305570 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:12:52.306157 [info ] [MainThread]: 
+[0m18:12:52.307232 [error] [MainThread]: [31mFailure in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)[0m
+[0m18:12:52.307232 [error] [MainThread]:   Database Error in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)
+  Location specified in query europe-west1 is not consistent with current execution region EU
+[0m18:12:52.308228 [info ] [MainThread]: 
+[0m18:12:52.308228 [info ] [MainThread]:   compiled code at target\compiled\edem_project\models\delivery\mart\expanded_delivery_events.sql
+[0m18:12:52.309228 [info ] [MainThread]: 
+[0m18:12:52.310229 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m18:12:52.311641 [debug] [MainThread]: Command `dbt run` failed at 18:12:52.311641 after 27.99 seconds
+[0m18:12:52.312702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002265DCB8560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226032A3DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226032A3F50>]}
+[0m18:12:52.312702 [debug] [MainThread]: Flushing usage events
+[0m18:12:52.713552 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:16:29.701467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C426A9BC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C426A99D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C426A98050>]}
+
+
+============================== 18:16:29.707744 | 228cddb9-7bbb-498d-ac56-9421ef1c9521 ==============================
+[0m18:16:29.707744 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:16:29.707744 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select expanded_delivery_events', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\SALVA\\GIT\\EDEM_MDA2526\\ALUMNOS\\MDAA\\SALVADOR_RECHE\\GCP_ALMACENAMIENTO\\dbt_project_example\\edem_project\\logs'}
+[0m18:16:45.158872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C42642D9A0>]}
+[0m18:16:45.284513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4263B27E0>]}
+[0m18:16:45.284513 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m18:16:46.291628 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m18:16:46.416456 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m18:16:46.416456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C426AD05F0>]}
+[0m18:16:48.088914 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.edem_project.orders.mart
+[0m18:16:48.100955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44C499940>]}
+[0m18:16:48.187009 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:16:48.190523 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:16:48.233766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44C4CC980>]}
+[0m18:16:48.233766 [info ] [MainThread]: Found 8 models, 5 sources, 539 macros
+[0m18:16:48.233766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44C4C2C60>]}
+[0m18:16:48.236901 [info ] [MainThread]: 
+[0m18:16:48.236901 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:16:48.240637 [info ] [MainThread]: 
+[0m18:16:48.241645 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:16:48.243127 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento'
+[0m18:16:48.243500 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:16:50.319650 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold'
+[0m18:16:50.319650 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:16:50.544930 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento_dbt_analytics_delivery_gold, now list_e2e-gcp-almacenamiento_dbt_analytics_analytics)
+[0m18:16:50.544930 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:16:51.114639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44C4D2DB0>]}
+[0m18:16:51.114639 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:16:51.119334 [debug] [Thread-1 (]: Began running node model.edem_project.expanded_delivery_events
+[0m18:16:51.119334 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_analytics_delivery_gold.expanded_delivery_events  [RUN]
+[0m18:16:51.119334 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.edem_project.expanded_delivery_events'
+[0m18:16:51.119334 [debug] [Thread-1 (]: Began compiling node model.edem_project.expanded_delivery_events
+[0m18:16:51.135994 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.expanded_delivery_events"
+[0m18:16:51.136995 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.expanded_delivery_events"
+[0m18:16:51.136995 [debug] [Thread-1 (]: Began executing node model.edem_project.expanded_delivery_events
+[0m18:16:51.161125 [debug] [Thread-1 (]: On model.edem_project.expanded_delivery_events: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.expanded_delivery_events"} */
+
+    
+    CREATE SCHEMA IF NOT EXISTS `e2e-gcp-almacenamiento.dbt_analytics` OPTIONS(location='europe-west1');
+  
+  
+[0m18:16:51.162126 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:16:51.366138 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:a7613b07-8bc8-4da3-bc45-f0de9cdf00f5&page=queryresults
+[0m18:16:52.638997 [debug] [Thread-1 (]: SQL status: OK in 1.261 seconds
+[0m18:16:52.792727 [debug] [Thread-1 (]: Writing runtime sql for node "model.edem_project.expanded_delivery_events"
+[0m18:16:52.792727 [debug] [Thread-1 (]: On model.edem_project.expanded_delivery_events: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.expanded_delivery_events"} */
+
+
+  create or replace view `e2e-gcp-almacenamiento`.`dbt_analytics_delivery_gold`.`expanded_delivery_events`
+  OPTIONS()
+  as 
+
+with __dbt__cte__base_raw_events_delivery as (
+
+
+SELECT
+publish_time,
+data,
+message_id
+FROM `e2e-gcp-almacenamiento`.`delivery_bronze`.`raw_events_delivery`
+) SELECT
+publish_time,
+message_id,
+CAST(JSON_VALUE(data, '$.delivery_status') AS STRING) AS delivery_status,
+CAST(JSON_VALUE(data, '$.event_at') AS TIMESTAMP) AS event_at,
+CAST(JSON_VALUE(data, '$.order_id') AS INT64) AS order_id
+FROM __dbt__cte__base_raw_events_delivery;
+
+
+[0m18:16:52.904330 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:9df0a7a4-61d0-447e-ace3-580d3364c1e8&page=queryresults
+[0m18:16:52.904330 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:9df0a7a4-61d0-447e-ace3-580d3364c1e8&page=queryresults
+[0m18:16:52.949981 [debug] [Thread-1 (]: Database Error in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)
+  Not found: Dataset e2e-gcp-almacenamiento:dbt_analytics_delivery_gold was not found in location europe-west1
+  compiled code at target\run\edem_project\models\delivery\mart\expanded_delivery_events.sql
+[0m18:16:52.951985 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '228cddb9-7bbb-498d-ac56-9421ef1c9521', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44D0112B0>]}
+[0m18:16:52.952982 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_analytics_delivery_gold.expanded_delivery_events  [[31mERROR[0m in 1.83s]
+[0m18:16:52.953947 [debug] [Thread-1 (]: Finished running node model.edem_project.expanded_delivery_events
+[0m18:16:52.953947 [debug] [Thread-4 (]: Marking all children of 'model.edem_project.expanded_delivery_events' to be skipped because of status 'error'.  Reason: Database Error in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)
+  Not found: Dataset e2e-gcp-almacenamiento:dbt_analytics_delivery_gold was not found in location europe-west1
+  compiled code at target\run\edem_project\models\delivery\mart\expanded_delivery_events.sql.
+[0m18:16:52.956984 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:16:52.956984 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:16:52.956984 [debug] [MainThread]: Connection 'list_e2e-gcp-almacenamiento' was properly closed.
+[0m18:16:52.956984 [debug] [MainThread]: Connection 'list_e2e-gcp-almacenamiento_dbt_analytics_analytics' was properly closed.
+[0m18:16:52.956984 [debug] [MainThread]: Connection 'model.edem_project.expanded_delivery_events' was properly closed.
+[0m18:16:52.956984 [info ] [MainThread]: 
+[0m18:16:52.956984 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.72 seconds (4.72s).
+[0m18:16:52.961093 [debug] [MainThread]: Command end result
+[0m18:16:52.991344 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:16:52.994369 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:16:53.006059 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\run_results.json
+[0m18:16:53.007057 [info ] [MainThread]: 
+[0m18:16:53.007057 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:16:53.007057 [info ] [MainThread]: 
+[0m18:16:53.007057 [error] [MainThread]: [31mFailure in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)[0m
+[0m18:16:53.007057 [error] [MainThread]:   Database Error in model expanded_delivery_events (models\delivery\mart\expanded_delivery_events.sql)
+  Not found: Dataset e2e-gcp-almacenamiento:dbt_analytics_delivery_gold was not found in location europe-west1
+  compiled code at target\run\edem_project\models\delivery\mart\expanded_delivery_events.sql
+[0m18:16:53.007057 [info ] [MainThread]: 
+[0m18:16:53.007057 [info ] [MainThread]:   compiled code at target\compiled\edem_project\models\delivery\mart\expanded_delivery_events.sql
+[0m18:16:53.007057 [info ] [MainThread]: 
+[0m18:16:53.007057 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m18:16:53.007057 [debug] [MainThread]: Command `dbt run` failed at 18:16:53.007057 after 23.51 seconds
+[0m18:16:53.007057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C426BF0560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C44C320C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4282ADD90>]}
+[0m18:16:53.007057 [debug] [MainThread]: Flushing usage events
+[0m18:16:53.433242 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:17:25.646269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFC4BA0230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFC77AB1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFC78FCEC0>]}
+
+
+============================== 18:17:25.646269 | 21290b81-2a9b-45a6-90e7-c0ac5c3080a0 ==============================
+[0m18:17:25.646269 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:17:25.646269 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select expanded_delivery_events', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\SALVA\\GIT\\EDEM_MDA2526\\ALUMNOS\\MDAA\\SALVADOR_RECHE\\GCP_ALMACENAMIENTO\\dbt_project_example\\edem_project\\logs'}
+[0m18:17:40.160094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFECC05A60>]}
+[0m18:17:40.296788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFEC524530>]}
+[0m18:17:40.303105 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m18:17:41.370481 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m18:17:41.481044 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m18:17:41.481044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFED0ADA90>]}
+[0m18:17:43.083300 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.edem_project.orders.mart
+[0m18:17:43.095529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFED179F70>]}
+[0m18:17:43.178928 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:17:43.178928 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:17:43.215756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFED2DE750>]}
+[0m18:17:43.215756 [info ] [MainThread]: Found 8 models, 5 sources, 539 macros
+[0m18:17:43.215756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFED2FF3E0>]}
+[0m18:17:43.215756 [info ] [MainThread]: 
+[0m18:17:43.215756 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:17:43.215756 [info ] [MainThread]: 
+[0m18:17:43.225822 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:17:43.225822 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento'
+[0m18:17:43.225822 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:17:45.518863 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento, now create_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze)
+[0m18:17:45.518863 [debug] [ThreadPool]: Creating schema "database: "e2e-gcp-almacenamiento"
+schema: "dbt_analytics_delivery_bronze"
+"
+[0m18:17:45.518863 [debug] [ThreadPool]: On create_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "connection_name": "create_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze"} */
+create schema if not exists `e2e-gcp-almacenamiento`.`dbt_analytics_delivery_bronze`
+  
+[0m18:17:45.534418 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:17:46.003588 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:4b0aea23-1145-454c-adf1-ba86624d8d9d&page=queryresults
+[0m18:17:47.314867 [debug] [ThreadPool]: SQL status: OK in 1.313 seconds
+[0m18:17:47.458943 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze'
+[0m18:17:47.458943 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:17:47.679662 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze, now list_e2e-gcp-almacenamiento_dbt_analytics_analytics)
+[0m18:17:47.679662 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:17:48.212980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFED4D20F0>]}
+[0m18:17:48.229000 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:17:48.229000 [debug] [Thread-1 (]: Began running node model.edem_project.expanded_delivery_events
+[0m18:17:48.229000 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_analytics_delivery_bronze.expanded_delivery_events  [RUN]
+[0m18:17:48.229000 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.edem_project.expanded_delivery_events'
+[0m18:17:48.229000 [debug] [Thread-1 (]: Began compiling node model.edem_project.expanded_delivery_events
+[0m18:17:48.246958 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.expanded_delivery_events"
+[0m18:17:48.250994 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.expanded_delivery_events"
+[0m18:17:48.251959 [debug] [Thread-1 (]: Began executing node model.edem_project.expanded_delivery_events
+[0m18:17:48.274048 [debug] [Thread-1 (]: On model.edem_project.expanded_delivery_events: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.expanded_delivery_events"} */
+
+    
+    CREATE SCHEMA IF NOT EXISTS `e2e-gcp-almacenamiento.dbt_analytics` OPTIONS(location='europe-west1');
+  
+  
+[0m18:17:48.275048 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:17:48.462449 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:534c089a-479a-4912-90e7-c258d070eecb&page=queryresults
+[0m18:17:48.669674 [debug] [Thread-1 (]: SQL status: OK in 0.211 seconds
+[0m18:17:48.685791 [debug] [Thread-1 (]: Writing runtime sql for node "model.edem_project.expanded_delivery_events"
+[0m18:17:48.685791 [debug] [Thread-1 (]: On model.edem_project.expanded_delivery_events: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.expanded_delivery_events"} */
+
+
+  create or replace view `e2e-gcp-almacenamiento`.`dbt_analytics_delivery_bronze`.`expanded_delivery_events`
+  OPTIONS()
+  as 
+
+with __dbt__cte__base_raw_events_delivery as (
+
+
+SELECT
+publish_time,
+data,
+message_id
+FROM `e2e-gcp-almacenamiento`.`delivery_bronze`.`raw_events_delivery`
+) SELECT
+publish_time,
+message_id,
+CAST(JSON_VALUE(data, '$.delivery_status') AS STRING) AS delivery_status,
+CAST(JSON_VALUE(data, '$.event_at') AS TIMESTAMP) AS event_at,
+CAST(JSON_VALUE(data, '$.order_id') AS INT64) AS order_id
+FROM __dbt__cte__base_raw_events_delivery;
+
+
+[0m18:17:49.196826 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:70aeffea-ecf9-4bdd-9d40-654f6c4cfeb6&page=queryresults
+[0m18:17:49.480206 [debug] [Thread-1 (]: SQL status: OK in 0.280 seconds
+[0m18:17:49.496512 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21290b81-2a9b-45a6-90e7-c0ac5c3080a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFC71FD790>]}
+[0m18:17:49.496512 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_analytics_delivery_bronze.expanded_delivery_events  [[32mCREATE VIEW (0 processed)[0m in 1.27s]
+[0m18:17:49.496512 [debug] [Thread-1 (]: Finished running node model.edem_project.expanded_delivery_events
+[0m18:17:49.496512 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:17:49.496512 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:17:49.496512 [debug] [MainThread]: Connection 'create_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze' was properly closed.
+[0m18:17:49.496512 [debug] [MainThread]: Connection 'list_e2e-gcp-almacenamiento_dbt_analytics_analytics' was properly closed.
+[0m18:17:49.496512 [debug] [MainThread]: Connection 'model.edem_project.expanded_delivery_events' was properly closed.
+[0m18:17:49.508763 [info ] [MainThread]: 
+[0m18:17:49.508763 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 6.28 seconds (6.28s).
+[0m18:17:49.510444 [debug] [MainThread]: Command end result
+[0m18:17:49.539617 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:17:49.539617 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:17:49.555513 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\run_results.json
+[0m18:17:49.555513 [info ] [MainThread]: 
+[0m18:17:49.556574 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:17:49.557318 [info ] [MainThread]: 
+[0m18:17:49.557318 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m18:17:49.559361 [debug] [MainThread]: Command `dbt run` succeeded at 18:17:49.558326 after 24.11 seconds
+[0m18:17:49.559361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFC78FE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFC7234350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BFED2D9EB0>]}
+[0m18:17:49.559361 [debug] [MainThread]: Flushing usage events
+[0m18:17:49.934064 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:18:47.803426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5EB28740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5EB28F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5EB2AE40>]}
+
+
+============================== 18:18:47.803426 | 0b64c888-2ddc-4f8f-9519-3589ff737a75 ==============================
+[0m18:18:47.803426 [info ] [MainThread]: Running with dbt=1.11.2
+[0m18:18:47.803426 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\SALVA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select analytics', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\SALVA\\GIT\\EDEM_MDA2526\\ALUMNOS\\MDAA\\SALVADOR_RECHE\\GCP_ALMACENAMIENTO\\dbt_project_example\\edem_project\\logs'}
+[0m18:19:02.293161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5EECD580>]}
+[0m18:19:02.420382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5AB9C530>]}
+[0m18:19:02.420382 [info ] [MainThread]: Registered adapter: bigquery=1.11.0
+[0m18:19:03.463752 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m18:19:03.654158 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:19:03.654158 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:19:03.654158 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:19:03.670806 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.edem_project.orders.mart
+[0m18:19:03.715472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D02B16EA0>]}
+[0m18:19:03.792039 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:19:03.807773 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:19:03.839562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D02F929F0>]}
+[0m18:19:03.839562 [info ] [MainThread]: Found 8 models, 5 sources, 539 macros
+[0m18:19:03.839562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D026F1D30>]}
+[0m18:19:03.843767 [info ] [MainThread]: 
+[0m18:19:03.843767 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:19:03.843767 [info ] [MainThread]: 
+[0m18:19:03.843767 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:19:03.851471 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento'
+[0m18:19:03.851471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:19:06.049524 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento, now create_e2e-gcp-almacenamiento_dbt_analytics_analytics)
+[0m18:19:06.049524 [debug] [ThreadPool]: Creating schema "database: "e2e-gcp-almacenamiento"
+schema: "dbt_analytics_analytics"
+"
+[0m18:19:06.065276 [debug] [ThreadPool]: On create_e2e-gcp-almacenamiento_dbt_analytics_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "connection_name": "create_e2e-gcp-almacenamiento_dbt_analytics_analytics"} */
+create schema if not exists `e2e-gcp-almacenamiento`.`dbt_analytics_analytics`
+  
+[0m18:19:06.065276 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:19:06.401281 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:9198d74f-846e-4dd9-a936-f1e4d2a4b970&page=queryresults
+[0m18:19:07.934932 [debug] [ThreadPool]: SQL status: OK in 1.523 seconds
+[0m18:19:08.061353 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_e2e-gcp-almacenamiento_dbt_analytics_analytics'
+[0m18:19:08.061353 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:19:08.571794 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_e2e-gcp-almacenamiento_dbt_analytics_analytics, now list_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze)
+[0m18:19:08.571794 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:19:08.751865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D02DE16D0>]}
+[0m18:19:08.763045 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:19:08.763045 [debug] [Thread-1 (]: Began running node model.edem_project.orders_per_customer
+[0m18:19:08.763045 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_analytics_analytics.orders_per_customer ....... [RUN]
+[0m18:19:08.763045 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.edem_project.orders_per_customer'
+[0m18:19:08.763045 [debug] [Thread-1 (]: Began compiling node model.edem_project.orders_per_customer
+[0m18:19:08.782325 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.orders_per_customer"
+[0m18:19:08.787551 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.orders_per_customer"
+[0m18:19:08.787551 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.orders_per_customer"
+[0m18:19:08.787551 [debug] [Thread-1 (]: Began executing node model.edem_project.orders_per_customer
+[0m18:19:08.812205 [debug] [Thread-1 (]: On model.edem_project.orders_per_customer: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.orders_per_customer"} */
+
+    
+    CREATE SCHEMA IF NOT EXISTS `e2e-gcp-almacenamiento.dbt_analytics` OPTIONS(location='europe-west1');
+  
+  
+[0m18:19:08.812205 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:19:09.017654 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:5e67a80a-bcb5-4ab0-9cc5-eeaab2af5ef9&page=queryresults
+[0m18:19:09.168823 [debug] [Thread-1 (]: SQL status: OK in 0.142 seconds
+[0m18:19:09.191175 [debug] [Thread-1 (]: Writing runtime sql for node "model.edem_project.orders_per_customer"
+[0m18:19:09.191175 [debug] [Thread-1 (]: On model.edem_project.orders_per_customer: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.orders_per_customer"} */
+
+  
+    
+
+    create or replace table `e2e-gcp-almacenamiento`.`dbt_analytics_analytics`.`orders_per_customer`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with __dbt__cte__base_orders as (
+
+
+SELECT
+id,
+customer_id,
+created_at,
+total_price
+FROM `e2e-gcp-almacenamiento`.`orders_bronze`.`orders`
+),  __dbt__cte__base_customers as (
+
+
+SELECT
+id,
+customer_name,
+email
+FROM `e2e-gcp-almacenamiento`.`orders_bronze`.`customers`
+) SELECT
+    SUM(total_price) AS total_price,
+    c.customer_name
+    FROM
+    __dbt__cte__base_orders o
+    LEFT JOIN
+    __dbt__cte__base_customers c
+    ON
+    c.id = o.customer_id
+    GROUP BY
+    customer_name
+    ORDER BY
+    total_price desc
+    );
+  
+[0m18:19:09.818330 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:661df9d0-127e-4db3-8262-f87000b04168&page=queryresults
+[0m18:19:12.918829 [debug] [Thread-1 (]: SQL status: OK in 3.108 seconds
+[0m18:19:13.139023 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D7CC38F80>]}
+[0m18:19:13.139023 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_analytics_analytics.orders_per_customer .. [[32mCREATE TABLE (10.0 rows, 6.1 KiB processed)[0m in 4.37s]
+[0m18:19:13.139023 [debug] [Thread-1 (]: Finished running node model.edem_project.orders_per_customer
+[0m18:19:13.139023 [debug] [Thread-1 (]: Began running node model.edem_project.top_5_product_expenses
+[0m18:19:13.139023 [info ] [Thread-1 (]: 2 of 2 START sql table model dbt_analytics_analytics.top_5_product_expenses .... [RUN]
+[0m18:19:13.142429 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.edem_project.orders_per_customer, now model.edem_project.top_5_product_expenses)
+[0m18:19:13.142429 [debug] [Thread-1 (]: Began compiling node model.edem_project.top_5_product_expenses
+[0m18:19:13.142429 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.top_5_product_expenses"
+[0m18:19:13.142429 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.top_5_product_expenses"
+[0m18:19:13.158142 [debug] [Thread-1 (]: Writing injected SQL for node "model.edem_project.top_5_product_expenses"
+[0m18:19:13.159130 [debug] [Thread-1 (]: Began executing node model.edem_project.top_5_product_expenses
+[0m18:19:13.164822 [debug] [Thread-1 (]: On model.edem_project.top_5_product_expenses: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.top_5_product_expenses"} */
+
+    
+    CREATE SCHEMA IF NOT EXISTS `e2e-gcp-almacenamiento.dbt_analytics` OPTIONS(location='europe-west1');
+  
+  
+[0m18:19:13.165591 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:19:13.476408 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:7ff91781-5b27-408a-b8e4-25015435efb2&page=queryresults
+[0m18:19:13.667112 [debug] [Thread-1 (]: SQL status: OK in 0.189 seconds
+[0m18:19:13.671450 [debug] [Thread-1 (]: Writing runtime sql for node "model.edem_project.top_5_product_expenses"
+[0m18:19:13.671450 [debug] [Thread-1 (]: On model.edem_project.top_5_product_expenses: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "edem_project", "target_name": "dev", "node_id": "model.edem_project.top_5_product_expenses"} */
+
+  
+    
+
+    create or replace table `e2e-gcp-almacenamiento`.`dbt_analytics_analytics`.`top_5_product_expenses`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+
+with __dbt__cte__base_orders as (
+
+
+SELECT
+id,
+customer_id,
+created_at,
+total_price
+FROM `e2e-gcp-almacenamiento`.`orders_bronze`.`orders`
+),  __dbt__cte__base_order_products as (
+
+
+SELECT
+order_id,
+product_id,
+quantity,
+price
+FROM `e2e-gcp-almacenamiento`.`orders_bronze`.`order_products`
+),  __dbt__cte__base_products as (
+
+
+SELECT
+id,
+product_name,
+price
+FROM `e2e-gcp-almacenamiento`.`orders_bronze`.`products`
+) SELECT
+    SUM(op.price*op.quantity) AS total_product_spent,
+    product_name
+    FROM
+    __dbt__cte__base_orders o
+    LEFT JOIN
+    __dbt__cte__base_order_products op
+    ON
+    o.id = op.order_id
+    LEFT JOIN
+    __dbt__cte__base_products p
+    ON
+    op.product_id = p.id
+    GROUP BY
+    product_name
+    ORDER BY
+    SUM(op.price*op.quantity) DESC
+    LIMIT
+    5
+    );
+  
+[0m18:19:14.031176 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=e2e-gcp-almacenamiento&j=bq:europe-west1:296a8cb3-112c-456b-baa0-e762bc18fcfd&page=queryresults
+[0m18:19:15.826183 [debug] [Thread-1 (]: SQL status: OK in 1.796 seconds
+[0m18:19:15.996787 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b64c888-2ddc-4f8f-9519-3589ff737a75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D03B18CE0>]}
+[0m18:19:15.996787 [info ] [Thread-1 (]: 2 of 2 OK created sql table model dbt_analytics_analytics.top_5_product_expenses  [[32mCREATE TABLE (5.0 rows, 27.0 KiB processed)[0m in 2.86s]
+[0m18:19:15.996787 [debug] [Thread-1 (]: Finished running node model.edem_project.top_5_product_expenses
+[0m18:19:15.996787 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:19:15.996787 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:19:15.996787 [debug] [MainThread]: Connection 'create_e2e-gcp-almacenamiento_dbt_analytics_analytics' was properly closed.
+[0m18:19:15.996787 [debug] [MainThread]: Connection 'list_e2e-gcp-almacenamiento_dbt_analytics_delivery_bronze' was properly closed.
+[0m18:19:15.996787 [debug] [MainThread]: Connection 'model.edem_project.top_5_product_expenses' was properly closed.
+[0m18:19:15.996787 [info ] [MainThread]: 
+[0m18:19:15.996787 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 12.15 seconds (12.15s).
+[0m18:19:15.996787 [debug] [MainThread]: Command end result
+[0m18:19:16.037095 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\manifest.json
+[0m18:19:16.037750 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\semantic_manifest.json
+[0m18:19:16.053032 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\SALVA\GIT\EDEM_MDA2526\ALUMNOS\MDAA\SALVADOR_RECHE\GCP_ALMACENAMIENTO\dbt_project_example\edem_project\target\run_results.json
+[0m18:19:16.053032 [info ] [MainThread]: 
+[0m18:19:16.054098 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:19:16.055096 [info ] [MainThread]: 
+[0m18:19:16.055096 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m18:19:16.056097 [debug] [MainThread]: Command `dbt run` succeeded at 18:19:16.056097 after 28.43 seconds
+[0m18:19:16.057096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5EB28F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5D0249B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016D5D024530>]}
+[0m18:19:16.057096 [debug] [MainThread]: Flushing usage events
+[0m18:19:16.442234 [debug] [MainThread]: An error was encountered while trying to flush usage events
